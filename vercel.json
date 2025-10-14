@@ -25,7 +25,7 @@
       ]
     },
     {
-      "source": "/css/**/*",
+      "source": "/css/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "source": "/images/**/*",
+      "source": "/images/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "source": "/logos/**/*",
+      "source": "/logos/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
