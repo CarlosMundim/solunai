@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solunai Investment Opportunity - $500B+ market, 28 AI solutions, zero-carbon datacenter infrastructure. Seed to Series C funding rounds.">
+    <meta name="keywords" content="Solunai investment, AI investment Japan, datacenter investment, technology investment">
+    <title>Investors - Investment Opportunity | Solunai</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/design-system.css">
+
+    <style>
+        body {
+            background: var(--color-dark-bg);
+            color: var(--color-dark-text-primary);
+            font-family: var(--font-family-primary);
+        }
+
+        .hero-investors {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%);
+            position: relative;
+        }
+
+        .opportunity-card {
+            background: var(--color-dark-surface-elevated);
+            border: 2px solid var(--color-primary-600);
+            border-radius: var(--radius-xl);
+            padding: var(--space-10);
+            margin-top: var(--space-12);
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-8);
+        }
+
+        .metric {
+            text-align: center;
+            padding: var(--space-6);
+            background: var(--color-dark-surface);
+            border-radius: var(--radius-lg);
+        }
+
+        .metric-number {
+            font-size: var(--font-size-4xl);
+            font-weight: var(--font-weight-bold);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .revenue-stream {
+            padding: var(--space-6);
+            background: var(--color-dark-surface);
+            border-left: 4px solid var(--color-primary-600);
+            margin-bottom: var(--space-4);
+            border-radius: var(--radius-base);
+        }
+
+        .funding-round {
+            padding: var(--space-8);
+            background: var(--color-dark-surface);
+            border: 2px solid var(--color-dark-border);
+            border-radius: var(--radius-lg);
+            transition: all var(--transition-base);
+        }
+
+        .funding-round:hover {
+            border-color: var(--color-primary-600);
+            transform: translateY(-4px);
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-dark-border);
+            z-index: var(--z-index-fixed);
+        }
+
+        .nav-container {
+            max-width: var(--container-2xl);
+            margin: 0 auto;
+            padding: var(--space-4) var(--space-6);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--space-8);
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--color-gray-300);
+            font-weight: var(--font-weight-medium);
+            transition: color var(--transition-fast);
+        }
+
+        .nav-link:hover {
+            color: var(--color-primary-400);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="./index.html" style="display: flex; align-items: center;">
+                <img src="./logos/solunai_logo_white.png" alt="Solunai" style="height: 80px;">
+            </a>
+            <div class="nav-links">
+                <a href="./hpc-lab.html" class="nav-link">HPC Lab</a>
+                <a href="./worldemp-japan.html" class="nav-link">WorldEmp Japan</a>
+                <a href="./datacenter.html" class="nav-link">Datacenter</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <a href="./investors.html" class="nav-link" style="color: var(--color-primary-400);">Investors</a>
+            </div>
+            <div style="display: flex; gap: var(--space-3);">
+                <span class="nav-link" style="cursor: pointer;">EN / JP</span>
+                <a href="#contact" class="btn btn-primary btn-small">Contact IR</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-investors">
+        <div style="text-align: center; max-width: 900px; padding: var(--space-8); position: relative; z-index: 10;">
+            <span class="badge badge-primary" style="margin-bottom: var(--space-6);">INVESTMENT OPPORTUNITY</span>
+            <h1 class="heading-1" style="color: white; margin-bottom: var(--space-6);">
+                Building the Future of AI, Talent & Infrastructure
+            </h1>
+            <p class="body-large" style="color: rgba(255,255,255,0.9); margin-bottom: var(--space-10);">
+                Three integrated divisions addressing $500B+ market opportunity with proven technology and strong partnerships
+            </p>
+            <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
+                <a href="#opportunity" class="btn btn-large" style="background: white; color: var(--color-primary-600);">
+                    View Opportunity
+                </a>
+                <a href="#contact" class="btn btn-large btn-secondary" style="border-color: white; color: white;">
+                    Contact Investor Relations
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Opportunity -->
+    <section id="opportunity" class="section-xl">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">MARKET OPPORTUNITY</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Massive Addressable Markets</h2>
+            </div>
+
+            <div class="metrics-grid">
+                <div class="metric">
+                    <div class="metric-number">$500B+</div>
+                    <div class="body-base" style="color: var(--color-gray-400); margin-top: var(--space-2);">Global Labor Mobility</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-number">$50B+</div>
+                    <div class="body-base" style="color: var(--color-gray-400); margin-top: var(--space-2);">Japan Recruitment Market</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-number">$1T+</div>
+                    <div class="body-base" style="color: var(--color-gray-400); margin-top: var(--space-2);">AI Infrastructure</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-number">$500B+</div>
+                    <div class="body-base" style="color: var(--color-gray-400); margin-top: var(--space-2);">Datacenter Market</div>
+                </div>
+            </div>
+
+            <div class="opportunity-card">
+                <h3 class="heading-3" style="margin-bottom: var(--space-6);">Why Solunai?</h3>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="heading-5" style="margin-bottom: var(--space-3);">✓ Proven Technology</h4>
+                        <p class="body-base" style="color: var(--color-gray-400);">
+                            28 AI solutions with MVP/GA timelines. aiKODA cultural intelligence platform. iWORKZ with 87% matching accuracy.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="heading-5" style="margin-bottom: var(--space-3);">✓ Strategic Partnerships</h4>
+                        <p class="body-base" style="color: var(--color-gray-400);">
+                            WorldEmp Amsterdam/India partnership. FBM Hudson cooling systems (agreement signed). Nuclear technology partnerships in negotiation.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="heading-5" style="margin-bottom: var(--space-3);">✓ Unique Positioning</h4>
+                        <p class="body-base" style="color: var(--color-gray-400);">
+                            Only platform with Japan-specific cultural intelligence. Zero-carbon datacenter solution. Integrated AI + Talent + Infrastructure model.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="heading-5" style="margin-bottom: var(--space-3);">✓ Strong ROI Metrics</h4>
+                        <p class="body-base" style="color: var(--color-gray-400);">
+                            30-90% operational cost reductions. 85%+ efficiency gains. 98% documentation accuracy. Proven value proposition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revenue Streams -->
+    <section class="section-xl" style="background: var(--color-dark-surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">REVENUE MODEL</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Multiple Revenue Streams</h2>
+                <p class="body-large" style="max-width: 700px; margin: var(--space-6) auto 0; color: var(--color-gray-400);">
+                    Diversified revenue across three high-growth divisions
+                </p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-8">
+                <div>
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-hpc-lab-start);">HPC Lab</h3>
+                    <div class="revenue-stream" style="border-color: var(--color-hpc-lab-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">SaaS Subscriptions</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Enterprise (¥1.2M/mo), Mid-Market (¥600k/mo), SME (¥250k/mo) tiers across 28 AI solutions
+                        </p>
+                    </div>
+                    <div class="revenue-stream" style="border-color: var(--color-hpc-lab-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">Usage-Based Pricing</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Voice minutes, credential verifications, AI concierge tasks, document processing
+                        </p>
+                    </div>
+                    <div class="revenue-stream" style="border-color: var(--color-hpc-lab-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">Programme Pricing</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Municipal/regional deployments, MuniX tokens, revitalisation toolkits
+                        </p>
+                    </div>
+                    <div class="revenue-stream" style="border-color: var(--color-hpc-lab-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">White-Label Services</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Custom AI solutions for system integrators (NTT Data, Fujitsu, Hitachi)
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-worldemp-start);">WorldEmp Japan</h3>
+                    <div class="revenue-stream" style="border-color: var(--color-worldemp-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">Placement Fees</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            15-20% of first-year salary for permanent placements in IT, Engineering, Data, Finance sectors
+                        </p>
+                    </div>
+                    <div class="revenue-stream" style="border-color: var(--color-worldemp-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">Ongoing HR Services</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Monthly HR support, payroll administration, compliance management, workspace solutions
+                        </p>
+                    </div>
+                    <div class="revenue-stream" style="border-color: var(--color-worldemp-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">Training & Upskilling</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Pre-boarding programs, Japanese business culture training, technical skill development
+                        </p>
+                    </div>
+                    <div class="revenue-stream" style="border-color: var(--color-worldemp-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">Retention Services</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Career development, performance monitoring, satisfaction surveys, long-term support
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-datacenter-start);">Datacenter</h3>
+                    <div class="revenue-stream" style="border-color: var(--color-datacenter-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">Datacenter Operations</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Colocation, managed hosting, sovereign cloud services, hyperscale deployments
+                        </p>
+                    </div>
+                    <div class="revenue-stream" style="border-color: var(--color-datacenter-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">Energy Sales</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Excess power sales to grid, industrial steam, hydrogen production, process heat
+                        </p>
+                    </div>
+                    <div class="revenue-stream" style="border-color: var(--color-datacenter-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">Real Estate</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Converted military base properties, industrial facilities, strategic site development
+                        </p>
+                    </div>
+                    <div class="revenue-stream" style="border-color: var(--color-datacenter-start);">
+                        <h4 class="heading-6" style="margin-bottom: var(--space-2);">IP Licensing</h4>
+                        <p class="body-small" style="color: var(--color-gray-400);">
+                            Technology licensing to global partners, design & engineering services, consulting
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capital Strategy -->
+    <section class="section-xl">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">CAPITAL STRATEGY</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Phased Funding Approach</h2>
+                <p class="body-large" style="max-width: 700px; margin: var(--space-6) auto 0; color: var(--color-gray-400);">
+                    Strategic capital deployment across Seed to Series C rounds
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-8">
+                <div class="funding-round">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-4);">
+                        <h3 class="heading-4">SEED Round</h3>
+                        <span class="badge badge-success">Open</span>
+                    </div>
+                    <div class="heading-3" style="color: var(--color-primary-400); margin-bottom: var(--space-4);">¥1.5B (£15M)</div>
+                    <p class="body-base" style="color: var(--color-gray-400); margin-bottom: var(--space-6);">
+                        <strong>Use of Funds:</strong> aiKODA & iWORKZ MVP development, WorldEmp Japan setup, initial team hiring, market validation
+                    </p>
+                    <ul style="list-style: none; color: var(--color-gray-400);">
+                        <li style="padding: var(--space-2) 0;">✓ Complete 28 AI solutions MVP</li>
+                        <li style="padding: var(--space-2) 0;">✓ Launch WorldEmp Japan operations</li>
+                        <li style="padding: var(--space-2) 0;">✓ Initial customer acquisition</li>
+                        <li style="padding: var(--space-2) 0;">✓ Partnership agreements finalized</li>
+                    </ul>
+                </div>
+
+                <div class="funding-round">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-4);">
+                        <h3 class="heading-4">Series A</h3>
+                        <span class="badge badge-primary">2025 Q4</span>
+                    </div>
+                    <div class="heading-3" style="color: var(--color-primary-400); margin-bottom: var(--space-4);">¥10B (£100M)</div>
+                    <p class="body-base" style="color: var(--color-gray-400); margin-bottom: var(--space-6);">
+                        <strong>Use of Funds:</strong> Scale AI operations, expand WorldEmp to 5 countries, datacenter pilot site selection, sales team expansion
+                    </p>
+                    <ul style="list-style: none; color: var(--color-gray-400);">
+                        <li style="padding: var(--space-2) 0;">✓ GA launch of 28 AI solutions</li>
+                        <li style="padding: var(--space-2) 0;">✓ 100+ enterprise customers</li>
+                        <li style="padding: var(--space-2) 0;">✓ Datacenter pilot site secured</li>
+                        <li style="padding: var(--space-2) 0;">✓ Revenue: ¥2-3B ARR</li>
+                    </ul>
+                </div>
+
+                <div class="funding-round">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-4);">
+                        <h3 class="heading-4">Series B</h3>
+                        <span class="badge badge-primary">2026 Q3</span>
+                    </div>
+                    <div class="heading-3" style="color: var(--color-primary-400); margin-bottom: var(--space-4);">¥25B (£250M)</div>
+                    <p class="body-base" style="color: var(--color-gray-400); margin-bottom: var(--space-6);">
+                        <strong>Use of Funds:</strong> First datacenter construction, global AI platform expansion, 15+ country WorldEmp operations, M&A opportunities
+                    </p>
+                    <ul style="list-style: none; color: var(--color-gray-400);">
+                        <li style="padding: var(--space-2) 0;">✓ First datacenter operational</li>
+                        <li style="padding: var(--space-2) 0;">✓ 500+ enterprise customers</li>
+                        <li style="padding: var(--space-2) 0;">✓ International expansion</li>
+                        <li style="padding: var(--space-2) 0;">✓ Revenue: ¥10-15B ARR</li>
+                    </ul>
+                </div>
+
+                <div class="funding-round">
+                    <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: var(--space-4);">
+                        <h3 class="heading-4">Series C</h3>
+                        <span class="badge badge-primary">2027 Q4</span>
+                    </div>
+                    <div class="heading-3" style="color: var(--color-primary-400); margin-bottom: var(--space-4);">¥50B (£500M)</div>
+                    <p class="body-base" style="color: var(--color-gray-400); margin-bottom: var(--space-6);">
+                        <strong>Use of Funds:</strong> Multiple datacenter rollout, global market dominance, advanced AI/quantum integration, pre-IPO preparation
+                    </p>
+                    <ul style="list-style: none; color: var(--color-gray-400);">
+                        <li style="padding: var(--space-2) 0;">✓ 3-5 datacenters operational</li>
+                        <li style="padding: var(--space-2) 0;">✓ 2000+ enterprise customers</li>
+                        <li style="padding: var(--space-2) 0;">✓ Market leader in key verticals</li>
+                        <li style="padding: var(--space-2) 0;">✓ Revenue: ¥50-70B ARR</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Advantages -->
+    <section class="section-xl" style="background: var(--color-dark-surface);">
+        <div class="container-narrow">
+            <div style="text-align: center; margin-bottom: var(--space-12);">
+                <span class="caption">COMPETITIVE ADVANTAGES</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Why We Win</h2>
+            </div>
+
+            <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                <div class="card" style="margin-bottom: var(--space-6); padding: var(--space-8);">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-3);">1. Cultural Intelligence Moat</h3>
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        Only platform with 47-dimension Japanese cultural intelligence. 10+ years of expertise impossible to replicate quickly.
+                    </p>
+                </div>
+
+                <div class="card" style="margin-bottom: var(--space-6); padding: var(--space-8);">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-3);">2. Integrated Ecosystem</h3>
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        AI + Talent + Infrastructure creates network effects. Customers stay for multiple solutions, reducing churn.
+                    </p>
+                </div>
+
+                <div class="card" style="margin-bottom: var(--space-6); padding: var(--space-8);">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-3);">3. Strategic Partnerships</h3>
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        WorldEmp global network, FBM Hudson cooling systems, nuclear technology partnerships provide instant credibility and scale.
+                    </p>
+                </div>
+
+                <div class="card" style="padding: var(--space-8);">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-3);">4. First-Mover in Zero-Carbon DC</h3>
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        Only nuclear-powered datacenter solution. Regulatory approvals and site control create 3-5 year lead over competition.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact IR -->
+    <section id="contact" class="section-xl" style="background: var(--gradient-hero); text-align: center;">
+        <div class="container-narrow">
+            <h2 class="heading-2" style="color: white; margin-bottom: var(--space-6);">
+                Ready to Join Our Journey?
+            </h2>
+            <p class="body-large" style="color: rgba(255,255,255,0.9); margin-bottom: var(--space-10);">
+                Contact our Investor Relations team to learn more about this opportunity
+            </p>
+            <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
+                <a href="mailto:ir@solunai.com" class="btn btn-large" style="background: white; color: var(--color-primary-600);">
+                    Contact Investor Relations
+                </a>
+                <a href="./resources.html" class="btn btn-large btn-secondary" style="border-color: white; color: white;">
+                    View Resources
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--color-dark-surface); border-top: 1px solid var(--color-dark-border); padding: var(--space-20) 0 var(--space-8); margin-top: 0;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-12); margin-bottom: var(--space-12);">
+                <div>
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">SOLUNAI</h4>
+                    <p class="body-small" style="color: var(--color-gray-400);">
+                        Building the Future from Japan to the World
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Investor Relations</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="mailto:ir@solunai.com" style="color: var(--color-gray-400);">ir@solunai.com</a></li>
+                        <li style="color: var(--color-gray-400);">Tokyo HQ</li>
+                        <li style="color: var(--color-gray-400);">+81-XX-XXXX-XXXX</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid var(--color-dark-border); padding-top: var(--space-8); text-align: center;">
+                <p style="color: var(--color-gray-500); font-size: var(--font-size-sm);">
+                    © 2025 Solunai. All rights reserved. |
+                    <a href="./legal/privacy.html" style="color: var(--color-gray-500);">Privacy</a> |
+                    <a href="./legal/terms.html" style="color: var(--color-gray-500);">Terms</a>
+                </p>
+                <p style="color: var(--color-gray-600); font-size: var(--font-size-xs); margin-top: var(--space-4);">
+                    This information is provided for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy securities.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
