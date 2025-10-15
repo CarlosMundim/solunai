@@ -280,6 +280,13 @@
             font-weight: var(--font-weight-semibold);
         }
 
+        /* Pulse animation for badge */
+        @keyframes pulse {
+            0% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.1); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
         @media (max-width: 768px) {
             .stats-banner {
                 grid-template-columns: repeat(2, 1fr);
@@ -328,50 +335,84 @@
     <!-- Hero Section -->
     <section class="hero-hpc">
         <div class="container">
-            <div style="max-width: 900px; position: relative; z-index: 10;">
-                <span class="badge badge-primary" style="margin-bottom: var(--space-6);">
-                    🚀 HPC LAB • 28 AI SOLUTIONS • ENTERPRISE-READY
-                </span>
-                <h1 class="heading-hero" style="color: white; margin-bottom: var(--space-6);">
-                    The Complete AI Platform for <span style="background: linear-gradient(135deg, #FFFFFF 0%, #60A5FA 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Enterprise Success</span>
+            <div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 10; text-align: center;">
+                <!-- Breadcrumb -->
+                <div style="font-size: 0.875rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 1rem;">
+                    <a href="/" style="color: var(--color-accent); text-decoration: none;">Home</a> → <span>HPC Lab</span>
+                </div>
+                
+                <!-- Badge with Animation -->
+                <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(255,255,255,0.1); border-radius: 999px; margin-bottom: 2rem; border: 1px solid rgba(255,255,255,0.2);">
+                    <span style="width: 8px; height: 8px; background: var(--color-accent); border-radius: 50%; animation: pulse 2s infinite;"></span>
+                    <span style="font-size: 0.875rem; font-weight: 600; color: white;">28 Production-Ready AI Solutions</span>
+                </div>
+                
+                <!-- Main Headline -->
+                <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; line-height: 1.1; color: white; margin-bottom: 1.5rem;">
+                    The Complete AI Platform<br/>for <span style="background: linear-gradient(135deg, var(--color-accent), #3B82F6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Enterprise Success</span>
                 </h1>
-                <p class="lead" style="color: rgba(255,255,255,0.9); margin-bottom: var(--space-10);">
-                    From talent mobility to healthcare AI, from municipal governance to sovereign infrastructure—Solunai HPC Lab delivers 28 production-ready AI solutions built on Japanese precision and global innovation.
+                
+                <!-- Subheadline -->
+                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 800px; margin: 0 auto 3rem; line-height: 1.6;">
+                    From talent mobility to healthcare AI, from municipal governance to sovereign infrastructure—enterprise-grade solutions built on Japanese precision and global innovation.
                 </p>
-                <div class="flex gap-4" style="flex-wrap: wrap;">
-                    <a href="#products" class="btn btn-large" style="background: white; color: var(--color-primary-600);">
-                        Explore Solutions
+                
+                <!-- CTA Group -->
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 4rem;">
+                    <a href="#products" style="padding: 1rem 2rem; background: var(--color-accent); color: var(--color-primary-dark); border-radius: 0.75rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
+                        Schedule Platform Demo →
                     </a>
-                    <a href="#tech-stack" class="btn btn-large btn-secondary" style="border-color: white; color: white;">
-                        View Tech Stack
+                    <a href="#tech-stack" style="padding: 1rem 2rem; background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3); border-radius: 0.75rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">
+                        Download Technical Whitepaper
                     </a>
-                    <a href="/investors.html" class="btn btn-large btn-secondary" style="border-color: white; color: white;">
-                        Investor Materials
-                    </a>
+                </div>
+                
+                <!-- Trust Bar -->
+                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; font-size: 0.875rem; color: rgba(255,255,255,0.8);">
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="color: var(--color-accent); font-weight: bold;">✓</span>
+                        SOC 2 Type II Certified
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="color: var(--color-accent); font-weight: bold;">✓</span>
+                        APPI Compliant
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="color: var(--color-accent); font-weight: bold;">✓</span>
+                        Kubernetes Orchestrated
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span style="color: var(--color-accent); font-weight: bold;">✓</span>
+                        Multi-tenant Architecture
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Banner -->
+    <!-- Platform Stats -->
     <section class="section">
         <div class="container">
             <div class="stats-banner">
                 <div class="stat-box">
                     <div class="stat-box-number">28</div>
                     <div class="stat-box-label">AI Solutions</div>
+                    <div style="font-size: 0.75rem; color: var(--color-gray-500); margin-top: 0.25rem;">Production-ready across 7 verticals</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-box-number">7</div>
-                    <div class="stat-box-label">Industry Verticals</div>
+                    <div class="stat-box-number">99.9%</div>
+                    <div class="stat-box-label">Platform Uptime</div>
+                    <div style="font-size: 0.75rem; color: var(--color-gray-500); margin-top: 0.25rem;">Enterprise-grade reliability</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-box-number">85%+</div>
-                    <div class="stat-box-label">Efficiency Gains</div>
+                    <div class="stat-box-number">18+</div>
+                    <div class="stat-box-label">Visa Types</div>
+                    <div style="font-size: 0.75rem; color: var(--color-gray-500); margin-top: 0.25rem;">Global compliance knowledge</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-box-number">2025-27</div>
-                    <div class="stat-box-label">Roadmap</div>
+                    <div class="stat-box-number">Multi-tenant</div>
+                    <div class="stat-box-label">Architecture</div>
+                    <div style="font-size: 0.75rem; color: var(--color-gray-500); margin-top: 0.25rem;">Kubernetes-native scaling</div>
                 </div>
             </div>
         </div>
