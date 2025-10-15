@@ -19,18 +19,20 @@
 :root {
   /* ===== Color Palette ===== */
 
-  /* Primary Colors - Solunai Blue (Trust, Technology) */
-  --color-primary-50: #EBF4FB;
-  --color-primary-100: #D7E9F7;
-  --color-primary-200: #AFD3EF;
-  --color-primary-300: #87BDE7;
-  --color-primary-400: #5FA7DF;
-  --color-primary-500: #3791D7;
-  --color-primary-600: #215F9A;  /* Main brand color - Phyllis approved! */
-  --color-primary-700: #1A4D7B;
-  --color-primary-800: #143B5C;
-  --color-primary-900: #0D293D;
-  --color-primary-950: #07171E;
+  /* Primary Colors - Enterprise Navy (Kensuke's Recommendation) */
+  --color-primary-50: #F8FAFC;
+  --color-primary-100: #F1F5F9;
+  --color-primary-200: #E2E8F0;
+  --color-primary-300: #CBD5E1;
+  --color-primary-400: #94A3B8;
+  --color-primary-500: #64748B;
+  --color-primary-600: #475569;
+  --color-primary-700: #334155;
+  --color-primary-800: #1E293B;
+  --color-primary-900: #0F172A;
+  --color-primary: #0A2E5C;        /* Enterprise Navy - Main brand */
+  --color-primary-light: #1E4A7A;  /* Lighter navy */
+  --color-primary-dark: #051929;   /* Darker navy */
 
   /* Secondary Colors - Teal (Innovation, Growth) */
   --color-secondary-50: #F0FDFA;
@@ -44,7 +46,9 @@
   --color-secondary-800: #115E59;
   --color-secondary-900: #134E4A;
 
-  /* Accent Colors */
+  /* Accent Colors - Enterprise Tech Green (Kensuke's Recommendation) */
+  --color-accent: #00D084;          /* Innovation Green - Main accent */
+  --color-accent-light: #33DDA0;    /* Lighter green */
   --color-accent-purple: #8B5CF6;
   --color-accent-pink: #EC4899;
   --color-accent-amber: #F59E0B;
