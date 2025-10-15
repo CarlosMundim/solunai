@@ -374,6 +374,13 @@
         /* Remove duplicate pulse - using design-system.css animations */
 
         @media (max-width: 768px) {
+            .hero-cta {
+                flex-direction: column;
+                width: 100%;
+            }
+            .hero-cta .btn {
+                width: 100%;
+            }
             .stats-banner {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -424,16 +431,10 @@
         <div class="hero-particles"></div>
         <div class="hero-content">
             <!-- Breadcrumb -->
-            <div style="font-size: var(--font-size-sm); color: var(--color-gray-400); margin-bottom: var(--space-4);">
-                <a href="/" style="color: var(--color-accent); text-decoration: none;">Home</a> → <span>HPC Lab</span>
-            </div>
-            
-            <!-- Badge -->
-            <span class="hero-badge">🚀 28 Production-Ready AI Solutions</span>
             
             <!-- Title -->
             <h1 class="hero-title">
-                The Complete AI Platform<br/>for <span class="hero-title-gradient">Enterprise Success</span>
+                The Complete AI Platform<br/>for Enterprise Success
             </h1>
             
             <!-- Subtitle -->
