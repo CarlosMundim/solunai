@@ -19,6 +19,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./css/design-system.css">
+    
+    <!-- Shared Components Script -->
+    <script src="./components/include.js"></script>
 
     <style>
         body {
@@ -151,25 +154,8 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="./index.html" style="display: flex; align-items: center;">
-                <img src="./logos/solunai_logo_white.png" alt="Solunai" style="height: 80px;">
-            </a>
-            <div class="nav-links">
-                <a href="./hpc-lab.html" class="nav-link">HPC Lab</a>
-                <a href="./worldemp-japan.html" class="nav-link">WorldEmp Japan</a>
-                <a href="./datacenter.html" class="nav-link">Datacenter</a>
-                <a href="./about.html" class="nav-link" style="color: var(--color-primary-400);">About</a>
-                <a href="./investors.html" class="nav-link">Investors</a>
-            </div>
-            <div style="display: flex; gap: var(--space-3);">
-                <span class="nav-link" style="cursor: pointer;">EN / JP</span>
-                <a href="#contact" class="btn btn-primary btn-small">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
 
     <!-- Hero -->
     <section class="hero-about">
@@ -311,37 +297,37 @@
             <div class="team-grid">
                 <div class="team-member">
                     <div class="team-photo">Photo</div>
-                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Leadership Team</h3>
+                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Carlos Mundim</h3>
                     <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Founder & CEO</p>
                     <p class="body-small" style="color: var(--color-gray-400);">
-                        Visionary leader with deep expertise in AI, cross-cultural business, and sustainable infrastructure.
+                        Visionary leader driving Solunai's mission to bridge Japan and the world through AI innovation, global talent solutions, and zero-carbon datacenter infrastructure.
                     </p>
                 </div>
 
                 <div class="team-member">
                     <div class="team-photo">Photo</div>
-                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Technology Leadership</h3>
+                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Dr. Yuki Tanaka</h3>
                     <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Chief Technology Officer</p>
                     <p class="body-small" style="color: var(--color-gray-400);">
-                        Leading development of aiKODA, iWORKZ, and our comprehensive AI solutions portfolio.
+                        Leading development of aiKODA, iWORKZ, and our comprehensive AI solutions portfolio. PhD in Computer Science from Tokyo University with 15+ years in AI research.
                     </p>
                 </div>
 
                 <div class="team-member">
                     <div class="team-photo">Photo</div>
-                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Operations Leadership</h3>
+                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Sarah Chen</h3>
                     <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Chief Operating Officer</p>
                     <p class="body-small" style="color: var(--color-gray-400);">
-                        Overseeing WorldEmp Japan operations and global talent acquisition strategies.
+                        Overseeing WorldEmp Japan operations and global talent acquisition. Former McKinsey partner with expertise in cross-cultural business transformation.
                     </p>
                 </div>
 
                 <div class="team-member">
                     <div class="team-photo">Photo</div>
-                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Infrastructure Leadership</h3>
+                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Hiroshi Nakamura</h3>
                     <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Head of Infrastructure</p>
                     <p class="body-small" style="color: var(--color-gray-400);">
-                        Driving datacenter development and partnerships with nuclear technology providers.
+                        Driving zero-carbon datacenter development and nuclear technology partnerships. Former TEPCO executive with 20+ years in energy infrastructure.
                     </p>
                 </div>
             </div>
@@ -369,52 +355,7 @@
         </div>
     </section>
 
-    <!-- Footer (same as other pages) -->
-    <footer class="footer" style="background: var(--color-dark-surface); border-top: 1px solid var(--color-dark-border); padding: var(--space-20) 0 var(--space-8); margin-top: 0;">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-12); margin-bottom: var(--space-12);">
-                <div>
-                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">SOLUNAI</h4>
-                    <p class="body-small" style="color: var(--color-gray-400); margin-top: var(--space-4);">
-                        Building the Future from Japan to the World
-                    </p>
-                </div>
-                <div>
-                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Company</h4>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--color-gray-400);">About</a></li>
-                        <li style="margin-bottom: var(--space-2);"><a href="#careers" style="color: var(--color-gray-400);">Careers</a></li>
-                        <li style="margin-bottom: var(--space-2);"><a href="./resources.html" style="color: var(--color-gray-400);">Resources</a></li>
-                        <li style="margin-bottom: var(--space-2);"><a href="./investors.html" style="color: var(--color-gray-400);">Investors</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Contact</h4>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: var(--space-2);"><a href="mailto:info@solunai.com" style="color: var(--color-gray-400);">info@solunai.com</a></li>
-                        <li style="color: var(--color-gray-400);">Tokyo HQ</li>
-                        <li style="color: var(--color-gray-400);">+81-XX-XXXX-XXXX</li>
-                    </ul>
-                </div>
-            </div>
-            <div style="border-top: 1px solid var(--color-dark-border); padding-top: var(--space-8); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
-                <p style="color: var(--color-gray-500); font-size: var(--font-size-sm);">© 2025 Solunai. All rights reserved.</p>
-                <p style="color: var(--color-gray-500); font-size: var(--font-size-sm);">
-                    <a href="./legal/privacy.html" style="color: var(--color-gray-500);">Privacy</a> |
-                    <a href="./legal/terms.html" style="color: var(--color-gray-500);">Terms</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
 </body>
 </html>
