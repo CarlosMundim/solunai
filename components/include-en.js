@@ -28,6 +28,26 @@ document.addEventListener('DOMContentLoaded', async function() {
 });
 
 function initializeNavigation() {
+    // Set up language switcher
+    const currentPage = window.location.pathname;
+    const langJp = document.querySelector('.lang-jp');
+    const langEn = document.querySelector('.lang-en');
+    
+    if (langJp && langEn) {
+        // Determine current page name
+        const pageName = currentPage.split('/').pop() || 'index.html';
+        const basePageName = pageName.replace('.html', '');
+        
+        // Set up language links
+        langJp.href = `/${basePageName === 'index' ? '' : basePageName + '.html'}`;
+        langEn.href = `/en/${basePageName === 'index' ? '' : basePageName + '.html'}`;
+    }
+    
+    // Set active navigation item for about page
+    const aboutNav = document.querySelector('a[href="./about.html"]');
+    if (aboutNav && currentPage.includes('about')) {
+        aboutNav.style.color = 'var(--color-primary-400)';
+    }
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
