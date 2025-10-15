@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WorldEmp Japan: Access global talent in 2-6 weeks. Partnership with WorldEmp Amsterdam for IT, Engineering, Data, and Finance professionals.">
+    <meta name="description" content="WorldEmp Japan: Access global talent in 2-6 weeks. Recruit skilled international professionals in IT, Engineering, Data, and Finance.">
     <meta name="keywords" content="WorldEmp Japan, global talent, remote recruitment, IT recruitment Japan, engineering recruitment, data professionals">
     <title>WorldEmp Japan - Access Global Talent | Solunai</title>
 
@@ -230,6 +230,19 @@
             color: var(--color-white);
         }
 
+        /* Stats Grid Responsive */
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: var(--space-8) !important;
+            }
+        }
+        @media (max-width: 480px) {
+            .stats-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
         /* Navigation */
         .nav {
             position: fixed;
@@ -331,11 +344,12 @@
     <!-- Hero Section -->
     <section class="hero-worldemp">
         <div class="hero-content-worldemp">
-            <span class="hero-badge">🌏 Partnership with WorldEmp Amsterdam & India</span>
             <h1 class="hero-title-worldemp">Access All the Talent in the World!</h1>
             <p class="hero-subtitle-worldemp">
-                Recruit skilled international professionals in IT, Engineering, Data, and Finance<br>
-                <strong>New colleague in 2 to 6 weeks</strong> • No recruitment fees • Full remote support
+                Recruit skilled international professionals in IT, Engineering, Data, and Finance
+            </p>
+            <p class="hero-subtitle-worldemp" style="margin-top: var(--space-4); margin-bottom: var(--space-8);">
+                <strong>New colleague in 2 to 6 weeks • No recruitment fees • Full remote support</strong>
             </p>
             <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
                 <a href="#services" class="btn btn-large" style="background: white; color: var(--color-worldemp-start);">
@@ -450,7 +464,7 @@
                     <div class="timeline-content">
                         <h3 class="timeline-title">Global Talent Search</h3>
                         <p class="timeline-description">
-                            Our network spans Amsterdam, India, Vietnam, Indonesia, China, and beyond. We tap into pre-vetted talent pools and conduct targeted searches.
+                            Our global network spans Vietnam, Indonesia, China, and beyond. We tap into pre-vetted talent pools and conduct targeted searches across multiple countries.
                         </p>
                     </div>
                 </div>
@@ -531,28 +545,28 @@
     </section>
 
     <!-- Statistics Section -->
-    <section class="section-xl" style="background: var(--gradient-worldemp); text-align: center; color: white;">
-        <div class="container-narrow">
-            <h2 class="heading-2" style="color: white; margin-bottom: var(--space-12);">
+    <section class="section-xl" style="background: var(--gradient-worldemp); text-align: center; color: white; min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+        <div class="container" style="max-width: 1000px;">
+            <h2 class="heading-2" style="color: white; margin-bottom: var(--space-16); font-size: clamp(2rem, 4vw, 3rem);">
                 Why Choose WorldEmp Japan?
             </h2>
 
-            <div class="grid grid-cols-4 gap-8" style="margin-bottom: var(--space-12);">
-                <div>
-                    <div class="heading-2" style="color: white;">2-6</div>
-                    <div class="body-base" style="color: rgba(255,255,255,0.9);">Weeks to Hire</div>
+            <div class="stats-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-12); margin-bottom: var(--space-16); max-width: 800px; margin-left: auto; margin-right: auto;">
+                <div style="padding: var(--space-6);">
+                    <div style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: var(--font-weight-black); color: white; margin-bottom: var(--space-2);">2-6</div>
+                    <div style="font-size: var(--font-size-lg); color: rgba(255,255,255,0.9); font-weight: var(--font-weight-medium);">Weeks to Hire</div>
                 </div>
-                <div>
-                    <div class="heading-2" style="color: white;">0%</div>
-                    <div class="body-base" style="color: rgba(255,255,255,0.9);">Recruitment Fees</div>
+                <div style="padding: var(--space-6);">
+                    <div style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: var(--font-weight-black); color: white; margin-bottom: var(--space-2);">0%</div>
+                    <div style="font-size: var(--font-size-lg); color: rgba(255,255,255,0.9); font-weight: var(--font-weight-medium);">Recruitment Fees</div>
                 </div>
-                <div>
-                    <div class="heading-2" style="color: white;">87%</div>
-                    <div class="body-base" style="color: rgba(255,255,255,0.9);">Match Accuracy</div>
+                <div style="padding: var(--space-6);">
+                    <div style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: var(--font-weight-black); color: white; margin-bottom: var(--space-2);">87%</div>
+                    <div style="font-size: var(--font-size-lg); color: rgba(255,255,255,0.9); font-weight: var(--font-weight-medium);">Match Accuracy</div>
                 </div>
-                <div>
-                    <div class="heading-2" style="color: white;">15+</div>
-                    <div class="body-base" style="color: rgba(255,255,255,0.9);">Countries</div>
+                <div style="padding: var(--space-6);">
+                    <div style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: var(--font-weight-black); color: white; margin-bottom: var(--space-2);">15+</div>
+                    <div style="font-size: var(--font-size-lg); color: rgba(255,255,255,0.9); font-weight: var(--font-weight-medium);">Countries</div>
                 </div>
             </div>
 
@@ -571,11 +585,11 @@
                 <div style="margin-bottom: var(--space-8);">
                     <img src="./logos/WorldEmpLogo_white.png" alt="WorldEmp" style="max-width: 300px; height: auto;">
                 </div>
-                <span class="caption">GLOBAL PARTNERSHIP</span>
+                <span class="caption">GLOBAL NETWORK</span>
                 <h2 class="heading-2" style="margin-top: var(--space-4);">Powered by WorldEmp Network</h2>
                 <p class="body-large" style="max-width: 800px; margin: var(--space-6) auto; color: var(--color-gray-400);">
-                    WorldEmp Japan operates in partnership with <strong>WorldEmp Amsterdam</strong> and <strong>WorldEmp India</strong>,
-                    giving you access to their extensive global talent network and proven recruitment methodologies.
+                    WorldEmp Japan operates as part of the global WorldEmp network,
+                    giving you access to extensive international talent pools and proven recruitment methodologies.
                 </p>
                 <div style="margin-top: var(--space-8);">
                     <p class="body-base" style="color: var(--color-gray-400);">
