@@ -1270,74 +1270,163 @@
                 </p>
             </div>
 
-            <div class="tech-stack">
-                <h3 class="heading-4" style="margin-bottom: var(--space-8);">Technical Architecture Summary</h3>
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <div class="tech-item-label">Infrastructure</div>
-                        <div class="tech-item-value">Kubernetes</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">AI Services</div>
-                        <div class="tech-item-value">Python/Node</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">APIs</div>
-                        <div class="tech-item-value">GraphQL/REST</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Data Architecture</div>
-                        <div class="tech-item-value">Multi-tenant Mesh</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Knowledge Graph</div>
-                        <div class="tech-item-value">Immigration & Labor</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Document AI</div>
-                        <div class="tech-item-value">Vision Models</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Credentials</div>
-                        <div class="tech-item-value">W3C VC/DID</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Voice AI</div>
-                        <div class="tech-item-value">ASR/TTS/NLU</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Languages</div>
-                        <div class="tech-item-value">JP/EN/CN Tuned</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Compliance</div>
-                        <div class="tech-item-value">SOC2/APPI/GDPR</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Security</div>
-                        <div class="tech-item-value">Zero-Trust</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Auditability</div>
-                        <div class="tech-item-value">Full Audit Logs</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Model Flexibility</div>
-                        <div class="tech-item-value">BYO-LMM</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Deployment</div>
-                        <div class="tech-item-value">Cloud-Native</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Scalability</div>
-                        <div class="tech-item-value">Microservices</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Uptime</div>
-                        <div class="tech-item-value">99.9% SLA</div>
+            <div class="tech-stack" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-12);">
+                
+                <!-- Core Platform Architecture -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-primary-400);">Core Platform Architecture</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">Infrastructure</div>
+                            <div class="tech-item-value">Kubernetes</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">AI Services</div>
+                            <div class="tech-item-value">Python/Node</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">APIs</div>
+                            <div class="tech-item-value">GraphQL/REST</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Data Architecture</div>
+                            <div class="tech-item-value">Multi-tenant Mesh</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Deployment</div>
+                            <div class="tech-item-value">Cloud-Native</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Scalability</div>
+                            <div class="tech-item-value">Microservices</div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- AI & ML Stack -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-accent);">AI & Machine Learning</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">Knowledge Graph</div>
+                            <div class="tech-item-value">Immigration & Labor</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Document AI</div>
+                            <div class="tech-item-value">Vision Models</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Voice AI</div>
+                            <div class="tech-item-value">ASR/TTS/NLU</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Languages</div>
+                            <div class="tech-item-value">JP/EN/CN Tuned</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Model Flexibility</div>
+                            <div class="tech-item-value">BYO-LLM</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">ML Pipeline</div>
+                            <div class="tech-item-value">MLOps/AutoML</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security & Compliance -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-secondary-400);">Security & Compliance</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">Compliance</div>
+                            <div class="tech-item-value">SOC2/APPI/GDPR</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Security</div>
+                            <div class="tech-item-value">Zero-Trust</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Auditability</div>
+                            <div class="tech-item-value">Full Audit Logs</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Identity</div>
+                            <div class="tech-item-value">SSO/RBAC</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Encryption</div>
+                            <div class="tech-item-value">AES-256/TLS</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Privacy</div>
+                            <div class="tech-item-value">PII Masking</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data & Analytics -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-success-400);">Data & Analytics</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">Credentials</div>
+                            <div class="tech-item-value">W3C VC/DID</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Data Lake</div>
+                            <div class="tech-item-value">S3/Delta Lake</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Analytics</div>
+                            <div class="tech-item-value">Real-time/Batch</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">BI Integration</div>
+                            <div class="tech-item-value">Tableau/Power BI</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Feature Store</div>
+                            <div class="tech-item-value">Feast/Tecton</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Lineage</div>
+                            <div class="tech-item-value">Data Catalog</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operations & Monitoring -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-warning-400);">Operations & Monitoring</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">Uptime</div>
+                            <div class="tech-item-value">99.9% SLA</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Monitoring</div>
+                            <div class="tech-item-value">Prometheus/Grafana</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Logging</div>
+                            <div class="tech-item-value">ELK Stack</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Alerting</div>
+                            <div class="tech-item-value">PagerDuty/Slack</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Backup</div>
+                            <div class="tech-item-value">Multi-region</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Disaster Recovery</div>
+                            <div class="tech-item-value">RTO < 4hrs</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
