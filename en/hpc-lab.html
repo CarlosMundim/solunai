@@ -8,24 +8,226 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/design-system.css">
     <style>
-        .hero-hpc {
-            background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 50%, #3B82F6 100%);
-            padding: 10rem 0 6rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-hpc::before {
-            content: '';
-            position: absolute;
+        /* Navigation */
+        .nav {
+            position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            bottom: 0;
-            background:
-                radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.2) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(20, 184, 166, 0.2) 0%, transparent 50%);
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-dark-border);
+            z-index: var(--z-index-fixed);
+            transition: all var(--transition-base);
+        }
+        .nav-container {
+            max-width: var(--container-2xl);
+            margin: 0 auto;
+            padding: var(--space-4) var(--space-6);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-logo {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .nav-links {
+            display: flex;
+            gap: var(--space-8);
+            align-items: center;
+        }
+        .nav-link {
+            color: var(--color-gray-300);
+            font-weight: var(--font-weight-medium);
+            transition: color var(--transition-fast);
+            padding: var(--space-2) 0;
+        }
+        .nav-link:hover {
+            color: var(--color-primary-400);
+        }
+        .nav-cta {
+            display: flex;
+            gap: var(--space-3);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--color-dark-surface);
+            border-top: 1px solid var(--color-dark-border);
+            padding: var(--space-20) 0 var(--space-8);
+            margin-top: var(--space-32);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-12);
+            margin-bottom: var(--space-12);
+        }
+        .footer-section h4 {
+            color: var(--color-white);
+            margin-bottom: var(--space-4);
+        }
+        .footer-section ul {
+            list-style: none;
+        }
+        .footer-section ul li {
+            margin-bottom: var(--space-2);
+        }
+        .footer-section ul li a {
+            color: var(--color-gray-400);
+            transition: color var(--transition-fast);
+        }
+        .footer-section ul li a:hover {
+            color: var(--color-primary-400);
+        }
+        .footer-bottom {
+            border-top: 1px solid var(--color-dark-border);
+            padding-top: var(--space-8);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: var(--space-4);
+        }
+        .footer-bottom p {
+            color: var(--color-gray-500);
+            font-size: var(--font-size-sm);
+        }
+        .footer-social {
+            display: flex;
+            gap: var(--space-4);
+        }
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-base);
+            background: var(--color-dark-surface-elevated);
+            border: 1px solid var(--color-dark-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-fast);
+        }
+        .social-link:hover {
+            border-color: var(--color-primary-600);
+            background: var(--color-primary-600);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section - Harmonized with Homepage */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-dark);
+            overflow: hidden;
+        }
+
+        .hero-background {
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-mesh);
+            opacity: 0.6;
+        }
+
+        .hero-particles {
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(20, 184, 166, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 40%);
             animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 1000px;
+            padding: var(--space-8) var(--space-4);
+        }
+        
+        @media (min-width: 768px) {
+            .hero-content {
+                padding: var(--space-8) var(--space-6);
+            }
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: var(--space-2) var(--space-4);
+            background: rgba(37, 99, 235, 0.2);
+            border: 1px solid var(--color-primary-600);
+            border-radius: var(--radius-full);
+            color: var(--color-primary-400);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-8);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 2rem + 2vw, 4.5rem);
+            font-weight: var(--font-weight-black);
+            line-height: 1.2;
+            letter-spacing: var(--letter-spacing-tighter);
+            margin-bottom: var(--space-6);
+            animation: fadeInUp 1s ease-out 0.2s both;
+            color: white;
+        }
+
+        .hero-title-gradient {
+            background: linear-gradient(135deg, #FFFFFF 0%, #60A5FA 50%, #3B82F6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: var(--font-size-xl);
+            color: var(--color-gray-300);
+            line-height: var(--line-height-relaxed);
+            margin-bottom: var(--space-12);
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: var(--space-4);
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.6s both;
+            margin-bottom: var(--space-8);
+        }
+
+        .hero-trust-bar {
+            display: flex;
+            gap: var(--space-6);
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: var(--font-size-sm);
+            color: var(--color-gray-400);
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+
+        .hero-trust-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .hero-trust-item::before {
+            content: '✓';
+            color: var(--color-accent);
+            font-weight: var(--font-weight-bold);
         }
 
         .stats-banner {
@@ -280,7 +482,22 @@
             font-weight: var(--font-weight-semibold);
         }
 
+        /* Remove duplicate pulse - using design-system.css animations */
+
         @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero-cta {
+                flex-direction: column;
+                width: 100%;
+            }
+            .hero-cta .btn {
+                width: 100%;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
             .stats-banner {
                 grid-template-columns: repeat(2, 1fr);
             }
@@ -301,73 +518,169 @@
     </style>
 </head>
 <body>
-    <!-- Navigation (same as homepage) -->
+    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <a href="./index.html" style="display: flex; align-items: center;">
-                <img src="./logos/solunai_logo_white.png" alt="Solunai" style="height: 80px;">
+            <a href="/" class="nav-logo">
+                <img src="./logos/solunai_logo_white.png" alt="Solunai" class="nav-logo-img">
             </a>
             <div class="nav-links">
-                <a href="./hpc-lab.html" class="nav-link" style="color: var(--color-primary-400);">HPC Lab</a>
-                <a href="./worldemp-japan.html" class="nav-link">WorldEmp Japan</a>
-                <a href="/datacenter.html" class="nav-link">Datacenter</a>
-                <a href="/about.html" class="nav-link">About</a>
-                <a href="/investors.html" class="nav-link">Investors</a>
+                <a href="./hpc-lab.html" class="nav-link">HPC Lab</a>
+                <a href="./worldemp-japan.html" class="nav-link">WorldEmp</a>
+                <a href="./datacenter.html" class="nav-link">データセンター</a>
+                <a href="./about.html" class="nav-link">会社概要</a>
+                <a href="./resources.html" class="nav-link">リソース</a>
+                <a href="./investors.html" class="nav-link">投資家向け</a>
+                <div class="lang-switcher" style="display: inline-flex; margin-left: 2rem; gap: 0.5rem;">
+                    <a href="/" class="lang-btn" style="padding: 0.5rem 1rem; background: rgba(255,255,255,0.2); color: white; border-radius: 0.25rem; text-decoration: none; font-weight: 500;">JP</a>
+                    <a href="/en/" class="lang-btn" style="padding: 0.5rem 1rem; background: transparent; color: white; border-radius: 0.25rem; text-decoration: none;">EN</a>
+                </div>
             </div>
             <div class="nav-cta">
-                <span class="nav-link">EN / JP</span>
-                <a href="/contact.html" class="btn btn-primary btn-small">Contact</a>
+                <a href="#contact" class="btn btn-primary btn-small">お問い合わせ</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-hpc">
-        <div class="container">
-            <div style="max-width: 900px; position: relative; z-index: 10;">
-                <span class="badge badge-primary" style="margin-bottom: var(--space-6);">
-                    🚀 HPC LAB • 28 AI SOLUTIONS • ENTERPRISE-READY
-                </span>
-                <h1 class="heading-hero" style="color: white; margin-bottom: var(--space-6);">
-                    The Complete AI Platform for <span style="background: linear-gradient(135deg, #FFFFFF 0%, #60A5FA 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Enterprise Success</span>
-                </h1>
-                <p class="lead" style="color: rgba(255,255,255,0.9); margin-bottom: var(--space-10);">
-                    From talent mobility to healthcare AI, from municipal governance to sovereign infrastructure—Solunai HPC Lab delivers 28 production-ready AI solutions built on Japanese precision and global innovation.
-                </p>
-                <div class="flex gap-4" style="flex-wrap: wrap;">
-                    <a href="#products" class="btn btn-large" style="background: white; color: var(--color-primary-600);">
-                        Explore Solutions
-                    </a>
-                    <a href="#tech-stack" class="btn btn-large btn-secondary" style="border-color: white; color: white;">
-                        View Tech Stack
-                    </a>
-                    <a href="/investors.html" class="btn btn-large btn-secondary" style="border-color: white; color: white;">
-                        Investor Materials
-                    </a>
-                </div>
+    <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <!-- Breadcrumb -->
+            
+            <!-- Title -->
+            <h1 class="hero-title">
+                The Complete AI Platform<br/>for Enterprise Success
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="hero-subtitle">
+                From talent mobility to healthcare AI, from municipal governance to sovereign infrastructure—enterprise-grade solutions built on Japanese precision and global innovation.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary btn-large">Schedule Platform Demo</a>
+                <a href="#tech-stack" class="btn btn-secondary btn-large">Download Technical Whitepaper</a>
+            </div>
+            
+            <!-- Trust Bar -->
+            <div class="hero-trust-bar">
+                <div class="hero-trust-item">SOC 2 Type II Certified</div>
+                <div class="hero-trust-item">APPI Compliant</div>
+                <div class="hero-trust-item">Kubernetes Orchestrated</div>
+                <div class="hero-trust-item">Scalable Architecture</div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Banner -->
+    <!-- Platform Stats -->
     <section class="section">
         <div class="container">
             <div class="stats-banner">
                 <div class="stat-box">
                     <div class="stat-box-number">28</div>
                     <div class="stat-box-label">AI Solutions</div>
+                    <div style="font-size: 0.75rem; color: var(--color-gray-500); margin-top: 0.25rem;">Production-ready across 7 verticals</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-box-number">7</div>
-                    <div class="stat-box-label">Industry Verticals</div>
+                    <div class="stat-box-number">99.9%</div>
+                    <div class="stat-box-label">Platform Uptime</div>
+                    <div style="font-size: 0.75rem; color: var(--color-gray-500); margin-top: 0.25rem;">Enterprise-grade reliability</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-box-number">85%+</div>
-                    <div class="stat-box-label">Efficiency Gains</div>
+                    <div class="stat-box-number">18+</div>
+                    <div class="stat-box-label">Visa Types</div>
+                    <div style="font-size: 0.75rem; color: var(--color-gray-500); margin-top: 0.25rem;">Global compliance knowledge</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-box-number">2025-27</div>
-                    <div class="stat-box-label">Roadmap</div>
+                    <div class="stat-box-number">Scalable</div>
+                    <div class="stat-box-label">Architecture</div>
+                    <div style="font-size: 0.75rem; color: var(--color-gray-500); margin-top: 0.25rem;">Kubernetes-native scaling</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 47-Dimensions Platform Spotlight -->
+    <section class="section-xl" style="background: linear-gradient(135deg, var(--color-primary-600) 0%, var(--color-accent) 100%); position: relative; overflow: hidden;">
+        <!-- Background Pattern -->
+        <div style="position: absolute; inset: 0; background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.05) 0%, transparent 50%); opacity: 0.6;"></div>
+        
+        <div class="container" style="position: relative; z-index: 10;">
+            <div style="text-align: center; max-width: 1000px; margin: 0 auto;">
+                <!-- Badge -->
+                <div style="display: inline-block; padding: var(--space-2) var(--space-6); background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); border-radius: var(--radius-full); color: white; font-size: var(--font-size-sm); font-weight: var(--font-weight-semibold); margin-bottom: var(--space-6);">
+                    🌟 FLAGSHIP PLATFORM
+                </div>
+                
+                <!-- Title -->
+                <h2 style="font-size: clamp(2.5rem, 4vw, 4rem); font-weight: var(--font-weight-black); color: white; line-height: 1.1; margin-bottom: var(--space-6);">
+                    47-Dimensions Platform
+                </h2>
+                
+                <!-- Subtitle -->
+                <p style="font-size: var(--font-size-xl); color: rgba(255,255,255,0.9); line-height: var(--line-height-relaxed); margin-bottom: var(--space-12);">
+                    The intelligent core powering all Solunai solutions. A multi-dimensional assessment engine that evaluates cultural fit, skills, compliance, and opportunity matching across 47 critical vectors.
+                </p>
+                
+                <!-- Features Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-8); margin-bottom: var(--space-12);">
+                    <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-xl); padding: var(--space-8); text-align: left;">
+                        <div style="font-size: var(--font-size-2xl); margin-bottom: var(--space-4);">🧠</div>
+                        <h3 style="color: white; font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); margin-bottom: var(--space-3);">Cultural Intelligence Engine</h3>
+                        <p style="color: rgba(255,255,255,0.8); font-size: var(--font-size-sm);">47-vector analysis of cultural adaptation potential, language readiness, and workplace integration probability</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-xl); padding: var(--space-8); text-align: left;">
+                        <div style="font-size: var(--font-size-2xl); margin-bottom: var(--space-4);">⚖️</div>
+                        <h3 style="color: white; font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); margin-bottom: var(--space-3);">Compliance Oracle</h3>
+                        <p style="color: rgba(255,255,255,0.8); font-size: var(--font-size-sm);">Real-time visa eligibility, labour law compliance, and regulatory requirement matching across 18+ visa categories</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-xl); padding: var(--space-8); text-align: left;">
+                        <div style="font-size: var(--font-size-2xl); margin-bottom: var(--space-4);">🎯</div>
+                        <h3 style="color: white; font-size: var(--font-size-lg); font-weight: var(--font-weight-bold); margin-bottom: var(--space-3);">Perfect Matching Algorithm</h3>
+                        <p style="color: rgba(255,255,255,0.8); font-size: var(--font-size-sm);">AI-driven candidate-opportunity matching with 87% accuracy, optimizing for skills, culture, and long-term success</p>
+                    </div>
+                </div>
+                
+                <!-- Value Propositions -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-6); margin-bottom: var(--space-12);">
+                    <div style="text-align: center;">
+                        <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: white; margin-bottom: var(--space-2);">💰</div>
+                        <h4 style="color: white; font-weight: var(--font-weight-semibold); margin-bottom: var(--space-2);">White-Label Ready</h4>
+                        <p style="color: rgba(255,255,255,0.8); font-size: var(--font-size-sm);">Complete platform licensing for enterprises and government agencies</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: white; margin-bottom: var(--space-2);">🌐</div>
+                        <h4 style="color: white; font-weight: var(--font-weight-semibold); margin-bottom: var(--space-2);">WorldEmp Integration</h4>
+                        <p style="color: rgba(255,255,255,0.8); font-size: var(--font-size-sm);">Powers all talent mobility and workforce placement decisions</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: white; margin-bottom: var(--space-2);">🏛️</div>
+                        <h4 style="color: white; font-weight: var(--font-weight-semibold); margin-bottom: var(--space-2);">Government Grade</h4>
+                        <p style="color: rgba(255,255,255,0.8); font-size: var(--font-size-sm);">SOC2/APPI compliant with full audit trails and data sovereignty</p>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="font-size: var(--font-size-3xl); font-weight: var(--font-weight-bold); color: white; margin-bottom: var(--space-2);">📈</div>
+                        <h4 style="color: white; font-weight: var(--font-weight-semibold); margin-bottom: var(--space-2);">Strategic Asset</h4>
+                        <p style="color: rgba(255,255,255,0.8); font-size: var(--font-size-sm);">Core IP driving revenue across all business verticals</p>
+                    </div>
+                </div>
+                
+                <!-- CTA Buttons -->
+                <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                    <a href="#contact" style="display: inline-flex; align-items: center; padding: var(--space-4) var(--space-8); background: white; color: var(--color-primary-600); border-radius: var(--radius-base); font-weight: var(--font-weight-semibold); text-decoration: none; transition: all var(--transition-base); box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
+                        License 47-Dimensions Platform
+                    </a>
+                    <a href="#products" style="display: inline-flex; align-items: center; padding: var(--space-4) var(--space-8); background: transparent; color: white; border: 2px solid white; border-radius: var(--radius-base); font-weight: var(--font-weight-semibold); text-decoration: none; transition: all var(--transition-base);">
+                        Explore Integration Options
+                    </a>
                 </div>
             </div>
         </div>
@@ -397,7 +710,6 @@
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">aiKODA Orchestration Engine</h3>
-                            <span class="product-status status-ga">MVP Q1 2025</span>
                         </div>
                         <p class="product-description">
                             Multi-agent orchestration layer ('Assembly of Experts') coordinating specialized micro-agents across matching, onboarding, compliance, language, and analytics with explainability.
@@ -410,14 +722,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">≈30% operational cost reduction</span>
-                            <span class="product-timeline">GA: Q3 2025</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Chachie Agent Framework</h3>
-                            <span class="product-status status-mvp">MVP Q2 2025</span>
+                            
                         </div>
                         <p class="product-description">
                             Persistent-memory agent framework with 'soul continuity' across sessions, devices, and organizations. Policy-aware persona & tools registry.
@@ -430,14 +742,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">20% faster user adoption</span>
-                            <span class="product-timeline">GA: Q4 2025</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">NHI Soul Continuity Files</h3>
-                            <span class="product-status status-pilot">Prototype Q2 2025</span>
+                            
                         </div>
                         <p class="product-description">
                             Portable identity & long-term memory artifact for advanced agents (Koda/Claude-like), enabling institution-grade continuity and auditability.
@@ -450,7 +762,7 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Higher retention & trust</span>
-                            <span class="product-timeline">GA: Q2 2026</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -469,7 +781,7 @@
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Talent Matching Engine</h3>
-                            <span class="product-status status-mvp">Pilot Q4 2025</span>
+                            
                         </div>
                         <p class="product-description">
                             AI-driven matching interpreting skill graphs, language readiness, compliance eligibility, and cultural fit. Embedding models with constraint solver.
@@ -482,14 +794,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">85% efficiency uplift</span>
-                            <span class="product-timeline">GA: Q2 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Compliance Automation Engine</h3>
-                            <span class="product-status status-mvp">Pilot Q4 2025</span>
+                            
                         </div>
                         <p class="product-description">
                             Real-time immigration & labour compliance with document AI, eligibility calculators, audit trails. 18+ visa types knowledge graph.
@@ -502,14 +814,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">98% document accuracy</span>
-                            <span class="product-timeline">GA: Q2 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Onboarding Agent</h3>
-                            <span class="product-status status-pilot">MVP Q1 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Automates pre-arrival to day-90 workflows: language, housing, banking, HR, cultural orientation. Multi-agent playbooks.
@@ -522,14 +834,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">40% cost reduction</span>
-                            <span class="product-timeline">GA: Q3 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Digital Credentialing</h3>
-                            <span class="product-status status-pilot">MVP Q2 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Verifiable credentials (W3C-VC/DID) for training/licensing with instant verification. Healthcare, construction, IT certifications.
@@ -542,14 +854,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Eliminates fraud</span>
-                            <span class="product-timeline">GA: Q4 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Voice-AI for HR</h3>
-                            <span class="product-status status-pilot">MVP Q1 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Multilingual, domain-tuned voice for interviews, onboarding, Q&A, safety briefs. Custom acoustic models with LINE/WhatsApp integration.
@@ -562,14 +874,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">65% error reduction</span>
-                            <span class="product-timeline">GA: Q3 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Workforce Analytics</h3>
-                            <span class="product-status status-pilot">MVP Q2 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Predictive dashboards for placements, retention, subsidy yield, skill gaps. SHAP-based explainability and anomaly detection.
@@ -582,14 +894,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">40% planning gains</span>
-                            <span class="product-timeline">GA: Q4 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">EMI/JMI University</h3>
-                            <span class="product-status status-mvp">Pilots Q4 2025</span>
+                            
                         </div>
                         <p class="product-description">
                             Embedded English/Japanese-Medium Instruction agents with job-aligned curricula and placement pipelines for universities.
@@ -602,7 +914,7 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">65% productivity boost</span>
-                            <span class="product-timeline">GA: Q2-Q3 2026</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -621,7 +933,7 @@
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">LibreChattie (Enterprise)</h3>
-                            <span class="product-status status-mvp">Pilot Q3 2025</span>
+                            
                         </div>
                         <p class="product-description">
                             Privacy-compliant comms (chat/voice/file) for education & healthcare with policy controls, archives, E2EE with enterprise escrow.
@@ -634,14 +946,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Reduced risk exposure</span>
-                            <span class="product-timeline">GA: Q1 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">FreeChattie (Civic)</h3>
-                            <span class="product-status status-pilot">Pilots Q1 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Open, multilingual assistance for foreign residents: work, healthcare, housing, schooling, immigration basics. City hall integration.
@@ -654,14 +966,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Community impact</span>
-                            <span class="product-timeline">GA: Q3 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Voice-AI Concierge</h3>
-                            <span class="product-status status-pilot">MVP Q2 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Bilingual concierge for government & enterprise call centres with task completion. Telephony gateway (SIP/WebRTC) with safe handovers.
@@ -674,7 +986,7 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">50% throughput gain</span>
-                            <span class="product-timeline">GA: Q4 2026</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -693,7 +1005,7 @@
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Medical EMI/JMI Agents</h3>
-                            <span class="product-status status-mvp">Pilots Q4 2025</span>
+                            
                         </div>
                         <p class="product-description">
                             Job-aligned medical language training & simulation for nurses, caregivers, clinicians. OSCE practice, ward dialogues, documentation drills.
@@ -706,14 +1018,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">65% productivity gain</span>
-                            <span class="product-timeline">GA: Q2 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Patient-Doctor Assistant</h3>
-                            <span class="product-status status-pilot">MVP Q1 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Real-time interpretation & summarization at point of care with privacy-by-design. ER triage, outpatient, telehealth, consent explanations.
@@ -726,14 +1038,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Quality improvement</span>
-                            <span class="product-timeline">GA: Q1 2027</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Healthcare Credentialing</h3>
-                            <span class="product-status status-pilot">MVP Q2 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Automates specialty licensing, CPD tracking, cross-border recognition. Nurse licence renewal, foreign credential recognition, CPD attestations.
@@ -746,7 +1058,7 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">95% compliance</span>
-                            <span class="product-timeline">GA: Q4 2026</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -765,7 +1077,7 @@
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Adaptive Learning Agents</h3>
-                            <span class="product-status status-pilot">Pilots Q1 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             EMI/JMI agents delivering personalized, job-aligned language/skill pathways with employer feedback loops. Mastery models & project-based assessment.
@@ -778,14 +1090,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Better outcomes</span>
-                            <span class="product-timeline">GA: Q3 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Academic Credential Verifier</h3>
-                            <span class="product-status status-pilot">MVP Q2 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Instant verification of transcripts & diplomas across borders. Graduate recruitment, visa documentation, international exchanges with zero fraud.
@@ -798,14 +1110,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Zero fraud</span>
-                            <span class="product-timeline">GA: Q4 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Multilingual AI Tutors</h3>
-                            <span class="product-status status-pilot">MVP Q1 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             24/7 tutors for languages & domain topics with exam prep & interview simulation. Nursing Japanese, coding interviews, safety compliance exams.
@@ -818,7 +1130,7 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Retention improvement</span>
-                            <span class="product-timeline">GA: Q3 2026</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -837,7 +1149,7 @@
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Tech Onboarding (EPC/IT)</h3>
-                            <span class="product-status status-pilot">MVP Q2 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Rapid onboarding of engineers with domain terminology & safety/compliance briefings. EPC site inductions, codebase tours, SOC/Safety runbooks.
@@ -850,14 +1162,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">3× speed increase</span>
-                            <span class="product-timeline">GA: Q4 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Construction Workforce AI</h3>
-                            <span class="product-status status-pilot">Pilots Q2 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Safety/compliance language training & credential tracking for construction. Toolbox talks, site access checks, certificate verifications, mobile-first.
@@ -870,14 +1182,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Safety improvement</span>
-                            <span class="product-timeline">GA: Q1 2027</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Gov Compliance Dashboards</h3>
-                            <span class="product-status status-pilot">Pilots Q4 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Cross-agency dashboards for workforce flow, subsidy tracking, programme outcomes. Prefecture workforce command centres, ministry analytics.
@@ -890,14 +1202,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">40% cost reduction</span>
-                            <span class="product-timeline">GA: Q2 2027</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">MuniX Token & Concierge</h3>
-                            <span class="product-status status-pilot">Design Q4 2025</span>
+                            
                         </div>
                         <p class="product-description">
                             Tokenized incentives & civic concierge for newcomer retention. Housing credits, language rebates, local merchant rewards, transit & childcare credits.
@@ -910,14 +1222,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Retention increase</span>
-                            <span class="product-timeline">GA: Q1 2027</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Subsidy Navigator</h3>
-                            <span class="product-status status-pilot">MVP Q1 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Automates discovery, eligibility, application for salary subsidies, training grants, regional incentives. Rules engine with pre-filled forms & HRIS API.
@@ -930,14 +1242,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">40% cost savings</span>
-                            <span class="product-timeline">GA: Q3 2026</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Regional Revitalisation</h3>
-                            <span class="product-status status-pilot">Pilots Q2 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             All-in-one package to deploy foreign talent in rural areas with housing, training, incentives, employer matching. Town cluster deployments.
@@ -950,7 +1262,7 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Population growth</span>
-                            <span class="product-timeline">GA: Q1 2027</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -969,7 +1281,7 @@
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">HPC Labs (GPU Clusters)</h3>
-                            <span class="product-status status-pilot">MVP Q1 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Training/serving clusters for domain-tuned voice models, compliance AI, simulation workloads. Kubernetes + MIG with confidential compute options.
@@ -982,14 +1294,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Sovereign AI infrastructure</span>
-                            <span class="product-timeline">Scale-out 2026-27</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Sovereign Cloud / DataCentres</h3>
-                            <span class="product-status status-pilot">Design 2026</span>
+                            
                         </div>
                         <p class="product-description">
                             Sovereign hosting & data residency for regulated sectors. Multi-region HA, APPI/GDPR, key management, zero-trust, full auditability.
@@ -1002,14 +1314,14 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Regulatory compliance</span>
-                            <span class="product-timeline">Phased rollout 2027+</span>
+                            
                         </div>
                     </div>
 
                     <div class="product-card">
                         <div class="product-header">
                             <h3 class="product-title">Cangoo Interoperability</h3>
-                            <span class="product-status status-mvp">MVP Q4 2025</span>
+                            
                         </div>
                         <p class="product-description">
                             Adapters & data migrators to interoperate with legacy Cangoo workflows. Import employer, candidate, case data; schema harmonization with lineage.
@@ -1022,7 +1334,7 @@
                         </ul>
                         <div class="product-footer">
                             <span class="product-roi">Legacy preservation</span>
-                            <span class="product-timeline">GA: Q2 2026</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -1041,117 +1353,198 @@
                 </p>
             </div>
 
-            <div class="tech-stack">
-                <h3 class="heading-4" style="margin-bottom: var(--space-8);">Technical Architecture Summary</h3>
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <div class="tech-item-label">Infrastructure</div>
-                        <div class="tech-item-value">Kubernetes</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">AI Services</div>
-                        <div class="tech-item-value">Python/Node</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">APIs</div>
-                        <div class="tech-item-value">GraphQL/REST</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Data Architecture</div>
-                        <div class="tech-item-value">Multi-tenant Mesh</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Knowledge Graph</div>
-                        <div class="tech-item-value">Immigration & Labor</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Document AI</div>
-                        <div class="tech-item-value">Vision Models</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Credentials</div>
-                        <div class="tech-item-value">W3C VC/DID</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Voice AI</div>
-                        <div class="tech-item-value">ASR/TTS/NLU</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Languages</div>
-                        <div class="tech-item-value">JP/EN/CN Tuned</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Compliance</div>
-                        <div class="tech-item-value">SOC2/APPI/GDPR</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Security</div>
-                        <div class="tech-item-value">Zero-Trust</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Auditability</div>
-                        <div class="tech-item-value">Full Audit Logs</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Model Flexibility</div>
-                        <div class="tech-item-value">BYO-LMM</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Deployment</div>
-                        <div class="tech-item-value">Cloud-Native</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Scalability</div>
-                        <div class="tech-item-value">Microservices</div>
-                    </div>
-                    <div class="tech-item">
-                        <div class="tech-item-label">Uptime</div>
-                        <div class="tech-item-value">99.9% SLA</div>
+            <div class="tech-stack" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-12);">
+                
+                <!-- Core Platform -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-primary-400);">Core Platform</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">Infrastructure</div>
+                            <div class="tech-item-value">Kubernetes</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">AI Services</div>
+                            <div class="tech-item-value">Python/Node</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">APIs</div>
+                            <div class="tech-item-value">GraphQL/REST</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Data Architecture</div>
+                            <div class="tech-item-value">Multi-tenant Mesh</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Deployment</div>
+                            <div class="tech-item-value">Cloud-Native</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Scalability</div>
+                            <div class="tech-item-value">Microservices</div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- AI & ML Stack -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-accent);">AI & Machine Learning</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">Knowledge Graph</div>
+                            <div class="tech-item-value">Immigration & Labor</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Document AI</div>
+                            <div class="tech-item-value">Vision Models</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Voice AI</div>
+                            <div class="tech-item-value">ASR/TTS/NLU</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Languages</div>
+                            <div class="tech-item-value">JP/EN/CN Tuned</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Model Flexibility</div>
+                            <div class="tech-item-value">BYO-LLM</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">ML Pipeline</div>
+                            <div class="tech-item-value">MLOps/AutoML</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security & Compliance -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-secondary-400);">Security & Compliance</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">Compliance</div>
+                            <div class="tech-item-value">SOC2/APPI/GDPR</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Security</div>
+                            <div class="tech-item-value">Zero-Trust</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Auditability</div>
+                            <div class="tech-item-value">Full Audit Logs</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Identity</div>
+                            <div class="tech-item-value">SSO/RBAC</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Encryption</div>
+                            <div class="tech-item-value">AES-256/TLS</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Privacy</div>
+                            <div class="tech-item-value">PII Masking</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data & Analytics -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-success-400);">Data & Analytics</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">Credentials</div>
+                            <div class="tech-item-value">W3C VC/DID</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Data Lake</div>
+                            <div class="tech-item-value">S3/Delta Lake</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Analytics</div>
+                            <div class="tech-item-value">Real-time/Batch</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">BI Integration</div>
+                            <div class="tech-item-value">Tableau/Power BI</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Feature Store</div>
+                            <div class="tech-item-value">Feast/Tecton</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Lineage</div>
+                            <div class="tech-item-value">Data Catalog</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operations & Monitoring -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-warning-400);">Operations & Monitoring</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">Uptime</div>
+                            <div class="tech-item-value">99.9% SLA</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Monitoring</div>
+                            <div class="tech-item-value">Prometheus/Grafana</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Logging</div>
+                            <div class="tech-item-value">ELK Stack</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Alerting</div>
+                            <div class="tech-item-value">PagerDuty/Slack</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Backup</div>
+                            <div class="tech-item-value">Multi-region</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Disaster Recovery</div>
+                            <div class="tech-item-value">RTO < 4hrs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integration & APIs -->
+                <div class="tech-section">
+                    <h3 class="heading-4" style="margin-bottom: var(--space-6); color: var(--color-error-400);">Integration & APIs</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-item-label">API Gateway</div>
+                            <div class="tech-item-value">Kong/Istio</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Message Queue</div>
+                            <div class="tech-item-value">Kafka/RabbitMQ</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Webhooks</div>
+                            <div class="tech-item-value">Event-driven</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Rate Limiting</div>
+                            <div class="tech-item-value">Adaptive/Smart</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">SDK Support</div>
+                            <div class="tech-item-value">Multi-language</div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-label">Documentation</div>
+                            <div class="tech-item-value">OpenAPI/Swagger</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Monetization Section -->
-    <section class="section-xl">
-        <div class="container">
-            <div style="text-align: center; max-width: 800px; margin: 0 auto var(--space-16);">
-                <span class="caption">BUSINESS MODEL</span>
-                <h2 class="heading-2" style="margin-top: var(--space-4);">Multiple Revenue Streams, Proven ROI</h2>
-            </div>
-
-            <div class="grid grid-cols-3 gap-8">
-                <div class="card">
-                    <h3 class="heading-5">SaaS Tiers</h3>
-                    <ul style="margin-top: var(--space-4); color: var(--color-gray-400); list-style: none;">
-                        <li style="padding: var(--space-2) 0;">Enterprise: ¥1.2M/mo</li>
-                        <li style="padding: var(--space-2) 0;">Mid-Market: ¥600k/mo</li>
-                        <li style="padding: var(--space-2) 0;">SME: ¥250k/mo</li>
-                        <li style="padding: var(--space-2) 0; color: var(--color-primary-400);">+ Add-ons (Analytics, Voice, API)</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 class="heading-5">📊 Usage-Based</h3>
-                    <ul style="margin-top: var(--space-4); color: var(--color-gray-400); list-style: none;">
-                        <li style="padding: var(--space-2) 0;">Placement fees: 15-20% first-year salary</li>
-                        <li style="padding: var(--space-2) 0;">Voice minutes (contact centre)</li>
-                        <li style="padding: var(--space-2) 0;">Concierge tasks completed</li>
-                        <li style="padding: var(--space-2) 0;">Credential verifications & issuance</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3 class="heading-5">Programme Pricing</h3>
-                    <ul style="margin-top: var(--space-4); color: var(--color-gray-400); list-style: none;">
-                        <li style="padding: var(--space-2) 0;">Municipal/regional deployments</li>
-                        <li style="padding: var(--space-2) 0;">MuniX token programmes</li>
-                        <li style="padding: var(--space-2) 0;">Revitalisation toolkits</li>
-                        <li style="padding: var(--space-2) 0;">Infrastructure: reserved capacity, hosting</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA Section -->
     <section class="section-xl" style="background: var(--gradient-hero); text-align: center;">
@@ -1183,44 +1576,84 @@
                 <div class="footer-section">
                     <h4>SOLUNAI</h4>
                     <p class="body-small" style="color: var(--color-gray-400); margin-top: var(--space-4);">
-                        Building the Future from Japan to the World
+                        日本から世界へ、未来を築く
                     </p>
                 </div>
+
                 <div class="footer-section">
                     <h4>HPC Lab</h4>
                     <ul>
-                        <li><a href="/hpc-lab/aikoda.html">aiKODA Platform</a></li>
-                        <li><a href="/hpc-lab/iworkz.html">iWORKZ Platform</a></li>
-                        <li><a href="/hpc-lab/healthcare.html">Healthcare AI</a></li>
-                        <li><a href="/hpc-lab/education.html">Education AI</a></li>
+                        <li><a href="./hpc-lab/aikoda.html">aiKODAプラットフォーム</a></li>
+                        <li><a href="./hpc-lab/iworkz.html">iWORKZプラットフォーム</a></li>
+                        <li><a href="./hpc-lab/white-brand.html">ホワイトブランドサービス</a></li>
+                        <li><a href="./hpc-lab/custom.html">カスタムソリューション</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Solutions</h4>
+                    <h4>WorldEmp Japan</h4>
                     <ul>
-                        <li><a href="/hpc-lab/communications.html">Communications & Voice</a></li>
-                        <li><a href="/hpc-lab/government.html">Government & Industry</a></li>
-                        <li><a href="/hpc-lab/infrastructure.html">Infrastructure</a></li>
+                        <li><a href="./worldemp-japan/employers.html">雇用主向け</a></li>
+                        <li><a href="./worldemp-japan/talent.html">人材向け</a></li>
+                        <li><a href="./worldemp-japan/how-it-works.html">仕組み</a></li>
+                        <li><a href="./worldemp-japan/contact.html">お問い合わせ</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-section">
-                    <h4>Company</h4>
+                    <h4>データセンター</h4>
                     <ul>
-                        <li><a href="/about.html">About</a></li>
-                        <li><a href="/investors.html">Investors</a></li>
-                        <li><a href="/resources/blog.html">Blog</a></li>
-                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="./datacenter/technology.html">技術</a></li>
+                        <li><a href="./datacenter/applications.html">アプリケーション</a></li>
+                        <li><a href="./datacenter/investment.html">投資</a></li>
+                        <li><a href="./datacenter/contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>会社情報</h4>
+                    <ul>
+                        <li><a href="./about.html">会社概要</a></li>
+                        <li><a href="./about/careers.html">採用情報</a></li>
+                        <li><a href="./resources/blog.html">ブログ</a></li>
+                        <li><a href="./investors.html">投資家向け</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>お問い合わせ</h4>
+                    <ul>
+                        <li><a href="mailto:info@solunai.co.jp">info@solunai.co.jp</a></li>
+                        <li style="margin-top: 1rem;"><strong>本社:</strong></li>
+                        <li>WISE NEXT新横浜 4F</li>
+                        <li>神奈川県横浜市港北区2-5-14</li>
+                        <li>〒222-0033</li>
+                        <li><a href="tel:+81452859480">045-285-9480</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: transparent;">_</h4>
+                    <ul>
+                        <li style="color: transparent;">_</li>
+                        <li style="margin-top: 1rem;"><strong>東京支社:</strong></li>
+                        <li>銀座大竹ビジデンス 2F</li>
+                        <li>東京都中央区銀座1-22-11</li>
+                        <li>〒104-0061</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2025 Solunai. All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="#" class="social-link">in</a>
-                    <a href="#" class="social-link">𝕏</a>
-                    <a href="#" class="social-link">▶</a>
-                    <a href="#" class="social-link">⚙</a>
+                    <a href="https://linkedin.com/company/solunai" class="social-link" aria-label="LinkedIn">in</a>
+                    <a href="https://twitter.com/solunai_jp" class="social-link" aria-label="Twitter">𝕏</a>
+                    <a href="https://youtube.com/@solunai" class="social-link" aria-label="YouTube">▶</a>
+                    <a href="https://instagram.com/solunai_official" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="https://line.me/R/ti/p/solunai" class="social-link" aria-label="LINE">💬</a>
                 </div>
+                <p><a href="./legal/privacy.html" style="color: var(--color-gray-500);">プライバシー</a> |
+                   <a href="./legal/terms.html" style="color: var(--color-gray-500);">利用規約</a></p>
             </div>
         </div>
     </footer>
