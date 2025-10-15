@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorldEmp Japan: Access global talent in 2-6 weeks. Partnership with WorldEmp Amsterdam for IT, Engineering, Data, and Finance professionals.">
+    <meta name="keywords" content="WorldEmp Japan, global talent, remote recruitment, IT recruitment Japan, engineering recruitment, data professionals">
+    <title>WorldEmp Japan - Access Global Talent | Solunai</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/design-system.css">
+
+    <style>
+        body {
+            background: var(--color-dark-bg);
+            color: var(--color-dark-text-primary);
+            font-family: var(--font-family-primary);
+        }
+
+        /* Hero Section - WorldEmp Style */
+        .hero-worldemp {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #150958 0%, #7C3AED 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-worldemp::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(124, 58, 237, 0.3), transparent 60%),
+                        radial-gradient(circle at 70% 50%, rgba(139, 92, 246, 0.2), transparent 50%);
+        }
+
+        .hero-content-worldemp {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 900px;
+            padding: var(--space-8);
+        }
+
+        .hero-title-worldemp {
+            font-size: var(--font-size-6xl);
+            font-weight: var(--font-weight-black);
+            color: var(--color-white);
+            margin-bottom: var(--space-6);
+            line-height: var(--line-height-tight);
+        }
+
+        .hero-subtitle-worldemp {
+            font-size: var(--font-size-xl);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--space-10);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: var(--space-2) var(--space-4);
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--radius-full);
+            color: var(--color-white);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-6);
+        }
+
+        /* Service Cards Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-8);
+            margin-top: var(--space-12);
+        }
+
+        .service-card {
+            background: var(--color-dark-surface);
+            border: 1px solid var(--color-dark-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-worldemp);
+            transform: scaleX(0);
+            transition: transform var(--transition-base);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--color-worldemp-start);
+            box-shadow: var(--shadow-dark-lg);
+        }
+
+        .service-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--gradient-worldemp);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-white);
+            margin-bottom: var(--space-4);
+        }
+
+        .service-title {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-white);
+            margin-bottom: var(--space-3);
+        }
+
+        .service-description {
+            color: var(--color-gray-400);
+            line-height: var(--line-height-relaxed);
+            margin-bottom: var(--space-4);
+        }
+
+        .service-link {
+            color: var(--color-worldemp-start);
+            font-weight: var(--font-weight-semibold);
+            transition: color var(--transition-fast);
+        }
+
+        .service-link:hover {
+            color: var(--color-worldemp-end);
+        }
+
+        /* Timeline/Process Section */
+        .timeline-container {
+            position: relative;
+            padding: var(--space-16) 0;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: var(--space-6);
+            margin-bottom: var(--space-12);
+            position: relative;
+        }
+
+        .timeline-number {
+            width: 64px;
+            height: 64px;
+            background: var(--gradient-worldemp);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-white);
+            flex-shrink: 0;
+        }
+
+        .timeline-content {
+            flex: 1;
+            padding-top: var(--space-2);
+        }
+
+        .timeline-title {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-white);
+            margin-bottom: var(--space-2);
+        }
+
+        .timeline-description {
+            color: var(--color-gray-400);
+            line-height: var(--line-height-relaxed);
+        }
+
+        /* Sectors Section */
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+        }
+
+        .sector-badge {
+            padding: var(--space-6);
+            background: var(--color-dark-surface);
+            border: 2px solid var(--color-dark-border);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            transition: all var(--transition-fast);
+        }
+
+        .sector-badge:hover {
+            border-color: var(--color-worldemp-start);
+            background: var(--color-dark-surface-elevated);
+            transform: translateY(-4px);
+        }
+
+        .sector-icon {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--space-3);
+        }
+
+        .sector-name {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-white);
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-dark-border);
+            z-index: var(--z-index-fixed);
+            transition: all var(--transition-base);
+        }
+
+        .nav-container {
+            max-width: var(--container-2xl);
+            margin: 0 auto;
+            padding: var(--space-4) var(--space-6);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--space-8);
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--color-gray-300);
+            font-weight: var(--font-weight-medium);
+            transition: color var(--transition-fast);
+            padding: var(--space-2) 0;
+        }
+
+        .nav-link:hover {
+            color: var(--color-primary-400);
+        }
+
+        .nav-cta {
+            display: flex;
+            gap: var(--space-3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title-worldemp {
+                font-size: var(--font-size-4xl);
+            }
+
+            .hero-subtitle-worldemp {
+                font-size: var(--font-size-lg);
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="./index.html" style="display: flex; align-items: center;">
+                <img src="./logos/solunai_logo_white.png" alt="Solunai" style="height: 80px;">
+            </a>
+            <div class="nav-links">
+                <a href="./hpc-lab.html" class="nav-link">HPC Lab</a>
+                <a href="./worldemp-japan.html" class="nav-link" style="color: var(--color-worldemp-start);">WorldEmp Japan</a>
+                <a href="./datacenter.html" class="nav-link">Datacenter</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <a href="./investors.html" class="nav-link">Investors</a>
+            </div>
+            <div class="nav-cta">
+                <span class="nav-link" style="cursor: pointer;">EN / JP</span>
+                <a href="#contact" class="btn btn-primary btn-small">Schedule Meeting</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-worldemp">
+        <div class="hero-content-worldemp">
+            <span class="hero-badge">🌏 Partnership with WorldEmp Amsterdam & India</span>
+            <h1 class="hero-title-worldemp">Access All the Talent in the World!</h1>
+            <p class="hero-subtitle-worldemp">
+                Recruit skilled international professionals in IT, Engineering, Data, and Finance<br>
+                <strong>New colleague in 2 to 6 weeks</strong> • No recruitment fees • Full remote support
+            </p>
+            <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
+                <a href="#services" class="btn btn-large" style="background: white; color: var(--color-worldemp-start);">
+                    Learn More
+                </a>
+                <a href="#contact" class="btn btn-large btn-secondary" style="border-color: white; color: white;">
+                    Schedule Meeting
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-xl">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">OUR SERVICES</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Complete End-to-End Service</h2>
+                <p class="body-large" style="max-width: 700px; margin: var(--space-6) auto 0; color: var(--color-gray-400);">
+                    From research to retention, we handle every aspect of global talent acquisition
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1: Research -->
+                <div class="service-card">
+                    <div class="service-icon">RS</div>
+                    <h3 class="service-title">Research & Talent Sourcing</h3>
+                    <p class="service-description">
+                        Deep market research to identify the right talent pools. We analyze global markets and source candidates that match your specific requirements and cultural needs.
+                    </p>
+                    <a href="#" class="service-link">More Information →</a>
+                </div>
+
+                <!-- Service 2: Recruitment -->
+                <div class="service-card">
+                    <div class="service-icon">RC</div>
+                    <h3 class="service-title">Recruitment & Selection</h3>
+                    <p class="service-description">
+                        Professional screening, interviews, and assessment. Leveraging aiKODA cultural intelligence for perfect candidate-company fit with 87% matching accuracy.
+                    </p>
+                    <a href="#" class="service-link">More Information →</a>
+                </div>
+
+                <!-- Service 3: Upskilling -->
+                <div class="service-card">
+                    <div class="service-icon">UP</div>
+                    <h3 class="service-title">Upskilling & Training</h3>
+                    <p class="service-description">
+                        Pre-boarding training programs tailored to your organization. Japanese business culture, technical skills, and language support to ensure day-one productivity.
+                    </p>
+                    <a href="#" class="service-link">More Information →</a>
+                </div>
+
+                <!-- Service 4: HR Support -->
+                <div class="service-card">
+                    <div class="service-icon">HR</div>
+                    <h3 class="service-title">HR Support & Administration</h3>
+                    <p class="service-description">
+                        Complete HR lifecycle management. Payroll, compliance, benefits administration, and ongoing employee support across 15+ countries.
+                    </p>
+                    <a href="#" class="service-link">More Information →</a>
+                </div>
+
+                <!-- Service 5: Workspace -->
+                <div class="service-card">
+                    <div class="service-icon">WS</div>
+                    <h3 class="service-title">Workspace & Infrastructure</h3>
+                    <p class="service-description">
+                        Physical and virtual workspace solutions. Co-working spaces, collaboration tools, and infrastructure setup for seamless remote integration.
+                    </p>
+                    <a href="#" class="service-link">More Information →</a>
+                </div>
+
+                <!-- Service 6: Ongoing Support -->
+                <div class="service-card">
+                    <div class="service-icon">OS</div>
+                    <h3 class="service-title">Ongoing Support & Retention</h3>
+                    <p class="service-description">
+                        Continuous relationship management. Performance monitoring, satisfaction surveys, career development, and retention programs for long-term success.
+                    </p>
+                    <a href="#" class="service-link">More Information →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline/Process Section -->
+    <section class="section-xl" style="background: var(--color-dark-surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">HOW IT WORKS</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">2-6 Week Placement Process</h2>
+                <p class="body-large" style="max-width: 700px; margin: var(--space-6) auto 0; color: var(--color-gray-400);">
+                    Our streamlined process gets you the right talent fast
+                </p>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Requirements Analysis</h3>
+                        <p class="timeline-description">
+                            We meet to understand your needs, company culture, and specific role requirements. Define technical skills, soft skills, and cultural fit criteria.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Global Talent Search</h3>
+                        <p class="timeline-description">
+                            Our network spans Amsterdam, India, Vietnam, Indonesia, China, and beyond. We tap into pre-vetted talent pools and conduct targeted searches.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">AI-Powered Screening</h3>
+                        <p class="timeline-description">
+                            aiKODA cultural intelligence and iWORKZ matching algorithms screen candidates. We present only the top 3-5 candidates that meet your criteria.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Interviews & Selection</h3>
+                        <p class="timeline-description">
+                            You interview shortlisted candidates via video calls. We facilitate technical assessments, cultural fit interviews, and reference checks.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Onboarding & Integration</h3>
+                        <p class="timeline-description">
+                            Pre-boarding training begins immediately. We handle all HR paperwork, compliance, and setup. Your new colleague starts productive from day one.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">6</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Ongoing Success</h3>
+                        <p class="timeline-description">
+                            Continuous support for both employer and employee. Regular check-ins, performance monitoring, and issue resolution to ensure long-term success.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Sectors -->
+    <section class="section-xl">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">TARGET SECTORS</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Specialists in High-Value Sectors</h2>
+                <p class="body-large" style="max-width: 700px; margin: var(--space-6) auto 0; color: var(--color-gray-400);">
+                    We focus on sectors where global talent makes the biggest impact
+                </p>
+            </div>
+
+            <div class="sectors-grid">
+                <div class="sector-badge">
+                    <div class="sector-icon">💻</div>
+                    <div class="sector-name">Information Technology</div>
+                </div>
+                <div class="sector-badge">
+                    <div class="sector-icon">📊</div>
+                    <div class="sector-name">Data Science & Analytics</div>
+                </div>
+                <div class="sector-badge">
+                    <div class="sector-icon">⚙️</div>
+                    <div class="sector-name">Engineering & Manufacturing</div>
+                </div>
+                <div class="sector-badge">
+                    <div class="sector-icon">💼</div>
+                    <div class="sector-name">Finance & Accounting</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section-xl" style="background: var(--gradient-worldemp); text-align: center; color: white;">
+        <div class="container-narrow">
+            <h2 class="heading-2" style="color: white; margin-bottom: var(--space-12);">
+                Why Choose WorldEmp Japan?
+            </h2>
+
+            <div class="grid grid-cols-4 gap-8" style="margin-bottom: var(--space-12);">
+                <div>
+                    <div class="heading-2" style="color: white;">2-6</div>
+                    <div class="body-base" style="color: rgba(255,255,255,0.9);">Weeks to Hire</div>
+                </div>
+                <div>
+                    <div class="heading-2" style="color: white;">0%</div>
+                    <div class="body-base" style="color: rgba(255,255,255,0.9);">Recruitment Fees</div>
+                </div>
+                <div>
+                    <div class="heading-2" style="color: white;">87%</div>
+                    <div class="body-base" style="color: rgba(255,255,255,0.9);">Match Accuracy</div>
+                </div>
+                <div>
+                    <div class="heading-2" style="color: white;">15+</div>
+                    <div class="body-base" style="color: rgba(255,255,255,0.9);">Countries</div>
+                </div>
+            </div>
+
+            <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
+                <a href="#contact" class="btn btn-large" style="background: white; color: var(--color-worldemp-start);">
+                    Schedule Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="section-xl">
+        <div class="container">
+            <div class="card card-elevated" style="padding: var(--space-12); text-align: center;">
+                <div style="margin-bottom: var(--space-8);">
+                    <img src="./logos/WorldEmpLogo_white.png" alt="WorldEmp" style="max-width: 300px; height: auto;">
+                </div>
+                <span class="caption">GLOBAL PARTNERSHIP</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Powered by WorldEmp Network</h2>
+                <p class="body-large" style="max-width: 800px; margin: var(--space-6) auto; color: var(--color-gray-400);">
+                    WorldEmp Japan operates in partnership with <strong>WorldEmp Amsterdam</strong> and <strong>WorldEmp India</strong>,
+                    giving you access to their extensive global talent network and proven recruitment methodologies.
+                </p>
+                <div style="margin-top: var(--space-8);">
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        <strong>Netherlands Headquarters</strong><br>
+                        Velsen-Zuid<br>
+                        Phone: +31 (0)88 – 400 29 00
+                    </p>
+                </div>
+                <div style="margin-top: var(--space-8);">
+                    <a href="https://worldemp.com/" target="_blank" class="btn btn-secondary">
+                        Visit WorldEmp.com →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="section-xl" style="background: var(--color-dark-surface); text-align: center;">
+        <div class="container-narrow">
+            <h2 class="heading-2" style="margin-bottom: var(--space-6);">
+                Ready to Access Global Talent?
+            </h2>
+            <p class="body-large" style="color: var(--color-gray-400); margin-bottom: var(--space-10);">
+                Schedule a consultation to discuss your hiring needs and how WorldEmp Japan can help
+            </p>
+            <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
+                <a href="mailto:info@solunai.com" class="btn btn-primary btn-large">
+                    Schedule Meeting
+                </a>
+                <a href="tel:+81-XX-XXXX-XXXX" class="btn btn-secondary btn-large">
+                    Call Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--color-dark-surface); border-top: 1px solid var(--color-dark-border); padding: var(--space-20) 0 var(--space-8); margin-top: 0;">
+        <div class="container">
+            <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-12); margin-bottom: var(--space-12);">
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">SOLUNAI</h4>
+                    <p class="body-small" style="color: var(--color-gray-400); margin-top: var(--space-4);">
+                        Building the Future from Japan to the World
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">HPC Lab</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="./hpc-lab.html" style="color: var(--color-gray-400); transition: color var(--transition-fast);">28 AI Solutions</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./hpc-lab.html#aikoda" style="color: var(--color-gray-400);">aiKODA Platform</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./hpc-lab.html#iworkz" style="color: var(--color-gray-400);">iWORKZ Platform</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./hpc-lab.html#infrastructure" style="color: var(--color-gray-400);">Sovereign Cloud</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">WorldEmp Japan</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="#services" style="color: var(--color-gray-400);">Services</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--color-gray-400);">For Employers</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--color-gray-400);">For Talent</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="#contact" style="color: var(--color-gray-400);">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Datacenter</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="./datacenter.html" style="color: var(--color-gray-400);">Technology</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./datacenter.html#applications" style="color: var(--color-gray-400);">Applications</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./datacenter.html#partners" style="color: var(--color-gray-400);">Partners</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./datacenter.html#contact" style="color: var(--color-gray-400);">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Company</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="./about.html" style="color: var(--color-gray-400);">About</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./about.html#careers" style="color: var(--color-gray-400);">Careers</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./resources.html" style="color: var(--color-gray-400);">Resources</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./investors.html" style="color: var(--color-gray-400);">Investors</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Contact</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="mailto:info@solunai.com" style="color: var(--color-gray-400);">info@solunai.com</a></li>
+                        <li style="color: var(--color-gray-400);">Tokyo HQ</li>
+                        <li style="color: var(--color-gray-400);">+81-XX-XXXX-XXXX</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom" style="border-top: 1px solid var(--color-dark-border); padding-top: var(--space-8); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
+                <p style="color: var(--color-gray-500); font-size: var(--font-size-sm);">© 2025 Solunai. All rights reserved.</p>
+                <div class="footer-social" style="display: flex; gap: var(--space-4);">
+                    <a href="#" class="social-link" style="width: 40px; height: 40px; border-radius: var(--radius-base); background: var(--color-dark-surface-elevated); border: 1px solid var(--color-dark-border); display: flex; align-items: center; justify-content: center; transition: all var(--transition-fast);" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-link" style="width: 40px; height: 40px; border-radius: var(--radius-base); background: var(--color-dark-surface-elevated); border: 1px solid var(--color-dark-border); display: flex; align-items: center; justify-content: center; transition: all var(--transition-fast);" aria-label="Twitter">𝕏</a>
+                    <a href="#" class="social-link" style="width: 40px; height: 40px; border-radius: var(--radius-base); background: var(--color-dark-surface-elevated); border: 1px solid var(--color-dark-border); display: flex; align-items: center; justify-content: center; transition: all var(--transition-fast);" aria-label="YouTube">▶</a>
+                    <a href="#" class="social-link" style="width: 40px; height: 40px; border-radius: var(--radius-base); background: var(--color-dark-surface-elevated); border: 1px solid var(--color-dark-border); display: flex; align-items: center; justify-content: center; transition: all var(--transition-fast);" aria-label="GitHub">⚙</a>
+                </div>
+                <p style="color: var(--color-gray-500); font-size: var(--font-size-sm);">
+                    <a href="./legal/privacy.html" style="color: var(--color-gray-500);">Privacy</a> |
+                    <a href="./legal/terms.html" style="color: var(--color-gray-500);">Terms</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>

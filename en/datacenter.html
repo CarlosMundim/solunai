@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Next-generation zero-carbon datacenter infrastructure powered by SMR nuclear technology. 90% CO2 reduction, 24/7 reliable power for AI workloads.">
+    <meta name="keywords" content="zero-carbon datacenter, SMR nuclear, AI infrastructure, sovereign cloud, datacenter Japan, nuclear datacenter">
+    <title>Datacenter Infrastructure - Zero-Carbon Power | Solunai</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/design-system.css">
+
+    <style>
+        body {
+            background: var(--color-dark-bg);
+            color: var(--color-dark-text-primary);
+            font-family: var(--font-family-primary);
+        }
+
+        /* Hero Section - Clean & Modern */
+        .hero-datacenter {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0A0A0A 0%, #14B8A6 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-datacenter::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(20, 184, 166, 0.15), transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(15, 118, 110, 0.15), transparent 50%);
+        }
+
+        .hero-content-datacenter {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 1000px;
+            padding: var(--space-8);
+        }
+
+        .hero-title-datacenter {
+            font-size: var(--font-size-6xl);
+            font-weight: var(--font-weight-black);
+            color: var(--color-white);
+            margin-bottom: var(--space-6);
+            line-height: var(--line-height-tight);
+        }
+
+        .hero-subtitle-datacenter {
+            font-size: var(--font-size-xl);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: var(--space-10);
+            line-height: var(--line-height-relaxed);
+        }
+
+        .hero-badge-datacenter {
+            display: inline-block;
+            padding: var(--space-2) var(--space-4);
+            background: rgba(20, 184, 166, 0.2);
+            border: 1px solid rgba(20, 184, 166, 0.4);
+            border-radius: var(--radius-full);
+            color: var(--color-secondary-400);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-6);
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-6);
+            margin-top: var(--space-12);
+        }
+
+        .benefit-card {
+            background: var(--color-dark-surface);
+            border: 1px solid var(--color-dark-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-8);
+            text-align: center;
+            transition: all var(--transition-base);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--color-datacenter-start);
+            box-shadow: var(--shadow-dark-lg);
+        }
+
+        .benefit-icon {
+            width: 72px;
+            height: 72px;
+            background: var(--gradient-datacenter);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-white);
+            margin: 0 auto var(--space-4);
+        }
+
+        .benefit-title {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-white);
+            margin-bottom: var(--space-3);
+        }
+
+        .benefit-description {
+            color: var(--color-gray-400);
+            line-height: var(--line-height-relaxed);
+        }
+
+        /* Applications Section */
+        .applications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-8);
+        }
+
+        .application-card {
+            background: var(--color-dark-surface);
+            border: 2px solid var(--color-dark-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-8);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .application-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-datacenter);
+            transform: scaleX(0);
+            transition: transform var(--transition-base);
+        }
+
+        .application-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .application-card:hover {
+            border-color: var(--color-datacenter-start);
+            background: var(--color-dark-surface-elevated);
+        }
+
+        .application-title {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-white);
+            margin-bottom: var(--space-3);
+        }
+
+        .application-features {
+            list-style: none;
+            color: var(--color-gray-400);
+        }
+
+        .application-features li {
+            padding: var(--space-2) 0;
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .application-features li::before {
+            content: '✓';
+            color: var(--color-datacenter-start);
+            font-weight: var(--font-weight-bold);
+        }
+
+        /* Roadmap Timeline */
+        .roadmap-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--space-16) 0;
+        }
+
+        .roadmap-item {
+            display: flex;
+            gap: var(--space-6);
+            margin-bottom: var(--space-12);
+            align-items: flex-start;
+        }
+
+        .roadmap-year {
+            width: 100px;
+            height: 100px;
+            background: var(--gradient-datacenter);
+            border-radius: var(--radius-lg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            flex-shrink: 0;
+        }
+
+        .roadmap-year-number {
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-black);
+            line-height: 1;
+        }
+
+        .roadmap-year-label {
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-semibold);
+            text-transform: uppercase;
+            opacity: 0.9;
+        }
+
+        .roadmap-content {
+            flex: 1;
+            background: var(--color-dark-surface);
+            border: 1px solid var(--color-dark-border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-6);
+        }
+
+        .roadmap-title {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-white);
+            margin-bottom: var(--space-3);
+        }
+
+        .roadmap-description {
+            color: var(--color-gray-400);
+            line-height: var(--line-height-relaxed);
+        }
+
+        /* Partner Section */
+        .partner-card {
+            background: var(--color-dark-surface-elevated);
+            border: 2px solid var(--color-dark-border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-12);
+            text-align: center;
+        }
+
+        .partner-logo-placeholder {
+            width: 200px;
+            height: 80px;
+            background: var(--color-dark-border);
+            border-radius: var(--radius-base);
+            margin: 0 auto var(--space-6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gray-500);
+            font-weight: var(--font-weight-semibold);
+        }
+
+        /* Navigation */
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-dark-border);
+            z-index: var(--z-index-fixed);
+            transition: all var(--transition-base);
+        }
+
+        .nav-container {
+            max-width: var(--container-2xl);
+            margin: 0 auto;
+            padding: var(--space-4) var(--space-6);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-logo {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-bold);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: var(--space-8);
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--color-gray-300);
+            font-weight: var(--font-weight-medium);
+            transition: color var(--transition-fast);
+            padding: var(--space-2) 0;
+        }
+
+        .nav-link:hover {
+            color: var(--color-primary-400);
+        }
+
+        .nav-cta {
+            display: flex;
+            gap: var(--space-3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title-datacenter {
+                font-size: var(--font-size-4xl);
+            }
+
+            .hero-subtitle-datacenter {
+                font-size: var(--font-size-lg);
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .applications-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .roadmap-item {
+                flex-direction: column;
+            }
+
+            .roadmap-year {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="./index.html" style="display: flex; align-items: center;">
+                <img src="./logos/solunai_logo_white.png" alt="Solunai" style="height: 80px;">
+            </a>
+            <div class="nav-links">
+                <a href="./hpc-lab.html" class="nav-link">HPC Lab</a>
+                <a href="./worldemp-japan.html" class="nav-link">WorldEmp Japan</a>
+                <a href="./datacenter.html" class="nav-link" style="color: var(--color-datacenter-start);">Datacenter</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <a href="./investors.html" class="nav-link">Investors</a>
+            </div>
+            <div class="nav-cta">
+                <span class="nav-link" style="cursor: pointer;">EN / JP</span>
+                <a href="#contact" class="btn btn-primary btn-small">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-datacenter">
+        <div class="hero-content-datacenter">
+            <span class="hero-badge-datacenter">⚡ Powering the Net-Zero Century</span>
+            <h1 class="hero-title-datacenter">Zero-Carbon Datacenter Infrastructure</h1>
+            <p class="hero-subtitle-datacenter">
+                Next-generation nuclear-powered datacenters with 90% CO2 reduction<br>
+                <strong>24/7 reliable power</strong> • AI infrastructure ready • Sovereign energy independence
+            </p>
+            <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
+                <a href="#benefits" class="btn btn-large" style="background: var(--color-datacenter-start); color: white;">
+                    Explore Technology
+                </a>
+                <a href="#contact" class="btn btn-large btn-secondary" style="border-color: var(--color-datacenter-start); color: var(--color-datacenter-start);">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section-xl">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">KEY BENEFITS</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">The Future of Datacenter Power</h2>
+                <p class="body-large" style="max-width: 700px; margin: var(--space-6) auto 0; color: var(--color-gray-400);">
+                    Revolutionizing datacenter infrastructure with clean, reliable nuclear energy
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">24/7</div>
+                    <h3 class="benefit-title">24/7 Reliable Power</h3>
+                    <p class="benefit-description">
+                        Uninterrupted baseload power generation independent of weather conditions. Perfect for mission-critical AI workloads and datacenters.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">90%</div>
+                    <h3 class="benefit-title">90% CO2 Reduction</h3>
+                    <p class="benefit-description">
+                        Zero-carbon energy generation compared to fossil-powered datacenters. Meet your sustainability goals while powering growth.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">SMR</div>
+                    <h3 class="benefit-title">Advanced SMR Technology</h3>
+                    <p class="benefit-description">
+                        Small Modular Reactor with TRISO-fuelled Gen IV HTGR design. Inherently safe, meltdown-proof, and walk-away safe.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">SI</div>
+                    <h3 class="benefit-title">Sovereign Independence</h3>
+                    <p class="benefit-description">
+                        Grid-independent power generation. Full energy sovereignty and data residency for national security and compliance.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">AI</div>
+                    <h3 class="benefit-title">AI Infrastructure Ready</h3>
+                    <p class="benefit-description">
+                        Purpose-built for high-density GPU clusters and AI training workloads. Scalable power for compute-intensive applications.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">AC</div>
+                    <h3 class="benefit-title">Advanced Cooling</h3>
+                    <p class="benefit-description">
+                        Industrial heat exchangers with air-cooled and shell & tube systems. Optimized thermal management for maximum efficiency.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section id="applications" class="section-xl" style="background: var(--color-dark-surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">APPLICATIONS</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Powering Critical Infrastructure</h2>
+                <p class="body-large" style="max-width: 700px; margin: var(--space-6) auto 0; color: var(--color-gray-400);">
+                    Purpose-built solutions for the most demanding compute workloads
+                </p>
+            </div>
+
+            <div class="applications-grid">
+                <div class="application-card">
+                    <h3 class="application-title">AI & Machine Learning</h3>
+                    <ul class="application-features">
+                        <li>Large model training infrastructure</li>
+                        <li>High-density GPU clusters</li>
+                        <li>Real-time inference workloads</li>
+                        <li>Distributed computing networks</li>
+                    </ul>
+                </div>
+
+                <div class="application-card">
+                    <h3 class="application-title">Sovereign Cloud</h3>
+                    <ul class="application-features">
+                        <li>National data sovereignty</li>
+                        <li>APPI & GDPR compliance</li>
+                        <li>Zero foreign dependency</li>
+                        <li>Government-grade security</li>
+                    </ul>
+                </div>
+
+                <div class="application-card">
+                    <h3 class="application-title">Quantum Computing</h3>
+                    <ul class="application-features">
+                        <li>Ultra-low temperature systems</li>
+                        <li>Stable power requirements</li>
+                        <li>Research & development labs</li>
+                        <li>Hybrid quantum-classical</li>
+                    </ul>
+                </div>
+
+                <div class="application-card">
+                    <h3 class="application-title">Enterprise Datacenters</h3>
+                    <ul class="application-features">
+                        <li>Colocation services</li>
+                        <li>Hyperscale deployments</li>
+                        <li>Edge computing nodes</li>
+                        <li>Disaster recovery sites</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment Roadmap -->
+    <section class="section-xl">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">DEPLOYMENT ROADMAP</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Phased Global Rollout</h2>
+                <p class="body-large" style="max-width: 700px; margin: var(--space-6) auto 0; color: var(--color-gray-400);">
+                    Strategic deployment timeline for datacenter infrastructure
+                </p>
+            </div>
+
+            <div class="roadmap-container">
+                <div class="roadmap-item">
+                    <div class="roadmap-year">
+                        <div class="roadmap-year-number">2025</div>
+                        <div class="roadmap-year-label">Phase 1</div>
+                    </div>
+                    <div class="roadmap-content">
+                        <h3 class="roadmap-title">Planning & Partnerships</h3>
+                        <p class="roadmap-description">
+                            Site selection and regulatory approvals. Strategic partnerships with technology providers, cooling systems suppliers, and government agencies. Initial design and engineering phase.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-year">
+                        <div class="roadmap-year-number">2026</div>
+                        <div class="roadmap-year-label">Phase 2</div>
+                    </div>
+                    <div class="roadmap-content">
+                        <h3 class="roadmap-title">Pilot Deployment</h3>
+                        <p class="roadmap-description">
+                            First pilot datacenter construction begins. Technology validation and testing. Partnership with cooling system providers for integrated thermal management. Early customer onboarding.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-year">
+                        <div class="roadmap-year-number">2027</div>
+                        <div class="roadmap-year-label">Phase 3</div>
+                    </div>
+                    <div class="roadmap-content">
+                        <h3 class="roadmap-title">Commercial Operations</h3>
+                        <p class="roadmap-description">
+                            Full commercial operations commence. Multiple site deployments across strategic locations. Sovereign cloud services launched. Enterprise customer onboarding at scale. Revenue generation begins.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-year">
+                        <div class="roadmap-year-number">2028+</div>
+                        <div class="roadmap-year-label">Phase 4</div>
+                    </div>
+                    <div class="roadmap-content">
+                        <h3 class="roadmap-title">Global Expansion</h3>
+                        <p class="roadmap-description">
+                            International expansion to additional markets. Advanced applications including quantum computing integration. IP licensing to global partners. Market leadership in zero-carbon datacenter infrastructure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategic Partners Section -->
+    <section id="partners" class="section-xl" style="background: var(--color-dark-surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">STRATEGIC PARTNERS</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Best-in-Class Technology Partners</h2>
+                <p class="body-large" style="max-width: 700px; margin: var(--space-6) auto 0; color: var(--color-gray-400);">
+                    Collaborating with industry leaders to deliver excellence
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-8" style="max-width: 800px; margin: 0 auto;">
+                <div class="partner-card">
+                    <div style="margin-bottom: var(--space-6);">
+                        <img src="./logos/fbm_logo.jpg" alt="FBM Hudson Italiana" style="max-width: 250px; height: auto; margin: 0 auto; display: block;">
+                    </div>
+                    <h3 class="heading-4" style="margin-bottom: var(--space-4);">Advanced Cooling Systems</h3>
+                    <p class="body-base" style="color: var(--color-gray-400); margin-bottom: var(--space-6);">
+                        <strong>Agreement Signed:</strong> Partnership with FBM Hudson Italiana for industrial heat exchangers.
+                        Air-cooled and shell & tube heat exchangers optimized for datacenter thermal management.
+                        Process optimization and integrated cooling solutions.
+                    </p>
+                    <div class="flex gap-4" style="justify-content: center; flex-wrap: wrap;">
+                        <span class="badge badge-primary">Air-Cooled Systems</span>
+                        <span class="badge badge-primary">Shell & Tube HX</span>
+                        <span class="badge badge-primary">Process Optimization</span>
+                    </div>
+                </div>
+
+                <div class="partner-card" style="border: 2px dashed var(--color-dark-border);">
+                    <div class="partner-logo-placeholder" style="background: transparent; border: 2px dashed var(--color-dark-border);">
+                        Nuclear Technology Partner
+                    </div>
+                    <h3 class="heading-4" style="margin-bottom: var(--space-4);">SMR Nuclear Technology</h3>
+                    <p class="body-base" style="color: var(--color-gray-400); margin-bottom: var(--space-6);">
+                        <strong>In Negotiation:</strong> Strategic partnership for small modular reactor technology.
+                        TRISO-fuelled Gen IV HTGR (High Temperature Gas-cooled Reactor) with inherent safety features.
+                        Zero-carbon 24/7 power generation for datacenter applications.
+                    </p>
+                    <div class="flex gap-4" style="justify-content: center; flex-wrap: wrap;">
+                        <span class="badge badge-warning">Partnership Pending</span>
+                        <span class="badge badge-primary">Gen IV SMR</span>
+                        <span class="badge badge-primary">TRISO Fuel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Highlights -->
+    <section class="section-xl">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: var(--space-16);">
+                <span class="caption">TECHNOLOGY HIGHLIGHTS</span>
+                <h2 class="heading-2" style="margin-top: var(--space-4);">Innovation at Every Layer</h2>
+            </div>
+
+            <div class="grid grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-3);">Inherent Safety</h3>
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        Meltdown-proof design with walk-away safety. No active cooling required for shutdown. Multiple passive safety barriers.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-3);">Modular Design</h3>
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        Factory-built modules for rapid deployment. Scalable from 50MW to 500MW+. Reduced construction time and costs.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-3);">High Efficiency</h3>
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        High-temperature operation (750°C+). Improved thermodynamic efficiency. Process heat for hydrogen production.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-3);">Flexible Siting</h3>
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        Former military bases and brownfield sites. Minimal water requirements. Reduced environmental footprint.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-3);">Grid Independence</h3>
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        Standalone power generation. Islanding capability. Energy security and resilience. Sell excess power to grid.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-3);">Long Operational Life</h3>
+                    <p class="body-base" style="color: var(--color-gray-400);">
+                        60+ year design life. Minimal maintenance. High capacity factor (>90%). Low lifecycle costs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="section-xl" style="background: var(--gradient-datacenter); text-align: center;">
+        <div class="container-narrow">
+            <h2 class="heading-2" style="color: var(--color-white); margin-bottom: var(--space-6);">
+                Ready for Zero-Carbon Infrastructure?
+            </h2>
+            <p class="body-large" style="color: rgba(255, 255, 255, 0.9); margin-bottom: var(--space-10);">
+                Contact us to learn more about next-generation datacenter solutions
+            </p>
+            <div class="flex justify-center gap-4" style="flex-wrap: wrap;">
+                <a href="mailto:datacenter@solunai.com" class="btn btn-large" style="background: white; color: var(--color-datacenter-start);">
+                    Contact Us
+                </a>
+                <a href="./investors.html" class="btn btn-large btn-secondary" style="border-color: white; color: white;">
+                    Investment Opportunities
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--color-dark-surface); border-top: 1px solid var(--color-dark-border); padding: var(--space-20) 0 var(--space-8); margin-top: 0;">
+        <div class="container">
+            <div class="footer-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-12); margin-bottom: var(--space-12);">
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">SOLUNAI</h4>
+                    <p class="body-small" style="color: var(--color-gray-400); margin-top: var(--space-4);">
+                        Building the Future from Japan to the World
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">HPC Lab</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="./hpc-lab.html" style="color: var(--color-gray-400);">28 AI Solutions</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./hpc-lab.html#aikoda" style="color: var(--color-gray-400);">aiKODA Platform</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./hpc-lab.html#iworkz" style="color: var(--color-gray-400);">iWORKZ Platform</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./hpc-lab.html#infrastructure" style="color: var(--color-gray-400);">Sovereign Cloud</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">WorldEmp Japan</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="./worldemp-japan.html" style="color: var(--color-gray-400);">Services</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./worldemp-japan.html#services" style="color: var(--color-gray-400);">For Employers</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./worldemp-japan.html#" style="color: var(--color-gray-400);">For Talent</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./worldemp-japan.html#contact" style="color: var(--color-gray-400);">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Datacenter</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="#benefits" style="color: var(--color-gray-400);">Technology</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="#applications" style="color: var(--color-gray-400);">Applications</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="#partners" style="color: var(--color-gray-400);">Partners</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="#contact" style="color: var(--color-gray-400);">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Company</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="./about.html" style="color: var(--color-gray-400);">About</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./about.html#careers" style="color: var(--color-gray-400);">Careers</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./resources.html" style="color: var(--color-gray-400);">Resources</a></li>
+                        <li style="margin-bottom: var(--space-2);"><a href="./investors.html" style="color: var(--color-gray-400);">Investors</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Contact</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: var(--space-2);"><a href="mailto:info@solunai.com" style="color: var(--color-gray-400);">info@solunai.com</a></li>
+                        <li style="color: var(--color-gray-400);">Tokyo HQ</li>
+                        <li style="color: var(--color-gray-400);">+81-XX-XXXX-XXXX</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom" style="border-top: 1px solid var(--color-dark-border); padding-top: var(--space-8); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
+                <p style="color: var(--color-gray-500); font-size: var(--font-size-sm);">© 2025 Solunai. All rights reserved.</p>
+                <div class="footer-social" style="display: flex; gap: var(--space-4);">
+                    <a href="#" class="social-link" style="width: 40px; height: 40px; border-radius: var(--radius-base); background: var(--color-dark-surface-elevated); border: 1px solid var(--color-dark-border); display: flex; align-items: center; justify-content: center;" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-link" style="width: 40px; height: 40px; border-radius: var(--radius-base); background: var(--color-dark-surface-elevated); border: 1px solid var(--color-dark-border); display: flex; align-items: center; justify-content: center;" aria-label="Twitter">𝕏</a>
+                    <a href="#" class="social-link" style="width: 40px; height: 40px; border-radius: var(--radius-base); background: var(--color-dark-surface-elevated); border: 1px solid var(--color-dark-border); display: flex; align-items: center; justify-content: center;" aria-label="YouTube">▶</a>
+                    <a href="#" class="social-link" style="width: 40px; height: 40px; border-radius: var(--radius-base); background: var(--color-dark-surface-elevated); border: 1px solid var(--color-dark-border); display: flex; align-items: center; justify-content: center;" aria-label="GitHub">⚙</a>
+                </div>
+                <p style="color: var(--color-gray-500); font-size: var(--font-size-sm);">
+                    <a href="./legal/privacy.html" style="color: var(--color-gray-500);">Privacy</a> |
+                    <a href="./legal/terms.html" style="color: var(--color-gray-500);">Terms</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        const nav = document.querySelector('.nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10, 10, 10, 0.98)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 10, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
