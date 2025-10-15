@@ -8,24 +8,115 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/design-system.css">
     <style>
-        .hero-hpc {
-            background: linear-gradient(135deg, #1E3A8A 0%, #2563EB 50%, #3B82F6 100%);
-            padding: 10rem 0 6rem;
+        /* Hero Section - Harmonized with Homepage */
+        .hero-section {
             position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-dark);
             overflow: hidden;
         }
 
-        .hero-hpc::before {
-            content: '';
+        .hero-background {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background:
-                radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.2) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(20, 184, 166, 0.2) 0%, transparent 50%);
+            inset: 0;
+            background: var(--gradient-mesh);
+            opacity: 0.6;
+        }
+
+        .hero-particles {
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(circle at 20% 30%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(20, 184, 166, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 40%);
             animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            max-width: 1000px;
+            padding: var(--space-8) var(--space-4);
+        }
+        
+        @media (min-width: 768px) {
+            .hero-content {
+                padding: var(--space-8) var(--space-6);
+            }
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: var(--space-2) var(--space-4);
+            background: rgba(37, 99, 235, 0.2);
+            border: 1px solid var(--color-primary-600);
+            border-radius: var(--radius-full);
+            color: var(--color-primary-400);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--space-8);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero-title {
+            font-size: var(--font-size-hero);
+            font-weight: var(--font-weight-black);
+            line-height: var(--line-height-none);
+            letter-spacing: var(--letter-spacing-tighter);
+            margin-bottom: var(--space-6);
+            animation: fadeInUp 1s ease-out 0.2s both;
+            color: white;
+        }
+
+        .hero-title-gradient {
+            background: linear-gradient(135deg, #FFFFFF 0%, #60A5FA 50%, #3B82F6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: var(--font-size-xl);
+            color: var(--color-gray-300);
+            line-height: var(--line-height-relaxed);
+            margin-bottom: var(--space-12);
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: var(--space-4);
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.6s both;
+            margin-bottom: var(--space-8);
+        }
+
+        .hero-trust-bar {
+            display: flex;
+            gap: var(--space-6);
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: var(--font-size-sm);
+            color: var(--color-gray-400);
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+
+        .hero-trust-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+
+        .hero-trust-item::before {
+            content: '✓';
+            color: var(--color-accent);
+            font-weight: var(--font-weight-bold);
         }
 
         .stats-banner {
@@ -280,12 +371,7 @@
             font-weight: var(--font-weight-semibold);
         }
 
-        /* Pulse animation for badge */
-        @keyframes pulse {
-            0% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.8; transform: scale(1.1); }
-            100% { opacity: 1; transform: scale(1); }
-        }
+        /* Remove duplicate pulse - using design-system.css animations */
 
         @media (max-width: 768px) {
             .stats-banner {
@@ -333,59 +419,40 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-hpc">
-        <div class="container">
-            <div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 10; text-align: center;">
-                <!-- Breadcrumb -->
-                <div style="font-size: 0.875rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 1rem;">
-                    <a href="/" style="color: var(--color-accent); text-decoration: none;">Home</a> → <span>HPC Lab</span>
-                </div>
-                
-                <!-- Badge with Animation -->
-                <div style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: rgba(255,255,255,0.1); border-radius: 999px; margin-bottom: 2rem; border: 1px solid rgba(255,255,255,0.2);">
-                    <span style="width: 8px; height: 8px; background: var(--color-accent); border-radius: 50%; animation: pulse 2s infinite;"></span>
-                    <span style="font-size: 0.875rem; font-weight: 600; color: white;">28 Production-Ready AI Solutions</span>
-                </div>
-                
-                <!-- Main Headline -->
-                <h1 style="font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; line-height: 1.1; color: white; margin-bottom: 1.5rem;">
-                    The Complete AI Platform<br/>for <span style="background: linear-gradient(135deg, var(--color-accent), #3B82F6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Enterprise Success</span>
-                </h1>
-                
-                <!-- Subheadline -->
-                <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 800px; margin: 0 auto 3rem; line-height: 1.6;">
-                    From talent mobility to healthcare AI, from municipal governance to sovereign infrastructure—enterprise-grade solutions built on Japanese precision and global innovation.
-                </p>
-                
-                <!-- CTA Group -->
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 4rem;">
-                    <a href="#products" style="padding: 1rem 2rem; background: var(--color-accent); color: var(--color-primary-dark); border-radius: 0.75rem; font-weight: 700; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease;">
-                        Schedule Platform Demo →
-                    </a>
-                    <a href="#tech-stack" style="padding: 1rem 2rem; background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.3); border-radius: 0.75rem; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">
-                        Download Technical Whitepaper
-                    </a>
-                </div>
-                
-                <!-- Trust Bar -->
-                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; font-size: 0.875rem; color: rgba(255,255,255,0.8);">
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="color: var(--color-accent); font-weight: bold;">✓</span>
-                        SOC 2 Type II Certified
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="color: var(--color-accent); font-weight: bold;">✓</span>
-                        APPI Compliant
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="color: var(--color-accent); font-weight: bold;">✓</span>
-                        Kubernetes Orchestrated
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <span style="color: var(--color-accent); font-weight: bold;">✓</span>
-                        Multi-tenant Architecture
-                    </div>
-                </div>
+    <section class="hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <!-- Breadcrumb -->
+            <div style="font-size: var(--font-size-sm); color: var(--color-gray-400); margin-bottom: var(--space-4);">
+                <a href="/" style="color: var(--color-accent); text-decoration: none;">Home</a> → <span>HPC Lab</span>
+            </div>
+            
+            <!-- Badge -->
+            <span class="hero-badge">🚀 28 Production-Ready AI Solutions</span>
+            
+            <!-- Title -->
+            <h1 class="hero-title">
+                The Complete AI Platform<br/>for <span class="hero-title-gradient">Enterprise Success</span>
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="hero-subtitle">
+                From talent mobility to healthcare AI, from municipal governance to sovereign infrastructure—enterprise-grade solutions built on Japanese precision and global innovation.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary btn-large">Schedule Platform Demo</a>
+                <a href="#tech-stack" class="btn btn-secondary btn-large">Download Technical Whitepaper</a>
+            </div>
+            
+            <!-- Trust Bar -->
+            <div class="hero-trust-bar">
+                <div class="hero-trust-item">SOC 2 Type II Certified</div>
+                <div class="hero-trust-item">APPI Compliant</div>
+                <div class="hero-trust-item">Kubernetes Orchestrated</div>
+                <div class="hero-trust-item">Multi-tenant Architecture</div>
             </div>
         </div>
     </section>
