@@ -445,7 +445,20 @@
             </div>
             
             <!-- Enterprise Stats Grid -->
-            <div class="grid grid-2 md:grid-4 gap-12 mb-12">
+            <style>
+                .trust-stats-grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 2rem;
+                    margin-bottom: 3rem;
+                }
+                @media (min-width: 768px) {
+                    .trust-stats-grid {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                }
+            </style>
+            <div class="trust-stats-grid">
                 <div class="text-center">
                     <div style="font-size: clamp(3rem, 4vw, 4rem); font-weight: 800; color: white; line-height: 1; margin-bottom: var(--space-3);">500+</div>
                     <div style="color: rgba(255,255,255,0.8); font-size: 1rem; font-weight: 500;">Enterprise Clients</div>
