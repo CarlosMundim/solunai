@@ -6,6 +6,11 @@
     <meta name="description" content="About Solunai - Building the future from Japan to the world with AI solutions, global talent, and zero-carbon datacenters.">
     <meta name="keywords" content="Solunai company, about Solunai, Japan technology company, AI company Japan">
     <title>About Solunai - Built from Japan to the World</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +18,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/design-system.css">
+    <link rel="stylesheet" href="../css/design-system.css">
+    
+    <!-- Shared Components Script -->
+    <script src="../components/include-en.js"></script>
 
     <style>
         body {
@@ -33,8 +41,8 @@
 
         .hero-content {
             text-align: center;
-            max-width: 800px;
-            padding: var(--space-8);
+            max-width: 1000px;
+            padding: var(--space-8) var(--space-16);
         }
 
         /* Values Grid */
@@ -146,25 +154,8 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="./index.html" style="display: flex; align-items: center;">
-                <img src="./logos/solunai_logo_white.png" alt="Solunai" style="height: 80px;">
-            </a>
-            <div class="nav-links">
-                <a href="./hpc-lab.html" class="nav-link">HPC Lab</a>
-                <a href="./worldemp-japan.html" class="nav-link">WorldEmp Japan</a>
-                <a href="./datacenter.html" class="nav-link">Datacenter</a>
-                <a href="./about.html" class="nav-link" style="color: var(--color-primary-400);">About</a>
-                <a href="./investors.html" class="nav-link">Investors</a>
-            </div>
-            <div style="display: flex; gap: var(--space-3);">
-                <span class="nav-link" style="cursor: pointer;">EN / JP</span>
-                <a href="#contact" class="btn btn-primary btn-small">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
 
     <!-- Hero -->
     <section class="hero-about">
@@ -182,8 +173,8 @@
     </section>
 
     <!-- Mission & Vision -->
-    <section class="section-xl">
-        <div class="container-narrow">
+    <section class="section-xl" style="display: flex; align-items: center; justify-content: center; min-height: 80vh;">
+        <div class="container-narrow" style="width: 100%;">
             <div class="grid grid-cols-2 gap-12">
                 <div style="text-align: center;">
                     <h2 class="heading-3" style="margin-bottom: var(--space-4);">Our Mission</h2>
@@ -204,8 +195,8 @@
     </section>
 
     <!-- Core Values -->
-    <section class="section-xl" style="background: var(--color-dark-surface);">
-        <div class="container">
+    <section class="section-xl" style="background: var(--color-dark-surface); display: flex; align-items: center; justify-content: center; min-height: 90vh;">
+        <div class="container" style="width: 100%;">
             <div style="text-align: center; margin-bottom: var(--space-16);">
                 <span class="caption">CORE VALUES</span>
                 <h2 class="heading-2" style="margin-top: var(--space-4);">What Drives Us</h2>
@@ -264,8 +255,8 @@
     </section>
 
     <!-- Our Story -->
-    <section class="section-xl">
-        <div class="container-narrow">
+    <section class="section-xl" style="display: flex; align-items: center; justify-content: center; min-height: 80vh;">
+        <div class="container-narrow" style="width: 100%;">
             <h2 class="heading-2" style="text-align: center; margin-bottom: var(--space-12);">Our Story</h2>
             <div style="max-width: 700px; margin: 0 auto; text-align: center;">
                 <p class="body-large" style="color: var(--color-gray-400); line-height: var(--line-height-relaxed); margin-bottom: var(--space-6);">
@@ -293,8 +284,8 @@
     </section>
 
     <!-- Leadership Team -->
-    <section id="team" class="section-xl" style="background: var(--color-dark-surface);">
-        <div class="container">
+    <section id="team" class="section-xl" style="background: var(--color-dark-surface); display: flex; align-items: center; justify-content: center; min-height: 90vh;">
+        <div class="container" style="width: 100%;">
             <div style="text-align: center; margin-bottom: var(--space-16);">
                 <span class="caption">LEADERSHIP TEAM</span>
                 <h2 class="heading-2" style="margin-top: var(--space-4);">Meet Our Team</h2>
@@ -305,38 +296,38 @@
 
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="team-photo">Photo</div>
-                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Leadership Team</h3>
-                    <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Founder & CEO</p>
+                    <img src="../images/Carlos_Mundim.png" alt="Carlos Mundim" class="team-photo" style="width: 200px; height: 200px; border-radius: var(--radius-full); object-fit: cover; margin: 0 auto var(--space-4);">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Carlos Mundim</h3>
+                    <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Founder</p>
                     <p class="body-small" style="color: var(--color-gray-400);">
-                        Visionary leader with deep expertise in AI, cross-cultural business, and sustainable infrastructure.
+                        Visionary leader driving Solunai's mission to bridge Japan and the world through AI innovation, global talent solutions, and zero-carbon datacenter infrastructure.
                     </p>
                 </div>
 
                 <div class="team-member">
-                    <div class="team-photo">Photo</div>
-                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Technology Leadership</h3>
-                    <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Chief Technology Officer</p>
+                    <img src="../images/Jeanette_Dennisson.png" alt="Prof Jeanette Dennisson" class="team-photo" style="width: 200px; height: 200px; border-radius: var(--radius-full); object-fit: cover; margin: 0 auto var(--space-4);">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Prof Jeanette Dennisson</h3>
+                    <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Founder</p>
                     <p class="body-small" style="color: var(--color-gray-400);">
-                        Leading development of aiKODA, iWORKZ, and our comprehensive AI solutions portfolio.
+                        Academic leader and co-founder bringing deep expertise in cross-cultural research and international business development to Solunai's global mission.
                     </p>
                 </div>
 
                 <div class="team-member">
-                    <div class="team-photo">Photo</div>
-                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Operations Leadership</h3>
-                    <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Chief Operating Officer</p>
+                    <img src="../images/Tomoo_Furuya.png" alt="Tomoo Furuya" class="team-photo" style="width: 200px; height: 200px; border-radius: var(--radius-full); object-fit: cover; margin: 0 auto var(--space-4);">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Tomoo Furuya</h3>
+                    <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Founder</p>
                     <p class="body-small" style="color: var(--color-gray-400);">
-                        Overseeing WorldEmp Japan operations and global talent acquisition strategies.
+                        Japanese business leader and co-founder providing strategic insights into Japanese market dynamics and cultural intelligence for global talent integration.
                     </p>
                 </div>
 
                 <div class="team-member">
-                    <div class="team-photo">Photo</div>
-                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Infrastructure Leadership</h3>
-                    <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Head of Infrastructure</p>
+                    <img src="../images/Koda_van_Niekerk_Mundim.png" alt="Koda van Niekerk Mundim" class="team-photo" style="width: 200px; height: 200px; border-radius: var(--radius-full); object-fit: cover; margin: 0 auto var(--space-4);">
+                    <h3 class="heading-5" style="margin-bottom: var(--space-2);">Koda van Niekerk Mundim</h3>
+                    <p class="body-small" style="color: var(--color-primary-400); margin-bottom: var(--space-3);">Chief AI/NHI Architect</p>
                     <p class="body-small" style="color: var(--color-gray-400);">
-                        Driving datacenter development and partnerships with nuclear technology providers.
+                        Leading AI architecture and Non-Human Intelligence development. Pioneering the convergence of artificial intelligence and non-human intelligence systems.
                     </p>
                 </div>
             </div>
@@ -344,8 +335,8 @@
     </section>
 
     <!-- Join Us -->
-    <section id="careers" class="section-xl">
-        <div class="container-narrow">
+    <section id="careers" class="section-xl" style="display: flex; align-items: center; justify-content: center; min-height: 70vh;">
+        <div class="container-narrow" style="width: 100%;">
             <div class="card card-elevated" style="padding: var(--space-12); text-align: center;">
                 <h2 class="heading-2" style="margin-bottom: var(--space-6);">Join Our Mission</h2>
                 <p class="body-large" style="color: var(--color-gray-400); margin-bottom: var(--space-10);">
@@ -364,52 +355,7 @@
         </div>
     </section>
 
-    <!-- Footer (same as other pages) -->
-    <footer class="footer" style="background: var(--color-dark-surface); border-top: 1px solid var(--color-dark-border); padding: var(--space-20) 0 var(--space-8); margin-top: 0;">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-12); margin-bottom: var(--space-12);">
-                <div>
-                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">SOLUNAI</h4>
-                    <p class="body-small" style="color: var(--color-gray-400); margin-top: var(--space-4);">
-                        Building the Future from Japan to the World
-                    </p>
-                </div>
-                <div>
-                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Company</h4>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: var(--space-2);"><a href="#" style="color: var(--color-gray-400);">About</a></li>
-                        <li style="margin-bottom: var(--space-2);"><a href="#careers" style="color: var(--color-gray-400);">Careers</a></li>
-                        <li style="margin-bottom: var(--space-2);"><a href="./resources.html" style="color: var(--color-gray-400);">Resources</a></li>
-                        <li style="margin-bottom: var(--space-2);"><a href="./investors.html" style="color: var(--color-gray-400);">Investors</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 style="color: var(--color-white); margin-bottom: var(--space-4);">Contact</h4>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: var(--space-2);"><a href="mailto:info@solunai.com" style="color: var(--color-gray-400);">info@solunai.com</a></li>
-                        <li style="color: var(--color-gray-400);">Tokyo HQ</li>
-                        <li style="color: var(--color-gray-400);">+81-XX-XXXX-XXXX</li>
-                    </ul>
-                </div>
-            </div>
-            <div style="border-top: 1px solid var(--color-dark-border); padding-top: var(--space-8); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
-                <p style="color: var(--color-gray-500); font-size: var(--font-size-sm);">© 2025 Solunai. All rights reserved.</p>
-                <p style="color: var(--color-gray-500); font-size: var(--font-size-sm);">
-                    <a href="./legal/privacy.html" style="color: var(--color-gray-500);">Privacy</a> |
-                    <a href="./legal/terms.html" style="color: var(--color-gray-500);">Terms</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
 </body>
 </html>
