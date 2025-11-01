@@ -1,0 +1,198 @@
+.technology-partners-section {
+  position: relative;
+  width: 100%;
+  padding: 120px 20px;
+  background: #ffffff;
+}
+
+.technology-partners-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.partners-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #1a1a2e;
+  margin: 0 0 24px 0;
+  line-height: 1.3;
+}
+
+.partners-subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #666666;
+  max-width: 800px;
+  margin: 0 auto 80px auto;
+  line-height: 1.6;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.partner-card {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.partner-logo-placeholder {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.partner-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  letter-spacing: -0.5px;
+}
+
+.partner-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666666;
+  margin: 0;
+}
+
+.worldemp-section {
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  border-radius: 24px;
+  padding: 60px;
+  text-align: center;
+}
+
+.worldemp-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+}
+
+.worldemp-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .technology-partners-section {
+    padding: 80px 20px;
+  }
+
+  .partners-title {
+    font-size: 40px;
+  }
+
+  .partners-subtitle {
+    margin-bottom: 60px;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+
+  .worldemp-section {
+    padding: 48px 40px;
+  }
+
+  .worldemp-title {
+    font-size: 28px;
+  }
+
+  .worldemp-description {
+    font-size: 16px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .technology-partners-section {
+    padding: 60px 16px;
+  }
+
+  .partners-title {
+    font-size: 32px;
+  }
+
+  .partners-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .partners-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .partner-card {
+    padding: 32px 24px;
+  }
+
+  .partner-logo-placeholder {
+    height: 60px;
+  }
+
+  .partner-name {
+    font-size: 20px;
+  }
+
+  .worldemp-section {
+    padding: 40px 24px;
+  }
+
+  .worldemp-title {
+    font-size: 24px;
+  }
+
+  .worldemp-description {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .partners-title {
+    font-size: 24px;
+  }
+
+  .worldemp-title {
+    font-size: 20px;
+  }
+}

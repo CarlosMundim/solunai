@@ -1,0 +1,134 @@
+.problem-statement-section {
+  position: relative;
+  width: 100%;
+  padding: 120px 20px;
+  background: #ffffff;
+}
+
+.problem-statement-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.problem-statement-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #1a1a2e;
+  margin: 0 0 80px 0;
+  line-height: 1.3;
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.problem-card {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 48px 40px;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.problem-number {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FF5722;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.problem-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+}
+
+.problem-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666666;
+  margin: 0;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .problem-statement-section {
+    padding: 80px 20px;
+  }
+
+  .problem-statement-title {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+
+  .problems-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .problem-card {
+    padding: 40px 32px;
+  }
+
+  .problem-title {
+    font-size: 28px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .problem-statement-section {
+    padding: 60px 16px;
+  }
+
+  .problem-statement-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .problem-card {
+    padding: 32px 24px;
+  }
+
+  .problem-title {
+    font-size: 24px;
+  }
+
+  .problem-description {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .problem-statement-title {
+    font-size: 24px;
+  }
+
+  .problem-title {
+    font-size: 20px;
+  }
+}

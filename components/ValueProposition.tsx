@@ -13,7 +13,7 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({ lang }) => {
       title: '完全な製造業変革ソリューション',
       columns: [
         {
-          icon: '🤖',
+          icon: 'AI',
           title: 'AIソリューション',
           subtitle: '最先端のAI技術で製造業を変革',
           features: [
@@ -25,7 +25,7 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({ lang }) => {
           result: '実証済み：コスト30-50%削減、品質95%改善'
         },
         {
-          icon: '🌍',
+          icon: 'GE',
           title: 'グローバルエンジニア',
           subtitle: '世界クラスの人材を数週間で配備',
           features: [
@@ -37,7 +37,7 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({ lang }) => {
           result: '日本の人材不足問題を解決'
         },
         {
-          icon: '📈',
+          icon: 'ROI',
           title: '実証済みの成果',
           subtitle: '国際的な実績と信頼性',
           features: [
@@ -54,7 +54,7 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({ lang }) => {
       title: 'Complete Manufacturing Transformation Solutions',
       columns: [
         {
-          icon: '🤖',
+          icon: 'AI',
           title: 'AI Solutions',
           subtitle: 'Transform manufacturing with cutting-edge AI technology',
           features: [
@@ -66,7 +66,7 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({ lang }) => {
           result: 'Proven: 30-50% cost reduction, 95% quality improvement'
         },
         {
-          icon: '🌍',
+          icon: 'GE',
           title: 'Global Engineers',
           subtitle: 'World-class talent deployed in weeks',
           features: [
@@ -78,7 +78,7 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({ lang }) => {
           result: 'Solving Japan\'s talent shortage'
         },
         {
-          icon: '📈',
+          icon: 'ROI',
           title: 'Proven Results',
           subtitle: 'International track record and credibility',
           features: [

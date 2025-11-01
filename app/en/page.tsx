@@ -1,21 +1,27 @@
 'use client';
 
 import Header from '@/components/Header';
-import Hero from '@/components/Hero';
+import HeroVideo from '@/components/HeroVideo';
+import ProblemStatement from '@/components/ProblemStatement';
 import ValueProposition from '@/components/ValueProposition';
-import ProblemSolution from '@/components/ProblemSolution';
-import ScrollingSection from '@/components/ScrollingSection';
-import FBMHighlight from '@/components/FBMHighlight';
+import StatementBanner from '@/components/StatementBanner';
+import StackedCards from '@/components/StackedCards';
+import ClientSuccess from '@/components/ClientSuccess';
+import TechnologyPartners from '@/components/TechnologyPartners';
+import PrimaryCTA from '@/components/PrimaryCTA';
 
 export default function EnglishHome() {
   return (
     <main className="min-h-screen">
       <Header lang="en" />
-      <Hero lang="en" />
+      <HeroVideo lang="en" />
+      <ProblemStatement lang="en" />
       <ValueProposition lang="en" />
-      <ProblemSolution lang="en" />
-      <ScrollingSection lang="en" />
-      <FBMHighlight lang="en" />
+      <StatementBanner lang="en" />
+      <StackedCards lang="en" />
+      <ClientSuccess lang="en" />
+      <TechnologyPartners lang="en" />
+      <PrimaryCTA lang="en" />
     </main>
   );
 }

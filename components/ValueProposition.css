@@ -54,9 +54,19 @@
 }
 
 .card-icon {
-  font-size: 48px;
-  margin-bottom: 20px;
-  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(26, 26, 46, 0.15);
 }
 
 .card-title {
@@ -157,7 +167,9 @@
   }
 
   .card-icon {
-    font-size: 40px;
+    width: 64px;
+    height: 64px;
+    font-size: 18px;
   }
 
   .card-title {

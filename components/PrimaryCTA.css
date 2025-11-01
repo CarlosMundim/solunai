@@ -1,0 +1,146 @@
+.primary-cta-section {
+  position: relative;
+  width: 100%;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+}
+
+.primary-cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 24px 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.cta-subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 48px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 20px 48px;
+  background: linear-gradient(135deg, #4d65ff 0%, #5b7aff 100%);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 24px rgba(77, 101, 255, 0.4);
+  margin-bottom: 48px;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(77, 101, 255, 0.5);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+.cta-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-feature-check {
+  color: #FF5722;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .primary-cta-section {
+    padding: 80px 20px;
+  }
+
+  .cta-title {
+    font-size: 44px;
+  }
+
+  .cta-subtitle {
+    font-size: 18px;
+  }
+
+  .cta-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .primary-cta-section {
+    padding: 60px 16px;
+  }
+
+  .cta-title {
+    font-size: 36px;
+  }
+
+  .cta-subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .cta-button {
+    padding: 18px 40px;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .cta-features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cta-feature {
+    font-size: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .cta-subtitle {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    padding: 16px 32px;
+    font-size: 15px;
+  }
+
+  .cta-feature {
+    font-size: 14px;
+  }
+}
