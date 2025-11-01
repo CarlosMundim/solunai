@@ -1,0 +1,157 @@
+/* ============================================
+   SCROLLING SECTION - 4 Solution Cards
+   ============================================ */
+
+.scrolling-section {
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+}
+
+.scrolling-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 8%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+/* ----- Solution Card ----- */
+.solution-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: cardFadeIn 0.6s ease-out forwards;
+}
+
+.solution-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes cardFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----- Image Section ----- */
+.solution-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.solution-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.solution-card:hover .solution-image {
+  transform: scale(1.05);
+}
+
+.solution-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.1) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  pointer-events: none;
+}
+
+/* ----- Content Section ----- */
+.solution-content {
+  padding: 24px;
+}
+
+.solution-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1a1a2e;
+  margin-bottom: 12px;
+  min-height: 56px;
+}
+
+.solution-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* ----- Responsive: Tablet ----- */
+@media (max-width: 1365px) {
+  .scrolling-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding: 0 6%;
+  }
+
+  .solution-image-wrapper {
+    height: 200px;
+  }
+
+  .solution-title {
+    font-size: 18px;
+    min-height: auto;
+  }
+
+  .solution-description {
+    font-size: 14px;
+  }
+}
+
+/* ----- Responsive: Mobile ----- */
+@media (max-width: 767px) {
+  .scrolling-section {
+    padding: 60px 0;
+  }
+
+  .scrolling-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 24px;
+  }
+
+  .solution-image-wrapper {
+    height: 220px;
+  }
+
+  .solution-content {
+    padding: 20px;
+  }
+
+  .solution-title {
+    font-size: 18px;
+  }
+
+  .solution-description {
+    font-size: 14px;
+  }
+
+  .solution-card:hover {
+    transform: translateY(-4px);
+  }
+}

@@ -1,0 +1,35 @@
+QUICK DEPLOYMENT COMMANDS
+=========================
+
+After creating GitHub repository at https://github.com/new:
+
+1. ADD GITHUB REMOTE
+   cd /mnt/c/claude/solunai-react-premium
+   git remote add origin https://github.com/YOUR_USERNAME/solunai-website.git
+   git remote -v
+
+2. PUSH TO GITHUB
+   git branch -M master
+   git push -u origin master
+
+3. DEPLOY TO VERCEL
+   - Go to https://vercel.com/new
+   - Import your GitHub repository
+   - Click Deploy
+   - Done!
+
+Your live URLs:
+- Japanese: https://your-project.vercel.app/
+- English: https://your-project.vercel.app/en
+
+For custom domain (solunai.co.jp):
+- Add domain in Vercel Dashboard → Settings → Domains
+- Update DNS records at your registrar
+
+===========================
+READY TO DEPLOY ✓
+===========================
+Build: Successful (113kB)
+Commit: Complete
+Files: 2354 committed
+Next: Create GitHub repo and push!
