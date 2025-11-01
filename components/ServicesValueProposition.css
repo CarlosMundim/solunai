@@ -1,0 +1,176 @@
+.services-value-proposition {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, #f8fafc, #ffffff);
+}
+
+.vp-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vp-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.vp-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.vp-subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.vp-main-message {
+  font-size: 1.1rem;
+  color: #334155;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.challenges-section {
+  margin-bottom: 5rem;
+}
+
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.challenge-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 2px solid #f1f5f9;
+  transition: all 0.3s ease;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  border-color: #e0e7ff;
+}
+
+.challenge-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.challenge-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 0.75rem;
+}
+
+.challenge-description {
+  font-size: 1rem;
+  color: #dc2626;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.challenge-impact {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.solution-section {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  padding: 4rem;
+  border-radius: 16px;
+  color: white;
+}
+
+.solution-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.solution-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.solution-subtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 300;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.benefit-metric {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #60a5fa;
+  margin-bottom: 1rem;
+}
+
+.benefit-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.benefit-description {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .services-value-proposition {
+    padding: 4rem 1rem;
+  }
+
+  .vp-title {
+    font-size: 1.75rem;
+  }
+
+  .vp-subtitle {
+    font-size: 1rem;
+  }
+
+  .challenges-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solution-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .solution-title {
+    font-size: 1.5rem;
+  }
+}

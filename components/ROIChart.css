@@ -1,0 +1,380 @@
+/* ============================================
+   ROI CHART SECTION
+   ============================================ */
+
+.roi-chart {
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+
+.roi-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header */
+.roi-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+}
+
+.roi-subheading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555555;
+  text-align: center;
+  margin-bottom: 56px;
+  animation: fadeSlideUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+/* ROI Metrics Grid */
+.roi-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 64px;
+}
+
+.roi-metric-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  border: 2px solid #E0E0E0;
+  transition: all 0.3s ease;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.roi-metric-card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.roi-metric-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.roi-metric-card:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.roi-metric-card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.roi-metric-card:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+.roi-metric-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.roi-metric-card.roi-highlight {
+  background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
+  border-color: #FF5722;
+}
+
+.roi-metric-card.roi-highlight .roi-metric-label,
+.roi-metric-card.roi-highlight .roi-metric-value,
+.roi-metric-card.roi-highlight .roi-metric-subtitle {
+  color: #FFFFFF;
+}
+
+.roi-metric-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.roi-metric-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #FF5722;
+  margin-bottom: 8px;
+  letter-spacing: -0.01em;
+}
+
+.roi-metric-card.roi-highlight .roi-metric-value {
+  font-size: 36px;
+}
+
+.roi-metric-subtitle {
+  font-size: 13px;
+  font-weight: 500;
+  color: #666666;
+}
+
+/* Timeline Section */
+.roi-timeline {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 16px;
+  padding: 48px 40px;
+  animation: fadeSlideUp 0.8s ease-out 0.8s forwards;
+  opacity: 0;
+}
+
+.timeline-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: -0.01em;
+}
+
+/* Timeline Chart */
+.timeline-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 300px;
+  margin-bottom: 32px;
+  padding: 20px 0;
+  border-bottom: 2px solid #333333;
+  position: relative;
+}
+
+.timeline-point {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.timeline-bars {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  height: 100%;
+  margin-bottom: 12px;
+}
+
+.timeline-bar {
+  width: 24px;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.5s ease;
+  animation: barGrow 1s ease-out forwards;
+  transform-origin: bottom;
+}
+
+.investment-bar {
+  background: linear-gradient(180deg, #FF5722 0%, #E64A19 100%);
+  box-shadow: 0 -4px 12px rgba(255, 87, 34, 0.3);
+}
+
+.returns-bar {
+  background: linear-gradient(180deg, #4CAF50 0%, #388E3C 100%);
+  box-shadow: 0 -4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.timeline-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555555;
+  text-align: center;
+}
+
+/* Timeline Legend */
+.timeline-legend {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legend-color {
+  width: 24px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.investment-color {
+  background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
+}
+
+.returns-color {
+  background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+}
+
+.legend-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555555;
+}
+
+/* Animations */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes barGrow {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .roi-chart {
+    padding: 60px 0;
+  }
+
+  .roi-heading {
+    font-size: 38px;
+  }
+
+  .roi-subheading {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .roi-metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 48px;
+  }
+
+  .roi-timeline {
+    padding: 36px 32px;
+  }
+
+  .timeline-title {
+    font-size: 24px;
+  }
+
+  .timeline-chart {
+    height: 250px;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 767px) {
+  .roi-chart {
+    padding: 40px 0;
+  }
+
+  .roi-container {
+    padding: 0 24px;
+  }
+
+  .roi-heading {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .roi-subheading {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+
+  .roi-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .roi-metric-card {
+    padding: 24px 20px;
+  }
+
+  .roi-metric-value {
+    font-size: 28px;
+  }
+
+  .roi-metric-card.roi-highlight .roi-metric-value {
+    font-size: 32px;
+  }
+
+  .roi-timeline {
+    padding: 28px 24px;
+  }
+
+  .timeline-title {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  .timeline-chart {
+    height: 200px;
+    padding: 10px 0;
+  }
+
+  .timeline-bars {
+    gap: 4px;
+  }
+
+  .timeline-bar {
+    width: 16px;
+  }
+
+  .timeline-label {
+    font-size: 12px;
+  }
+
+  .timeline-legend {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .legend-color {
+    width: 20px;
+    height: 14px;
+  }
+
+  .legend-text {
+    font-size: 13px;
+  }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .roi-heading,
+  .roi-subheading,
+  .roi-metric-card,
+  .roi-timeline {
+    animation: none;
+    opacity: 1;
+  }
+
+  .roi-metric-card,
+  .timeline-bar {
+    transition: none;
+  }
+
+  .roi-metric-card:hover {
+    transform: none;
+  }
+
+  .timeline-bar {
+    animation: none;
+    transform: scaleY(1);
+  }
+}

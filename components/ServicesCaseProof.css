@@ -1,0 +1,142 @@
+.services-case-proof {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: white;
+}
+
+.case-proof-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.proof-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.proof-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.proof-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.proof-investment {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d1fae5;
+}
+
+.proof-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.proof-stat-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.proof-stat-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.stat-value-large {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label-large {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.proof-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.highlight-check {
+  width: 24px;
+  height: 24px;
+  color: #d1fae5;
+  flex-shrink: 0;
+}
+
+.proof-cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.proof-cta-button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background: white;
+  color: #059669;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.proof-cta-button:hover {
+  background: #f0fdf4;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .services-case-proof {
+    padding: 4rem 1rem;
+  }
+
+  .proof-title {
+    font-size: 1.75rem;
+  }
+
+  .proof-stats,
+  .proof-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-value-large {
+    font-size: 2rem;
+  }
+}

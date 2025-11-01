@@ -15,21 +15,21 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
   const navigation = {
     ja: {
       links: [
-        { href: '#solutions', label: 'ソリューション' },
-        { href: '#services', label: 'サービス' },
-        { href: '#case-studies', label: '事例紹介' },
-        { href: '#company', label: '会社情報' },
-        { href: '#contact', label: 'お問い合わせ' }
+        { href: '/solutions', label: 'ソリューション', isRoute: true },
+        { href: '/services', label: 'サービス', isRoute: true },
+        { href: '/case-studies', label: '事例紹介', isRoute: true },
+        { href: '/team', label: 'チーム', isRoute: true },
+        { href: '/contact', label: 'お問い合わせ', isRoute: true }
       ],
       languageToggle: { href: '/en', label: 'English' }
     },
     en: {
       links: [
-        { href: '#solutions', label: 'Solutions' },
-        { href: '#services', label: 'Services' },
-        { href: '#case-studies', label: 'Case Studies' },
-        { href: '#company', label: 'Company' },
-        { href: '#contact', label: 'Contact' }
+        { href: '/en/solutions', label: 'Solutions', isRoute: true },
+        { href: '/en/services', label: 'Services', isRoute: true },
+        { href: '/en/case-studies', label: 'Case Studies', isRoute: true },
+        { href: '/en/team', label: 'Team', isRoute: true },
+        { href: '/en/contact', label: 'Contact', isRoute: true }
       ],
       languageToggle: { href: '/', label: '日本語' }
     }
@@ -57,7 +57,11 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
           <ul>
             {currentNav.links.map((link) => (
               <li key={link.href}>
-                <a href={link.href}>{link.label}</a>
+                {link.isRoute ? (
+                  <Link href={link.href}>{link.label}</Link>
+                ) : (
+                  <a href={link.href}>{link.label}</a>
+                )}
               </li>
             ))}
           </ul>
@@ -90,12 +94,18 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
           <ul>
             {currentNav.links.map((link) => (
               <li key={link.href}>
-                <a
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
+                {link.isRoute ? (
+                  <Link href={link.href} onClick={() => setMobileMenuOpen(false)}>
+                    {link.label}
+                  </Link>
+                ) : (
+                  <a
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>

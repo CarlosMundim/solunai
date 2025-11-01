@@ -1,0 +1,277 @@
+.funding-strategy-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.funding-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.funding-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.funding-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 12px 0;
+}
+
+.funding-header .subtitle {
+  font-size: 1.25rem;
+  color: #0f3460;
+  margin: 0 0 16px 0;
+  font-weight: 500;
+}
+
+.funding-header .intro {
+  font-size: 1.125rem;
+  color: #666;
+  margin: 0;
+}
+
+.phases-timeline {
+  display: grid;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.phase-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 32px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.phase-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: #0095ff;
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.phase-badge {
+  background: linear-gradient(135deg, #0095ff 0%, #0066cc 100%);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.phase-period {
+  color: #666;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.phase-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 16px 0;
+}
+
+.phase-total {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0095ff;
+  margin-bottom: 24px;
+}
+
+.funding-sources {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.source-item {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid #0095ff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.source-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.source-name {
+  font-weight: 600;
+  color: #1a1a2e;
+  font-size: 1.125rem;
+  flex: 1;
+}
+
+.source-amount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0095ff;
+}
+
+.source-status {
+  display: inline-block;
+  padding: 4px 12px;
+  background: #e8f5ff;
+  color: #0066cc;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.source-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.fund-usage {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.fund-usage h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 12px 0;
+}
+
+.fund-usage ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.fund-usage li {
+  padding: 10px 12px;
+  background: white;
+  border-radius: 6px;
+  border-left: 3px solid #28a745;
+  color: #1a1a2e;
+  font-size: 0.95rem;
+}
+
+.phase-milestones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.milestone-item {
+  background: linear-gradient(135deg, #28a745 0%, #20873a 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.milestone-label {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  opacity: 0.95;
+}
+
+.milestone-target {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.risk-mitigation {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f5ff 100%);
+  border-radius: 12px;
+  padding: 40px;
+  border: 2px solid #0095ff;
+}
+
+.risk-mitigation h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f3460;
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.risk-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: white;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #1a1a2e;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.risk-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: #28a745;
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .funding-strategy-section {
+    padding: 60px 0;
+  }
+
+  .funding-header h2 {
+    font-size: 2rem;
+  }
+
+  .phase-card {
+    padding: 24px;
+  }
+
+  .phase-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .phase-title {
+    font-size: 1.5rem;
+  }
+
+  .source-header {
+    flex-direction: column;
+  }
+
+  .risk-grid {
+    grid-template-columns: 1fr;
+  }
+}

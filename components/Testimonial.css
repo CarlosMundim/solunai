@@ -1,0 +1,260 @@
+/* ============================================
+   TESTIMONIAL SECTION
+   ============================================ */
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  overflow: hidden;
+}
+
+.testimonial::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 87, 34, 0.5), transparent);
+}
+
+.testimonial-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header */
+.testimonial-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 56px;
+  letter-spacing: -0.02em;
+  animation: fadeSlideUp 0.8s ease-out forwards;
+}
+
+/* Content */
+.testimonial-content {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 56px 48px;
+  backdrop-filter: blur(10px);
+  animation: fadeSlideUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+/* Quote Mark */
+.quote-mark {
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  font-size: 120px;
+  font-weight: 700;
+  color: rgba(255, 87, 34, 0.2);
+  line-height: 1;
+  font-family: Georgia, serif;
+}
+
+/* Quote */
+.testimonial-quote {
+  position: relative;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  margin: 0 0 32px 0;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+/* Attribution */
+.testimonial-attribution {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.author-info {
+  flex: 1;
+}
+
+.author-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #FF5722;
+  margin-bottom: 4px;
+}
+
+.author-company {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Project Info */
+.project-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.info-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: #FF5722;
+  transform: translateY(-2px);
+}
+
+.info-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+.info-value {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+/* Animation */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .testimonial {
+    padding: 60px 0;
+  }
+
+  .testimonial-heading {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-content {
+    padding: 48px 40px;
+  }
+
+  .quote-mark {
+    font-size: 100px;
+    top: 20px;
+    left: 28px;
+  }
+
+  .testimonial-quote {
+    font-size: 20px;
+  }
+
+  .author-name {
+    font-size: 18px;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 767px) {
+  .testimonial {
+    padding: 40px 0;
+  }
+
+  .testimonial-container {
+    padding: 0 24px;
+  }
+
+  .testimonial-heading {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .testimonial-content {
+    padding: 40px 28px;
+  }
+
+  .quote-mark {
+    font-size: 80px;
+    top: 16px;
+    left: 20px;
+  }
+
+  .testimonial-quote {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    padding-left: 0;
+  }
+
+  .testimonial-attribution {
+    margin-bottom: 28px;
+    padding-top: 20px;
+  }
+
+  .author-name {
+    font-size: 17px;
+  }
+
+  .author-company {
+    font-size: 15px;
+  }
+
+  .project-info {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .info-item {
+    padding: 20px;
+  }
+
+  .info-label {
+    font-size: 12px;
+  }
+
+  .info-value {
+    font-size: 15px;
+  }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-heading,
+  .testimonial-content {
+    animation: none;
+    opacity: 1;
+  }
+
+  .info-item {
+    transition: none;
+  }
+
+  .info-item:hover {
+    transform: none;
+  }
+}

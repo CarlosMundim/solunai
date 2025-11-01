@@ -1,0 +1,57 @@
+'use client';
+
+import React from 'react';
+import './CompanyHero.css';
+
+interface CompanyHeroProps {
+  lang: 'ja' | 'en';
+}
+
+const CompanyHero: React.FC<CompanyHeroProps> = ({ lang }) => {
+  const content = {
+    ja: {
+      title: '会社情報',
+      titleEn: 'Company Information',
+      subtitle: 'Transforming Japanese Manufacturing with Proven Technology and Global Partnerships',
+      subtitleJa: '実証済みの技術とグローバルパートナーシップで日本の製造業を変革',
+      description: 'Solunaiは、デジタルツイン技術と世界クラスのエンジニアリングサービスを通じて、日本の製造業のデジタル変革を加速します。'
+    },
+    en: {
+      title: 'Company Information',
+      titleJa: '会社情報',
+      subtitle: 'Transforming Japanese Manufacturing with Proven Technology and Global Partnerships',
+      description: 'Solunai accelerates digital transformation for Japanese manufacturing through digital twin technology and world-class engineering services.'
+    }
+  };
+
+  const current = content[lang];
+
+  return (
+    <section className="company-hero">
+      <div className="company-hero-container">
+        <div className="hero-content">
+          <div className="hero-titles">
+            {lang === 'ja' ? (
+              <>
+                <h1 className="hero-title-main">{current.title}</h1>
+                <p className="hero-title-en">{current.titleEn}</p>
+              </>
+            ) : (
+              <>
+                <h1 className="hero-title-main">{current.title}</h1>
+                <p className="hero-title-ja">{current.titleJa}</p>
+              </>
+            )}
+          </div>
+
+          <p className="hero-subtitle">{current.subtitle}</p>
+          {lang === 'ja' && <p className="hero-subtitle-ja">{current.subtitleJa}</p>}
+
+          <p className="hero-description">{current.description}</p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CompanyHero;

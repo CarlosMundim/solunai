@@ -1,0 +1,183 @@
+'use client';
+
+import React from 'react';
+import './WhyTrustUs.css';
+
+interface WhyTrustUsProps {
+  lang: 'ja' | 'en';
+}
+
+const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
+  const content = {
+    ja: {
+      title: 'なぜSolunaiを信頼すべきか',
+      subtitle: '実証された実績と国際的な信頼性',
+      sections: [
+        {
+          icon: '🏆',
+          title: '実証された実績',
+          points: [
+            'Carlos: 52倍の成長実績（Continental）',
+            'Tomoo: ¥120億円以上のエグジット・ポートフォリオ',
+            'FBM Hudson: €2.5M-€3.8M プロジェクト進行中',
+          ],
+        },
+        {
+          icon: '🌍',
+          title: '国際的な信頼性',
+          points: [
+            'EU パートナーシップ（WorldEmp、FBM）',
+            'エンタープライズグレードの技術（NVIDIA、ANSYS、Azure）',
+            'ISO 27001、SOC 2、GDPR準拠',
+          ],
+        },
+        {
+          icon: '🏭',
+          title: '製造業の深い知見',
+          points: [
+            '60年以上の統合経験',
+            '自動車、HVAC、電子機器、機械製造',
+            'プロセスエンジニアリングから戦略的M&Aまで',
+          ],
+        },
+        {
+          icon: '📈',
+          title: 'スケーラブルな実行',
+          points: [
+            'WorldEmpによる柔軟なエンジニアリング能力',
+            '変動費構造（固定費リスクなし）',
+            '同時に20-30社のクライアントに対応可能',
+          ],
+        },
+      ],
+      stats: [
+        {
+          number: '52×',
+          label: '成長実績',
+          sublabel: 'Continental変革',
+        },
+        {
+          number: '¥12B+',
+          label: 'エグジット実績',
+          sublabel: '戦略的価値創出',
+        },
+        {
+          number: '60+',
+          label: '年の経験',
+          sublabel: '統合製造業知識',
+        },
+        {
+          number: '€2.5M+',
+          label: '進行中プロジェクト',
+          sublabel: 'FBM Hudson',
+        },
+      ],
+    },
+    en: {
+      title: 'Why Trust Solunai',
+      subtitle: 'Proven Track Record and International Credibility',
+      sections: [
+        {
+          icon: '🏆',
+          title: 'Proven Track Record',
+          points: [
+            'Carlos: 52× growth achievement (Continental)',
+            'Tomoo: ¥12B+ exit portfolio',
+            'FBM Hudson: €2.5M-€3.8M project in progress',
+          ],
+        },
+        {
+          icon: '🌍',
+          title: 'International Credibility',
+          points: [
+            'EU partnerships (WorldEmp, FBM)',
+            'Enterprise-grade technology (NVIDIA, ANSYS, Azure)',
+            'ISO 27001, SOC 2, GDPR compliant',
+          ],
+        },
+        {
+          icon: '🏭',
+          title: 'Deep Manufacturing Expertise',
+          points: [
+            '60+ years combined experience',
+            'Automotive, HVAC, electronics, machinery manufacturing',
+            'Process engineering to strategic M&A',
+          ],
+        },
+        {
+          icon: '📈',
+          title: 'Scalable Execution',
+          points: [
+            'Flexible engineering capacity via WorldEmp',
+            'Variable cost structure (no fixed cost risk)',
+            'Capable of serving 20-30 clients simultaneously',
+          ],
+        },
+      ],
+      stats: [
+        {
+          number: '52×',
+          label: 'Growth Achievement',
+          sublabel: 'Continental Transformation',
+        },
+        {
+          number: '¥12B+',
+          label: 'Exit Portfolio',
+          sublabel: 'Strategic Value Creation',
+        },
+        {
+          number: '60+',
+          label: 'Years Experience',
+          sublabel: 'Combined Manufacturing Knowledge',
+        },
+        {
+          number: '€2.5M+',
+          label: 'Active Project',
+          sublabel: 'FBM Hudson',
+        },
+      ],
+    },
+  };
+
+  const text = content[lang];
+
+  return (
+    <section className="trust-section">
+      <div className="trust-container">
+        <h2 className="trust-title">{text.title}</h2>
+        <p className="trust-subtitle">{text.subtitle}</p>
+
+        {/* Trust Sections */}
+        <div className="trust-grid">
+          {text.sections.map((section, idx) => (
+            <div key={idx} className="trust-card">
+              <div className="trust-icon">{section.icon}</div>
+              <h3 className="trust-card-title">{section.title}</h3>
+              <ul className="trust-points">
+                {section.points.map((point, pIdx) => (
+                  <li key={pIdx} className="trust-point">
+                    <span className="point-bullet">✓</span>
+                    <span className="point-text">{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Stats Showcase */}
+        <div className="trust-stats">
+          {text.stats.map((stat, idx) => (
+            <div key={idx} className="trust-stat">
+              <div className="stat-number-large">{stat.number}</div>
+              <div className="stat-label-large">{stat.label}</div>
+              <div className="stat-sublabel">{stat.sublabel}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhyTrustUs;

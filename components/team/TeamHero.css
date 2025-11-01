@@ -1,0 +1,282 @@
+/* ============================================
+   TEAM HERO SECTION
+   ============================================ */
+
+.team-hero {
+  margin-top: 80px;
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(46, 49, 146, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(242, 101, 34, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.team-hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 8%;
+  position: relative;
+  z-index: 1;
+}
+
+.team-hero-content {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.team-hero-title {
+  font-size: 64px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.team-hero-subtitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2E3192;
+  margin-bottom: 12px;
+}
+
+.team-hero-tagline {
+  font-size: 24px;
+  font-weight: 600;
+  color: #F26522;
+  margin-bottom: 48px;
+}
+
+/* Founder Highlights */
+.team-hero-highlights {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.founder-highlight {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.founder-name {
+  font-weight: 800;
+  color: #2E3192;
+  font-size: 22px;
+}
+
+.founder-experience {
+  font-weight: 500;
+  color: #555;
+}
+
+.separator {
+  margin: 0 12px;
+  color: #ddd;
+  font-weight: 300;
+}
+
+.founder-achievement {
+  font-weight: 700;
+  color: #F26522;
+  font-size: 21px;
+}
+
+/* Capabilities */
+.team-hero-capabilities {
+  font-size: 26px;
+  font-weight: 600;
+  color: #1a1a2e;
+  padding: 30px 40px;
+  background: linear-gradient(135deg, #2E3192 0%, #1a237e 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(46, 49, 146, 0.3);
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Stats Cards */
+.team-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card.highlight {
+  background: linear-gradient(135deg, #F26522 0%, #ff8f52 100%);
+  color: #ffffff;
+}
+
+.stat-card.highlight .stat-number,
+.stat-card.highlight .stat-label {
+  color: #ffffff;
+}
+
+.stat-number {
+  font-size: 56px;
+  font-weight: 900;
+  color: #2E3192;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .team-hero {
+    margin-top: 60px;
+    padding: 80px 0 60px;
+  }
+
+  .team-hero-title {
+    font-size: 48px;
+  }
+
+  .team-hero-subtitle {
+    font-size: 26px;
+  }
+
+  .team-hero-tagline {
+    font-size: 20px;
+  }
+
+  .founder-highlight {
+    font-size: 18px;
+    padding: 16px 24px;
+  }
+
+  .founder-name {
+    font-size: 20px;
+  }
+
+  .founder-achievement {
+    font-size: 19px;
+  }
+
+  .team-hero-capabilities {
+    font-size: 22px;
+    padding: 24px 32px;
+  }
+
+  .team-hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .stat-number {
+    font-size: 48px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .team-hero {
+    padding: 60px 0 40px;
+  }
+
+  .team-hero-title {
+    font-size: 36px;
+  }
+
+  .team-hero-subtitle {
+    font-size: 22px;
+  }
+
+  .team-hero-tagline {
+    font-size: 18px;
+    margin-bottom: 32px;
+  }
+
+  .team-hero-highlights {
+    gap: 16px;
+  }
+
+  .founder-highlight {
+    font-size: 16px;
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .founder-name {
+    font-size: 18px;
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .founder-achievement {
+    font-size: 17px;
+  }
+
+  .team-hero-capabilities {
+    font-size: 18px;
+    padding: 20px 24px;
+  }
+
+  .team-hero-stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stat-card {
+    padding: 32px 24px;
+  }
+
+  .stat-number {
+    font-size: 44px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+  }
+}

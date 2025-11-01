@@ -1,0 +1,352 @@
+/* ============================================
+   CO-FOUNDER PROFILE
+   ============================================ */
+
+.cofounder-profile {
+  padding: 80px 0;
+  position: relative;
+}
+
+.cofounder-profile.cto {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.cofounder-profile.ceo {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.cofounder-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+/* Header Section */
+.cofounder-header {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 48px;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.cofounder-image-wrapper {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.cofounder-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cofounder-title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cofounder-name {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1a1a2e;
+  line-height: 1.2;
+}
+
+.name-romaji,
+.name-japanese {
+  font-size: 28px;
+  font-weight: 600;
+  color: #666;
+  display: block;
+  margin-top: 8px;
+}
+
+.cofounder-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2E3192;
+  margin: 0;
+}
+
+.cofounder-header-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: #F26522;
+  margin: 8px 0 0;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2E3192;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #F26522;
+}
+
+/* Achievements Section */
+.achievements-section {
+  margin-bottom: 48px;
+}
+
+.achievement-block {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.achievement-header {
+  margin-bottom: 20px;
+}
+
+.company-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 6px;
+}
+
+.position-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #666;
+  margin: 0;
+}
+
+.highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.highlight-item.emphasis {
+  background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+  padding: 16px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #F26522;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.highlight-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.highlight-text {
+  flex: 1;
+}
+
+/* Combined Section (CEO) */
+.combined-section {
+  background: linear-gradient(135deg, #E8EAF6 0%, #C5CAE9 100%);
+  padding: 40px;
+  border-radius: 16px;
+  margin-bottom: 48px;
+  box-shadow: 0 4px 20px rgba(46, 49, 146, 0.15);
+}
+
+.combined-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.combined-item {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #1a1a2e;
+  font-weight: 500;
+  display: flex;
+  gap: 12px;
+}
+
+.bullet {
+  color: #2E3192;
+  font-weight: 700;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+/* Info Sections */
+.info-section {
+  margin-bottom: 40px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-list.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 24px;
+}
+
+.info-item {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.languages-text {
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+  .cofounder-header {
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+
+  .cofounder-image-wrapper {
+    width: 240px;
+    height: 240px;
+  }
+
+  .cofounder-name {
+    font-size: 36px;
+  }
+
+  .name-romaji,
+  .name-japanese {
+    font-size: 24px;
+  }
+
+  .cofounder-title {
+    font-size: 20px;
+  }
+
+  .cofounder-header-text {
+    font-size: 19px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .company-name {
+    font-size: 21px;
+  }
+
+  .info-list.expertise-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .cofounder-profile {
+    padding: 60px 0;
+  }
+
+  .cofounder-header {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .cofounder-image-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .cofounder-name {
+    font-size: 30px;
+  }
+
+  .name-romaji,
+  .name-japanese {
+    font-size: 20px;
+  }
+
+  .cofounder-title {
+    font-size: 18px;
+  }
+
+  .cofounder-header-text {
+    font-size: 17px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .achievement-block {
+    padding: 24px 20px;
+  }
+
+  .company-name {
+    font-size: 20px;
+  }
+
+  .position-title {
+    font-size: 16px;
+  }
+
+  .highlight-item {
+    font-size: 15px;
+  }
+
+  .highlight-item.emphasis {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .combined-section {
+    padding: 28px 20px;
+  }
+
+  .combined-item {
+    font-size: 16px;
+  }
+
+  .info-item {
+    font-size: 15px;
+  }
+
+  .languages-text {
+    font-size: 15px;
+  }
+}

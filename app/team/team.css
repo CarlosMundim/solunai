@@ -1,0 +1,16 @@
+/* ============================================
+   TEAM PAGE - GLOBAL STYLES
+   ============================================ */
+
+.team-profiles {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #ffffff 100%);
+}
+
+/* Ensure smooth transitions between sections */
+.team-profiles > div:first-child {
+  padding-top: 0;
+}
+
+.team-profiles > div:last-child {
+  padding-bottom: 0;
+}

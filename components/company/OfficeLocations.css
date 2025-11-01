@@ -1,0 +1,220 @@
+.office-locations-section {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.locations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.locations-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.locations-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 12px 0;
+}
+
+.locations-header .subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin: 0;
+}
+
+.locations-content {
+  display: grid;
+  gap: 32px;
+}
+
+/* Headquarters Card */
+.office-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: 2px solid #0095ff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.office-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #0095ff 0%, #0066cc 100%);
+  color: white;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.office-card h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 32px 0;
+}
+
+.office-details {
+  display: grid;
+  gap: 24px;
+}
+
+.detail-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.detail-icon {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.detail-content {
+  flex: 1;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.detail-value {
+  font-size: 1.125rem;
+  color: #1a1a2e;
+  font-weight: 500;
+}
+
+.detail-value a {
+  color: #0095ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.detail-value a:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.detail-value-secondary {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Info Cards */
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.info-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f3460;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #0095ff;
+}
+
+.info-primary {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 12px 0;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #0095ff;
+}
+
+.info-note {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Contact Methods */
+.contact-methods {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-method {
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #0095ff;
+}
+
+.method-type {
+  font-weight: 700;
+  color: #0f3460;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.method-value {
+  font-size: 1.125rem;
+  color: #1a1a2e;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.method-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .office-locations-section {
+    padding: 60px 0;
+  }
+
+  .locations-header h2 {
+    font-size: 2rem;
+  }
+
+  .office-card {
+    padding: 24px;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .detail-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.25rem;
+  }
+}
