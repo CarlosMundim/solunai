@@ -225,7 +225,7 @@ const FundingStrategy: React.FC<FundingStrategyProps> = ({ lang }) => {
                           <div className="source-amount">{source.amount}</div>
                         )}
                       </div>
-                      {source.status && (
+                      {'status' in source && source.status && (
                         <div className="source-status">{source.status}</div>
                       )}
                       <div className="source-description">{source.description}</div>

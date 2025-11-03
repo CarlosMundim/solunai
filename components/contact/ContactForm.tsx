@@ -99,7 +99,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ lang }) => {
         website: 'ウェブサイトURL（任意）'
       },
       step2: {
-        title: 'ステップ 2: ご担当者情報',
+        heading: 'ステップ 2: ご担当者情報',
         name: 'お名前',
         title: '役職',
         email: 'メールアドレス',
@@ -224,7 +224,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ lang }) => {
         website: 'Website URL (Optional)'
       },
       step2: {
-        title: 'Step 2: Your Information',
+        heading: 'Step 2: Your Information',
         name: 'Your Name',
         title: 'Title/Position',
         email: 'Email',
@@ -591,7 +591,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ lang }) => {
                   exit={{ opacity: 0, x: -50 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h3 className="text-2xl font-bold text-gray-900 mb-8">{text.step2.title}</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-8">{text.step2.heading}</h3>
 
                   <div className="space-y-6">
                     <div>

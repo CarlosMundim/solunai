@@ -24,8 +24,6 @@ const CompanyHero: React.FC<CompanyHeroProps> = ({ lang }) => {
     }
   };
 
-  const current = content[lang];
-
   return (
     <section className="company-hero">
       <div className="company-hero-container">
@@ -33,21 +31,21 @@ const CompanyHero: React.FC<CompanyHeroProps> = ({ lang }) => {
           <div className="hero-titles">
             {lang === 'ja' ? (
               <>
-                <h1 className="hero-title-main">{current.title}</h1>
-                <p className="hero-title-en">{current.titleEn}</p>
+                <h1 className="hero-title-main">{content.ja.title}</h1>
+                <p className="hero-title-en">{content.ja.titleEn}</p>
               </>
             ) : (
               <>
-                <h1 className="hero-title-main">{current.title}</h1>
-                <p className="hero-title-ja">{current.titleJa}</p>
+                <h1 className="hero-title-main">{content.en.title}</h1>
+                <p className="hero-title-ja">{content.en.titleJa}</p>
               </>
             )}
           </div>
 
-          <p className="hero-subtitle">{current.subtitle}</p>
-          {lang === 'ja' && <p className="hero-subtitle-ja">{current.subtitleJa}</p>}
+          <p className="hero-subtitle">{content[lang].subtitle}</p>
+          {lang === 'ja' && <p className="hero-subtitle-ja">{content.ja.subtitleJa}</p>}
 
-          <p className="hero-description">{current.description}</p>
+          <p className="hero-description">{content[lang].description}</p>
         </div>
       </div>
     </section>

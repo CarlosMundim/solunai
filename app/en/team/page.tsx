@@ -8,7 +8,7 @@ import Values from '@/components/team/Values';
 import Timeline from '@/components/team/Timeline';
 import WhyTrustUs from '@/components/team/WhyTrustUs';
 import TeamCTA from '@/components/team/TeamCTA';
-import '../team.css';
+import '../../team.css';
 
 export default function TeamPageEN() {
   return (

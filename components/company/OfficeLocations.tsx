@@ -104,10 +104,10 @@ const OfficeLocations: React.FC<OfficeLocationsProps> = ({ lang }) => {
                 <div className="detail-content">
                   <div className="detail-label">{lang === 'ja' ? '住所:' : 'Address:'}</div>
                   <div className="detail-value">{current.headquarters.address}</div>
-                  {lang === 'ja' && current.headquarters.addressEn && (
+                  {lang === 'ja' && 'addressEn' in current.headquarters && current.headquarters.addressEn && (
                     <div className="detail-value-secondary">{current.headquarters.addressEn}</div>
                   )}
-                  {lang === 'en' && current.headquarters.addressJa && (
+                  {lang === 'en' && 'addressJa' in current.headquarters && current.headquarters.addressJa && (
                     <div className="detail-value-secondary">{current.headquarters.addressJa}</div>
                   )}
                 </div>
