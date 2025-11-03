@@ -1,0 +1,265 @@
+.implementation-framework {
+  width: 100%;
+  background: #ffffff;
+  padding: 100px 24px;
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+}
+
+html[lang="ja"] .implementation-framework {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+}
+
+.implementation-framework-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.implementation-framework-heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 24px 0;
+  color: var(--foreground, #171717);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.implementation-framework-subheading {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #6b7280;
+  margin: 0 0 60px 0;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phases-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.phase-card {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.phase-card:hover {
+  border-color: #0091ff;
+  box-shadow: 0 12px 32px rgba(0, 145, 255, 0.15);
+  transform: translateY(-8px);
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.phase-number {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0091ff;
+  padding: 6px 16px;
+  background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+  border-radius: 20px;
+}
+
+.phase-duration {
+  font-size: 13px;
+  font-weight: 600;
+  color: #9ca3af;
+}
+
+.phase-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--foreground, #171717);
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.phase-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b7280;
+  margin: 0 0 24px 0;
+}
+
+.phase-section {
+  margin-bottom: 24px;
+}
+
+.phase-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--foreground, #171717);
+  margin: 0 0 12px 0;
+}
+
+.phase-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phase-list li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6b7280;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.phase-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #0091ff;
+  font-weight: 700;
+}
+
+.phase-investment {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0091ff;
+}
+
+.support-section {
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+  border-radius: 16px;
+  padding: 48px;
+  margin-bottom: 40px;
+}
+
+.support-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--foreground, #171717);
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.support-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 28px;
+  transition: all 0.3s ease;
+}
+
+.support-item:hover {
+  border-color: #0091ff;
+  box-shadow: 0 4px 12px rgba(0, 145, 255, 0.1);
+}
+
+.support-item-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--foreground, #171717);
+  margin: 0 0 12px 0;
+}
+
+.support-item-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b7280;
+  margin: 0;
+}
+
+html[lang="ja"] .support-item-description {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.implementation-note {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #374151;
+  text-align: center;
+  font-style: italic;
+  margin: 0;
+  padding: 28px 32px;
+  background: #fef3c7;
+  border-radius: 8px;
+  border: 2px solid #f59e0b;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .implementation-framework-heading {
+    font-size: 40px;
+  }
+
+  .phases-timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .implementation-framework {
+    padding: 60px 20px;
+  }
+
+  .implementation-framework-heading {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .implementation-framework-subheading {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .phase-card {
+    padding: 24px;
+  }
+
+  .phase-title {
+    font-size: 20px;
+  }
+
+  .support-section {
+    padding: 32px 24px;
+  }
+
+  .support-heading {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .support-item {
+    padding: 24px;
+  }
+
+  .implementation-note {
+    font-size: 13px;
+    padding: 20px;
+  }
+}

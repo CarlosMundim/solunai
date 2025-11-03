@@ -1,0 +1,84 @@
+.transformation-statement {
+  width: 100%;
+  background: #ffffff;
+  padding: 120px 24px;
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+}
+
+html[lang="ja"] .transformation-statement {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+}
+
+.transformation-statement-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.transformation-statement-heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 32px 0;
+  color: var(--foreground, #171717);
+  letter-spacing: -0.02em;
+}
+
+.transformation-statement-description {
+  font-size: 22px;
+  line-height: 1.7;
+  color: #6b7280;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang="ja"] .transformation-statement-description {
+  letter-spacing: 0.02em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .transformation-statement {
+    padding: 100px 24px;
+  }
+
+  .transformation-statement-heading {
+    font-size: 40px;
+    margin-bottom: 28px;
+  }
+
+  .transformation-statement-description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .transformation-statement {
+    padding: 80px 20px;
+  }
+
+  .transformation-statement-heading {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .transformation-statement-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .transformation-statement {
+    padding: 60px 16px;
+  }
+
+  .transformation-statement-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .transformation-statement-description {
+    font-size: 17px;
+  }
+}

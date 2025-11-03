@@ -1,0 +1,158 @@
+.partnership-logos {
+  width: 100%;
+  background: #ffffff;
+  padding: 100px 24px;
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+}
+
+html[lang="ja"] .partnership-logos {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+}
+
+.partnership-logos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partnership-logos-heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 24px 0;
+  color: var(--foreground, #171717);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.partnership-logos-subheading {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #6b7280;
+  margin: 0 0 60px 0;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partnership-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.partner-card {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.partner-card:hover {
+  border-color: #f59e0b;
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.15);
+  transform: translateY(-4px);
+}
+
+.partner-logo-wrapper {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 12px;
+}
+
+.partner-logo {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.partner-card:hover .partner-logo {
+  filter: grayscale(0%);
+}
+
+.partner-category {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9ca3af;
+  margin-bottom: 12px;
+}
+
+.partner-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6b7280;
+  margin: 0;
+}
+
+html[lang="ja"] .partner-description {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.partnership-logos-note {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #374151;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  margin: 48px 0 0 0;
+  padding: 32px 40px;
+  background: #fef3c7;
+  border-radius: 12px;
+  border: 2px solid #f59e0b;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .partnership-logos-heading {
+    font-size: 40px;
+  }
+
+  .partnership-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .partnership-logos {
+    padding: 60px 20px;
+  }
+
+  .partnership-logos-heading {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .partnership-logos-subheading {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  .partnership-logos-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .partner-card {
+    padding: 28px 20px;
+  }
+
+  .partnership-logos-note {
+    font-size: 13px;
+    padding: 20px;
+  }
+}

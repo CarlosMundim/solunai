@@ -1,0 +1,159 @@
+.ai-technology-stack {
+  width: 100%;
+  background: linear-gradient(to bottom, #f8f9fa 0%, #ffffff 100%);
+  padding: 100px 24px;
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+  overflow: hidden;
+}
+
+html[lang="ja"] .ai-technology-stack {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+}
+
+.ai-technology-stack-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.ai-technology-stack-heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 60px 0;
+  color: var(--foreground, #171717);
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+/* Cards Grid Container */
+.ai-technology-stack-scroll-container {
+  width: 100%;
+}
+
+.ai-technology-stack-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Square Cards */
+.ai-tech-card {
+  width: 100%;
+  aspect-ratio: 1;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 40px;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.ai-tech-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
+  transform: translateY(-3px);
+  border-color: #9ca3af;
+}
+
+.ai-tech-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0091ff;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.ai-tech-card-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6b7280;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang="ja"] .ai-tech-card-description {
+  letter-spacing: 0.02em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ai-technology-stack-heading {
+    font-size: 40px;
+    margin-bottom: 48px;
+  }
+
+  .ai-technology-stack-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ai-tech-card {
+    padding: 32px;
+  }
+
+  .ai-tech-card-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-technology-stack {
+    padding: 60px 20px;
+  }
+
+  .ai-technology-stack-heading {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .ai-technology-stack-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .ai-tech-card {
+    padding: 28px;
+  }
+
+  .ai-tech-card-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .ai-tech-card-description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ai-technology-stack {
+    padding: 40px 16px;
+  }
+
+  .ai-technology-stack-heading {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .ai-technology-stack-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ai-tech-card {
+    padding: 24px;
+  }
+
+  .ai-tech-card-title {
+    font-size: 18px;
+  }
+
+  .ai-tech-card-description {
+    font-size: 14px;
+  }
+}

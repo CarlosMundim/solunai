@@ -6,9 +6,11 @@ import ProblemStatement from '@/components/ProblemStatement';
 import ValueProposition from '@/components/ValueProposition';
 import StatementBanner from '@/components/StatementBanner';
 import StackedCards from '@/components/StackedCards';
+import SolutionsHeadline from '@/components/SolutionsHeadline';
 import ClientSuccess from '@/components/ClientSuccess';
 import TechnologyPartners from '@/components/TechnologyPartners';
 import PrimaryCTA from '@/components/PrimaryCTA';
+import Footer from '@/components/Footer';
 
 export default function EnglishHome() {
   return (
@@ -19,9 +21,11 @@ export default function EnglishHome() {
       <ValueProposition lang="en" />
       <StatementBanner lang="en" />
       <StackedCards lang="en" />
+      <SolutionsHeadline lang="en" />
       <ClientSuccess lang="en" />
       <TechnologyPartners lang="en" />
       <PrimaryCTA lang="en" />
+      <Footer lang="en" />
     </main>
   );
 }

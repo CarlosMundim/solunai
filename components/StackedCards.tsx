@@ -174,7 +174,7 @@ const StackedCards: React.FC<StackedCardsProps> = ({ lang }) => {
           );
 
           const scale = useTransform(cardProgress, [0, 1], [1, 0.95]);
-          const opacity = useTransform(cardProgress, [0, 0.5, 1], [1, 1, 0.3]);
+          const opacity = useTransform(cardProgress, [0, 0.5, 1], [1, 1, 1]);
           const y = useTransform(cardProgress, [0, 1], ['0%', '-5%']);
 
           return (
@@ -205,11 +205,8 @@ const StackedCards: React.FC<StackedCardsProps> = ({ lang }) => {
                   </ul>
                 </div>
                 <div className="card-visual-area">
-                  <div className="card-image-placeholder">
-                    {/* Placeholder for card images */}
-                    <div className="placeholder-content">
-                      <span className="placeholder-icon">{card.title}</span>
-                    </div>
+                  <div className="card-image-container">
+                    <img src={card.image} alt={card.subtitle} className="card-image" />
                   </div>
                 </div>
               </div>

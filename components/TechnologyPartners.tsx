@@ -15,24 +15,29 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
       partners: [
         {
           name: 'NVIDIA',
-          description: 'Omniverseデジタルツイン技術'
+          description: 'Omniverseデジタルツイン技術',
+          logo: '/images/partners/nvidia.png'
         },
         {
           name: 'Microsoft Azure',
-          description: 'クラウドインフラとAIサービス'
+          description: 'クラウドインフラとAIサービス',
+          logo: '/images/partners/microsoft.png'
         },
         {
           name: 'ANSYS',
-          description: 'シミュレーション・解析技術'
+          description: 'シミュレーション・解析技術',
+          logo: '/images/partners/ansys.png'
         },
         {
           name: 'Anthropic',
-          description: 'Claude AI - 高度な分析と最適化'
+          description: 'Claude AI - 高度な分析と最適化',
+          logo: '/images/partners/anthropic.png'
         }
       ],
       worldemp: {
         title: 'WorldEmp グローバルエンジニアリング',
-        description: 'オランダ・インド・日本を拠点に、機械学習・自動化・ビジョン専門家を2-6週間で配備（従来の4-6ヶ月から大幅短縮）'
+        description: 'オランダ・インド・日本を拠点に、機械学習・自動化・ビジョン専門家を2-6週間で配備（従来の4-6ヶ月から大幅短縮）',
+        ctaButton: '詳細を見る'
       }
     },
     en: {
@@ -41,24 +46,29 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
       partners: [
         {
           name: 'NVIDIA',
-          description: 'Omniverse Digital Twin Technology'
+          description: 'Omniverse Digital Twin Technology',
+          logo: '/images/partners/nvidia.png'
         },
         {
           name: 'Microsoft Azure',
-          description: 'Cloud Infrastructure & AI Services'
+          description: 'Cloud Infrastructure & AI Services',
+          logo: '/images/partners/microsoft.png'
         },
         {
           name: 'ANSYS',
-          description: 'Simulation & Analysis Technology'
+          description: 'Simulation & Analysis Technology',
+          logo: '/images/partners/ansys.png'
         },
         {
           name: 'Anthropic',
-          description: 'Claude AI - Advanced Analytics & Optimization'
+          description: 'Claude AI - Advanced Analytics & Optimization',
+          logo: '/images/partners/anthropic.png'
         }
       ],
       worldemp: {
         title: 'WorldEmp Global Engineering',
-        description: 'Deploy ML, automation, and vision specialists in 2-6 weeks (vs. 4-6 months traditional) from Netherlands, India, and Japan bases'
+        description: 'Deploy ML, automation, and vision specialists in 2-6 weeks (vs. 4-6 months traditional) from Netherlands, India, and Japan bases',
+        ctaButton: 'Visit Us'
       }
     }
   };
@@ -78,8 +88,8 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
               className="partner-card"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="partner-logo-placeholder">
-                <span className="partner-name">{partner.name}</span>
+              <div className="partner-logo-container">
+                <img src={partner.logo} alt={partner.name} className="partner-logo" />
               </div>
               <p className="partner-description">{partner.description}</p>
             </div>
@@ -87,8 +97,26 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
         </div>
 
         <div className="worldemp-section">
+          <div className="worldemp-logo-container">
+            <img
+              src="/images/WorldEmpLogo_white.png"
+              alt="WorldEmp Logo"
+              className="worldemp-logo"
+            />
+          </div>
           <h3 className="worldemp-title">{currentContent.worldemp.title}</h3>
           <p className="worldemp-description">{currentContent.worldemp.description}</p>
+          <a
+            href="https://worldemp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="worldemp-cta-button"
+          >
+            {currentContent.worldemp.ctaButton}
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </a>
         </div>
       </div>
     </section>

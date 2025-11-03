@@ -13,7 +13,7 @@ const StatementBanner: React.FC<StatementBannerProps> = ({ lang }) => {
       statement: 'データ接続から生産最適化まで\nすべてのステップにAIを'
     },
     en: {
-      statement: 'AI at Every Step\nFrom Data Connection to Production Optimization'
+      statement: 'AI at Every Step\nFrom Data Connection\nto\nProduction Optimization'
     }
   };
 

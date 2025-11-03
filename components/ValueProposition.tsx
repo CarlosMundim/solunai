@@ -102,8 +102,6 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({ lang }) => {
       aria-label={lang === 'ja' ? '価値提案' : 'Value Proposition'}
     >
       <div className="value-proposition-container">
-        <h2 className="value-proposition-title">{currentContent.title}</h2>
-
         <div className="value-proposition-grid">
           {currentContent.columns.map((column, index) => (
             <div

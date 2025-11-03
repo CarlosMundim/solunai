@@ -24,6 +24,19 @@
   margin-bottom: 32px;
 }
 
+.fbm-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.fbm-logo {
+  max-width: 300px;
+  height: auto;
+  display: block;
+}
+
 .success-title {
   font-size: 56px;
   font-weight: 700;
@@ -48,13 +61,14 @@
 
 .success-block {
   background: #ffffff;
+  border: 1px solid #d1d5db;
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .success-block-label {
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 700;
   color: #FF5722;
   text-transform: uppercase;
@@ -77,7 +91,7 @@
 }
 
 .success-results-label {
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 700;
   color: #FF5722;
   text-transform: uppercase;
@@ -126,6 +140,10 @@
     padding: 80px 20px;
   }
 
+  .fbm-logo {
+    max-width: 250px;
+  }
+
   .success-title {
     font-size: 44px;
   }
@@ -149,6 +167,10 @@
 @media (max-width: 768px) {
   .client-success-section {
     padding: 60px 16px;
+  }
+
+  .fbm-logo {
+    max-width: 200px;
   }
 
   .success-title {
@@ -183,6 +205,10 @@
 
 /* Small Mobile */
 @media (max-width: 480px) {
+  .fbm-logo {
+    max-width: 160px;
+  }
+
   .success-title {
     font-size: 28px;
   }

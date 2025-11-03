@@ -80,6 +80,14 @@ const ClientSuccess: React.FC<ClientSuccessProps> = ({ lang }) => {
       <div className="client-success-container">
         <div className="success-badge">{currentContent.badge}</div>
 
+        <div className="fbm-logo-container">
+          <img
+            src="/images/partners/fbm_logo.jpg"
+            alt="FBM Hudson Italiana Logo"
+            className="fbm-logo"
+          />
+        </div>
+
         <h2 className="success-title">{currentContent.title}</h2>
         <p className="success-subtitle">{currentContent.subtitle}</p>
 

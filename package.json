@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cleanup": "bash cleanup-memory.sh",
+    "fresh": "bash cleanup-memory.sh && rm -rf .next && npm run dev"
   },
   "dependencies": {
     "next": "^15.1.0",
