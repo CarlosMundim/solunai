@@ -1,0 +1,13 @@
+/* Team Page Global Styles */
+
+.team-profiles {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+@media (max-width: 768px) {
+  .team-profiles {
+    padding: 30px 20px;
+  }
+}
