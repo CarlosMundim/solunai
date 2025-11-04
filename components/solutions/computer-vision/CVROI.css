@@ -1,0 +1,486 @@
+.cv-roi {
+  width: 100%;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  padding: 100px 24px;
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+}
+
+html[lang="ja"] .cv-roi {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+}
+
+.cv-roi-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cv-roi-heading {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+  color: var(--foreground, #171717);
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.cv-roi-subheading {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #065f46;
+  margin: 0 0 16px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.cv-roi-intro {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6b7280;
+  margin: 0 0 60px 0;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  text-align: center;
+  color: #171717;
+}
+
+.section-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6b7280;
+  margin: 0 0 40px 0;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #059669;
+  margin: 0 0 32px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Investment Section */
+.investment-section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+
+.investment-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.investment-item {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 24px 32px;
+  transition: all 0.3s ease;
+}
+
+.investment-item.highlight {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  border: 2px solid #10b981;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.2);
+}
+
+.investment-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.investment-category {
+  font-size: 18px;
+  font-weight: 700;
+  color: #171717;
+  margin-bottom: 8px;
+}
+
+.investment-amount {
+  font-size: 24px;
+  font-weight: 700;
+  color: #059669;
+  margin-bottom: 8px;
+}
+
+.investment-item.highlight .investment-amount {
+  color: #065f46;
+  font-size: 28px;
+}
+
+.investment-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-bottom: 60px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.benefit-card {
+  background: #ffffff;
+  border: 2px solid #10b981;
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.1);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(16, 185, 129, 0.25);
+}
+
+.benefit-header {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #d1fae5;
+}
+
+.benefit-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #171717;
+  margin: 0 0 12px 0;
+}
+
+.benefit-savings {
+  font-size: 26px;
+  font-weight: 700;
+  color: #059669;
+}
+
+.benefit-details {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.benefit-details li {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #374151;
+  padding: 8px 0 8px 28px;
+  position: relative;
+}
+
+.benefit-details li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.benefit-percentage {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* ROI Calculation Section */
+.roi-calculation-section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+
+.roi-calculation-box {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 3px solid #10b981;
+  border-radius: 16px;
+  padding: 40px;
+}
+
+.roi-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.roi-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.roi-value {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.roi-value.highlight {
+  color: #dc2626;
+}
+
+.roi-value.success {
+  color: #059669;
+}
+
+.roi-note {
+  font-size: 14px;
+  color: #6b7280;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.roi-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #10b981, transparent);
+  margin: 24px 0;
+}
+
+.roi-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.roi-metric {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+}
+
+.metric-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.metric-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #059669;
+}
+
+/* Comparison Section */
+.comparison-section {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+}
+
+.comparison-table {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background: #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 2fr 2fr;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  gap: 2px;
+}
+
+.table-header .table-cell {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 2fr 2fr;
+  gap: 2px;
+}
+
+.table-row .table-cell {
+  background: #ffffff;
+  padding: 20px 16px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #374151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.table-row .table-cell.metric {
+  font-weight: 700;
+  color: #171717;
+  justify-content: flex-start;
+}
+
+.table-row .table-cell.highlight {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  font-weight: 700;
+  color: #065f46;
+}
+
+.table-row .table-cell.advantage {
+  color: #059669;
+  font-weight: 600;
+}
+
+/* CTA Section */
+.roi-cta-section {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 20px;
+  padding: 60px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cta-heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  color: #ffffff;
+}
+
+.cta-description {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 32px 0;
+  color: #d1fae5;
+}
+
+.cta-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-features li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 52px;
+  text-align: left;
+}
+
+.cta-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 16px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cv-roi-heading {
+    font-size: 40px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .roi-metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .table-header .table-cell:not(:first-child),
+  .table-row .table-cell:not(:first-child) {
+    display: none;
+  }
+
+  .cta-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv-roi {
+    padding: 60px 20px;
+  }
+
+  .cv-roi-heading {
+    font-size: 32px;
+  }
+
+  .investment-section,
+  .roi-calculation-section,
+  .comparison-section {
+    padding: 40px 24px;
+  }
+
+  .roi-cta-section {
+    padding: 40px 24px;
+  }
+
+  .benefit-card {
+    padding: 24px 20px;
+  }
+
+  .roi-calculation-box {
+    padding: 24px 20px;
+  }
+
+  .roi-value {
+    font-size: 24px;
+  }
+
+  .metric-value {
+    font-size: 22px;
+  }
+}

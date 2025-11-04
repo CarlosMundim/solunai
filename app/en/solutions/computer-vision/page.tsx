@@ -1,6 +1,13 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ComputerVisionHero from '@/components/solutions/computer-vision/ComputerVisionHero';
+import CVKeyCapabilities from '@/components/solutions/computer-vision/CVKeyCapabilities';
+import CVWhatIsCV from '@/components/solutions/computer-vision/CVWhatIsCV';
+import CVROI from '@/components/solutions/computer-vision/CVROI';
+import CVTechnologyStack from '@/components/solutions/computer-vision/CVTechnologyStack';
+import CVGovernmentSupport from '@/components/solutions/computer-vision/CVGovernmentSupport';
+import CVImplementationFramework from '@/components/solutions/computer-vision/CVImplementationFramework';
 import DigitalTwinCTA from '@/components/solutions/digital-twin/DigitalTwinCTA';
 
 export const metadata = {
@@ -14,18 +21,13 @@ export default function ComputerVisionPage() {
     <>
       <Header lang="en" />
       <main>
-        <section className="digital-twin-hero">
-          <div className="digital-twin-hero-container">
-            <div className="digital-twin-hero-badge">COMPUTER VISION QC</div>
-            <h1 className="digital-twin-hero-heading">
-              AI-powered automated inspection<br />
-              <span className="digital-twin-hero-heading-highlight">for revolutionary quality</span>
-            </h1>
-            <p className="digital-twin-hero-description">
-              Leverage computer vision and deep learning to automate quality inspection in manufacturing processes. Detect even microscopic defects that human eyes might miss, with real-time feedback and high accuracy.
-            </p>
-          </div>
-        </section>
+        <ComputerVisionHero lang="en" />
+        <CVKeyCapabilities lang="en" />
+        <CVWhatIsCV lang="en" />
+        <CVROI lang="en" />
+        <CVTechnologyStack lang="en" />
+        <CVGovernmentSupport lang="en" />
+        <CVImplementationFramework lang="en" />
         <DigitalTwinCTA lang="en" />
       </main>
       <Footer lang="en" />
