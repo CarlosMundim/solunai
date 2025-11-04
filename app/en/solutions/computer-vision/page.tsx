@@ -5,7 +5,7 @@ import ComputerVisionHero from '@/components/solutions/computer-vision/ComputerV
 import CVKeyCapabilities from '@/components/solutions/computer-vision/CVKeyCapabilities';
 import CVWhatIsCV from '@/components/solutions/computer-vision/CVWhatIsCV';
 import PartnershipLogos from '@/components/solutions/digital-twin/PartnershipLogos';
-import DigitalTwinCTA from '@/components/solutions/digital-twin/DigitalTwinCTA';
+import ComputerVisionCTA from '@/components/solutions/computer-vision/ComputerVisionCTA';
 
 export const metadata = {
   title: 'Computer Vision QC - Solunai',
@@ -22,7 +22,7 @@ export default function ComputerVisionPage() {
         <CVKeyCapabilities lang="en" />
         <CVWhatIsCV lang="en" />
         <PartnershipLogos lang="en" />
-        <DigitalTwinCTA lang="en" />
+        <ComputerVisionCTA lang="en" />
       </main>
       <Footer lang="en" />
     </>

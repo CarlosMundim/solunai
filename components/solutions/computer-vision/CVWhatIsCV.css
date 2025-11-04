@@ -216,8 +216,15 @@ html[lang="ja"] .cv-what-is-cv-intro {
   padding: 4px 12px;
   border-radius: 6px;
   margin-bottom: 12px;
-  background: #000000;
   color: #ffffff;
+}
+
+.before .label {
+  background: #f59e0b;
+}
+
+.after .label {
+  background: #0091ff;
 }
 
 .before p, .after p {
