@@ -90,16 +90,8 @@ html[lang="ja"] .computer-vision-hero-column-left p {
   padding: 32px;
   border-radius: 12px;
   transition: all 0.3s ease;
-}
-
-.computer-vision-hero-problem {
-  background: linear-gradient(135deg, #fef2f2 0%, #fff5f5 100%);
-  border-left: 4px solid #ef4444;
-}
-
-.computer-vision-hero-solution {
-  background: linear-gradient(135deg, #f0fdf4 0%, #f7fee7 100%);
-  border-left: 4px solid #22c55e;
+  background: #ffffff;
+  border: 1px solid #000000;
 }
 
 .computer-vision-hero-problem:hover,

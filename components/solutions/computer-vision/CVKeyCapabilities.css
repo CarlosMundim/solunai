@@ -48,7 +48,7 @@ html[lang="ja"] .key-capabilities-subheading {
 
 .capability-card {
   background: #ffffff;
-  border: 1px solid #d1d5db;
+  border: 1px solid #000000;
   border-radius: 12px;
   padding: 40px;
   transition: all 0.3s ease;
@@ -58,7 +58,7 @@ html[lang="ja"] .key-capabilities-subheading {
 .capability-card:hover {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
   transform: translateY(-3px);
-  border-color: #9ca3af;
+  border-color: #000000;
 }
 
 .capability-title {

@@ -5,7 +5,6 @@ import ComputerVisionHero from '@/components/solutions/computer-vision/ComputerV
 import CVKeyCapabilities from '@/components/solutions/computer-vision/CVKeyCapabilities';
 import CVWhatIsCV from '@/components/solutions/computer-vision/CVWhatIsCV';
 import PartnershipLogos from '@/components/solutions/digital-twin/PartnershipLogos';
-import CVGovernmentSupport from '@/components/solutions/computer-vision/CVGovernmentSupport';
 import DigitalTwinCTA from '@/components/solutions/digital-twin/DigitalTwinCTA';
 
 export const metadata = {
@@ -23,7 +22,6 @@ export default function ComputerVisionPage() {
         <CVKeyCapabilities lang="en" />
         <CVWhatIsCV lang="en" />
         <PartnershipLogos lang="en" />
-        <CVGovernmentSupport lang="en" />
         <DigitalTwinCTA lang="en" />
       </main>
       <Footer lang="en" />

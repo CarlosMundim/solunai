@@ -61,7 +61,7 @@ html[lang="ja"] .cv-what-is-cv-intro {
 
 .cv-feature-card {
   background: #ffffff;
-  border: 1px solid #d1d5db;
+  border: 1px solid #000000;
   border-radius: 12px;
   padding: 40px;
   transition: all 0.3s ease;
@@ -69,9 +69,9 @@ html[lang="ja"] .cv-what-is-cv-intro {
 }
 
 .cv-feature-card:hover {
-  box-shadow: 0 12px 28px rgba(245, 158, 11, 0.15), 0 4px 8px rgba(245, 158, 11, 0.1);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
   transform: translateY(-3px);
-  border-color: #f59e0b;
+  border-color: #000000;
 }
 
 .cv-feature-title {
@@ -112,14 +112,7 @@ html[lang="ja"] .cv-what-is-cv-intro {
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
-.comparison-column.traditional {
-  border: 2px solid #ef4444;
-}
-
-.comparison-column.ai {
-  border: 2px solid #10b981;
+  border: 1px solid #000000;
 }
 
 .comparison-column-title {
@@ -127,14 +120,7 @@ html[lang="ja"] .cv-what-is-cv-intro {
   font-weight: 700;
   margin: 0 0 24px 0;
   text-align: center;
-}
-
-.comparison-column.traditional .comparison-column-title {
-  color: #ef4444;
-}
-
-.comparison-column.ai .comparison-column-title {
-  color: #10b981;
+  color: #171717;
 }
 
 .comparison-list {
@@ -163,19 +149,12 @@ html[lang="ja"] .cv-what-is-cv-intro {
   left: 0;
   font-size: 24px;
   line-height: 1;
-}
-
-.comparison-column.traditional .comparison-list li::before {
-  color: #ef4444;
-}
-
-.comparison-column.ai .comparison-list li::before {
-  color: #10b981;
+  color: #000000;
 }
 
 .comparison-arrow {
   font-size: 48px;
-  color: #f59e0b;
+  color: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,14 +183,14 @@ html[lang="ja"] .cv-what-is-cv-intro {
 }
 
 .scenario {
-  border-left: 4px solid #f59e0b;
+  border-left: 4px solid #000000;
   padding-left: 32px;
 }
 
 .scenario-time {
   font-size: 18px;
   font-weight: 700;
-  color: #f59e0b;
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -224,16 +203,8 @@ html[lang="ja"] .cv-what-is-cv-intro {
 .before, .after {
   padding: 24px;
   border-radius: 12px;
-}
-
-.before {
-  background: #fef2f2;
-  border: 1px solid #fecaca;
-}
-
-.after {
-  background: #f0fdf4;
-  border: 1px solid #bbf7d0;
+  background: #ffffff;
+  border: 1px solid #000000;
 }
 
 .before .label, .after .label {
@@ -245,15 +216,7 @@ html[lang="ja"] .cv-what-is-cv-intro {
   padding: 4px 12px;
   border-radius: 6px;
   margin-bottom: 12px;
-}
-
-.before .label {
-  background: #ef4444;
-  color: #ffffff;
-}
-
-.after .label {
-  background: #10b981;
+  background: #000000;
   color: #ffffff;
 }
 
