@@ -50,7 +50,7 @@ const ComputerVisionHero: React.FC<ComputerVisionHeroProps> = ({ lang }) => {
           <div className="computer-vision-hero-column-right">
             <div className="computer-vision-hero-image">
               <img
-                src="/images/cards/computer_vision.jpg"
+                src="/images/Computer_Vision_QC.jpg"
                 alt={lang === 'ja' ? 'コンピュータビジョン - AI自動品質検査' : 'Computer Vision - AI Automated Quality Inspection'}
               />
             </div>
