@@ -14,12 +14,12 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
       solutions: {
         title: 'ソリューション',
         links: [
-          { label: '概要', href: '/services' },
-          { label: 'デジタルツイン', href: '/services#digital-twin' },
-          { label: 'コンピュータビジョン', href: '/services#computer-vision' },
-          { label: '予知保全', href: '/services#predictive-maintenance' },
-          { label: '生産最適化', href: '/services#optimization' },
-          { label: 'グローバルエンジニア', href: '/services#global-engineering' }
+          { label: '概要', href: '/solutions/overview' },
+          { label: 'デジタルツイン', href: '/solutions/digital-twin' },
+          { label: 'コンピュータビジョン', href: '/solutions/computer-vision' },
+          { label: '予知保全', href: '/solutions/predictive-maintenance' },
+          { label: '生産最適化', href: '/solutions/production-optimization' },
+          { label: 'グローバルエンジニア', href: '/solutions/global-engineering' }
         ]
       },
       company: {
@@ -62,12 +62,12 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
       solutions: {
         title: 'Solutions',
         links: [
-          { label: 'Overview', href: '/en/services' },
-          { label: 'Digital Twin', href: '/en/services#digital-twin' },
-          { label: 'Computer Vision', href: '/en/services#computer-vision' },
-          { label: 'Predictive Maintenance', href: '/en/services#predictive-maintenance' },
-          { label: 'Production Optimization', href: '/en/services#optimization' },
-          { label: 'Global Engineering', href: '/en/services#global-engineering' }
+          { label: 'Overview', href: '/en/solutions/overview' },
+          { label: 'Digital Twin', href: '/en/solutions/digital-twin' },
+          { label: 'Computer Vision', href: '/en/solutions/computer-vision' },
+          { label: 'Predictive Maintenance', href: '/en/solutions/predictive-maintenance' },
+          { label: 'Production Optimization', href: '/en/solutions/production-optimization' },
+          { label: 'Global Engineering', href: '/en/solutions/global-engineering' }
         ]
       },
       company: {
