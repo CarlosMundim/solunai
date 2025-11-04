@@ -69,10 +69,10 @@ html[lang="ja"] .partnership-logos {
 }
 
 .partner-logo {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  width: 160px;
+  height: 60px;
+  object-fit: contain;
+  margin: 8px;
   filter: grayscale(20%);
   transition: filter 0.3s ease;
 }
