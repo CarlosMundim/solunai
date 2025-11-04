@@ -4,10 +4,8 @@ import Footer from '@/components/Footer';
 import ComputerVisionHero from '@/components/solutions/computer-vision/ComputerVisionHero';
 import CVKeyCapabilities from '@/components/solutions/computer-vision/CVKeyCapabilities';
 import CVWhatIsCV from '@/components/solutions/computer-vision/CVWhatIsCV';
-import CVROI from '@/components/solutions/computer-vision/CVROI';
-import CVTechnologyStack from '@/components/solutions/computer-vision/CVTechnologyStack';
+import PartnershipLogos from '@/components/solutions/digital-twin/PartnershipLogos';
 import CVGovernmentSupport from '@/components/solutions/computer-vision/CVGovernmentSupport';
-import CVImplementationFramework from '@/components/solutions/computer-vision/CVImplementationFramework';
 import DigitalTwinCTA from '@/components/solutions/digital-twin/DigitalTwinCTA';
 
 export const metadata = {
@@ -24,10 +22,8 @@ export default function ComputerVisionPage() {
         <ComputerVisionHero lang="en" />
         <CVKeyCapabilities lang="en" />
         <CVWhatIsCV lang="en" />
-        <CVROI lang="en" />
-        <CVTechnologyStack lang="en" />
+        <PartnershipLogos lang="en" />
         <CVGovernmentSupport lang="en" />
-        <CVImplementationFramework lang="en" />
         <DigitalTwinCTA lang="en" />
       </main>
       <Footer lang="en" />
