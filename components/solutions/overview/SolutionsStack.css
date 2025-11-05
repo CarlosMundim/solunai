@@ -1,7 +1,7 @@
 .solutions-stack {
   width: 100%;
-  background: #ffffff;
-  padding: 100px 24px;
+  background: #f8f9fa;
+  padding: 120px 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -10,18 +10,14 @@ html[lang="ja"] .solutions-stack {
 }
 
 .solutions-stack-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  gap: 80px;
-  align-items: start;
 }
 
 /* Left Column - Heading & Description */
 .solutions-stack-left {
-  position: sticky;
-  top: 120px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .solutions-stack-heading {
@@ -53,40 +49,43 @@ html[lang="ja"] .solutions-stack-description {
 
 /* Right Column - Cards */
 .solutions-stack-right {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
 }
 
 .solution-card {
   background: #ffffff;
-  border: 1px solid #d1d5db;
-  border-radius: 12px;
+  border: none;
+  border-radius: 16px;
   padding: 40px;
   position: relative;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .solution-card:hover {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
-  transform: translateY(-3px);
-  border-color: #9ca3af;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
 }
 
 .solution-card-title {
-  font-size: 27px;
+  font-size: 28px;
   font-weight: 700;
-  color: var(--foreground, #171717);
+  color: #1a1a2e;
   margin: 0 0 16px 0;
   line-height: 1.3;
 }
 
 .solution-card-description {
   font-size: 16px;
-  line-height: 1.7;
-  color: #6b7280;
+  line-height: 1.6;
+  color: #666666;
   margin: 0 0 24px 0;
+  flex-grow: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -99,38 +98,29 @@ html[lang="ja"] .solution-card-description {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
-  color: #FF5722;
-  font-size: 15px;
+  background: #FF5722;
+  color: #ffffff;
+  font-size: 16px;
   font-weight: 600;
-  padding: 10px 24px;
-  border-radius: 6px;
+  padding: 12px 28px;
+  border-radius: 50px;
   text-decoration: none;
-  transition: all 0.2s ease;
-  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  border: none;
   cursor: pointer;
+  align-self: flex-start;
 }
 
 .solution-card-button:hover {
-  background: #f8f9fa;
-  color: #E64A19;
-  border-color: #d1d5db;
-  transform: none;
-}
-
-.solution-card-button:active {
-  transform: translateY(0);
+  background: #E64A19;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 87, 34, 0.3);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .solutions-stack-container {
+  .solutions-stack-right {
     grid-template-columns: 1fr;
-    gap: 60px;
-  }
-
-  .solutions-stack-left {
-    position: static;
   }
 
   .solutions-stack-heading {
@@ -143,8 +133,12 @@ html[lang="ja"] .solution-card-description {
     padding: 60px 20px;
   }
 
+  .solutions-stack-left {
+    margin-bottom: 60px;
+  }
+
   .solutions-stack-heading {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 20px;
   }
 
@@ -157,7 +151,7 @@ html[lang="ja"] .solution-card-description {
   }
 
   .solution-card-title {
-    font-size: 23px;
+    font-size: 24px;
   }
 
   .solution-card-description {
@@ -167,7 +161,7 @@ html[lang="ja"] .solution-card-description {
 
 @media (max-width: 480px) {
   .solutions-stack {
-    padding: 40px 16px;
+    padding: 60px 16px;
   }
 
   .solutions-stack-heading {
@@ -175,10 +169,10 @@ html[lang="ja"] .solution-card-description {
   }
 
   .solution-card {
-    padding: 24px 20px;
+    padding: 28px 20px;
   }
 
   .solution-card-title {
-    font-size: 21px;
+    font-size: 22px;
   }
 }

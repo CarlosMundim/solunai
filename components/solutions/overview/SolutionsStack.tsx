@@ -11,86 +11,86 @@ interface SolutionsStackProps {
 const SolutionsStack: React.FC<SolutionsStackProps> = ({ lang }) => {
   const content = {
     ja: {
-      heading: 'Solunaiの5つの',
-      headingHighlight: '製造DXソリューション',
-      description: 'Solunaiは、包括的なAIスタックを数週間で製造現場に導入します。すべてのプロセスに統一されたデータ基盤を提供し、工場データを接続、構造化、分析するAIエージェントを活用します。',
+      heading: 'Solunaiの5つのAIソリューションで',
+      headingHighlight: '製造業を変革',
+      description: '先進的なAI技術で製造プロセス全体を最適化。デジタルツイン、コンピュータビジョン、予知保全、生産最適化、グローバルエンジニアリングで、日本の製造業の未来を創造します。',
       solutions: [
         {
           id: 'digital-twin',
           icon: '🔷',
-          title: 'デジタルツイン',
-          description: '工場のすべてのデータソース（IT、OT、クラウド、エッジ）からデータをキャプチャし、リアルタイムで動的に更新される統合された名前空間に統一します。製造現場の完全なデジタルレプリカを構築。',
+          title: 'デジタルツイン技術',
+          description: '製造現場のリアルタイム仮想レプリカを構築。すべての設備、プロセス、データを統合したデジタル空間で、シミュレーション、分析、最適化を実現します。',
           link: '/solutions/digital-twin'
         },
         {
           id: 'computer-vision',
           icon: '👁️',
           title: 'コンピュータビジョン品質管理',
-          description: '製造工程全体からサイロ化された非構造化データを、クリーンでモデル化された標準フォーマットに継続的に変換。この統一されたデータ基盤により、インサイト、自動化、エンタープライズ全体のスケーラビリティを実現するAI対応の情報が提供されます。',
+          description: 'AI搭載の視覚検査システムで、不良品を自動検出。人の目では見逃しがちな微細な欠陥も高精度で識別し、品質向上とコスト削減を同時に実現します。',
           link: '/solutions/computer-vision'
         },
         {
           id: 'predictive-maintenance',
           icon: '🔧',
           title: '予知保全',
-          description: '稼働時間、スループット、品質、エネルギー、材料使用量、スケジューリングなど、工場パフォーマンスのあらゆる側面を最適化。AI駆動のインサイト、根本原因分析、エンジニアおよび企業運営のためのベンチマーキングを提供します。',
+          description: '設備故障を事前に予測して防止。センサーデータとAI分析により、最適なタイミングでメンテナンスを実施し、ダウンタイムを最小化します。',
           link: '/solutions/predictive-maintenance'
         },
         {
           id: 'production-optimization',
           icon: '⚙️',
           title: '生産最適化',
-          description: 'AIをオペレーターの業務フローに組み込み、読みやすいグラフィックスとアクション可能なアラートでリアルタイムの意思決定をガイド。複雑な工場データを、生産現場で即座に実行可能なインサイトに変換します。',
+          description: 'スループットを最大化し、ムダを最小化。AI分析により生産ラインのボトルネックを特定し、工程改善の具体的な施策を提案します。',
           link: '/solutions/production-optimization'
         },
         {
           id: 'global-engineering',
           icon: '🌐',
           title: 'グローバルエンジニアリング',
-          description: '単一のプロンプトからAI駆動のアプリケーションを作成。製造とデータサイエンスの両方を理解するエージェントを活用し、ビジネスに合わせたカスタムソリューションを迅速に構築できます。',
+          description: '47-Dimensionsプラットフォームで国際的なエンジニア人材を活用。日本の製造業と世界の技術者をつなぎ、イノベーションを加速します。',
           link: '/solutions/global-engineering'
         }
       ],
       learnMore: '詳しく見る'
     },
     en: {
-      heading: 'The five solutions of the',
-      headingHighlight: 'Solunai Manufacturing DX Stack',
-      description: 'Solunai brings the complete AI stack to the factory floor in weeks, with one unified data foundation for every process, and agents that connect, structure, and analyze all plant data.',
+      heading: 'Transform Manufacturing with',
+      headingHighlight: '5 AI-Powered Solutions',
+      description: 'Comprehensive AI technology solutions optimizing every aspect of your manufacturing operations. From digital twins to global engineering, we empower Japanese manufacturers to lead the future.',
       solutions: [
         {
           id: 'digital-twin',
           icon: '🔷',
-          title: 'Digital Twin',
-          description: 'Capture every data point — IT, OT, cloud, edge — and unify them into a real-time, dynamically updating namespace. Build a complete digital replica of your manufacturing operations.',
+          title: 'Digital Twin Technology',
+          description: 'Real-time virtual replica of manufacturing operations. Integrate all equipment, processes, and data in a unified digital space for simulation, analysis, and optimization.',
           link: '/en/solutions/digital-twin'
         },
         {
           id: 'computer-vision',
           icon: '👁️',
-          title: 'Computer Vision QC',
-          description: 'Continuously convert siloed, unstructured data from across your manufacturing operations into clean, modeled, and standardized formats. This unified data foundation makes your information AI-ready—unlocking insights, automation, and scalability across the enterprise.',
+          title: 'Computer Vision Quality Control',
+          description: 'AI-powered visual inspection and defect detection. Identify microscopic defects that human eyes might miss, achieving quality improvement and cost reduction simultaneously.',
           link: '/en/solutions/computer-vision'
         },
         {
           id: 'predictive-maintenance',
           icon: '🔧',
           title: 'Predictive Maintenance',
-          description: 'Optimize every aspect of plant performance — uptime, throughput, quality, energy, materials usage, scheduling, and more — with AI-powered insights, root cause analysis, and benchmarking for engineers and corporate operations.',
+          description: 'Prevent equipment failures before they happen. Use sensor data and AI analysis to schedule maintenance at optimal times, minimizing downtime and maximizing productivity.',
           link: '/en/solutions/predictive-maintenance'
         },
         {
           id: 'production-optimization',
           icon: '⚙️',
           title: 'Production Optimization',
-          description: 'Put AI in the loop with operators — guiding real-time decisions with easy to read graphics and actionable alerts. Transform complex factory data into immediately actionable insights on the production floor.',
+          description: 'Maximize throughput and minimize waste. AI analysis identifies production line bottlenecks and provides actionable recommendations for process improvement.',
           link: '/en/solutions/production-optimization'
         },
         {
           id: 'global-engineering',
           icon: '🌐',
-          title: 'Global Engineering',
-          description: 'Create AI-powered applications from a single prompt. Enlist agents that speak both manufacturing and data science to rapidly build custom solutions tailored to your business needs.',
+          title: 'Global Engineering Platform',
+          description: 'Access international engineering talent through our 47-Dimensions platform. Connect Japanese manufacturing with global technical expertise to accelerate innovation.',
           link: '/en/solutions/global-engineering'
         }
       ],
