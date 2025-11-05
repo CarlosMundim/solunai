@@ -34,8 +34,7 @@ const HeroVideo: React.FC<HeroVideoProps> = ({ lang }) => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             width: '100%',
-            height: '100%',
-            filter: 'blur(2px)'
+            height: '100%'
           }}
         ></div>
         <div className="hero-video-overlay"></div>
