@@ -1,29 +1,32 @@
 .services-competitive-comparison {
-  padding: 6rem 2rem;
-  background: white;
+  padding: 120px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
 }
 
 .competitive-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .competitive-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 80px;
 }
 
 .competitive-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #1e3a8a;
-  margin-bottom: 1rem;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
 .competitive-subtitle {
-  font-size: 1.25rem;
-  color: #64748b;
-  font-weight: 600;
+  font-size: 20px;
+  color: #666666;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .competitors-grid {
@@ -34,35 +37,37 @@
 
 .competitor-comparison-card {
   background: white;
-  border: 2px solid #e2e8f0;
+  border: none;
   border-radius: 16px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
 .competitor-comparison-card:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border-color: #dbeafe;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
 }
 
 .competitor-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #e2e8f0;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #f0f0f0;
 }
 
 .competitor-icon {
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 .competitor-type {
-  font-size: 1.5rem;
+  font-size: 28px;
   font-weight: 700;
-  color: #1e3a8a;
+  color: #1a1a2e;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
 .comparison-columns {
@@ -77,21 +82,25 @@
 }
 
 .solunai-col {
-  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-  border: 2px solid #2563eb;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  border: none;
 }
 
 .competitor-col {
-  background: linear-gradient(135deg, #fef2f2 0%, #fee2e2 100%);
-  border: 2px solid #dc2626;
+  background: #f8f9fa;
+  border: none;
 }
 
 .column-header-small {
-  font-size: 1.1rem;
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
   text-align: center;
-  color: #1e3a8a;
+  color: #1a1a2e;
+}
+
+.solunai-col .column-header-small {
+  color: #ffffff;
 }
 
 .comparison-points {
@@ -117,11 +126,15 @@
 
 .point-value {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .point-row.positive .point-value {
-  color: #059669;
+  color: #FF5722;
+}
+
+.solunai-col .point-row .point-value {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .point-row.negative .point-value {
@@ -129,17 +142,20 @@
 }
 
 .unique-advantages {
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-  padding: 3rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  padding: 80px;
   border-radius: 16px;
   color: white;
+  box-shadow: 0 4px 20px rgba(26, 26, 46, 0.3);
 }
 
 .advantages-title {
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 60px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
 .advantages-grid {
@@ -166,26 +182,52 @@
 }
 
 .advantage-icon {
-  font-size: 2rem;
+  font-size: 32px;
   flex-shrink: 0;
+  color: #FF5722;
 }
 
 .advantage-text {
-  font-size: 0.95rem;
+  font-size: 16px;
   line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 @media (max-width: 768px) {
   .services-competitive-comparison {
-    padding: 4rem 1rem;
+    padding: 60px 16px;
+  }
+
+  .competitive-header {
+    margin-bottom: 60px;
   }
 
   .competitive-title {
-    font-size: 1.75rem;
+    font-size: 32px;
+  }
+
+  .competitive-subtitle {
+    font-size: 16px;
+  }
+
+  .competitor-comparison-card {
+    padding: 32px 24px;
+  }
+
+  .competitor-type {
+    font-size: 24px;
   }
 
   .comparison-columns {
     grid-template-columns: 1fr;
+  }
+
+  .unique-advantages {
+    padding: 40px 24px;
+  }
+
+  .advantages-title {
+    font-size: 28px;
   }
 
   .advantages-grid {

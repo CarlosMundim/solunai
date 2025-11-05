@@ -1,38 +1,40 @@
 .services-value-proposition {
-  padding: 6rem 2rem;
-  background: linear-gradient(to bottom, #f8fafc, #ffffff);
+  padding: 120px 20px;
+  background: #ffffff;
 }
 
 .vp-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .vp-header {
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 80px;
 }
 
 .vp-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #1e3a8a;
-  margin-bottom: 1rem;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
 .vp-subtitle {
-  font-size: 1.25rem;
-  color: #64748b;
-  margin-bottom: 1.5rem;
+  font-size: 20px;
+  color: #FF5722;
+  margin-bottom: 24px;
   font-weight: 600;
 }
 
 .vp-main-message {
-  font-size: 1.1rem;
-  color: #334155;
+  font-size: 18px;
+  color: #666666;
   max-width: 800px;
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .challenges-section {
@@ -46,67 +48,84 @@
 }
 
 .challenge-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  border: 2px solid #f1f5f9;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: none;
   transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .challenge-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-  border-color: #e0e7ff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .challenge-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 48px;
+  margin-bottom: 24px;
 }
 
 .challenge-title {
-  font-size: 1.25rem;
+  font-size: 24px;
   font-weight: 700;
-  color: #1e3a8a;
-  margin-bottom: 0.75rem;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  line-height: 1.3;
 }
 
 .challenge-description {
-  font-size: 1rem;
-  color: #dc2626;
+  font-size: 16px;
+  color: #FF5722;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 12px;
 }
 
 .challenge-impact {
-  font-size: 0.9rem;
-  color: #64748b;
+  font-size: 15px;
+  color: #666666;
   line-height: 1.6;
 }
 
 .solution-section {
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-  padding: 4rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  padding: 80px;
   border-radius: 16px;
   color: white;
+  margin-top: 80px;
 }
 
 .solution-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 60px;
 }
 
 .solution-title {
-  font-size: 2rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
 }
 
 .solution-subtitle {
-  font-size: 1.25rem;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .benefits-grid {
@@ -130,35 +149,44 @@
 }
 
 .benefit-metric {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #60a5fa;
-  margin-bottom: 1rem;
+  font-size: 32px;
+  font-weight: 700;
+  color: #FF5722;
+  margin-bottom: 16px;
 }
 
 .benefit-title {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  margin-bottom: 12px;
+  line-height: 1.3;
 }
 
 .benefit-description {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
 }
 
 @media (max-width: 768px) {
   .services-value-proposition {
-    padding: 4rem 1rem;
+    padding: 60px 16px;
+  }
+
+  .vp-header {
+    margin-bottom: 60px;
   }
 
   .vp-title {
-    font-size: 1.75rem;
+    font-size: 32px;
   }
 
   .vp-subtitle {
-    font-size: 1rem;
+    font-size: 18px;
+  }
+
+  .vp-main-message {
+    font-size: 16px;
   }
 
   .challenges-grid,
@@ -166,11 +194,20 @@
     grid-template-columns: 1fr;
   }
 
+  .challenge-card {
+    padding: 32px 24px;
+  }
+
   .solution-section {
-    padding: 2rem 1.5rem;
+    padding: 40px 24px;
+    margin-top: 60px;
   }
 
   .solution-title {
-    font-size: 1.5rem;
+    font-size: 28px;
+  }
+
+  .solution-subtitle {
+    font-size: 16px;
   }
 }

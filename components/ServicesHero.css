@@ -13,7 +13,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
   z-index: -2;
 }
 
@@ -23,8 +23,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
-              radial-gradient(circle at 70% 50%, rgba(37, 99, 235, 0.2) 0%, transparent 50%);
+  background: linear-gradient(
+    180deg,
+    rgba(26, 26, 46, 0.3) 0%,
+    rgba(26, 26, 46, 0.4) 100%
+  );
   z-index: -1;
 }
 
@@ -97,7 +100,7 @@
 .point-icon {
   width: 24px;
   height: 24px;
-  color: #60a5fa;
+  color: #FF5722;
   flex-shrink: 0;
 }
 
