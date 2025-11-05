@@ -10,34 +10,44 @@ interface TeamHeroProps {
 const TeamHero: React.FC<TeamHeroProps> = ({ lang }) => {
   const content = {
     ja: {
-      title: '私たちのチーム',
-      subtitle: '60年以上の製造業リーダーシップ経験',
+      title: 'Solunaiを支える専門家',
+      subtitle: '製造業とAIの深い専門知識',
       tagline: '世界クラスの実行能力',
       carlos: {
-        highlight: 'Carlos',
-        experience: '30年の製造エンジニアリング',
-        achievement: '52倍成長の実績',
+        highlight: 'Carlos Magno Freitas Mundim',
+        experience: 'CTO - 30年以上の製造業・自動化経験',
+        achievement: '178-295% IRR実績',
       },
       tomoo: {
-        highlight: 'Tomoo',
-        experience: '25年の日本製造業',
-        achievement: '¥120億円以上のエグジット実績',
+        highlight: 'Tomoo Hara',
+        experience: 'マネージングディレクター - 日本製造業のベテラン',
+        achievement: '戦略的ビジネス開発',
+      },
+      jeanette: {
+        highlight: 'Jeanette van Niekerk',
+        experience: 'オペレーションディレクター - プロジェクト管理',
+        achievement: '国際オペレーション調整',
       },
       capabilities: 'AI技術 + グローバルエンジニアリング + 製造業の深い知見',
     },
     en: {
-      title: 'Our Team',
-      subtitle: '60+ Years Combined Manufacturing Leadership',
+      title: 'Meet the Experts Behind Solunai',
+      subtitle: 'Deep expertise in manufacturing and AI',
       tagline: 'World-Class Execution Capability',
       carlos: {
-        highlight: 'Carlos',
-        experience: '30 years manufacturing engineering',
-        achievement: '52× growth achievement',
+        highlight: 'Carlos Magno Freitas Mundim',
+        experience: 'CTO - 30+ years manufacturing & automation',
+        achievement: '178-295% IRR case studies',
       },
       tomoo: {
-        highlight: 'Tomoo',
-        experience: '25 years Japanese manufacturing',
-        achievement: '¥12B+ exit portfolio',
+        highlight: 'Tomoo Hara',
+        experience: 'Managing Director - Japanese manufacturing veteran',
+        achievement: 'Strategic business development',
+      },
+      jeanette: {
+        highlight: 'Jeanette van Niekerk',
+        experience: 'Operations Director - Project management',
+        achievement: 'International operations coordination',
       },
       capabilities: 'AI Technology + Global Engineering + Deep Manufacturing Expertise',
     },
@@ -65,6 +75,12 @@ const TeamHero: React.FC<TeamHeroProps> = ({ lang }) => {
               <span className="founder-experience">{text.tomoo.experience}</span>
               <span className="separator">|</span>
               <span className="founder-achievement">{text.tomoo.achievement}</span>
+            </div>
+            <div className="founder-highlight">
+              <span className="founder-name">{text.jeanette.highlight}:</span>{' '}
+              <span className="founder-experience">{text.jeanette.experience}</span>
+              <span className="separator">|</span>
+              <span className="founder-achievement">{text.jeanette.achievement}</span>
             </div>
           </div>
 

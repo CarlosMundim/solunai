@@ -1,0 +1,157 @@
+.other-case-studies {
+  padding: 120px 0;
+  background: #f8f9fa;
+}
+
+.other-case-studies-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.other-case-studies-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #1a1a2e;
+  margin-bottom: 80px;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.case-study-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.case-study-icon {
+  font-size: 56px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.case-study-header-info {
+  text-align: center;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 32px;
+}
+
+.case-study-client {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.case-study-industry {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 12px;
+}
+
+.case-study-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FF5722;
+  padding: 8px 16px;
+  background: rgba(255, 87, 34, 0.1);
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.case-study-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-section {
+  /* Spacing handled by gap */
+}
+
+.detail-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 8px;
+}
+
+.detail-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666666;
+}
+
+.results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.result-item {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666666;
+  padding-left: 24px;
+  position: relative;
+}
+
+.result-bullet {
+  position: absolute;
+  left: 0;
+  color: #FF5722;
+  font-weight: 700;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .other-case-studies {
+    padding: 80px 0;
+  }
+
+  .other-case-studies-title {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .other-case-studies {
+    padding: 60px 0;
+  }
+
+  .other-case-studies-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .case-study-card {
+    padding: 32px 24px;
+  }
+
+  .case-study-icon {
+    font-size: 48px;
+  }
+
+  .case-study-client {
+    font-size: 24px;
+  }
+}

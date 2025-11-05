@@ -10,7 +10,7 @@ interface CoFounderProfileProps {
   nameRomaji?: string;
   nameJapanese?: string;
   title: string;
-  role: 'cto' | 'ceo';
+  role: 'cto' | 'ceo' | 'coo' | 'md';
   image: string;
 }
 
@@ -391,7 +391,187 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
     },
   };
 
-  const content = role === 'cto' ? carlosContent[lang] : tomooContent[lang];
+  // Tomoo Hara Managing Director Content
+  const tomooMDContent = {
+    ja: {
+      header: '日本製造業界のベテラン',
+      mainAchievements: '主な実績',
+      achievements: [
+        {
+          company: 'クライアント関係管理',
+          position: 'マネージングディレクター',
+          highlights: [
+            {
+              icon: '✓',
+              text: '日本の製造業クライアントとの深い関係構築',
+              emphasis: false,
+            },
+            {
+              icon: '✓',
+              text: '戦略的ビジネス開発とパートナーシップ',
+              emphasis: false,
+            },
+            {
+              icon: '✓',
+              text: '日本のビジネス文化の深い理解',
+              emphasis: false,
+            },
+          ],
+        },
+      ],
+      expertise: {
+        title: '専門知識',
+        items: [
+          'クライアント関係管理',
+          '戦略的ビジネス開発',
+          '日本製造業界の深い知識',
+          '日本のビジネス文化',
+        ],
+      },
+      languages: {
+        title: '言語',
+        text: '日本語（母国語）、英語（ビジネスレベル）',
+      },
+    },
+    en: {
+      header: 'Japanese Manufacturing Industry Veteran',
+      mainAchievements: 'Key Achievements',
+      achievements: [
+        {
+          company: 'Client Relationship Management',
+          position: 'Managing Director',
+          highlights: [
+            {
+              icon: '✓',
+              text: 'Deep relationships with Japanese manufacturing clients',
+              emphasis: false,
+            },
+            {
+              icon: '✓',
+              text: 'Strategic business development and partnerships',
+              emphasis: false,
+            },
+            {
+              icon: '✓',
+              text: 'Deep understanding of Japanese business culture',
+              emphasis: false,
+            },
+          ],
+        },
+      ],
+      expertise: {
+        title: 'Expertise',
+        items: [
+          'Client relationship management',
+          'Strategic business development',
+          'Deep understanding of Japanese manufacturing industry',
+          'Japanese business culture',
+        ],
+      },
+      languages: {
+        title: 'Languages',
+        text: 'Japanese (native), English (business level)',
+      },
+    },
+  };
+
+  // Jeanette van Niekerk Operations Director Content
+  const jeanetteContent = {
+    ja: {
+      header: 'プロジェクト管理とオペレーション',
+      mainAchievements: '主な実績',
+      achievements: [
+        {
+          company: 'プロジェクト管理と実装',
+          position: 'オペレーションディレクター',
+          highlights: [
+            {
+              icon: '✓',
+              text: 'プロジェクト管理と実装',
+              emphasis: false,
+            },
+            {
+              icon: '✓',
+              text: '品質保証とトレーニング',
+              emphasis: false,
+            },
+            {
+              icon: '✓',
+              text: 'クライアント成功管理',
+              emphasis: false,
+            },
+            {
+              icon: '✓',
+              text: '国際オペレーション調整',
+              emphasis: false,
+            },
+          ],
+        },
+      ],
+      expertise: {
+        title: '専門知識',
+        items: [
+          'プロジェクト管理',
+          '品質保証',
+          'トレーニングと開発',
+          'クライアント成功管理',
+          '国際オペレーション',
+        ],
+      },
+      languages: {
+        title: '言語',
+        text: '英語（母国語）、日本語（ビジネスレベル）',
+      },
+    },
+    en: {
+      header: 'Project Management and Operations',
+      mainAchievements: 'Key Achievements',
+      achievements: [
+        {
+          company: 'Project Management and Implementation',
+          position: 'Operations Director',
+          highlights: [
+            {
+              icon: '✓',
+              text: 'Project management and implementation',
+              emphasis: false,
+            },
+            {
+              icon: '✓',
+              text: 'Quality assurance and training',
+              emphasis: false,
+            },
+            {
+              icon: '✓',
+              text: 'Client success management',
+              emphasis: false,
+            },
+            {
+              icon: '✓',
+              text: 'International operations coordination',
+              emphasis: false,
+            },
+          ],
+        },
+      ],
+      expertise: {
+        title: 'Expertise',
+        items: [
+          'Project management',
+          'Quality assurance',
+          'Training and development',
+          'Client success management',
+          'International operations',
+        ],
+      },
+      languages: {
+        title: 'Languages',
+        text: 'English (native), Japanese (business level)',
+      },
+    },
+  };
+
+  const content = role === 'cto' ? carlosContent[lang] : role === 'md' ? tomooMDContent[lang] : role === 'coo' ? jeanetteContent[lang] : tomooContent[lang];
 
   return (
     <div className={`cofounder-profile ${role}`}>
