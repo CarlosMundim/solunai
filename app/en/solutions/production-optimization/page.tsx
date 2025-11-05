@@ -1,12 +1,16 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import DigitalTwinCTA from '@/components/solutions/digital-twin/DigitalTwinCTA';
+import ProductionOptimizationHero from '@/components/solutions/production-optimization/ProductionOptimizationHero';
+import POKeyCapabilities from '@/components/solutions/production-optimization/POKeyCapabilities';
+import POWhatIsPO from '@/components/solutions/production-optimization/POWhatIsPO';
+import PartnershipLogos from '@/components/solutions/digital-twin/PartnershipLogos';
+import ComputerVisionCTA from '@/components/solutions/computer-vision/ComputerVisionCTA';
 
 export const metadata = {
-  title: 'Production Optimization - Solunai',
-  description: 'Put AI in the loop with operators - guiding real-time decisions with easy to read graphics and actionable alerts.',
-  keywords: 'Production Optimization, Real-time Analytics, Operational Excellence, Manufacturing Efficiency',
+  title: 'AI Production Optimization - Solunai',
+  description: 'Data-driven throughput increase, waste reduction, and optimal resource allocation. Improve OEE and cut energy costs by 10-20%. AI production optimization solution for SME manufacturers.',
+  keywords: 'Production Optimization, AI Manufacturing, OEE Improvement, Lean Manufacturing, Throughput, Waste Reduction, Predictive Maintenance',
 };
 
 export default function ProductionOptimizationPage() {
@@ -14,19 +18,11 @@ export default function ProductionOptimizationPage() {
     <>
       <Header lang="en" />
       <main>
-        <section className="digital-twin-hero">
-          <div className="digital-twin-hero-container">
-            <div className="digital-twin-hero-badge">PRODUCTION OPTIMIZATION</div>
-            <h1 className="digital-twin-hero-heading">
-              Maximize productivity<br />
-              <span className="digital-twin-hero-heading-highlight">with real-time data</span>
-            </h1>
-            <p className="digital-twin-hero-description">
-              AI supports operator decision-making in real-time. Transform complex factory data into easy-to-read dashboards and provide actionable alerts. Achieve both improved production efficiency and cost reduction simultaneously.
-            </p>
-          </div>
-        </section>
-        <DigitalTwinCTA lang="en" />
+        <ProductionOptimizationHero lang="en" />
+        <POKeyCapabilities lang="en" />
+        <POWhatIsPO lang="en" />
+        <PartnershipLogos lang="en" />
+        <ComputerVisionCTA lang="en" />
       </main>
       <Footer lang="en" />
     </>

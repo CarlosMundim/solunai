@@ -1,11 +1,14 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import GlobalEngineeringHero from '@/components/solutions/global-engineering/GlobalEngineeringHero';
+import GEWhatIsGE from '@/components/solutions/global-engineering/GEWhatIsGE';
+import GEKeyCapabilities from '@/components/solutions/global-engineering/GEKeyCapabilities';
 import DigitalTwinCTA from '@/components/solutions/digital-twin/DigitalTwinCTA';
 
 export const metadata = {
-  title: 'グローバルエンジニアリング - Solunai',
-  description: '単一のプロンプトからAI駆動のアプリケーションを作成。製造とデータサイエンスの両方を理解するエージェントを活用し、ビジネスに合わせたカスタムソリューションを迅速に構築。',
+  title: 'グローバルエンジニアリング - 世界中の優秀な技術者と | Solunai',
+  description: '日本の製造業向けグローバル人材活用プラットフォーム。機械・電気・ソフトウェアエンジニアを2-6週間で確保。50-70%のコスト削減、24時間開発体制、日本品質基準の徹底。製造業特化の専門知識で、貴社の開発を加速します。',
 };
 
 export default function GlobalEngineeringPage() {
@@ -13,18 +16,9 @@ export default function GlobalEngineeringPage() {
     <>
       <Header lang="ja" />
       <main>
-        <section className="digital-twin-hero">
-          <div className="digital-twin-hero-container">
-            <div className="digital-twin-hero-badge">グローバルエンジニアリング</div>
-            <h1 className="digital-twin-hero-heading">
-              AIエージェントで<br />
-              <span className="digital-twin-hero-heading-highlight">カスタムソリューションを迅速開発</span>
-            </h1>
-            <p className="digital-twin-hero-description">
-              製造業とデータサイエンスの両方を理解するAIエージェントが、あなたのビジネスに最適なソリューションを提案・構築します。単一のプロンプトから、数週間でカスタムアプリケーションを開発可能です。
-            </p>
-          </div>
-        </section>
+        <GlobalEngineeringHero lang="ja" />
+        <GEWhatIsGE lang="ja" />
+        <GEKeyCapabilities lang="ja" />
         <DigitalTwinCTA lang="ja" />
       </main>
       <Footer lang="ja" />
