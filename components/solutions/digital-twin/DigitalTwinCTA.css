@@ -1,6 +1,6 @@
 .digital-twin-cta {
   width: 100%;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  background: var(--gradient-dark);
   padding: 120px 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
   position: relative;
@@ -18,7 +18,7 @@ html[lang="ja"] .digital-twin-cta {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(77, 163, 255, 0.1) 0%, transparent 50%);
+  background: radial-gradient(circle at 50% 50%, rgba(255, 87, 34, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -53,7 +53,7 @@ html[lang="ja"] .digital-twin-cta {
 }
 
 .digital-twin-cta-heading-highlight {
-  color: #4da3ff;
+  color: var(--solunai-orange);
   display: block;
   margin-top: 8px;
 }
@@ -85,21 +85,21 @@ html[lang="ja"] .digital-twin-cta-description {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #0091ff;
+  background: var(--gradient-orange);
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
   padding: 14px 40px;
   border-radius: 32px;
   text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 14px rgba(0, 145, 255, 0.3);
+  transition: var(--transition-base);
+  box-shadow: var(--shadow-orange);
 }
 
 .digital-twin-cta-button:hover {
-  background: #0077cc;
+  background: var(--gradient-orange-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 145, 255, 0.4);
+  box-shadow: var(--card-hover-shadow);
 }
 
 .digital-twin-cta-button:active {

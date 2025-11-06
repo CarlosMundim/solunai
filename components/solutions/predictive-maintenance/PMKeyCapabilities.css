@@ -48,23 +48,23 @@ html[lang="ja"] .pm-key-capabilities-subheading {
 
 .pm-capability-card {
   background: #ffffff;
-  border: 1px solid #000000;
+  border: 2px solid #d1d5db;
   border-radius: 12px;
   padding: 40px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: var(--transition-base);
+  box-shadow: var(--shadow-md);
 }
 
 .pm-capability-card:hover {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
-  transform: translateY(-3px);
-  border-color: #000000;
+  box-shadow: var(--card-hover-shadow);
+  transform: translateY(var(--card-hover-lift));
+  border-color: var(--solunai-orange);
 }
 
 .pm-capability-title {
   font-size: 20px;
   font-weight: 700;
-  color: var(--foreground, #171717);
+  color: var(--solunai-orange);
   margin: 0 0 16px 0;
   line-height: 1.3;
 }
