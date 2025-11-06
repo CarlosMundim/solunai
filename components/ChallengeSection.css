@@ -6,7 +6,7 @@
   position: relative;
   width: 100%;
   padding: 80px 0;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: #f9fafb;
 }
 
 .challenge-container {
@@ -19,7 +19,7 @@
 .challenge-heading {
   font-size: 48px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #171717;
   text-align: center;
   margin-bottom: 24px;
   letter-spacing: -0.02em;
@@ -28,7 +28,7 @@
 
 .challenge-intro {
   font-size: 18px;
-  color: #555555;
+  color: #6b7280;
   text-align: center;
   max-width: 900px;
   margin: 0 auto 56px;
@@ -48,12 +48,12 @@
   background: #FFFFFF;
   border-radius: 12px;
   padding: 40px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #000000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease;
   animation: fadeSlideUp 0.8s ease-out forwards;
   opacity: 0;
   position: relative;
-  border-top: 4px solid #FF5722;
 }
 
 .challenge-card:nth-child(1) {
@@ -73,8 +73,9 @@
 }
 
 .challenge-card:hover {
-  box-shadow: 0 8px 32px rgba(255, 87, 34, 0.15);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
   transform: translateY(-4px);
+  border-color: #000000;
 }
 
 /* Icon */
@@ -88,7 +89,7 @@
 .challenge-title {
   font-size: 24px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #171717;
   margin-bottom: 20px;
   letter-spacing: -0.01em;
 }
@@ -105,7 +106,7 @@
   padding-left: 28px;
   margin-bottom: 16px;
   font-size: 16px;
-  color: #555555;
+  color: #6b7280;
   line-height: 1.6;
 }
 
@@ -117,7 +118,7 @@
   content: '•';
   position: absolute;
   left: 0;
-  color: #FF5722;
+  color: #171717;
   font-size: 24px;
   line-height: 1;
   top: -2px;

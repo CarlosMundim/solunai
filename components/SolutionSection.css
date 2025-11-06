@@ -19,7 +19,7 @@
 .solution-heading {
   font-size: 48px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #171717;
   text-align: center;
   margin-bottom: 56px;
   letter-spacing: -0.02em;
@@ -35,11 +35,11 @@
 
 /* Phase Card */
 .phase-card {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  background: #ffffff;
   border-radius: 16px;
   padding: 48px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border-left: 6px solid #FF5722;
+  border: 1px solid #000000;
   animation: fadeSlideUp 0.8s ease-out forwards;
   opacity: 0;
 }
@@ -81,7 +81,7 @@
 .phase-title {
   font-size: 32px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #171717;
   letter-spacing: -0.01em;
 }
 
@@ -97,7 +97,7 @@
   padding-left: 32px;
   margin-bottom: 16px;
   font-size: 16px;
-  color: #555555;
+  color: #6b7280;
   line-height: 1.7;
 }
 
@@ -123,7 +123,7 @@
 .tech-stack-title {
   font-size: 18px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #171717;
   margin-bottom: 20px;
 }
 
@@ -173,7 +173,7 @@
   padding-left: 32px;
   margin-bottom: 14px;
   font-size: 16px;
-  color: #1a1a1a;
+  color: #171717;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -194,7 +194,7 @@
 /* Phase Intro */
 .phase-intro {
   font-size: 17px;
-  color: #555555;
+  color: #6b7280;
   margin-bottom: 28px;
   line-height: 1.7;
 }
@@ -217,7 +217,7 @@
 .agent-category {
   font-size: 18px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #171717;
   margin-bottom: 16px;
 }
 
@@ -255,7 +255,7 @@
 .workflow-title {
   font-size: 18px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #171717;
   margin-bottom: 16px;
 }
 
@@ -270,7 +270,7 @@
   padding-left: 32px;
   margin-bottom: 14px;
   font-size: 16px;
-  color: #1a1a1a;
+  color: #171717;
   font-weight: 500;
   line-height: 1.6;
 }
@@ -328,7 +328,7 @@
   padding-left: 28px;
   margin-bottom: 12px;
   font-size: 15px;
-  color: #555555;
+  color: #6b7280;
   line-height: 1.6;
 }
 

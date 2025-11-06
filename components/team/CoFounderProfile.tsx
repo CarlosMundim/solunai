@@ -638,16 +638,18 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
         )}
 
         {/* Education */}
-        <div className="info-section">
-          <h3 className="section-title">{content.education.title}</h3>
-          <ul className="info-list">
-            {content.education.items.map((item, idx) => (
-              <li key={idx} className="info-item">
-                • {item}
-              </li>
-            ))}
-          </ul>
-        </div>
+        {'education' in content && (
+          <div className="info-section">
+            <h3 className="section-title">{content.education.title}</h3>
+            <ul className="info-list">
+              {content.education.items.map((item, idx) => (
+                <li key={idx} className="info-item">
+                  • {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Expertise */}
         <div className="info-section">

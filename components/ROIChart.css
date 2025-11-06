@@ -19,7 +19,7 @@
 .roi-heading {
   font-size: 48px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #171717;
   text-align: center;
   margin-bottom: 16px;
   letter-spacing: -0.02em;
@@ -29,7 +29,7 @@
 .roi-subheading {
   font-size: 20px;
   font-weight: 500;
-  color: #555555;
+  color: #6b7280;
   text-align: center;
   margin-bottom: 56px;
   animation: fadeSlideUp 0.8s ease-out 0.2s forwards;
@@ -45,14 +45,15 @@
 }
 
 .roi-metric-card {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  background: #ffffff;
   border-radius: 12px;
   padding: 32px 24px;
   text-align: center;
-  border: 2px solid #E0E0E0;
+  border: 1px solid #000000;
   transition: all 0.3s ease;
   animation: fadeSlideUp 0.8s ease-out forwards;
   opacity: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .roi-metric-card:nth-child(1) {
@@ -77,24 +78,19 @@
 
 .roi-metric-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.06);
+  border-color: #000000;
 }
 
 .roi-metric-card.roi-highlight {
-  background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
-  border-color: #FF5722;
-}
-
-.roi-metric-card.roi-highlight .roi-metric-label,
-.roi-metric-card.roi-highlight .roi-metric-value,
-.roi-metric-card.roi-highlight .roi-metric-subtitle {
-  color: #FFFFFF;
+  background: #f9fafb;
+  border-color: #000000;
 }
 
 .roi-metric-label {
   font-size: 14px;
   font-weight: 600;
-  color: #888888;
+  color: #6b7280;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 12px;
@@ -103,7 +99,7 @@
 .roi-metric-value {
   font-size: 32px;
   font-weight: 700;
-  color: #FF5722;
+  color: #171717;
   margin-bottom: 8px;
   letter-spacing: -0.01em;
 }
@@ -115,22 +111,24 @@
 .roi-metric-subtitle {
   font-size: 13px;
   font-weight: 500;
-  color: #666666;
+  color: #6b7280;
 }
 
 /* Timeline Section */
 .roi-timeline {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: #ffffff;
+  border: 1px solid #000000;
   border-radius: 16px;
   padding: 48px 40px;
   animation: fadeSlideUp 0.8s ease-out 0.8s forwards;
   opacity: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .timeline-title {
   font-size: 28px;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #171717;
   text-align: center;
   margin-bottom: 40px;
   letter-spacing: -0.01em;
@@ -172,19 +170,19 @@
 }
 
 .investment-bar {
-  background: linear-gradient(180deg, #FF5722 0%, #E64A19 100%);
-  box-shadow: 0 -4px 12px rgba(255, 87, 34, 0.3);
+  background: #f59e0b;
+  border: 1px solid #000000;
 }
 
 .returns-bar {
-  background: linear-gradient(180deg, #4CAF50 0%, #388E3C 100%);
-  box-shadow: 0 -4px 12px rgba(76, 175, 80, 0.3);
+  background: #0091ff;
+  border: 1px solid #000000;
 }
 
 .timeline-label {
   font-size: 14px;
   font-weight: 600;
-  color: #555555;
+  color: #374151;
   text-align: center;
 }
 
@@ -205,20 +203,21 @@
   width: 24px;
   height: 16px;
   border-radius: 4px;
+  border: 1px solid #000000;
 }
 
 .investment-color {
-  background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
+  background: #f59e0b;
 }
 
 .returns-color {
-  background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+  background: #0091ff;
 }
 
 .legend-text {
   font-size: 14px;
   font-weight: 600;
-  color: #555555;
+  color: #374151;
 }
 
 /* Animations */
