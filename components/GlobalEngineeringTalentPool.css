@@ -23,7 +23,7 @@
 
 .talent-subtitle {
   font-size: 20px;
-  color: #FF5722;
+  color: var(--solunai-orange);
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -90,7 +90,7 @@
 
 .availability-badge {
   background: rgba(255, 87, 34, 0.1);
-  color: #FF5722;
+  color: var(--solunai-orange);
   padding: 10px 16px;
   border-radius: 50px;
   font-size: 14px;
@@ -124,7 +124,7 @@
 }
 
 .comparison-card.worldemp {
-  border: 3px solid #FF5722;
+  border: 3px solid var(--solunai-orange);
   position: relative;
 }
 
@@ -133,7 +133,7 @@
   position: absolute;
   top: -15px;
   right: 20px;
-  background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
+  background: var(--gradient-orange);
   color: white;
   padding: 8px 20px;
   border-radius: 50px;
@@ -164,7 +164,7 @@
 .item-metric {
   font-size: 24px;
   font-weight: 700;
-  color: #FF5722;
+  color: var(--solunai-orange);
   margin-bottom: 0.5rem;
 }
 

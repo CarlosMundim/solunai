@@ -3,7 +3,7 @@
   min-height: 70vh;
   display: flex;
   align-items: center;
-  padding: 8rem 2rem 6rem;
+  padding: 120px 24px 100px;
   overflow: hidden;
 }
 
@@ -13,7 +13,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--gradient-dark);
   z-index: -2;
 }
 
@@ -100,7 +100,7 @@
 .point-icon {
   width: 24px;
   height: 24px;
-  color: #FF5722;
+  color: var(--solunai-orange);
   flex-shrink: 0;
 }
 
@@ -142,7 +142,7 @@
 
 @media (max-width: 768px) {
   .ai-implementation-hero {
-    padding: 6rem 1rem 4rem;
+    padding: 80px 20px;
     min-height: auto;
   }
 

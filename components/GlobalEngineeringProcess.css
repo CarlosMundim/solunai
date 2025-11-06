@@ -52,7 +52,7 @@
 .phase-number {
   font-size: 48px;
   font-weight: 800;
-  color: #FF5722;
+  color: var(--solunai-orange);
   line-height: 1;
   padding-top: 0.5rem;
 }
@@ -81,7 +81,7 @@
   font-size: 14px;
   font-weight: 600;
   color: white;
-  background: #FF5722;
+  background: var(--solunai-orange);
   padding: 0.5rem 1rem;
   border-radius: 20px;
 }
@@ -127,7 +127,7 @@
 .deliverable-icon {
   width: 16px;
   height: 16px;
-  color: #FF5722;
+  color: var(--solunai-orange);
   flex-shrink: 0;
 }
 
@@ -137,7 +137,7 @@
   top: 100%;
   width: 2px;
   height: 3rem;
-  background: linear-gradient(to bottom, #FF5722, rgba(255, 87, 34, 0.2));
+  background: linear-gradient(to bottom, var(--solunai-orange), rgba(255, 87, 34, 0.2));
 }
 
 @media (max-width: 768px) {
