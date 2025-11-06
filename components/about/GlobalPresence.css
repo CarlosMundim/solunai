@@ -34,18 +34,20 @@
 }
 
 .location-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
   border-radius: 16px;
   padding: 40px 32px;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: var(--transition-base);
+  backdrop-filter: var(--glass-backdrop);
 }
 
 .location-card:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 87, 34, 0.5);
-  transform: translateY(-5px);
+  border-color: var(--solunai-orange);
+  transform: translateY(var(--card-hover-lift));
+  box-shadow: var(--card-hover-shadow);
 }
 
 .location-icon {

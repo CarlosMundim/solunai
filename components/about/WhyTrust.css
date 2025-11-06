@@ -27,25 +27,28 @@
   background: #ffffff;
   border-radius: 16px;
   padding: 40px 32px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-base);
   text-align: center;
+  border: 2px solid transparent;
 }
 
 .reason-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(255, 87, 34, 0.15);
+  transform: translateY(var(--card-hover-lift));
+  box-shadow: var(--card-hover-shadow);
+  border-color: var(--solunai-orange);
 }
 
 .reason-icon {
   font-size: 56px;
   margin-bottom: 24px;
+  color: var(--solunai-orange);
 }
 
 .reason-title {
   font-size: 22px;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--solunai-orange);
   margin-bottom: 12px;
 }
 

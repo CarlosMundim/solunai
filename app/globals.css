@@ -3,10 +3,46 @@
 @tailwind utilities;
 
 :root {
+  /* Brand Colors */
+  --solunai-orange: #FF5722;
+  --solunai-orange-dark: #E64A19;
+  --solunai-orange-light: #FF7043;
+
+  /* Background Colors */
   --background: #ffffff;
   --foreground: #171717;
+  --bg-dark-1: #1a1a2e;
+  --bg-dark-2: #2d2d44;
+  --bg-dark-3: #16213e;
+
+  /* Gradients */
+  --gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  --gradient-orange: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
+  --gradient-orange-hover: linear-gradient(135deg, #FF7043 0%, #FF5722 100%);
+
+  /* Glass-morphism */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-backdrop: blur(10px);
+
+  /* Typography */
   --font-inter: 'Inter', sans-serif;
   --font-noto-sans-jp: 'Noto Sans JP', sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --shadow-orange: 0 8px 32px rgba(255, 87, 34, 0.2);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Card Effects */
+  --card-hover-lift: -8px;
+  --card-hover-shadow: 0 12px 40px rgba(255, 87, 34, 0.25);
 }
 
 * {

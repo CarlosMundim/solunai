@@ -2,7 +2,7 @@
   position: relative;
   padding: 100px 24px;
   overflow: hidden;
-  background: linear-gradient(135deg, #0066cc 0%, #004999 100%);
+  background: var(--gradient-dark);
 }
 
 .cta-background {
@@ -20,7 +20,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 102, 204, 0.95) 0%, rgba(0, 61, 122, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(255, 87, 34, 0.15) 0%, rgba(26, 26, 46, 0.95) 100%);
 }
 
 .cta-container {
@@ -94,14 +94,15 @@
 }
 
 .cta-btn.primary {
-  background: white;
-  color: #0066cc;
+  background: var(--gradient-orange);
+  color: #ffffff;
+  border-color: var(--solunai-orange);
 }
 
 .cta-btn.primary:hover {
-  background: #f8f9fa;
+  background: var(--gradient-orange-hover);
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-orange);
 }
 
 .cta-btn.secondary {
