@@ -15,7 +15,6 @@ const AIImplementationTech: React.FC<AIImplementationTechProps> = ({ lang }) => 
       categories: [
         {
           title: 'Machine Learning',
-          icon: '🤖',
           technologies: [
             { name: 'TensorFlow', description: 'ディープラーニングフレームワーク' },
             { name: 'PyTorch', description: 'ニューラルネットワーク構築' },
@@ -25,7 +24,6 @@ const AIImplementationTech: React.FC<AIImplementationTechProps> = ({ lang }) => 
         },
         {
           title: 'Computer Vision',
-          icon: '👁️',
           technologies: [
             { name: 'OpenCV', description: 'リアルタイム画像処理' },
             { name: 'YOLO', description: '物体検出' },
@@ -35,7 +33,6 @@ const AIImplementationTech: React.FC<AIImplementationTechProps> = ({ lang }) => 
         },
         {
           title: 'Data & Analytics',
-          icon: '📊',
           technologies: [
             { name: 'PostgreSQL', description: 'リレーショナルデータベース' },
             { name: 'TimescaleDB', description: '時系列データ' },
@@ -45,7 +42,6 @@ const AIImplementationTech: React.FC<AIImplementationTechProps> = ({ lang }) => 
         },
         {
           title: 'Infrastructure',
-          icon: '☁️',
           technologies: [
             { name: 'AWS / Azure', description: 'クラウドインフラ' },
             { name: 'Docker', description: 'コンテナ化' },
@@ -61,7 +57,6 @@ const AIImplementationTech: React.FC<AIImplementationTechProps> = ({ lang }) => 
       categories: [
         {
           title: 'Machine Learning',
-          icon: '🤖',
           technologies: [
             { name: 'TensorFlow', description: 'Deep learning framework' },
             { name: 'PyTorch', description: 'Neural network building' },
@@ -71,7 +66,6 @@ const AIImplementationTech: React.FC<AIImplementationTechProps> = ({ lang }) => 
         },
         {
           title: 'Computer Vision',
-          icon: '👁️',
           technologies: [
             { name: 'OpenCV', description: 'Real-time image processing' },
             { name: 'YOLO', description: 'Object detection' },
@@ -81,7 +75,6 @@ const AIImplementationTech: React.FC<AIImplementationTechProps> = ({ lang }) => 
         },
         {
           title: 'Data & Analytics',
-          icon: '📊',
           technologies: [
             { name: 'PostgreSQL', description: 'Relational database' },
             { name: 'TimescaleDB', description: 'Time-series data' },
@@ -91,7 +84,6 @@ const AIImplementationTech: React.FC<AIImplementationTechProps> = ({ lang }) => 
         },
         {
           title: 'Infrastructure',
-          icon: '☁️',
           technologies: [
             { name: 'AWS / Azure', description: 'Cloud infrastructure' },
             { name: 'Docker', description: 'Containerization' },
@@ -117,7 +109,6 @@ const AIImplementationTech: React.FC<AIImplementationTechProps> = ({ lang }) => 
           {currentContent.categories.map((category, index) => (
             <div key={index} className="tech-category-card">
               <div className="category-header">
-                <span className="category-icon">{category.icon}</span>
                 <h3 className="category-title">{category.title}</h3>
               </div>
               <div className="technologies-list">
