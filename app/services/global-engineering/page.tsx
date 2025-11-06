@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import GlobalEngineeringHero from '@/components/GlobalEngineeringHero';
 import GlobalEngineeringTalentPool from '@/components/GlobalEngineeringTalentPool';
 import GlobalEngineeringProcess from '@/components/GlobalEngineeringProcess';
@@ -14,13 +15,16 @@ export const metadata = {
 
 export default function GlobalEngineeringPageJA() {
   return (
-    <main>
+    <>
       <Header lang="ja" />
-      <GlobalEngineeringHero lang="ja" />
-      <GlobalEngineeringTalentPool lang="ja" />
-      <GlobalEngineeringProcess lang="ja" />
-      <GlobalEngineeringBenefits lang="ja" />
-      <GlobalEngineeringCTA lang="ja" />
-    </main>
+      <main>
+        <GlobalEngineeringHero lang="ja" />
+        <GlobalEngineeringTalentPool lang="ja" />
+        <GlobalEngineeringProcess lang="ja" />
+        <GlobalEngineeringBenefits lang="ja" />
+        <GlobalEngineeringCTA lang="ja" />
+      </main>
+      <Footer lang="ja" />
+    </>
   );
 }

@@ -45,8 +45,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
           label: 'サービス',
           dropdown: [
             { href: '/services/ai-implementation', label: 'AI実装' },
-            { href: '/services/global-engineering', label: 'グローバルエンジニアリング' },
-            { href: '/services/epc-fabrication', label: 'EPC・製作' }
+            { href: '/services/global-engineering', label: 'グローバルエンジニアリング' }
           ]
         },
         {
@@ -79,8 +78,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
           label: 'Services',
           dropdown: [
             { href: '/en/services/ai-implementation', label: 'AI Implementation' },
-            { href: '/en/services/global-engineering', label: 'Global Engineering' },
-            { href: '/en/services/epc-fabrication', label: 'EPC & Fabrication' }
+            { href: '/en/services/global-engineering', label: 'Global Engineering' }
           ]
         },
         {

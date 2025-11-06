@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import AIImplementationHero from '@/components/AIImplementationHero';
 import AIImplementationProcess from '@/components/AIImplementationProcess';
 import AIImplementationTech from '@/components/AIImplementationTech';
@@ -14,13 +15,16 @@ export const metadata = {
 
 export default function AIImplementationPageJA() {
   return (
-    <main>
+    <>
       <Header lang="ja" />
-      <AIImplementationHero lang="ja" />
-      <AIImplementationProcess lang="ja" />
-      <AIImplementationTech lang="ja" />
-      <AIImplementationBenefits lang="ja" />
-      <AIImplementationCTA lang="ja" />
-    </main>
+      <main>
+        <AIImplementationHero lang="ja" />
+        <AIImplementationProcess lang="ja" />
+        <AIImplementationTech lang="ja" />
+        <AIImplementationBenefits lang="ja" />
+        <AIImplementationCTA lang="ja" />
+      </main>
+      <Footer lang="ja" />
+    </>
   );
 }
