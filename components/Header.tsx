@@ -33,6 +33,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
         {
           label: 'ソリューション',
           dropdown: [
+            { href: '/solutions', label: 'ソリューション概要' },
             { href: '/solutions/digital-twin', label: 'デジタルツイン' },
             { href: '/solutions/computer-vision', label: 'コンピュータビジョン' },
             { href: '/solutions/predictive-maintenance', label: '予知保全' },
@@ -66,6 +67,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
         {
           label: 'Solutions',
           dropdown: [
+            { href: '/en/solutions', label: 'Solutions Overview' },
             { href: '/en/solutions/digital-twin', label: 'Digital Twin' },
             { href: '/en/solutions/computer-vision', label: 'Computer Vision' },
             { href: '/en/solutions/predictive-maintenance', label: 'Predictive Maintenance' },
