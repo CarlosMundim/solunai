@@ -5,7 +5,7 @@ import PredictiveMaintenanceHero from '@/components/solutions/predictive-mainten
 import PMKeyCapabilities from '@/components/solutions/predictive-maintenance/PMKeyCapabilities';
 import PMWhatIsPM from '@/components/solutions/predictive-maintenance/PMWhatIsPM';
 import PartnershipLogos from '@/components/solutions/digital-twin/PartnershipLogos';
-import DigitalTwinCTA from '@/components/solutions/digital-twin/DigitalTwinCTA';
+import PredictiveMaintenanceCTA from '@/components/solutions/predictive-maintenance/PredictiveMaintenanceCTA';
 
 export const metadata = {
   title: '予知保全 - Solunai',
@@ -22,7 +22,7 @@ export default function PredictiveMaintenancePage() {
         <PMKeyCapabilities lang="ja" />
         <PMWhatIsPM lang="ja" />
         <PartnershipLogos lang="ja" />
-        <DigitalTwinCTA lang="ja" />
+        <PredictiveMaintenanceCTA lang="ja" />
       </main>
       <Footer lang="ja" />
     </>

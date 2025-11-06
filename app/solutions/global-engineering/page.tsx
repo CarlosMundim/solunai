@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import GlobalEngineeringHero from '@/components/solutions/global-engineering/GlobalEngineeringHero';
 import GEWhatIsGE from '@/components/solutions/global-engineering/GEWhatIsGE';
 import GEKeyCapabilities from '@/components/solutions/global-engineering/GEKeyCapabilities';
-import DigitalTwinCTA from '@/components/solutions/digital-twin/DigitalTwinCTA';
+import GlobalEngineeringCTA from '@/components/solutions/global-engineering/GlobalEngineeringCTA';
 
 export const metadata = {
   title: 'グローバルエンジニアリング - 世界中の優秀な技術者と | Solunai',
@@ -19,7 +19,7 @@ export default function GlobalEngineeringPage() {
         <GlobalEngineeringHero lang="ja" />
         <GEWhatIsGE lang="ja" />
         <GEKeyCapabilities lang="ja" />
-        <DigitalTwinCTA lang="ja" />
+        <GlobalEngineeringCTA lang="ja" />
       </main>
       <Footer lang="ja" />
     </>

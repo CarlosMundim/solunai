@@ -5,7 +5,7 @@ import ProductionOptimizationHero from '@/components/solutions/production-optimi
 import POKeyCapabilities from '@/components/solutions/production-optimization/POKeyCapabilities';
 import POWhatIsPO from '@/components/solutions/production-optimization/POWhatIsPO';
 import PartnershipLogos from '@/components/solutions/digital-twin/PartnershipLogos';
-import ComputerVisionCTA from '@/components/solutions/computer-vision/ComputerVisionCTA';
+import ProductionOptimizationCTA from '@/components/solutions/production-optimization/ProductionOptimizationCTA';
 
 export const metadata = {
   title: 'AI生産最適化 - Solunai',
@@ -21,7 +21,7 @@ export default function ProductionOptimizationPage() {
         <POKeyCapabilities lang="ja" />
         <POWhatIsPO lang="ja" />
         <PartnershipLogos lang="ja" />
-        <ComputerVisionCTA lang="ja" />
+        <ProductionOptimizationCTA lang="ja" />
       </main>
       <Footer lang="ja" />
     </>

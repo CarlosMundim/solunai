@@ -1,0 +1,177 @@
+.po-cta {
+  width: 100%;
+  background: var(--gradient-dark);
+  padding: 120px 24px;
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+html[lang="ja"] .po-cta {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+}
+
+.po-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(255, 87, 34, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.po-cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.po-cta-grid {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  gap: 80px;
+  align-items: start;
+}
+
+/* Left Column - Heading */
+.po-cta-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.po-cta-heading {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.po-cta-heading-highlight {
+  color: var(--solunai-orange);
+  display: block;
+  margin-top: 8px;
+}
+
+/* Right Column - Description + Button */
+.po-cta-right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.po-cta-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin: 0;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[lang="ja"] .po-cta-description {
+  letter-spacing: 0.02em;
+  font-size: 16px;
+}
+
+.po-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-orange);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 40px;
+  border-radius: 32px;
+  text-decoration: none;
+  transition: var(--transition-base);
+  box-shadow: var(--shadow-orange);
+}
+
+.po-cta-button:hover {
+  background: var(--gradient-orange-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+.po-cta-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .po-cta {
+    padding: 100px 24px;
+  }
+
+  .po-cta-grid {
+    gap: 60px;
+  }
+
+  .po-cta-heading {
+    font-size: 48px;
+  }
+
+  .po-cta-description {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .po-cta {
+    padding: 80px 20px;
+  }
+
+  .po-cta-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .po-cta-heading {
+    font-size: 40px;
+  }
+
+  .po-cta-description {
+    font-size: 16px;
+  }
+
+  .po-cta-right {
+    gap: 24px;
+  }
+
+  .po-cta-button {
+    font-size: 16px;
+    padding: 14px 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .po-cta {
+    padding: 60px 16px;
+  }
+
+  .po-cta-grid {
+    gap: 32px;
+  }
+
+  .po-cta-heading {
+    font-size: 32px;
+  }
+
+  .po-cta-description {
+    font-size: 15px;
+  }
+
+  .po-cta-button {
+    padding: 12px 32px;
+    font-size: 15px;
+  }
+}
