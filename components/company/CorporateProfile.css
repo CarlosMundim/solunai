@@ -48,7 +48,7 @@
 
 .item-label {
   font-weight: 600;
-  color: #0f3460;
+  color: var(--solunai-orange, #FF5722);
   font-size: 1rem;
   padding-top: 4px;
 }

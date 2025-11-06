@@ -23,7 +23,7 @@
 
 .certifications-header .subtitle {
   font-size: 1.25rem;
-  color: #0f3460;
+  color: var(--solunai-orange, #FF5722);
   margin: 0 0 16px 0;
   font-weight: 500;
 }
@@ -54,13 +54,13 @@
   align-items: center;
   margin-bottom: 24px;
   padding-bottom: 16px;
-  border-bottom: 3px solid #0095ff;
+  border-bottom: 3px solid var(--solunai-orange, #FF5722);
 }
 
 .block-header h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #0f3460;
+  color: var(--solunai-orange, #FF5722);
   margin: 0;
 }
 
@@ -152,8 +152,8 @@
 
 .cert-target {
   padding: 4px 12px;
-  background: #e8f5ff;
-  color: #0066cc;
+  background: rgba(255, 87, 34, 0.1);
+  color: var(--solunai-orange, #FF5722);
   border-radius: 12px;
   font-size: 0.85rem;
   font-weight: 600;
