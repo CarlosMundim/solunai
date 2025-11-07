@@ -12,6 +12,7 @@
   bottom: 0;
   background: var(--gradient-dark);
   z-index: -2;
+}
 
 .cta-background::before {
   content: '';
@@ -22,7 +23,7 @@
   bottom: 0;
   background: radial-gradient(circle at 50% 50%, rgba(255, 87, 34, 0.1) 0%, transparent 50%);
   pointer-events: none;
-}
+  z-index: -1;
 }
 
 .cta-overlay {
