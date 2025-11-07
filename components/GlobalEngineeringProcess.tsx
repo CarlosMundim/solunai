@@ -179,9 +179,6 @@ const GlobalEngineeringProcess: React.FC<GlobalEngineeringProcessProps> = ({ lan
                   </ul>
                 </div>
               </div>
-              {index < currentContent.phases.length - 1 && (
-                <div className="phase-connector"></div>
-              )}
             </div>
           ))}
         </div>

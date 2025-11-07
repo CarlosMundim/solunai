@@ -32,6 +32,9 @@
 
 .phases-timeline {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .phase-card {
@@ -39,47 +42,16 @@
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 2rem;
-  margin-bottom: 3rem;
   background: white;
   border-radius: 16px;
   padding: 40px;
-  box-shadow:
-    0 4px 20px rgba(0, 0, 0, 0.08),
-    0 10px 40px rgba(0, 145, 255, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
-.phase-card::before {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  right: -8px;
-  bottom: -8px;
-  background: linear-gradient(135deg, rgba(0, 145, 255, 0.03) 0%, rgba(255, 87, 34, 0.03) 100%);
-  border-radius: 16px;
-  z-index: -1;
-}
-
-.phase-card::after {
-  content: '';
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  right: -16px;
-  bottom: -16px;
-  background: linear-gradient(135deg, rgba(0, 145, 255, 0.02) 0%, rgba(255, 87, 34, 0.02) 100%);
-  border-radius: 16px;
-  z-index: -2;
-}
-
 .phase-card:hover {
-  transform: translateX(10px) translateY(-2px);
-  box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.12),
-    0 15px 50px rgba(0, 145, 255, 0.15),
-    0 2px 6px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 .phase-number {
@@ -117,7 +89,7 @@
   font-size: 14px;
   font-weight: 600;
   color: white;
-  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
+  background: var(--solunai-orange);
   padding: 0.5rem 1rem;
   border-radius: 20px;
 }
@@ -167,14 +139,6 @@
   flex-shrink: 0;
 }
 
-.phase-connector {
-  position: absolute;
-  left: 70px;
-  top: 100%;
-  width: 2px;
-  height: 3rem;
-  background: linear-gradient(to bottom, #0091ff, rgba(0, 145, 255, 0.2));
-}
 
 @media (max-width: 768px) {
   .global-engineering-process {
@@ -189,15 +153,18 @@
     font-size: 18px;
   }
 
+  .phases-timeline {
+    grid-template-columns: 1fr;
+  }
+
   .phase-card {
     grid-template-columns: 60px 1fr;
     gap: 1rem;
     padding: 24px;
-    margin-bottom: 2rem;
   }
 
   .phase-card:hover {
-    transform: translateX(5px);
+    transform: translateY(-3px);
   }
 
   .phase-number {
@@ -215,10 +182,5 @@
 
   .phase-description {
     font-size: 15px;
-  }
-
-  .phase-connector {
-    left: 50px;
-    height: 2rem;
   }
 }
