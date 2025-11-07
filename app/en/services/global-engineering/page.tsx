@@ -9,8 +9,8 @@ import GlobalEngineeringCTA from '@/components/GlobalEngineeringCTA';
 
 export const metadata = {
   title: 'Global Engineering Deployment | Solunai',
-  description: 'WorldEmp partnership delivers world-class engineers in 2-6 weeks. 52x faster than traditional hiring, 30-40% cost reduction, cultural matching guaranteed.',
-  keywords: 'global engineering, talent deployment, WorldEmp, engineering outsourcing, manufacturing talent, international hiring',
+  description: 'WorldEmp partnership delivers world-class engineers globally in 2-6 weeks. Deploy talent in Japan, Europe, Americas, and worldwide. 52x faster than traditional hiring, 30-40% cost reduction, cultural matching guaranteed.',
+  keywords: 'global engineering, talent deployment, WorldEmp, engineering outsourcing, manufacturing talent, international hiring, worldwide engineers, dispatch engineers',
 };
 
 export default function GlobalEngineeringPageEN() {
