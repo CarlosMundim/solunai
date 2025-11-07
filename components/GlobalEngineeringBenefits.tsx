@@ -14,25 +14,21 @@ const GlobalEngineeringBenefits: React.FC<GlobalEngineeringBenefitsProps> = ({ l
       subtitle: 'グローバルエンジニアリング配備で達成できること',
       benefits: [
         {
-          icon: '⚡',
           title: '迅速な配備',
           description: '2-6週間で世界クラスのエンジニアを配備、従来の採用より52倍速い',
           metrics: ['2-6週間配備', '52倍速い', '即座のスタート']
         },
         {
-          icon: '💰',
           title: 'コスト効率',
           description: '従来の正社員採用と比較して30-40%のコスト削減',
           metrics: ['30-40%削減', '年間¥35-45M節約', '固定費なし']
         },
         {
-          icon: '🌏',
           title: 'グローバル人材',
           description: '地域で見つけられないスキルへのアクセス',
           metrics: ['世界中の人材', '5つの専門分野', '文化的マッチング']
         },
         {
-          icon: '📈',
           title: '柔軟性',
           description: 'プロジェクトベースの契約で必要に応じて拡張・縮小',
           metrics: ['柔軟な契約', '拡張可能', 'リスク削減']
@@ -57,25 +53,21 @@ const GlobalEngineeringBenefits: React.FC<GlobalEngineeringBenefitsProps> = ({ l
       subtitle: 'What You Achieve with Global Engineering Deployment',
       benefits: [
         {
-          icon: '⚡',
           title: 'Rapid Deployment',
           description: 'World-class engineers deployed in 2-6 weeks, 52x faster than traditional hiring',
           metrics: ['2-6 week deployment', '52x faster', 'Immediate start']
         },
         {
-          icon: '💰',
           title: 'Cost Efficiency',
           description: '30-40% cost reduction compared to traditional permanent hiring',
           metrics: ['30-40% reduction', '¥35-45M saved/year', 'Zero fixed costs']
         },
         {
-          icon: '🌏',
           title: 'Global Talent',
           description: 'Access to skills you cannot find locally',
           metrics: ['Worldwide talent', '5 specialty areas', 'Cultural matching']
         },
         {
-          icon: '📈',
           title: 'Flexibility',
           description: 'Project-based contracts, scale up or down as needed',
           metrics: ['Flexible contracts', 'Scalable', 'Reduced risk']
@@ -110,7 +102,6 @@ const GlobalEngineeringBenefits: React.FC<GlobalEngineeringBenefitsProps> = ({ l
         <div className="benefits-grid">
           {currentContent.benefits.map((benefit, index) => (
             <div key={index} className="benefit-card">
-              <div className="benefit-icon">{benefit.icon}</div>
               <h3 className="benefit-title">{benefit.title}</h3>
               <p className="benefit-description">{benefit.description}</p>
               <ul className="benefit-metrics">

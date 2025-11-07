@@ -15,34 +15,34 @@ const GlobalEngineeringTalentPool: React.FC<GlobalEngineeringTalentPoolProps> = 
       intro: 'WorldEmpパートナーシップを通じて、日本の中小企業が地域で採用できない高度なスキルへの即座のアクセスを提供します。',
       categories: [
         {
-          icon: '🤖',
           title: 'AI & 機械学習',
           skills: ['TensorFlow/PyTorch', 'Computer Vision', '自然言語処理', '深層学習', 'MLOps'],
           availability: '2-4週間'
         },
         {
-          icon: '🔧',
           title: '製造業エンジニアリング',
           skills: ['工程最適化', 'Lean/Six Sigma', '品質管理', '自動化設計', 'IoT統合'],
           availability: '2-3週間'
         },
         {
-          icon: '💻',
           title: 'ソフトウェア開発',
           skills: ['Python/Java/C++', 'フルスタック開発', 'クラウドアーキテクチャ', 'DevOps', 'API統合'],
           availability: '2-4週間'
         },
         {
-          icon: '📊',
           title: 'データサイエンス',
           skills: ['データ分析', '予測モデリング', 'BI & 可視化', '統計分析', 'ビッグデータ'],
           availability: '2-4週間'
         },
         {
-          icon: '🏗️',
           title: 'EPC & 製作',
           skills: ['プロジェクト管理', 'CAD/CAM', '調達', '品質保証', '建設監督'],
           availability: '3-6週間'
+        },
+        {
+          title: 'サイバーセキュリティ & ITインフラ',
+          skills: ['ネットワークセキュリティ', 'クラウドセキュリティ', 'ペネトレーションテスト', 'セキュリティ基準', 'インフラ管理'],
+          availability: '3-5週間'
         }
       ],
       comparison: {
@@ -73,34 +73,34 @@ const GlobalEngineeringTalentPool: React.FC<GlobalEngineeringTalentPoolProps> = 
       intro: 'Through our WorldEmp partnership, we provide immediate access to advanced skills that Japanese SMEs cannot hire locally.',
       categories: [
         {
-          icon: '🤖',
           title: 'AI & Machine Learning',
           skills: ['TensorFlow/PyTorch', 'Computer Vision', 'Natural Language Processing', 'Deep Learning', 'MLOps'],
           availability: '2-4 weeks'
         },
         {
-          icon: '🔧',
           title: 'Manufacturing Engineering',
           skills: ['Process Optimization', 'Lean/Six Sigma', 'Quality Control', 'Automation Design', 'IoT Integration'],
           availability: '2-3 weeks'
         },
         {
-          icon: '💻',
           title: 'Software Development',
           skills: ['Python/Java/C++', 'Full-Stack Development', 'Cloud Architecture', 'DevOps', 'API Integration'],
           availability: '2-4 weeks'
         },
         {
-          icon: '📊',
           title: 'Data Science',
           skills: ['Data Analytics', 'Predictive Modeling', 'BI & Visualization', 'Statistical Analysis', 'Big Data'],
           availability: '2-4 weeks'
         },
         {
-          icon: '🏗️',
           title: 'EPC & Fabrication',
           skills: ['Project Management', 'CAD/CAM', 'Procurement', 'Quality Assurance', 'Construction Supervision'],
           availability: '3-6 weeks'
+        },
+        {
+          title: 'Cybersecurity & IT Infrastructure',
+          skills: ['Network Security', 'Cloud Security', 'Penetration Testing', 'Security Compliance', 'Infrastructure Management'],
+          availability: '3-5 weeks'
         }
       ],
       comparison: {
@@ -141,7 +141,6 @@ const GlobalEngineeringTalentPool: React.FC<GlobalEngineeringTalentPoolProps> = 
         <div className="categories-grid">
           {currentContent.categories.map((category, index) => (
             <div key={index} className="category-card">
-              <div className="category-icon">{category.icon}</div>
               <h3 className="category-title">{category.title}</h3>
               <ul className="skills-list">
                 {category.skills.map((skill, idx) => (
@@ -152,7 +151,6 @@ const GlobalEngineeringTalentPool: React.FC<GlobalEngineeringTalentPoolProps> = 
             </div>
           ))}
         </div>
-
         <div className="comparison-section">
           <h3 className="comparison-title">{currentContent.comparison.title}</h3>
           <div className="comparison-grid">

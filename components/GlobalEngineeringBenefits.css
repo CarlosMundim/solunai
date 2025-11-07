@@ -23,7 +23,10 @@
 
 .benefits-subtitle {
   font-size: 20px;
-  color: #666666;
+  background: linear-gradient(135deg, #0091ff 0%, #666666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 400;
 }
 
@@ -47,11 +50,6 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-.benefit-icon {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  display: block;
-}
 
 .benefit-title {
   font-size: 24px;
@@ -85,7 +83,7 @@
 .metric-icon {
   width: 16px;
   height: 16px;
-  color: var(--solunai-orange);
+  color: #0091ff;
   flex-shrink: 0;
 }
 
@@ -123,7 +121,10 @@
 
 .case-study-industry {
   font-size: 18px;
-  color: var(--solunai-orange);
+  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 500;
 }
 
@@ -143,7 +144,10 @@
 .item-label {
   font-size: 14px;
   font-weight: 700;
-  color: var(--solunai-orange);
+  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 0.75rem;
@@ -165,7 +169,7 @@
 .result-card {
   text-align: center;
   padding: 20px;
-  background: var(--gradient-orange);
+  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
   border-radius: 12px;
   color: white;
 }

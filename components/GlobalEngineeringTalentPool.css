@@ -23,7 +23,10 @@
 
 .talent-subtitle {
   font-size: 20px;
-  color: var(--solunai-orange);
+  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -38,7 +41,7 @@
 
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-bottom: 5rem;
 }
@@ -58,10 +61,6 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-.category-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
 
 .category-title {
   font-size: 22px;
@@ -89,13 +88,14 @@
 }
 
 .availability-badge {
-  background: rgba(255, 87, 34, 0.1);
-  color: var(--solunai-orange);
+  background: linear-gradient(135deg, rgba(0, 145, 255, 0.15) 0%, rgba(255, 87, 34, 0.15) 100%);
+  color: #0091ff;
   padding: 10px 16px;
   border-radius: 50px;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
+  border: 1px solid rgba(0, 145, 255, 0.3);
 }
 
 .comparison-section {
@@ -124,7 +124,7 @@
 }
 
 .comparison-card.worldemp {
-  border: 3px solid var(--solunai-orange);
+  border: 3px solid #0091ff;
   position: relative;
 }
 
@@ -133,7 +133,7 @@
   position: absolute;
   top: -15px;
   right: 20px;
-  background: var(--gradient-orange);
+  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
   color: white;
   padding: 8px 20px;
   border-radius: 50px;
@@ -164,7 +164,10 @@
 .item-metric {
   font-size: 24px;
   font-weight: 700;
-  color: var(--solunai-orange);
+  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 0.5rem;
 }
 

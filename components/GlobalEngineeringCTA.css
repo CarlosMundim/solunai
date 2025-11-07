@@ -21,7 +21,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 87, 34, 0.1) 0%, transparent 50%);
+  background: radial-gradient(circle at 50% 50%, rgba(0, 145, 255, 0.12) 0%, rgba(255, 87, 34, 0.08) 40%, transparent 70%);
   pointer-events: none;
   z-index: -1;
 }
@@ -106,7 +106,7 @@
 .feature-icon {
   width: 20px;
   height: 20px;
-  color: var(--solunai-orange);
+  color: #0091ff;
   flex-shrink: 0;
 }
 
@@ -129,14 +129,14 @@
 }
 
 .cta-button.primary {
-  background: var(--solunai-orange);
+  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
   color: white;
 }
 
 .cta-button.primary:hover {
-  background: var(--solunai-orange-dark);
+  background: linear-gradient(135deg, #0077cc 0%, var(--solunai-orange-dark) 100%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(255, 87, 34, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 145, 255, 0.4);
 }
 
 .cta-button.secondary {

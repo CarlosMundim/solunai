@@ -23,7 +23,10 @@
 
 .process-subtitle {
   font-size: 20px;
-  color: #666666;
+  background: linear-gradient(135deg, #0091ff 0%, #666666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 400;
 }
 
@@ -40,19 +43,52 @@
   background: white;
   border-radius: 16px;
   padding: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.08),
+    0 10px 40px rgba(0, 145, 255, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.12);
   transition: all 0.3s ease;
 }
 
+.phase-card::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: -8px;
+  bottom: -8px;
+  background: linear-gradient(135deg, rgba(0, 145, 255, 0.03) 0%, rgba(255, 87, 34, 0.03) 100%);
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.phase-card::after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: -16px;
+  bottom: -16px;
+  background: linear-gradient(135deg, rgba(0, 145, 255, 0.02) 0%, rgba(255, 87, 34, 0.02) 100%);
+  border-radius: 16px;
+  z-index: -2;
+}
+
 .phase-card:hover {
-  transform: translateX(10px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transform: translateX(10px) translateY(-2px);
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.12),
+    0 15px 50px rgba(0, 145, 255, 0.15),
+    0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .phase-number {
   font-size: 48px;
   font-weight: 800;
-  color: var(--solunai-orange);
+  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   line-height: 1;
   padding-top: 0.5rem;
 }
@@ -81,7 +117,7 @@
   font-size: 14px;
   font-weight: 600;
   color: white;
-  background: var(--solunai-orange);
+  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
   padding: 0.5rem 1rem;
   border-radius: 20px;
 }
@@ -127,7 +163,7 @@
 .deliverable-icon {
   width: 16px;
   height: 16px;
-  color: var(--solunai-orange);
+  color: #0091ff;
   flex-shrink: 0;
 }
 
@@ -137,7 +173,7 @@
   top: 100%;
   width: 2px;
   height: 3rem;
-  background: linear-gradient(to bottom, var(--solunai-orange), rgba(255, 87, 34, 0.2));
+  background: linear-gradient(to bottom, #0091ff, rgba(0, 145, 255, 0.2));
 }
 
 @media (max-width: 768px) {
