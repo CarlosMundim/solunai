@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   padding: var(--section-spacing-desktop) var(--container-padding-mobile);
-  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  background: var(--bg-off-white);
 }
 
 .client-success-container {

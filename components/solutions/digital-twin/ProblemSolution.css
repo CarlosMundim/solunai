@@ -1,7 +1,7 @@
 .problem-solution {
   width: 100%;
-  background: #ffffff;
-  padding: 80px 24px;
+  background: var(--bg-cream);
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -98,7 +98,7 @@ html[lang="ja"] .problem-solution-card p {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .problem-solution {
-    padding: 60px 24px;
+    padding: var(--section-spacing-tablet) 24px;
   }
 
   .problem-solution-intro {
@@ -120,7 +120,7 @@ html[lang="ja"] .problem-solution-card p {
 
 @media (max-width: 768px) {
   .problem-solution {
-    padding: 60px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .problem-solution-intro {

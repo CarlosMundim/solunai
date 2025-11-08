@@ -1,7 +1,7 @@
 .stacked-cards-section {
   position: relative;
   width: 100%;
-  background: #f8f9fa;
+  background: var(--bg-cream);
   padding-top: var(--section-spacing-desktop);
 }
 

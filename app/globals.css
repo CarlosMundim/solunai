@@ -21,6 +21,13 @@
   --bg-dark-2: #2d2d44;
   --bg-dark-3: #16213e;
 
+  /* PlayerZero-Inspired Backgrounds */
+  --bg-cream: #f0efeb;
+  --bg-subtle-gray: #f7f7f7;
+  --bg-muted-brown: #787168;
+  --bg-pure-black: #000000;
+  --bg-off-white: #fafafa;
+
   /* Gradients */
   --gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
   --gradient-orange: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);

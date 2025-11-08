@@ -1,7 +1,7 @@
 .what-is-digital-twin {
   width: 100%;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  padding: 100px 24px;
+  background: var(--bg-subtle-gray);
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -327,7 +327,7 @@ html[lang="ja"] .scenario-comparison p {
 
 @media (max-width: 768px) {
   .what-is-digital-twin {
-    padding: 60px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .what-is-digital-twin-heading {
