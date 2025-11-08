@@ -8,49 +8,53 @@
   justify-content: center;
 }
 
-/* Blue L-shaped Ribbon - Top and Right Border */
+/* Tiger's Diagonal Orange Accent Stripe - Premium Innovation Visual */
 .hero-video-section::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 8px;
-  background: #2E3192;
+  top: -50px;
+  left: -50px;
+  width: 120px;
+  height: 50%;
+  background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
+  transform: rotate(-18deg);
+  transform-origin: top left;
   z-index: 10;
-  animation: slideInFromLeft 1s ease forwards;
+  opacity: 0;
+  animation: diagonalSlideIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s forwards;
+  box-shadow:
+    4px 4px 20px rgba(255, 87, 34, 0.4),
+    -2px -2px 10px rgba(255, 87, 34, 0.2);
 }
 
+/* Secondary accent stripe for depth */
 .hero-video-section::after {
   content: '';
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 8px;
-  height: 100%;
-  background: #2E3192;
-  z-index: 10;
-  animation: slideInFromTop 1s ease 0.3s forwards;
-  transform-origin: top;
-  transform: scaleY(0);
+  top: -30px;
+  left: 50px;
+  width: 60px;
+  height: 40%;
+  background: linear-gradient(135deg, rgba(255, 87, 34, 0.6) 0%, rgba(230, 74, 25, 0.4) 100%);
+  transform: rotate(-18deg);
+  transform-origin: top left;
+  z-index: 9;
+  opacity: 0;
+  animation: diagonalSlideIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.7s forwards;
+  filter: blur(1px);
 }
 
-@keyframes slideInFromLeft {
-  from {
-    transform: scaleX(0);
-    transform-origin: left;
+@keyframes diagonalSlideIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-18deg) translateX(-100px) translateY(-100px);
   }
-  to {
-    transform: scaleX(1);
+  60% {
+    opacity: 1;
   }
-}
-
-@keyframes slideInFromTop {
-  from {
-    transform: scaleY(0);
-  }
-  to {
-    transform: scaleY(1);
+  100% {
+    opacity: 0.95;
+    transform: rotate(-18deg) translateX(0) translateY(0);
   }
 }
 
@@ -180,6 +184,17 @@
   .hero-subheadline {
     font-size: 18px;
   }
+
+  /* Adjust diagonal stripe for tablet */
+  .hero-video-section::before {
+    width: 100px;
+    height: 45%;
+  }
+
+  .hero-video-section::after {
+    width: 50px;
+    height: 35%;
+  }
 }
 
 /* Mobile Styles */
@@ -197,6 +212,17 @@
   .scroll-indicator {
     bottom: 32px;
   }
+
+  /* Smaller diagonal stripe for mobile */
+  .hero-video-section::before {
+    width: 80px;
+    height: 40%;
+  }
+
+  .hero-video-section::after {
+    width: 40px;
+    height: 30%;
+  }
 }
 
 /* Small Mobile */
@@ -207,5 +233,17 @@
 
   .hero-subheadline {
     font-size: 15px;
+  }
+
+  /* Even smaller diagonal stripe for small mobile */
+  .hero-video-section::before {
+    width: 60px;
+    height: 35%;
+  }
+
+  .hero-video-section::after {
+    width: 30px;
+    height: 25%;
+    left: 35px;
   }
 }
