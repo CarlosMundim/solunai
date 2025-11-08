@@ -21,7 +21,7 @@ const PrimaryCTA: React.FC<PrimaryCTAProps> = ({ lang }) => {
       ]
     },
     en: {
-      title: 'Realizing the Future\nof\nManufacturing Today',
+      title: 'Realizing the Future of Manufacturing Today',
       subtitle: 'Free consultation with AI specialists to diagnose your challenges and optimal solutions',
       ctaButton: 'Schedule Free Consultation',
       features: [
