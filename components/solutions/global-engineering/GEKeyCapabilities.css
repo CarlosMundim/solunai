@@ -1,7 +1,7 @@
 .ge-key-capabilities {
   width: 100%;
-  background: #ffffff;
-  padding: 100px 24px;
+  background: var(--bg-subtle-gray);
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -47,8 +47,8 @@ html[lang="ja"] .ge-key-capabilities-subheading {
 }
 
 .ge-capability-card {
-  background: #ffffff;
-  border: 2px solid #d1d5db;
+  background: var(--bg-subtle-gray);
+  border: 1px solid var(--border-subtle);
   border-radius: 12px;
   padding: 40px;
   transition: var(--transition-base);
@@ -84,6 +84,10 @@ html[lang="ja"] .ge-capability-description {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .ge-key-capabilities {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+
   .ge-key-capabilities-heading {
     font-size: 40px;
   }
@@ -101,7 +105,7 @@ html[lang="ja"] .ge-capability-description {
 
 @media (max-width: 768px) {
   .ge-key-capabilities {
-    padding: 60px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .ge-key-capabilities-heading {

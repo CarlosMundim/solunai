@@ -1,7 +1,7 @@
 .ge-cta {
   width: 100%;
   background: var(--gradient-dark);
-  padding: 120px 24px;
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
   position: relative;
   overflow: hidden;
@@ -109,7 +109,7 @@ html[lang="ja"] .ge-cta-description {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .ge-cta {
-    padding: 100px 24px;
+    padding: var(--section-spacing-tablet) 24px;
   }
 
   .ge-cta-grid {
@@ -127,7 +127,7 @@ html[lang="ja"] .ge-cta-description {
 
 @media (max-width: 768px) {
   .ge-cta {
-    padding: 80px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .ge-cta-grid {
@@ -155,7 +155,7 @@ html[lang="ja"] .ge-cta-description {
 
 @media (max-width: 480px) {
   .ge-cta {
-    padding: 60px 16px;
+    padding: var(--section-spacing-mobile) 16px;
   }
 
   .ge-cta-grid {

@@ -1,7 +1,7 @@
 .ge-what-is {
   width: 100%;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  padding: 100px 24px;
+  background: var(--bg-cream);
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -65,7 +65,7 @@ html[lang="ja"] .ge-what-is-intro {
 
 .ge-feature-card {
   background: #ffffff;
-  border: 1px solid #000000;
+  border: 1px solid var(--border-subtle);
   border-radius: 12px;
   padding: 40px;
   transition: all 0.3s ease;
@@ -101,7 +101,7 @@ html[lang="ja"] .ge-feature-description {
 
 .ge-traditional-vs-global {
   background: #ffffff;
-  border: 1px solid #000000;
+  border: 1px solid var(--border-subtle);
   border-radius: 12px;
   padding: 48px;
   margin-bottom: 80px;
@@ -128,7 +128,7 @@ html[lang="ja"] .ge-feature-description {
   background: #f8f9fa;
   border-radius: 8px;
   padding: 32px;
-  border: 1px solid #000000;
+  border: 1px solid var(--border-subtle);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
@@ -197,7 +197,7 @@ html[lang="ja"] .ge-comparison-list li {
   background: #f8f9fa;
   border-radius: 12px;
   padding: 48px;
-  border: 1px solid #000000;
+  border: 1px solid var(--border-subtle);
 }
 
 .ge-example-heading {
@@ -219,7 +219,7 @@ html[lang="ja"] .ge-comparison-list li {
   background: #ffffff;
   border-radius: 12px;
   padding: 32px;
-  border: 1px solid #000000;
+  border: 1px solid var(--border-subtle);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
@@ -249,7 +249,7 @@ html[lang="ja"] .ge-comparison-list li {
 .ge-after {
   padding: 20px;
   border-radius: 8px;
-  border: 1px solid #000000;
+  border: 1px solid var(--border-subtle);
 }
 
 .ge-before {
@@ -318,9 +318,15 @@ html[lang="ja"] .ge-scenario-comparison p {
   }
 }
 
+@media (max-width: 1024px) {
+  .ge-what-is {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+}
+
 @media (max-width: 768px) {
   .ge-what-is {
-    padding: 60px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .ge-what-is-heading {
