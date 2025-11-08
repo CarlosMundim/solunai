@@ -8,6 +8,12 @@
   --solunai-orange-dark: #E64A19;
   --solunai-orange-light: #FF7043;
 
+  /* Accent Colors - Cyan */
+  --accent-cyan: #00D4FF;
+  --accent-cyan-dark: #00B8E6;
+  --accent-cyan-light: #4DDFFF;
+  --accent-cyan-neon: rgba(0, 212, 255, 0.5);
+
   /* Background Colors */
   --background: #ffffff;
   --foreground: #171717;
@@ -19,21 +25,35 @@
   --gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
   --gradient-orange: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
   --gradient-orange-hover: linear-gradient(135deg, #FF7043 0%, #FF5722 100%);
+  --gradient-cyan-accent: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+  --gradient-orange-cyan: linear-gradient(135deg, #FF5722 0%, #00D4FF 100%);
 
   /* Glass-morphism */
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
   --glass-backdrop: blur(10px);
 
+  /* Opacity Borders (Otio style) */
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-medium: rgba(0, 0, 0, 0.12);
+  --border-strong: rgba(0, 0, 0, 0.16);
+  --border-cyan-subtle: rgba(0, 212, 255, 0.15);
+  --border-cyan-glow: rgba(0, 212, 255, 0.3);
+
   /* Typography */
   --font-inter: 'Inter', sans-serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
   --font-noto-sans-jp: 'Noto Sans JP', sans-serif;
+  --font-heading: var(--font-space-grotesk), var(--font-inter), sans-serif;
 
   /* Shadows */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
   --shadow-orange: 0 8px 32px rgba(255, 87, 34, 0.2);
+  --shadow-cyan-glow: 0 0 20px rgba(0, 212, 255, 0.3);
+  --shadow-cyan-strong: 0 0 40px rgba(0, 212, 255, 0.5);
+  --shadow-orange-cyan: 0 8px 32px rgba(255, 87, 34, 0.15), 0 0 20px rgba(0, 212, 255, 0.2);
 
   /* Transitions */
   --transition-fast: 0.2s ease;
@@ -43,6 +63,18 @@
   /* Card Effects */
   --card-hover-lift: -8px;
   --card-hover-shadow: 0 12px 40px rgba(255, 87, 34, 0.25);
+
+  /* Section Spacing - Negative Space Strategy */
+  --section-spacing-mobile: 80px;
+  --section-spacing-tablet: 120px;
+  --section-spacing-desktop: 200px;
+  --section-spacing-xl: 280px;
+
+  /* Container Padding */
+  --container-padding-mobile: 20px;
+  --container-padding-tablet: 40px;
+  --container-padding-desktop: 60px;
+  --container-padding-xl: 80px;
 }
 
 * {
@@ -81,6 +113,18 @@ html[lang="ja"] * {
 html[lang="en"] * {
   font-family: var(--font-inter), 'Open Sans', sans-serif;
   letter-spacing: -0.01em;
+}
+
+/* Headings use Space Grotesk for both languages */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-weight: 700;
 }
 
 @layer utilities {

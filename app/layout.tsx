@@ -1,10 +1,18 @@
-import { Inter, Noto_Sans_JP } from 'next/font/google';
+import { Inter, Noto_Sans_JP, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
+  weight: ['400', '500', '600', '700'],
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+  display: 'swap',
+  weight: ['400', '500', '600', '700'],
 });
 
 const notoSansJP = Noto_Sans_JP({
@@ -25,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" className={`${inter.variable} ${notoSansJP.variable}`} suppressHydrationWarning>
+    <html lang="ja" className={`${inter.variable} ${spaceGrotesk.variable} ${notoSansJP.variable}`} suppressHydrationWarning>
       <body className="antialiased">{children}</body>
     </html>
   );

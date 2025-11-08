@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   background: #f8f9fa;
-  padding-top: 120px;
+  padding-top: var(--section-spacing-desktop);
 }
 
 .stacked-cards-header {
@@ -36,14 +36,21 @@
   width: 100%;
   max-width: 1400px;
   background: #ffffff;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border-subtle);
   border-radius: 24px;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-lg);
   padding: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.stacked-card:hover {
+  border-color: var(--border-cyan-subtle);
+  box-shadow: var(--shadow-orange-cyan);
 }
 
 .card-content-area {
@@ -118,7 +125,7 @@
   background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--border-subtle);
 }
 
 .card-image {
@@ -155,7 +162,7 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .stacked-cards-section {
-    padding-top: 60px;
+    padding-top: var(--section-spacing-mobile);
   }
 
   .stacked-cards-header {

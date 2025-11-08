@@ -1,7 +1,7 @@
 .primary-cta-section {
   position: relative;
   width: 100%;
-  padding: 120px 20px;
+  padding: var(--section-spacing-desktop) var(--container-padding-mobile);
   background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
 }
 
@@ -107,7 +107,7 @@
 /* Tablet Styles */
 @media (max-width: 1024px) {
   .primary-cta-section {
-    padding: 80px 20px;
+    padding: var(--section-spacing-tablet) var(--container-padding-mobile);
   }
 
   .cta-content-grid {
@@ -131,7 +131,7 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .primary-cta-section {
-    padding: 60px 16px;
+    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
   }
 
   .cta-content-grid {

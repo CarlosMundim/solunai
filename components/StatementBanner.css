@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
-  padding: 80px 20px;
+  padding: var(--section-spacing-desktop) var(--container-padding-mobile);
 }
 
 .statement-banner-container {
@@ -40,7 +40,7 @@
 @media (max-width: 1024px) {
   .statement-banner-section {
     min-height: 80vh;
-    padding: 60px 20px;
+    padding: var(--section-spacing-tablet) var(--container-padding-mobile);
   }
 
   .statement-banner-text {
@@ -52,7 +52,7 @@
 @media (max-width: 768px) {
   .statement-banner-section {
     min-height: 60vh;
-    padding: 40px 20px;
+    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
   }
 
   .statement-banner-text {

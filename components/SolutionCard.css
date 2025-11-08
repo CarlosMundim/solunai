@@ -2,18 +2,36 @@
   background: white;
   border-radius: 16px;
   padding: 32px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  box-shadow: var(--shadow-md);
   transition: all 0.3s ease;
-  border: 2px solid transparent;
+  border: 1px solid var(--border-subtle);
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.solution-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-orange-cyan);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .solution-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  border-color: var(--accent-color, #0066cc);
+  box-shadow: var(--shadow-orange-cyan);
+  border-color: var(--border-cyan-subtle);
+}
+
+.solution-card:hover::before {
+  opacity: 1;
 }
 
 .card-header {
@@ -114,7 +132,7 @@
 .card-footer {
   margin-top: auto;
   padding-top: 24px;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid var(--border-subtle);
 }
 
 .pricing-info {

@@ -1,7 +1,7 @@
 .technology-partners-section {
   position: relative;
   width: 100%;
-  padding: 120px 20px;
+  padding: var(--section-spacing-desktop) var(--container-padding-mobile);
   background: #ffffff;
 }
 
@@ -155,7 +155,7 @@
 /* Tablet Styles */
 @media (max-width: 1024px) {
   .technology-partners-section {
-    padding: 80px 20px;
+    padding: var(--section-spacing-tablet) var(--container-padding-mobile);
   }
 
   .partners-title {
@@ -193,7 +193,7 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .technology-partners-section {
-    padding: 60px 16px;
+    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
   }
 
   .partners-title {
