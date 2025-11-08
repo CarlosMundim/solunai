@@ -1,7 +1,7 @@
 .cv-key-capabilities {
   width: 100%;
-  background: #ffffff;
-  padding: 100px 24px;
+  background: var(--bg-subtle-gray);
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -48,7 +48,7 @@ html[lang="ja"] .cv-key-capabilities-subheading {
 
 .cv-capability-card {
   background: #ffffff;
-  border: 2px solid #d1d5db;
+  border: 1px solid var(--border-subtle);
   border-radius: 12px;
   padding: 40px;
   transition: var(--transition-base);
@@ -99,9 +99,15 @@ html[lang="ja"] .cv-capability-description {
   }
 }
 
+@media (max-width: 1024px) {
+  .cv-key-capabilities {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+}
+
 @media (max-width: 768px) {
   .cv-key-capabilities {
-    padding: 60px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .cv-key-capabilities-heading {

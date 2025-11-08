@@ -1,7 +1,7 @@
 .cv-government-support {
   width: 100%;
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-  padding: 100px 24px;
+  background: var(--bg-subtle-gray);
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -42,6 +42,7 @@ html[lang="ja"] .cv-government-support {
 
 .compliance-badge {
   background: #ffffff;
+  border: 1px solid var(--border-subtle);
   border-radius: 12px;
   padding: 32px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
@@ -126,8 +127,8 @@ html[lang="ja"] .cv-government-support {
 }
 
 .subsidy-card {
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 50%);
-  border: 2px solid #f59e0b;
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
   border-radius: 12px;
   padding: 32px;
   transition: all 0.3s ease;
@@ -234,9 +235,15 @@ html[lang="ja"] .cv-government-support {
   }
 }
 
+@media (max-width: 1024px) {
+  .cv-government-support {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+}
+
 @media (max-width: 768px) {
   .cv-government-support {
-    padding: 60px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .cv-government-support-heading {
