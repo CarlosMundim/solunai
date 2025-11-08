@@ -25,6 +25,14 @@
   box-shadow:
     4px 4px 20px rgba(255, 87, 34, 0.4),
     -2px -2px 10px rgba(255, 87, 34, 0.2);
+  /* Ribbon-cut bottom - like wrapping ribbon! */
+  clip-path: polygon(
+    0 0,           /* Top left */
+    100% 0,        /* Top right */
+    100% 85%,      /* Right side down */
+    50% 100%,      /* V-notch point (center bottom) */
+    0 85%          /* Left side down */
+  );
 }
 
 /* Secondary accent stripe for depth */
@@ -42,6 +50,14 @@
   opacity: 0;
   animation: diagonalSlideIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) 0.7s forwards;
   filter: blur(1px);
+  /* Matching ribbon-cut bottom for depth stripe */
+  clip-path: polygon(
+    0 0,           /* Top left */
+    100% 0,        /* Top right */
+    100% 85%,      /* Right side down */
+    50% 100%,      /* V-notch point (center bottom) */
+    0 85%          /* Left side down */
+  );
 }
 
 @keyframes diagonalSlideIn {
