@@ -98,6 +98,98 @@ const HeroVideo: React.FC<HeroVideoProps> = ({ lang }) => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  // VERSION 2: Code Rain Animation
+  useEffect(() => {
+    const canvas = document.getElementById('codeRainCanvas') as HTMLCanvasElement;
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    canvas.width = 300;
+    canvas.height = window.innerHeight;
+
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()';
+    const fontSize = 14;
+    const columns = canvas.width / fontSize;
+
+    interface Drop {
+      y: number;
+      speed: number;
+    }
+
+    const drops: Drop[] = [];
+    for (let i = 0; i < columns; i++) {
+      drops.push({
+        y: Math.random() * -canvas.height,
+        speed: Math.random() * 0.5 + 0.3
+      });
+    }
+
+    function animateCodeRain() {
+      if (!ctx || !canvas) return;
+
+      ctx.fillStyle = 'rgba(26, 26, 46, 0.05)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.fillStyle = '#00d9ff';
+      ctx.font = `${fontSize}px monospace`;
+
+      drops.forEach((drop, i) => {
+        const char = characters.charAt(Math.floor(Math.random() * characters.length));
+        const x = i * fontSize;
+
+        ctx.fillStyle = drop.y < 50 ? '#ffffff' : '#00d9ff';
+        ctx.shadowBlur = 5;
+        ctx.shadowColor = '#00d9ff';
+        ctx.fillText(char, x, drop.y);
+
+        drop.y += drop.speed;
+
+        if (drop.y > canvas.height && Math.random() > 0.975) {
+          drop.y = 0;
+        }
+      });
+
+      requestAnimationFrame(animateCodeRain);
+    }
+
+    animateCodeRain();
+
+    const handleResize = () => {
+      canvas.height = window.innerHeight;
+    };
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  // VERSION 2: Data Panel Updates
+  useEffect(() => {
+    const value1 = document.getElementById('dataValue1');
+    const value2 = document.getElementById('dataValue2');
+
+    const updateData = () => {
+      if (value1) {
+        const efficiency = (97 + Math.random() * 2).toFixed(1);
+        value1.textContent = `${efficiency}%`;
+      }
+      if (value2) {
+        const optimization = Math.floor(200 + Math.random() * 100);
+        value2.textContent = `${optimization}ms`;
+      }
+    };
+
+    const interval = setInterval(updateData, 2000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   const content = {
     ja: {
       headline: '日本の製造業をAIで革新する',
@@ -146,10 +238,39 @@ const HeroVideo: React.FC<HeroVideoProps> = ({ lang }) => {
       {/* Scan Line Effect */}
       <div className="hero-scan-line"></div>
 
+      {/* VERSION 2 ADDITIONS: Maximum Sci-Fi Effects */}
+
+      {/* Hexagonal Grid Overlay */}
+      <div className="hero-hex-grid"></div>
+
+      {/* Vertical Scan Grid */}
+      <div className="hero-scan-grid"></div>
+
+      {/* Energy Rings */}
+      <div className="hero-energy-ring"></div>
+      <div className="hero-energy-ring"></div>
+
+      {/* Circuit Board Patterns */}
+      <div className="hero-circuit hero-circuit-top"></div>
+      <div className="hero-circuit hero-circuit-bottom"></div>
+
+      {/* Data Readout Panels */}
+      <div className="hero-data-panel hero-data-panel-1">
+        <div>AI EFFICIENCY</div>
+        <div className="hero-data-value" id="dataValue1">98.7%</div>
+      </div>
+      <div className="hero-data-panel hero-data-panel-2">
+        <div>OPTIMIZATION</div>
+        <div className="hero-data-value" id="dataValue2">245ms</div>
+      </div>
+
+      {/* Matrix Code Rain */}
+      <canvas className="hero-code-rain" id="codeRainCanvas"></canvas>
+
       {/* Content */}
       <div className="hero-content-wrapper">
         <div className="hero-content">
-          <h1 className="hero-headline">
+          <h1 className="hero-headline glitch" data-text={currentContent.headline}>
             {currentContent.headline}
           </h1>
           <p className="hero-subheadline">{currentContent.subheadline}</p>
