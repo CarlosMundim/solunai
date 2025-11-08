@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import './Header.css';
@@ -25,6 +25,21 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Scroll listener to morph header
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navigation = {
     ja: {
@@ -98,7 +113,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
   const currentNav = navigation[lang];
 
   return (
-    <header className="site-header">
+    <header className={`site-header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
           <Link href={lang === 'ja' ? '/' : '/en'}>
