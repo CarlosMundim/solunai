@@ -8,6 +8,52 @@
   justify-content: center;
 }
 
+/* Blue L-shaped Ribbon - Top and Right Border */
+.hero-video-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: #2E3192;
+  z-index: 10;
+  animation: slideInFromLeft 1s ease forwards;
+}
+
+.hero-video-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100%;
+  background: #2E3192;
+  z-index: 10;
+  animation: slideInFromTop 1s ease 0.3s forwards;
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
 .hero-video-container {
   position: absolute;
   top: 0;
