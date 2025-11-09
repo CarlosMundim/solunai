@@ -1,6 +1,6 @@
 .global-engineering-talent-pool {
-  padding: 120px 2rem;
-  background: #f8f9fa;
+  padding: var(--section-spacing-desktop) 24px;
+  background: var(--bg-subtle-gray);
 }
 
 .talent-container {
@@ -159,7 +159,7 @@
 
 .comparison-item {
   padding: 16px;
-  background: #f8f9fa;
+  background: var(--bg-subtle-gray);
   border-radius: 8px;
 }
 
@@ -176,6 +176,12 @@
 .item-description {
   font-size: 16px;
   color: #666666;
+}
+
+@media (max-width: 1024px) {
+  .global-engineering-talent-pool {
+    padding: var(--section-spacing-tablet) 24px;
+  }
 }
 
 @media (max-width: 768px) {

@@ -4,7 +4,7 @@
   min-height: 90vh;
   display: flex;
   align-items: center;
-  padding: 140px 24px 120px 24px;
+  padding: var(--section-spacing-desktop) 24px var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
   overflow: hidden;
 }
@@ -101,7 +101,7 @@ html[lang="ja"] .global-engineering-hero-subheading {
 @media (max-width: 1024px) {
   .global-engineering-hero {
     min-height: 85vh;
-    padding: 120px 24px 100px 24px;
+    padding: var(--section-spacing-tablet) 24px var(--section-spacing-tablet) 24px;
   }
 
   .global-engineering-hero-heading {

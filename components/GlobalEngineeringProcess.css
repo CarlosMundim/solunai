@@ -1,6 +1,6 @@
 .global-engineering-process {
-  padding: 120px 2rem;
-  background: white;
+  padding: var(--section-spacing-desktop) 24px;
+  background: var(--bg-cream);
 }
 
 .process-container {
@@ -42,7 +42,7 @@
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 2rem;
-  background: white;
+  background: var(--bg-cream);
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -139,6 +139,11 @@
   flex-shrink: 0;
 }
 
+@media (max-width: 1024px) {
+  .global-engineering-process {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+}
 
 @media (max-width: 768px) {
   .global-engineering-process {
