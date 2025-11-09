@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 120px 0;
+  padding: var(--section-spacing-desktop) 0;
 }
 
 .case-studies-hero-background {
@@ -118,7 +118,7 @@
 /* Tablet */
 @media (max-width: 1024px) {
   .case-studies-hero {
-    padding: 80px 0;
+    padding: var(--section-spacing-tablet) 0;
   }
 
   .case-studies-hero-title {
@@ -137,7 +137,7 @@
 /* Mobile */
 @media (max-width: 768px) {
   .case-studies-hero {
-    padding: 60px 0;
+    padding: var(--section-spacing-mobile) 0;
     min-height: 500px;
   }
 

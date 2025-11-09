@@ -1,6 +1,6 @@
 .other-case-studies {
-  padding: 120px 0;
-  background: #f8f9fa;
+  padding: var(--section-spacing-desktop) 0;
+  background: var(--bg-subtle-gray);
 }
 
 .other-case-studies-container {

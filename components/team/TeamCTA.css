@@ -3,7 +3,7 @@
    ============================================ */
 
 .team-cta {
-  padding: 100px 0;
+  padding: var(--section-spacing-desktop) 0;
   background: linear-gradient(135deg, #2E3192 0%, #1a237e 100%);
   position: relative;
   overflow: hidden;
@@ -176,7 +176,7 @@
 /* Responsive: Tablet */
 @media (max-width: 1024px) {
   .team-cta {
-    padding: 80px 0;
+    padding: var(--section-spacing-tablet) 0;
   }
 
   .team-cta-title {
@@ -225,7 +225,7 @@
 /* Responsive: Mobile */
 @media (max-width: 768px) {
   .team-cta {
-    padding: 60px 0;
+    padding: var(--section-spacing-mobile) 0;
   }
 
   .team-cta-header {

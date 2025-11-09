@@ -4,7 +4,7 @@
 
 .team-hero {
   margin-top: 80px;
-  padding: 120px 0 80px;
+  padding: var(--section-spacing-desktop) 0 80px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   position: relative;
   overflow: hidden;
@@ -168,7 +168,7 @@
 @media (max-width: 1024px) {
   .team-hero {
     margin-top: 60px;
-    padding: 80px 0 60px;
+    padding: var(--section-spacing-tablet) 0 60px;
   }
 
   .team-hero-title {
@@ -218,7 +218,7 @@
 /* Responsive: Mobile */
 @media (max-width: 768px) {
   .team-hero {
-    padding: 60px 0 40px;
+    padding: var(--section-spacing-mobile) 0 40px;
   }
 
   .team-hero-title {

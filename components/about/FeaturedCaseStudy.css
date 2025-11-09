@@ -1,5 +1,5 @@
 .featured-case-study {
-  padding: 120px 0;
+  padding: var(--section-spacing-desktop) 0;
   background: #ffffff;
 }
 
