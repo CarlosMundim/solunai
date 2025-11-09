@@ -1,6 +1,6 @@
 .ai-implementation-tech {
-  padding: 120px 2rem;
-  background: white;
+  padding: var(--section-spacing-desktop) 24px;
+  background: var(--bg-cream);
 }
 
 .tech-container {
@@ -34,10 +34,10 @@
 }
 
 .tech-category-card {
-  background: white;
+  background: var(--bg-cream);
   border-radius: 16px;
   padding: 32px;
-  border: 2px solid #f0f0f0;
+  border: 1px solid var(--border-subtle);
   transition: all 0.3s ease;
 }
 
@@ -95,6 +95,12 @@
   font-size: 14px;
   color: #666666;
   line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .ai-implementation-tech {
+    padding: var(--section-spacing-tablet) 24px;
+  }
 }
 
 @media (max-width: 768px) {

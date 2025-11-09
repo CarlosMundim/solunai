@@ -1,6 +1,6 @@
 .ai-implementation-benefits {
-  padding: 120px 2rem;
-  background: #f8f9fa;
+  padding: var(--section-spacing-desktop) 24px;
+  background: var(--bg-subtle-gray);
 }
 
 .benefits-container {
@@ -135,7 +135,7 @@
 }
 
 .case-study-item {
-  background: #f8f9fa;
+  background: var(--bg-subtle-gray);
   padding: 20px;
   border-radius: 12px;
 }
@@ -180,6 +180,12 @@
   font-size: 14px;
   font-weight: 500;
   opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .ai-implementation-benefits {
+    padding: var(--section-spacing-tablet) 24px;
+  }
 }
 
 @media (max-width: 768px) {

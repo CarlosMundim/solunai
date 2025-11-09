@@ -1,6 +1,6 @@
 .ai-implementation-cta {
   position: relative;
-  padding: 120px 24px;
+  padding: var(--section-spacing-desktop) 24px;
   overflow: hidden;
 }
 
@@ -159,13 +159,13 @@
 
 @media (max-width: 1024px) {
   .ai-implementation-cta {
-    padding: 100px 24px;
+    padding: var(--section-spacing-tablet) 24px;
   }
 }
 
 @media (max-width: 768px) {
   .ai-implementation-cta {
-    padding: 80px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .cta-title {
@@ -193,7 +193,7 @@
 
 @media (max-width: 480px) {
   .ai-implementation-cta {
-    padding: 60px 16px;
+    padding: var(--section-spacing-mobile) 16px;
   }
 
   .cta-button {

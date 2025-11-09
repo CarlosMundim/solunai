@@ -1,6 +1,6 @@
 .ai-implementation-process {
-  padding: 120px 2rem;
-  background: #f8f9fa;
+  padding: var(--section-spacing-desktop) 24px;
+  background: var(--bg-subtle-gray);
 }
 
 .process-container {
@@ -139,6 +139,12 @@
   width: 2px;
   height: 3rem;
   background: linear-gradient(180deg, #FF5722 0%, rgba(255, 87, 34, 0.3) 100%);
+}
+
+@media (max-width: 1024px) {
+  .ai-implementation-process {
+    padding: var(--section-spacing-tablet) 24px;
+  }
 }
 
 @media (max-width: 768px) {
