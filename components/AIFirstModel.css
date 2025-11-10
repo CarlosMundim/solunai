@@ -1,0 +1,560 @@
+/* AI-First Model Section */
+.ai-first-model-section {
+  padding: 120px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-first-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Header */
+.ai-first-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.ai-first-overtitle {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #c41e3a;
+  margin-bottom: 16px;
+}
+
+.ai-first-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.ai-first-subtitle {
+  font-size: 20px;
+  color: #666;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 48px;
+  line-height: 1.6;
+}
+
+/* Comparison Section */
+.comparison-section {
+  margin-bottom: 100px;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.comparison-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comparison-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.comparison-card.solunai {
+  border: 2px solid #c41e3a;
+  background: linear-gradient(135deg, #ffffff 0%, #fff5f7 100%);
+}
+
+.comparison-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.comparison-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #e0e0e0;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.comparison-badge.highlight {
+  background: #c41e3a;
+  color: white;
+}
+
+.comparison-header h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.comparison-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.metric-row.highlight {
+  background: #fff8f9;
+  border-left: 4px solid #c41e3a;
+}
+
+.metric-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.metric-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.metric-row.highlight .metric-value {
+  color: #c41e3a;
+}
+
+/* Benefits Grid */
+.benefits-section {
+  margin-bottom: 100px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.benefit-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(196, 30, 58, 0.15);
+}
+
+.benefit-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.benefit-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.benefit-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #c41e3a;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.benefit-detail {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+  margin-bottom: 100px;
+}
+
+.collaboration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.team-card {
+  background: white;
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.team-card.human-team {
+  border-top: 4px solid #2563eb;
+}
+
+.team-card.ai-team {
+  border-top: 4px solid #c41e3a;
+  background: linear-gradient(135deg, #ffffff 0%, #fff5f7 100%);
+}
+
+.team-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.team-header h4 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.team-subtitle {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+}
+
+.team-roles {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.role-item {
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #2563eb;
+}
+
+.role-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.role-responsibility {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.ai-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.ai-category {
+  padding: 20px;
+  background: #fff8f9;
+  border-radius: 8px;
+  border-left: 3px solid #c41e3a;
+}
+
+.category-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #c41e3a;
+  margin-bottom: 12px;
+}
+
+.category-tasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.category-tasks li {
+  font-size: 14px;
+  color: #666;
+  padding-left: 20px;
+  position: relative;
+}
+
+.category-tasks li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #c41e3a;
+  font-weight: 700;
+}
+
+.team-summary {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 20px;
+  background: linear-gradient(90deg, #f8f9fa 0%, transparent 100%);
+  border-left: 4px solid #c41e3a;
+  border-radius: 4px;
+}
+
+/* Impact Section */
+.impact-section {
+  margin-bottom: 100px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.impact-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.impact-icon {
+  font-size: 56px;
+  margin-bottom: 24px;
+}
+
+.impact-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.impact-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.impact-metric {
+  font-size: 14px;
+  font-weight: 700;
+  color: #c41e3a;
+  padding: 12px 20px;
+  background: #fff8f9;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* CTA Section */
+.ai-first-cta {
+  text-align: center;
+  padding: 80px 40px;
+  background: linear-gradient(135deg, #c41e3a 0%, #8b1429 100%);
+  border-radius: 24px;
+  color: white;
+}
+
+.cta-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.cta-description {
+  font-size: 18px;
+  margin-bottom: 40px;
+  opacity: 0.95;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 16px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.cta-button.primary {
+  background: white;
+  color: #c41e3a;
+  border: 2px solid white;
+}
+
+.cta-button.primary:hover {
+  background: transparent;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+  background: white;
+  color: #c41e3a;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ai-first-container {
+    padding: 0 24px;
+  }
+
+  .comparison-grid,
+  .collaboration-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-first-title {
+    font-size: 40px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-first-model-section {
+    padding: 80px 0;
+  }
+
+  .ai-first-header {
+    margin-bottom: 60px;
+  }
+
+  .ai-first-title {
+    font-size: 32px;
+  }
+
+  .ai-first-subtitle {
+    font-size: 18px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .benefits-grid,
+  .impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-card,
+  .team-card,
+  .benefit-card,
+  .impact-card {
+    padding: 32px 24px;
+  }
+
+  .cta-title {
+    font-size: 32px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ai-first-container {
+    padding: 0 16px;
+  }
+
+  .ai-first-title {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .benefit-value {
+    font-size: 24px;
+  }
+
+  .team-header h4 {
+    font-size: 24px;
+  }
+
+  .impact-title {
+    font-size: 20px;
+  }
+}

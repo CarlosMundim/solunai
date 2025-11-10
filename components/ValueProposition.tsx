@@ -41,10 +41,10 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({ lang }) => {
           title: '実証済みの成果',
           subtitle: '国際的な実績と信頼性',
           features: [
-            'FBM Hudson: €2.5M-€3.8M プロジェクト',
-            'ROI: 178-295% IRR',
-            '投資回収: 4-7ヶ月',
-            'EU パートナーシップ'
+            '30年以上の製造業経験',
+            '欧州主要製造業パートナーシップ',
+            '複数年にわたる顧客関係',
+            '国際プロジェクト実績'
           ],
           result: '大規模変革の実行能力を証明'
         }
@@ -82,10 +82,10 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({ lang }) => {
           title: 'Proven Results',
           subtitle: 'International track record and credibility',
           features: [
-            'FBM Hudson: €2.5M-€3.8M Project',
-            'ROI: 178-295% IRR',
-            'Payback: 4-7 months',
-            'EU Partnerships'
+            '30+ years manufacturing industry experience',
+            'Major European manufacturing partnerships',
+            'Multi-year client relationships',
+            'Proven international project delivery'
           ],
           result: 'Proven large-scale transformation capability'
         }

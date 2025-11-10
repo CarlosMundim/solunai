@@ -11,28 +11,28 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
   const content = {
     ja: {
       headline: {
-        line1: '完全な製造業デジタル変革',
-        line2: 'AIソリューション + グローバルエンジニアリング'
+        line1: '日本の製造業危機を解決する',
+        line2: 'AI優先ビジネスモデル'
       },
-      subheadline: 'デジタルツインから完全なEPC・製造サービスまで—ターンキーソリューションを提供。世界クラスのエンジニア人材を数週間で配備可能。実証済みAIでコスト30-50%削減、品質95%改善、4-10ヶ月でROI実現。',
+      subheadline: '12人の専門家 + 50-100の専門AIエージェントで運営。従来型企業の20%利益率に対し、80%の利益率を実現。顧客には75%のコスト削減を提供し、日本の1,100万人労働力不足を解決します。',
       trustIndicators: [
-        '✓ 時間削減90%',
-        '✓ 展開速度52倍',
-        '✓ 国際パートナーシップ（EU）'
+        '✓ 利益率80%（業界標準20%）',
+        '✓ 顧客コスト75%削減',
+        '✓ 12人 + 50-100 AIエージェント'
       ],
       cta: '無料相談を予約',
       scroll: 'スクロール'
     },
     en: {
       headline: {
-        line1: 'Complete Manufacturing Transformation',
-        line2: 'AI Solutions + Global Engineering Expertise'
+        line1: 'Solving Japan\'s Manufacturing Crisis',
+        line2: 'AI-First Business Model'
       },
-      subheadline: 'From AI-powered digital twins to complete EPC and fabrication services—we deliver turnkey manufacturing transformation. Access world-class engineering talent deployed in weeks, plus proven AI solutions that reduce costs 30-50%, improve quality 95%, and deliver ROI in 4-10 months.',
+      subheadline: 'Operating with 12 human experts + 50-100 specialized AI agents. We achieve 80% profit margins vs. traditional 20%, while delivering 75% cost reduction to clients and solving Japan\'s 11 million worker shortage.',
       trustIndicators: [
-        '✓ 90% time reduction',
-        '✓ 52× faster deployment',
-        '✓ International partnerships (EU)'
+        '✓ 80% profit margins (vs 20% industry standard)',
+        '✓ 75% cost reduction for clients',
+        '✓ 12 humans + 50-100 AI agents'
       ],
       cta: 'Schedule Free Consultation',
       scroll: 'scroll down'

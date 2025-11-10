@@ -50,9 +50,9 @@ const Timeline: React.FC<TimelineProps> = ({ lang }) => {
         },
         {
           period: '2025年',
-          event: 'FBM Hudson €2.5M-€3.8M プロジェクト獲得',
+          event: 'FBM Hudson契約締結',
           description: 'ヨーロッパ製造業での実証',
-          highlight: '€2.5M+',
+          highlight: 'EU',
           type: 'project',
         },
         {
@@ -105,9 +105,9 @@ const Timeline: React.FC<TimelineProps> = ({ lang }) => {
         },
         {
           period: '2025',
-          event: 'FBM Hudson €2.5M-€3.8M Project Secured',
+          event: 'FBM Hudson Contract Signed',
           description: 'European manufacturing proof point',
-          highlight: '€2.5M+',
+          highlight: 'EU',
           type: 'project',
         },
         {

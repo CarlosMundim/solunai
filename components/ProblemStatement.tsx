@@ -10,42 +10,42 @@ interface ProblemStatementProps {
 const ProblemStatement: React.FC<ProblemStatementProps> = ({ lang }) => {
   const content = {
     ja: {
-      title: '日本の製造業が直面する3つの課題',
+      title: '日本製造業の3つの危機',
       problems: [
         {
           number: '01',
-          title: '人材不足',
-          description: 'AI・デジタルツイン専門家の深刻な不足により、最新技術の導入が遅れています。'
+          title: '12兆円の損失危機',
+          description: '経済産業省警告：2025年までにDXしない中小企業は年間12兆円の損失。中小企業のわずか16%のみがAIを使用。'
         },
         {
           number: '02',
-          title: '長期プロジェクト',
-          description: '従来のDXプロジェクトは4-6ヶ月かかり、機会損失とコスト増大を招いています。'
+          title: '1,100万人の労働力不足',
+          description: '2040年までに1,100万人の労働力不足。2024年だけで350社の中小企業が人材不足のみで倒産。'
         },
         {
           number: '03',
-          title: 'レガシーシステム',
-          description: '既存システムとの統合が困難で、データ活用が進まず、変革が停滞しています。'
+          title: '高コストで非効率なDX',
+          description: '従来型：100人雇用、20%利益率、4-6ヶ月。Solunai：12人+AIエージェント、80%利益率、2-6週間。'
         }
       ]
     },
     en: {
-      title: '3 Challenges Facing Japanese Manufacturing',
+      title: '3 Crises Facing Japanese Manufacturing',
       problems: [
         {
           number: '01',
-          title: 'Talent Shortage',
-          description: 'Severe shortage of AI and Digital Twin specialists delays adoption of cutting-edge technologies.'
+          title: '¥12 Trillion Loss Crisis',
+          description: 'METI warning: SMEs without DX by 2025 face ¥12 trillion annual losses. Only 16% of SMEs use AI.'
         },
         {
           number: '02',
-          title: 'Long Project Timelines',
-          description: 'Traditional DX projects take 4-6 months, causing opportunity loss and cost escalation.'
+          title: '11 Million Worker Shortage',
+          description: '11 million worker shortage by 2040. In 2024 alone, 350 SMEs failed due to labor shortage.'
         },
         {
           number: '03',
-          title: 'Legacy System Integration',
-          description: 'Difficulty integrating with existing systems prevents data utilization and stalls transformation.'
+          title: 'Expensive & Inefficient DX',
+          description: 'Traditional: 100 employees, 20% margins, 4-6 months. Solunai: 12 humans + AI agents, 80% margins, 2-6 weeks.'
         }
       ]
     }

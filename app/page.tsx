@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import HeroVideo from '@/components/HeroVideo';
 import ProblemStatement from '@/components/ProblemStatement';
 import ValueProposition from '@/components/ValueProposition';
+import AIFirstModel from '@/components/AIFirstModel';
 import StatementBanner from '@/components/StatementBanner';
 import StackedCards from '@/components/StackedCards';
 import SolutionsHeadline from '@/components/SolutionsHeadline';
@@ -19,6 +20,7 @@ export default function Home() {
       <HeroVideo lang="ja" />
       <ProblemStatement lang="ja" />
       <ValueProposition lang="ja" />
+      <AIFirstModel lang="ja" />
       <StatementBanner lang="ja" />
       <StackedCards lang="ja" />
       <SolutionsHeadline lang="ja" />
