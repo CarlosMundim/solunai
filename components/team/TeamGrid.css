@@ -1,14 +1,17 @@
-/* Sight Machine-Inspired Team Grid - Clean & Professional */
+/* ============================================
+   TEAM GRID - Site-Wide Design System
+   ============================================ */
 
 .team-grid-section {
-  padding: 120px 0;
-  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  position: relative;
+  width: 100%;
+  padding: var(--section-spacing-desktop) var(--container-padding-mobile);
+  background: var(--bg-cream);
 }
 
 .team-grid-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 .team-grid-header {
@@ -19,49 +22,46 @@
 .team-grid-title {
   font-size: 48px;
   font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 16px;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1a1a2e;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
 }
 
 .team-grid-subtitle {
   font-size: 20px;
-  color: #666;
   font-weight: 400;
+  color: #666666;
+  margin: 0;
+  line-height: 1.6;
 }
 
-/* Grid Layout - Sight Machine Style */
+/* Grid Layout */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 60px;
+  gap: 40px;
   justify-items: center;
 }
 
-/* Individual Team Card - Sight Machine Minimal Style */
+/* Individual Team Card */
 .team-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 40px 32px 32px;
+  padding: 40px 32px;
   text-align: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-subtle);
   max-width: 380px;
   width: 100%;
-  min-height: 360px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .team-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
-  border-color: #d32f2f;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* Circular Profile Image - Sight Machine Style */
+/* Profile Image */
 .team-card-image-wrapper {
   margin-bottom: 24px;
   display: flex;
@@ -78,23 +78,22 @@
 }
 
 .team-card:hover .team-card-image {
-  border-color: #d32f2f;
+  border-color: #FF5722;
 }
 
-/* Name & Title - Clean Typography */
+/* Name & Title */
 .team-card-name {
   font-size: 24px;
   font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 8px;
+  color: #1a1a2e;
+  margin: 0 0 8px 0;
   line-height: 1.3;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 .team-card-name-japanese {
   font-size: 18px;
   font-weight: 500;
-  color: #666;
+  color: #666666;
   display: block;
   margin-top: 4px;
 }
@@ -102,13 +101,13 @@
 .team-card-title {
   font-size: 16px;
   font-weight: 600;
-  color: #d32f2f;
-  margin-bottom: 24px;
+  color: #FF5722;
+  margin: 0 0 24px 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* LinkedIn Link - Sight Machine Minimal Style */
+/* LinkedIn Link */
 .team-card-linkedin {
   display: inline-flex;
   align-items: center;
@@ -133,8 +132,12 @@
   height: 18px;
 }
 
-/* Responsive Design */
+/* Tablet Styles */
 @media (max-width: 1024px) {
+  .team-grid-section {
+    padding: var(--section-spacing-tablet) var(--container-padding-mobile);
+  }
+
   .team-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
@@ -145,13 +148,10 @@
   }
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   .team-grid-section {
-    padding: 80px 0;
-  }
-
-  .team-grid-container {
-    padding: 0 24px;
+    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
   }
 
   .team-grid-header {
@@ -159,7 +159,7 @@
   }
 
   .team-grid-title {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .team-grid-subtitle {
@@ -168,7 +168,7 @@
 
   .team-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 
   .team-card {
@@ -183,15 +183,12 @@
   .team-card-name {
     font-size: 22px;
   }
-
-  .team-card {
-    min-height: auto;
-  }
 }
 
+/* Small Mobile */
 @media (max-width: 480px) {
   .team-grid-title {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .team-card-name {

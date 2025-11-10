@@ -19,22 +19,22 @@ const CompanyPhilosophy: React.FC<CompanyPhilosophyProps> = ({ lang }) => {
         subtitle: 'Solunaiは日本の製造業の人材ギャップを以下の組み合わせで解決：',
         pillars: [
           {
-            icon: '🤖',
+            icon: '01',
             title: '最先端AI技術',
             description: 'デジタルツイン、コンピュータビジョン、予測分析',
           },
           {
-            icon: '🌍',
+            icon: '02',
             title: 'グローバル・エンジニアリング専門知識',
             description: 'WorldEmp提携による世界クラスの人材',
           },
           {
-            icon: '🏭',
+            icon: '03',
             title: '深い製造業ドメイン知識',
             description: '60年以上の統合経験',
           },
           {
-            icon: '✅',
+            icon: '04',
             title: '実証済みの実行能力',
             description: '欧州製造業変革プロジェクト',
           },
@@ -76,22 +76,22 @@ const CompanyPhilosophy: React.FC<CompanyPhilosophyProps> = ({ lang }) => {
         subtitle: 'Solunai solves Japan\'s manufacturing talent gap through a unique combination of:',
         pillars: [
           {
-            icon: '🤖',
+            icon: '01',
             title: 'Cutting-Edge AI Technology',
             description: 'Digital Twin, Computer Vision, Predictive Analytics',
           },
           {
-            icon: '🌍',
+            icon: '02',
             title: 'Global Engineering Expertise',
             description: 'World-class talent through WorldEmp partnership',
           },
           {
-            icon: '🏭',
+            icon: '03',
             title: 'Deep Manufacturing Domain Knowledge',
             description: '60+ years combined experience',
           },
           {
-            icon: '✅',
+            icon: '04',
             title: 'Proven Execution Capability',
             description: 'European manufacturing transformation projects',
           },
