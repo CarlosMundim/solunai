@@ -34,25 +34,25 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
           position: 'オペレーション・ターンアラウンド・スペシャリスト',
           highlights: [
             {
-              icon: '🏆',
-              text: '輸出事業の変革：US$7M → US$365M（52倍成長！）',
+              icon: '◆',
+              text: '輸出事業の変革：大幅な成長を実現',
               emphasis: true,
             },
             {
-              icon: '🏆',
+              icon: '◆',
               text: '南アフリカ政府「Exporter of the Year」（2年連続受賞）',
               emphasis: true,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'ゼロから製造エクセレンスプログラムを構築',
             },
             {
-              icon: '✓',
+              icon: '•',
               text: '品質システム導入（ISO 9001、シックスシグマ）',
             },
             {
-              icon: '✓',
+              icon: '•',
               text: '苦境の事業を世界クラスの水準に変革',
             },
           ],
@@ -61,26 +61,26 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
           company: 'KNM Process Equipment Inc.',
           position: 'ビジネスオペレーション統括',
           highlights: [
-            { icon: '✓', text: '装置製造のプロセス最適化' },
-            { icon: '✓', text: '国際市場拡大（中東、アジア）' },
-            { icon: '✓', text: 'EPC（設計・調達・建設）プロジェクト管理' },
+            { icon: '•', text: '装置製造のプロセス最適化' },
+            { icon: '•', text: '国際市場拡大（中東、アジア）' },
+            { icon: '•', text: 'EPC（設計・調達・建設）プロジェクト管理' },
           ],
         },
         {
           company: 'OUTSOURCING Group',
           position: 'グローバル戦略リーダー',
           highlights: [
-            { icon: '✓', text: '複数国での製造オペレーション' },
-            { icon: '✓', text: 'サプライチェーン最適化' },
-            { icon: '✓', text: 'コスト削減施策（30-40%削減達成）' },
+            { icon: '•', text: '複数国での製造オペレーション' },
+            { icon: '•', text: 'サプライチェーン最適化' },
+            { icon: '•', text: 'コスト削減施策（大幅削減達成）' },
           ],
         },
         {
           company: 'My Terra s.A.',
           position: 'LNG・エネルギー部門ディレクター',
           highlights: [
-            { icon: '✓', text: '大規模産業プロジェクト（数億円規模）' },
-            { icon: '✓', text: 'LNG・エネルギーセクターの製造プロセス' },
+            { icon: '•', text: '大規模産業プロジェクト（数億円規模）' },
+            { icon: '•', text: 'LNG・エネルギーセクターの製造プロセス' },
           ],
         },
       ],
@@ -107,7 +107,7 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
       international: {
         title: '国際経験',
         items: [
-          '南アフリカ：Continental（52倍成長達成）、My Terra',
+          '南アフリカ：Continental（大幅な成長達成）、My Terra',
           'マレーシア：KNM Process Equipment',
           'グローバル：OUTSOURCING Group',
           '日本：現在（Solunai Systems）',
@@ -127,25 +127,25 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
           position: 'Operations Turnaround Specialist',
           highlights: [
             {
-              icon: '🏆',
-              text: 'Transformed export operations: US$7M → US$365M (52× growth!)',
+              icon: '◆',
+              text: 'Transformed export operations: significant growth achieved',
               emphasis: true,
             },
             {
-              icon: '🏆',
+              icon: '◆',
               text: 'Government of South Africa "Exporter of the Year" (2 consecutive years)',
               emphasis: true,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Built manufacturing excellence programs from ground up',
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Led quality systems implementation (ISO 9001, Six Sigma)',
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Turnaround specialist (took struggling operations to world-class)',
             },
           ],
@@ -154,26 +154,26 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
           company: 'KNM Process Equipment Inc.',
           position: 'Head of Business Operations',
           highlights: [
-            { icon: '✓', text: 'Process optimization for equipment manufacturing' },
-            { icon: '✓', text: 'International market expansion (Middle East, Asia)' },
-            { icon: '✓', text: 'EPC (Engineering, Procurement, Construction) project management' },
+            { icon: '•', text: 'Process optimization for equipment manufacturing' },
+            { icon: '•', text: 'International market expansion (Middle East, Asia)' },
+            { icon: '•', text: 'EPC (Engineering, Procurement, Construction) project management' },
           ],
         },
         {
           company: 'OUTSOURCING Group',
           position: 'Global Strategy Leader',
           highlights: [
-            { icon: '✓', text: 'Manufacturing operations across multiple countries' },
-            { icon: '✓', text: 'Supply chain optimization' },
-            { icon: '✓', text: 'Cost reduction initiatives (30-40% savings achieved)' },
+            { icon: '•', text: 'Manufacturing operations across multiple countries' },
+            { icon: '•', text: 'Supply chain optimization' },
+            { icon: '•', text: 'Cost reduction initiatives (significant savings achieved)' },
           ],
         },
         {
           company: 'My Terra s.A.',
           position: 'Director of LNG and Energy',
           highlights: [
-            { icon: '✓', text: 'Large-scale industrial projects (multi-million dollar)' },
-            { icon: '✓', text: 'LNG and energy sector manufacturing processes' },
+            { icon: '•', text: 'Large-scale industrial projects (multi-million dollar)' },
+            { icon: '•', text: 'LNG and energy sector manufacturing processes' },
           ],
         },
       ],
@@ -200,7 +200,7 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
       international: {
         title: 'International Experience',
         items: [
-          'South Africa: Continental (52× growth achievement), My Terra',
+          'South Africa: Continental (significant growth achievement), My Terra',
           'Malaysia: KNM Process Equipment',
           'Global: OUTSOURCING Group operations',
           'Japan: Current (Solunai Systems)',
@@ -217,27 +217,27 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
   const tomooContent = {
     ja: {
       header: '日本製造業：25年以上の経験',
-      mainAchievements: '戦略的実績 - ¥120億円以上のエグジット・ポートフォリオ',
+      mainAchievements: '戦略的実績 - 実証済みのエグジット・ポートフォリオ',
       achievements: [
         {
           company: '長瀬産業株式会社',
           position: '戦略的ビジネス開発',
           highlights: [
             {
-              icon: '💰',
-              text: '戦略的エグジットで¥57億円以上のリターン創出',
+              icon: '◆',
+              text: '戦略的エグジットで大幅なリターン創出',
               emphasis: true,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: '製造業セクターの変革イニシアチブ',
             },
             {
-              icon: '✓',
+              icon: '•',
               text: '中小企業パートナーシップ開発・M&A',
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'ポートフォリオ企業のオペレーショナル・エクセレンス',
             },
           ],
@@ -247,16 +247,16 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
           position: '戦略アドバイザー',
           highlights: [
             {
-              icon: '💰',
-              text: 'エグジット価値：¥65億円',
+              icon: '◆',
+              text: '戦略的エグジット成功',
               emphasis: true,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'オペレーショナル・エクセレンス・プログラム',
             },
             {
-              icon: '✓',
+              icon: '•',
               text: '流通・物流の最適化',
             },
           ],
@@ -265,7 +265,7 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
       combined: {
         title: '統合実績',
         items: [
-          '総エグジット・ポートフォリオ価値：¥120億円以上（実証済みのビジネス手腕）',
+          '実証済みのエグジット・ポートフォリオ（確かなビジネス手腕）',
           '200社以上の日本中小製造業との関係構築',
           'HVAC、自動車、電子機器セクターでの深いネットワーク',
           '製造DX推進における政府連絡窓口',
@@ -304,27 +304,27 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
     },
     en: {
       header: 'Japanese Manufacturing Industry: 25+ Years',
-      mainAchievements: 'Track Record - ¥12B+ Exit Portfolio',
+      mainAchievements: 'Track Record - Proven Exit Portfolio',
       achievements: [
         {
           company: 'Nagase & Co., Ltd',
           position: 'Strategic Business Development',
           highlights: [
             {
-              icon: '💰',
-              text: 'Strategic exits generating ¥5.7B+ returns',
+              icon: '◆',
+              text: 'Strategic exits generating significant returns',
               emphasis: true,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Manufacturing sector transformation initiatives',
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'SME partnership development and M&A',
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Portfolio company operational excellence',
             },
           ],
@@ -334,16 +334,16 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
           position: 'Strategic Advisory',
           highlights: [
             {
-              icon: '💰',
-              text: 'Exit value: ¥6.5B',
+              icon: '◆',
+              text: 'Successful strategic exit',
               emphasis: true,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Operational excellence programs',
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Distribution and logistics optimization',
             },
           ],
@@ -352,7 +352,7 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
       combined: {
         title: 'Combined Achievements',
         items: [
-          'Total exit portfolio value: ¥12B+ (demonstrates proven business acumen)',
+          'Proven exit portfolio (demonstrates strong business acumen)',
           '200+ Japanese SME manufacturer relationships',
           'Deep network in HVAC, automotive, electronics sectors',
           'Government liaison for Manufacturing DX initiatives',
@@ -402,17 +402,17 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
           position: 'マネージングディレクター',
           highlights: [
             {
-              icon: '✓',
+              icon: '•',
               text: '日本の製造業クライアントとの深い関係構築',
               emphasis: false,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: '戦略的ビジネス開発とパートナーシップ',
               emphasis: false,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: '日本のビジネス文化の深い理解',
               emphasis: false,
             },
@@ -442,17 +442,17 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
           position: 'Managing Director',
           highlights: [
             {
-              icon: '✓',
+              icon: '•',
               text: 'Deep relationships with Japanese manufacturing clients',
               emphasis: false,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Strategic business development and partnerships',
               emphasis: false,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Deep understanding of Japanese business culture',
               emphasis: false,
             },
@@ -486,22 +486,22 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
           position: 'オペレーションディレクター',
           highlights: [
             {
-              icon: '✓',
+              icon: '•',
               text: 'プロジェクト管理と実装',
               emphasis: false,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: '品質保証とトレーニング',
               emphasis: false,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'クライアント成功管理',
               emphasis: false,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: '国際オペレーション調整',
               emphasis: false,
             },
@@ -532,22 +532,22 @@ const CoFounderProfile: React.FC<CoFounderProfileProps> = ({
           position: 'Operations Director',
           highlights: [
             {
-              icon: '✓',
+              icon: '•',
               text: 'Project management and implementation',
               emphasis: false,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Quality assurance and training',
               emphasis: false,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'Client success management',
               emphasis: false,
             },
             {
-              icon: '✓',
+              icon: '•',
               text: 'International operations coordination',
               emphasis: false,
             },

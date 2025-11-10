@@ -29,9 +29,9 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
         solunai: {
           label: 'Solunai AI優先モデル',
           metrics: [
-            { label: 'チーム構成', value: '12人 + 50-100 AIエージェント' },
-            { label: '年間運営費', value: '75%コスト削減' },
-            { label: '利益率', value: '80%' },
+            { label: 'チーム構成', value: '少数精鋭 + AIエージェント' },
+            { label: '年間運営費', value: '大幅なコスト削減' },
+            { label: '利益率', value: '高効率' },
             { label: '提供スピード', value: '2-6週間' },
             { label: 'スケーラビリティ', value: '即座に拡張可能' }
           ]
@@ -44,14 +44,14 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
           {
             icon: '💰',
             label: '顧客へ',
-            value: '75%コスト削減',
-            detail: '従来型モデルと比較して年間数千万円の削減'
+            value: '大幅なコスト削減',
+            detail: '従来型モデルと比較して大幅な削減を実現'
           },
           {
             icon: '📈',
             label: '当社',
-            value: '80%利益率',
-            detail: '業界標準20%の4倍の利益率を実現'
+            value: '高効率運営',
+            detail: '業界標準を大幅に上回る効率を実現'
           },
           {
             icon: '🇯🇵',
@@ -62,7 +62,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
           {
             icon: '⚡',
             label: '提供スピード',
-            value: '52倍高速化',
+            value: '大幅な高速化',
             detail: '従来4-6ヶ月を2-6週間で実現'
           }
         ]
@@ -73,7 +73,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
         description: 'Solunaiは人間の戦略的思考とAIの処理能力を最適に組み合わせます',
 
         human: {
-          title: '人間チーム（12人）',
+          title: '人間エキスパートチーム',
           subtitle: '戦略・監督・品質保証',
           roles: [
             {
@@ -109,7 +109,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
         },
 
         ai: {
-          title: 'AIエージェントチーム（50-100）',
+          title: 'AIエージェントチーム',
           subtitle: '実行・処理・最適化',
           categories: [
             {
@@ -206,7 +206,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
       },
 
       economics: {
-        title: '経済性：なぜ80%利益率が可能か',
+        title: '経済性：高効率モデルの仕組み',
         subtitle: '構造的な競争優位性',
         breakdown: [
           {
@@ -222,7 +222,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
           {
             category: 'Solunai AI優先モデル',
             items: [
-              { label: '人件費（12人 × 月60万円）', percent: 20, amount: '年間864万円' },
+              { label: '人件費（少数精鋭チーム）', percent: 20, amount: '大幅削減' },
               { label: 'HPC運用費（償却含む）', percent: 8, amount: '年間800万円' },
               { label: 'オフィス・諸経費', percent: 5, amount: '年間500万円' },
               { label: '営業・管理費', percent: 7, amount: '年間700万円' },
@@ -231,7 +231,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             total: '売上1億円の場合'
           }
         ],
-        conclusion: '同じ売上でも12倍の利益を実現。この差額を顧客への価格競争力と株主価値に還元。'
+        conclusion: '同じ売上でも大幅に高い利益を実現。この差額を顧客への価格競争力と株主価値に還元。'
       },
 
       caseStudy: {
@@ -251,27 +251,27 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
 
         solunai: {
           title: 'Solunai AI優先アプローチ',
-          team: '3人の専門家 + 20 AIエージェント × 24ヶ月',
+          team: '少数エキスパート + AIエージェント × 24ヶ月',
           breakdown: [
-            { item: '人件費', calculation: '3人 × 60万円/月 × 24ヶ月', cost: '4,320万円' },
-            { item: 'AI運用費', calculation: 'HPC + モデル使用料', cost: '2,400万円' },
-            { item: '諸経費', calculation: '約10%', cost: '672万円' },
-            { item: '総コスト', calculation: '', cost: '7,392万円', highlight: true }
+            { item: '人件費', calculation: '少数精鋭チーム', cost: '大幅削減' },
+            { item: 'AI運用費', calculation: 'HPC + モデル使用料', cost: '効率的運用' },
+            { item: '諸経費', calculation: '最小化', cost: '最適化' },
+            { item: '総コスト', calculation: '', cost: '大幅なコスト削減', highlight: true }
           ],
           timeline: '18ヶ月（並列処理で短縮）',
-          savings: '9,168万円削減（55%コスト削減）'
+          savings: '大幅なコスト削減を実現'
         },
 
         benefits: {
           title: 'プロジェクト成果',
           customer: [
-            '55%のコスト削減を実現',
+            '大幅なコスト削減を実現',
             '6ヶ月の納期短縮',
             '24時間365日の開発体制',
             '高品質な成果物'
           ],
           solunai: [
-            '売上から80%の利益率',
+            '高効率な運営モデル',
             '顧客満足度の向上',
             '競合他社との差別化',
             '持続可能な成長モデル'
@@ -299,7 +299,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             icon: '💡',
             title: '人材の価値向上',
             description: '人間はAI監督・戦略決定・創造的業務に特化。スキルアップと高収入を実現',
-            metric: '12人で従来100人分の価値創出'
+            metric: '少数精鋭で高い生産性を実現'
           },
           {
             icon: '🌱',
@@ -340,9 +340,9 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
         solunai: {
           label: 'Solunai AI-First Model',
           metrics: [
-            { label: 'Team Structure', value: '12 humans + 50-100 AI agents' },
-            { label: 'Annual Operating Cost', value: '75% cost reduction' },
-            { label: 'Profit Margin', value: '80%' },
+            { label: 'Team Structure', value: 'Elite team + AI agents' },
+            { label: 'Annual Operating Cost', value: 'Significant cost reduction' },
+            { label: 'Profit Margin', value: 'High efficiency' },
             { label: 'Delivery Speed', value: '2-6 weeks' },
             { label: 'Scalability', value: 'Instantly scalable' }
           ]
@@ -355,14 +355,14 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
           {
             icon: '💰',
             label: 'For Clients',
-            value: '75% Cost Reduction',
-            detail: 'Saving tens of millions of yen annually vs traditional model'
+            value: 'Significant Cost Reduction',
+            detail: 'Major savings vs traditional model'
           },
           {
             icon: '📈',
             label: 'For Solunai',
-            value: '80% Profit Margins',
-            detail: '4× industry standard of 20%'
+            value: 'High-Efficiency Operations',
+            detail: 'Significantly above industry standard'
           },
           {
             icon: '🇯🇵',
@@ -373,7 +373,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
           {
             icon: '⚡',
             label: 'Delivery Speed',
-            value: '52× Faster',
+            value: 'Dramatically Faster',
             detail: 'Traditional 4-6 months in 2-6 weeks'
           }
         ]
@@ -384,7 +384,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
         description: 'Solunai optimally combines human strategic thinking with AI processing power',
 
         human: {
-          title: 'Human Team (12 people)',
+          title: 'Expert Human Team',
           subtitle: 'Strategy, Supervision, Quality Assurance',
           roles: [
             {
@@ -420,7 +420,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
         },
 
         ai: {
-          title: 'AI Agent Team (50-100)',
+          title: 'AI Agent Team',
           subtitle: 'Execution, Processing, Optimization',
           categories: [
             {
