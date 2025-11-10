@@ -14,11 +14,11 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
         line1: '日本の製造業危機を解決する',
         line2: 'AI優先ビジネスモデル'
       },
-      subheadline: '12人の専門家 + 50-100の専門AIエージェントで運営。高効率なAI活用により、顧客に大幅なコスト削減を提供し、日本の1,100万人労働力不足を解決します。',
+      subheadline: 'AIエージェント技術により、顧客に大幅なコスト削減を提供し、日本の1,100万人労働力不足を解決します。',
       trustIndicators: [
         '✓ AI優先の高効率モデル',
         '✓ 大幅なコスト削減を実現',
-        '✓ 12人 + 50-100 AIエージェント'
+        '✓ 国際的な製造業実績'
       ],
       cta: '無料相談を予約',
       scroll: 'スクロール'
@@ -28,11 +28,11 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
         line1: 'Solving Japan\'s Manufacturing Crisis',
         line2: 'AI-First Business Model'
       },
-      subheadline: 'Operating with 12 human experts + 50-100 specialized AI agents. High-efficiency AI utilization delivers significant cost reduction to clients while solving Japan\'s 11 million worker shortage.',
+      subheadline: 'AI agent technology delivers significant cost reduction to clients while solving Japan\'s 11 million worker shortage.',
       trustIndicators: [
         '✓ AI-first high-efficiency model',
         '✓ Significant cost reduction',
-        '✓ 12 humans + 50-100 AI agents'
+        '✓ International manufacturing experience'
       ],
       cta: 'Schedule Free Consultation',
       scroll: 'scroll down'
