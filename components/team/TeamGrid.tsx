@@ -9,8 +9,6 @@ interface TeamMember {
   nameJapanese?: string;
   title: string;
   titleJapanese?: string;
-  bio: string;
-  bioJapanese?: string;
   image: string;
   linkedin?: string;
 }
@@ -25,8 +23,6 @@ const TeamGrid: React.FC<TeamGridProps> = ({ lang }) => {
       name: 'Carlos Magno Freitas Mundim',
       title: 'Chief Technology Officer',
       titleJapanese: '最高技術責任者（CTO）',
-      bio: '30+ years manufacturing engineering experience. Led Continental transformation (US$7M → $365M). Expert in digital twin, AI/ML, and industrial automation.',
-      bioJapanese: '製造エンジニアリング30年以上の経験。Continental変革を主導（700万ドル→3億6500万ドル）。デジタルツイン、AI/ML、産業オートメーションの専門家。',
       image: '/images/team/carlos-mundim.jpg',
       linkedin: 'https://www.linkedin.com/in/carlosmundim/'
     },
@@ -35,8 +31,6 @@ const TeamGrid: React.FC<TeamGridProps> = ({ lang }) => {
       nameJapanese: '原 知夫',
       title: 'Managing Director',
       titleJapanese: 'マネージングディレクター',
-      bio: '25+ years Japanese manufacturing industry experience. ¥12B+ strategic exits portfolio. Deep network across 200+ Japanese SME manufacturers.',
-      bioJapanese: '日本製造業界25年以上の経験。120億円以上の戦略的エグジット・ポートフォリオ。200社以上の日本中小製造業との深いネットワーク。',
       image: '/images/team/tomoo-hara.jpg',
       linkedin: undefined
     },
@@ -44,8 +38,6 @@ const TeamGrid: React.FC<TeamGridProps> = ({ lang }) => {
       name: 'Jeanette van Niekerk',
       title: 'Operations Director',
       titleJapanese: 'オペレーションディレクター',
-      bio: 'Project management and client success operations. Quality assurance, training programs, and international operations coordination.',
-      bioJapanese: 'プロジェクト管理とクライアント成功オペレーション。品質保証、トレーニングプログラム、国際オペレーション調整。',
       image: '/images/team/jeanette-van-niekerk.jpg',
       linkedin: undefined
     }
@@ -97,10 +89,6 @@ const TeamGrid: React.FC<TeamGridProps> = ({ lang }) => {
 
                 <p className="team-card-title">
                   {lang === 'ja' && member.titleJapanese ? member.titleJapanese : member.title}
-                </p>
-
-                <p className="team-card-bio">
-                  {lang === 'ja' && member.bioJapanese ? member.bioJapanese : member.bio}
                 </p>
 
                 {member.linkedin && (

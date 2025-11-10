@@ -38,17 +38,21 @@
   justify-items: center;
 }
 
-/* Individual Team Card */
+/* Individual Team Card - Sight Machine Minimal Style */
 .team-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 40px 32px;
+  padding: 40px 32px 32px;
   text-align: center;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   border: 1px solid #e5e7eb;
   max-width: 380px;
   width: 100%;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .team-card:hover {
@@ -99,21 +103,12 @@
   font-size: 16px;
   font-weight: 600;
   color: #d32f2f;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
-/* Bio Text - Concise */
-.team-card-bio {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 24px;
-  min-height: 96px;
-}
-
-/* LinkedIn Link - Sight Machine Style */
+/* LinkedIn Link - Sight Machine Minimal Style */
 .team-card-linkedin {
   display: inline-flex;
   align-items: center;
@@ -189,7 +184,7 @@
     font-size: 22px;
   }
 
-  .team-card-bio {
+  .team-card {
     min-height: auto;
   }
 }
@@ -204,10 +199,6 @@
   }
 
   .team-card-title {
-    font-size: 14px;
-  }
-
-  .team-card-bio {
     font-size: 14px;
   }
 }
