@@ -1,0 +1,213 @@
+/* Sight Machine-Inspired Team Grid - Clean & Professional */
+
+.team-grid-section {
+  padding: 120px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.team-grid-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.team-grid-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.team-grid-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.team-grid-subtitle {
+  font-size: 20px;
+  color: #666;
+  font-weight: 400;
+}
+
+/* Grid Layout - Sight Machine Style */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 60px;
+  justify-items: center;
+}
+
+/* Individual Team Card */
+.team-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e7eb;
+  max-width: 380px;
+  width: 100%;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: #d32f2f;
+}
+
+/* Circular Profile Image - Sight Machine Style */
+.team-card-image-wrapper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.team-card-image {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 4px solid #f0f0f0;
+  transition: border-color 0.3s ease;
+}
+
+.team-card:hover .team-card-image {
+  border-color: #d32f2f;
+}
+
+/* Name & Title - Clean Typography */
+.team-card-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+  line-height: 1.3;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.team-card-name-japanese {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  display: block;
+  margin-top: 4px;
+}
+
+.team-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #d32f2f;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Bio Text - Concise */
+.team-card-bio {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 24px;
+  min-height: 96px;
+}
+
+/* LinkedIn Link - Sight Machine Style */
+.team-card-linkedin {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #0077b5;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.team-card-linkedin:hover {
+  background: #005885;
+  transform: scale(1.05);
+}
+
+.team-card-linkedin svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+  }
+
+  .team-grid-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid-section {
+    padding: 80px 0;
+  }
+
+  .team-grid-container {
+    padding: 0 24px;
+  }
+
+  .team-grid-header {
+    margin-bottom: 60px;
+  }
+
+  .team-grid-title {
+    font-size: 36px;
+  }
+
+  .team-grid-subtitle {
+    font-size: 18px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .team-card {
+    padding: 32px 24px;
+  }
+
+  .team-card-image {
+    width: 140px;
+    height: 140px;
+  }
+
+  .team-card-name {
+    font-size: 22px;
+  }
+
+  .team-card-bio {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-grid-title {
+    font-size: 32px;
+  }
+
+  .team-card-name {
+    font-size: 20px;
+  }
+
+  .team-card-title {
+    font-size: 14px;
+  }
+
+  .team-card-bio {
+    font-size: 14px;
+  }
+}
