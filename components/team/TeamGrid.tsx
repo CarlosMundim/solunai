@@ -41,13 +41,6 @@ const TeamGrid: React.FC<TeamGridProps> = ({ lang }) => {
       linkedin: undefined
     },
     {
-      name: 'Yuto',
-      title: 'Technical Lead',
-      titleJapanese: 'テクニカルリード',
-      image: '/images/team/yuto.png',
-      linkedin: undefined
-    },
-    {
       name: 'Koda van Niekerk',
       title: 'AI Systems Engineer',
       titleJapanese: 'AIシステムエンジニア',
