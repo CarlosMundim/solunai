@@ -17,9 +17,9 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           icon: '🏆',
           title: '実証された実績',
           points: [
-            'Carlos: 52倍の成長実績（Continental）',
-            'Tomoo: ¥120億円以上のエグジット・ポートフォリオ',
-            'FBM Hudson: €2.5M-€3.8M プロジェクト進行中',
+            'Carlos: 実証済みの成長実績（Continental）',
+            'Tomoo: 戦略的エグジット実績',
+            'FBM Hudson: 国際プロジェクト進行中',
           ],
         },
         {
@@ -52,14 +52,14 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
       ],
       stats: [
         {
-          number: '52×',
+          number: '実証済み',
           label: '成長実績',
           sublabel: 'Continental変革',
         },
         {
-          number: '¥12B+',
+          number: '戦略的',
           label: 'エグジット実績',
-          sublabel: '戦略的価値創出',
+          sublabel: '価値創出',
         },
         {
           number: '60+',
@@ -67,7 +67,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           sublabel: '統合製造業知識',
         },
         {
-          number: '€2.5M+',
+          number: '国際',
           label: '進行中プロジェクト',
           sublabel: 'FBM Hudson',
         },
@@ -81,9 +81,9 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           icon: '🏆',
           title: 'Proven Track Record',
           points: [
-            'Carlos: 52× growth achievement (Continental)',
-            'Tomoo: ¥12B+ exit portfolio',
-            'FBM Hudson: €2.5M-€3.8M project in progress',
+            'Carlos: Proven growth achievement (Continental)',
+            'Tomoo: Strategic exit portfolio',
+            'FBM Hudson: International project in progress',
           ],
         },
         {
@@ -116,14 +116,14 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
       ],
       stats: [
         {
-          number: '52×',
+          number: 'Proven',
           label: 'Growth Achievement',
           sublabel: 'Continental Transformation',
         },
         {
-          number: '¥12B+',
+          number: 'Strategic',
           label: 'Exit Portfolio',
-          sublabel: 'Strategic Value Creation',
+          sublabel: 'Value Creation',
         },
         {
           number: '60+',
@@ -131,7 +131,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           sublabel: 'Combined Manufacturing Knowledge',
         },
         {
-          number: '€2.5M+',
+          number: 'Global',
           label: 'Active Project',
           sublabel: 'FBM Hudson',
         },

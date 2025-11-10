@@ -20,7 +20,7 @@ const CustomerPortfolio: React.FC<CustomerPortfolioProps> = ({ lang }) => {
             name: 'FBM Hudson Italiana',
             location: 'イタリア/UAE',
             industry: 'HVAC製造',
-            contract: '€2.5M - €3.8M デジタル変革',
+            contract: 'デジタル変革プロジェクト',
             status: '進行中 - フェーズ2展開中',
             achievements: [
               'デジタルツイン統合完了',
@@ -102,7 +102,7 @@ const CustomerPortfolio: React.FC<CustomerPortfolioProps> = ({ lang }) => {
             name: 'FBM Hudson Italiana',
             location: 'Italy/UAE',
             industry: 'HVAC Manufacturing',
-            contract: '€2.5M - €3.8M Digital Transformation',
+            contract: 'Digital Transformation Project',
             status: 'Ongoing - Phase 2 Deploying',
             achievements: [
               'Digital Twin integration complete',

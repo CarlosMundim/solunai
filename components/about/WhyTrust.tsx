@@ -14,7 +14,7 @@ const WhyTrust: React.FC<WhyTrustProps> = ({ lang }) => {
       reasons: [
         {
           title: '実証済みの実績',
-          description: '52倍の成長達成、¥120億円以上のエグジット実績、€2.5M+のプロジェクト価値',
+          description: '製造業における実証済みの成長実績と国際的なプロジェクト実績',
         },
         {
           title: '深い製造業の専門知識',
@@ -43,7 +43,7 @@ const WhyTrust: React.FC<WhyTrustProps> = ({ lang }) => {
       reasons: [
         {
           title: 'Proven Track Record',
-          description: '52× growth achievement, ¥12B+ exits, €2.5M+ project value delivered',
+          description: 'Demonstrated growth achievements and international project success in manufacturing',
         },
         {
           title: 'Deep Manufacturing Expertise',

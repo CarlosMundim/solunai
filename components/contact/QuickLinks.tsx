@@ -32,7 +32,7 @@ const QuickLinks: React.FC<QuickLinksProps> = ({ lang }) => {
         },
         {
           title: 'FBM Hudson事例紹介',
-          description: '€2.5M-€3.8Mプロジェクトの詳細な導入事例',
+          description: '国際プロジェクトの詳細な導入事例',
           type: '事例',
           icon: 'chart',
           href: '/case-studies',
@@ -86,7 +86,7 @@ const QuickLinks: React.FC<QuickLinksProps> = ({ lang }) => {
         },
         {
           title: 'FBM Hudson Case Study',
-          description: 'Detailed case study of €2.5M-€3.8M project implementation',
+          description: 'Detailed international project implementation case study',
           type: 'Case',
           icon: 'chart',
           href: '/en/case-studies',

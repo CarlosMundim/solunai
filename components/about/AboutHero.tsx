@@ -51,9 +51,9 @@ const AboutHero: React.FC<AboutHeroProps> = ({ lang }) => {
             </div>
           </div>
           <div className="stat-item highlight">
-            <div className="stat-number">178-295%</div>
+            <div className="stat-number">{lang === 'ja' ? '実証済み' : 'Proven'}</div>
             <div className="stat-label">
-              {lang === 'ja' ? 'IRR実績' : 'IRR Case Studies'}
+              {lang === 'ja' ? '成果実績' : 'Results'}
             </div>
           </div>
           <div className="stat-item">

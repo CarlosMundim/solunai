@@ -45,7 +45,7 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
         title: '信頼の実績',
         items: [
           {
-            value: '€2.5M+',
+            value: '国際実績',
             label: '契約実績'
           },
           {
@@ -57,8 +57,8 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
             label: 'WorldEmp実績'
           },
           {
-            value: '50-60%',
-            label: '利益率目標'
+            value: '高効率',
+            label: '運営モデル'
           }
         ]
       }
@@ -99,8 +99,8 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
         title: 'Proven Track Record',
         items: [
           {
-            value: '€2.5M+',
-            label: 'Contract Value'
+            value: 'Global',
+            label: 'Contract Track Record'
           },
           {
             value: 'ISO 27001',
@@ -111,8 +111,8 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
             label: 'WorldEmp History'
           },
           {
-            value: '50-60%',
-            label: 'Profit Margin Target'
+            value: 'High Efficiency',
+            label: 'Operating Model'
           }
         ]
       }

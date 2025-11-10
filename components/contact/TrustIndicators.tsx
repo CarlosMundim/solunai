@@ -16,9 +16,9 @@ const TrustIndicators: React.FC<TrustIndicatorsProps> = ({ lang }) => {
           title: '実証された実績',
           icon: 'trophy',
           items: [
-            '€2.5M-€3.8M FBM Hudsonプロジェクト（進行中）',
-            'クライアントのROI 178-295%',
-            '投資回収期間 4-7ヶ月'
+            'FBM Hudson国際プロジェクト（進行中）',
+            '実証済みのクライアント成果',
+            '迅速な投資回収'
           ],
           color: 'from-yellow-500 to-orange-500'
         },
@@ -27,8 +27,8 @@ const TrustIndicators: React.FC<TrustIndicatorsProps> = ({ lang }) => {
           icon: 'team',
           items: [
             '60年以上の製造業経験を結集',
-            'Carlos: Continental で52倍の成長を達成',
-            'Tomoo: ¥12B+の戦略的エグジット実績'
+            'Carlos: Continentalでの実証済み成長実績',
+            'Tomoo: 戦略的エグジット実績'
           ],
           color: 'from-blue-500 to-indigo-600'
         },
@@ -61,9 +61,9 @@ const TrustIndicators: React.FC<TrustIndicatorsProps> = ({ lang }) => {
           title: 'Proven Track Record',
           icon: 'trophy',
           items: [
-            '€2.5M-€3.8M FBM Hudson project (ongoing)',
-            '178-295% ROI for clients',
-            '4-7 month investment payback'
+            'FBM Hudson international project (ongoing)',
+            'Proven client results',
+            'Rapid investment payback'
           ],
           color: 'from-yellow-500 to-orange-500'
         },
@@ -72,8 +72,8 @@ const TrustIndicators: React.FC<TrustIndicatorsProps> = ({ lang }) => {
           icon: 'team',
           items: [
             '60+ years combined manufacturing experience',
-            'Carlos: 52× growth achievement (Continental)',
-            'Tomoo: ¥12B+ strategic exits'
+            'Carlos: Proven growth achievement (Continental)',
+            'Tomoo: Strategic exits'
           ],
           color: 'from-blue-500 to-indigo-600'
         },
@@ -192,8 +192,8 @@ const TrustIndicators: React.FC<TrustIndicatorsProps> = ({ lang }) => {
             className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
           >
             {[
-              { value: '€2.5M+', label: lang === 'ja' ? 'プロジェクト規模' : 'Project Scale' },
-              { value: '295%', label: lang === 'ja' ? '最大ROI' : 'Max ROI' },
+              { value: lang === 'ja' ? '国際' : 'Global', label: lang === 'ja' ? 'プロジェクト実績' : 'Project Track Record' },
+              { value: lang === 'ja' ? '実証済み' : 'Proven', label: lang === 'ja' ? '成果実績' : 'Results' },
               { value: '60+', label: lang === 'ja' ? '年の経験' : 'Years Experience' },
               { value: '24/7', label: lang === 'ja' ? 'サポート' : 'Support' }
             ].map((stat, index) => (

@@ -31,7 +31,7 @@ const CompanyTimeline: React.FC<CompanyTimelineProps> = ({ lang }) => {
           period: 'Q1-Q4',
           title: '初期顧客獲得・実績構築',
           achievements: [
-            'FBM Hudson Italiana契約獲得（€2.5M-€3.8M）',
+            'FBM Hudson Italiana国際契約獲得',
             'デジタルツインプラットフォーム展開成功',
             'ISO 27001、SOC 2 Type II認証取得',
             'GDPR、APPI準拠完了'
@@ -108,7 +108,7 @@ const CompanyTimeline: React.FC<CompanyTimelineProps> = ({ lang }) => {
           period: 'Q1-Q4',
           title: 'Initial Customer Acquisition & Track Record',
           achievements: [
-            'FBM Hudson Italiana contract secured (€2.5M-€3.8M)',
+            'FBM Hudson Italiana international contract secured',
             'Digital Twin platform deployment success',
             'ISO 27001, SOC 2 Type II certifications achieved',
             'GDPR, APPI compliance completed'
