@@ -36,7 +36,7 @@ const CompanyPhilosophy: React.FC<CompanyPhilosophyProps> = ({ lang }) => {
           {
             icon: '✅',
             title: '実証済みの実行能力',
-            description: 'FBM Hudson €2.5M以上の変革プロジェクト',
+            description: '欧州製造業変革プロジェクト',
           },
         ],
       },
@@ -93,7 +93,7 @@ const CompanyPhilosophy: React.FC<CompanyPhilosophyProps> = ({ lang }) => {
           {
             icon: '✅',
             title: 'Proven Execution Capability',
-            description: 'FBM Hudson €2.5M+ transformation project',
+            description: 'European manufacturing transformation projects',
           },
         ],
       },
