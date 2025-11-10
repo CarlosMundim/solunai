@@ -31,28 +31,28 @@ const FBMHighlight: React.FC<FBMHighlightProps> = ({ lang }) => {
       results: [
         {
           icon: '⏱️',
-          metric: '見積時間：10分 → 1分',
-          detail: '90%削減'
-        },
-        {
-          icon: '🚀',
-          metric: '納期：14-21日 → 48-72時間',
+          metric: '見積時間：14-21日 → 48-72時間',
           detail: '85%短縮'
         },
         {
+          icon: '🚀',
+          metric: '生産コスト削減',
+          detail: '15-25%削減見込み'
+        },
+        {
           icon: '✅',
-          metric: '欠陥検出：67% → 95%',
-          detail: '42%改善'
+          metric: '技術スループット',
+          detail: '200%向上'
         },
         {
           icon: '💰',
-          metric: 'ROI：178-295% IRR',
-          detail: '4-7ヶ月で投資回収'
+          metric: '契約開始',
+          detail: '2025年10月締結'
         }
       ],
-      contractTitle: '契約規模',
-      contractValue: '€2.5M-€3.8M',
-      contractDuration: '18ヶ月プロジェクト',
+      contractTitle: '契約期間',
+      contractValue: '24ヶ月プロジェクト',
+      contractDuration: '2025年10月開始',
       cta: '詳細な事例を見る'
     },
     en: {
@@ -77,28 +77,28 @@ const FBMHighlight: React.FC<FBMHighlightProps> = ({ lang }) => {
       results: [
         {
           icon: '⏱️',
-          metric: 'Quote time: 10 min → 1 min',
-          detail: '90% reduction'
-        },
-        {
-          icon: '🚀',
-          metric: 'Turnaround: 14-21 days → 48-72 hours',
+          metric: 'Quote time: 14-21 days → 48-72 hours',
           detail: '85% faster'
         },
         {
+          icon: '🚀',
+          metric: 'Production cost reduction',
+          detail: '15-25% projected'
+        },
+        {
           icon: '✅',
-          metric: 'Defect detection: 67% → 95%',
-          detail: '42% improvement'
+          metric: 'Technical throughput',
+          detail: '200% increase'
         },
         {
           icon: '💰',
-          metric: 'ROI: 178-295% IRR',
-          detail: '4-7 month payback'
+          metric: 'Contract signed',
+          detail: 'October 2025'
         }
       ],
-      contractTitle: 'Contract Value',
-      contractValue: '€2.5M-€3.8M',
-      contractDuration: '18-month project',
+      contractTitle: 'Project Duration',
+      contractValue: '24-month project',
+      contractDuration: 'Started October 2025',
       cta: 'View full case study'
     }
   };

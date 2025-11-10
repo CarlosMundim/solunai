@@ -20,11 +20,11 @@ const FinancialHighlights: React.FC<FinancialHighlightsProps> = ({ lang }) => {
           {
             client: 'FBM Hudson Italiana',
             location: 'イタリア/UAE',
-            amount: '€2.5M - €3.8M',
-            amountJpy: '（¥420M - ¥645M）',
-            period: '18ヶ月',
-            status: 'フェーズ1完了、フェーズ2展開中',
-            description: 'HVAC製造のデジタルツイン変革プロジェクト'
+            amount: '国際製造業パートナーシップ',
+            amountJpy: '',
+            period: '24ヶ月（2年間）',
+            status: '2025年10月契約締結',
+            description: '熱交換器製造のデジタルツイン変革プロジェクト'
           }
         ]
       },
@@ -115,11 +115,11 @@ const FinancialHighlights: React.FC<FinancialHighlightsProps> = ({ lang }) => {
           {
             client: 'FBM Hudson Italiana',
             location: 'Italy/UAE',
-            amount: '€2.5M - €3.8M',
-            amountJpy: '(¥420M - ¥645M)',
-            period: '18 months',
-            status: 'Phase 1 Complete, Phase 2 Deploying',
-            description: 'Digital Twin transformation for HVAC manufacturing'
+            amount: 'International manufacturing partnership',
+            amountJpy: '',
+            period: '24 months (2 years)',
+            status: 'Contract signed October 2025',
+            description: 'Digital Twin transformation for heat exchanger manufacturing'
           }
         ]
       },

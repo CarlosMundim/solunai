@@ -14,10 +14,10 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
         line1: '日本の製造業危機を解決する',
         line2: 'AI優先ビジネスモデル'
       },
-      subheadline: '12人の専門家 + 50-100の専門AIエージェントで運営。従来型企業の20%利益率に対し、80%の利益率を実現。顧客には75%のコスト削減を提供し、日本の1,100万人労働力不足を解決します。',
+      subheadline: '12人の専門家 + 50-100の専門AIエージェントで運営。高効率なAI活用により、顧客に大幅なコスト削減を提供し、日本の1,100万人労働力不足を解決します。',
       trustIndicators: [
-        '✓ 利益率80%（業界標準20%）',
-        '✓ 顧客コスト75%削減',
+        '✓ AI優先の高効率モデル',
+        '✓ 大幅なコスト削減を実現',
         '✓ 12人 + 50-100 AIエージェント'
       ],
       cta: '無料相談を予約',
@@ -28,10 +28,10 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
         line1: 'Solving Japan\'s Manufacturing Crisis',
         line2: 'AI-First Business Model'
       },
-      subheadline: 'Operating with 12 human experts + 50-100 specialized AI agents. We achieve 80% profit margins vs. traditional 20%, while delivering 75% cost reduction to clients and solving Japan\'s 11 million worker shortage.',
+      subheadline: 'Operating with 12 human experts + 50-100 specialized AI agents. High-efficiency AI utilization delivers significant cost reduction to clients while solving Japan\'s 11 million worker shortage.',
       trustIndicators: [
-        '✓ 80% profit margins (vs 20% industry standard)',
-        '✓ 75% cost reduction for clients',
+        '✓ AI-first high-efficiency model',
+        '✓ Significant cost reduction',
         '✓ 12 humans + 50-100 AI agents'
       ],
       cta: 'Schedule Free Consultation',
