@@ -17,19 +17,13 @@ const TeamCTA: React.FC<TeamCTAProps> = ({ lang }) => {
         {
           title: '無料相談を予約',
           description: '60分製造業診断',
-          link: '#contact',
+          link: '/contact',
           primary: true,
         },
         {
-          title: 'チームに連絡する',
-          description: '直接お問い合わせ',
-          link: '#contact',
-          primary: false,
-        },
-        {
-          title: '詳細な企業資料をダウンロード',
-          description: 'PDF資料（日本語）',
-          link: '/downloads/solunai-company-profile-ja.pdf',
+          title: 'ケーススタディを見る',
+          description: '実績事例',
+          link: '/about/case-studies',
           primary: false,
         },
       ],
@@ -41,19 +35,13 @@ const TeamCTA: React.FC<TeamCTAProps> = ({ lang }) => {
         {
           title: 'Book Free Consultation',
           description: '60-minute manufacturing assessment',
-          link: '#contact',
+          link: '/en/contact',
           primary: true,
         },
         {
-          title: 'Contact Our Team',
-          description: 'Direct inquiry',
-          link: '#contact',
-          primary: false,
-        },
-        {
-          title: 'Download Company Profile',
-          description: 'PDF brochure (English)',
-          link: '/downloads/solunai-company-profile-en.pdf',
+          title: 'View Case Studies',
+          description: 'See our work',
+          link: '/en/about/case-studies',
           primary: false,
         },
       ],
@@ -84,28 +72,6 @@ const TeamCTA: React.FC<TeamCTAProps> = ({ lang }) => {
               <div className="cta-arrow">→</div>
             </Link>
           ))}
-        </div>
-
-        {/* Trust Badges */}
-        <div className="trust-badges">
-          <div className="badge">
-            <span className="badge-icon">🏆</span>
-            <span className="badge-text">
-              {lang === 'ja' ? '52倍成長実績' : '52× Growth Achievement'}
-            </span>
-          </div>
-          <div className="badge">
-            <span className="badge-icon">💰</span>
-            <span className="badge-text">
-              {lang === 'ja' ? '¥120億円以上のエグジット' : '¥12B+ Exit Portfolio'}
-            </span>
-          </div>
-          <div className="badge">
-            <span className="badge-icon">⏱️</span>
-            <span className="badge-text">
-              {lang === 'ja' ? '60年以上の統合経験' : '60+ Years Combined Experience'}
-            </span>
-          </div>
         </div>
       </div>
     </section>

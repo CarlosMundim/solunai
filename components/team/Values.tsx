@@ -13,27 +13,27 @@ const Values: React.FC<ValuesProps> = ({ lang }) => {
       title: '私たちの価値観',
       values: [
         {
-          icon: '🎯',
+          icon: '01',
           title: '実行重視',
           description: '約束ではなく、実証された結果',
         },
         {
-          icon: '💡',
+          icon: '02',
           title: 'イノベーション',
           description: '最先端技術と実用的な応用の融合',
         },
         {
-          icon: '🤝',
+          icon: '03',
           title: 'パートナーシップ',
           description: 'お客様の成功が私たちの成功',
         },
         {
-          icon: '🌏',
+          icon: '04',
           title: 'グローバル視点',
           description: '世界クラスの専門知識を日本市場へ',
         },
         {
-          icon: '📊',
+          icon: '05',
           title: '透明性',
           description: '明確なROI、現実的な期待値、正直なコミュニケーション',
         },
@@ -43,27 +43,27 @@ const Values: React.FC<ValuesProps> = ({ lang }) => {
       title: 'Our Values',
       values: [
         {
-          icon: '🎯',
+          icon: '01',
           title: 'Execution Focus',
           description: 'Proven results, not promises',
         },
         {
-          icon: '💡',
+          icon: '02',
           title: 'Innovation',
           description: 'Cutting-edge technology meets practical application',
         },
         {
-          icon: '🤝',
+          icon: '03',
           title: 'Partnership',
           description: 'Your success is our success',
         },
         {
-          icon: '🌏',
+          icon: '04',
           title: 'Global Perspective',
           description: 'World-class expertise for the Japanese market',
         },
         {
-          icon: '📊',
+          icon: '05',
           title: 'Transparency',
           description: 'Clear ROI, realistic expectations, honest communication',
         },

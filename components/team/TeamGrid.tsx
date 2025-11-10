@@ -23,35 +23,35 @@ const TeamGrid: React.FC<TeamGridProps> = ({ lang }) => {
       name: 'Carlos Mundim',
       title: 'Chief Technology Officer',
       titleJapanese: '最高技術責任者（CTO）',
-      image: '/images/team/carlos-mundim.jpg',
+      image: '/images/team/carlos-mundim.png',
       linkedin: 'https://www.linkedin.com/in/carlosmundim/'
     },
     {
       name: 'Tomo Furuya',
       title: 'Managing Director',
       titleJapanese: 'マネージングディレクター',
-      image: '/images/team/tomo-furuya.jpg',
+      image: '/images/team/tomo-furuya.png',
       linkedin: undefined
     },
     {
       name: 'Jeanette Dennisson',
       title: 'Operations Director',
       titleJapanese: 'オペレーションディレクター',
-      image: '/images/team/jeanette-dennisson.jpg',
+      image: '/images/team/jeanette-dennisson.png',
       linkedin: undefined
     },
     {
       name: 'Yuto',
       title: 'Technical Lead',
       titleJapanese: 'テクニカルリード',
-      image: '/images/team/yuto.jpg',
+      image: '/images/team/yuto.png',
       linkedin: undefined
     },
     {
       name: 'Koda van Niekerk',
       title: 'AI Systems Engineer',
       titleJapanese: 'AIシステムエンジニア',
-      image: '/images/team/koda-van-niekerk.jpg',
+      image: '/images/team/koda-van-niekerk.png',
       linkedin: undefined
     }
   ];

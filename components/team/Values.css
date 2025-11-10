@@ -1,161 +1,164 @@
 /* ============================================
-   VALUES SECTION
+   VALUES SECTION - Site-Wide Design System
    ============================================ */
 
 .values-section {
-  padding: 100px 0;
-  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   position: relative;
+  width: 100%;
+  padding: var(--section-spacing-desktop) var(--container-padding-mobile);
+  background: var(--bg-cream);
 }
 
 .values-container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 8%;
 }
 
 .values-title {
-  font-size: 40px;
-  font-weight: 800;
+  font-size: 48px;
+  font-weight: 700;
   color: #1a1a2e;
-  margin-bottom: 60px;
+  margin: 0 0 80px 0;
   text-align: center;
-  position: relative;
-  padding-bottom: 16px;
-}
-
-.values-title::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, #2E3192 0%, #F26522 100%);
-  border-radius: 2px;
+  line-height: 1.3;
 }
 
 .values-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Center last 2 cards */
+.value-card:nth-child(4) {
+  grid-column: 1 / 2;
+  justify-self: end;
+  margin-right: 20px;
+}
+
+.value-card:nth-child(5) {
+  grid-column: 2 / 3;
+  justify-self: start;
+  margin-left: 20px;
 }
 
 .value-card {
   background: #ffffff;
-  padding: 48px 36px;
-  border-radius: 20px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-  transition: all 0.4s ease;
+  padding: 40px 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.value-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  background: linear-gradient(90deg, #2E3192 0%, #F26522 100%);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.4s ease;
-}
-
-.value-card:hover::before {
-  transform: scaleX(1);
+  border: 1px solid var(--border-subtle);
+  max-width: 380px;
+  width: 100%;
 }
 
 .value-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 12px 40px rgba(46, 49, 146, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .value-icon {
-  font-size: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
   margin-bottom: 24px;
-  display: inline-block;
-  transition: transform 0.4s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(26, 26, 46, 0.15);
+  transition: all 0.3s ease;
 }
 
 .value-card:hover .value-icon {
-  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 6px 20px rgba(26, 26, 46, 0.25);
 }
 
 .value-title {
   font-size: 24px;
   font-weight: 700;
-  color: #2E3192;
-  margin-bottom: 16px;
+  color: #1a1a2e;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
 }
 
 .value-description {
-  font-size: 17px;
-  font-weight: 500;
-  color: #666;
-  line-height: 1.7;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.6;
   margin: 0;
 }
 
-/* Responsive: Tablet */
+/* Tablet Styles */
 @media (max-width: 1024px) {
   .values-section {
-    padding: 80px 0;
+    padding: var(--section-spacing-tablet) var(--container-padding-mobile);
   }
 
   .values-title {
-    font-size: 34px;
-    margin-bottom: 48px;
+    font-size: 40px;
+    margin-bottom: 60px;
   }
 
   .values-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 40px;
+  }
+
+  /* Reset centering on tablet */
+  .value-card:nth-child(4),
+  .value-card:nth-child(5) {
+    grid-column: auto;
+    justify-self: center;
+    margin: 0;
   }
 
   .value-card {
-    padding: 40px 28px;
-  }
-
-  .value-icon {
-    font-size: 56px;
-  }
-
-  .value-title {
-    font-size: 22px;
-  }
-
-  .value-description {
-    font-size: 16px;
+    padding: 40px 32px;
   }
 }
 
-/* Responsive: Mobile */
+/* Mobile Styles */
 @media (max-width: 768px) {
   .values-section {
-    padding: 60px 0;
+    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
   }
 
   .values-title {
-    font-size: 28px;
-    margin-bottom: 36px;
+    font-size: 32px;
+    margin-bottom: 48px;
   }
 
   .values-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 32px;
+  }
+
+  /* Reset centering on mobile */
+  .value-card:nth-child(4),
+  .value-card:nth-child(5) {
+    grid-column: auto;
+    justify-self: center;
+    margin: 0;
   }
 
   .value-card {
-    padding: 36px 24px;
+    padding: 32px 24px;
   }
 
   .value-icon {
-    font-size: 52px;
+    width: 64px;
+    height: 64px;
+    font-size: 18px;
   }
 
   .value-title {
@@ -164,5 +167,24 @@
 
   .value-description {
     font-size: 15px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .values-title {
+    font-size: 24px;
+  }
+
+  .value-card {
+    padding: 28px 20px;
+  }
+
+  .value-title {
+    font-size: 18px;
+  }
+
+  .value-description {
+    font-size: 14px;
   }
 }
