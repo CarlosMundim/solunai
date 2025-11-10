@@ -20,25 +20,38 @@ interface TeamGridProps {
 const TeamGrid: React.FC<TeamGridProps> = ({ lang }) => {
   const teamMembers: TeamMember[] = [
     {
-      name: 'Carlos Magno Freitas Mundim',
+      name: 'Carlos Mundim',
       title: 'Chief Technology Officer',
       titleJapanese: '最高技術責任者（CTO）',
       image: '/images/team/carlos-mundim.jpg',
       linkedin: 'https://www.linkedin.com/in/carlosmundim/'
     },
     {
-      name: 'Tomoo Hara',
-      nameJapanese: '原 知夫',
+      name: 'Tomo Furuya',
       title: 'Managing Director',
       titleJapanese: 'マネージングディレクター',
-      image: '/images/team/tomoo-hara.jpg',
+      image: '/images/team/tomo-furuya.jpg',
       linkedin: undefined
     },
     {
-      name: 'Jeanette van Niekerk',
+      name: 'Jeanette Dennisson',
       title: 'Operations Director',
       titleJapanese: 'オペレーションディレクター',
-      image: '/images/team/jeanette-van-niekerk.jpg',
+      image: '/images/team/jeanette-dennisson.jpg',
+      linkedin: undefined
+    },
+    {
+      name: 'Yuto',
+      title: 'Technical Lead',
+      titleJapanese: 'テクニカルリード',
+      image: '/images/team/yuto.jpg',
+      linkedin: undefined
+    },
+    {
+      name: 'Koda van Niekerk',
+      title: 'AI Systems Engineer',
+      titleJapanese: 'AIシステムエンジニア',
+      image: '/images/team/koda-van-niekerk.jpg',
       linkedin: undefined
     }
   ];
