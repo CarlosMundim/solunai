@@ -53,25 +53,29 @@ const TeamCTA: React.FC<TeamCTAProps> = ({ lang }) => {
   return (
     <section className="team-cta">
       <div className="team-cta-container">
-        <div className="team-cta-header">
-          <h2 className="team-cta-title">{text.title}</h2>
-          <p className="team-cta-subtitle">{text.subtitle}</p>
-        </div>
+        <div className="team-cta-two-column">
+          {/* Left Column: Text */}
+          <div className="team-cta-text-column">
+            <h2 className="team-cta-title">{text.title}</h2>
+            <p className="team-cta-subtitle">{text.subtitle}</p>
+          </div>
 
-        <div className="team-cta-grid">
-          {text.ctas.map((cta, idx) => (
-            <Link
-              key={idx}
-              href={cta.link}
-              className={`team-cta-card ${cta.primary ? 'primary' : ''}`}
-            >
-              <div className="cta-content">
-                <h3 className="cta-title">{cta.title}</h3>
-                <p className="cta-description">{cta.description}</p>
-              </div>
-              <div className="cta-arrow">→</div>
-            </Link>
-          ))}
+          {/* Right Column: Buttons */}
+          <div className="team-cta-buttons-column">
+            {text.ctas.map((cta, idx) => (
+              <Link
+                key={idx}
+                href={cta.link}
+                className={`team-cta-card ${cta.primary ? 'primary' : ''}`}
+              >
+                <div className="cta-content">
+                  <h3 className="cta-title">{cta.title}</h3>
+                  <p className="cta-description">{cta.description}</p>
+                </div>
+                <div className="cta-arrow">→</div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -30,10 +30,17 @@
   z-index: 1;
 }
 
-/* Header */
-.team-cta-header {
-  text-align: center;
-  margin-bottom: 60px;
+/* Two Column Layout */
+.team-cta-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* Left Column: Text */
+.team-cta-text-column {
+  padding-right: 40px;
 }
 
 .team-cta-title {
@@ -51,12 +58,11 @@
   margin: 0;
 }
 
-/* CTA Grid */
-.team-cta-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  margin-bottom: 60px;
+/* Right Column: Buttons */
+.team-cta-buttons-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .team-cta-card {
@@ -179,6 +185,16 @@
     padding: var(--section-spacing-tablet) 0;
   }
 
+  .team-cta-two-column {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .team-cta-text-column {
+    padding-right: 0;
+    text-align: center;
+  }
+
   .team-cta-title {
     font-size: 36px;
   }
@@ -187,10 +203,8 @@
     font-size: 20px;
   }
 
-  .team-cta-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    margin-bottom: 48px;
+  .team-cta-buttons-column {
+    gap: 20px;
   }
 
   .team-cta-card {
@@ -228,8 +242,8 @@
     padding: var(--section-spacing-mobile) 0;
   }
 
-  .team-cta-header {
-    margin-bottom: 40px;
+  .team-cta-two-column {
+    gap: 32px;
   }
 
   .team-cta-title {
@@ -241,9 +255,8 @@
     font-size: 18px;
   }
 
-  .team-cta-grid {
-    gap: 20px;
-    margin-bottom: 40px;
+  .team-cta-buttons-column {
+    gap: 16px;
   }
 
   .team-cta-card {
