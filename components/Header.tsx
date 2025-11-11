@@ -67,7 +67,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
           label: '会社概要',
           dropdown: [
             { href: '/about', label: '会社紹介' },
-            { href: '/team', label: 'チーム' }
+            { href: '/about/team', label: 'チーム' }
           ]
         },
         { href: '/contact', label: 'お問い合わせ', isRoute: true }
@@ -98,8 +98,8 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
         {
           label: 'About',
           dropdown: [
-            { href: '/en/about', label: 'About' },
-            { href: '/en/team', label: 'Our Team' }
+            { href: '/en/about', label: 'Company Story' },
+            { href: '/en/about/team', label: 'Our Team' }
           ]
         },
         { href: '/en/contact', label: 'Contact', isRoute: true }
