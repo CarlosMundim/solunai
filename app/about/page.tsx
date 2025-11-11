@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import AboutHero from '@/components/about/AboutHero';
 import MissionVision from '@/components/about/MissionVision';
 import CoreValues from '@/components/about/CoreValues';
-import Timeline from '@/components/team/Timeline';
 import GlobalPresence from '@/components/about/GlobalPresence';
 import WhyTrust from '@/components/about/WhyTrust';
 import AboutCTA from '@/components/about/AboutCTA';
@@ -17,7 +16,6 @@ export default function AboutPageJA() {
       <AboutHero lang="ja" />
       <MissionVision lang="ja" />
       <CoreValues lang="ja" />
-      <Timeline lang="ja" />
       <GlobalPresence lang="ja" />
       <WhyTrust lang="ja" />
       <AboutCTA lang="ja" />

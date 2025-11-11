@@ -38,12 +38,6 @@ const AboutHero: React.FC<AboutHeroProps> = ({ lang }) => {
         </div>
 
         <div className="about-hero-stats">
-          <div className="stat-item">
-            <div className="stat-number">2025</div>
-            <div className="stat-label">
-              {lang === 'ja' ? '設立年' : 'Founded'}
-            </div>
-          </div>
           <div className="stat-item highlight">
             <div className="stat-number">30+</div>
             <div className="stat-label">
