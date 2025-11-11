@@ -63,13 +63,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
             { href: '/services/global-engineering', label: 'グローバルエンジニアリング' }
           ]
         },
-        {
-          label: '会社概要',
-          dropdown: [
-            { href: '/about', label: '会社紹介' },
-            { href: '/about/team', label: 'チーム' }
-          ]
-        },
+        { href: '/about', label: '私たちについて', isRoute: true },
         { href: '/contact', label: 'お問い合わせ', isRoute: true }
       ],
       languageToggle: { href: '/en', label: 'English' }
@@ -95,13 +89,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
             { href: '/en/services/global-engineering', label: 'Global Engineering' }
           ]
         },
-        {
-          label: 'About',
-          dropdown: [
-            { href: '/en/about', label: 'Company Story' },
-            { href: '/en/about/team', label: 'Our Team' }
-          ]
-        },
+        { href: '/en/about', label: 'About Us', isRoute: true },
         { href: '/en/contact', label: 'Contact', isRoute: true }
       ],
       languageToggle: { href: '/', label: '日本語' }

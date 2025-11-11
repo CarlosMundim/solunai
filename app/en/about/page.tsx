@@ -1,24 +1,22 @@
 'use client';
 
 import Header from '@/components/Header';
-import AboutHero from '@/components/about/AboutHero';
-import MissionVision from '@/components/about/MissionVision';
-import CoreValues from '@/components/about/CoreValues';
-import GlobalPresence from '@/components/about/GlobalPresence';
-import WhyTrust from '@/components/about/WhyTrust';
-import AboutCTA from '@/components/about/AboutCTA';
+import TeamHero from '@/components/team/TeamHero';
+import TeamGrid from '@/components/team/TeamGrid';
+import CompanyPhilosophy from '@/components/team/CompanyPhilosophy';
+import Values from '@/components/team/Values';
+import TeamCTA from '@/components/team/TeamCTA';
 import Footer from '@/components/Footer';
 
-export default function AboutPage() {
+export default function TeamPage() {
   return (
     <main className="min-h-screen">
       <Header lang="en" />
-      <AboutHero lang="en" />
-      <MissionVision lang="en" />
-      <CoreValues lang="en" />
-      <GlobalPresence lang="en" />
-      <WhyTrust lang="en" />
-      <AboutCTA lang="en" />
+      <TeamHero lang="en" />
+      <TeamGrid lang="en" />
+      <CompanyPhilosophy lang="en" />
+      <Values lang="en" />
+      <TeamCTA lang="en" />
       <Footer lang="en" />
     </main>
   );
