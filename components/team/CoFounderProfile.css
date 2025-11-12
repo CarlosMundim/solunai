@@ -233,6 +233,10 @@
 
 /* Responsive: Tablet */
 @media (max-width: 1024px) {
+  .cofounder-profile {
+    padding: 60px 0;
+  }
+
   .cofounder-header {
     grid-template-columns: 240px 1fr;
     gap: 32px;
@@ -277,7 +281,7 @@
 /* Responsive: Mobile */
 @media (max-width: 768px) {
   .cofounder-profile {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 
   .cofounder-header {

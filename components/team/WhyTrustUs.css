@@ -3,7 +3,7 @@
    ============================================ */
 
 .trust-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   position: relative;
 }
@@ -174,7 +174,7 @@
 /* Responsive: Tablet */
 @media (max-width: 1024px) {
   .trust-section {
-    padding: 80px 0;
+    padding: 60px 0;
   }
 
   .trust-title {
@@ -242,7 +242,7 @@
 /* Responsive: Mobile */
 @media (max-width: 768px) {
   .trust-section {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 
   .trust-title {
