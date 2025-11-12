@@ -183,7 +183,7 @@
 
 @media (max-width: 768px) {
   .services-services-cta {
-    padding: 60px 16px;
+    padding: var(--section-spacing-mobile) 16px;
   }
 
   .cta-title {
