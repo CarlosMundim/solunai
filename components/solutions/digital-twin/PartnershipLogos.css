@@ -1,7 +1,7 @@
 .partnership-logos {
   width: 100%;
   background: #ffffff;
-  padding: 100px 24px;
+  padding: 80px 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -118,6 +118,10 @@ html[lang="ja"] .partner-description {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .partnership-logos {
+    padding: 60px 24px;
+  }
+
   .partnership-logos-heading {
     font-size: 40px;
   }
@@ -129,7 +133,7 @@ html[lang="ja"] .partner-description {
 
 @media (max-width: 768px) {
   .partnership-logos {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 
   .partnership-logos-heading {

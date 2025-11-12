@@ -4,7 +4,7 @@
   min-height: 90vh;
   display: flex;
   align-items: center;
-  padding: 140px 24px 120px 24px;
+  padding: var(--section-spacing-desktop) 24px var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
   overflow: hidden;
 }
@@ -152,7 +152,7 @@ html[lang="ja"] .digital-twin-hero-solution p {
 @media (max-width: 1024px) {
   .digital-twin-hero {
     min-height: 85vh;
-    padding: 120px 24px 100px 24px;
+    padding: var(--section-spacing-tablet) 24px var(--section-spacing-tablet) 24px;
   }
 
   .digital-twin-hero-heading {
@@ -175,7 +175,7 @@ html[lang="ja"] .digital-twin-hero-solution p {
 @media (max-width: 768px) {
   .digital-twin-hero {
     min-height: auto;
-    padding: 100px 20px 80px 20px;
+    padding: var(--section-spacing-mobile) 20px var(--section-spacing-mobile) 20px;
   }
 
   .digital-twin-hero-heading {
@@ -204,7 +204,7 @@ html[lang="ja"] .digital-twin-hero-solution p {
 
 @media (max-width: 480px) {
   .digital-twin-hero {
-    padding: 80px 16px 60px 16px;
+    padding: var(--section-spacing-mobile) 16px var(--section-spacing-mobile) 16px;
   }
 
   .digital-twin-hero-badge {

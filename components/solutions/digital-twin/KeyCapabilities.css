@@ -1,7 +1,7 @@
 .key-capabilities {
   width: 100%;
   background: var(--bg-cream);
-  padding: var(--section-spacing-desktop) 24px;
+  padding: 80px 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -84,6 +84,10 @@ html[lang="ja"] .capability-description {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .key-capabilities {
+    padding: 60px 24px;
+  }
+
   .key-capabilities-heading {
     font-size: 40px;
   }
@@ -101,7 +105,7 @@ html[lang="ja"] .capability-description {
 
 @media (max-width: 768px) {
   .key-capabilities {
-    padding: var(--section-spacing-mobile) 20px;
+    padding: 40px 20px;
   }
 
   .key-capabilities-heading {

@@ -1,7 +1,7 @@
 .digital-twin-cta {
   width: 100%;
   background: var(--gradient-dark);
-  padding: 120px 24px;
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
   position: relative;
   overflow: hidden;
@@ -109,7 +109,7 @@ html[lang="ja"] .digital-twin-cta-description {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .digital-twin-cta {
-    padding: 100px 24px;
+    padding: var(--section-spacing-tablet) 24px;
   }
 
   .digital-twin-cta-grid {
@@ -127,7 +127,7 @@ html[lang="ja"] .digital-twin-cta-description {
 
 @media (max-width: 768px) {
   .digital-twin-cta {
-    padding: 80px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .digital-twin-cta-grid {
@@ -155,7 +155,7 @@ html[lang="ja"] .digital-twin-cta-description {
 
 @media (max-width: 480px) {
   .digital-twin-cta {
-    padding: 60px 16px;
+    padding: var(--section-spacing-mobile) 16px;
   }
 
   .digital-twin-cta-grid {
