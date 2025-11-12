@@ -1,7 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
 import Link from 'next/link';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import './SolutionsStack.css';
 
 interface SolutionsStackProps {
@@ -9,6 +10,12 @@ interface SolutionsStackProps {
 }
 
 const SolutionsStack: React.FC<SolutionsStackProps> = ({ lang }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start start', 'end end']
+  });
+
   const content = {
     ja: {
       heading: 'Solunaiの5つのAIソリューションで',
@@ -101,28 +108,55 @@ const SolutionsStack: React.FC<SolutionsStackProps> = ({ lang }) => {
   const t = content[lang];
 
   return (
-    <section className="solutions-stack">
-      <div className="solutions-stack-container">
-        <div className="solutions-stack-left">
-          <h2 className="solutions-stack-heading">
-            {t.heading}
-            <br />
-            <span className="solutions-stack-heading-highlight">{t.headingHighlight}</span>
-          </h2>
-          <p className="solutions-stack-description">{t.description}</p>
-        </div>
+    <section className="solutions-stack" ref={containerRef}>
+      <div className="solutions-stack-header">
+        <h2 className="solutions-stack-heading">
+          {t.heading}
+          <br />
+          <span className="solutions-stack-heading-highlight">{t.headingHighlight}</span>
+        </h2>
+        <p className="solutions-stack-description">{t.description}</p>
+      </div>
 
-        <div className="solutions-stack-right">
-          {t.solutions.map((solution) => (
-            <div key={solution.id} className="solution-card">
-              <h3 className="solution-card-title">{solution.title}</h3>
-              <p className="solution-card-description">{solution.description}</p>
-              <Link href={solution.link} className="solution-card-button">
-                {t.learnMore}
-              </Link>
-            </div>
-          ))}
-        </div>
+      <div className="solutions-stack-cards">
+        {t.solutions.map((solution, index) => {
+          const totalCards = t.solutions.length;
+          const cardProgress = useTransform(
+            scrollYProgress,
+            [index / totalCards, (index + 1) / totalCards],
+            [0, 1]
+          );
+
+          const scale = useTransform(cardProgress, [0, 1], [1, 0.95]);
+          const opacity = useTransform(cardProgress, [0, 0.5, 1], [1, 1, 1]);
+          const y = useTransform(cardProgress, [0, 1], ['0%', '-5%']);
+
+          return (
+            <motion.div
+              key={solution.id}
+              className="solution-card-wrapper"
+              style={{
+                scale,
+                opacity,
+                y,
+                position: 'sticky',
+                top: 0,
+                height: '100vh'
+              }}
+            >
+              <div className="solution-card">
+                <div className="solution-card-content">
+                  <div className="solution-card-icon">{solution.icon}</div>
+                  <h3 className="solution-card-title">{solution.title}</h3>
+                  <p className="solution-card-description">{solution.description}</p>
+                  <Link href={solution.link} className="solution-card-button">
+                    {t.learnMore}
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          );
+        })}
       </div>
     </section>
   );
