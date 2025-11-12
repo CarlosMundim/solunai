@@ -1,5 +1,5 @@
 .services-cost-comparison {
-  padding: 120px 20px;
+  padding: 80px 20px;
   background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
 }
 
@@ -275,7 +275,7 @@
 
 @media (max-width: 768px) {
   .services-cost-comparison {
-    padding: 60px 16px;
+    padding: 40px 16px;
   }
 
   .cost-header {

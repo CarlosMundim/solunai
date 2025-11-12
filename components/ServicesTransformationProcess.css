@@ -1,5 +1,5 @@
 .services-transformation-process {
-  padding: 120px 20px;
+  padding: 80px 20px;
   background: #ffffff;
 }
 
@@ -208,7 +208,7 @@
 
 @media (max-width: 768px) {
   .services-transformation-process {
-    padding: 60px 16px;
+    padding: 40px 16px;
   }
 
   .process-header {

@@ -3,7 +3,7 @@
   min-height: 70vh;
   display: flex;
   align-items: center;
-  padding: 8rem 2rem 6rem;
+  padding: var(--section-spacing-desktop) 2rem var(--section-spacing-desktop) 2rem;
   overflow: hidden;
 }
 
@@ -142,7 +142,7 @@
 
 @media (max-width: 768px) {
   .services-hero {
-    padding: 6rem 1rem 4rem;
+    padding: var(--section-spacing-mobile) 1rem var(--section-spacing-mobile) 1rem;
     min-height: auto;
   }
 

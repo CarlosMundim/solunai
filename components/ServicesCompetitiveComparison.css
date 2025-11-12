@@ -1,5 +1,5 @@
 .services-competitive-comparison {
-  padding: 120px 20px;
+  padding: 80px 20px;
   background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
 }
 
@@ -195,7 +195,7 @@
 
 @media (max-width: 768px) {
   .services-competitive-comparison {
-    padding: 60px 16px;
+    padding: 40px 16px;
   }
 
   .competitive-header {
