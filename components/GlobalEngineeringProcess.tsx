@@ -1,6 +1,7 @@
 'use client';
 
-import React from 'react';
+import React, { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import './GlobalEngineeringProcess.css';
 
 interface GlobalEngineeringProcessProps {
@@ -8,6 +9,12 @@ interface GlobalEngineeringProcessProps {
 }
 
 const GlobalEngineeringProcess: React.FC<GlobalEngineeringProcessProps> = ({ lang }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start start', 'end end']
+  });
+
   const content = {
     ja: {
       title: 'エンジニア配備プロセス',
@@ -146,42 +153,66 @@ const GlobalEngineeringProcess: React.FC<GlobalEngineeringProcessProps> = ({ lan
   const currentContent = content[lang];
 
   return (
-    <section className="global-engineering-process">
-      <div className="process-container">
-        <div className="process-header">
-          <h2 className="process-title">{currentContent.title}</h2>
-          <p className="process-subtitle">{currentContent.subtitle}</p>
-        </div>
+    <section className="global-engineering-process" ref={containerRef}>
+      <div className="process-header">
+        <h2 className="process-title">{currentContent.title}</h2>
+        <p className="process-subtitle">{currentContent.subtitle}</p>
+      </div>
 
-        <div className="phases-timeline">
-          {currentContent.phases.map((phase, index) => (
-            <div key={index} className="phase-card">
-              <div className="phase-number">{phase.number}</div>
-              <div className="phase-content">
-                <div className="phase-header">
-                  <h3 className="phase-title">{phase.title}</h3>
-                  <span className="phase-duration">{phase.duration}</span>
-                </div>
-                <p className="phase-description">{phase.description}</p>
-                <div className="phase-deliverables">
-                  <h4 className="deliverables-title">
-                    {lang === 'ja' ? '成果物:' : 'Deliverables:'}
-                  </h4>
-                  <ul className="deliverables-list">
-                    {phase.deliverables.map((deliverable, idx) => (
-                      <li key={idx} className="deliverable-item">
-                        <svg className="deliverable-icon" viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
-                        <span>{deliverable}</span>
-                      </li>
-                    ))}
-                  </ul>
+      <div className="phases-timeline">
+        {currentContent.phases.map((phase, index) => {
+          const totalCards = currentContent.phases.length;
+          const cardProgress = useTransform(
+            scrollYProgress,
+            [index / totalCards, (index + 1) / totalCards],
+            [0, 1]
+          );
+
+          const scale = useTransform(cardProgress, [0, 1], [1, 0.95]);
+          const opacity = useTransform(cardProgress, [0, 0.5, 1], [1, 1, 1]);
+          const y = useTransform(cardProgress, [0, 1], ['0%', '-5%']);
+
+          return (
+            <motion.div
+              key={index}
+              className="phase-card-wrapper"
+              style={{
+                scale,
+                opacity,
+                y,
+                position: 'sticky',
+                top: 0,
+                height: '100vh'
+              }}
+            >
+              <div className="phase-card">
+                <div className="phase-number">{phase.number}</div>
+                <div className="phase-content">
+                  <div className="phase-header">
+                    <h3 className="phase-title">{phase.title}</h3>
+                    <span className="phase-duration">{phase.duration}</span>
+                  </div>
+                  <p className="phase-description">{phase.description}</p>
+                  <div className="phase-deliverables">
+                    <h4 className="deliverables-title">
+                      {lang === 'ja' ? '成果物:' : 'Deliverables:'}
+                    </h4>
+                    <ul className="deliverables-list">
+                      {phase.deliverables.map((deliverable, idx) => (
+                        <li key={idx} className="deliverable-item">
+                          <svg className="deliverable-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                          <span>{deliverable}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            </motion.div>
+          );
+        })}
       </div>
     </section>
   );

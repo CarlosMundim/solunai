@@ -5,14 +5,11 @@
   background: var(--bg-cream);
 }
 
-.process-container {
+.process-header {
   max-width: 1400px;
   margin: 0 auto;
-}
-
-.process-header {
+  padding: 0 20px 80px 20px;
   text-align: center;
-  margin-bottom: 4rem;
 }
 
 .process-title {
@@ -25,35 +22,41 @@
 
 .process-subtitle {
   font-size: 20px;
-  background: linear-gradient(135deg, #0091ff 0%, #666666 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #666666;
   font-weight: 400;
+  margin: 0;
 }
 
 .phases-timeline {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  width: 100%;
+}
+
+.phase-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
 }
 
 .phase-card {
+  width: 100%;
+  max-width: 1400px;
   position: relative;
   display: grid;
   grid-template-columns: 80px 1fr;
-  gap: 2rem;
-  background: var(--bg-cream);
-  border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  gap: 60px;
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+  padding: 60px 80px;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.4s ease;
 }
 
 .phase-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border-color: var(--border-cyan-subtle);
+  box-shadow: var(--shadow-orange-cyan);
 }
 
 .phase-number {
@@ -137,7 +140,7 @@
 .deliverable-icon {
   width: 16px;
   height: 16px;
-  color: #0091ff;
+  color: var(--solunai-orange);
   flex-shrink: 0;
 }
 
@@ -145,11 +148,24 @@
   .global-engineering-process {
     padding: 60px var(--container-padding-tablet) var(--section-spacing-tablet) var(--container-padding-tablet);
   }
+
+  .process-header {
+    padding-bottom: 60px;
+  }
+
+  .phase-card {
+    padding: 50px 60px;
+    gap: 40px;
+  }
 }
 
 @media (max-width: 768px) {
   .global-engineering-process {
     padding: 40px var(--container-padding-mobile) var(--section-spacing-mobile) var(--container-padding-mobile);
+  }
+
+  .process-header {
+    padding: 0 16px 40px 16px;
   }
 
   .process-title {
@@ -160,18 +176,14 @@
     font-size: 18px;
   }
 
-  .phases-timeline {
-    grid-template-columns: 1fr;
+  .phase-card-wrapper {
+    padding: 0 16px;
   }
 
   .phase-card {
     grid-template-columns: 60px 1fr;
-    gap: 1rem;
-    padding: 24px;
-  }
-
-  .phase-card:hover {
-    transform: translateY(-3px);
+    gap: 24px;
+    padding: 40px 32px;
   }
 
   .phase-number {
@@ -189,5 +201,28 @@
 
   .phase-description {
     font-size: 15px;
+  }
+
+  .phase-deliverables {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-title {
+    font-size: 24px;
+  }
+
+  .phase-card {
+    padding: 32px 24px;
+    gap: 20px;
+  }
+
+  .phase-number {
+    font-size: 32px;
+  }
+
+  .phase-title {
+    font-size: 20px;
   }
 }
