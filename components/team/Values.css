@@ -5,7 +5,7 @@
 .values-section {
   position: relative;
   width: 100%;
-  padding: var(--section-spacing-desktop) var(--container-padding-mobile);
+  padding: 80px var(--container-padding-mobile) var(--section-spacing-desktop) var(--container-padding-mobile);
   background: var(--bg-cream);
 }
 
@@ -101,7 +101,7 @@
 /* Tablet Styles */
 @media (max-width: 1024px) {
   .values-section {
-    padding: var(--section-spacing-tablet) var(--container-padding-mobile);
+    padding: 60px var(--container-padding-mobile) var(--section-spacing-tablet) var(--container-padding-mobile);
   }
 
   .values-title {
@@ -130,7 +130,7 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .values-section {
-    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
+    padding: 40px var(--container-padding-mobile) var(--section-spacing-mobile) var(--container-padding-mobile);
   }
 
   .values-title {

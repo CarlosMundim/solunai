@@ -5,7 +5,7 @@
 .company-philosophy {
   position: relative;
   width: 100%;
-  padding: var(--section-spacing-desktop) var(--container-padding-mobile);
+  padding: 80px var(--container-padding-mobile) var(--section-spacing-desktop) var(--container-padding-mobile);
   background: var(--bg-cream);
 }
 
@@ -174,7 +174,7 @@
 /* Responsive: Tablet */
 @media (max-width: 1024px) {
   .company-philosophy {
-    padding: var(--section-spacing-tablet) var(--container-padding-mobile);
+    padding: 60px var(--container-padding-mobile) var(--section-spacing-tablet) var(--container-padding-mobile);
   }
 
   .philosophy-title {
@@ -213,7 +213,7 @@
 /* Responsive: Mobile */
 @media (max-width: 768px) {
   .company-philosophy {
-    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
+    padding: 40px var(--container-padding-mobile) var(--section-spacing-mobile) var(--container-padding-mobile);
   }
 
   .philosophy-title {
