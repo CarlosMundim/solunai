@@ -1,5 +1,5 @@
 .ai-implementation-process {
-  padding: var(--section-spacing-desktop) 24px;
+  padding: 80px 24px;
   background: var(--bg-subtle-gray);
 }
 
@@ -143,13 +143,13 @@
 
 @media (max-width: 1024px) {
   .ai-implementation-process {
-    padding: var(--section-spacing-tablet) 24px;
+    padding: 60px 24px;
   }
 }
 
 @media (max-width: 768px) {
   .ai-implementation-process {
-    padding: 60px 1rem;
+    padding: 40px 1rem;
   }
 
   .process-title {
