@@ -157,7 +157,7 @@
 
 .case-study-results {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
 }
@@ -174,11 +174,13 @@
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 0.5rem;
+  color: #ffffff;
 }
 
 .result-label {
   font-size: 14px;
   font-weight: 500;
+  color: #ffffff;
   opacity: 0.9;
 }
 
