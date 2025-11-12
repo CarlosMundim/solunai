@@ -52,8 +52,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
             { href: '/solutions/digital-twin', label: 'デジタルツイン' },
             { href: '/solutions/computer-vision', label: 'コンピュータビジョン' },
             { href: '/solutions/predictive-maintenance', label: '予知保全' },
-            { href: '/solutions/production-optimization', label: '生産最適化' },
-            { href: '/solutions/global-engineering', label: 'グローバルエンジニアリング' }
+            { href: '/solutions/production-optimization', label: '生産最適化' }
           ]
         },
         {
@@ -78,8 +77,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
             { href: '/en/solutions/digital-twin', label: 'Digital Twin' },
             { href: '/en/solutions/computer-vision', label: 'Computer Vision' },
             { href: '/en/solutions/predictive-maintenance', label: 'Predictive Maintenance' },
-            { href: '/en/solutions/production-optimization', label: 'Production Optimization' },
-            { href: '/en/solutions/global-engineering', label: 'Global Engineering' }
+            { href: '/en/solutions/production-optimization', label: 'Production Optimization' }
           ]
         },
         {

@@ -18,8 +18,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
           { label: 'デジタルツイン', href: '/solutions/digital-twin' },
           { label: 'コンピュータビジョン', href: '/solutions/computer-vision' },
           { label: '予知保全', href: '/solutions/predictive-maintenance' },
-          { label: '生産最適化', href: '/solutions/production-optimization' },
-          { label: 'グローバルエンジニア', href: '/solutions/global-engineering' }
+          { label: '生産最適化', href: '/solutions/production-optimization' }
         ]
       },
       company: {
@@ -66,8 +65,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
           { label: 'Digital Twin', href: '/en/solutions/digital-twin' },
           { label: 'Computer Vision', href: '/en/solutions/computer-vision' },
           { label: 'Predictive Maintenance', href: '/en/solutions/predictive-maintenance' },
-          { label: 'Production Optimization', href: '/en/solutions/production-optimization' },
-          { label: 'Global Engineering', href: '/en/solutions/global-engineering' }
+          { label: 'Production Optimization', href: '/en/solutions/production-optimization' }
         ]
       },
       company: {
