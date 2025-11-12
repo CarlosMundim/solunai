@@ -1,6 +1,6 @@
 /* AI-First Model Section */
 .ai-first-model-section {
-  padding: 120px 0;
+  padding: 80px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
   position: relative;
   overflow: hidden;
@@ -467,6 +467,10 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .ai-first-model-section {
+    padding: 60px 0;
+  }
+
   .ai-first-container {
     padding: 0 24px;
   }
@@ -487,7 +491,7 @@
 
 @media (max-width: 768px) {
   .ai-first-model-section {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 
   .ai-first-header {
