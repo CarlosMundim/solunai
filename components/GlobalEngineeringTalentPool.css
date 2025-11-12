@@ -1,7 +1,7 @@
 .global-engineering-talent-pool {
   position: relative;
   width: 100%;
-  padding: var(--section-spacing-desktop) var(--container-padding-mobile) var(--section-spacing-desktop) var(--container-padding-mobile);
+  padding: 80px var(--container-padding-mobile) 80px var(--container-padding-mobile);
   background: var(--bg-cream);
 }
 
@@ -207,7 +207,7 @@
 
 @media (max-width: 1024px) {
   .global-engineering-talent-pool {
-    padding: var(--section-spacing-tablet) var(--container-padding-tablet) var(--section-spacing-tablet) var(--container-padding-tablet);
+    padding: 60px var(--container-padding-tablet) 60px var(--container-padding-tablet);
   }
 
   .talent-header {
@@ -243,7 +243,7 @@
 
 @media (max-width: 768px) {
   .global-engineering-talent-pool {
-    padding: var(--section-spacing-mobile) var(--container-padding-mobile) var(--section-spacing-mobile) var(--container-padding-mobile);
+    padding: 40px var(--container-padding-mobile) 40px var(--container-padding-mobile);
   }
 
   .talent-header {

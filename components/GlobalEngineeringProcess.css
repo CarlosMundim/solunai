@@ -1,7 +1,8 @@
 .global-engineering-process {
   position: relative;
   width: 100%;
-  padding-top: var(--section-spacing-desktop);
+  padding-top: 80px;
+  padding-bottom: 20px;
   background: var(--bg-cream);
 }
 
@@ -146,7 +147,8 @@
 
 @media (max-width: 1024px) {
   .global-engineering-process {
-    padding-top: var(--section-spacing-tablet);
+    padding-top: 60px;
+    padding-bottom: 20px;
   }
 
   .process-header {
@@ -161,7 +163,8 @@
 
 @media (max-width: 768px) {
   .global-engineering-process {
-    padding-top: var(--section-spacing-mobile);
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   .process-header {
