@@ -141,7 +141,10 @@ const SolutionsStack: React.FC<SolutionsStackProps> = ({ lang }) => {
                 y,
                 position: 'sticky',
                 top: 0,
-                height: '100vh'
+                height: 'auto',
+                minHeight: '50vh',
+                paddingTop: '5vh',
+                paddingBottom: '5vh'
               }}
             >
               <div className="solution-card">
