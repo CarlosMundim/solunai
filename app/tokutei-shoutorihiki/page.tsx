@@ -46,7 +46,7 @@ export default function TokuteiShoutorihiki() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                 <p className="font-semibold text-gray-900">代表者:</p>
-                <p className="md:col-span-2 text-gray-700">カルロス・マグノ・フレイタス・ムンディム（CTO）</p>
+                <p className="md:col-span-2 text-gray-700">古屋智夫（代表取締役）</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -497,7 +497,7 @@ export default function TokuteiShoutorihiki() {
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                 <p className="font-semibold text-gray-900">Representative:</p>
-                <p className="md:col-span-2 text-gray-700">Carlos Magno Freitas Mundim (CTO)</p>
+                <p className="md:col-span-2 text-gray-700">Tomoo Furuya (Representative Director)</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2">

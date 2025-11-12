@@ -344,7 +344,7 @@ export default function TermsOfServiceJA() {
               </div>
               <div className="terms-contact-row">
                 <span className="terms-contact-label">代表者</span>
-                <span className="terms-contact-value">カルロス・マグノ・フレイタス・ムンディム（CTO）</span>
+                <span className="terms-contact-value">古屋智夫（代表取締役）</span>
               </div>
               <div className="terms-contact-row">
                 <span className="terms-contact-label">所在地</span>

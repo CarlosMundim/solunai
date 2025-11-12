@@ -53,7 +53,7 @@ export default function TokuteiShoutorihikiEN() {
                 </div>
                 <div className="terms-contact-row">
                   <span className="terms-contact-label">Representative</span>
-                  <span className="terms-contact-value">Carlos Magno Freitas Mundim (Chief Technology Officer)</span>
+                  <span className="terms-contact-value">Tomoo Furuya (Representative Director)</span>
                 </div>
                 <div className="terms-contact-row">
                   <span className="terms-contact-label">Head Office</span>
@@ -652,7 +652,7 @@ export default function TokuteiShoutorihikiEN() {
             <p><strong>Effective Date:</strong> November 12, 2025</p>
             <p><strong>Last Updated:</strong> November 12, 2025</p>
             <p style={{marginTop: '1.5rem'}}>Solunai Systems Inc.</p>
-            <p>Representative: Carlos Magno Freitas Mundim</p>
+            <p>Representative: Tomoo Furuya</p>
           </section>
 
         </div>

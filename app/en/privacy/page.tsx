@@ -73,7 +73,7 @@ export default function PrivacyPolicyEN() {
                 </div>
                 <div className="terms-contact-row">
                   <span className="terms-contact-label">Representative</span>
-                  <span className="terms-contact-value">Carlos Magno Freitas Mundim</span>
+                  <span className="terms-contact-value">Tomoo Furuya</span>
                 </div>
                 <div className="terms-contact-row">
                   <span className="terms-contact-label">Head Office</span>
@@ -92,7 +92,7 @@ export default function PrivacyPolicyEN() {
                 </div>
                 <div className="terms-contact-row">
                   <span className="terms-contact-label">Protection Manager</span>
-                  <span className="terms-contact-value">Carlos Mundim (Chief Technology Officer)</span>
+                  <span className="terms-contact-value">Tomoo Furuya (Representative Director)</span>
                 </div>
               </div>
             </div>
@@ -666,7 +666,7 @@ export default function PrivacyPolicyEN() {
               </div>
               <div className="terms-contact-row">
                 <span className="terms-contact-label">Privacy Officer</span>
-                <span className="terms-contact-value">Carlos Magno Freitas Mundim (Chief Technology Officer)</span>
+                <span className="terms-contact-value">Tomoo Furuya (Representative Director)</span>
               </div>
               <div className="terms-contact-row">
                 <span className="terms-contact-label">Head Office</span>
@@ -691,7 +691,7 @@ export default function PrivacyPolicyEN() {
             <p><strong>Enacted:</strong> November 13, 2025</p>
             <p><strong>Last Updated:</strong> November 13, 2025</p>
             <p style={{marginTop: '1rem'}}>Solunai Systems Inc.</p>
-            <p>Representative Director: Carlos Magno Freitas Mundim</p>
+            <p>Representative Director: Tomoo Furuya</p>
           </section>
 
         </div>

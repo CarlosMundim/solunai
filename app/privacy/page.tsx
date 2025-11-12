@@ -32,11 +32,11 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-bold mb-4">2. 事業者情報</h2>
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="mb-2"><strong>事業者名:</strong> Solunai Systems株式会社（Solunai Systems K.K.）</p>
-              <p className="mb-2"><strong>代表者:</strong> カルロス・マグノ・フレイタス・ムンディム</p>
+              <p className="mb-2"><strong>代表者:</strong> 古屋智夫</p>
               <p className="mb-2"><strong>所在地:</strong> 〒222-0033 神奈川県横浜市港北区新横浜2-6-20 WISE NEXT 新横浜 4F</p>
               <p className="mb-2"><strong>電話番号:</strong> 045-285-9480</p>
               <p className="mb-2"><strong>メールアドレス:</strong> privacy@solunai.co.jp</p>
-              <p className="mb-2"><strong>個人情報保護管理者:</strong> カルロス・ムンディム（最高技術責任者）</p>
+              <p className="mb-2"><strong>個人情報保護管理者:</strong> 古屋智夫（代表取締役）</p>
             </div>
           </div>
 
@@ -310,7 +310,7 @@ export default function PrivacyPolicy() {
             <div className="bg-blue-50 p-6 rounded-lg">
               <p className="font-semibold mb-4">本プライバシーポリシーに関するお問い合わせは:</p>
               <p className="mb-2"><strong>Solunai Systems株式会社</strong></p>
-              <p className="mb-2">個人情報保護管理者: カルロス・マグノ・フレイタス・ムンディム（CTO）</p>
+              <p className="mb-2">個人情報保護管理者: 古屋智夫（代表取締役）</p>
               <p className="mb-2">〒222-0033 神奈川県横浜市港北区新横浜2-6-20 WISE NEXT 新横浜 4F</p>
               <p className="mb-2">メール: privacy@solunai.co.jp</p>
               <p className="mb-2">電話: 045-285-9480</p>
@@ -321,7 +321,7 @@ export default function PrivacyPolicy() {
             <p>制定日: 2025年11月13日</p>
             <p>最終更新日: 2025年11月13日</p>
             <p className="mt-4">Solunai Systems株式会社</p>
-            <p>代表取締役: カルロス・マグノ・フレイタス・ムンディム</p>
+            <p>代表取締役: 古屋智夫</p>
           </div>
         </section>
 
@@ -342,11 +342,11 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-bold mb-4">2. Company Information</h2>
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="mb-2"><strong>Company Name:</strong> Solunai Systems K.K.</p>
-              <p className="mb-2"><strong>Representative:</strong> Carlos Magno Freitas Mundim</p>
+              <p className="mb-2"><strong>Representative:</strong> Tomoo Furuya</p>
               <p className="mb-2"><strong>Address:</strong> WISE NEXT Shin-Yokohama 4F, 2-6-20 Shin-Yokohama, Kohoku-ku, Yokohama-shi, Kanagawa 222-0033, Japan</p>
               <p className="mb-2"><strong>Phone:</strong> 045-285-9480</p>
               <p className="mb-2"><strong>Email:</strong> privacy@solunai.co.jp</p>
-              <p className="mb-2"><strong>Personal Information Protection Manager:</strong> Carlos Mundim (CTO)</p>
+              <p className="mb-2"><strong>Personal Information Protection Manager:</strong> Tomoo Furuya (Representative Director)</p>
             </div>
           </div>
 
@@ -398,7 +398,7 @@ export default function PrivacyPolicy() {
             <h2 className="text-2xl font-bold mb-4">6. Contact for Inquiries</h2>
             <div className="bg-blue-50 p-6 rounded-lg">
               <p className="mb-2"><strong>Solunai Systems K.K.</strong></p>
-              <p className="mb-2">Personal Information Protection Manager: Carlos Mundim (CTO)</p>
+              <p className="mb-2">Personal Information Protection Manager: Tomoo Furuya (Representative Director)</p>
               <p className="mb-2">WISE NEXT Shin-Yokohama 4F, 2-6-20 Shin-Yokohama, Kohoku-ku, Yokohama-shi, Kanagawa 222-0033, Japan</p>
               <p className="mb-2">Email: privacy@solunai.co.jp</p>
               <p className="mb-2">Phone: 045-285-9480</p>
@@ -409,7 +409,7 @@ export default function PrivacyPolicy() {
             <p>Enacted: November 13, 2025</p>
             <p>Last Updated: November 13, 2025</p>
             <p className="mt-4">Solunai Systems K.K.</p>
-            <p>Representative Director: Carlos Magno Freitas Mundim</p>
+            <p>Representative Director: Tomoo Furuya</p>
           </div>
         </section>
       </main>
