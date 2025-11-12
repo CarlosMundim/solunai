@@ -4,7 +4,7 @@
   min-height: 70vh;
   display: flex;
   align-items: center;
-  padding: 120px 24px 100px;
+  padding: var(--section-spacing-desktop) 24px var(--section-spacing-desktop) 24px;
   overflow: hidden;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
@@ -131,7 +131,7 @@ html[lang="ja"] .overview-hero-column-right p {
 
 @media (max-width: 768px) {
   .overview-hero {
-    padding: 100px 20px 60px;
+    padding: var(--section-spacing-mobile) 20px var(--section-spacing-mobile) 20px;
     min-height: auto;
   }
 
@@ -160,7 +160,7 @@ html[lang="ja"] .overview-hero-column-right p {
 
 @media (max-width: 480px) {
   .overview-hero {
-    padding: 80px 16px 40px;
+    padding: var(--section-spacing-mobile) 16px var(--section-spacing-mobile) 16px;
   }
 
   .overview-hero-heading {
