@@ -1,7 +1,7 @@
 .technology-features {
   width: 100%;
   background: var(--bg-cream);
-  padding: var(--section-spacing-desktop) var(--container-padding-mobile);
+  padding: 80px var(--container-padding-mobile) var(--section-spacing-desktop) var(--container-padding-mobile);
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -80,7 +80,7 @@ html[lang="ja"] .technology-feature-description {
 
 @media (max-width: 768px) {
   .technology-features {
-    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
+    padding: 60px var(--container-padding-mobile) var(--section-spacing-mobile) var(--container-padding-mobile);
   }
 
   .technology-features-heading {
@@ -108,7 +108,7 @@ html[lang="ja"] .technology-feature-description {
 
 @media (max-width: 480px) {
   .technology-features {
-    padding: var(--section-spacing-mobile) 16px;
+    padding: 40px 16px var(--section-spacing-mobile) 16px;
   }
 
   .technology-features-heading {
