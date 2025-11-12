@@ -1,7 +1,7 @@
 .pm-key-capabilities {
   width: 100%;
   background: var(--bg-subtle-gray);
-  padding: var(--section-spacing-desktop) 24px;
+  padding: 80px 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -101,13 +101,13 @@ html[lang="ja"] .pm-capability-description {
 
 @media (max-width: 1024px) {
   .pm-key-capabilities {
-    padding: var(--section-spacing-tablet) 24px;
+    padding: 60px 24px;
   }
 }
 
 @media (max-width: 768px) {
   .pm-key-capabilities {
-    padding: var(--section-spacing-mobile) 20px;
+    padding: 40px 20px;
   }
 
   .pm-key-capabilities-heading {
