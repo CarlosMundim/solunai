@@ -146,7 +146,6 @@ const SolutionsStack: React.FC<SolutionsStackProps> = ({ lang }) => {
             >
               <div className="solution-card">
                 <div className="solution-card-content">
-                  <div className="solution-card-icon">{solution.icon}</div>
                   <h3 className="solution-card-title">{solution.title}</h3>
                   <p className="solution-card-description">{solution.description}</p>
                   <Link href={solution.link} className="solution-card-button">
