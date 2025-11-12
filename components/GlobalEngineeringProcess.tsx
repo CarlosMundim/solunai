@@ -185,7 +185,7 @@ const GlobalEngineeringProcess: React.FC<GlobalEngineeringProcessProps> = ({ lan
                 height: 'auto',
                 minHeight: '60vh',
                 paddingTop: '10vh',
-                paddingBottom: '10vh'
+                paddingBottom: '5vh'
               }}
             >
               <div className="phase-card">
