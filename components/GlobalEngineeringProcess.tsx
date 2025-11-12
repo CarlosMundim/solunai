@@ -183,8 +183,8 @@ const GlobalEngineeringProcess: React.FC<GlobalEngineeringProcessProps> = ({ lan
                 position: 'sticky',
                 top: 0,
                 height: 'auto',
-                minHeight: '60vh',
-                paddingTop: '10vh',
+                minHeight: '50vh',
+                paddingTop: '5vh',
                 paddingBottom: '5vh'
               }}
             >

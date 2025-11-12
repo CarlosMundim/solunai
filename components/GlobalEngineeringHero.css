@@ -4,7 +4,7 @@
   min-height: 90vh;
   display: flex;
   align-items: center;
-  padding: 80px 24px 80px 24px;
+  padding: var(--section-spacing-desktop) 24px var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
   overflow: hidden;
 }
@@ -101,7 +101,7 @@ html[lang="ja"] .global-engineering-hero-subheading {
 @media (max-width: 1024px) {
   .global-engineering-hero {
     min-height: 85vh;
-    padding: 60px 24px 60px 24px;
+    padding: var(--section-spacing-tablet) 24px var(--section-spacing-tablet) 24px;
   }
 
   .global-engineering-hero-heading {
@@ -120,7 +120,7 @@ html[lang="ja"] .global-engineering-hero-subheading {
 @media (max-width: 768px) {
   .global-engineering-hero {
     min-height: auto;
-    padding: 40px 20px 40px 20px;
+    padding: var(--section-spacing-mobile) 20px var(--section-spacing-mobile) 20px;
   }
 
   .global-engineering-hero-heading {
@@ -139,7 +139,7 @@ html[lang="ja"] .global-engineering-hero-subheading {
 
 @media (max-width: 480px) {
   .global-engineering-hero {
-    padding: 40px 16px 40px 16px;
+    padding: var(--section-spacing-mobile) 16px var(--section-spacing-mobile) 16px;
   }
 
   .global-engineering-hero-badge {
