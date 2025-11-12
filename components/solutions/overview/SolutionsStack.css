@@ -3,6 +3,7 @@
   width: 100%;
   background: var(--bg-cream);
   padding-top: var(--section-spacing-desktop);
+  padding-bottom: 40px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -139,7 +140,7 @@ html[lang="ja"] .solution-card-description {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .solutions-stack-header {
-    padding-bottom: 60px;
+    padding-bottom: 18px;
   }
 
   .solutions-stack-heading {
@@ -165,7 +166,7 @@ html[lang="ja"] .solution-card-description {
   }
 
   .solutions-stack-header {
-    padding: 0 16px 40px 16px;
+    padding: 0 16px 18px 16px;
   }
 
   .solutions-stack-heading {
