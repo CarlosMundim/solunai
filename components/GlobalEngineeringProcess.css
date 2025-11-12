@@ -8,7 +8,7 @@
 .process-header {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px 80px 20px;
+  padding: 0 20px 40px 20px;
   text-align: center;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .phase-title {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 700;
   color: #1a1a2e;
   margin: 0;
@@ -150,7 +150,7 @@
   }
 
   .process-header {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
   }
 
   .phase-card {
@@ -165,7 +165,7 @@
   }
 
   .process-header {
-    padding: 0 16px 40px 16px;
+    padding: 0 16px 24px 16px;
   }
 
   .process-title {
