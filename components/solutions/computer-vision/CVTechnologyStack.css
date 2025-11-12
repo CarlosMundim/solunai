@@ -1,7 +1,7 @@
 .cv-technology-stack {
   width: 100%;
   background: var(--bg-cream);
-  padding: var(--section-spacing-desktop) 24px;
+  padding: 80px 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -271,13 +271,13 @@ html[lang="ja"] .cv-technology-stack {
 
 @media (max-width: 1024px) {
   .cv-technology-stack {
-    padding: var(--section-spacing-tablet) 24px;
+    padding: 60px 24px;
   }
 }
 
 @media (max-width: 768px) {
   .cv-technology-stack {
-    padding: var(--section-spacing-mobile) 20px;
+    padding: 40px 20px;
   }
 
   .cv-technology-stack-heading {
