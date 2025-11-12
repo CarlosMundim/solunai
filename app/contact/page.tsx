@@ -75,7 +75,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section style={{
         background: 'linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%)',
-        padding: '120px 20px 60px',
+        padding: '200px 20px',
         textAlign: 'center',
         color: '#ffffff'
       }}>
@@ -454,7 +454,7 @@ export default function ContactPage() {
 
       {/* FAQ Section */}
       <section style={{
-        padding: '120px 20px',
+        padding: '80px 20px',
         backgroundColor: '#ffffff'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -571,7 +571,7 @@ export default function ContactPage() {
       {/* CTA Section */}
       <section style={{
         background: 'linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%)',
-        padding: '120px 20px',
+        padding: '200px 20px',
         textAlign: 'center'
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
