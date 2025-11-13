@@ -49,7 +49,7 @@ html[lang="ja"] .digital-twin-hero {
 
 .digital-twin-hero-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #0091ff 0%, #00b4d8 100%);
+  background: var(--solunai-blaze); /* Industrial Precision - Solid Bold Orange */
   color: #ffffff;
   font-size: 13px;
   font-weight: 700;
