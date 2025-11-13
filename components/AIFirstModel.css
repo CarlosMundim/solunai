@@ -88,8 +88,13 @@
   border-color: var(--border-cyan-subtle);
 }
 
+.comparison-card.traditional {
+  border: 1px solid #cccccc;
+  background: #fafafa;
+}
+
 .comparison-card.solunai {
-  border: 2px solid var(--bg-dark-1);
+  border: 1px solid var(--bg-dark-1);
   background: white;
 }
 
@@ -142,7 +147,7 @@
 
 .metric-row.highlight {
   background: white;
-  border-left: 4px solid var(--solunai-orange);
+  border-left: 1px solid var(--solunai-orange);
 }
 
 .metric-label {
@@ -168,39 +173,34 @@
 
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-top: 64px;
 }
 
 .benefit-card {
-  background: white;
+  background: #fafafa;
   border-radius: 24px;
   padding: 48px;
   text-align: center;
-  border: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-lg);
+  border: 1px solid #e0e0e0;
+  box-shadow: var(--shadow-sm);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .benefit-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-orange-cyan);
-  border-color: var(--border-cyan-subtle);
-}
-
-.benefit-icon {
-  font-size: 56px;
-  margin-bottom: 24px;
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: #cccccc;
 }
 
 .benefit-label {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   color: #666666;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .benefit-value {
@@ -245,11 +245,12 @@
 }
 
 .team-card.human-team {
-  border-top: 4px solid var(--bg-dark-1);
+  border-top: 1px solid var(--bg-dark-1);
+  background: #fafafa;
 }
 
 .team-card.ai-team {
-  border-top: 4px solid var(--solunai-orange);
+  border-top: 1px solid var(--solunai-orange);
   background: white;
 }
 
@@ -283,7 +284,7 @@
   padding: 20px;
   background: var(--bg-off-white);
   border-radius: 8px;
-  border-left: 3px solid var(--bg-dark-1);
+  border-left: 1px solid var(--bg-dark-1);
 }
 
 .role-title {
@@ -310,7 +311,7 @@
   padding: 20px;
   background: var(--bg-off-white);
   border-radius: 8px;
-  border-left: 3px solid var(--solunai-orange);
+  border-left: 1px solid var(--solunai-orange);
 }
 
 .category-title {
@@ -351,7 +352,7 @@
   color: var(--bg-dark-1);
   padding: 20px;
   background: var(--bg-off-white);
-  border-left: 4px solid var(--solunai-orange);
+  border-left: 1px solid var(--solunai-orange);
   border-radius: 8px;
 }
 
@@ -368,23 +369,18 @@
 }
 
 .impact-card {
-  background: white;
+  background: #fafafa;
   border-radius: 24px;
   padding: 48px;
-  border: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-lg);
+  border: 1px solid #e0e0e0;
+  box-shadow: var(--shadow-sm);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .impact-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-orange-cyan);
-  border-color: var(--border-cyan-subtle);
-}
-
-.impact-icon {
-  font-size: 56px;
-  margin-bottom: 24px;
+  box-shadow: var(--shadow-md);
+  border-color: #cccccc;
 }
 
 .impact-title {
@@ -561,7 +557,11 @@
     margin-bottom: 64px;
   }
 
-  .benefits-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
   .impact-grid {
     grid-template-columns: 1fr;
     gap: 32px;

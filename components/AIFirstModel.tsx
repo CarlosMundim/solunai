@@ -42,25 +42,21 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
         title: 'この構造により実現：',
         items: [
           {
-            icon: '💰',
             label: '顧客へ',
             value: '大幅なコスト削減',
             detail: '従来型モデルと比較して大幅な削減を実現'
           },
           {
-            icon: '📈',
             label: '当社',
             value: '高効率運営',
             detail: '業界標準を大幅に上回る効率を実現'
           },
           {
-            icon: '🇯🇵',
             label: '日本社会',
             value: '労働力不足解決',
             detail: '1,100万人の労働力不足問題に貢献'
           },
           {
-            icon: '⚡',
             label: '提供スピード',
             value: '大幅な高速化',
             detail: '従来4-6ヶ月を2-6週間で実現'
@@ -284,25 +280,21 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
         subtitle: 'Solunaiモデルが日本に与える影響',
         areas: [
           {
-            icon: '🏭',
             title: '中小企業のDX推進',
             description: '高額な従来型SIerでは手が届かなかった中小企業にも、AIソリューションを提供可能に',
             metric: '12兆円の損失回避に貢献'
           },
           {
-            icon: '👥',
             title: '労働力不足の解決',
             description: 'AIエージェントが反復作業を担当し、人間は高付加価値業務に集中。1,100万人の労働力不足問題に対応',
             metric: '2040年までの危機に対処'
           },
           {
-            icon: '💡',
             title: '人材の価値向上',
             description: '人間はAI監督・戦略決定・創造的業務に特化。スキルアップと高収入を実現',
             metric: '少数精鋭で高い生産性を実現'
           },
           {
-            icon: '🌱',
             title: '持続可能な成長',
             description: '高利益率により研究開発に再投資。継続的なイノベーションとサービス向上',
             metric: '利益の30%をR&Dに投資'
@@ -353,25 +345,21 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
         title: 'This Structure Enables:',
         items: [
           {
-            icon: '💰',
             label: 'For Clients',
             value: 'Significant Cost Reduction',
             detail: 'Major savings vs traditional model'
           },
           {
-            icon: '📈',
             label: 'For Solunai',
             value: 'High-Efficiency Operations',
             detail: 'Significantly above industry standard'
           },
           {
-            icon: '🇯🇵',
             label: 'For Japan',
             value: 'Labor Shortage Solution',
             detail: 'Contributing to solving 11M worker gap'
           },
           {
-            icon: '⚡',
             label: 'Delivery Speed',
             value: 'Dramatically Faster',
             detail: 'Traditional 4-6 months in 2-6 weeks'
@@ -595,25 +583,21 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
         subtitle: 'How Solunai Model Impacts Japan',
         areas: [
           {
-            icon: '🏭',
             title: 'SME DX Acceleration',
             description: 'Making AI solutions accessible to SMEs who couldn\'t afford traditional expensive SIers',
             metric: 'Contributing to avoiding ¥12T losses'
           },
           {
-            icon: '👥',
             title: 'Labor Shortage Solution',
             description: 'AI agents handle repetitive work while humans focus on high-value tasks. Addressing 11M worker shortage',
             metric: 'Tackling 2040 crisis'
           },
           {
-            icon: '💡',
             title: 'Human Value Enhancement',
             description: 'Humans specialize in AI supervision, strategy, creative work. Upskilling and higher income',
             metric: '12 people create value of traditional 100'
           },
           {
-            icon: '🌱',
             title: 'Sustainable Growth',
             description: 'High margins enable R&D reinvestment. Continuous innovation and service improvement',
             metric: '30% of profit to R&D'
@@ -688,7 +672,6 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
           <div className="benefits-grid">
             {currentContent.benefits.items.map((benefit, idx) => (
               <div key={idx} className="benefit-card">
-                <div className="benefit-icon">{benefit.icon}</div>
                 <div className="benefit-label">{benefit.label}</div>
                 <div className="benefit-value">{benefit.value}</div>
                 <div className="benefit-detail">{benefit.detail}</div>
@@ -750,7 +733,6 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
           <div className="impact-grid">
             {currentContent.impact.areas.map((area, idx) => (
               <div key={idx} className="impact-card">
-                <div className="impact-icon">{area.icon}</div>
                 <h4 className="impact-title">{area.title}</h4>
                 <p className="impact-description">{area.description}</p>
                 <div className="impact-metric">{area.metric}</div>
