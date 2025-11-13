@@ -140,14 +140,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background: var(--bg-off-white);
+  background: white;
+  border: 1px solid #888888;
   border-radius: 8px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .metric-row.highlight {
   background: white;
-  border-left: 1px solid var(--solunai-orange);
+  border: 1px solid var(--solunai-orange);
 }
 
 .metric-label {
