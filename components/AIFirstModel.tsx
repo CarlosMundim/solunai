@@ -17,7 +17,9 @@ import {
   Shield,
   GitBranch,
   Zap,
-  TrendingDown
+  TrendingDown,
+  X,
+  Check
 } from 'lucide-react';
 import './AIFirstModel.css';
 
@@ -659,6 +661,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
               <div className="comparison-metrics">
                 {currentContent.comparison.traditional.metrics.map((metric, idx) => (
                   <div key={idx} className="metric-row">
+                    <X className="metric-icon negative" size={20} strokeWidth={2.5} />
                     <span className="metric-label">{metric.label}</span>
                     <span className="metric-value">{metric.value}</span>
                   </div>
@@ -675,6 +678,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
               <div className="comparison-metrics">
                 {currentContent.comparison.solunai.metrics.map((metric, idx) => (
                   <div key={idx} className="metric-row highlight">
+                    <Check className="metric-icon positive" size={20} strokeWidth={2.5} />
                     <span className="metric-label">{metric.label}</span>
                     <span className="metric-value">{metric.value}</span>
                   </div>

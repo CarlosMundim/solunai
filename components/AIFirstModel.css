@@ -89,13 +89,52 @@
 }
 
 .comparison-card.traditional {
-  border: 1px solid #cccccc;
-  background: #fafafa;
+  border: 3px solid #999999;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  opacity: 0.85;
+  position: relative;
+}
+
+.comparison-card.traditional::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(0,0,0,0.02) 10px,
+    rgba(0,0,0,0.02) 20px
+  );
+  pointer-events: none;
 }
 
 .comparison-card.solunai {
-  border: 1px solid #cccccc;
-  background: white;
+  border: 3px solid var(--solunai-orange);
+  background: linear-gradient(135deg, #ffffff 0%, #fff7f5 100%);
+  box-shadow: 0 8px 24px rgba(255, 87, 34, 0.15);
+  position: relative;
+}
+
+.comparison-card.solunai::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(135deg, var(--solunai-orange), #ff7849);
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.comparison-card.solunai:hover::after {
+  opacity: 0.2;
 }
 
 .comparison-header {
@@ -165,6 +204,22 @@
 
 .metric-row.highlight .metric-value {
   color: var(--bg-dark-1);
+}
+
+/* Metric Icons (X and Check) */
+.metric-icon {
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+
+.metric-icon.negative {
+  color: #dc2626;
+  /* Red for Traditional */
+}
+
+.metric-icon.positive {
+  color: #16a34a;
+  /* Green for Solunai */
 }
 
 /* Benefits Grid */
