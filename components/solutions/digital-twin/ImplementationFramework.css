@@ -1,7 +1,7 @@
 .implementation-framework {
   width: 100%;
   background: #ffffff;
-  padding: 80px 24px;
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -210,7 +210,7 @@ html[lang="ja"] .support-item-description {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .implementation-framework {
-    padding: 60px 24px;
+    padding: var(--section-spacing-tablet) 24px;
   }
 
   .implementation-framework-heading {
@@ -228,7 +228,7 @@ html[lang="ja"] .support-item-description {
 
 @media (max-width: 768px) {
   .implementation-framework {
-    padding: 40px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .implementation-framework-heading {

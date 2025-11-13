@@ -1,7 +1,7 @@
 .fbm-case-study {
   width: 100%;
   background: #ffffff;
-  padding: 80px 24px;
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -333,7 +333,7 @@ html[lang="ja"] .significance-point {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .fbm-case-study {
-    padding: 60px 24px;
+    padding: var(--section-spacing-tablet) 24px;
   }
 
   .fbm-heading {
@@ -347,7 +347,7 @@ html[lang="ja"] .significance-point {
 
 @media (max-width: 768px) {
   .fbm-case-study {
-    padding: 40px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .fbm-heading {
