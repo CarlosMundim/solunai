@@ -1,7 +1,7 @@
 .pm-what-is-pm {
   width: 100%;
   background: var(--bg-cream);
-  padding: 80px 24px;
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -236,6 +236,10 @@ html[lang="ja"] .pm-what-is-pm-intro {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .pm-what-is-pm {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+
   .pm-what-is-pm-heading {
     font-size: 40px;
   }
@@ -255,15 +259,9 @@ html[lang="ja"] .pm-what-is-pm-intro {
   }
 }
 
-@media (max-width: 1024px) {
-  .pm-what-is-pm {
-    padding: 60px 24px;
-  }
-}
-
 @media (max-width: 768px) {
   .pm-what-is-pm {
-    padding: 40px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .pm-what-is-pm-heading {
