@@ -16,7 +16,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
+  /* Industrial Precision - Solid Navy */
   z-index: -2;
 }
 
@@ -49,7 +50,8 @@ html[lang="ja"] .overview-hero {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
-  color: #FF5722;
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
   margin-bottom: 32px;
   text-transform: uppercase;
 }
@@ -64,7 +66,8 @@ html[lang="ja"] .overview-hero {
 }
 
 .overview-hero-heading-highlight {
-  color: #FF5722;
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
   display: block;
 }
 

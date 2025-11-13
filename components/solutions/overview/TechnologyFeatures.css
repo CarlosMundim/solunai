@@ -39,9 +39,11 @@ html[lang="ja"] .technology-features {
 }
 
 .technology-feature-card:hover {
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-forge);
+  /* Forge glow */
   transform: translateY(-2px);
-  border-color: #9ca3af;
+  border-color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
 }
 
 .technology-feature-title {

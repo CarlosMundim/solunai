@@ -1,6 +1,7 @@
 .final-cta {
   width: 100%;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
+  /* Industrial Precision - Solid Navy */
   padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
   position: relative;
@@ -18,7 +19,8 @@ html[lang="ja"] .final-cta {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 50% 50%, rgba(255, 87, 34, 0.1) 0%, transparent 50%);
+  background: radial-gradient(circle at 50% 50%, rgba(245, 72, 10, 0.15) 0%, transparent 50%);
+  /* Orange forge glow overlay */
   pointer-events: none;
 }
 
@@ -53,7 +55,8 @@ html[lang="ja"] .final-cta {
 }
 
 .final-cta-heading-highlight {
-  color: #FF5722;
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
   display: block;
   margin-top: 8px;
 }
@@ -85,21 +88,24 @@ html[lang="ja"] .final-cta-description {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #FF5722;
-  color: #ffffff;
+  background: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
+  color: var(--precision-white);
   font-size: 18px;
   font-weight: 600;
   padding: 20px 32px;
   border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 14px rgba(255, 87, 34, 0.3);
+  box-shadow: var(--shadow-orange);
 }
 
 .final-cta-button:hover {
-  background: #E64A19;
+  background: var(--heat-glow);
+  /* Lighter orange on hover */
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 87, 34, 0.4);
+  box-shadow: var(--shadow-forge);
+  /* Forge glow */
 }
 
 .final-cta-button:active {

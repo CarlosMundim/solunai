@@ -73,8 +73,10 @@ html[lang="ja"] .solutions-stack-description {
 }
 
 .solution-card:hover {
-  border-color: var(--border-cyan-subtle);
-  box-shadow: var(--shadow-orange-cyan);
+  border-color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
+  box-shadow: var(--shadow-forge);
+  /* Forge glow */
 }
 
 .solution-card-content {
@@ -95,7 +97,8 @@ html[lang="ja"] .solutions-stack-description {
 .solution-card-title {
   font-size: 36px;
   font-weight: 700;
-  color: #1a1a2e;
+  color: var(--forge-black);
+  /* Industrial Precision - Deep Black */
   margin: 0;
   line-height: 1.2;
 }
@@ -117,8 +120,9 @@ html[lang="ja"] .solution-card-description {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--solunai-orange) 0%, var(--solunai-orange-dark) 100%);
-  color: #ffffff;
+  background: var(--solunai-blaze);
+  /* Industrial Precision - Solid Bold Orange */
+  color: var(--precision-white);
   font-size: 16px;
   font-weight: 700;
   padding: 14px 32px;
@@ -127,14 +131,16 @@ html[lang="ja"] .solution-card-description {
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.2);
+  box-shadow: var(--shadow-orange);
   margin-top: 8px;
 }
 
 .solution-card-button:hover {
-  background: linear-gradient(135deg, var(--solunai-orange-light) 0%, var(--solunai-orange) 100%);
+  background: var(--heat-glow);
+  /* Lighter orange on hover */
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 87, 34, 0.35);
+  box-shadow: var(--shadow-forge);
+  /* Forge glow */
 }
 
 /* Responsive Design */
