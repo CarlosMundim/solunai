@@ -41,7 +41,7 @@
 .card-icon {
   width: 64px;
   height: 64px;
-  background: linear-gradient(135deg, #FF5722, #E64A19);
+  background: var(--solunai-blaze);
   border-radius: 16px;
   display: flex;
   align-items: center;

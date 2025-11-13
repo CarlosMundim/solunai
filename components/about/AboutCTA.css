@@ -1,6 +1,6 @@
 .about-cta {
   padding: var(--section-spacing-desktop) 0;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
 }
 
 .about-cta-container {
@@ -43,14 +43,14 @@
 }
 
 .cta-button.primary {
-  background: #FF5722;
+  background: var(--solunai-blaze);
   color: #ffffff;
-  border: 2px solid #FF5722;
+  border: 2px solid var(--solunai-blaze);
 }
 
 .cta-button.primary:hover {
-  background: #E64A19;
-  border-color: #E64A19;
+  background: var(--ember);
+  border-color: var(--ember);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(255, 87, 34, 0.4);
 }

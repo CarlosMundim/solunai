@@ -52,7 +52,7 @@ html[lang="ja"] .implementation-framework {
 }
 
 .phase-card:hover {
-  border-color: #0091ff;
+  border-color: var(--solunai-blaze);
   box-shadow: 0 12px 32px rgba(245, 72, 10, 0.15);
   transform: translateY(-8px);
 }
@@ -69,7 +69,7 @@ html[lang="ja"] .implementation-framework {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #0091ff;
+  color: var(--solunai-blaze);
   padding: 6px 16px;
   background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
   border-radius: 20px;
@@ -128,7 +128,7 @@ html[lang="ja"] .implementation-framework {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #0091ff;
+  color: var(--solunai-blaze);
   font-weight: 700;
 }
 
@@ -138,7 +138,7 @@ html[lang="ja"] .implementation-framework {
   border-top: 1px solid #e5e7eb;
   font-size: 15px;
   font-weight: 700;
-  color: #0091ff;
+  color: var(--solunai-blaze);
 }
 
 .support-section {
@@ -171,7 +171,7 @@ html[lang="ja"] .implementation-framework {
 }
 
 .support-item:hover {
-  border-color: #0091ff;
+  border-color: var(--solunai-blaze);
   box-shadow: 0 4px 12px rgba(245, 72, 10, 0.1);
 }
 

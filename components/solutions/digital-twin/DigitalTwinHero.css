@@ -116,7 +116,7 @@ html[lang="ja"] .digital-twin-hero-subheading {
 .digital-twin-hero-split-title {
   font-size: 16px;
   font-weight: 700;
-  color: #0091ff;
+  color: var(--solunai-blaze);
   margin: 0 0 16px 0;
   text-transform: uppercase;
   letter-spacing: 0.08em;

@@ -74,7 +74,7 @@ export default function ContactPage() {
 
       {/* Hero Section */}
       <section style={{
-        background: 'linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%)',
+        background: '#1a2332',
         padding: '120px 20px 60px',
         textAlign: 'center',
         color: '#ffffff'
@@ -311,7 +311,7 @@ export default function ContactPage() {
                 style={{
                   width: '100%',
                   padding: '16px 32px',
-                  backgroundColor: '#FF5722',
+                  backgroundColor: '#f5480a',
                   color: '#ffffff',
                   fontSize: '18px',
                   fontWeight: 600,
@@ -319,14 +319,14 @@ export default function ContactPage() {
                   borderRadius: '50px',
                   cursor: 'pointer',
                   transition: 'all 0.3s ease',
-                  boxShadow: '0 4px 6px rgba(255, 87, 34, 0.3)'
+                  boxShadow: '0 8px 32px rgba(245, 72, 10, 0.25)'
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#E64A19';
+                  e.currentTarget.style.backgroundColor = '#ff6b35';
                   e.currentTarget.style.transform = 'translateY(-2px)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#FF5722';
+                  e.currentTarget.style.backgroundColor = '#f5480a';
                   e.currentTarget.style.transform = 'translateY(0)';
                 }}
               >
@@ -367,7 +367,7 @@ export default function ContactPage() {
                 <h3 style={{
                   fontSize: '20px',
                   fontWeight: 600,
-                  color: '#FF5722',
+                  color: '#f5480a',
                   marginBottom: '16px'
                 }}>
                   Yokohama Headquarters
@@ -387,7 +387,7 @@ export default function ContactPage() {
                   </p>
                   <p>
                     <strong>Email:</strong>{' '}
-                    <a href="mailto:info@solunai.co.jp" style={{ color: '#FF5722' }}>
+                    <a href="mailto:info@solunai.co.jp" style={{ color: '#f5480a' }}>
                       info@solunai.co.jp
                     </a>
                   </p>
@@ -399,7 +399,7 @@ export default function ContactPage() {
                 <h3 style={{
                   fontSize: '20px',
                   fontWeight: 600,
-                  color: '#FF5722',
+                  color: '#f5480a',
                   marginBottom: '16px'
                 }}>
                   Tokyo Branch
@@ -419,7 +419,7 @@ export default function ContactPage() {
                   </p>
                   <p>
                     <strong>Email:</strong>{' '}
-                    <a href="mailto:tokyo@solunai.co.jp" style={{ color: '#FF5722' }}>
+                    <a href="mailto:tokyo@solunai.co.jp" style={{ color: '#f5480a' }}>
                       tokyo@solunai.co.jp
                     </a>
                   </p>
@@ -486,7 +486,7 @@ export default function ContactPage() {
                 }}
                 onClick={() => setOpenFaq(openFaq === index ? null : index)}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#FF5722';
+                  e.currentTarget.style.borderColor = '#f5480a';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.borderColor = 'transparent';
@@ -507,7 +507,7 @@ export default function ContactPage() {
                   </h3>
                   <span style={{
                     fontSize: '24px',
-                    color: '#FF5722',
+                    color: '#f5480a',
                     transition: 'transform 0.3s ease',
                     transform: openFaq === index ? 'rotate(45deg)' : 'rotate(0deg)'
                   }}>
@@ -570,7 +570,7 @@ export default function ContactPage() {
 
       {/* CTA Section */}
       <section style={{
-        background: 'linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%)',
+        background: '#1a2332',
         padding: '120px 20px',
         textAlign: 'center'
       }}>
@@ -597,21 +597,21 @@ export default function ContactPage() {
             style={{
               display: 'inline-block',
               padding: '20px 48px',
-              backgroundColor: '#FF5722',
+              backgroundColor: '#f5480a',
               color: '#ffffff',
               fontSize: '18px',
               fontWeight: 600,
               borderRadius: '50px',
               textDecoration: 'none',
               transition: 'all 0.3s ease',
-              boxShadow: '0 8px 16px rgba(255, 87, 34, 0.3)'
+              boxShadow: '0 8px 32px rgba(245, 72, 10, 0.25)'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = '#E64A19';
+              e.currentTarget.style.backgroundColor = '#ff6b35';
               e.currentTarget.style.transform = 'translateY(-2px)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#FF5722';
+              e.currentTarget.style.backgroundColor = '#f5480a';
               e.currentTarget.style.transform = 'translateY(0)';
             }}
           >

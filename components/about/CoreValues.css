@@ -43,7 +43,7 @@
 }
 
 .value-card:hover {
-  border-color: #FF5722;
+  border-color: var(--solunai-blaze);
   transform: translateY(-5px);
   box-shadow: 0 8px 30px rgba(255, 87, 34, 0.15);
 }

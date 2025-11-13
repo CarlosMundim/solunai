@@ -110,7 +110,7 @@ html[lang="ja"] .technology-partners-subheading {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #0091ff;
+  color: var(--solunai-blaze);
   font-weight: 700;
   font-size: 16px;
 }

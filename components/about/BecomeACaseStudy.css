@@ -1,6 +1,6 @@
 .become-case-study {
   padding: var(--section-spacing-desktop) 0;
-  background: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
+  background: var(--solunai-blaze);
 }
 
 .become-case-study-container {
@@ -62,7 +62,7 @@
 .become-case-study-button {
   display: inline-block;
   background: #ffffff;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   padding: 20px 48px;
   border-radius: 50px;
   font-size: 18px;

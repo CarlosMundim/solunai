@@ -11,7 +11,7 @@
 
 .case-study-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #FF5722, #E64A19);
+  background: var(--solunai-blaze);
   color: #ffffff;
   padding: 8px 20px;
   border-radius: 50px;
@@ -68,7 +68,7 @@
 .project-value {
   font-size: 20px;
   font-weight: 600;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   padding: 12px 20px;
   background: rgba(255, 87, 34, 0.1);
   border-radius: 8px;
@@ -129,7 +129,7 @@
 .result-value {
   font-size: 32px;
   font-weight: 700;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   margin-bottom: 8px;
 }
 
@@ -148,8 +148,8 @@
 
 .tech-tag {
   background: #ffffff;
-  border: 2px solid #FF5722;
-  color: #FF5722;
+  border: 2px solid var(--solunai-blaze);
+  color: var(--solunai-blaze);
   padding: 12px 24px;
   border-radius: 50px;
   font-size: 14px;
@@ -158,7 +158,7 @@
 }
 
 .tech-tag:hover {
-  background: #FF5722;
+  background: var(--solunai-blaze);
   color: #ffffff;
 }
 

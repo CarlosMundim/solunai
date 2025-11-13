@@ -65,7 +65,7 @@
 .case-study-value {
   font-size: 20px;
   font-weight: 600;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   padding: 8px 16px;
   background: rgba(255, 87, 34, 0.1);
   border-radius: 50px;
@@ -112,7 +112,7 @@
 .result-bullet {
   position: absolute;
   left: 0;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   font-weight: 700;
 }
 

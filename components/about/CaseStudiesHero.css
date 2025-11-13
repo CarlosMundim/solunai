@@ -23,7 +23,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
   z-index: 1;
 }
 
@@ -65,7 +65,7 @@
 .case-studies-hero-subtitle {
   font-size: 24px;
   font-weight: 600;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   margin-bottom: 16px;
 }
 
@@ -103,7 +103,7 @@
 .stat-value {
   font-size: 36px;
   font-weight: 700;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   margin-bottom: 8px;
   line-height: 1;
 }

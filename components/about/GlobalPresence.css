@@ -1,6 +1,6 @@
 .global-presence {
   padding: 120px 0;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
 }
 
 .global-presence-container {
@@ -58,7 +58,7 @@
 .location-region {
   font-size: 24px;
   font-weight: 700;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   margin-bottom: 12px;
 }
 

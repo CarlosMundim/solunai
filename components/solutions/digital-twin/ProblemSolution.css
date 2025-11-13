@@ -61,7 +61,7 @@ html[lang="ja"] .problem-solution-intro p {
 }
 
 .solution-card:hover {
-  border-color: #0091ff;
+  border-color: var(--solunai-blaze);
 }
 
 .problem-solution-title {
@@ -78,7 +78,7 @@ html[lang="ja"] .problem-solution-intro p {
 }
 
 .solution-card .problem-solution-title {
-  color: #0091ff;
+  color: var(--solunai-blaze);
 }
 
 .problem-solution-card p {

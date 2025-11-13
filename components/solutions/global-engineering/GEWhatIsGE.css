@@ -282,7 +282,7 @@ html[lang="ja"] .ge-comparison-list li {
 .ge-after .ge-label {
   background: #ffffff;
   color: #171717;
-  border: 1px solid #0091ff;
+  border: 1px solid var(--solunai-blaze);
 }
 
 .ge-scenario-comparison p {

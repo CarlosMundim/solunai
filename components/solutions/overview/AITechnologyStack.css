@@ -63,7 +63,7 @@ html[lang="ja"] .ai-technology-stack {
 .ai-tech-card-title {
   font-size: 24px;
   font-weight: 700;
-  color: #0091ff;
+  color: var(--solunai-blaze);
   margin: 0 0 16px 0;
   line-height: 1.3;
 }
