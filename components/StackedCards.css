@@ -140,6 +140,7 @@
   object-fit: cover;
   object-position: center;
   display: block;
+  transform: scale(1.05);
 }
 
 /* Tablet Styles */
