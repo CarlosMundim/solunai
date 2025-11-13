@@ -10,6 +10,7 @@ interface ProblemSolutionProps {
 const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
   const content = {
     ja: {
+      heading: 'エンタープライズ技術を中小企業の価格で',
       intro: '大手ベンダーのデジタルツイン技術（Siemens、PTC、Dassault）を、中小製造業でも導入可能に。Solunaiは複数のベンダーシステムを統合し、既存設備と連携する「データ統合の専門家」です。',
       problemTitle: 'SME製造業の課題',
       problem: 'Siemens、GE、Microsoft などの大手デジタルツインソリューションは高額で複雑。中小製造業には導入コストが高く、既存の複数ベンダーシステム（PLC、SCADA、MES）との統合が困難です。',
@@ -17,6 +18,7 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
       solution: 'Solunaiは「統合スペシャリスト」として、あらゆるベンダーのシステムをISA-95標準に基づいて統一。NVIDIA Omniverse、Siemens、Ansysなど業界リーダーとのパートナーシップを活用し、中小企業に手の届く価格で提供します。'
     },
     en: {
+      heading: 'Enterprise Technology at SME Pricing',
       intro: 'Access enterprise-grade digital twin technology from Siemens, PTC, and Dassault — designed for mid-sized manufacturers. Solunai is the integration specialist that connects multi-vendor systems with your existing equipment.',
       problemTitle: 'The SME Challenge',
       problem: 'Enterprise digital twin solutions from Siemens, GE, and Microsoft are expensive and complex. Mid-sized manufacturers struggle with high implementation costs and integration across multiple vendor systems (PLC, SCADA, MES).',
@@ -30,6 +32,7 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
   return (
     <section className="problem-solution">
       <div className="problem-solution-container">
+        <h2 className="problem-solution-heading">{t.heading}</h2>
         <div className="problem-solution-intro">
           <p>{t.intro}</p>
         </div>
