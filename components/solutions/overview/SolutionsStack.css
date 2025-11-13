@@ -2,8 +2,7 @@
   position: relative;
   width: 100%;
   background: var(--bg-cream);
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding: var(--section-spacing-desktop) 0;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -145,6 +144,10 @@ html[lang="ja"] .solution-card-description {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .solutions-stack {
+    padding: var(--section-spacing-tablet) 0;
+  }
+
   .solutions-stack-header {
     padding-bottom: 18px;
   }
@@ -168,8 +171,7 @@ html[lang="ja"] .solution-card-description {
 
 @media (max-width: 768px) {
   .solutions-stack {
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding: var(--section-spacing-mobile) 0;
   }
 
   .solutions-stack-header {
