@@ -67,15 +67,16 @@
   z-index: 1;
 }
 
-/* ----- Red Ribbons ----- */
+/* ----- Orange Ribbons - Industrial Precision ----- */
 .hero-ribbon-top {
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 6px;
-  background: #FF5722;
-  box-shadow: 0 0 10px rgba(255, 87, 34, 0.4);
+  background: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
+  box-shadow: 0 0 10px rgba(245, 72, 10, 0.4);
   z-index: 3;
   animation: ribbonDrawTop 0.6s cubic-bezier(0.4, 0, 0.2, 1) 0.8s forwards;
 }
@@ -86,8 +87,9 @@
   right: 0;
   width: 6px;
   height: 0;
-  background: #FF5722;
-  box-shadow: 0 0 10px rgba(255, 87, 34, 0.4);
+  background: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
+  box-shadow: 0 0 10px rgba(245, 72, 10, 0.4);
   z-index: 3;
   animation: ribbonDrawRight 0.6s cubic-bezier(0.4, 0, 0.2, 1) 1.0s forwards;
 }
@@ -177,17 +179,18 @@
   opacity: 0.5;
 }
 
-/* ----- CTA Button ----- */
+/* ----- CTA Button - Industrial Precision ----- */
 .hero-cta-button {
   display: inline-block;
   padding: 18px 48px;
-  background: #FF5722;
-  color: #FFFFFF;
+  background: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
+  color: var(--precision-white);
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   border-radius: 4px;
-  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.3);
+  box-shadow: var(--shadow-orange);
   transition: all 0.3s ease;
   align-self: flex-start;
   opacity: 0;
@@ -196,15 +199,18 @@
 }
 
 .hero-cta-button:hover {
-  background: #E64A19;
-  box-shadow: 0 6px 16px rgba(255, 87, 34, 0.4);
+  background: var(--heat-glow);
+  /* Lighter orange on hover */
+  box-shadow: var(--shadow-forge);
+  /* Forge glow */
   transform: translateY(-2px);
 }
 
 .hero-cta-button:active {
-  background: #D84315;
+  background: var(--ember);
+  /* Dark orange on active */
   transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(255, 87, 34, 0.3);
+  box-shadow: var(--shadow-orange);
 }
 
 .hero-cta-button:focus {

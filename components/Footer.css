@@ -1,7 +1,8 @@
 .footer-section {
   width: 100%;
-  background: #1a1a2e;
-  color: #ffffff;
+  background: var(--forge-black);
+  /* Industrial Precision - Deep Black Strength */
+  color: var(--precision-white);
   padding: 80px 20px 40px 20px;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
@@ -84,11 +85,13 @@
 }
 
 .footer-link:hover {
-  color: #ffffff;
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
 }
 
 .footer-link:focus-visible {
-  outline: 0.125rem solid #4d65ff;
+  outline: 0.125rem solid var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
   outline-offset: 0.125rem;
   border-radius: 2px;
 }
@@ -152,12 +155,14 @@
 }
 
 .footer-social:hover {
-  color: #ffffff;
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
   transform: translateY(-2px);
 }
 
 .footer-social:focus-visible {
-  outline: 0.125rem solid #4d65ff;
+  outline: 0.125rem solid var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
   outline-offset: 0.125rem;
   border-radius: 4px;
 }

@@ -2,7 +2,8 @@
   position: relative;
   width: 100%;
   padding: var(--section-spacing-desktop) var(--container-padding-mobile);
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
+  /* Industrial Precision - Solid Navy */
 }
 
 .primary-cta-container {
@@ -47,8 +48,9 @@
   align-items: center;
   gap: 12px;
   padding: 20px 48px;
-  background: var(--gradient-orange);
-  color: #ffffff;
+  background: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
+  color: var(--precision-white);
   font-size: 18px;
   font-weight: 600;
   border: none;
@@ -62,8 +64,10 @@
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: var(--card-hover-shadow);
-  background: var(--gradient-orange-hover);
+  box-shadow: var(--shadow-forge);
+  /* Forge glow on hover */
+  background: var(--heat-glow);
+  /* Lighter orange */
 }
 
 .cta-button:active {
@@ -99,7 +103,8 @@
 }
 
 .cta-feature-check {
-  color: #FF5722;
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
   font-weight: 700;
   font-size: 20px;
 }

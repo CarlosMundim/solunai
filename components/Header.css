@@ -76,7 +76,8 @@
 
 .main-nav a {
   text-decoration: none;
-  color: #1a1a2e;
+  color: var(--steel-navy);
+  /* Industrial Precision - Dark Navy */
   font-weight: 500;
   font-size: 16px;
   transition: color 0.3s ease;
@@ -84,7 +85,8 @@
 }
 
 .main-nav a:hover {
-  color: #2E3192;
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
 }
 
 .main-nav a::after {
@@ -94,7 +96,8 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: #2E3192;
+  background: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
   transition: width 0.3s ease;
 }
 
@@ -108,7 +111,8 @@
   align-items: center;
   gap: 6px;
   cursor: pointer;
-  color: #1a1a2e;
+  color: var(--steel-navy);
+  /* Industrial Precision - Dark Navy */
   font-weight: 500;
   font-size: 16px;
   transition: color 0.3s ease;
@@ -116,7 +120,8 @@
 }
 
 .dropdown-trigger:hover {
-  color: #2E3192;
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
 }
 
 .dropdown-icon {
@@ -163,7 +168,8 @@
 .dropdown-menu a {
   display: block;
   padding: 12px 24px;
-  color: #1a1a2e;
+  color: var(--steel-navy);
+  /* Industrial Precision - Dark Navy */
   font-weight: 400;
   font-size: 16px;
   text-decoration: none;
@@ -176,8 +182,10 @@
 }
 
 .dropdown-menu a:hover {
-  background-color: #f5f5f5;
-  color: #2E3192;
+  background-color: rgba(245, 72, 10, 0.08);
+  /* Industrial Precision - Orange tint */
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
 }
 
 .dropdown-menu li:not(:last-child) {
@@ -191,18 +199,22 @@
 
 .lang-switch {
   text-decoration: none;
-  color: #666;
+  color: var(--titanium-grey);
+  /* Industrial Precision - Cool Grey */
   padding: 8px 16px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--silver-mist);
+  /* Industrial Precision - Light Grey */
   border-radius: 4px;
   transition: all 0.3s ease;
   display: inline-block;
 }
 
 .lang-switch:hover {
-  background: #f5f5f5;
-  color: #2E3192;
-  border-color: #2E3192;
+  background: rgba(245, 72, 10, 0.08);
+  /* Industrial Precision - Orange tint */
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
+  border-color: var(--solunai-blaze);
 }
 
 /* ----- Mobile Menu Button ----- */
@@ -225,7 +237,8 @@
   display: block;
   width: 100%;
   height: 2px;
-  background: #1a1a2e;
+  background: var(--steel-navy);
+  /* Industrial Precision - Dark Navy */
   transition: all 0.3s ease;
 }
 
@@ -284,7 +297,8 @@
   padding: 16px 0;
   background: none;
   border: none;
-  color: #1a1a2e;
+  color: var(--steel-navy);
+  /* Industrial Precision - Dark Navy */
   font-weight: 500;
   font-size: 18px;
   cursor: pointer;
@@ -329,7 +343,8 @@
 .mobile-dropdown-menu a {
   display: block;
   padding: 12px 16px;
-  color: #1a1a2e;
+  color: var(--steel-navy);
+  /* Industrial Precision - Dark Navy */
   font-weight: 400;
   font-size: 16px;
   text-decoration: none;
@@ -338,8 +353,10 @@
 }
 
 .mobile-dropdown-menu a:hover {
-  background-color: #ffffff;
-  color: #2E3192;
+  background-color: rgba(245, 72, 10, 0.08);
+  /* Industrial Precision - Orange tint */
+  color: var(--solunai-blaze);
+  /* Industrial Precision - Bold Orange */
 }
 
 /* ----- Responsive: Mobile ----- */
