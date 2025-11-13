@@ -1,7 +1,7 @@
 .global-engineering-benefits {
   position: relative;
   width: 100%;
-  padding: 80px var(--container-padding-mobile) 80px var(--container-padding-mobile);
+  padding: var(--section-spacing-desktop) var(--container-padding-mobile) var(--section-spacing-desktop) var(--container-padding-mobile);
   background: var(--bg-cream);
 }
 
@@ -192,13 +192,13 @@
 
 @media (max-width: 1024px) {
   .global-engineering-benefits {
-    padding: 60px var(--container-padding-tablet) 60px var(--container-padding-tablet);
+    padding: var(--section-spacing-tablet) var(--container-padding-tablet) var(--section-spacing-tablet) var(--container-padding-tablet);
   }
 }
 
 @media (max-width: 768px) {
   .global-engineering-benefits {
-    padding: 40px var(--container-padding-mobile) 40px var(--container-padding-mobile);
+    padding: var(--section-spacing-mobile) var(--container-padding-mobile) var(--section-spacing-mobile) var(--container-padding-mobile);
   }
 
   .benefits-title {

@@ -1,7 +1,7 @@
 .global-engineering-process {
   position: relative;
   width: 100%;
-  padding-top: 80px;
+  padding-top: var(--section-spacing-desktop);
   padding-bottom: 20px;
   background: var(--bg-cream);
 }
@@ -147,7 +147,7 @@
 
 @media (max-width: 1024px) {
   .global-engineering-process {
-    padding-top: 60px;
+    padding-top: var(--section-spacing-tablet);
     padding-bottom: 20px;
   }
 
@@ -163,7 +163,7 @@
 
 @media (max-width: 768px) {
   .global-engineering-process {
-    padding-top: 40px;
+    padding-top: var(--section-spacing-mobile);
     padding-bottom: 20px;
   }
 
