@@ -1,7 +1,7 @@
 .po-what-is-po {
   width: 100%;
   background: var(--bg-cream);
-  padding: 80px 24px;
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -236,6 +236,10 @@ html[lang="ja"] .po-what-is-po-intro {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .po-what-is-po {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+
   .po-what-is-po-heading {
     font-size: 40px;
   }
@@ -255,15 +259,9 @@ html[lang="ja"] .po-what-is-po-intro {
   }
 }
 
-@media (max-width: 1024px) {
-  .po-what-is-po {
-    padding: 60px 24px;
-  }
-}
-
 @media (max-width: 768px) {
   .po-what-is-po {
-    padding: 40px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .po-what-is-po-heading {
