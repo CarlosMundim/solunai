@@ -3,49 +3,59 @@
 @tailwind utilities;
 
 :root {
-  /* Brand Colors */
-  --solunai-orange: #FF5722;
-  --solunai-orange-dark: #E64A19;
-  --solunai-orange-light: #FF7043;
+  /* ============================================ */
+  /* INDUSTRIAL PRECISION PALETTE - THE FORGE    */
+  /* Born from The Honesty Moment - Jan 13, 2025 */
+  /* ============================================ */
 
-  /* Accent Colors - Cyan */
-  --accent-cyan: #00D4FF;
-  --accent-cyan-dark: #00B8E6;
-  --accent-cyan-light: #4DDFFF;
-  --accent-cyan-neon: rgba(0, 212, 255, 0.5);
+  /* Core Industrial Precision Colors */
+  --solunai-blaze: #f5480a;        /* Bold Orange - Our Signature */
+  --forge-black: #0d0d0d;          /* Deep Black - Strength Foundation */
+  --steel-navy: #1a2332;           /* Dark Navy - Corporate Trust */
+  --titanium-grey: #475569;        /* Cool Grey - Professional Balance */
+  --precision-white: #f8fafc;      /* Off-white - Premium Clean */
+
+  /* Accent & Effects */
+  --heat-glow: #ff6b35;            /* Lighter Orange - Hover States */
+  --ember: #c23800;                /* Dark Orange - Depth/Shadow */
+  --steel-blue: #64748b;           /* Neutral Blue - Data/Metrics */
+  --silver-mist: #e2e8f0;          /* Light Grey - Subtle Backgrounds */
+
+  /* Legacy Compatibility (Mapped to Industrial Precision) */
+  --solunai-orange: #f5480a;       /* Same as solunai-blaze */
+  --solunai-orange-dark: #c23800;  /* Same as ember */
+  --solunai-orange-light: #ff6b35; /* Same as heat-glow */
 
   /* Background Colors */
   --background: #ffffff;
   --foreground: #171717;
-  --bg-dark-1: #1a1a2e;
-  --bg-dark-2: #2d2d44;
-  --bg-dark-3: #16213e;
+  --bg-dark-1: #1a2332;            /* Updated to Steel Navy */
+  --bg-dark-2: #0d0d0d;            /* Updated to Forge Black */
+  --bg-dark-3: #16213e;            /* Keep for compatibility */
 
-  /* PlayerZero-Inspired Backgrounds */
+  /* Clean Backgrounds (Keep useful ones) */
   --bg-cream: #f0efeb;
   --bg-subtle-gray: #f7f7f7;
   --bg-muted-brown: #787168;
   --bg-pure-black: #000000;
   --bg-off-white: #fafafa;
 
-  /* Gradients */
-  --gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
-  --gradient-orange: linear-gradient(135deg, #FF5722 0%, #E64A19 100%);
-  --gradient-orange-hover: linear-gradient(135deg, #FF7043 0%, #FF5722 100%);
-  --gradient-cyan-accent: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
-  --gradient-orange-cyan: linear-gradient(135deg, #FF5722 0%, #00D4FF 100%);
+  /* Gradients (Minimal - Industrial Precision uses solid colors) */
+  --gradient-dark: linear-gradient(135deg, var(--steel-navy) 0%, var(--forge-black) 100%);
+  --gradient-orange: linear-gradient(135deg, var(--solunai-blaze) 0%, var(--ember) 100%);
+  --gradient-orange-hover: linear-gradient(135deg, var(--heat-glow) 0%, var(--solunai-blaze) 100%);
 
-  /* Glass-morphism */
+  /* Glass-morphism (Updated for Industrial Precision) */
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
   --glass-backdrop: blur(10px);
 
-  /* Opacity Borders (Otio style) */
+  /* Opacity Borders (Clean & Simple) */
   --border-subtle: rgba(0, 0, 0, 0.08);
   --border-medium: rgba(0, 0, 0, 0.12);
   --border-strong: rgba(0, 0, 0, 0.16);
-  --border-cyan-subtle: rgba(0, 212, 255, 0.15);
-  --border-cyan-glow: rgba(0, 212, 255, 0.3);
+  --border-orange-subtle: rgba(245, 72, 10, 0.15);
+  --border-orange-glow: rgba(245, 72, 10, 0.3);
 
   /* Typography */
   --font-inter: 'Inter', sans-serif;
@@ -53,23 +63,24 @@
   --font-noto-sans-jp: 'Noto Sans JP', sans-serif;
   --font-heading: var(--font-space-grotesk), var(--font-inter), sans-serif;
 
-  /* Shadows */
+  /* Shadows (Industrial Precision - Orange Forge Glow) */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
-  --shadow-orange: 0 8px 32px rgba(255, 87, 34, 0.2);
-  --shadow-cyan-glow: 0 0 20px rgba(0, 212, 255, 0.3);
-  --shadow-cyan-strong: 0 0 40px rgba(0, 212, 255, 0.5);
-  --shadow-orange-cyan: 0 8px 32px rgba(255, 87, 34, 0.15), 0 0 20px rgba(0, 212, 255, 0.2);
+  --shadow-orange: 0 8px 32px rgba(245, 72, 10, 0.25);
+  --shadow-orange-glow: 0 0 20px rgba(245, 72, 10, 0.4);
+  --shadow-orange-strong: 0 0 40px rgba(245, 72, 10, 0.5);
+  --shadow-forge: 0 12px 32px rgba(245, 72, 10, 0.3);
 
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-base: 0.3s ease;
   --transition-slow: 0.5s ease;
 
-  /* Card Effects */
+  /* Card Effects (Industrial Precision) */
   --card-hover-lift: -8px;
-  --card-hover-shadow: 0 12px 40px rgba(255, 87, 34, 0.25);
+  --card-hover-shadow: 0 12px 40px rgba(245, 72, 10, 0.25);
+  --card-hover-glow: 0 0 32px rgba(245, 72, 10, 0.3);
 
   /* Section Spacing - Negative Space Strategy */
   --section-spacing-mobile: 80px;

@@ -89,27 +89,27 @@
 }
 
 .comparison-card.traditional {
-  border: 3px solid #3a3a3a;
-  background: #4a4a4a;
-  /* Solid dark grey/charcoal */
+  border: 3px solid var(--titanium-grey);
+  background: var(--titanium-grey);
+  /* Solid grey - Industrial Precision */
   position: relative;
 }
 
 .comparison-card.traditional .comparison-badge {
-  background: #5a5a5a;
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--precision-white);
 }
 
 .comparison-card.traditional .comparison-header h4 {
-  color: #ffffff;
+  color: var(--precision-white);
 }
 
 .comparison-card.traditional .metric-label {
-  color: #e0e0e0;
+  color: var(--silver-mist);
 }
 
 .comparison-card.traditional .metric-value {
-  color: #ffffff;
+  color: var(--precision-white);
 }
 
 .comparison-card.traditional .comparison-header {
@@ -117,29 +117,35 @@
 }
 
 .comparison-card.traditional .metric-row {
-  background: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--precision-white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .comparison-card.traditional .metric-row .metric-label {
-  color: #666666;
+  color: var(--steel-blue);
 }
 
 .comparison-card.traditional .metric-row .metric-value {
-  color: #1a1a1a;
+  color: var(--forge-black);
 }
 
 .comparison-card.solunai {
-  border: 3px solid #0d1117;
-  background: var(--bg-dark-1);
-  /* Solid dark blue - matches CTA */
-  box-shadow: 0 8px 24px rgba(26, 26, 46, 0.25);
+  border: 3px solid var(--solunai-blaze);
+  background: var(--steel-navy);
+  /* Solid navy - Industrial Precision */
+  box-shadow: var(--shadow-orange);
   position: relative;
+  transition: all 0.3s ease;
+}
+
+.comparison-card.solunai:hover {
+  box-shadow: var(--shadow-forge);
+  border-color: var(--heat-glow);
 }
 
 .comparison-card.solunai .comparison-badge {
   background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
+  color: var(--precision-white);
 }
 
 .comparison-card.solunai .comparison-header {
@@ -147,33 +153,33 @@
 }
 
 .comparison-card.solunai .comparison-header h4 {
-  color: #ffffff;
+  color: var(--precision-white);
 }
 
 .comparison-card.solunai .metric-label {
-  color: #ffffff;
+  color: var(--precision-white);
 }
 
 .comparison-card.solunai .metric-value {
-  color: #ffffff;
+  color: var(--precision-white);
 }
 
 .comparison-card.solunai .metric-row {
-  background: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: var(--precision-white);
+  border: 1px solid var(--border-orange-subtle);
 }
 
 .comparison-card.solunai .metric-row .metric-label {
-  color: #666666;
+  color: var(--steel-blue);
 }
 
 .comparison-card.solunai .metric-row .metric-value {
-  color: #1a1a1a;
+  color: var(--forge-black);
 }
 
 .comparison-card.solunai .metric-row.highlight {
-  background: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: var(--precision-white);
+  border: 1px solid var(--border-orange-glow);
 }
 
 .comparison-header {
@@ -415,8 +421,8 @@
 }
 
 .ai-agent:hover {
-  border-color: var(--solunai-orange);
-  box-shadow: 0 8px 24px rgba(255, 87, 34, 0.2);
+  border-color: var(--heat-glow);
+  box-shadow: var(--shadow-orange);
   transform: translateY(-4px);
   background: #ffffff;
 }
@@ -474,11 +480,11 @@
   font-size: 16px;
 }
 
-/* Highlight Cards - Dark Blue Stats */
+/* Highlight Cards - Industrial Precision Forge */
 .bento-highlight {
   grid-column: span 1;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
-  border: 3px solid var(--solunai-orange);
+  background: var(--steel-navy);
+  border: 3px solid var(--solunai-blaze);
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -491,19 +497,19 @@
 
 .bento-highlight:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(255, 87, 34, 0.3);
-  border-color: #ff7849;
+  box-shadow: var(--shadow-forge);
+  border-color: var(--heat-glow);
 }
 
 .highlight-icon {
-  color: var(--solunai-orange);
+  color: var(--solunai-blaze);
   margin-bottom: 8px;
 }
 
 .highlight-value {
   font-size: 48px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--precision-white);
   line-height: 1;
   margin: 0;
 }
@@ -511,7 +517,7 @@
 .highlight-label {
   font-size: 15px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--silver-mist);
   line-height: 1.4;
   margin: 0;
 }
