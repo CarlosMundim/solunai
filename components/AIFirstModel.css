@@ -89,52 +89,75 @@
 }
 
 .comparison-card.traditional {
-  border: 3px solid #999999;
-  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
-  opacity: 0.85;
+  border: 3px solid #3a3a3a;
+  background: #4a4a4a;
+  /* Solid dark grey/charcoal */
   position: relative;
 }
 
-.comparison-card.traditional::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 10px,
-    rgba(0,0,0,0.02) 10px,
-    rgba(0,0,0,0.02) 20px
-  );
-  pointer-events: none;
+.comparison-card.traditional .comparison-badge {
+  background: #5a5a5a;
+  color: #ffffff;
+}
+
+.comparison-card.traditional .comparison-header h4 {
+  color: #ffffff;
+}
+
+.comparison-card.traditional .metric-label {
+  color: #e0e0e0;
+}
+
+.comparison-card.traditional .metric-value {
+  color: #ffffff;
+}
+
+.comparison-card.traditional .comparison-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.comparison-card.traditional .metric-row {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .comparison-card.solunai {
-  border: 3px solid var(--solunai-orange);
-  background: linear-gradient(135deg, #ffffff 0%, #fff7f5 100%);
-  box-shadow: 0 8px 24px rgba(255, 87, 34, 0.15);
+  border: 3px solid #d84315;
+  background: var(--solunai-orange);
+  /* Solid orange */
+  box-shadow: 0 8px 24px rgba(255, 87, 34, 0.25);
   position: relative;
 }
 
-.comparison-card.solunai::after {
-  content: '';
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
-  background: linear-gradient(135deg, var(--solunai-orange), #ff7849);
-  border-radius: 16px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  z-index: -1;
+.comparison-card.solunai .comparison-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
-.comparison-card.solunai:hover::after {
-  opacity: 0.2;
+.comparison-card.solunai .comparison-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.comparison-card.solunai .comparison-header h4 {
+  color: #ffffff;
+}
+
+.comparison-card.solunai .metric-label {
+  color: #ffffff;
+}
+
+.comparison-card.solunai .metric-value {
+  color: #ffffff;
+}
+
+.comparison-card.solunai .metric-row {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.comparison-card.solunai .metric-row.highlight {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .comparison-header {
