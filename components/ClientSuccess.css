@@ -110,7 +110,7 @@
 }
 
 .metric-value {
-  font-size: 160px;
+  font-size: 52px;
   font-weight: 700;
   color: #ffffff !important;
   margin: 0 0 16px 0;
@@ -118,7 +118,7 @@
 }
 
 .metric-description {
-  font-size: 24px;
+  font-size: 20px;
   color: #ffffff !important;
   line-height: 1.5;
 }
@@ -159,7 +159,7 @@
   }
 
   .metric-value {
-    font-size: 120px;
+    font-size: 48px;
   }
 }
 
@@ -195,11 +195,11 @@
   }
 
   .metric-value {
-    font-size: 96px;
+    font-size: 44px;
   }
 
   .metric-description {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -222,6 +222,6 @@
   }
 
   .metric-value {
-    font-size: 80px;
+    font-size: 40px;
   }
 }
