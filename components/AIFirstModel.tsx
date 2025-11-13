@@ -15,7 +15,9 @@ import {
   Code,
   FileCode,
   Shield,
-  GitBranch
+  GitBranch,
+  Zap,
+  TrendingDown
 } from 'lucide-react';
 import './AIFirstModel.css';
 
@@ -844,6 +846,19 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
                   ))}
                 </ul>
               </div>
+            </div>
+
+            {/* Highlight Cards - Dark Blue */}
+            <div className="bento-card bento-highlight">
+              <Zap className="highlight-icon" size={40} strokeWidth={2} />
+              <div className="highlight-value">{lang === 'ja' ? '2-6週間' : '2-6 Weeks'}</div>
+              <div className="highlight-label">{lang === 'ja' ? '従来4-6ヶ月→当社2-6週間' : 'vs. 4-6 months traditional'}</div>
+            </div>
+
+            <div className="bento-card bento-highlight">
+              <TrendingDown className="highlight-icon" size={40} strokeWidth={2} />
+              <div className="highlight-value">{lang === 'ja' ? '30-50%' : '30-50%'}</div>
+              <div className="highlight-label">{lang === 'ja' ? 'コスト削減を実現' : 'Cost Reduction'}</div>
             </div>
 
             {/* Summary Cards - Wide */}

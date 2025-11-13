@@ -257,12 +257,12 @@
 
 .human-header {
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  border: 1px solid var(--bg-dark-1);
+  border: 3px solid var(--bg-dark-1);
 }
 
 .ai-header {
   background: linear-gradient(135deg, #fff7f5 0%, #ffffff 100%);
-  border: 1px solid var(--solunai-orange);
+  border: 3px solid var(--solunai-orange);
 }
 
 .bento-icon {
@@ -378,6 +378,48 @@
   color: var(--solunai-orange);
   font-weight: 700;
   font-size: 16px;
+}
+
+/* Highlight Cards - Dark Blue Stats */
+.bento-highlight {
+  grid-column: span 1;
+  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  border: 3px solid var(--solunai-orange);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.bento-highlight:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(255, 87, 34, 0.3);
+  border-color: #ff7849;
+}
+
+.highlight-icon {
+  color: var(--solunai-orange);
+  margin-bottom: 8px;
+}
+
+.highlight-value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1;
+  margin: 0;
+}
+
+.highlight-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+  margin: 0;
 }
 
 /* Summary Cards - Wide (span 2 columns) */
