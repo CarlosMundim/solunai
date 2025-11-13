@@ -1,7 +1,7 @@
 .technology-partners {
   width: 100%;
   background: var(--bg-cream);
-  padding: 80px var(--container-padding-mobile) 80px var(--container-padding-mobile);
+  padding: var(--section-spacing-desktop) 0;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -121,6 +121,10 @@ html[lang="ja"] .partner-features li {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .technology-partners {
+    padding: var(--section-spacing-tablet) 0;
+  }
+
   .technology-partners-heading {
     font-size: 40px;
   }
@@ -137,7 +141,7 @@ html[lang="ja"] .partner-features li {
 
 @media (max-width: 768px) {
   .technology-partners {
-    padding: 60px var(--container-padding-mobile) 60px var(--container-padding-mobile);
+    padding: var(--section-spacing-mobile) 0;
   }
 
   .technology-partners-heading {
@@ -175,10 +179,6 @@ html[lang="ja"] .partner-features li {
 }
 
 @media (max-width: 480px) {
-  .technology-partners {
-    padding: 40px 16px 40px 16px;
-  }
-
   .technology-partners-heading {
     font-size: 28px;
   }
