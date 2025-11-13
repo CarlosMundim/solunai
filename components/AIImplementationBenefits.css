@@ -1,5 +1,5 @@
 .ai-implementation-benefits {
-  padding: 80px 24px;
+  padding: var(--section-spacing-desktop) 24px;
   background: var(--bg-subtle-gray);
 }
 
@@ -186,13 +186,13 @@
 
 @media (max-width: 1024px) {
   .ai-implementation-benefits {
-    padding: 60px 24px;
+    padding: var(--section-spacing-tablet) 24px;
   }
 }
 
 @media (max-width: 768px) {
   .ai-implementation-benefits {
-    padding: 40px 1rem;
+    padding: var(--section-spacing-mobile) 1rem;
   }
 
   .benefits-title {

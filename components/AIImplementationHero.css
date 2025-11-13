@@ -3,7 +3,7 @@
   min-height: 70vh;
   display: flex;
   align-items: center;
-  padding: var(--section-spacing-desktop) 24px 100px;
+  padding: var(--section-spacing-desktop) 24px var(--section-spacing-desktop);
   overflow: hidden;
 }
 
@@ -148,7 +148,7 @@
 
 @media (max-width: 768px) {
   .ai-implementation-hero {
-    padding: 80px 20px;
+    padding: var(--section-spacing-mobile) 20px;
     min-height: auto;
   }
 
