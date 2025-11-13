@@ -718,7 +718,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
 
             {/* Human Roles - Medium Cards */}
             <div className="bento-card bento-role human-role">
-              <Brain className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <Brain className="role-icon human-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.human.roles[0].title}</div>
                 <div className="role-detail">{currentContent.howItWorks.human.roles[0].responsibility}</div>
@@ -726,7 +726,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-role human-role">
-              <Brain className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <Brain className="role-icon human-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.human.roles[1].title}</div>
                 <div className="role-detail">{currentContent.howItWorks.human.roles[1].responsibility}</div>
@@ -734,7 +734,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-role human-role">
-              <Server className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <Server className="role-icon human-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.human.roles[2].title}</div>
                 <div className="role-detail">{currentContent.howItWorks.human.roles[2].responsibility}</div>
@@ -742,7 +742,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-role human-role">
-              <Layers className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <Layers className="role-icon human-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.human.roles[3].title}</div>
                 <div className="role-detail">{currentContent.howItWorks.human.roles[3].responsibility}</div>
@@ -750,7 +750,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-role human-role">
-              <UserCheck className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <UserCheck className="role-icon human-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.human.roles[4].title}</div>
                 <div className="role-detail">{currentContent.howItWorks.human.roles[4].responsibility}</div>
@@ -758,7 +758,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-role human-role">
-              <Briefcase className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <Briefcase className="role-icon human-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.human.roles[5].title}</div>
                 <div className="role-detail">{currentContent.howItWorks.human.roles[5].responsibility}</div>
@@ -766,7 +766,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-role human-role">
-              <FileText className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <FileText className="role-icon human-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.human.roles[6].title}</div>
                 <div className="role-detail">{currentContent.howItWorks.human.roles[6].responsibility}</div>
@@ -775,7 +775,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
 
             {/* AI Agent Categories - Medium Cards */}
             <div className="bento-card bento-agent ai-agent">
-              <Database className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <Database className="role-icon ai-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.ai.categories[0].title}</div>
                 <ul className="agent-tasks">
@@ -787,7 +787,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-agent ai-agent">
-              <Box className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <Box className="role-icon ai-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.ai.categories[1].title}</div>
                 <ul className="agent-tasks">
@@ -799,7 +799,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-agent ai-agent">
-              <Code className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <Code className="role-icon ai-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.ai.categories[2].title}</div>
                 <ul className="agent-tasks">
@@ -811,7 +811,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-agent ai-agent">
-              <FileCode className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <FileCode className="role-icon ai-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.ai.categories[3].title}</div>
                 <ul className="agent-tasks">
@@ -823,7 +823,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-agent ai-agent">
-              <Shield className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <Shield className="role-icon ai-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.ai.categories[4].title}</div>
                 <ul className="agent-tasks">
@@ -835,7 +835,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
             </div>
 
             <div className="bento-card bento-agent ai-agent">
-              <GitBranch className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <GitBranch className="role-icon ai-icon" size={48} strokeWidth={1.5} />
               <div className="role-content">
                 <div className="role-title">{currentContent.howItWorks.ai.categories[5].title}</div>
                 <ul className="agent-tasks">

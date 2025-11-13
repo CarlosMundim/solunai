@@ -304,26 +304,32 @@
 
 .human-role {
   background: #fafafa;
-  border-left: 3px solid var(--bg-dark-1);
+  border: 3px solid var(--bg-dark-1);
 }
 
 .human-role:hover {
   border-color: var(--bg-dark-1);
-  box-shadow: 0 4px 12px rgba(26, 26, 46, 0.1);
+  box-shadow: 0 8px 24px rgba(26, 26, 46, 0.2);
+  transform: translateY(-4px);
+  background: #ffffff;
 }
 
 .ai-agent {
   background: #fffaf8;
-  border-left: 3px solid var(--solunai-orange);
+  border: 3px solid var(--solunai-orange);
 }
 
 .ai-agent:hover {
   border-color: var(--solunai-orange);
-  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.1);
+  box-shadow: 0 8px 24px rgba(255, 87, 34, 0.2);
+  transform: translateY(-4px);
+  background: #ffffff;
 }
 
 .role-icon {
   flex-shrink: 0;
+  width: 48px;
+  height: 48px;
 }
 
 .role-content {
@@ -375,7 +381,7 @@
   grid-column: span 2;
   padding: 32px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: var(--bg-dark-1);
   line-height: 1.6;
