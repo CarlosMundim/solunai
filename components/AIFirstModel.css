@@ -218,128 +218,151 @@
   line-height: 1.6;
 }
 
-/* How It Works Section */
+/* How It Works Section - Bento Grid */
 .how-it-works-section {
   margin-bottom: 120px;
 }
 
-.collaboration-grid {
+.bento-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   margin-top: 64px;
 }
 
-.team-card {
+/* Bento Card Base */
+.bento-card {
   background: white;
-  border-radius: 24px;
-  padding: 48px;
+  border-radius: 16px;
+  padding: 32px;
   border: 1px solid var(--border-subtle);
-  box-shadow: var(--shadow-lg);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.team-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-orange-cyan);
-  border-color: var(--border-cyan-subtle);
+.bento-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
-.team-card.human-team {
-  border-top: 1px solid var(--bg-dark-1);
-  background: #fafafa;
+/* Header Cards - Large (span 2 columns) */
+.bento-header {
+  grid-column: span 2;
+  text-align: center;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
-.team-card.ai-team {
-  border-top: 1px solid var(--solunai-orange);
-  background: white;
+.human-header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: 1px solid var(--bg-dark-1);
 }
 
-.team-header {
-  margin-bottom: 32px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--border-subtle);
+.ai-header {
+  background: linear-gradient(135deg, #fff7f5 0%, #ffffff 100%);
+  border: 1px solid var(--solunai-orange);
 }
 
-.team-header h4 {
+.bento-icon {
+  margin-bottom: 8px;
+}
+
+.human-icon {
+  color: var(--bg-dark-1);
+}
+
+.ai-icon {
+  color: var(--solunai-orange);
+}
+
+.bento-title {
   font-size: 28px;
   font-weight: 700;
   color: var(--bg-dark-1);
-  margin-bottom: 8px;
+  margin: 0;
+  line-height: 1.2;
 }
 
-.team-subtitle {
+.bento-subtitle {
   font-size: 16px;
   color: #666666;
+  margin: 0;
   font-style: italic;
 }
 
-.team-roles {
+/* Role Cards - Medium (span 1 column) */
+.bento-role,
+.bento-agent {
+  grid-column: span 1;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 32px;
+  padding: 24px;
 }
 
-.role-item {
-  padding: 20px;
-  background: var(--bg-off-white);
-  border-radius: 8px;
-  border-left: 1px solid var(--bg-dark-1);
+.human-role {
+  background: #fafafa;
+  border-left: 3px solid var(--bg-dark-1);
 }
 
-.role-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--bg-dark-1);
-  margin-bottom: 8px;
+.human-role:hover {
+  border-color: var(--bg-dark-1);
+  box-shadow: 0 4px 12px rgba(26, 26, 46, 0.1);
 }
 
-.role-responsibility {
-  font-size: 14px;
-  color: #666666;
-  line-height: 1.6;
+.ai-agent {
+  background: #fffaf8;
+  border-left: 3px solid var(--solunai-orange);
 }
 
-.ai-categories {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 32px;
+.ai-agent:hover {
+  border-color: var(--solunai-orange);
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.1);
 }
 
-.ai-category {
-  padding: 20px;
-  background: var(--bg-off-white);
-  border-radius: 8px;
-  border-left: 1px solid var(--solunai-orange);
+.role-icon {
+  flex-shrink: 0;
 }
 
-.category-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: var(--bg-dark-1);
-  margin-bottom: 12px;
-}
-
-.category-tasks {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.role-content {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.category-tasks li {
-  font-size: 14px;
-  color: #666666;
-  padding-left: 20px;
-  position: relative;
-  line-height: 1.6;
+.role-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--bg-dark-1);
+  line-height: 1.3;
 }
 
-.category-tasks li::before {
+.role-detail {
+  font-size: 13px;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.agent-tasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.agent-tasks li {
+  font-size: 13px;
+  color: #666666;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.agent-tasks li::before {
   content: "→";
   position: absolute;
   left: 0;
@@ -347,14 +370,25 @@
   font-weight: 700;
 }
 
-.team-summary {
+/* Summary Cards - Wide (span 2 columns) */
+.bento-summary {
+  grid-column: span 2;
+  padding: 32px;
+  text-align: center;
   font-size: 16px;
   font-weight: 600;
   color: var(--bg-dark-1);
-  padding: 20px;
-  background: var(--bg-off-white);
-  border-left: 1px solid var(--solunai-orange);
-  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.human-summary {
+  background: linear-gradient(135deg, #f0f1f3 0%, #fafafa 100%);
+  border: 1px solid var(--bg-dark-1);
+}
+
+.ai-summary {
+  background: linear-gradient(135deg, #fff0eb 0%, #fffaf8 100%);
+  border: 1px solid var(--solunai-orange);
 }
 
 /* Impact Section */
@@ -493,10 +527,27 @@
     margin-bottom: 80px;
   }
 
-  .comparison-grid,
-  .collaboration-grid {
+  .comparison-grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .bento-header {
+    grid-column: span 2;
+  }
+
+  .bento-role,
+  .bento-agent {
+    grid-column: span 1;
+  }
+
+  .bento-summary {
+    grid-column: span 2;
   }
 
   .ai-first-title {
@@ -568,8 +619,27 @@
     gap: 32px;
   }
 
+  .bento-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .bento-header,
+  .bento-role,
+  .bento-agent,
+  .bento-summary {
+    grid-column: span 1;
+  }
+
+  .bento-card {
+    padding: 24px;
+  }
+
+  .bento-header {
+    padding: 32px 24px;
+  }
+
   .comparison-card,
-  .team-card,
   .benefit-card,
   .impact-card {
     padding: 40px 32px;
@@ -628,17 +698,33 @@
   }
 
   .comparison-card,
-  .team-card,
   .benefit-card,
   .impact-card {
     padding: 32px 24px;
   }
 
-  .benefit-value {
+  .bento-card {
+    padding: 20px;
+  }
+
+  .bento-header {
+    padding: 28px 20px;
+  }
+
+  .bento-title {
     font-size: 24px;
   }
 
-  .team-header h4 {
+  .role-title {
+    font-size: 14px;
+  }
+
+  .role-detail,
+  .agent-tasks li {
+    font-size: 12px;
+  }
+
+  .benefit-value {
     font-size: 24px;
   }
 

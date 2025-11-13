@@ -1,6 +1,22 @@
 'use client';
 
 import React from 'react';
+import {
+  Users,
+  Cpu,
+  Brain,
+  Server,
+  Layers,
+  UserCheck,
+  Briefcase,
+  FileText,
+  Database,
+  Box,
+  Code,
+  FileCode,
+  Shield,
+  GitBranch
+} from 'lucide-react';
 import './AIFirstModel.css';
 
 interface AIFirstModelProps {
@@ -680,48 +696,163 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
           </div>
         </div>
 
-        {/* How It Works */}
+        {/* How It Works - Bento Grid */}
         <div className="how-it-works-section">
           <h3 className="section-title">{currentContent.howItWorks.title}</h3>
           <p className="section-description">{currentContent.howItWorks.description}</p>
 
-          <div className="collaboration-grid">
-            {/* Human Team */}
-            <div className="team-card human-team">
-              <div className="team-header">
-                <h4>{currentContent.howItWorks.human.title}</h4>
-                <p className="team-subtitle">{currentContent.howItWorks.human.subtitle}</p>
-              </div>
-              <div className="team-roles">
-                {currentContent.howItWorks.human.roles.map((role, idx) => (
-                  <div key={idx} className="role-item">
-                    <div className="role-title">{role.title}</div>
-                    <div className="role-responsibility">{role.responsibility}</div>
-                  </div>
-                ))}
-              </div>
-              <div className="team-summary">{currentContent.howItWorks.human.summary}</div>
+          <div className="bento-grid">
+            {/* Human Team Header - Large */}
+            <div className="bento-card bento-header human-header">
+              <Users className="bento-icon human-icon" size={40} strokeWidth={1.5} />
+              <h4 className="bento-title">{currentContent.howItWorks.human.title}</h4>
+              <p className="bento-subtitle">{currentContent.howItWorks.human.subtitle}</p>
             </div>
 
-            {/* AI Team */}
-            <div className="team-card ai-team">
-              <div className="team-header">
-                <h4>{currentContent.howItWorks.ai.title}</h4>
-                <p className="team-subtitle">{currentContent.howItWorks.ai.subtitle}</p>
+            {/* AI Team Header - Large */}
+            <div className="bento-card bento-header ai-header">
+              <Cpu className="bento-icon ai-icon" size={40} strokeWidth={1.5} />
+              <h4 className="bento-title">{currentContent.howItWorks.ai.title}</h4>
+              <p className="bento-subtitle">{currentContent.howItWorks.ai.subtitle}</p>
+            </div>
+
+            {/* Human Roles - Medium Cards */}
+            <div className="bento-card bento-role human-role">
+              <Brain className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.human.roles[0].title}</div>
+                <div className="role-detail">{currentContent.howItWorks.human.roles[0].responsibility}</div>
               </div>
-              <div className="ai-categories">
-                {currentContent.howItWorks.ai.categories.map((category, idx) => (
-                  <div key={idx} className="ai-category">
-                    <div className="category-title">{category.title}</div>
-                    <ul className="category-tasks">
-                      {category.tasks.map((task, taskIdx) => (
-                        <li key={taskIdx}>{task}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+            </div>
+
+            <div className="bento-card bento-role human-role">
+              <Brain className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.human.roles[1].title}</div>
+                <div className="role-detail">{currentContent.howItWorks.human.roles[1].responsibility}</div>
               </div>
-              <div className="team-summary">{currentContent.howItWorks.ai.summary}</div>
+            </div>
+
+            <div className="bento-card bento-role human-role">
+              <Server className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.human.roles[2].title}</div>
+                <div className="role-detail">{currentContent.howItWorks.human.roles[2].responsibility}</div>
+              </div>
+            </div>
+
+            <div className="bento-card bento-role human-role">
+              <Layers className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.human.roles[3].title}</div>
+                <div className="role-detail">{currentContent.howItWorks.human.roles[3].responsibility}</div>
+              </div>
+            </div>
+
+            <div className="bento-card bento-role human-role">
+              <UserCheck className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.human.roles[4].title}</div>
+                <div className="role-detail">{currentContent.howItWorks.human.roles[4].responsibility}</div>
+              </div>
+            </div>
+
+            <div className="bento-card bento-role human-role">
+              <Briefcase className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.human.roles[5].title}</div>
+                <div className="role-detail">{currentContent.howItWorks.human.roles[5].responsibility}</div>
+              </div>
+            </div>
+
+            <div className="bento-card bento-role human-role">
+              <FileText className="role-icon human-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.human.roles[6].title}</div>
+                <div className="role-detail">{currentContent.howItWorks.human.roles[6].responsibility}</div>
+              </div>
+            </div>
+
+            {/* AI Agent Categories - Medium Cards */}
+            <div className="bento-card bento-agent ai-agent">
+              <Database className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.ai.categories[0].title}</div>
+                <ul className="agent-tasks">
+                  {currentContent.howItWorks.ai.categories[0].tasks.slice(0, 2).map((task, idx) => (
+                    <li key={idx}>{task}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="bento-card bento-agent ai-agent">
+              <Box className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.ai.categories[1].title}</div>
+                <ul className="agent-tasks">
+                  {currentContent.howItWorks.ai.categories[1].tasks.slice(0, 2).map((task, idx) => (
+                    <li key={idx}>{task}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="bento-card bento-agent ai-agent">
+              <Code className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.ai.categories[2].title}</div>
+                <ul className="agent-tasks">
+                  {currentContent.howItWorks.ai.categories[2].tasks.slice(0, 2).map((task, idx) => (
+                    <li key={idx}>{task}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="bento-card bento-agent ai-agent">
+              <FileCode className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.ai.categories[3].title}</div>
+                <ul className="agent-tasks">
+                  {currentContent.howItWorks.ai.categories[3].tasks.slice(0, 2).map((task, idx) => (
+                    <li key={idx}>{task}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="bento-card bento-agent ai-agent">
+              <Shield className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.ai.categories[4].title}</div>
+                <ul className="agent-tasks">
+                  {currentContent.howItWorks.ai.categories[4].tasks.slice(0, 2).map((task, idx) => (
+                    <li key={idx}>{task}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div className="bento-card bento-agent ai-agent">
+              <GitBranch className="role-icon ai-icon" size={24} strokeWidth={1.5} />
+              <div className="role-content">
+                <div className="role-title">{currentContent.howItWorks.ai.categories[5].title}</div>
+                <ul className="agent-tasks">
+                  {currentContent.howItWorks.ai.categories[5].tasks.slice(0, 2).map((task, idx) => (
+                    <li key={idx}>{task}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Summary Cards - Wide */}
+            <div className="bento-card bento-summary human-summary">
+              <p>{currentContent.howItWorks.human.summary}</p>
+            </div>
+
+            <div className="bento-card bento-summary ai-summary">
+              <p>{currentContent.howItWorks.ai.summary}</p>
             </div>
           </div>
         </div>
