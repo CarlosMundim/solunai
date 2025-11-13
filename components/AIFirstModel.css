@@ -427,7 +427,7 @@
   grid-column: span 2;
   padding: 40px 32px;
   text-align: center;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--bg-dark-1);
   line-height: 1.7;
@@ -435,13 +435,13 @@
 
 .human-summary {
   background: linear-gradient(135deg, #f0f1f3 0%, #fafafa 100%);
-  border: 1px solid var(--bg-dark-1);
+  border: 3px solid var(--bg-dark-1);
   grid-column: 1 / span 2;
 }
 
 .ai-summary {
   background: linear-gradient(135deg, #fff0eb 0%, #fffaf8 100%);
-  border: 1px solid var(--solunai-orange);
+  border: 3px solid var(--solunai-orange);
   grid-column: 3 / span 2;
 }
 
