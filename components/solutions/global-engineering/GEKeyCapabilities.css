@@ -137,10 +137,6 @@ html[lang="ja"] .ge-capability-description {
 }
 
 @media (max-width: 480px) {
-  .ge-key-capabilities {
-    padding: 40px 16px;
-  }
-
   .ge-key-capabilities-heading {
     font-size: 28px;
   }

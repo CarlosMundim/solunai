@@ -300,6 +300,10 @@ html[lang="ja"] .ge-scenario-comparison p {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .ge-what-is {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+
   .ge-what-is-heading {
     font-size: 40px;
   }
@@ -315,12 +319,6 @@ html[lang="ja"] .ge-scenario-comparison p {
   .ge-comparison-arrow {
     transform: rotate(90deg);
     text-align: center;
-  }
-}
-
-@media (max-width: 1024px) {
-  .ge-what-is {
-    padding: var(--section-spacing-tablet) 24px;
   }
 }
 
