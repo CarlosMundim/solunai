@@ -59,7 +59,7 @@
   align-items: center;
   justify-content: center;
   font-size: 40px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
   border-radius: 50%;
   box-shadow: 0 4px 16px rgba(26, 26, 46, 0.3);
   position: relative;
@@ -68,7 +68,7 @@
 
 .phase-label {
   font-weight: 700;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   font-size: 14px;
   text-align: center;
 }
@@ -79,7 +79,7 @@
   top: 100%;
   width: 4px;
   height: 100%;
-  background: linear-gradient(to bottom, #FF5722, rgba(255, 87, 34, 0.3));
+  background: var(--solunai-blaze);
   transform: translateX(-50%);
   z-index: 1;
 }
@@ -118,7 +118,7 @@
 .phase-duration {
   font-size: 16px;
   font-weight: 600;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   background: #fff5f2;
   padding: 10px 20px;
   border-radius: 20px;
@@ -164,14 +164,14 @@
 }
 
 .detail-bullet {
-  color: #FF5722;
+  color: var(--solunai-blaze);
   font-weight: 800;
   font-size: 20px;
   flex-shrink: 0;
 }
 
 .detail-check {
-  color: #FF5722;
+  color: var(--solunai-blaze);
   font-weight: 800;
   font-size: 18px;
   flex-shrink: 0;
@@ -181,7 +181,7 @@
   background: #fff5f2;
   padding: 10px 16px;
   border-radius: 8px;
-  border-left: 4px solid #FF5722;
+  border-left: 4px solid var(--solunai-blaze);
 }
 
 @media (max-width: 1024px) {

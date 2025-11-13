@@ -57,7 +57,7 @@
 
 .solution-card {
   border: none;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
   color: white;
 }
 
@@ -107,12 +107,12 @@
 }
 
 .comparison-item.positive .item-icon {
-  color: #FF5722;
+  color: var(--solunai-blaze);
 }
 
 .comparison-arrow {
   font-size: 3rem;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   font-weight: 800;
 }
 
@@ -146,14 +146,14 @@
 }
 
 .category-tab:hover {
-  border-color: #FF5722;
+  border-color: var(--solunai-blaze);
   background: #fff5f2;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 87, 34, 0.15);
 }
 
 .category-tab.active {
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
   color: white;
   border-color: #1a1a2e;
   box-shadow: 0 4px 16px rgba(26, 26, 46, 0.3);
@@ -265,9 +265,9 @@
 }
 
 .skill-badge:hover {
-  background: #FF5722;
+  background: var(--solunai-blaze);
   color: white;
-  border-color: #FF5722;
+  border-color: var(--solunai-blaze);
   transform: translateY(-2px);
 }
 
@@ -283,7 +283,7 @@
   padding: 12px 16px;
   background: #f8f9fa;
   border-radius: 8px;
-  border-left: 4px solid #FF5722;
+  border-left: 4px solid var(--solunai-blaze);
   font-size: 15px;
   color: #666666;
   transition: all 0.3s ease;
@@ -299,7 +299,7 @@
   align-items: center;
   gap: 32px;
   padding: 32px;
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
   border-radius: 16px;
   border: none;
   box-shadow: 0 4px 20px rgba(26, 26, 46, 0.3);
@@ -324,7 +324,7 @@
 }
 
 .cost-item.solunai .cost-value {
-  color: #FF5722;
+  color: var(--solunai-blaze);
 }
 
 .cost-item.traditional .cost-value {

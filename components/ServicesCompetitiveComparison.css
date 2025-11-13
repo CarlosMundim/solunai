@@ -82,7 +82,7 @@
 }
 
 .solunai-col {
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
   border: none;
 }
 
@@ -130,7 +130,7 @@
 }
 
 .point-row.positive .point-value {
-  color: #FF5722;
+  color: var(--solunai-blaze);
 }
 
 .solunai-col .point-row .point-value {
@@ -142,7 +142,7 @@
 }
 
 .unique-advantages {
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
   padding: 80px;
   border-radius: 16px;
   color: white;
@@ -184,7 +184,7 @@
 .advantage-icon {
   font-size: 32px;
   flex-shrink: 0;
-  color: #FF5722;
+  color: var(--solunai-blaze);
 }
 
 .advantage-text {

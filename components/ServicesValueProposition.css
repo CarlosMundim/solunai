@@ -24,7 +24,7 @@
 
 .vp-subtitle {
   font-size: 20px;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   margin-bottom: 24px;
   font-weight: 600;
 }
@@ -89,7 +89,7 @@
 
 .challenge-description {
   font-size: 16px;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -101,7 +101,7 @@
 }
 
 .solution-section {
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
   padding: 80px;
   border-radius: 16px;
   color: white;
@@ -151,7 +151,7 @@
 .benefit-metric {
   font-size: 32px;
   font-weight: 700;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   margin-bottom: 16px;
 }
 

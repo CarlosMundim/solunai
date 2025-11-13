@@ -68,7 +68,7 @@
 }
 
 .solunai-header {
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
 }
 
 .column-title {
@@ -90,7 +90,7 @@
 }
 
 .solunai-header .annual-cost {
-  color: #FF5722;
+  color: var(--solunai-blaze);
 }
 
 .column-body {
@@ -199,7 +199,7 @@
 }
 
 .savings-banner {
-  background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+  background: var(--steel-navy);
   border-radius: 16px;
   padding: 80px;
   color: white;
@@ -229,7 +229,7 @@
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 16px;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   letter-spacing: -0.02em;
 }
 
@@ -258,7 +258,7 @@
 .benefit-check {
   width: 24px;
   height: 24px;
-  color: #FF5722;
+  color: var(--solunai-blaze);
   flex-shrink: 0;
 }
 
