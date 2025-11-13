@@ -80,7 +80,7 @@ html[lang="ja"] .overview-hero {
 }
 
 .overview-hero-column-left p {
-  font-size: 20px;
+  font-size: 26px;
   line-height: 1.6;
   color: rgba(255, 255, 255, 0.95);
   margin: 0;
@@ -100,7 +100,7 @@ html[lang="ja"] .overview-hero {
 
 html[lang="ja"] .overview-hero-column-left p {
   letter-spacing: 0.01em;
-  font-size: 18px;
+  font-size: 23px;
 }
 
 html[lang="ja"] .overview-hero-column-right p {
@@ -149,7 +149,7 @@ html[lang="ja"] .overview-hero-column-right p {
   }
 
   .overview-hero-column-left p {
-    font-size: 18px;
+    font-size: 23px;
   }
 
   .overview-hero-column-right p {
@@ -157,7 +157,7 @@ html[lang="ja"] .overview-hero-column-right p {
   }
 
   html[lang="ja"] .overview-hero-column-left p {
-    font-size: 17px;
+    font-size: 22px;
   }
 }
 
@@ -177,7 +177,7 @@ html[lang="ja"] .overview-hero-column-right p {
   }
 
   .overview-hero-column-left p {
-    font-size: 16px;
+    font-size: 21px;
   }
 
   .overview-hero-column-right p {
@@ -185,6 +185,6 @@ html[lang="ja"] .overview-hero-column-right p {
   }
 
   html[lang="ja"] .overview-hero-column-left p {
-    font-size: 15px;
+    font-size: 19px;
   }
 }
