@@ -51,7 +51,7 @@ html[lang="ja"] .government-compliance {
 }
 
 .compliance-badge:hover {
-  box-shadow: 0 12px 32px rgba(0, 145, 255, 0.2);
+  box-shadow: 0 12px 32px rgba(245, 72, 10, 0.2);
   transform: translateY(-4px);
 }
 
@@ -141,7 +141,7 @@ html[lang="ja"] .badge-description {
 .subsidy-card:hover {
   border-color: #0091ff;
   background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0, 145, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(245, 72, 10, 0.1);
 }
 
 .subsidy-name {

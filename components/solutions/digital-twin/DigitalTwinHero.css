@@ -34,7 +34,7 @@ html[lang="ja"] .digital-twin-hero {
   height: 100%;
   background: linear-gradient(135deg,
     rgba(0, 0, 0, 0.85) 0%,
-    rgba(0, 145, 255, 0.15) 50%,
+    rgba(245, 72, 10, 0.15) 50%,
     rgba(0, 0, 0, 0.75) 100%);
   z-index: 2;
 }
@@ -58,7 +58,7 @@ html[lang="ja"] .digital-twin-hero {
   margin-bottom: 40px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  box-shadow: 0 4px 12px rgba(0, 145, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(245, 72, 10, 0.3);
 }
 
 .digital-twin-hero-heading {
@@ -109,8 +109,8 @@ html[lang="ja"] .digital-twin-hero-subheading {
 .digital-twin-hero-problem:hover,
 .digital-twin-hero-solution:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 145, 255, 0.25);
-  border-color: rgba(0, 145, 255, 0.5);
+  box-shadow: 0 12px 40px rgba(245, 72, 10, 0.25);
+  border-color: rgba(245, 72, 10, 0.5);
 }
 
 .digital-twin-hero-split-title {

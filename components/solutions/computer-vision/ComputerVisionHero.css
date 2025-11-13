@@ -34,7 +34,7 @@ html[lang="ja"] .computer-vision-hero {
   height: 100%;
   background: linear-gradient(135deg,
     rgba(0, 0, 0, 0.85) 0%,
-    rgba(0, 145, 255, 0.15) 50%,
+    rgba(245, 72, 10, 0.15) 50%,
     rgba(0, 0, 0, 0.75) 100%);
   z-index: 2;
 }
@@ -58,7 +58,7 @@ html[lang="ja"] .computer-vision-hero {
   margin-bottom: 40px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  box-shadow: 0 4px 12px rgba(0, 145, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(245, 72, 10, 0.3);
 }
 
 .computer-vision-hero-heading {
