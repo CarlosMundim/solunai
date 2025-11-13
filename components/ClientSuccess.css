@@ -110,7 +110,7 @@
 }
 
 .metric-value {
-  font-size: 80px;
+  font-size: 160px;
   font-weight: 700;
   color: #ffffff !important;
   margin: 0 0 16px 0;
@@ -159,7 +159,7 @@
   }
 
   .metric-value {
-    font-size: 68px;
+    font-size: 120px;
   }
 }
 
@@ -195,7 +195,7 @@
   }
 
   .metric-value {
-    font-size: 56px;
+    font-size: 96px;
   }
 
   .metric-description {
@@ -222,6 +222,6 @@
   }
 
   .metric-value {
-    font-size: 48px;
+    font-size: 80px;
   }
 }
