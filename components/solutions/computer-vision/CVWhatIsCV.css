@@ -1,7 +1,7 @@
 .cv-what-is-cv {
   width: 100%;
   background: var(--bg-cream);
-  padding: 80px 24px;
+  padding: var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -236,6 +236,10 @@ html[lang="ja"] .cv-what-is-cv-intro {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .cv-what-is-cv {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+
   .cv-what-is-cv-heading {
     font-size: 40px;
   }
@@ -255,15 +259,9 @@ html[lang="ja"] .cv-what-is-cv-intro {
   }
 }
 
-@media (max-width: 1024px) {
-  .cv-what-is-cv {
-    padding: 60px 24px;
-  }
-}
-
 @media (max-width: 768px) {
   .cv-what-is-cv {
-    padding: 40px 20px;
+    padding: var(--section-spacing-mobile) 20px;
   }
 
   .cv-what-is-cv-heading {
