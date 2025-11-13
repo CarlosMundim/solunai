@@ -94,7 +94,7 @@
 }
 
 .comparison-card.solunai {
-  border: 1px solid var(--bg-dark-1);
+  border: 1px solid #cccccc;
   background: white;
 }
 
