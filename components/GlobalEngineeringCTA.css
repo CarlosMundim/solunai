@@ -80,7 +80,7 @@
 
 .cta-features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   margin-bottom: 3rem;
 }
@@ -129,14 +129,14 @@
 }
 
 .cta-button.primary {
-  background: linear-gradient(135deg, #0091ff 0%, var(--solunai-orange) 100%);
+  background: var(--solunai-orange);
   color: white;
 }
 
 .cta-button.primary:hover {
-  background: linear-gradient(135deg, #0077cc 0%, var(--solunai-orange-dark) 100%);
+  background: var(--solunai-orange-dark);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 145, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(255, 87, 34, 0.4);
 }
 
 .cta-button.secondary {
