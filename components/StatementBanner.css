@@ -16,13 +16,18 @@
 }
 
 .statement-banner-text {
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: var(--font-display-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
   color: #ffffff;
   margin: 0;
-  letter-spacing: -0.02em;
+  letter-spacing: var(--letter-spacing-tight);
   animation: fadeInScale 0.8s ease forwards;
+}
+
+html[lang="ja"] .statement-banner-text {
+  font-size: var(--font-display-xl-jp);
+  line-height: var(--line-height-base-jp);
 }
 
 @keyframes fadeInScale {
@@ -44,7 +49,11 @@
   }
 
   .statement-banner-text {
-    font-size: 56px;
+    font-size: var(--font-display-m);
+  }
+
+  html[lang="ja"] .statement-banner-text {
+    font-size: var(--font-display-m-jp);
   }
 }
 
@@ -56,13 +65,21 @@
   }
 
   .statement-banner-text {
-    font-size: 36px;
+    font-size: var(--font-heading-xl);
+  }
+
+  html[lang="ja"] .statement-banner-text {
+    font-size: var(--font-heading-xl-jp);
   }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
   .statement-banner-text {
-    font-size: 28px;
+    font-size: var(--font-heading-m);
+  }
+
+  html[lang="ja"] .statement-banner-text {
+    font-size: var(--font-heading-m-jp);
   }
 }
