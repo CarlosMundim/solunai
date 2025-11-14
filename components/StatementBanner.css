@@ -16,7 +16,7 @@
 }
 
 .statement-banner-text {
-  font-size: var(--font-display-xl);
+  font-size: 80px;
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
   color: #ffffff;
@@ -26,7 +26,7 @@
 }
 
 html[lang="ja"] .statement-banner-text {
-  font-size: var(--font-display-xl-jp);
+  font-size: 72px;
   line-height: var(--line-height-base-jp);
 }
 
@@ -49,11 +49,11 @@ html[lang="ja"] .statement-banner-text {
   }
 
   .statement-banner-text {
-    font-size: var(--font-display-m);
+    font-size: 62px;
   }
 
   html[lang="ja"] .statement-banner-text {
-    font-size: var(--font-display-m-jp);
+    font-size: 56px;
   }
 }
 
@@ -65,21 +65,21 @@ html[lang="ja"] .statement-banner-text {
   }
 
   .statement-banner-text {
-    font-size: var(--font-heading-xl);
+    font-size: 50px;
   }
 
   html[lang="ja"] .statement-banner-text {
-    font-size: var(--font-heading-xl-jp);
+    font-size: 45px;
   }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
   .statement-banner-text {
-    font-size: var(--font-heading-m);
+    font-size: 34px;
   }
 
   html[lang="ja"] .statement-banner-text {
-    font-size: var(--font-heading-m-jp);
+    font-size: 30px;
   }
 }
