@@ -68,17 +68,17 @@
   /* Japanese-First Design (Nov 2025)           */
   /* ============================================ */
 
-  /* Font Sizes - Display (Hero Statements) */
-  --font-display-xl: 72px;
-  --font-display-l: 64px;
-  --font-display-m: 56px;
+  /* Font Sizes - Display (Hero Statements) - BOLD & CONFIDENT */
+  --font-display-xl: 100px;  /* Was 72px - 40% increase for maximum impact */
+  --font-display-l: 90px;    /* Was 64px - 40% increase */
+  --font-display-m: 78px;    /* Was 56px - 40% increase */
 
-  /* Font Sizes - Headings */
-  --font-heading-xl: 48px;
-  --font-heading-l: 40px;
-  --font-heading-m: 32px;
-  --font-heading-s: 24px;
-  --font-heading-xs: 20px;
+  /* Font Sizes - Headings - STRONG HIERARCHY */
+  --font-heading-xl: 62px;   /* Was 48px - 30% increase for clear dominance */
+  --font-heading-l: 52px;    /* Was 40px - 30% increase */
+  --font-heading-m: 42px;    /* Was 32px - 30% increase */
+  --font-heading-s: 28px;    /* Was 24px - 17% increase for card separation */
+  --font-heading-xs: 24px;   /* Was 20px - 20% increase */
 
   /* Font Sizes - Body Text */
   --font-body-lead: 20px;
@@ -94,14 +94,14 @@
   --font-nav-mobile: 18px;
 
   /* Font Sizes - Japanese (10% smaller for visual balance) */
-  --font-display-xl-jp: 65px;
-  --font-display-l-jp: 58px;
-  --font-display-m-jp: 50px;
-  --font-heading-xl-jp: 43px;
-  --font-heading-l-jp: 36px;
-  --font-heading-m-jp: 29px;
-  --font-heading-s-jp: 22px;
-  --font-heading-xs-jp: 18px;
+  --font-display-xl-jp: 90px;   /* Was 65px - scales with English increase */
+  --font-display-l-jp: 81px;    /* Was 58px - scales with English increase */
+  --font-display-m-jp: 70px;    /* Was 50px - scales with English increase */
+  --font-heading-xl-jp: 56px;   /* Was 43px - scales with English increase */
+  --font-heading-l-jp: 47px;    /* Was 36px - scales with English increase */
+  --font-heading-m-jp: 38px;    /* Was 29px - scales with English increase */
+  --font-heading-s-jp: 25px;    /* Was 22px - scales with English increase */
+  --font-heading-xs-jp: 22px;   /* Was 18px - scales with English increase */
   --font-body-lead-jp: 18px;
   --font-body-base-jp: 15px;
   --font-body-small-jp: 13px;
