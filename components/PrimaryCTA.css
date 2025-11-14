@@ -28,19 +28,29 @@
 }
 
 .cta-title {
-  font-size: 56px;
-  font-weight: 700;
+  font-size: var(--font-display-m);
+  font-weight: var(--font-weight-bold);
   color: #ffffff;
   margin: 0;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+html[lang="ja"] .cta-title {
+  font-size: var(--font-display-m-jp);
+  line-height: var(--line-height-base-jp);
 }
 
 .cta-subtitle {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: var(--font-body-lead);
+  line-height: var(--line-height-base);
   color: rgba(255, 255, 255, 0.9);
-  margin: 0 0 32px 0;
+  margin: 0 0 var(--spacing-m) 0;
+}
+
+html[lang="ja"] .cta-subtitle {
+  font-size: var(--font-body-lead-jp);
+  line-height: var(--line-height-relaxed-jp);
 }
 
 .cta-button {
@@ -51,15 +61,19 @@
   background: var(--solunai-blaze);
   /* Industrial Precision - Bold Orange */
   color: var(--precision-white);
-  font-size: 18px;
-  font-weight: 600;
+  font-size: var(--font-button-lg);
+  font-weight: var(--font-weight-semibold);
   border: none;
   border-radius: 50px;
   cursor: pointer;
   transition: var(--transition-base);
   box-shadow: var(--shadow-orange);
-  margin-bottom: 32px;
+  margin-bottom: var(--spacing-m);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html[lang="ja"] .cta-button {
+  font-size: var(--font-button-lg-jp);
 }
 
 .cta-button:hover {
@@ -98,8 +112,12 @@
   align-items: center;
   justify-content: flex-start;
   gap: 8px;
-  font-size: 16px;
+  font-size: var(--font-body-base);
   color: rgba(255, 255, 255, 0.9);
+}
+
+html[lang="ja"] .cta-feature {
+  font-size: var(--font-body-base-jp);
 }
 
 .cta-feature-check {
@@ -120,11 +138,19 @@
   }
 
   .cta-title {
-    font-size: 44px;
+    font-size: var(--font-heading-xl);
+  }
+
+  html[lang="ja"] .cta-title {
+    font-size: var(--font-heading-xl-jp);
   }
 
   .cta-subtitle {
-    font-size: 18px;
+    font-size: var(--font-body-base);
+  }
+
+  html[lang="ja"] .cta-subtitle {
+    font-size: var(--font-body-base-jp);
   }
 
   .cta-features {
@@ -153,18 +179,30 @@
   }
 
   .cta-title {
-    font-size: 36px;
+    font-size: var(--font-heading-l);
+  }
+
+  html[lang="ja"] .cta-title {
+    font-size: var(--font-heading-l-jp);
   }
 
   .cta-subtitle {
-    font-size: 16px;
-    margin-bottom: 32px;
+    font-size: var(--font-body-base);
+    margin-bottom: var(--spacing-m);
+  }
+
+  html[lang="ja"] .cta-subtitle {
+    font-size: var(--font-body-base-jp);
   }
 
   .cta-button {
     padding: 18px 40px;
-    font-size: 16px;
-    margin-bottom: 32px;
+    font-size: var(--font-button-md);
+    margin-bottom: var(--spacing-m);
+  }
+
+  html[lang="ja"] .cta-button {
+    font-size: var(--font-button-md-jp);
   }
 
   .cta-features {
@@ -173,27 +211,47 @@
   }
 
   .cta-feature {
-    font-size: 15px;
+    font-size: var(--font-body-base);
     justify-content: center;
+  }
+
+  html[lang="ja"] .cta-feature {
+    font-size: var(--font-body-base-jp);
   }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
   .cta-title {
-    font-size: 28px;
+    font-size: var(--font-heading-m);
+  }
+
+  html[lang="ja"] .cta-title {
+    font-size: var(--font-heading-m-jp);
   }
 
   .cta-subtitle {
-    font-size: 15px;
+    font-size: var(--font-body-base);
+  }
+
+  html[lang="ja"] .cta-subtitle {
+    font-size: var(--font-body-base-jp);
   }
 
   .cta-button {
     padding: 16px 32px;
-    font-size: 15px;
+    font-size: var(--font-button-md);
+  }
+
+  html[lang="ja"] .cta-button {
+    font-size: var(--font-button-md-jp);
   }
 
   .cta-feature {
-    font-size: 14px;
+    font-size: var(--font-body-small);
+  }
+
+  html[lang="ja"] .cta-feature {
+    font-size: var(--font-body-small-jp);
   }
 }
