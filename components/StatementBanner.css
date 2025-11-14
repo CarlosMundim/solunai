@@ -16,9 +16,9 @@
 }
 
 .statement-banner-text {
-  font-size: 64px;
+  font-size: 80px;
   font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-tight);
+  line-height: 1.1;
   color: #ffffff;
   margin: 0;
   letter-spacing: var(--letter-spacing-tight);
@@ -26,8 +26,8 @@
 }
 
 html[lang="ja"] .statement-banner-text {
-  font-size: 58px;
-  line-height: var(--line-height-base-jp);
+  font-size: 72px;
+  line-height: 1.1;
 }
 
 @keyframes fadeInScale {
@@ -49,11 +49,13 @@ html[lang="ja"] .statement-banner-text {
   }
 
   .statement-banner-text {
-    font-size: 50px;
+    font-size: 62px;
+    line-height: 1.1;
   }
 
   html[lang="ja"] .statement-banner-text {
-    font-size: 45px;
+    font-size: 56px;
+    line-height: 1.1;
   }
 }
 
@@ -65,21 +67,25 @@ html[lang="ja"] .statement-banner-text {
   }
 
   .statement-banner-text {
-    font-size: 40px;
+    font-size: 50px;
+    line-height: 1.1;
   }
 
   html[lang="ja"] .statement-banner-text {
-    font-size: 36px;
+    font-size: 45px;
+    line-height: 1.1;
   }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
   .statement-banner-text {
-    font-size: 27px;
+    font-size: 34px;
+    line-height: 1.1;
   }
 
   html[lang="ja"] .statement-banner-text {
-    font-size: 24px;
+    font-size: 30px;
+    line-height: 1.1;
   }
 }
