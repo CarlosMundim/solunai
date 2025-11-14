@@ -57,11 +57,92 @@
   --border-orange-subtle: rgba(245, 72, 10, 0.15);
   --border-orange-glow: rgba(245, 72, 10, 0.3);
 
-  /* Typography */
+  /* Typography - Font Families */
   --font-inter: 'Inter', sans-serif;
   --font-space-grotesk: 'Space Grotesk', sans-serif;
   --font-noto-sans-jp: 'Noto Sans JP', sans-serif;
   --font-heading: var(--font-space-grotesk), var(--font-inter), sans-serif;
+
+  /* ============================================ */
+  /* TYPOGRAPHY SYSTEM - Standardized Sizes     */
+  /* Japanese-First Design (Nov 2025)           */
+  /* ============================================ */
+
+  /* Font Sizes - Display (Hero Statements) */
+  --font-display-xl: 72px;
+  --font-display-l: 64px;
+  --font-display-m: 56px;
+
+  /* Font Sizes - Headings */
+  --font-heading-xl: 48px;
+  --font-heading-l: 40px;
+  --font-heading-m: 32px;
+  --font-heading-s: 24px;
+  --font-heading-xs: 20px;
+
+  /* Font Sizes - Body Text */
+  --font-body-lead: 20px;
+  --font-body-base: 16px;
+  --font-body-small: 14px;
+  --font-body-tiny: 12px;
+
+  /* Font Sizes - Interactive */
+  --font-button-lg: 18px;
+  --font-button-md: 16px;
+  --font-button-sm: 14px;
+  --font-nav-desktop: 16px;
+  --font-nav-mobile: 18px;
+
+  /* Font Sizes - Japanese (10% smaller for visual balance) */
+  --font-display-xl-jp: 65px;
+  --font-display-l-jp: 58px;
+  --font-display-m-jp: 50px;
+  --font-heading-xl-jp: 43px;
+  --font-heading-l-jp: 36px;
+  --font-heading-m-jp: 29px;
+  --font-heading-s-jp: 22px;
+  --font-heading-xs-jp: 18px;
+  --font-body-lead-jp: 18px;
+  --font-body-base-jp: 15px;
+  --font-body-small-jp: 13px;
+  --font-body-tiny-jp: 11px;
+  --font-button-lg-jp: 16px;
+  --font-button-md-jp: 15px;
+  --font-button-sm-jp: 13px;
+
+  /* Line Heights */
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.4;
+  --line-height-base: 1.6;
+  --line-height-relaxed: 1.7;
+  --line-height-loose: 1.9;
+
+  /* Line Heights - Japanese (Higher for readability) */
+  --line-height-base-jp: 1.85;
+  --line-height-relaxed-jp: 1.9;
+  --line-height-loose-jp: 2.0;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.02em;
+  --letter-spacing-wider: 0.05em;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing Scale (8px base) */
+  --spacing-xxs: 8px;
+  --spacing-xs: 16px;
+  --spacing-s: 24px;
+  --spacing-m: 40px;
+  --spacing-l: 60px;
+  --spacing-xl: 80px;
+  --spacing-xxl: 120px;
+  --spacing-xxxl: 200px;
 
   /* Shadows (Industrial Precision - Orange Forge Glow) */
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -109,40 +190,88 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  font-size: var(--font-body-base);
+  line-height: var(--line-height-base);
+  letter-spacing: var(--letter-spacing-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 html[lang="ja"] body {
   font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+  font-size: var(--font-body-base-jp);
+  line-height: var(--line-height-base-jp);
+  letter-spacing: var(--letter-spacing-wide);
 }
 
 html[lang="en"] body {
   font-family: var(--font-inter), 'Open Sans', sans-serif;
+  font-size: var(--font-body-base);
+  line-height: var(--line-height-base);
+  letter-spacing: var(--letter-spacing-normal);
 }
 
 /* Ensure smooth font rendering for Japanese */
 html[lang="ja"] * {
   font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
-  letter-spacing: 0.02em;
+  letter-spacing: var(--letter-spacing-wide);
 }
 
 /* Optimize for English */
 html[lang="en"] * {
   font-family: var(--font-inter), 'Open Sans', sans-serif;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--letter-spacing-normal);
 }
 
 /* Headings use Space Grotesk for both languages */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
 }
 
 h1 {
-  font-weight: 700;
+  font-size: var(--font-heading-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: var(--font-heading-l);
+}
+
+h3 {
+  font-size: var(--font-heading-m);
+}
+
+h4 {
+  font-size: var(--font-heading-s);
+}
+
+h5, h6 {
+  font-size: var(--font-heading-xs);
+}
+
+/* Japanese heading adjustments */
+html[lang="ja"] h1 {
+  font-size: var(--font-heading-xl-jp);
+}
+
+html[lang="ja"] h2 {
+  font-size: var(--font-heading-l-jp);
+}
+
+html[lang="ja"] h3 {
+  font-size: var(--font-heading-m-jp);
+}
+
+html[lang="ja"] h4 {
+  font-size: var(--font-heading-s-jp);
+}
+
+html[lang="ja"] h5,
+html[lang="ja"] h6 {
+  font-size: var(--font-heading-xs-jp);
 }
 
 @layer utilities {
