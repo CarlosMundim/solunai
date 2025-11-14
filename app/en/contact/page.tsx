@@ -414,9 +414,6 @@ export default function ContactPage() {
                   <p style={{ marginBottom: '8px' }}>
                     Tokyo 104-0061, Japan
                   </p>
-                  <p style={{ marginBottom: '8px' }}>
-                    <strong>Phone:</strong> +81-3-XXXX-XXXX
-                  </p>
                   <p>
                     <strong>Email:</strong>{' '}
                     <a href="mailto:tokyo@solunai.co.jp" style={{ color: '#f5480a' }}>
