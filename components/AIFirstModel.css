@@ -380,12 +380,12 @@ html[lang="ja"] .section-description {
 }
 
 .human-header {
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  background: white;
   border: 3px solid var(--bg-dark-1);
 }
 
 .ai-header {
-  background: linear-gradient(135deg, #fff7f5 0%, #ffffff 100%);
+  background: white;
   border: 3px solid var(--solunai-orange);
 }
 
@@ -428,7 +428,7 @@ html[lang="ja"] .section-description {
 }
 
 .human-role {
-  background: #fafafa;
+  background: white;
   border: 3px solid var(--bg-dark-1);
 }
 
@@ -440,7 +440,7 @@ html[lang="ja"] .section-description {
 }
 
 .ai-agent {
-  background: #fffaf8;
+  background: white;
   border: 3px solid var(--solunai-orange);
 }
 
@@ -507,7 +507,7 @@ html[lang="ja"] .section-description {
 /* Highlight Cards - Industrial Precision Forge */
 .bento-highlight {
   grid-column: span 1;
-  background: var(--steel-navy);
+  background: white;
   border: 3px solid var(--solunai-blaze);
   padding: 32px;
   display: flex;
@@ -533,7 +533,7 @@ html[lang="ja"] .section-description {
 .highlight-value {
   font-size: 48px;
   font-weight: 700;
-  color: var(--precision-white);
+  color: var(--bg-dark-1);
   line-height: 1;
   margin: 0;
 }
@@ -541,7 +541,7 @@ html[lang="ja"] .section-description {
 .highlight-label {
   font-size: 15px;
   font-weight: 600;
-  color: var(--silver-mist);
+  color: #666666;
   line-height: 1.4;
   margin: 0;
 }
@@ -558,13 +558,13 @@ html[lang="ja"] .section-description {
 }
 
 .human-summary {
-  background: linear-gradient(135deg, #f0f1f3 0%, #fafafa 100%);
+  background: white;
   border: 3px solid var(--bg-dark-1);
   grid-column: 1 / span 2;
 }
 
 .ai-summary {
-  background: linear-gradient(135deg, #fff0eb 0%, #fffaf8 100%);
+  background: white;
   border: 3px solid var(--solunai-orange);
   grid-column: 3 / span 2;
 }
