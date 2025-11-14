@@ -92,7 +92,7 @@
 }
 
 .availability-badge {
-  background: linear-gradient(135deg, var(--solunai-orange) 0%, var(--solunai-orange-dark) 100%);
+  background: var(--solunai-orange);
   color: #ffffff;
   padding: 12px 24px;
   border-radius: 24px;
