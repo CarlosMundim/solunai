@@ -76,7 +76,7 @@ html[lang="ja"] .value-proposition-title {
 }
 
 .card-title {
-  font-size: var(--font-heading-m);
+  font-size: var(--font-card-title-small);
   font-weight: var(--font-weight-bold);
   color: #1a1a2e;
   margin: 0 0 12px 0;
@@ -84,7 +84,7 @@ html[lang="ja"] .value-proposition-title {
 }
 
 html[lang="ja"] .card-title {
-  font-size: var(--font-heading-m-jp);
+  font-size: var(--font-card-title-small-jp);
   line-height: var(--line-height-base-jp);
 }
 
@@ -172,11 +172,11 @@ html[lang="ja"] .card-result {
   }
 
   .card-title {
-    font-size: var(--font-heading-s);
+    font-size: var(--font-card-title-small);
   }
 
   html[lang="ja"] .card-title {
-    font-size: var(--font-heading-s-jp);
+    font-size: var(--font-card-title-small-jp);
   }
 }
 
@@ -211,11 +211,11 @@ html[lang="ja"] .card-result {
   }
 
   .card-title {
-    font-size: var(--font-heading-xs);
+    font-size: var(--font-card-title-compact);
   }
 
   html[lang="ja"] .card-title {
-    font-size: var(--font-heading-xs-jp);
+    font-size: var(--font-card-title-compact-jp);
   }
 
   .card-subtitle {
@@ -254,10 +254,10 @@ html[lang="ja"] .card-result {
   }
 
   .card-title {
-    font-size: var(--font-heading-xs);
+    font-size: var(--font-card-title-compact);
   }
 
   html[lang="ja"] .card-title {
-    font-size: var(--font-heading-xs-jp);
+    font-size: var(--font-card-title-compact-jp);
   }
 }
