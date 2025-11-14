@@ -1,6 +1,6 @@
 .technology-partners {
   width: 100%;
-  background: var(--bg-cream);
+  background: var(--bg-subtle-gray);
   padding: var(--section-spacing-desktop) 0;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
