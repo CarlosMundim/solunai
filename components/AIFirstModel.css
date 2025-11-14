@@ -154,17 +154,17 @@ html[lang="ja"] .section-description {
 }
 
 .comparison-card.solunai {
-  border: 3px solid var(--solunai-blaze);
+  border: 3px solid var(--steel-navy);
   background: var(--steel-navy);
   /* Solid navy - Industrial Precision */
-  box-shadow: var(--shadow-orange);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   position: relative;
   transition: all 0.3s ease;
 }
 
 .comparison-card.solunai:hover {
-  box-shadow: var(--shadow-forge);
-  border-color: var(--heat-glow);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-color: var(--steel-navy);
 }
 
 .comparison-card.solunai .comparison-badge {
