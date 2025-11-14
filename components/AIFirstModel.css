@@ -15,51 +15,75 @@
 /* Header */
 .ai-first-header {
   text-align: center;
-  margin-bottom: 120px;
+  margin-bottom: var(--spacing-xxl);
 }
 
 .ai-first-overtitle {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: var(--font-body-small);
+  font-weight: var(--font-weight-bold);
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--bg-dark-1);
-  margin-bottom: 24px;
+  margin-bottom: var(--spacing-s);
+}
+
+html[lang="ja"] .ai-first-overtitle {
+  font-size: var(--font-body-small-jp);
 }
 
 .ai-first-title {
-  font-size: 56px;
-  font-weight: 700;
+  font-size: var(--font-display-m);
+  font-weight: var(--font-weight-bold);
   color: var(--bg-dark-1);
   margin-bottom: 32px;
-  line-height: 1.2;
+  line-height: var(--line-height-tight);
+}
+
+html[lang="ja"] .ai-first-title {
+  font-size: var(--font-display-m-jp);
+  line-height: var(--line-height-base-jp);
 }
 
 .ai-first-subtitle {
-  font-size: 20px;
+  font-size: var(--font-body-lead);
   color: #666666;
   max-width: 900px;
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: var(--line-height-loose);
   font-style: italic;
+}
+
+html[lang="ja"] .ai-first-subtitle {
+  font-size: var(--font-body-lead-jp);
+  line-height: var(--line-height-loose-jp);
+  font-style: normal;
 }
 
 /* Section Titles */
 .section-title {
-  font-size: 46px;
-  font-weight: 700;
+  font-size: var(--font-heading-xl);
+  font-weight: var(--font-weight-bold);
   color: var(--bg-dark-1);
   text-align: center;
   margin-bottom: 64px;
 }
 
+html[lang="ja"] .section-title {
+  font-size: var(--font-heading-xl-jp);
+}
+
 .section-description {
-  font-size: 18px;
+  font-size: var(--font-button-lg);
   color: #666666;
   text-align: center;
   max-width: 800px;
   margin: 0 auto 64px;
-  line-height: 1.8;
+  line-height: var(--line-height-loose);
+}
+
+html[lang="ja"] .section-description {
+  font-size: var(--font-button-lg-jp);
+  line-height: var(--line-height-loose-jp);
 }
 
 /* Comparison Section */
