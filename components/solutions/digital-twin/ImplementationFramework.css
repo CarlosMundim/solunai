@@ -46,7 +46,7 @@ html[lang="ja"] .implementation-framework {
   background: #ffffff;
   border: 2px solid #e5e7eb;
   border-radius: 16px;
-  padding: 24px;
+  padding: 40px;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -242,7 +242,7 @@ html[lang="ja"] .support-item-description {
   }
 
   .phase-card {
-    padding: 24px;
+    padding: 32px;
   }
 
   .phase-title {
