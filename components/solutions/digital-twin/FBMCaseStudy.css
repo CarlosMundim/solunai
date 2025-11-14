@@ -1,7 +1,7 @@
 .fbm-case-study {
   width: 100%;
   background: #ffffff;
-  padding: var(--section-spacing-desktop) 24px;
+  padding: 60px 24px var(--section-spacing-desktop) 24px;
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -75,7 +75,7 @@ html[lang="ja"] .fbm-subheading {
 }
 
 .client-name {
-  font-size: 24px;
+  font-size: 38px;
   font-weight: 700;
   color: var(--foreground, #171717);
   margin: 0 0 20px 0;
@@ -141,7 +141,7 @@ html[lang="ja"] .client-detail {
 }
 
 .fbm-section-title {
-  font-size: 18px;
+  font-size: 27px;
   font-weight: 800;
   margin: 0 0 24px 0;
   color: var(--foreground, #171717);
@@ -199,7 +199,7 @@ html[lang="ja"] .fbm-list li {
 }
 
 .fbm-results-title {
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 700;
   color: var(--foreground, #171717);
   margin: 0 0 32px 0;
@@ -252,7 +252,7 @@ html[lang="ja"] .metric-label {
 }
 
 .fbm-technology-title {
-  font-size: 18px;
+  font-size: 27px;
   font-weight: 800;
   color: var(--foreground, #171717);
   margin: 0 0 24px 0;
@@ -333,7 +333,7 @@ html[lang="ja"] .significance-point {
 /* Responsive Design */
 @media (max-width: 1024px) {
   .fbm-case-study {
-    padding: var(--section-spacing-tablet) 24px;
+    padding: 40px 24px var(--section-spacing-tablet) 24px;
   }
 
   .fbm-heading {
@@ -347,7 +347,7 @@ html[lang="ja"] .significance-point {
 
 @media (max-width: 768px) {
   .fbm-case-study {
-    padding: var(--section-spacing-mobile) 20px;
+    padding: 30px 20px var(--section-spacing-mobile) 20px;
   }
 
   .fbm-heading {

@@ -82,7 +82,7 @@ html[lang="ja"] .implementation-framework {
 }
 
 .phase-title {
-  font-size: 22px;
+  font-size: 33px;
   font-weight: 700;
   color: var(--foreground, #171717);
   margin: 0 0 12px 0;
@@ -149,7 +149,7 @@ html[lang="ja"] .implementation-framework {
 }
 
 .support-heading {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 700;
   color: var(--foreground, #171717);
   margin: 0 0 40px 0;
@@ -176,21 +176,21 @@ html[lang="ja"] .implementation-framework {
 }
 
 .support-item-title {
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 700;
   color: var(--foreground, #171717);
   margin: 0 0 12px 0;
 }
 
 .support-item-description {
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.7;
   color: #6b7280;
   margin: 0;
 }
 
 html[lang="ja"] .support-item-description {
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0.02em;
 }
 
@@ -246,7 +246,7 @@ html[lang="ja"] .support-item-description {
   }
 
   .phase-title {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .support-section {
@@ -254,7 +254,7 @@ html[lang="ja"] .support-item-description {
   }
 
   .support-heading {
-    font-size: 28px;
+    font-size: 36px;
     margin-bottom: 32px;
   }
 
