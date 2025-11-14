@@ -96,8 +96,11 @@
   /* Font Sizes - Card Titles (Layout-Specific for Professional Hierarchy) */
   --font-card-title-large: 36px;    /* 1-column cards (hero cards, feature cards) */
   --font-card-title-medium: 32px;   /* 2-column cards (benefits, impacts) */
-  --font-card-title-small: 24px;    /* 3-column cards (value props, problems) */
+  --font-card-title-small: 28px;    /* 3-column cards (value props, problems) - increased from 24px */
   --font-card-title-compact: 18px;  /* 4+ column cards (small info cards) */
+
+  /* Font Sizes - Special Elements */
+  --font-problem-number: 36px;      /* Problem card numbers (01, 02, 03) - bold and prominent */
 
   /* Font Sizes - Japanese (10% smaller for visual balance) */
   --font-display-xl-jp: 90px;   /* Was 65px - scales with English increase */
@@ -119,8 +122,11 @@
   /* Font Sizes - Card Titles Japanese (10% smaller for visual balance) */
   --font-card-title-large-jp: 32px;    /* 10% smaller than 36px */
   --font-card-title-medium-jp: 29px;   /* 10% smaller than 32px */
-  --font-card-title-small-jp: 22px;    /* 10% smaller than 24px */
+  --font-card-title-small-jp: 25px;    /* 10% smaller than 28px */
   --font-card-title-compact-jp: 16px;  /* 10% smaller than 18px */
+
+  /* Font Sizes - Special Elements Japanese */
+  --font-problem-number-jp: 32px;      /* 10% smaller than 36px */
 
   /* Line Heights */
   --line-height-tight: 1.2;

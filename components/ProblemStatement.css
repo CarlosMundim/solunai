@@ -57,7 +57,7 @@ html[lang="ja"] .problem-statement-title {
 }
 
 .problem-number {
-  font-size: var(--font-body-small);
+  font-size: var(--font-problem-number);
   font-weight: var(--font-weight-bold);
   color: #FF5722;
   letter-spacing: 2px;
@@ -65,7 +65,7 @@ html[lang="ja"] .problem-statement-title {
 }
 
 html[lang="ja"] .problem-number {
-  font-size: var(--font-body-small-jp);
+  font-size: var(--font-problem-number-jp);
 }
 
 .problem-title {
