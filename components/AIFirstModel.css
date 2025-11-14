@@ -507,8 +507,8 @@ html[lang="ja"] .section-description {
 /* Highlight Cards - Industrial Precision Forge */
 .bento-highlight {
   grid-column: span 1;
-  background: white;
-  border: 3px solid var(--solunai-blaze);
+  background: var(--steel-navy);
+  border: 3px solid var(--steel-navy);
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -526,14 +526,14 @@ html[lang="ja"] .section-description {
 }
 
 .highlight-icon {
-  color: var(--solunai-blaze);
+  color: white;
   margin-bottom: 8px;
 }
 
 .highlight-value {
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 700;
-  color: var(--bg-dark-1);
+  color: white;
   line-height: 1;
   margin: 0;
 }
@@ -541,7 +541,7 @@ html[lang="ja"] .section-description {
 .highlight-label {
   font-size: 15px;
   font-weight: 600;
-  color: #666666;
+  color: white;
   line-height: 1.4;
   margin: 0;
 }
