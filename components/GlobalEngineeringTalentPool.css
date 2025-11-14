@@ -142,7 +142,6 @@
 }
 
 .comparison-card.worldemp {
-  border: 2px solid var(--solunai-orange);
   position: relative;
 }
 
@@ -151,7 +150,7 @@
   position: absolute;
   top: -15px;
   right: 30px;
-  background: linear-gradient(135deg, var(--solunai-orange) 0%, var(--solunai-orange-dark) 100%);
+  background: var(--solunai-orange);
   color: #ffffff;
   padding: 10px 24px;
   border-radius: 24px;
