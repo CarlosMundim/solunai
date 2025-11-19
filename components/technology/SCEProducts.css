@@ -1,6 +1,11 @@
 .sce-products-section {
-  padding: 100px 20px;
+  padding: var(--section-spacing-desktop) 24px;
   background: #0d0d0d;
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+}
+
+html[lang="ja"] .sce-products-section {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
 }
 
 .sce-products-container {
@@ -150,8 +155,18 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+  .sce-products-section {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+
   .sce-products-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sce-products-section {
+    padding: var(--section-spacing-mobile) 20px;
   }
 }
 
@@ -166,5 +181,11 @@
 
   .sce-products-title {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sce-products-section {
+    padding: var(--section-spacing-mobile) 16px;
   }
 }

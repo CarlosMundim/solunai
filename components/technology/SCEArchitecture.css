@@ -1,6 +1,11 @@
 .sce-architecture-section {
-  padding: 100px 20px;
+  padding: var(--section-spacing-desktop) 24px;
   background: #f8fafc;
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+}
+
+html[lang="ja"] .sce-architecture-section {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
 }
 
 .sce-architecture-container {
@@ -92,12 +97,22 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+  .sce-architecture-section {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+
   .sce-architecture-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
   .sce-component-card:nth-child(5) {
     grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .sce-architecture-section {
+    padding: var(--section-spacing-mobile) 20px;
   }
 }
 
@@ -112,5 +127,11 @@
 
   .sce-architecture-title {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sce-architecture-section {
+    padding: var(--section-spacing-mobile) 16px;
   }
 }

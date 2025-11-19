@@ -1,6 +1,11 @@
 .sce-cta-section {
-  padding: 100px 20px;
+  padding: var(--section-spacing-desktop) 24px;
   background: linear-gradient(135deg, #1a2332 0%, #0d0d0d 100%);
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+}
+
+html[lang="ja"] .sce-cta-section {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
 }
 
 .sce-cta-container {
@@ -91,6 +96,18 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .sce-cta-section {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sce-cta-section {
+    padding: var(--section-spacing-mobile) 20px;
+  }
+}
+
 @media (max-width: 640px) {
   .sce-cta-title {
     font-size: 2rem;
@@ -105,5 +122,11 @@
   .btn-secondary {
     width: 100%;
     max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sce-cta-section {
+    padding: var(--section-spacing-mobile) 16px;
   }
 }
