@@ -128,12 +128,12 @@ html[lang="ja"] .differentiator-title {
 }
 
 .comparison-column.traditional {
-  background: var(--background);
+  background: var(--precision-white);
   border: 1px solid var(--silver-mist);
 }
 
 .comparison-column.sce {
-  background: var(--background);
+  background: var(--precision-white);
   border: 1px solid var(--silver-mist);
 }
 
