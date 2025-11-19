@@ -41,24 +41,10 @@ html[lang="ja"] .sce-architecture-subtitle {
 
 .sce-architecture-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-@media (max-width: 1024px) {
-  .sce-architecture-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 800px;
-  }
-}
-
-@media (max-width: 640px) {
-  .sce-architecture-grid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-  }
 }
 
 .sce-component-card {
@@ -68,6 +54,7 @@ html[lang="ja"] .sce-architecture-subtitle {
   box-shadow: var(--shadow-md);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
   border: 1px solid var(--silver-mist);
+  grid-column: span 2;
 }
 
 .sce-component-card:hover {
@@ -75,9 +62,33 @@ html[lang="ja"] .sce-architecture-subtitle {
   box-shadow: var(--card-hover-shadow);
 }
 
-.sce-component-card:nth-child(4),
-.sce-component-card:nth-child(5) {
-  grid-column: span 1;
+/* Center last two cards */
+.sce-architecture-grid .sce-component-card:nth-child(4) {
+  grid-column: 2 / 4;
+}
+
+.sce-architecture-grid .sce-component-card:nth-child(5) {
+  grid-column: 4 / 6;
+}
+
+@media (max-width: 1024px) {
+  .sce-architecture-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+
+  .sce-component-card,
+  .sce-architecture-grid .sce-component-card:nth-child(4),
+  .sce-architecture-grid .sce-component-card:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .sce-architecture-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
 }
 
 .component-title {
