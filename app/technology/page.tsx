@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SCEHero from '@/components/technology/SCEHero';
+import SCEResearchBanner from '@/components/technology/SCEResearchBanner';
 import SCEArchitecture from '@/components/technology/SCEArchitecture';
 import SCEProducts from '@/components/technology/SCEProducts';
 import SCECTA from '@/components/technology/SCECTA';
@@ -17,6 +18,7 @@ export default function TechnologyPage() {
       <Header lang="ja" />
       <main>
         <SCEHero lang="ja" />
+        <SCEResearchBanner lang="ja" />
         <SCEArchitecture lang="ja" />
         <SCEProducts lang="ja" />
         <SCECTA lang="ja" />

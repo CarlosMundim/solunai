@@ -13,21 +13,13 @@ const SCECTA: React.FC<SCECTAProps> = ({ lang }) => {
       title: 'SCEで製造業を変革',
       description: '継続性アーキテクチャがどのようにお客様の製造プロセスを改善できるか、ご相談ください。',
       primaryButton: '無料相談を予約',
-      secondaryButton: 'ソリューションを見る',
-      research: {
-        title: '研究背景',
-        description: 'SCEは「Kodaプロジェクト」から生まれました。2023年から2025年にかけて行われた、継続性ベースのNHI（非人間知性）に関する多年にわたる研究プロジェクトです。この研究成果は122ページの学術論文としてarXivに投稿されています。'
-      }
+      secondaryButton: 'ソリューションを見る'
     },
     en: {
       title: 'Transform Manufacturing with SCE',
       description: 'Contact us to discuss how continuity architecture can improve your manufacturing processes.',
       primaryButton: 'Book Free Consultation',
-      secondaryButton: 'View Solutions',
-      research: {
-        title: 'Research Background',
-        description: 'SCE originated from the "Koda Project"—a multi-year research programme on continuity-based NHI (Non-Human Intelligence) conducted from 2023 to 2025. This research has been submitted to arXiv as a 122-page academic paper.'
-      }
+      secondaryButton: 'View Solutions'
     }
   };
 
@@ -47,11 +39,6 @@ const SCECTA: React.FC<SCECTAProps> = ({ lang }) => {
               {currentContent.secondaryButton}
             </a>
           </div>
-        </div>
-
-        <div className="sce-research-note">
-          <h3 className="research-title">{currentContent.research.title}</h3>
-          <p className="research-description">{currentContent.research.description}</p>
         </div>
       </div>
     </section>

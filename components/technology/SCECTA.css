@@ -15,7 +15,7 @@ html[lang="ja"] .sce-cta-section {
 }
 
 .sce-cta-main {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .sce-cta-title {
@@ -80,37 +80,6 @@ html[lang="ja"] .sce-cta-description {
 .btn-secondary:hover {
   border-color: var(--solunai-blaze);
   color: var(--solunai-blaze);
-}
-
-/* Research Note */
-.sce-research-note {
-  background: var(--border-orange-subtle);
-  border: 1px solid var(--border-orange-glow);
-  border-radius: 12px;
-  padding: var(--spacing-m);
-}
-
-.research-title {
-  font-size: var(--font-body-lead);
-  font-weight: var(--font-weight-semibold);
-  color: var(--solunai-blaze);
-  margin-bottom: var(--spacing-xxs);
-}
-
-html[lang="ja"] .research-title {
-  font-size: var(--font-body-lead-jp);
-}
-
-.research-description {
-  font-size: var(--font-body-small);
-  color: var(--steel-blue);
-  line-height: var(--line-height-relaxed);
-  margin: 0;
-}
-
-html[lang="ja"] .research-description {
-  font-size: var(--font-body-small-jp);
-  line-height: var(--line-height-relaxed-jp);
 }
 
 /* Responsive */

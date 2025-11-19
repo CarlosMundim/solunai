@@ -1,0 +1,60 @@
+.sce-research-banner {
+  background: var(--precision-white);
+  border-bottom: 1px solid var(--silver-mist);
+  padding: var(--spacing-s) 24px;
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+}
+
+html[lang="ja"] .sce-research-banner {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+}
+
+.sce-research-banner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.research-banner-title {
+  font-size: var(--font-body-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--solunai-blaze);
+  margin-right: 8px;
+}
+
+html[lang="ja"] .research-banner-title {
+  font-size: var(--font-body-base-jp);
+}
+
+.research-banner-description {
+  font-size: var(--font-body-small);
+  color: var(--titanium-grey);
+  line-height: var(--line-height-relaxed);
+}
+
+html[lang="ja"] .research-banner-description {
+  font-size: var(--font-body-small-jp);
+  line-height: var(--line-height-relaxed-jp);
+}
+
+@media (max-width: 768px) {
+  .sce-research-banner {
+    padding: var(--spacing-xs) 20px;
+  }
+
+  .sce-research-banner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .research-banner-title {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .sce-research-banner {
+    padding: var(--spacing-xs) 16px;
+  }
+}
