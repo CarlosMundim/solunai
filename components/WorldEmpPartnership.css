@@ -59,9 +59,8 @@ html[lang="ja"] .partnership-title {
 
 .partner-logo {
   object-fit: contain;
-  height: auto;
-  max-height: 40px;
-  width: auto;
+  width: 140px !important;
+  height: auto !important;
 }
 
 .partner-card.solunai {
