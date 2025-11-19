@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import './WorldEmpPartnership.css';
 
 interface WorldEmpPartnershipProps {
@@ -83,6 +84,15 @@ const WorldEmpPartnership: React.FC<WorldEmpPartnershipProps> = ({ lang }) => {
 
         <div className="partnership-grid">
           <div className="partner-card solunai">
+            <div className="partner-logo-container">
+              <Image
+                src="/images/Solunai_New_Logo.png"
+                alt="Solunai"
+                width={120}
+                height={40}
+                className="partner-logo"
+              />
+            </div>
             <div className="partner-header">
               <h3 className="partner-name">{t.solunai.name}</h3>
               <span className="partner-role">{t.solunai.role}</span>
@@ -103,6 +113,15 @@ const WorldEmpPartnership: React.FC<WorldEmpPartnershipProps> = ({ lang }) => {
           </div>
 
           <div className="partner-card worldemp">
+            <div className="partner-logo-container">
+              <Image
+                src="/images/logos/WorldEmpLogo.png"
+                alt="WorldEmp"
+                width={120}
+                height={40}
+                className="partner-logo"
+              />
+            </div>
             <div className="partner-header">
               <h3 className="partner-name">{t.worldemp.name}</h3>
               <span className="partner-role">{t.worldemp.role}</span>

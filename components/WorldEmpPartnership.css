@@ -50,6 +50,20 @@ html[lang="ja"] .partnership-title {
   box-shadow: var(--shadow-md);
 }
 
+.partner-logo-container {
+  margin-bottom: var(--spacing-s);
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.partner-logo {
+  object-fit: contain;
+  height: auto;
+  max-height: 40px;
+  width: auto;
+}
+
 .partner-card.solunai {
   border-color: var(--solunai-blaze);
 }
