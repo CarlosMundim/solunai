@@ -1,7 +1,7 @@
 .sce-section {
   width: 100%;
   padding: var(--section-spacing-desktop) 24px;
-  background: var(--gradient-dark);
+  background: var(--precision-white);
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -32,7 +32,7 @@ html[lang="ja"] .sce-section {
 .sce-section-heading {
   font-size: var(--font-heading-l);
   font-weight: var(--font-weight-bold);
-  color: var(--precision-white);
+  color: var(--forge-black);
   margin: 0 0 var(--spacing-xs) 0;
   letter-spacing: var(--letter-spacing-tight);
 }
@@ -44,7 +44,7 @@ html[lang="ja"] .sce-section-heading {
 .sce-section-subheading {
   font-size: var(--font-heading-s);
   font-weight: var(--font-weight-semibold);
-  color: var(--silver-mist);
+  color: var(--titanium-grey);
   margin: 0 0 var(--spacing-xs) 0;
 }
 
@@ -55,7 +55,7 @@ html[lang="ja"] .sce-section-subheading {
 .sce-section-description {
   font-size: var(--font-body-lead);
   line-height: var(--line-height-base);
-  color: var(--steel-blue);
+  color: var(--titanium-grey);
   margin: 0;
   max-width: 700px;
   margin-left: auto;
@@ -75,30 +75,25 @@ html[lang="ja"] .sce-section-description {
 }
 
 .sce-section-feature {
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
+  background: var(--background);
+  border: 1px solid var(--silver-mist);
   border-radius: 16px;
   padding: var(--spacing-m) var(--spacing-s);
   text-align: center;
   transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
 }
 
 .sce-section-feature:hover {
-  background: rgba(255, 255, 255, 0.06);
   border-color: var(--border-orange-glow);
   transform: translateY(-4px);
-}
-
-.sce-section-feature-icon {
-  font-size: var(--font-heading-m);
-  margin-bottom: var(--spacing-xs);
-  color: var(--solunai-blaze);
+  box-shadow: var(--card-hover-shadow);
 }
 
 .sce-section-feature-title {
   font-size: var(--font-body-lead);
   font-weight: var(--font-weight-bold);
-  color: var(--precision-white);
+  color: var(--forge-black);
   margin: 0 0 var(--spacing-xxs) 0;
 }
 
@@ -109,7 +104,7 @@ html[lang="ja"] .sce-section-feature-title {
 .sce-section-feature-description {
   font-size: var(--font-body-small);
   line-height: var(--line-height-base);
-  color: var(--steel-blue);
+  color: var(--titanium-grey);
   margin: 0;
 }
 

@@ -81,9 +81,9 @@ html[lang="ja"] .sce-hero-description {
   font-size: var(--font-body-base);
 }
 
-.feature-icon {
+.feature-bullet {
   color: var(--solunai-blaze);
-  font-size: var(--font-body-tiny);
+  font-weight: var(--font-weight-bold);
 }
 
 /* Visual Diagram */

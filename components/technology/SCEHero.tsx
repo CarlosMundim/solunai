@@ -49,7 +49,7 @@ const SCEHero: React.FC<SCEHeroProps> = ({ lang }) => {
           <div className="sce-hero-features">
             {currentContent.features.map((feature, index) => (
               <div key={index} className="sce-hero-feature">
-                <span className="feature-icon">◆</span>
+                <span className="feature-bullet">•</span>
                 <span>{feature}</span>
               </div>
             ))}

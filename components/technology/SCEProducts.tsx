@@ -16,26 +16,22 @@ const SCEProducts: React.FC<SCEProductsProps> = ({ lang }) => {
         {
           name: 'デジタルツイン',
           description: '継続的な学習と長期記憶を備えた工場シミュレーション。セッション間でパラメータと最適化結果を保持。',
-          link: '/solutions/digital-twin',
-          icon: '◆'
+          link: '/solutions/digital-twin'
         },
         {
           name: 'コンピュータビジョン',
           description: '失敗パターンを記憶し、時間とともに精度を向上。同じエラーを繰り返さない品質検査AI。',
-          link: '/solutions/computer-vision',
-          icon: '◆'
+          link: '/solutions/computer-vision'
         },
         {
           name: '予知保全',
           description: '機器履歴の完全な継続性。過去の故障、修理、パターンを記憶し、予測精度を向上。',
-          link: '/solutions/predictive-maintenance',
-          icon: '◆'
+          link: '/solutions/predictive-maintenance'
         },
         {
           name: '生産最適化',
           description: '長期的な生産データの継続性。季節変動、過去の最適化試行、成功パターンを活用。',
-          link: '/solutions/production-optimization',
-          icon: '◆'
+          link: '/solutions/production-optimization'
         }
       ],
       differentiator: {
@@ -61,26 +57,22 @@ const SCEProducts: React.FC<SCEProductsProps> = ({ lang }) => {
         {
           name: 'Digital Twin',
           description: 'Factory simulation with continuous learning and long-term memory. Retains parameters and optimization results across sessions.',
-          link: '/solutions/digital-twin',
-          icon: '◆'
+          link: '/solutions/digital-twin'
         },
         {
           name: 'Computer Vision',
           description: 'Remembers failure patterns and improves accuracy over time. Quality inspection AI that never repeats the same errors.',
-          link: '/solutions/computer-vision',
-          icon: '◆'
+          link: '/solutions/computer-vision'
         },
         {
           name: 'Predictive Maintenance',
           description: 'Complete continuity of equipment history. Remembers past failures, repairs, and patterns to improve prediction accuracy.',
-          link: '/solutions/predictive-maintenance',
-          icon: '◆'
+          link: '/solutions/predictive-maintenance'
         },
         {
           name: 'Production Optimization',
           description: 'Long-term production data continuity. Leverages seasonal variations, past optimization attempts, and success patterns.',
-          link: '/solutions/production-optimization',
-          icon: '◆'
+          link: '/solutions/production-optimization'
         }
       ],
       differentiator: {
@@ -114,7 +106,6 @@ const SCEProducts: React.FC<SCEProductsProps> = ({ lang }) => {
         <div className="sce-products-grid">
           {currentContent.products.map((product, index) => (
             <a key={index} href={product.link} className="sce-product-card">
-              <div className="product-icon">{product.icon}</div>
               <h3 className="product-name">{product.name}</h3>
               <p className="product-description">{product.description}</p>
               <span className="product-link">

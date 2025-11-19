@@ -43,6 +43,22 @@ html[lang="ja"] .sce-architecture-subtitle {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .sce-architecture-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sce-architecture-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
 }
 
 .sce-component-card {
@@ -62,12 +78,6 @@ html[lang="ja"] .sce-architecture-subtitle {
 .sce-component-card:nth-child(4),
 .sce-component-card:nth-child(5) {
   grid-column: span 1;
-}
-
-.component-icon {
-  font-size: var(--font-heading-m);
-  margin-bottom: var(--spacing-xs);
-  color: var(--solunai-blaze);
 }
 
 .component-title {
