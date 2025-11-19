@@ -1,0 +1,79 @@
+.assessment-hero {
+  padding: 120px 24px 60px;
+  background: var(--forge-black);
+  text-align: center;
+}
+
+.assessment-hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.assessment-hero-badge {
+  display: inline-block;
+  background: var(--gradient-orange);
+  color: var(--precision-white);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  letter-spacing: 0.1em;
+}
+
+.assessment-hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--precision-white);
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+}
+
+.assessment-hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--silver-mist);
+  margin: 0 0 40px 0;
+}
+
+.assessment-hero-features {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.hero-feature {
+  text-align: center;
+}
+
+.feature-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--solunai-blaze);
+  line-height: 1;
+}
+
+.feature-label {
+  font-size: 0.875rem;
+  color: var(--silver-mist);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .assessment-hero {
+    padding: 100px 20px 40px;
+  }
+
+  .assessment-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .assessment-hero-features {
+    gap: 30px;
+  }
+
+  .feature-number {
+    font-size: 2rem;
+  }
+}
