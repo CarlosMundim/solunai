@@ -10,6 +10,7 @@ import StackedCards from '@/components/StackedCards';
 import SolutionsHeadline from '@/components/SolutionsHeadline';
 import ClientSuccess from '@/components/ClientSuccess';
 import TechnologyPartners from '@/components/TechnologyPartners';
+import SCESection from '@/components/SCESection';
 import PrimaryCTA from '@/components/PrimaryCTA';
 import Footer from '@/components/Footer';
 
@@ -26,6 +27,7 @@ export default function Home() {
       <SolutionsHeadline lang="ja" />
       <ClientSuccess lang="ja" />
       <TechnologyPartners lang="ja" />
+      <SCESection lang="ja" />
       <PrimaryCTA lang="ja" />
       <Footer lang="ja" />
     </main>

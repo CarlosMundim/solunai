@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import SCEBadge from '@/components/SCEBadge';
 import './ProductionOptimizationHero.css';
 
 interface ProductionOptimizationHeroProps {
@@ -12,12 +13,14 @@ const ProductionOptimizationHero: React.FC<ProductionOptimizationHeroProps> = ({
     ja: {
       badge: '生産最適化',
       heading: 'AI生産最適化',
-      subheading: '中小製造業のスループット向上と無駄削減'
+      subheading: '中小製造業のスループット向上と無駄削減',
+      sceFeature: 'SCE搭載：長期的な生産データと季節変動を活用した最適化'
     },
     en: {
       badge: 'PRODUCTION OPTIMIZATION',
       heading: 'AI Production Optimization',
-      subheading: 'Increase Throughput and Reduce Waste for SME Manufacturers'
+      subheading: 'Increase Throughput and Reduce Waste for SME Manufacturers',
+      sceFeature: 'Powered by SCE: Optimization leveraging long-term production data and seasonal variations'
     }
   };
 
@@ -28,11 +31,15 @@ const ProductionOptimizationHero: React.FC<ProductionOptimizationHeroProps> = ({
       <div className="production-optimization-hero-background"></div>
       <div className="production-optimization-hero-overlay"></div>
       <div className="production-optimization-hero-container">
-        <div className="production-optimization-hero-badge">{t.badge}</div>
+        <div className="production-optimization-hero-badges">
+          <div className="production-optimization-hero-badge">{t.badge}</div>
+          <SCEBadge lang={lang} variant="light" />
+        </div>
         <h1 className="production-optimization-hero-heading">
           {t.heading}
         </h1>
         <p className="production-optimization-hero-subheading">{t.subheading}</p>
+        <p className="production-optimization-hero-sce-feature">{t.sceFeature}</p>
       </div>
     </section>
   );

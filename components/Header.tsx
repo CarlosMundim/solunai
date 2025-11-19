@@ -45,6 +45,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
     ja: {
       links: [
         { href: '/', label: 'ホーム', isRoute: true },
+        { href: '/technology', label: 'テクノロジー', isRoute: true },
         {
           label: 'ソリューション',
           dropdown: [
@@ -70,6 +71,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
     en: {
       links: [
         { href: '/en', label: 'Home', isRoute: true },
+        { href: '/en/technology', label: 'Technology', isRoute: true },
         {
           label: 'Solutions',
           dropdown: [

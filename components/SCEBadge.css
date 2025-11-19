@@ -1,0 +1,42 @@
+.sce-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sce-badge.dark {
+  background: rgba(245, 72, 10, 0.15);
+  color: #f5480a;
+  border: 1px solid rgba(245, 72, 10, 0.3);
+}
+
+.sce-badge.dark:hover {
+  background: rgba(245, 72, 10, 0.25);
+  border-color: rgba(245, 72, 10, 0.5);
+}
+
+.sce-badge.light {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sce-badge.light:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.sce-icon {
+  font-size: 0.625rem;
+}
+
+.sce-text {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

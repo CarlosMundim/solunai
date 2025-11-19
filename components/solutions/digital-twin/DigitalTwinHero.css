@@ -47,6 +47,15 @@ html[lang="ja"] .digital-twin-hero {
   text-align: center;
 }
 
+.digital-twin-hero-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
 .digital-twin-hero-badge {
   display: inline-block;
   background: var(--solunai-blaze); /* Industrial Precision - Solid Bold Orange */
@@ -55,10 +64,20 @@ html[lang="ja"] .digital-twin-hero {
   font-weight: 700;
   padding: 10px 24px;
   border-radius: 24px;
-  margin-bottom: 40px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   box-shadow: 0 4px 12px rgba(245, 72, 10, 0.3);
+}
+
+.digital-twin-hero-sce-feature {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: 24px;
+  padding: 12px 24px;
+  background: rgba(245, 72, 10, 0.15);
+  border: 1px solid rgba(245, 72, 10, 0.3);
+  border-radius: 8px;
+  display: inline-block;
 }
 
 .digital-twin-hero-heading {
