@@ -10,28 +10,28 @@ interface GlobalEngineeringCTAProps {
 const GlobalEngineeringCTA: React.FC<GlobalEngineeringCTAProps> = ({ lang }) => {
   const content = {
     ja: {
-      title: 'グローバルエンジニアリング配備を今すぐ開始',
-      subtitle: '無料コンサルテーションで人材ニーズを評価',
+      title: 'Solunai + WorldEmpで始める',
+      subtitle: '文化的マッチングが保証されたグローバル人材配備',
       features: [
+        '20年以上の実績',
         '2-6週間で配備',
-        '30-40%コスト削減',
-        '52倍速い採用',
-        '文化的マッチング保証'
+        '47次元文化評価',
+        '300+クライアント'
       ],
-      primaryCTA: '無料コンサルテーションを予約',
-      secondaryCTA: '人材配備ガイドをダウンロード'
+      primaryCTA: '無料相談を予約',
+      secondaryCTA: 'WorldEmpについて詳しく'
     },
     en: {
-      title: 'Start Global Engineering Deployment Today',
-      subtitle: 'Assess Your Talent Needs with a Free Consultation',
+      title: 'Get Started with Solunai + WorldEmp',
+      subtitle: 'Global talent deployment with guaranteed cultural fit',
       features: [
+        '20+ years experience',
         '2-6 week deployment',
-        '30-40% cost reduction',
-        '52x faster hiring',
-        'Cultural matching guaranteed'
+        '47 Dimensions assessment',
+        '300+ clients worldwide'
       ],
       primaryCTA: 'Schedule Free Consultation',
-      secondaryCTA: 'Download Talent Deployment Guide'
+      secondaryCTA: 'Learn More About WorldEmp'
     }
   };
 

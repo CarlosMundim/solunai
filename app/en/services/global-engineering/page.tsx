@@ -2,8 +2,10 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import GlobalEngineeringHero from '@/components/GlobalEngineeringHero';
+import WorldEmpPartnership from '@/components/WorldEmpPartnership';
 import GlobalEngineeringTalentPool from '@/components/GlobalEngineeringTalentPool';
 import GlobalEngineeringProcess from '@/components/GlobalEngineeringProcess';
+import Dimensions47Preview from '@/components/Dimensions47Preview';
 import GlobalEngineeringBenefits from '@/components/GlobalEngineeringBenefits';
 import GlobalEngineeringCTA from '@/components/GlobalEngineeringCTA';
 
@@ -19,8 +21,10 @@ export default function GlobalEngineeringPageEN() {
       <Header lang="en" />
       <main>
         <GlobalEngineeringHero lang="en" />
+        <WorldEmpPartnership lang="en" />
         <GlobalEngineeringTalentPool lang="en" />
         <GlobalEngineeringProcess lang="en" />
+        <Dimensions47Preview lang="en" />
         <GlobalEngineeringBenefits lang="en" />
         <GlobalEngineeringCTA lang="en" />
       </main>

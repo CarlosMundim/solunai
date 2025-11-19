@@ -87,6 +87,33 @@ html[lang="ja"] .global-engineering-hero-subheading {
   letter-spacing: 0.01em;
 }
 
+.global-engineering-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.hero-stat {
+  text-align: center;
+}
+
+.hero-stat-value {
+  font-size: 48px;
+  font-weight: 800;
+  color: var(--solunai-blaze);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.hero-stat-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e0f2fe;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .global-engineering-hero-heading {
@@ -135,6 +162,18 @@ html[lang="ja"] .global-engineering-hero-subheading {
   html[lang="ja"] .global-engineering-hero-subheading {
     font-size: 20px;
   }
+
+  .global-engineering-hero-stats {
+    gap: 30px;
+  }
+
+  .hero-stat-value {
+    font-size: 36px;
+  }
+
+  .hero-stat-label {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -159,5 +198,14 @@ html[lang="ja"] .global-engineering-hero-subheading {
 
   html[lang="ja"] .global-engineering-hero-subheading {
     font-size: 17px;
+  }
+
+  .global-engineering-hero-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-stat-value {
+    font-size: 32px;
   }
 }
