@@ -1,6 +1,6 @@
 .sce-hero-section {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0d0d0d 0%, #1a2332 100%);
+  background: var(--gradient-dark);
   display: flex;
   align-items: center;
   padding: var(--section-spacing-desktop) 24px var(--section-spacing-desktop) 24px;
@@ -22,36 +22,49 @@ html[lang="ja"] .sce-hero-section {
 
 .sce-hero-badge {
   display: inline-block;
-  background: rgba(245, 72, 10, 0.15);
-  color: #f5480a;
+  background: var(--border-orange-subtle);
+  color: var(--solunai-blaze);
   padding: 8px 16px;
   border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-bottom: 24px;
-  border: 1px solid rgba(245, 72, 10, 0.3);
+  font-size: var(--font-body-small);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-s);
+  border: 1px solid var(--border-orange-glow);
 }
 
 .sce-hero-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 16px;
-  line-height: 1.1;
+  font-size: var(--font-heading-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--precision-white);
+  margin-bottom: var(--spacing-xs);
+  line-height: var(--line-height-tight);
+}
+
+html[lang="ja"] .sce-hero-title {
+  font-size: var(--font-heading-xl-jp);
 }
 
 .sce-hero-subtitle {
-  font-size: 1.5rem;
-  color: #f5480a;
-  margin-bottom: 24px;
-  font-weight: 500;
+  font-size: var(--font-heading-s);
+  color: var(--solunai-blaze);
+  margin-bottom: var(--spacing-s);
+  font-weight: var(--font-weight-medium);
+}
+
+html[lang="ja"] .sce-hero-subtitle {
+  font-size: var(--font-heading-s-jp);
 }
 
 .sce-hero-description {
-  font-size: 1.125rem;
-  color: #94a3b8;
-  line-height: 1.7;
-  margin-bottom: 32px;
+  font-size: var(--font-body-lead);
+  color: var(--steel-blue);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-m);
+}
+
+html[lang="ja"] .sce-hero-description {
+  font-size: var(--font-body-lead-jp);
+  line-height: var(--line-height-relaxed-jp);
 }
 
 .sce-hero-features {
@@ -64,13 +77,13 @@ html[lang="ja"] .sce-hero-section {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #e2e8f0;
-  font-size: 1rem;
+  color: var(--silver-mist);
+  font-size: var(--font-body-base);
 }
 
 .feature-icon {
-  color: #f5480a;
-  font-size: 0.75rem;
+  color: var(--solunai-blaze);
+  font-size: var(--font-body-tiny);
 }
 
 /* Visual Diagram */
@@ -93,15 +106,15 @@ html[lang="ja"] .sce-hero-section {
   transform: translate(-50%, -50%);
   width: 120px;
   height: 120px;
-  background: linear-gradient(135deg, #f5480a 0%, #ff6b35 100%);
+  background: var(--gradient-orange);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  box-shadow: 0 0 60px rgba(245, 72, 10, 0.4);
+  font-size: var(--font-heading-s);
+  font-weight: var(--font-weight-bold);
+  color: var(--precision-white);
+  box-shadow: var(--shadow-orange-strong);
   z-index: 10;
 }
 
@@ -110,13 +123,13 @@ html[lang="ja"] .sce-hero-section {
   top: 50%;
   left: 50%;
   border-radius: 50%;
-  border: 2px solid rgba(245, 72, 10, 0.3);
+  border: 2px solid var(--border-orange-glow);
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding-top: 20px;
-  font-size: 0.75rem;
-  color: #94a3b8;
+  font-size: var(--font-body-tiny);
+  color: var(--steel-blue);
   text-transform: uppercase;
   letter-spacing: 1px;
 }

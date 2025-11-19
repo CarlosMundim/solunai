@@ -1,6 +1,6 @@
 .sce-architecture-section {
   padding: var(--section-spacing-desktop) 24px;
-  background: #f8fafc;
+  background: var(--precision-white);
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -19,16 +19,24 @@ html[lang="ja"] .sce-architecture-section {
 }
 
 .sce-architecture-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #0d0d0d;
-  margin-bottom: 16px;
+  font-size: var(--font-heading-l);
+  font-weight: var(--font-weight-bold);
+  color: var(--forge-black);
+  margin-bottom: var(--spacing-xs);
+}
+
+html[lang="ja"] .sce-architecture-title {
+  font-size: var(--font-heading-l-jp);
 }
 
 .sce-architecture-subtitle {
-  font-size: 1.25rem;
-  color: #f5480a;
-  font-weight: 500;
+  font-size: var(--font-body-lead);
+  color: var(--solunai-blaze);
+  font-weight: var(--font-weight-medium);
+}
+
+html[lang="ja"] .sce-architecture-subtitle {
+  font-size: var(--font-body-lead-jp);
 }
 
 .sce-architecture-grid {
@@ -38,17 +46,17 @@ html[lang="ja"] .sce-architecture-section {
 }
 
 .sce-component-card {
-  background: #ffffff;
+  background: var(--background);
   border-radius: 16px;
-  padding: 32px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #e2e8f0;
+  padding: var(--spacing-m);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  border: 1px solid var(--silver-mist);
 }
 
 .sce-component-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(var(--card-hover-lift));
+  box-shadow: var(--card-hover-shadow);
 }
 
 .sce-component-card:nth-child(4),
@@ -57,22 +65,32 @@ html[lang="ja"] .sce-architecture-section {
 }
 
 .component-icon {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: var(--font-heading-m);
+  margin-bottom: var(--spacing-xs);
+  color: var(--solunai-blaze);
 }
 
 .component-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #0d0d0d;
-  margin-bottom: 12px;
+  font-size: var(--font-heading-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--forge-black);
+  margin-bottom: var(--spacing-xxs);
+}
+
+html[lang="ja"] .component-title {
+  font-size: var(--font-heading-xs-jp);
 }
 
 .component-description {
-  font-size: 0.95rem;
-  color: #64748b;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  font-size: var(--font-body-small);
+  color: var(--titanium-grey);
+  line-height: var(--line-height-base);
+  margin-bottom: var(--spacing-xs);
+}
+
+html[lang="ja"] .component-description {
+  font-size: var(--font-body-small-jp);
+  line-height: var(--line-height-base-jp);
 }
 
 .component-features {
@@ -85,14 +103,14 @@ html[lang="ja"] .sce-architecture-section {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.875rem;
-  color: #475569;
-  margin-bottom: 8px;
+  font-size: var(--font-body-small);
+  color: var(--titanium-grey);
+  margin-bottom: var(--spacing-xxs);
 }
 
 .feature-bullet {
-  color: #f5480a;
-  font-weight: bold;
+  color: var(--solunai-blaze);
+  font-weight: var(--font-weight-bold);
 }
 
 /* Responsive */

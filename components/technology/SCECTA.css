@@ -1,6 +1,6 @@
 .sce-cta-section {
   padding: var(--section-spacing-desktop) 24px;
-  background: linear-gradient(135deg, #1a2332 0%, #0d0d0d 100%);
+  background: var(--gradient-dark);
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -19,17 +19,26 @@ html[lang="ja"] .sce-cta-section {
 }
 
 .sce-cta-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 20px;
+  font-size: var(--font-heading-l);
+  font-weight: var(--font-weight-bold);
+  color: var(--precision-white);
+  margin-bottom: var(--spacing-xs);
+}
+
+html[lang="ja"] .sce-cta-title {
+  font-size: var(--font-heading-l-jp);
 }
 
 .sce-cta-description {
-  font-size: 1.125rem;
-  color: #94a3b8;
-  margin-bottom: 32px;
-  line-height: 1.6;
+  font-size: var(--font-body-lead);
+  color: var(--steel-blue);
+  margin-bottom: var(--spacing-m);
+  line-height: var(--line-height-base);
+}
+
+html[lang="ja"] .sce-cta-description {
+  font-size: var(--font-body-lead-jp);
+  line-height: var(--line-height-base-jp);
 }
 
 .sce-cta-buttons {
@@ -40,59 +49,68 @@ html[lang="ja"] .sce-cta-section {
 }
 
 .btn-primary {
-  background: #f5480a;
-  color: #ffffff;
-  padding: 16px 32px;
+  background: var(--solunai-blaze);
+  color: var(--precision-white);
+  padding: var(--spacing-xs) var(--spacing-m);
   border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-button-md);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
 }
 
 .btn-primary:hover {
-  background: #ff6b35;
+  background: var(--heat-glow);
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(245, 72, 10, 0.4);
+  box-shadow: var(--shadow-orange);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #ffffff;
-  padding: 16px 32px;
+  color: var(--precision-white);
+  padding: var(--spacing-xs) var(--spacing-m);
   border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-button-md);
   text-decoration: none;
-  border: 2px solid #475569;
-  transition: all 0.3s ease;
+  border: 2px solid var(--titanium-grey);
+  transition: all var(--transition-base);
 }
 
 .btn-secondary:hover {
-  border-color: #f5480a;
-  color: #f5480a;
+  border-color: var(--solunai-blaze);
+  color: var(--solunai-blaze);
 }
 
 /* Research Note */
 .sce-research-note {
-  background: rgba(245, 72, 10, 0.1);
-  border: 1px solid rgba(245, 72, 10, 0.3);
+  background: var(--border-orange-subtle);
+  border: 1px solid var(--border-orange-glow);
   border-radius: 12px;
-  padding: 32px;
+  padding: var(--spacing-m);
 }
 
 .research-title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #f5480a;
-  margin-bottom: 12px;
+  font-size: var(--font-body-lead);
+  font-weight: var(--font-weight-semibold);
+  color: var(--solunai-blaze);
+  margin-bottom: var(--spacing-xxs);
+}
+
+html[lang="ja"] .research-title {
+  font-size: var(--font-body-lead-jp);
 }
 
 .research-description {
-  font-size: 0.95rem;
-  color: #94a3b8;
-  line-height: 1.7;
+  font-size: var(--font-body-small);
+  color: var(--steel-blue);
+  line-height: var(--line-height-relaxed);
   margin: 0;
+}
+
+html[lang="ja"] .research-description {
+  font-size: var(--font-body-small-jp);
+  line-height: var(--line-height-relaxed-jp);
 }
 
 /* Responsive */

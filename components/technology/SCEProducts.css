@@ -1,6 +1,6 @@
 .sce-products-section {
   padding: var(--section-spacing-desktop) 24px;
-  background: #0d0d0d;
+  background: var(--forge-black);
   font-family: var(--font-inter), 'Open Sans', sans-serif;
 }
 
@@ -19,15 +19,23 @@ html[lang="ja"] .sce-products-section {
 }
 
 .sce-products-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 16px;
+  font-size: var(--font-heading-l);
+  font-weight: var(--font-weight-bold);
+  color: var(--precision-white);
+  margin-bottom: var(--spacing-xs);
+}
+
+html[lang="ja"] .sce-products-title {
+  font-size: var(--font-heading-l-jp);
 }
 
 .sce-products-subtitle {
-  font-size: 1.125rem;
-  color: #94a3b8;
+  font-size: var(--font-body-lead);
+  color: var(--steel-blue);
+}
+
+html[lang="ja"] .sce-products-subtitle {
+  font-size: var(--font-body-lead-jp);
 }
 
 .sce-products-grid {
@@ -38,58 +46,72 @@ html[lang="ja"] .sce-products-section {
 }
 
 .sce-product-card {
-  background: #1a2332;
+  background: var(--steel-navy);
   border-radius: 16px;
-  padding: 32px 24px;
+  padding: var(--spacing-m) var(--spacing-s);
   text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(245, 72, 10, 0.2);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  border: 1px solid var(--border-orange-subtle);
 }
 
 .sce-product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(245, 72, 10, 0.2);
-  border-color: rgba(245, 72, 10, 0.5);
+  transform: translateY(var(--card-hover-lift));
+  box-shadow: var(--shadow-orange);
+  border-color: var(--border-orange-glow);
 }
 
 .product-icon {
-  font-size: 2.5rem;
-  margin-bottom: 16px;
+  font-size: var(--font-heading-m);
+  margin-bottom: var(--spacing-xs);
+  color: var(--solunai-blaze);
 }
 
 .product-name {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 12px;
+  font-size: var(--font-heading-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--precision-white);
+  margin-bottom: var(--spacing-xxs);
+}
+
+html[lang="ja"] .product-name {
+  font-size: var(--font-heading-xs-jp);
 }
 
 .product-description {
-  font-size: 0.9rem;
-  color: #94a3b8;
-  line-height: 1.6;
-  margin-bottom: 16px;
+  font-size: var(--font-body-small);
+  color: var(--steel-blue);
+  line-height: var(--line-height-base);
+  margin-bottom: var(--spacing-xs);
+}
+
+html[lang="ja"] .product-description {
+  font-size: var(--font-body-small-jp);
+  line-height: var(--line-height-base-jp);
 }
 
 .product-link {
-  font-size: 0.875rem;
-  color: #f5480a;
-  font-weight: 500;
+  font-size: var(--font-body-small);
+  color: var(--solunai-blaze);
+  font-weight: var(--font-weight-medium);
 }
 
 /* Differentiator Section */
 .sce-differentiator {
-  background: #1a2332;
+  background: var(--steel-navy);
   border-radius: 16px;
-  padding: 48px;
+  padding: var(--spacing-xl);
 }
 
 .differentiator-title {
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 40px;
+  font-size: var(--font-heading-s);
+  font-weight: var(--font-weight-semibold);
+  color: var(--precision-white);
+  margin-bottom: var(--spacing-m);
+}
+
+html[lang="ja"] .differentiator-title {
+  font-size: var(--font-heading-s-jp);
 }
 
 .differentiator-comparison {
@@ -114,9 +136,9 @@ html[lang="ja"] .sce-products-section {
 }
 
 .comparison-column h4 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 20px;
+  font-size: var(--font-body-lead);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
   text-align: center;
 }
 
@@ -138,19 +160,19 @@ html[lang="ja"] .sce-products-section {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #e2e8f0;
-  font-size: 0.95rem;
-  margin-bottom: 12px;
+  color: var(--silver-mist);
+  font-size: var(--font-body-small);
+  margin-bottom: var(--spacing-xxs);
 }
 
 .x-icon {
   color: #f87171;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
 }
 
 .check-icon {
   color: #4ade80;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
 }
 
 /* Responsive */

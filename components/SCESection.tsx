@@ -17,22 +17,22 @@ const SCESection: React.FC<SCESectionProps> = ({ lang }) => {
       description: '長期記憶、失敗追跡、役割ベースの行動安定性を備えた継続性アーキテクチャ。製造業向けAIの新しい標準。',
       features: [
         {
-          icon: '🧠',
+          icon: '◆',
           title: '長期コンテキスト記憶',
           description: '過去のやり取り、決定事項、学習内容を永続的に保持'
         },
         {
-          icon: '📊',
+          icon: '◆',
           title: '失敗追跡と自己改善',
           description: 'エラーパターンを記録し、時間とともに精度を向上'
         },
         {
-          icon: '⚙️',
+          icon: '◆',
           title: '役割ベース安定性',
           description: '定義された役割と境界内で一貫した行動を維持'
         },
         {
-          icon: '🔐',
+          icon: '◆',
           title: 'ガバナンス対応設計',
           description: '人間による監視と制御を組み込んだアーキテクチャ'
         }
@@ -47,22 +47,22 @@ const SCESection: React.FC<SCESectionProps> = ({ lang }) => {
       description: 'A continuity architecture with long-term memory, failure tracking, and role-based behavioral stability. The new standard for manufacturing AI.',
       features: [
         {
-          icon: '🧠',
+          icon: '◆',
           title: 'Long-term Context Memory',
           description: 'Persistently retains past interactions, decisions, and learnings'
         },
         {
-          icon: '📊',
+          icon: '◆',
           title: 'Failure Tracking & Self-Improvement',
           description: 'Records error patterns and improves accuracy over time'
         },
         {
-          icon: '⚙️',
+          icon: '◆',
           title: 'Role-Based Stability',
           description: 'Maintains consistent behavior within defined roles and boundaries'
         },
         {
-          icon: '🔐',
+          icon: '◆',
           title: 'Governance-Aware Design',
           description: 'Architecture with built-in human oversight and control'
         }
