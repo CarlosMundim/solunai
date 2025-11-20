@@ -55,6 +55,55 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
     const doc = new jsPDF();
     const pageWidth = doc.internal.pageSize.getWidth();
 
+    // Generate scenario-linked insights based on actual responses
+    const getScenarioInsights = (): string[] => {
+      const insights: string[] = [];
+
+      // Check key scenarios and provide linked reasoning
+      const s1Response = responses['S1'];
+      const s3Response = responses['S3'];
+      const s5Response = responses['S5'];
+      const s9Response = responses['S9'];
+      const s12Response = responses['S12'];
+
+      // S1: Deadline communication
+      if (s1Response === 'S1A' || s1Response === 'S1C') {
+        insights.push('S1: Delayed disclosure pattern - may need coaching on proactive communication');
+      } else if (s1Response === 'S1B') {
+        insights.push('S1: Strong proactive communication with senpai');
+      }
+
+      // S3: Nomikai/social integration
+      if (s3Response === 'S3A') {
+        insights.push('S3: Declined team social event - may need gradual introduction to nomikai culture');
+      } else if (s3Response === 'S3B') {
+        insights.push('S3: Balanced approach to team social obligations');
+      }
+
+      // S5: Hierarchy navigation
+      if (s5Response === 'S5B') {
+        insights.push('S5: Correctly navigated conflicting instructions through immediate supervisor');
+      } else if (s5Response === 'S5A' || s5Response === 'S5D') {
+        insights.push('S5: May need guidance on proper escalation protocols');
+      }
+
+      // S9: Team support
+      if (s9Response === 'S9B') {
+        insights.push('S9: Strong team support behavior - stayed to help colleague while respecting their lead');
+      } else if (s9Response === 'S9D') {
+        insights.push('S9: Left after completing own work - may need team interdependence coaching');
+      }
+
+      // S12: Long-term commitment
+      if (s12Response === 'S12A' || s12Response === 'S12D') {
+        insights.push('S12: Expressed interest in long-term organizational growth');
+      } else if (s12Response === 'S12B') {
+        insights.push('S12: Expressed uncertainty about tenure - retention risk indicator');
+      }
+
+      return insights.slice(0, 5); // Max 5 insights
+    };
+
     // Helper function for color-coded scores
     const getScoreColor = (score: number): [number, number, number] => {
       if (score >= 70) return [22, 163, 74];   // Green
@@ -298,6 +347,25 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
     doc.rect(0, 0, pageWidth, 8, 'F');
 
     yPos = 25;
+
+    // Scenario-Linked Behavioral Analysis
+    const scenarioInsights = getScenarioInsights();
+    if (scenarioInsights.length > 0) {
+      doc.setFillColor(243, 232, 255);
+      doc.rect(15, yPos - 5, pageWidth - 30, 8, 'F');
+      doc.setFontSize(11);
+      doc.setTextColor(107, 33, 168);
+      doc.text('SCENARIO-LINKED BEHAVIORAL ANALYSIS', 20, yPos);
+
+      yPos += 10;
+      doc.setFontSize(8);
+      doc.setTextColor(60, 60, 60);
+      scenarioInsights.forEach(insight => {
+        doc.text(`• ${insight}`, 20, yPos);
+        yPos += 5;
+      });
+      yPos += 5;
+    }
 
     // Strengths Section
     if (result.strengths.length > 0) {
