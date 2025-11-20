@@ -129,6 +129,8 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
     doc.setFontSize(11);
     doc.setTextColor(100, 100, 100);
     doc.text('Japanese Fit Coefficient (JFC) Assessment Report', pageWidth / 2, 33, { align: 'center' });
+    doc.setFontSize(8);
+    doc.text('Cultural Compatibility Assessment', pageWidth / 2, 38, { align: 'center' });
 
     doc.setFontSize(8);
     doc.setTextColor(255, 107, 53);
@@ -159,8 +161,41 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
     doc.setTextColor(60, 60, 60);
     doc.text(getScoreInterpretation(result.jfc), pageWidth / 2, 93, { align: 'center' });
 
+    // JFC Score Breakdown Explanation
+    let yPos = 100;
+    doc.setFontSize(7);
+    doc.setTextColor(100, 100, 100);
+
+    // Find lowest scoring dimension
+    const scores = result.normalizedScores;
+    const dimensionNames: Record<string, string> = {
+      WA: 'Harmony',
+      LOYALTY: 'Commitment',
+      COMM: 'Communication',
+      TEAM: 'Team Integration',
+      HIER: 'Hierarchy'
+    };
+
+    let lowestDim = 'WA';
+    let lowestScore = scores.WA;
+    for (const [key, score] of Object.entries(scores)) {
+      if (score < lowestScore) {
+        lowestScore = score;
+        lowestDim = key;
+      }
+    }
+
+    // Generate score breakdown explanation
+    let breakdownText = `Score driven by: Wa ${scores.WA}%, Loyalty ${scores.LOYALTY}%, Comm ${scores.COMM}%, Team ${scores.TEAM}%, Hier ${scores.HIER}%`;
+    if (lowestScore < 60) {
+      breakdownText += ` — ${dimensionNames[lowestDim]} (${lowestScore}%) is the primary area requiring development.`;
+    }
+    const breakdownLines = doc.splitTextToSize(breakdownText, 170);
+    doc.text(breakdownLines, pageWidth / 2, yPos, { align: 'center' });
+    yPos += breakdownLines.length * 3 + 5;
+
     // Consistency Index with risk commentary
-    let yPos = 103;
+    yPos += 3;
     doc.setFontSize(10);
     doc.setTextColor(26, 26, 26);
     doc.text('Behavioral Consistency Index:', 20, yPos);
@@ -192,7 +227,7 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
       doc.setFontSize(7);
       doc.setTextColor(100, 100, 100);
       retentionRisk.drivers.forEach(driver => {
-        doc.text(`  → ${driver}`, 20, yPos);
+        doc.text(`  - ${driver}`, 20, yPos);
         yPos += 4;
       });
       yPos -= 4; // Adjust for last increment
@@ -439,7 +474,49 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
       yPos += 5;
     });
 
-    // Footer
+    // Final Placement Recommendation Section
+    yPos += 8;
+    doc.setFillColor(236, 253, 245);
+    doc.rect(15, yPos - 5, pageWidth - 30, 8, 'F');
+    doc.setFontSize(11);
+    doc.setTextColor(22, 101, 52);
+    doc.text('PLACEMENT RECOMMENDATION', 20, yPos);
+
+    yPos += 10;
+    doc.setFontSize(10);
+    doc.setTextColor(26, 26, 26);
+
+    // Determine placement recommendation based on JFC and consistency
+    let placementRec = '';
+    let placementDetails = '';
+
+    if (result.jfc >= 70 && result.consistencyIndex >= 70) {
+      placementRec = 'HIRE - Standard Onboarding';
+      placementDetails = 'Candidate demonstrates strong cultural alignment. Standard company orientation sufficient.';
+    } else if (result.jfc >= 60) {
+      placementRec = 'HIRE - Guided Onboarding (3-6 months)';
+      placementDetails = 'Candidate shows moderate fit. Recommend assigned mentor and regular cultural check-ins.';
+    } else if (result.jfc >= 50) {
+      placementRec = 'CONDITIONAL HIRE - Structured Support Required';
+      placementDetails = 'Placement requires dedicated senpai support, cultural training program, and monthly progress reviews.';
+    } else {
+      placementRec = 'NOT RECOMMENDED - High Integration Risk';
+      placementDetails = 'Significant cultural gap identified. Consider alternative candidates or extended trial period with intensive support.';
+    }
+
+    doc.setTextColor(22, 163, 74);
+    if (result.jfc < 50) doc.setTextColor(220, 38, 38);
+    else if (result.jfc < 60) doc.setTextColor(234, 179, 8);
+
+    doc.text(placementRec, 20, yPos);
+    yPos += 7;
+
+    doc.setFontSize(8);
+    doc.setTextColor(75, 85, 99);
+    const placementLines = doc.splitTextToSize(placementDetails, 170);
+    doc.text(placementLines, 20, yPos);
+
+    // Footer with bilingual text
     yPos = 270;
     doc.setDrawColor(200, 200, 200);
     doc.line(20, yPos - 5, pageWidth - 20, yPos - 5);
