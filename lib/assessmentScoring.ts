@@ -39,6 +39,7 @@ export interface AssessmentResult {
   managementStyle: string;
   culturalStressPoints: string[];
   SCE_PROFILE_TYPE: string;
+  SCE_MANAGEMENT_GUIDANCE: string[];
 }
 
 export interface RiskFlag {
@@ -833,6 +834,93 @@ function deriveSceProfileType(
   );
 }
 
+// Derive SCE Management Guidance from dimension scores
+function deriveSceManagementGuidance(
+  scores: DimensionScores & { CONSISTENCY?: number }
+): string[] {
+  const { WA, HIER, COMM, TEAM, LOYALTY } = scores;
+  const CONS = scores.CONSISTENCY ?? 100;
+
+  const tips: string[] = [];
+
+  // 1) Communication style guidance
+  if (COMM >= 75 && WA >= 70) {
+    tips.push(
+      "Use indirect but clear feedback; this person responds well to harmony-preserving corrections."
+    );
+  } else if (COMM >= 45 && COMM < 75) {
+    tips.push(
+      "Provide a mix of direct and indirect feedback; confirm understanding after important messages."
+    );
+  } else {
+    tips.push(
+      "Use direct, structured instructions and explicit feedback; avoid vague hints."
+    );
+  }
+
+  // 2) Team / social integration guidance
+  if (TEAM >= 75) {
+    tips.push(
+      "Leverage this person in team bonding and cross-functional work; they adapt well socially."
+    );
+  } else if (TEAM >= 45 && TEAM < 75) {
+    tips.push(
+      "Invite them to key social events but avoid pressure; give them time to warm up to the team."
+    );
+  } else {
+    tips.push(
+      "Do not force participation in nomikai or informal events; build trust first through 1:1 and work-based collaboration."
+    );
+  }
+
+  // 3) Hierarchy and autonomy guidance
+  if (HIER >= 75) {
+    tips.push(
+      "Clarify reporting lines and decision authority; they are comfortable operating within structure."
+    );
+  } else if (HIER >= 60 && HIER < 75) {
+    tips.push(
+      "They understand hierarchy but may still question processes; explain the 'why' behind decisions when possible."
+    );
+  } else {
+    tips.push(
+      "Give them clear autonomy zones; avoid micromanagement and overly rigid hierarchy where not necessary."
+    );
+  }
+
+  // 4) Loyalty / retention guidance
+  if (LOYALTY >= 75) {
+    tips.push(
+      "Discuss medium- to long-term growth paths; they are likely to commit if they see a future in the organisation."
+    );
+  } else if (LOYALTY >= 50 && LOYALTY < 75) {
+    tips.push(
+      "Clarify career development and expectations early; they balance opportunity with commitment."
+    );
+  } else {
+    tips.push(
+      "Check-in regularly on engagement and workload; they may be more opportunity-driven and at higher flight risk."
+    );
+  }
+
+  // 5) Consistency-based guidance
+  if (CONS >= 85) {
+    tips.push(
+      "Behaviour is highly consistent; once aligned, they will likely act predictably across situations."
+    );
+  } else if (CONS >= 70 && CONS < 85) {
+    tips.push(
+      "Behaviour is mostly consistent; provide feedback when you see context-dependent shifts."
+    );
+  } else {
+    tips.push(
+      "Behaviour varies by context; give concrete examples when coaching and verify understanding after changes."
+    );
+  }
+
+  return tips;
+}
+
 // Main function to calculate complete assessment result
 export function calculateAssessment(responses: Record<string, string>): AssessmentResult {
   const dimensions = calculateDimensionScores(responses);
@@ -856,6 +944,10 @@ export function calculateAssessment(responses: Record<string, string>): Assessme
     managementStyle,
     culturalStressPoints,
     SCE_PROFILE_TYPE: deriveSceProfileType({
+      ...normalizedScores,
+      CONSISTENCY: consistencyIndex
+    }),
+    SCE_MANAGEMENT_GUIDANCE: deriveSceManagementGuidance({
       ...normalizedScores,
       CONSISTENCY: consistencyIndex
     })
