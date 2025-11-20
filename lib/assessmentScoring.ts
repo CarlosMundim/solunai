@@ -778,6 +778,61 @@ export function getCulturalStressPoints(normalizedScores: DimensionScores): stri
   return stressPoints;
 }
 
+// Derive SCE Profile Type from dimension scores
+function deriveSceProfileType(
+  scores: DimensionScores & { CONSISTENCY?: number }
+): string {
+  const { WA, HIER, COMM, TEAM, LOYALTY } = scores;
+  const CONS = scores.CONSISTENCY ?? 100;
+
+  // 1) Communication style
+  let commPart: string;
+  if (COMM >= 75 && WA >= 70) {
+    commPart = "Harmony-first, indirect-leaning communicator";
+  } else if (COMM >= 45 && COMM < 75) {
+    commPart = "Balanced communicator";
+  } else {
+    commPart = "Direct, clarity-first communicator";
+  }
+
+  // 2) Social / team style
+  let socialPart: string;
+  if (TEAM >= 75) {
+    socialPart = "Socially engaged in team rituals";
+  } else if (TEAM >= 45 && TEAM < 75) {
+    socialPart = "Selectively social, situational participant";
+  } else {
+    socialPart = "Socially reserved with low ritual participation";
+  }
+
+  // 3) Authority / loyalty style
+  let authorityPart: string;
+  if (HIER >= 75 && LOYALTY >= 70) {
+    authorityPart = "Authority-aligned with long-term orientation";
+  } else if (HIER >= 60 && LOYALTY < 70) {
+    authorityPart = "Hierarchy-aware but opportunity-driven";
+  } else if (HIER < 60 && LOYALTY >= 60) {
+    authorityPart = "Prefers flatter structures but shows commitment";
+  } else {
+    authorityPart = "Prefers autonomy over strict hierarchy";
+  }
+
+  // 4) Consistency modifier
+  let consistencyPart: string;
+  if (CONS >= 85) {
+    consistencyPart = "highly consistent across situations";
+  } else if (CONS >= 70) {
+    consistencyPart = "mostly consistent across situations";
+  } else {
+    consistencyPart = "showing situationally variable behaviour";
+  }
+
+  return (
+    `${commPart} / ${socialPart} / ${authorityPart} ` +
+    `(${consistencyPart})`
+  );
+}
+
 // Main function to calculate complete assessment result
 export function calculateAssessment(responses: Record<string, string>): AssessmentResult {
   const dimensions = calculateDimensionScores(responses);
@@ -800,7 +855,10 @@ export function calculateAssessment(responses: Record<string, string>): Assessme
     developmentAreas,
     managementStyle,
     culturalStressPoints,
-    SCE_PROFILE_TYPE: 'PLACEHOLDER'
+    SCE_PROFILE_TYPE: deriveSceProfileType({
+      ...normalizedScores,
+      CONSISTENCY: consistencyIndex
+    })
   };
 }
 

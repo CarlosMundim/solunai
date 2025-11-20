@@ -378,13 +378,28 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
     doc.text('SCE PROFILE TYPE', 20, yPos);
 
     yPos += 10;
-    doc.setFontSize(10);
+    doc.setFontSize(9);
     doc.setTextColor(60, 60, 60);
-    doc.setFont('helvetica', 'bold');
-    doc.text(result.SCE_PROFILE_TYPE + ' (V1)', 20, yPos);
-    doc.setFont('helvetica', 'normal');
 
-    yPos += 6;
+    // Split profile type into lines at " / " separator
+    const profileParts = result.SCE_PROFILE_TYPE.split(' / ');
+    profileParts.forEach((part, index) => {
+      if (index < profileParts.length - 1) {
+        // Regular parts (not the consistency modifier)
+        doc.setFont('helvetica', 'bold');
+        doc.text(part, 20, yPos);
+        doc.setFont('helvetica', 'normal');
+        yPos += 5;
+      } else {
+        // Last part includes consistency modifier in parentheses
+        doc.setFont('helvetica', 'italic');
+        doc.text(part, 20, yPos);
+        doc.setFont('helvetica', 'normal');
+        yPos += 5;
+      }
+    });
+
+    yPos += 2;
     doc.setFontSize(7);
     doc.setTextColor(100, 100, 100);
     doc.setFont('helvetica', 'italic');
