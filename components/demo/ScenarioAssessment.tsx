@@ -203,7 +203,7 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
     // JFC Calculation Explanation
     doc.setFontSize(8);
     doc.setTextColor(120, 120, 120);
-    doc.text('JFC = Weighted composite of 5 cultural dimensions (Wa 25%, Loyalty 20%, Comm 20%, Team 20%, Hier 15%)', pageWidth / 2, 87, { align: 'center' });
+    doc.text('JFC = Weighted composite of 5 cultural dimensions (Wa 25%, Hier 20%, Comm 20%, Team 20%, Loyalty 15%)', pageWidth / 2, 87, { align: 'center' });
 
     // Score Interpretation Guide
     doc.setFontSize(9);

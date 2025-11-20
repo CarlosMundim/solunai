@@ -586,12 +586,13 @@ export function normalizeScores(scores: DimensionScores): DimensionScores {
 // Calculate Japanese Fit Coefficient (JFC)
 export function calculateJFC(normalizedScores: DimensionScores): number {
   // Weighted average based on importance in Japanese workplace
+  // Updated per Uncle Chachie's Master Methodology V1
   const weights = {
-    WA: 0.25,      // Harmony is critical
-    LOYALTY: 0.20, // Long-term commitment
-    COMM: 0.20,    // Communication style
-    TEAM: 0.20,    // Team integration
-    HIER: 0.15     // Hierarchy (important but can be learned)
+    WA: 0.25,      // Harmony is critical (25%)
+    LOYALTY: 0.15, // Long-term commitment (15%)
+    COMM: 0.20,    // Communication style (20%)
+    TEAM: 0.20,    // Team integration (20%)
+    HIER: 0.20     // Hierarchy respect (20%)
   };
 
   const jfc =
