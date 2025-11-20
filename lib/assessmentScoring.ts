@@ -28,6 +28,12 @@ export interface DimensionScores {
   HIER: number;    // Hierarchy respect
 }
 
+export interface IntegrationTimeline {
+  speed: string;
+  months: string;
+  details: string;
+}
+
 export interface AssessmentResult {
   dimensions: DimensionScores;
   normalizedScores: DimensionScores;
@@ -40,6 +46,7 @@ export interface AssessmentResult {
   culturalStressPoints: string[];
   SCE_PROFILE_TYPE: string;
   SCE_MANAGEMENT_GUIDANCE: string[];
+  SCE_INTEGRATION_TIMELINE: IntegrationTimeline;
 }
 
 export interface RiskFlag {
@@ -921,6 +928,33 @@ function deriveSceManagementGuidance(
   return tips;
 }
 
+// Derive Integration Timeline from overall JFC score
+function deriveIntegrationTimeline(
+  scores: DimensionScores
+): IntegrationTimeline {
+  // Calculate average of all dimensions
+  const avgScore = (scores.WA + scores.LOYALTY + scores.COMM + scores.TEAM + scores.HIER) / 5;
+
+  if (avgScore >= 70) {
+    return {
+      speed: 'FAST',
+      months: '1-3 months',
+      details: 'Standard onboarding sufficient. Quick cultural adaptation expected with minimal intervention.'
+    };
+  } else if (avgScore >= 50) {
+    return {
+      speed: 'MODERATE',
+      months: '3-6 months',
+      details: 'Guided mentorship recommended. Regular check-ins and cultural coaching will accelerate integration.'
+    };
+  }
+  return {
+    speed: 'SLOW',
+    months: '6-12 months',
+    details: 'Structured cultural training essential. Dedicated senpai support and frequent milestone reviews needed.'
+  };
+}
+
 // Main function to calculate complete assessment result
 export function calculateAssessment(responses: Record<string, string>): AssessmentResult {
   const dimensions = calculateDimensionScores(responses);
@@ -950,7 +984,8 @@ export function calculateAssessment(responses: Record<string, string>): Assessme
     SCE_MANAGEMENT_GUIDANCE: deriveSceManagementGuidance({
       ...normalizedScores,
       CONSISTENCY: consistencyIndex
-    })
+    }),
+    SCE_INTEGRATION_TIMELINE: deriveIntegrationTimeline(normalizedScores)
   };
 }
 
