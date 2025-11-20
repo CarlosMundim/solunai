@@ -62,10 +62,49 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
       return [220, 38, 38];                     // Red
     };
 
-    const getRetentionRisk = (loyalty: number): { label: string; color: [number, number, number] } => {
-      if (loyalty >= 70) return { label: 'LOW', color: [22, 163, 74] };
-      if (loyalty >= 50) return { label: 'MEDIUM', color: [234, 179, 8] };
-      return { label: 'HIGH', color: [220, 38, 38] };
+    const getRetentionRisk = (loyalty: number, team: number): { label: string; color: [number, number, number]; drivers: string[] } => {
+      const drivers: string[] = [];
+
+      // Determine drivers based on scores
+      if (loyalty < 50) drivers.push('Low organizational commitment tendency');
+      if (team < 50) drivers.push('Limited team integration willingness');
+      if (loyalty >= 70 && team >= 70) drivers.push('Strong loyalty and team bonding');
+      if (loyalty >= 50 && loyalty < 70) drivers.push('Moderate commitment - may need engagement support');
+      if (team >= 50 && team < 70) drivers.push('Gradual social integration expected');
+
+      if (loyalty >= 70) return { label: 'LOW', color: [22, 163, 74], drivers };
+      if (loyalty >= 50) return { label: 'MEDIUM', color: [234, 179, 8], drivers };
+      return { label: 'HIGH', color: [220, 38, 38], drivers };
+    };
+
+    // Score interpretation guide
+    const getScoreInterpretation = (score: number): string => {
+      if (score >= 90) return 'Excellent - Naturally aligned with Japanese workplace norms';
+      if (score >= 75) return 'Good - Minor coaching needed for full adaptation';
+      if (score >= 60) return 'Moderate - Structured onboarding and mentorship recommended';
+      return 'Developing - Significant cultural training required';
+    };
+
+    // Get integration timeline details
+    const getIntegrationTimeline = (avgScore: number): { speed: string; months: string; details: string } => {
+      if (avgScore >= 70) {
+        return {
+          speed: 'FAST',
+          months: '1-3 months',
+          details: 'Standard onboarding sufficient. Quick cultural adaptation expected with minimal intervention.'
+        };
+      } else if (avgScore >= 50) {
+        return {
+          speed: 'MODERATE',
+          months: '3-6 months',
+          details: 'Guided mentorship recommended. Regular check-ins and cultural coaching will accelerate integration.'
+        };
+      }
+      return {
+        speed: 'SLOW',
+        months: '6-12 months',
+        details: 'Structured cultural training essential. Dedicated senpai support and frequent milestone reviews needed.'
+      };
     };
 
     // Dimension descriptions
@@ -115,8 +154,13 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
     doc.setTextColor(120, 120, 120);
     doc.text('JFC = Weighted composite of 5 cultural dimensions (Wa 25%, Loyalty 20%, Comm 20%, Team 20%, Hier 15%)', pageWidth / 2, 87, { align: 'center' });
 
+    // Score Interpretation Guide
+    doc.setFontSize(9);
+    doc.setTextColor(60, 60, 60);
+    doc.text(getScoreInterpretation(result.jfc), pageWidth / 2, 93, { align: 'center' });
+
     // Consistency Index with risk commentary
-    let yPos = 97;
+    let yPos = 103;
     doc.setFontSize(10);
     doc.setTextColor(26, 26, 26);
     doc.text('Behavioral Consistency Index:', 20, yPos);
@@ -133,14 +177,26 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
       doc.text('* Moderate variability across scenarios. Candidate may behave differently depending on context.', 20, yPos);
     }
 
-    // Retention Risk Indicator
+    // Retention Risk Indicator with Drivers
     yPos += 10;
-    const retentionRisk = getRetentionRisk(result.normalizedScores.LOYALTY);
+    const retentionRisk = getRetentionRisk(result.normalizedScores.LOYALTY, result.normalizedScores.TEAM);
     doc.setFontSize(10);
     doc.setTextColor(26, 26, 26);
     doc.text('Retention Risk:', 20, yPos);
     doc.setTextColor(retentionRisk.color[0], retentionRisk.color[1], retentionRisk.color[2]);
     doc.text(retentionRisk.label, 60, yPos);
+
+    // Retention Risk Drivers
+    if (retentionRisk.drivers.length > 0) {
+      yPos += 6;
+      doc.setFontSize(7);
+      doc.setTextColor(100, 100, 100);
+      retentionRisk.drivers.forEach(driver => {
+        doc.text(`  → ${driver}`, 20, yPos);
+        yPos += 4;
+      });
+      yPos -= 4; // Adjust for last increment
+    }
 
     // Dimension Breakdown Section
     yPos += 15;
@@ -311,25 +367,77 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
       yPos += 5;
     });
 
-    // Integration Timeline
+    // Integration Timeline with detailed breakdown
     yPos += 10;
+    doc.setFillColor(243, 244, 246);
+    doc.rect(15, yPos - 5, pageWidth - 30, 8, 'F');
+    doc.setFontSize(11);
+    doc.setTextColor(26, 26, 26);
+    doc.text('INTEGRATION TIMELINE', 20, yPos);
+
+    yPos += 10;
+    const avgScore = (result.normalizedScores.WA + result.normalizedScores.LOYALTY + result.normalizedScores.COMM + result.normalizedScores.TEAM + result.normalizedScores.HIER) / 5;
+    const timeline = getIntegrationTimeline(avgScore);
+
     doc.setFontSize(10);
     doc.setTextColor(26, 26, 26);
-    doc.text('Estimated Integration Timeline:', 20, yPos);
-    yPos += 6;
-    doc.setFontSize(9);
+    doc.text(`Speed: ${timeline.speed}`, 20, yPos);
+
+    const speedColor = timeline.speed === 'FAST' ? [22, 163, 74] : timeline.speed === 'MODERATE' ? [234, 179, 8] : [220, 38, 38];
+    doc.setTextColor(speedColor[0], speedColor[1], speedColor[2]);
+    doc.text(timeline.months, 70, yPos);
+
+    yPos += 7;
+    doc.setFontSize(8);
+    doc.setTextColor(75, 85, 99);
+    const timelineDetails = doc.splitTextToSize(timeline.details, 170);
+    doc.text(timelineDetails, 20, yPos);
+    yPos += timelineDetails.length * 4;
+
+    // Training Recommendations Section
+    yPos += 8;
+    doc.setFillColor(254, 243, 199);
+    doc.rect(15, yPos - 5, pageWidth - 30, 8, 'F');
+    doc.setFontSize(11);
+    doc.setTextColor(180, 83, 9);
+    doc.text('TRAINING RECOMMENDATIONS', 20, yPos);
+
+    yPos += 10;
+    doc.setFontSize(8);
     doc.setTextColor(60, 60, 60);
 
-    const avgScore = (result.normalizedScores.WA + result.normalizedScores.LOYALTY + result.normalizedScores.COMM + result.normalizedScores.TEAM + result.normalizedScores.HIER) / 5;
-    let timeline = '';
-    if (avgScore >= 70) {
-      timeline = '1-3 months for full cultural adaptation with standard onboarding';
-    } else if (avgScore >= 50) {
-      timeline = '3-6 months with guided mentorship and regular check-ins';
-    } else {
-      timeline = '6-12 months with structured cultural training and dedicated senpai support';
+    const trainingRecs: string[] = [];
+
+    // Generate training recommendations based on scores
+    if (result.normalizedScores.WA < 60) {
+      trainingRecs.push('• Conflict avoidance and consensus-building workshop');
     }
-    doc.text(timeline, 20, yPos);
+    if (result.normalizedScores.COMM < 60) {
+      trainingRecs.push('• Japanese indirect communication and kuuki wo yomu (reading the air) training');
+    }
+    if (result.normalizedScores.HIER < 60) {
+      trainingRecs.push('• Senpai-kohai dynamics and proper escalation protocols');
+    }
+    if (result.normalizedScores.TEAM < 60) {
+      trainingRecs.push('• Team bonding activities introduction (nomikai etiquette, group participation)');
+    }
+    if (result.normalizedScores.LOYALTY < 60) {
+      trainingRecs.push('• Long-term career planning and organizational commitment discussion');
+    }
+    if (result.consistencyIndex < 70) {
+      trainingRecs.push('• Behavioral consistency coaching for situational adaptability');
+    }
+
+    // If high scores, add advanced recommendations
+    if (trainingRecs.length === 0 || avgScore >= 70) {
+      trainingRecs.push('• Advanced cultural nuance refinement (keigo mastery, subtle social cues)');
+      trainingRecs.push('• Leadership preparation within Japanese team structures');
+    }
+
+    trainingRecs.forEach(rec => {
+      doc.text(rec, 20, yPos);
+      yPos += 5;
+    });
 
     // Footer
     yPos = 270;
