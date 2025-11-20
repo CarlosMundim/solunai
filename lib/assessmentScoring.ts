@@ -145,7 +145,7 @@ export const scenarios: Scenario[] = [
         id: 'S3C',
         text: 'Join but leave early without explanation',
         textJA: '参加するが説明なく早めに帰る',
-        scores: { WA: -1, LOYALTY: 0, COMM: -1, TEAM: -1, HIER: 0 }
+        scores: { WA: -2, LOYALTY: 0, COMM: -1, TEAM: -2, HIER: 0 }
       },
       {
         id: 'S3D',
@@ -344,7 +344,7 @@ export const scenarios: Scenario[] = [
         id: 'S9A',
         text: 'Offer to take over their portion completely',
         textJA: '彼らの部分を完全に引き受けることを申し出る',
-        scores: { WA: 0, LOYALTY: +1, COMM: 0, TEAM: 0, HIER: 0 }
+        scores: { WA: -1, LOYALTY: +1, COMM: 0, TEAM: 0, HIER: 0 }
       },
       {
         id: 'S9B',
@@ -397,7 +397,7 @@ export const scenarios: Scenario[] = [
         id: 'S10D',
         text: 'Suggest improvements to make them more effective',
         textJA: 'より効果的にするための改善を提案する',
-        scores: { WA: +1, LOYALTY: +1, COMM: +1, TEAM: +1, HIER: 0 }
+        scores: { WA: 0, LOYALTY: 0, COMM: +1, TEAM: 0, HIER: 0 }
       }
     ],
     consistencyPairs: ['S2']
@@ -421,7 +421,7 @@ export const scenarios: Scenario[] = [
         id: 'S11B',
         text: 'Wait and observe how they act on the work over the next few days',
         textJA: '次の数日間、彼らがどのように行動するか観察する',
-        scores: { WA: +1, LOYALTY: +1, COMM: +1, TEAM: 0, HIER: +1 }
+        scores: { WA: +1, LOYALTY: +1, COMM: +2, TEAM: 0, HIER: +1 }
       },
       {
         id: 'S11C',
@@ -539,7 +539,7 @@ export const scenarios: Scenario[] = [
         id: 'S14D',
         text: 'Ask colleagues if the director really needs it on time',
         textJA: 'ディレクターが本当に時間通りに必要か同僚に尋ねる',
-        scores: { WA: 0, LOYALTY: 0, COMM: 0, TEAM: 0, HIER: -1 }
+        scores: { WA: 0, LOYALTY: 0, COMM: 0, TEAM: -1, HIER: -1 }
       }
     ],
     consistencyPairs: ['S1']
