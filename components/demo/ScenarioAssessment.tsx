@@ -339,6 +339,36 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
       });
     }
 
+    // Contextual Behaviour Profile (V1 Placeholder)
+    yPos += 8;
+    doc.setFillColor(240, 249, 255);
+    doc.rect(15, yPos - 5, pageWidth - 30, 8, 'F');
+    doc.setFontSize(11);
+    doc.setTextColor(30, 64, 175);
+    doc.text('CONTEXTUAL BEHAVIOUR PROFILE', 20, yPos);
+
+    yPos += 10;
+    doc.setFontSize(8);
+    doc.setTextColor(100, 100, 100);
+    doc.setFont('helvetica', 'italic');
+    doc.text('V1 Placeholder - This section describes overall behavioural patterns observed across the 14 scenarios:', 20, yPos);
+    doc.setFont('helvetica', 'normal');
+
+    yPos += 6;
+    doc.setTextColor(60, 60, 60);
+    const behaviourItems = [
+      'Tendency toward direct / indirect communication',
+      'Preference for conflict avoidance / clarification',
+      'Response style under social pressure',
+      'Decision-making when instructions are ambiguous',
+      'Approach to senpai-kohai authority',
+      'Social integration style (reserved / active)'
+    ];
+    behaviourItems.forEach(item => {
+      doc.text(`• ${item}`, 20, yPos);
+      yPos += 5;
+    });
+
     // ===== PAGE 2 =====
     doc.addPage();
 
