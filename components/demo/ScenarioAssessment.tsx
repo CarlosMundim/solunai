@@ -369,6 +369,28 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
       yPos += 5;
     });
 
+    // SCE Profile Type
+    yPos += 8;
+    doc.setFillColor(255, 237, 213);
+    doc.rect(15, yPos - 5, pageWidth - 30, 8, 'F');
+    doc.setFontSize(11);
+    doc.setTextColor(194, 65, 12);
+    doc.text('SCE PROFILE TYPE', 20, yPos);
+
+    yPos += 10;
+    doc.setFontSize(10);
+    doc.setTextColor(60, 60, 60);
+    doc.setFont('helvetica', 'bold');
+    doc.text(result.SCE_PROFILE_TYPE + ' (V1)', 20, yPos);
+    doc.setFont('helvetica', 'normal');
+
+    yPos += 6;
+    doc.setFontSize(7);
+    doc.setTextColor(100, 100, 100);
+    doc.setFont('helvetica', 'italic');
+    doc.text('Powered by Solunai Continuity Engine (SCE)', 20, yPos);
+    doc.setFont('helvetica', 'normal');
+
     // ===== PAGE 2 =====
     doc.addPage();
 

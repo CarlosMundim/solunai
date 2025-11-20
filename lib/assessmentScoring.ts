@@ -38,6 +38,7 @@ export interface AssessmentResult {
   developmentAreas: string[];
   managementStyle: string;
   culturalStressPoints: string[];
+  SCE_PROFILE_TYPE: string;
 }
 
 export interface RiskFlag {
@@ -798,7 +799,8 @@ export function calculateAssessment(responses: Record<string, string>): Assessme
     strengths,
     developmentAreas,
     managementStyle,
-    culturalStressPoints
+    culturalStressPoints,
+    SCE_PROFILE_TYPE: 'PLACEHOLDER'
   };
 }
 
