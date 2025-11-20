@@ -1,0 +1,256 @@
+.product-explanation-section {
+  padding: 80px 24px;
+  background: var(--precision-white);
+  min-height: 100vh;
+}
+
+.product-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.product-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.product-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--gradient-orange);
+  color: var(--precision-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--forge-black);
+  margin: 0;
+}
+
+.product-intro {
+  margin-bottom: 48px;
+  padding: 32px;
+  background: var(--background);
+  border-radius: 12px;
+  border-left: 4px solid var(--solunai-blaze);
+}
+
+.intro-main {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--forge-black);
+  margin: 0 0 16px 0;
+  line-height: 1.6;
+}
+
+.intro-detail {
+  font-size: 1rem;
+  color: var(--titanium-grey);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.product-section {
+  margin-bottom: 40px;
+  padding: 32px;
+  background: var(--background);
+  border-radius: 12px;
+}
+
+.product-section.highlight {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, rgba(255, 140, 0, 0.05) 100%);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--forge-black);
+  margin: 0 0 16px 0;
+}
+
+.section-intro {
+  font-size: 1rem;
+  color: var(--titanium-grey);
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+.feature-list,
+.benefit-list,
+.loan-list,
+.revenue-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  font-size: 0.9375rem;
+  color: var(--forge-black);
+  line-height: 1.5;
+}
+
+.feature-bullet {
+  color: var(--solunai-blaze);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.cost-callout {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--forge-black);
+  padding: 16px 20px;
+  background: rgba(220, 38, 38, 0.08);
+  border-left: 4px solid #dc2626;
+  border-radius: 0 8px 8px 0;
+  margin: 20px 0;
+}
+
+.reduces-intro {
+  font-size: 1rem;
+  color: var(--titanium-grey);
+  margin: 0 0 16px 0;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  font-size: 0.9375rem;
+  color: var(--forge-black);
+  line-height: 1.5;
+}
+
+.benefit-check {
+  color: #16a34a;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.loan-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 0;
+  font-size: 0.9375rem;
+  color: var(--forge-black);
+  line-height: 1.5;
+}
+
+.loan-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  background: var(--solunai-blaze);
+  color: var(--precision-white);
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 50%;
+}
+
+.revenue-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  font-size: 0.9375rem;
+  color: var(--forge-black);
+  line-height: 1.5;
+}
+
+.revenue-icon {
+  color: var(--solunai-blaze);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.revenue-conclusion {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--forge-black);
+  margin: 20px 0 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--silver-mist);
+  line-height: 1.6;
+}
+
+.product-cta {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid var(--silver-mist);
+}
+
+.cta-button {
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.cta-button.primary {
+  background: var(--solunai-blaze);
+  color: var(--precision-white);
+}
+
+.cta-button.primary:hover {
+  background: var(--solunai-orange);
+  transform: translateY(-2px);
+}
+
+.cta-button.secondary {
+  background: var(--precision-white);
+  border: 2px solid var(--silver-mist);
+  color: var(--titanium-grey);
+}
+
+.cta-button.secondary:hover {
+  border-color: var(--solunai-blaze);
+  color: var(--solunai-blaze);
+}
+
+@media (max-width: 768px) {
+  .product-explanation-section {
+    padding: 60px 20px;
+  }
+
+  .product-title {
+    font-size: 2rem;
+  }
+
+  .product-intro,
+  .product-section {
+    padding: 24px;
+  }
+
+  .product-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+}
