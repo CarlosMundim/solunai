@@ -1,11 +1,21 @@
 'use client';
 
 import React, { useState } from 'react';
+import { Bot, Eye, Cog, BarChart3, Factory } from 'lucide-react';
 import './EngineeringServices.css';
 
 interface EngineeringServicesProps {
   lang: 'ja' | 'en';
 }
+
+// Icon components for each category
+const categoryIcons = {
+  ml: Bot,
+  cv: Eye,
+  automation: Cog,
+  data: BarChart3,
+  manufacturing: Factory
+};
 
 const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
   const [selectedCategory, setSelectedCategory] = useState(0);
@@ -37,7 +47,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
       categories: [
         {
           title: '機械学習エンジニア',
-          icon: '🤖',
+          iconKey: 'ml',
           skills: ['TensorFlow', 'PyTorch', 'scikit-learn', 'カスタムAIモデル開発'],
           cost: '年間¥6M-¥8M',
           traditional: '正社員：¥12M+',
@@ -51,7 +61,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
         },
         {
           title: 'コンピュータビジョン専門家',
-          icon: '👁️',
+          iconKey: 'cv',
           skills: ['OpenCV', 'YOLO', 'Detectron2', 'リアルタイム画像処理'],
           cost: '年間¥6M-¥9M',
           traditional: '正社員：¥12M-¥15M',
@@ -65,7 +75,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
         },
         {
           title: '自動化エンジニア',
-          icon: '⚙️',
+          iconKey: 'automation',
           skills: ['ロボティクス', 'PLC', 'SCADA', '産業IoT'],
           cost: '年間¥5M-¥7M',
           traditional: '正社員：¥10M-¥12M',
@@ -79,7 +89,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
         },
         {
           title: 'データサイエンティスト',
-          icon: '📊',
+          iconKey: 'data',
           skills: ['Python', 'R', 'SQL', 'BI Dashboard', 'KPI追跡'],
           cost: '年間¥7M-¥10M',
           traditional: '正社員：¥12M-¥15M',
@@ -93,7 +103,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
         },
         {
           title: '製造プロセスエンジニア',
-          icon: '🏭',
+          iconKey: 'manufacturing',
           skills: ['Lean Manufacturing', 'Six Sigma', 'プロセス最適化', '品質システム'],
           cost: '年間¥5M-¥7M',
           traditional: '正社員：¥9M-¥12M',
@@ -133,7 +143,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
       categories: [
         {
           title: 'Machine Learning Engineers',
-          icon: '🤖',
+          iconKey: 'ml',
           skills: ['TensorFlow', 'PyTorch', 'scikit-learn', 'Custom AI model development'],
           cost: '¥6M-¥8M/year',
           traditional: 'Permanent: ¥12M+',
@@ -147,7 +157,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
         },
         {
           title: 'Computer Vision Specialists',
-          icon: '👁️',
+          iconKey: 'cv',
           skills: ['OpenCV', 'YOLO', 'Detectron2', 'Real-time image processing'],
           cost: '¥6M-¥9M/year',
           traditional: 'Permanent: ¥12M-¥15M',
@@ -161,7 +171,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
         },
         {
           title: 'Automation Engineers',
-          icon: '⚙️',
+          iconKey: 'automation',
           skills: ['Robotics', 'PLC', 'SCADA', 'Industrial IoT'],
           cost: '¥5M-¥7M/year',
           traditional: 'Permanent: ¥10M-¥12M',
@@ -175,7 +185,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
         },
         {
           title: 'Data Scientists',
-          icon: '📊',
+          iconKey: 'data',
           skills: ['Python', 'R', 'SQL', 'BI Dashboards', 'KPI tracking'],
           cost: '¥7M-¥10M/year',
           traditional: 'Permanent: ¥12M-¥15M',
@@ -189,7 +199,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
         },
         {
           title: 'Manufacturing Process Engineers',
-          icon: '🏭',
+          iconKey: 'manufacturing',
           skills: ['Lean Manufacturing', 'Six Sigma', 'Process optimization', 'Quality systems'],
           cost: '¥5M-¥7M/year',
           traditional: 'Permanent: ¥9M-¥12M',
@@ -245,26 +255,35 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
 
         <div className="categories-section">
           <div className="category-tabs">
-            {currentContent.categories.map((category, index) => (
-              <button
-                key={index}
-                className={`category-tab ${selectedCategory === index ? 'active' : ''}`}
-                onClick={() => setSelectedCategory(index)}
-              >
-                <span className="tab-icon">{category.icon}</span>
-                <span className="tab-label">{category.title}</span>
-              </button>
-            ))}
+            {currentContent.categories.map((category, index) => {
+              const IconComponent = categoryIcons[category.iconKey as keyof typeof categoryIcons];
+              return (
+                <button
+                  key={index}
+                  className={`category-tab ${selectedCategory === index ? 'active' : ''}`}
+                  onClick={() => setSelectedCategory(index)}
+                >
+                  <span className="tab-icon">
+                    <IconComponent size={24} strokeWidth={1.5} />
+                  </span>
+                  <span className="tab-label">{category.title}</span>
+                </button>
+              );
+            })}
           </div>
 
           <div className="category-content">
-            {currentContent.categories.map((category, index) => (
+            {currentContent.categories.map((category, index) => {
+              const IconComponent = categoryIcons[category.iconKey as keyof typeof categoryIcons];
+              return (
               <div
                 key={index}
                 className={`category-detail ${selectedCategory === index ? 'active' : ''}`}
               >
                 <div className="detail-header">
-                  <div className="detail-icon">{category.icon}</div>
+                  <div className="detail-icon">
+                    <IconComponent size={48} strokeWidth={1.5} />
+                  </div>
                   <div className="detail-title-group">
                     <h3 className="detail-title">{category.title}</h3>
                     <p className="detail-description">{category.description}</p>
@@ -303,7 +322,8 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
                   </div>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

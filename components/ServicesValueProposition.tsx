@@ -1,11 +1,19 @@
 'use client';
 
 import React from 'react';
+import { Users, Search, Clock, Coins } from 'lucide-react';
 import './ServicesValueProposition.css';
 
 interface ServicesValuePropositionProps {
   lang: 'ja' | 'en';
 }
+
+const challengeIcons = {
+  workforce: Users,
+  talent: Search,
+  hiring: Clock,
+  cost: Coins
+};
 
 const ServicesValueProposition: React.FC<ServicesValuePropositionProps> = ({ lang }) => {
   const content = {
@@ -15,25 +23,25 @@ const ServicesValueProposition: React.FC<ServicesValuePropositionProps> = ({ lan
       mainMessage: '日本の中小企業は、AIやML専門家を採用できません。Solunaiは、テクノロジーと人材の両方を提供します。',
       challenges: [
         {
-          icon: '👥',
+          iconKey: 'workforce',
           title: '高齢化する労働力',
           description: '28%が60歳以上',
           impact: '若者は工場勤務を敬遠（3K：きつい、汚い、危険）'
         },
         {
-          icon: '🔍',
+          iconKey: 'talent',
           title: 'AI/ML人材不足',
           description: '地域で採用不可能',
           impact: '東京でも限定的な人材プール'
         },
         {
-          icon: '⏰',
+          iconKey: 'hiring',
           title: '従来の採用は遅い',
           description: '4-6ヶ月のサイクル',
           impact: 'その間に競合他社が先行'
         },
         {
-          icon: '💰',
+          iconKey: 'cost',
           title: '高額な人件費',
           description: '年間¥10M-¥15M/人',
           impact: '5人で年間¥60Mのコスト'
@@ -72,25 +80,25 @@ const ServicesValueProposition: React.FC<ServicesValuePropositionProps> = ({ lan
       mainMessage: 'Japanese SMEs cannot hire AI/ML specialists. Solunai provides both the technology AND the talent.',
       challenges: [
         {
-          icon: '👥',
+          iconKey: 'workforce',
           title: 'Aging Workforce',
           description: '28% over 60 years old',
           impact: 'Youth avoiding factory jobs (3K: Kitanai, Kitsui, Kiken)'
         },
         {
-          icon: '🔍',
+          iconKey: 'talent',
           title: 'AI/ML Talent Shortage',
           description: 'Cannot hire locally',
           impact: 'Limited talent pool even in Tokyo'
         },
         {
-          icon: '⏰',
+          iconKey: 'hiring',
           title: 'Slow Traditional Hiring',
           description: '4-6 month cycle',
           impact: 'Competitors move ahead during delay'
         },
         {
-          icon: '💰',
+          iconKey: 'cost',
           title: 'Expensive Salaries',
           description: '¥10M-¥15M per year/engineer',
           impact: '5 engineers = ¥60M annually'
@@ -138,14 +146,19 @@ const ServicesValueProposition: React.FC<ServicesValuePropositionProps> = ({ lan
 
         <div className="challenges-section">
           <div className="challenges-grid">
-            {currentContent.challenges.map((challenge, index) => (
-              <div key={index} className="challenge-card">
-                <div className="challenge-icon">{challenge.icon}</div>
-                <h3 className="challenge-title">{challenge.title}</h3>
-                <p className="challenge-description">{challenge.description}</p>
-                <p className="challenge-impact">{challenge.impact}</p>
-              </div>
-            ))}
+            {currentContent.challenges.map((challenge, index) => {
+              const IconComponent = challengeIcons[challenge.iconKey as keyof typeof challengeIcons];
+              return (
+                <div key={index} className="challenge-card">
+                  <div className="challenge-icon">
+                    <IconComponent size={32} strokeWidth={1.5} />
+                  </div>
+                  <h3 className="challenge-title">{challenge.title}</h3>
+                  <p className="challenge-description">{challenge.description}</p>
+                  <p className="challenge-impact">{challenge.impact}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
 

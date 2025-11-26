@@ -146,6 +146,31 @@
 ## 5. COMPONENTS
 
 ### Cards
+
+#### MANDATORY CARD LAYOUT RULE
+
+**Card titles must ALWAYS be on TOP, never on the side.**
+
+```
+┌─────────────────────────┐
+│  [Icon]                 │
+│  TITLE (on TOP always)  │
+│                         │
+│  Description text       │
+│  goes below the title   │
+│                         │
+│  [CTA Link →]           │
+└─────────────────────────┘
+```
+
+**WRONG Layout (Never do this):**
+```
+┌─────────────────────────┐
+│  TITLE  │  Description  │  ← Title on SIDE is WRONG
+└─────────────────────────┘
+```
+
+#### Card CSS
 ```css
 .card-default {
   background: #ffffff;
@@ -153,6 +178,12 @@
   border-radius: 12px;
   padding: 32px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+  /* ALWAYS block display, never inline/side */
+  display: block;
+  margin-bottom: 16px;
 }
 
 .card-elevated {
@@ -213,9 +244,37 @@ Button Sizing:
 
 ## 7. ICONS & IMAGERY
 
+### MANDATORY ICON RULE
+
+**DO NOT USE:**
+- Unicode emojis (🏭, ⚙️, ☁️, 📡, etc.)
+- Text-based symbols
+- Inline emoji characters
+
+**MUST USE:**
+- **Lucide React** (preferred) - Already installed
+- **Heroicons** (alternative)
+
+```tsx
+// CORRECT - Use Lucide React
+import { Factory, Settings, Cloud, Radio, Check, X } from 'lucide-react';
+<Factory className="w-6 h-6 text-solunai-blaze" />
+
+// WRONG - Never do this
+<span>🏭</span>
+```
+
+### Icon Sizes
+| Token | Size | Usage |
+|-------|------|-------|
+| xs | 16px | Inline with text |
+| sm | 20px | Small cards, lists |
+| md | 24px | Default, cards |
+| lg | 32px | Feature sections |
+| xl | 48px | Hero sections |
+
 ### Icon Style
 - Line icons (stroke: 2px)
-- Size: 20px (inline), 24px (default), 48px (feature)
 - Color: Inherit from text or brand orange
 
 ### Image Treatment
@@ -279,9 +338,45 @@ Button Sizing:
 
 ---
 
+---
+
+## 11. CSS AUDIT - PAGES REQUIRING FIXES
+
+**Audit Date**: November 27, 2025
+
+### Priority 1 - Critical (Emoji Replacement)
+| Page | Issue | Status |
+|------|-------|--------|
+| `/solutions/digital-twin` | Uses 🏭⚙️☁️📡 emojis | ❌ TODO |
+| `/solutions/digital-twin` | Card title on SIDE (should be TOP) | ❌ TODO |
+| `/solutions/computer-vision` | Uses emoji icons | ❌ TODO |
+| `/solutions/predictive-maintenance` | Uses emoji icons | ❌ TODO |
+| `/services` | Uses 🤖👁️⚙️📊🏭💰 emojis | ❌ TODO |
+| `/services/global-engineering` | Check for emojis | ❌ TODO |
+
+### Priority 2 - Already Fixed
+| Page | Issue | Status |
+|------|-------|--------|
+| `/technology` | Hero text low contrast | ✅ FIXED |
+| `/technology` | CTA section visibility | ✅ FIXED |
+| Homepage | Comparison card contrast | ✅ FIXED |
+| `globals.css` | Missing color variables | ✅ FIXED |
+
+### Files to Update
+```
+/app/solutions/digital-twin/page.tsx     - Replace emojis, fix card layout
+/app/solutions/computer-vision/page.tsx  - Replace emojis
+/app/solutions/predictive-maintenance/page.tsx - Replace emojis
+/app/services/page.tsx                   - Replace emojis
+/app/services/global-engineering/page.tsx - Check emojis
+```
+
+---
+
 ## REVISION HISTORY
 
 | Version | Date | Changes |
 |---------|------|---------|
 | 1.0 | 2025-11-26 | Initial draft |
 | 1.1 | 2025-11-26 | Wa-inspired redesign, Ma spacing, corporate Japanese aesthetic |
+| 1.2 | 2025-11-27 | Added mandatory icon rule (Lucide/Heroicons only), card layout rule, CSS audit |
