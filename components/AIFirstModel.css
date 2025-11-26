@@ -129,11 +129,12 @@ html[lang="ja"] .section-description {
 }
 
 .comparison-card.traditional .metric-label {
-  color: var(--silver-mist);
+  color: var(--forge-black);
 }
 
 .comparison-card.traditional .metric-value {
-  color: var(--precision-white);
+  color: var(--forge-black);
+  font-weight: 700;
 }
 
 .comparison-card.traditional .comparison-header {
@@ -181,11 +182,12 @@ html[lang="ja"] .section-description {
 }
 
 .comparison-card.solunai .metric-label {
-  color: var(--precision-white);
+  color: var(--forge-black);
 }
 
 .comparison-card.solunai .metric-value {
-  color: var(--precision-white);
+  color: var(--forge-black);
+  font-weight: 700;
 }
 
 .comparison-card.solunai .metric-row {

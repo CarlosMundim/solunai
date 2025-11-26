@@ -32,7 +32,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
     ja: {
       overtitle: 'AI優先革命',
       title: '従来型企業との違い',
-      subtitle: '我々のコア哲学：「AIの力で人間労働を置き換える。人間は不可欠な場合のみ使用。」',
+      subtitle: '私たちの哲学：「AIが反復作業を担当し、人間は創造性・判断・関係構築に集中」',
 
       comparison: {
         sectionTitle: 'ビジネスモデル比較',
@@ -335,7 +335,7 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
     en: {
       overtitle: 'AI-First Revolution',
       title: 'How We\'re Different',
-      subtitle: 'Our core philosophy: "We replace human labor with AI. Humans are used only when essential and irreplaceable."',
+      subtitle: 'Our philosophy: AI handles repetitive tasks so humans can focus on creativity, judgment, and relationships.',
 
       comparison: {
         sectionTitle: 'Business Model Comparison',
