@@ -11,18 +11,22 @@ interface FinalCTAProps {
 const FinalCTA: React.FC<FinalCTAProps> = ({ lang }) => {
   const content = {
     ja: {
-      heading: 'データシグナルから',
-      headingHighlight: '産業変革へ',
-      description: 'Solunaiにより、製造業はAIを活用してあらゆるシグナルをキャプチャし、意味のあるものにし、リアルタイムで行動します。工場全体、企業全体、そして未来へと。',
-      buttonText: 'お問い合わせ',
-      buttonLink: '/contact'
+      heading: '製造業の課題、',
+      headingHighlight: '無料で診断します',
+      description: '30分の無料診断で、御社工場のAI活用可能性をお伝えします',
+      buttonText: '無料診断を予約',
+      buttonLink: '/contact',
+      secondaryButtonText: 'お問い合わせ',
+      secondaryButtonLink: '/contact'
     },
     en: {
-      heading: 'From data signals',
-      headingHighlight: 'to industrial transformation',
-      description: 'With Solunai, manufacturers use AI to capture every signal, make it meaningful, and act in real time — across plants, across enterprises, and into the future.',
-      buttonText: 'Contact Us',
-      buttonLink: '/en/contact'
+      heading: 'Free',
+      headingHighlight: 'Manufacturing Assessment',
+      description: 'In 30 minutes, we\'ll identify AI opportunities for your factory',
+      buttonText: 'Schedule Free Assessment',
+      buttonLink: '/en/contact',
+      secondaryButtonText: 'Contact Us',
+      secondaryButtonLink: '/en/contact'
     }
   };
 
@@ -41,12 +45,17 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ lang }) => {
             </h2>
           </div>
 
-          {/* Right Column - Description + Button */}
+          {/* Right Column - Description + Buttons */}
           <div className="final-cta-right">
             <p className="final-cta-description">{t.description}</p>
-            <Link href={t.buttonLink} className="final-cta-button">
-              {t.buttonText}
-            </Link>
+            <div className="final-cta-buttons">
+              <Link href={t.buttonLink} className="final-cta-button primary">
+                {t.buttonText}
+              </Link>
+              <Link href={t.secondaryButtonLink} className="final-cta-button secondary">
+                {t.secondaryButtonText}
+              </Link>
+            </div>
           </div>
         </div>
       </div>

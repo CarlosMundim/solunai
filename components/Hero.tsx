@@ -11,30 +11,32 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
   const content = {
     ja: {
       headline: {
-        line1: '日本の製造業危機を解決する',
-        line2: 'AI優先ビジネスモデル'
+        line1: '製造業の現場課題を、',
+        line2: 'AIで解決'
       },
-      subheadline: 'AIエージェント技術により、顧客に大幅なコスト削減を提供し、日本の1,100万人労働力不足を解決します。',
+      subheadline: '人手不足、品質問題、設備の突然故障、コスト増大。製造業が直面する現実的な課題に、実績あるAI技術で対応します。',
       trustIndicators: [
-        '✓ AI優先の高効率モデル',
-        '✓ 大幅なコスト削減を実現',
-        '✓ 国際的な製造業実績'
+        '✓ 30%のコスト削減実績',
+        '✓ 95%の欠陥検出率',
+        '✓ 60年以上の製造業経験'
       ],
-      cta: '無料相談を予約',
+      cta: '無料診断を予約',
+      ctaSecondary: 'ソリューションを見る',
       scroll: 'スクロール'
     },
     en: {
       headline: {
-        line1: 'Solving Japan\'s Manufacturing Crisis',
-        line2: 'AI-First Business Model'
+        line1: 'Solving Manufacturing Challenges',
+        line2: 'with AI'
       },
-      subheadline: 'AI agent technology delivers significant cost reduction to clients while solving Japan\'s 11 million worker shortage.',
+      subheadline: 'Labor shortage, quality issues, equipment downtime, rising costs. We address real manufacturing challenges with proven AI solutions.',
       trustIndicators: [
-        '✓ AI-first high-efficiency model',
-        '✓ Significant cost reduction',
-        '✓ International manufacturing experience'
+        '✓ 30% cost reduction achieved',
+        '✓ 95% defect detection rate',
+        '✓ 60+ years manufacturing experience'
       ],
-      cta: 'Schedule Free Consultation',
+      cta: 'Schedule Free Assessment',
+      ctaSecondary: 'View Solutions',
       scroll: 'scroll down'
     }
   };
@@ -89,9 +91,14 @@ const Hero: React.FC<HeroProps> = ({ lang }) => {
           ))}
         </div>
 
-        <a href="#contact" className="hero-cta-button">
-          {currentContent.cta}
-        </a>
+        <div className="hero-cta-group">
+          <a href="#contact" className="hero-cta-button hero-cta-primary">
+            {currentContent.cta}
+          </a>
+          <a href="#solutions-preview" className="hero-cta-button hero-cta-secondary">
+            {currentContent.ctaSecondary}
+          </a>
+        </div>
       </div>
 
       {/* Scroll Indicator */}

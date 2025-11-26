@@ -11,11 +11,47 @@
   text-align: center;
 }
 
-.success-badge {
+/* Section Header */
+.section-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--forge-black);
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #666666;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Case Study Card */
+.case-study-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 60px 50px;
+  margin-bottom: 80px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.case-study-badge {
   display: inline-block;
   padding: 8px 20px;
   background: var(--solunai-blaze);
-  /* Industrial Precision - Bold Orange */
   color: var(--precision-white);
   font-size: 12px;
   font-weight: 700;
@@ -39,73 +75,83 @@
   display: block;
 }
 
-.success-title {
-  font-size: 56px;
+/* Case Study Header */
+.case-study-header {
+  margin-bottom: 50px;
+}
+
+.case-study-title {
+  font-size: 48px;
   font-weight: 700;
   color: var(--forge-black);
-  /* Industrial Precision - Deep Black */
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
   line-height: 1.2;
 }
 
-.success-subtitle {
-  font-size: 20px;
-  color: #666666;
-  margin: 0 0 60px 0;
+.case-study-industry {
+  font-size: 14px;
+  color: var(--solunai-blaze);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 8px 0;
 }
 
-.success-content-grid {
+.case-study-subtitle {
+  font-size: 18px;
+  color: #666666;
+  margin: 0;
+}
+
+/* Case Study Content */
+.case-study-content-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: left;
 }
 
-.success-block {
-  background: #ffffff;
-  border: 1px solid #d1d5db;
+.case-study-block {
+  background: var(--bg-off-white);
+  border: 1px solid #e5e7eb;
   border-radius: 16px;
-  padding: 40px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 32px;
 }
 
-.success-block-label {
-  font-size: 30px;
+.case-study-block-label {
+  font-size: 16px;
   font-weight: 700;
   color: var(--solunai-blaze);
-  /* Industrial Precision - Bold Orange */
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  margin: 0 0 16px 0;
+  margin: 0 0 12px 0;
 }
 
-.success-block-text {
-  font-size: 18px;
+.case-study-block-text {
+  font-size: 16px;
   line-height: 1.6;
   color: #333333;
   margin: 0;
 }
 
-.success-results {
+/* Case Study Results */
+.case-study-results {
   background: var(--steel-navy);
-  /* Industrial Precision - Solid Navy */
-  border-radius: 24px;
-  padding: 60px 40px;
-  margin-bottom: 40px;
+  border-radius: 20px;
+  padding: 50px 40px;
+  margin-bottom: 32px;
   box-shadow: var(--shadow-md);
 }
 
-.success-results-label {
-  font-size: 52px;
+.case-study-results-label {
+  font-size: 28px;
   font-weight: 700;
   color: var(--solunai-blaze);
-  /* Industrial Precision - Bold Orange */
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  margin: 0 0 40px 0;
+  margin: 0 0 32px 0;
   text-shadow: 0 0 20px rgba(245, 72, 10, 0.3);
-  /* Forge glow */
 }
 
 .results-metrics-grid {
@@ -132,15 +178,107 @@
   line-height: 1.5;
 }
 
-.success-partnership {
-  font-size: 16px;
+.case-study-partnership {
+  font-size: 15px;
   line-height: 1.6;
   color: #666666;
   font-style: italic;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
 }
 
-.success-partnership p {
+.case-study-partnership p {
   margin: 0;
+}
+
+/* Customer Logos Section */
+.customer-logos-section {
+  margin-bottom: 60px;
+}
+
+.customer-logos-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 40px 0;
+}
+
+.customer-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: center;
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+.customer-logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.customer-logo {
+  max-width: 150px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.customer-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.customer-logo-placeholder {
+  height: 80px;
+  background: #f3f4f6;
+  border: 2px dashed #d1d5db;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* View All CTA */
+.case-studies-cta {
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 40px;
+  background: var(--solunai-blaze);
+  color: var(--precision-white);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(245, 72, 10, 0.3);
+}
+
+.cta-button:hover {
+  background: #d14008;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(245, 72, 10, 0.4);
+}
+
+.cta-arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover .cta-arrow {
+  transform: translateX(4px);
 }
 
 /* Tablet Styles */
@@ -149,15 +287,24 @@
     padding: var(--section-spacing-tablet) var(--container-padding-mobile);
   }
 
+  .section-title {
+    font-size: 40px;
+  }
+
+  .case-study-card {
+    padding: 50px 40px;
+    margin-bottom: 60px;
+  }
+
   .fbm-logo {
     max-width: 250px;
   }
 
-  .success-title {
-    font-size: 44px;
+  .case-study-title {
+    font-size: 40px;
   }
 
-  .success-content-grid {
+  .case-study-content-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
@@ -170,6 +317,12 @@
   .result-metric-card .metric-value {
     font-size: 48px;
   }
+
+  .customer-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+  }
 }
 
 /* Mobile Styles */
@@ -178,28 +331,44 @@
     padding: var(--section-spacing-mobile) var(--container-padding-mobile);
   }
 
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .case-study-card {
+    padding: 40px 30px;
+    margin-bottom: 50px;
+  }
+
   .fbm-logo {
     max-width: 200px;
   }
 
-  .success-title {
-    font-size: 36px;
+  .case-study-title {
+    font-size: 32px;
   }
 
-  .success-subtitle {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-
-  .success-block {
-    padding: 32px 24px;
-  }
-
-  .success-block-text {
+  .case-study-subtitle {
     font-size: 16px;
   }
 
-  .success-results {
+  .case-study-block {
+    padding: 28px 20px;
+  }
+
+  .case-study-block-text {
+    font-size: 15px;
+  }
+
+  .case-study-results {
     padding: 40px 24px;
   }
 
@@ -210,27 +379,81 @@
   .result-metric-card .metric-description {
     font-size: 18px;
   }
+
+  .customer-logos-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .customer-logos-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 32px;
+  }
 }
 
 /* Small Mobile */
 @media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  .case-study-card {
+    padding: 32px 24px;
+  }
+
   .fbm-logo {
     max-width: 160px;
   }
 
-  .success-title {
+  .case-study-title {
     font-size: 28px;
   }
 
-  .success-subtitle {
-    font-size: 16px;
+  .case-study-subtitle {
+    font-size: 15px;
   }
 
-  .success-block-text {
-    font-size: 15px;
+  .case-study-block {
+    padding: 24px 16px;
+  }
+
+  .case-study-block-text {
+    font-size: 14px;
+  }
+
+  .case-study-results {
+    padding: 32px 20px;
+  }
+
+  .case-study-results-label {
+    font-size: 24px;
   }
 
   .result-metric-card .metric-value {
     font-size: 40px;
+  }
+
+  .result-metric-card .metric-description {
+    font-size: 16px;
+  }
+
+  .customer-logos-title {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 15px;
+    padding: 12px 28px;
   }
 }

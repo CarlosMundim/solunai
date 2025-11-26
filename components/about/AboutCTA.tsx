@@ -11,20 +11,20 @@ interface AboutCTAProps {
 const AboutCTA: React.FC<AboutCTAProps> = ({ lang }) => {
   const content = {
     ja: {
-      title: '一緒に製造業の未来を創りませんか',
-      subtitle: 'AI駆動の製造業変革について、無料相談をご利用ください',
-      primaryButton: 'お問い合わせ',
-      secondaryButton: 'ケーススタディを見る',
+      title: '製造業の課題、無料で診断します',
+      subtitle: '30分の無料診断で、御社工場のAI活用可能性をお伝えします',
+      primaryButton: '無料診断を予約',
+      secondaryButton: 'お問い合わせ',
       contactLink: '/contact',
-      caseStudiesLink: '/about/case-studies',
+      caseStudiesLink: '/contact',
     },
     en: {
-      title: 'Ready to Reduce Defects and Lower Costs?',
-      subtitle: 'Get a free consultation on AI-driven manufacturing improvements',
-      primaryButton: 'Contact Us',
-      secondaryButton: 'View Case Studies',
+      title: 'Free Manufacturing Assessment',
+      subtitle: 'In 30 minutes, we\'ll identify AI opportunities for your factory',
+      primaryButton: 'Schedule Free Assessment',
+      secondaryButton: 'Contact Us',
       contactLink: '/en/contact',
-      caseStudiesLink: '/en/about/case-studies',
+      caseStudiesLink: '/en/contact',
     },
   };
 

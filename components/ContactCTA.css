@@ -1,0 +1,387 @@
+.contact-cta-section {
+  width: 100%;
+  padding: var(--section-spacing-desktop) 24px;
+  background: linear-gradient(180deg,
+    var(--background) 0%,
+    rgba(247, 248, 249, 0.5) 100%
+  );
+  font-family: var(--font-inter), 'Open Sans', sans-serif;
+  border-top: 1px solid var(--silver-mist);
+}
+
+html[lang="ja"] .contact-cta-section {
+  font-family: var(--font-noto-sans-jp), 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
+}
+
+.contact-cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-cta-content {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Header */
+.contact-cta-header {
+  margin-bottom: var(--spacing-l);
+}
+
+.contact-cta-headline {
+  font-size: var(--font-heading-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--forge-black);
+  margin: 0 0 var(--spacing-xxs) 0;
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+html[lang="ja"] .contact-cta-headline {
+  font-size: var(--font-heading-xl-jp);
+  line-height: var(--line-height-base-jp);
+}
+
+.contact-cta-subheadline {
+  font-size: var(--font-heading-s);
+  font-weight: var(--font-weight-normal);
+  color: var(--titanium-grey);
+  margin: 0 0 var(--spacing-xs) 0;
+  line-height: var(--line-height-base);
+}
+
+html[lang="ja"] .contact-cta-subheadline {
+  font-size: var(--font-heading-s-jp);
+  line-height: var(--line-height-base-jp);
+}
+
+.contact-cta-description {
+  font-size: var(--font-body-base);
+  line-height: var(--line-height-base);
+  color: var(--titanium-grey);
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html[lang="ja"] .contact-cta-description {
+  font-size: var(--font-body-base-jp);
+  line-height: var(--line-height-base-jp);
+}
+
+/* Dual CTA Buttons */
+.contact-cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-s);
+  margin-bottom: var(--spacing-l);
+  flex-wrap: wrap;
+}
+
+.contact-cta-primary-btn,
+.contact-cta-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 36px;
+  font-size: var(--font-button-lg);
+  font-weight: var(--font-weight-bold);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  border: 2px solid transparent;
+  font-family: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+html[lang="ja"] .contact-cta-primary-btn,
+html[lang="ja"] .contact-cta-secondary-btn {
+  font-size: var(--font-button-lg-jp);
+}
+
+/* Primary Button - Download/Materials (Japanese B2B #1 Priority) */
+.contact-cta-primary-btn {
+  background: var(--gradient-orange);
+  color: var(--precision-white);
+  box-shadow: var(--shadow-orange);
+}
+
+.contact-cta-primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-forge);
+  background: linear-gradient(135deg, var(--heat-glow) 0%, var(--molten-core) 100%);
+}
+
+.contact-cta-primary-btn:active {
+  transform: translateY(-1px);
+}
+
+.contact-cta-primary-btn:focus-visible {
+  outline: 2px solid var(--solunai-blaze);
+  outline-offset: 2px;
+}
+
+/* Secondary Button - Schedule Assessment */
+.contact-cta-secondary-btn {
+  background: var(--precision-white);
+  color: var(--forge-black);
+  border-color: var(--steel-navy);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-cta-secondary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--solunai-blaze);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.contact-cta-secondary-btn:active {
+  transform: translateY(-1px);
+}
+
+.contact-cta-secondary-btn:focus-visible {
+  outline: 2px solid var(--steel-navy);
+  outline-offset: 2px;
+}
+
+.btn-icon {
+  flex-shrink: 0;
+  transition: transform var(--transition-base);
+}
+
+.contact-cta-primary-btn:hover .btn-icon,
+.contact-cta-secondary-btn:hover .btn-icon {
+  transform: translateY(-2px);
+}
+
+/* Benefits Grid */
+.contact-cta-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-s);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-cta-benefit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: var(--font-body-small);
+  color: var(--titanium-grey);
+  padding: var(--spacing-xxs);
+}
+
+html[lang="ja"] .contact-cta-benefit {
+  font-size: var(--font-body-small-jp);
+}
+
+.benefit-check {
+  flex-shrink: 0;
+  color: var(--solunai-blaze);
+}
+
+/* Contact Information */
+.contact-cta-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-l);
+  padding: var(--spacing-m);
+  background: var(--precision-white);
+  border: 1px solid var(--silver-mist);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.contact-info-item {
+  text-align: center;
+}
+
+.contact-info-label {
+  font-size: var(--font-body-small);
+  color: var(--titanium-grey);
+  margin-bottom: 4px;
+  font-weight: var(--font-weight-semibold);
+}
+
+html[lang="ja"] .contact-info-label {
+  font-size: var(--font-body-small-jp);
+}
+
+.contact-info-value {
+  font-size: var(--font-body-lead);
+  font-weight: var(--font-weight-bold);
+  color: var(--forge-black);
+}
+
+html[lang="ja"] .contact-info-value {
+  font-size: var(--font-body-lead-jp);
+}
+
+.contact-phone {
+  color: var(--steel-navy);
+}
+
+.contact-email {
+  color: var(--steel-navy);
+}
+
+.contact-info-hours {
+  font-size: var(--font-body-small);
+  color: var(--titanium-grey);
+  text-align: center;
+  width: 100%;
+  padding-top: var(--spacing-xxs);
+  border-top: 1px solid var(--silver-mist);
+  margin-top: var(--spacing-xxs);
+}
+
+html[lang="ja"] .contact-info-hours {
+  font-size: var(--font-body-small-jp);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-cta-section {
+    padding: var(--section-spacing-tablet) 24px;
+  }
+
+  .contact-cta-headline {
+    font-size: var(--font-heading-l);
+  }
+
+  html[lang="ja"] .contact-cta-headline {
+    font-size: var(--font-heading-l-jp);
+  }
+
+  .contact-cta-benefits {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xs);
+  }
+
+  .contact-cta-info {
+    gap: var(--spacing-m);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-cta-section {
+    padding: var(--section-spacing-mobile) 20px;
+  }
+
+  .contact-cta-header {
+    margin-bottom: var(--spacing-m);
+  }
+
+  .contact-cta-headline {
+    font-size: var(--font-heading-m);
+  }
+
+  html[lang="ja"] .contact-cta-headline {
+    font-size: var(--font-heading-m-jp);
+  }
+
+  .contact-cta-subheadline {
+    font-size: var(--font-body-lead);
+  }
+
+  html[lang="ja"] .contact-cta-subheadline {
+    font-size: var(--font-body-lead-jp);
+  }
+
+  .contact-cta-description {
+    font-size: var(--font-body-base);
+  }
+
+  html[lang="ja"] .contact-cta-description {
+    font-size: var(--font-body-base-jp);
+  }
+
+  .contact-cta-buttons {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    width: 100%;
+  }
+
+  .contact-cta-primary-btn,
+  .contact-cta-secondary-btn {
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+    padding: 16px 32px;
+    font-size: var(--font-button-md);
+  }
+
+  html[lang="ja"] .contact-cta-primary-btn,
+  html[lang="ja"] .contact-cta-secondary-btn {
+    font-size: var(--font-button-md-jp);
+  }
+
+  .contact-cta-benefits {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xxs);
+  }
+
+  .contact-cta-benefit {
+    justify-content: flex-start;
+    padding: var(--spacing-xxs) var(--spacing-xs);
+  }
+
+  .contact-cta-info {
+    flex-direction: column;
+    gap: var(--spacing-s);
+    padding: var(--spacing-s);
+  }
+
+  .contact-info-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-cta-section {
+    padding: var(--section-spacing-mobile) 16px;
+  }
+
+  .contact-cta-headline {
+    font-size: var(--font-heading-s);
+  }
+
+  html[lang="ja"] .contact-cta-headline {
+    font-size: var(--font-heading-s-jp);
+  }
+
+  .contact-cta-subheadline {
+    font-size: var(--font-body-base);
+  }
+
+  html[lang="ja"] .contact-cta-subheadline {
+    font-size: var(--font-body-base-jp);
+  }
+
+  .contact-cta-primary-btn,
+  .contact-cta-secondary-btn {
+    padding: 14px 28px;
+    font-size: var(--font-button-md);
+  }
+
+  html[lang="ja"] .contact-cta-primary-btn,
+  html[lang="ja"] .contact-cta-secondary-btn {
+    font-size: var(--font-button-md-jp);
+  }
+
+  .contact-info-value {
+    font-size: var(--font-body-base);
+  }
+
+  html[lang="ja"] .contact-info-value {
+    font-size: var(--font-body-base-jp);
+  }
+}

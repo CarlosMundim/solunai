@@ -12,31 +12,31 @@ const CompanyPhilosophy: React.FC<CompanyPhilosophyProps> = ({ lang }) => {
     ja: {
       vision: {
         title: '私たちのビジョン',
-        text: 'AIとグローバル・エンジニアリング・エクセレンスで日本の製造業を変革する',
+        text: '製造業の現場課題をAIで解決する',
       },
       mission: {
         title: '私たちのミッション',
-        subtitle: 'Solunaiは日本の製造業の人材ギャップを以下の組み合わせで解決：',
+        subtitle: '中小企業でも導入可能な製造業AIを提供',
         pillars: [
           {
             icon: '01',
-            title: '最先端AI技術',
-            description: 'デジタルツイン、コンピュータビジョン、予測分析',
+            title: 'AI品質検査システム',
+            description: '95%以上の欠陥検出率、検査時間を27倍高速化',
           },
           {
             icon: '02',
-            title: 'グローバル・エンジニアリング専門知識',
-            description: 'WorldEmp提携による世界クラスの人材',
+            title: '予知保全ソリューション',
+            description: '48-72時間前の故障予測、ダウンタイム40%削減',
           },
           {
             icon: '03',
-            title: '深い製造業ドメイン知識',
-            description: '60年以上の統合経験',
+            title: '生産最適化AI',
+            description: 'エネルギーコスト20-30%削減、生産効率の最大化',
           },
           {
             icon: '04',
-            title: '実証済みの実行能力',
-            description: '欧州製造業変革プロジェクト',
+            title: 'グローバルエンジニアリング',
+            description: '国内採用の30-50%のコストで熟練技術者を提供',
           },
         ],
       },
@@ -45,7 +45,7 @@ const CompanyPhilosophy: React.FC<CompanyPhilosophyProps> = ({ lang }) => {
         points: [
           {
             not: 'ソフトウェア会社だけではない',
-            but: 'AIを構築する製造エンジニア',
+            but: '現場を理解する製造エンジニア',
           },
           {
             not: '日本企業だけではない',
@@ -53,47 +53,47 @@ const CompanyPhilosophy: React.FC<CompanyPhilosophyProps> = ({ lang }) => {
           },
           {
             not: 'AI専門家だけではない',
-            but: '実証済みの製造変革リーダー',
+            but: '実証済みの現場経験',
           },
           {
             not: 'コンサルタントだけではない',
-            but: '完全なターンキーソリューションを提供',
+            but: '実装して結果を出す',
           },
         ],
       },
       result: {
         title: '結果',
-        text: '日本のSME製造業が必要とし、金融機関が評価する、完全な製造変革プロバイダー',
+        text: '現場を知り、実績を持ち、中小企業の課題を解決する製造業AIパートナー',
       },
     },
     en: {
       vision: {
         title: 'Our Vision',
-        text: 'Transforming Japanese Manufacturing with AI and Global Engineering Excellence',
+        text: 'Solving manufacturing challenges with AI',
       },
       mission: {
         title: 'Our Mission',
-        subtitle: 'Solunai solves Japan\'s manufacturing talent gap through a unique combination of:',
+        subtitle: 'Manufacturing AI accessible to SMEs',
         pillars: [
           {
             icon: '01',
-            title: 'Production-Ready AI Technology',
-            description: 'Digital Twin, Computer Vision, Predictive Analytics',
+            title: 'AI Quality Inspection',
+            description: '95%+ defect detection, 27x faster inspection time',
           },
           {
             icon: '02',
-            title: 'Global Engineering Expertise',
-            description: 'World-class talent through WorldEmp partnership',
+            title: 'Predictive Maintenance',
+            description: '48-72 hour failure prediction, 40% downtime reduction',
           },
           {
             icon: '03',
-            title: 'Deep Manufacturing Domain Knowledge',
-            description: '60+ years combined experience',
+            title: 'Production Optimization',
+            description: '20-30% energy cost reduction, maximize throughput',
           },
           {
             icon: '04',
-            title: 'Proven Execution Capability',
-            description: 'European manufacturing transformation projects',
+            title: 'Global Engineering',
+            description: 'Skilled engineers at 30-50% of Japan hiring cost',
           },
         ],
       },
@@ -102,7 +102,7 @@ const CompanyPhilosophy: React.FC<CompanyPhilosophyProps> = ({ lang }) => {
         points: [
           {
             not: 'Not just a software company',
-            but: 'Manufacturing engineers who build AI',
+            but: 'Manufacturing engineers who understand your problems',
           },
           {
             not: 'Not just a Japanese company',
@@ -110,17 +110,17 @@ const CompanyPhilosophy: React.FC<CompanyPhilosophyProps> = ({ lang }) => {
           },
           {
             not: 'Not just AI experts',
-            but: 'Proven manufacturing transformation leaders',
+            but: 'Proven factory floor experience',
           },
           {
             not: 'Not just consultants',
-            but: 'Complete turnkey solution providers',
+            but: 'We implement and deliver results',
           },
         ],
       },
       result: {
         title: 'The Result',
-        text: 'A complete manufacturing transformation provider that Japanese SMEs need and financial institutions trust',
+        text: 'A manufacturing AI partner who knows the shop floor, has proven results, and solves SME challenges',
       },
     },
   };

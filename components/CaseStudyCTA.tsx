@@ -11,28 +11,20 @@ interface CaseStudyCTAProps {
 const CaseStudyCTA: React.FC<CaseStudyCTAProps> = ({ lang }) => {
   const content = {
     ja: {
-      heading: 'あなたの製造業も変革しませんか？',
-      subheading: '無料相談で以下をご提供',
-      benefits: [
-        '60分の製造業診断',
-        'カスタムROI予測',
-        '技術準備評価',
-        '予備的な変革ロードマップ'
-      ],
-      ctaButton: '無料相談を予約',
-      ctaLink: '#contact'
+      heading: '製造業の課題、無料で診断します',
+      subheading: '30分の無料診断で、御社工場のAI活用可能性をお伝えします',
+      ctaButton: '無料診断を予約',
+      ctaLink: '/contact',
+      secondaryButton: 'お問い合わせ',
+      secondaryLink: '/contact'
     },
     en: {
-      heading: 'Get Similar Results for Your Factory?',
-      subheading: 'Free consultation includes',
-      benefits: [
-        '60-minute manufacturing assessment',
-        'Custom ROI projection',
-        'Technology readiness evaluation',
-        'Implementation roadmap'
-      ],
-      ctaButton: 'Schedule Free Consultation',
-      ctaLink: '#contact'
+      heading: 'Free Manufacturing Assessment',
+      subheading: 'In 30 minutes, we\'ll identify AI opportunities for your factory',
+      ctaButton: 'Schedule Free Assessment',
+      ctaLink: '/en/contact',
+      secondaryButton: 'Contact Us',
+      secondaryLink: '/en/contact'
     }
   };
 
@@ -45,15 +37,14 @@ const CaseStudyCTA: React.FC<CaseStudyCTAProps> = ({ lang }) => {
           <h2 className="cta-heading">{currentContent.heading}</h2>
           <p className="cta-subheading">{currentContent.subheading}</p>
 
-          <ul className="cta-benefits">
-            {currentContent.benefits.map((benefit, index) => (
-              <li key={index}>{benefit}</li>
-            ))}
-          </ul>
-
-          <Link href={currentContent.ctaLink} className="cta-button">
-            {currentContent.ctaButton}
-          </Link>
+          <div className="cta-buttons">
+            <Link href={currentContent.ctaLink} className="cta-button primary">
+              {currentContent.ctaButton}
+            </Link>
+            <Link href={currentContent.secondaryLink} className="cta-button secondary">
+              {currentContent.secondaryButton}
+            </Link>
+          </div>
         </div>
       </div>
     </section>

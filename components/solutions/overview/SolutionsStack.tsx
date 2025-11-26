@@ -18,86 +18,72 @@ const SolutionsStack: React.FC<SolutionsStackProps> = ({ lang }) => {
 
   const content = {
     ja: {
-      heading: 'Solunaiの5つのAIソリューションで',
-      headingHighlight: '製造業を変革',
-      description: '先進的なAI技術で製造プロセス全体を最適化。デジタルツイン、コンピュータビジョン、予知保全、生産最適化、グローバルエンジニアリングで、日本の製造業の未来を創造します。',
+      heading: '製造業の現場課題を',
+      headingHighlight: 'AIで解決',
+      description: '具体的な成果を出すAIソリューション。品質向上、コスト削減、人材不足の課題に対応し、実績に基づく結果をお届けします。',
       solutions: [
         {
-          id: 'digital-twin',
-          icon: '🔷',
-          title: 'デジタルツイン技術',
-          description: '製造現場のリアルタイム仮想レプリカを構築。すべての設備、プロセス、データを統合したデジタル空間で、シミュレーション、分析、最適化を実現します。',
-          link: '/solutions/digital-twin'
-        },
-        {
-          id: 'computer-vision',
+          id: 'quality-inspection',
           icon: '👁️',
-          title: 'コンピュータビジョン品質管理',
-          description: 'AI搭載の視覚検査システムで、不良品を自動検出。人の目では見逃しがちな微細な欠陥も高精度で識別し、品質向上とコスト削減を同時に実現します。',
-          link: '/solutions/computer-vision'
+          title: 'AI品質検査システム',
+          description: 'コンピュータビジョンによる自動検査。95%以上の不良品検出率、検査時間を27倍高速化、品質管理部門の人件費を30%削減。',
+          link: '/solutions/quality-inspection'
         },
         {
           id: 'predictive-maintenance',
           icon: '🔧',
-          title: '予知保全',
-          description: '設備故障を事前に予測して防止。センサーデータとAI分析により、最適なタイミングでメンテナンスを実施し、ダウンタイムを最小化します。',
+          title: '予知保全ソリューション',
+          description: '設備故障を48〜72時間前に予測。計画外停止を40%削減、保守コストを20〜30%削減。',
           link: '/solutions/predictive-maintenance'
         },
         {
           id: 'production-optimization',
           icon: '⚙️',
-          title: '生産最適化',
-          description: 'スループットを最大化し、ムダを最小化。AI分析により生産ラインのボトルネックを特定し、工程改善の具体的な施策を提案します。',
+          title: '生産最適化AI',
+          description: 'エネルギーコストを20〜30%削減。スループット最大化、ボトルネック特定により生産効率を向上。',
           link: '/solutions/production-optimization'
         },
         {
           id: 'global-engineering',
           icon: '🌐',
           title: 'グローバルエンジニアリング',
-          description: '47-Dimensionsプラットフォームで国際的なエンジニア人材を活用。日本の製造業と世界の技術者をつなぎ、イノベーションを加速します。',
+          description: '国内採用コストの30〜50%で、2〜6週間で配置可能。CAD、シミュレーション、工程設計の専門エンジニアを提供。',
           link: '/solutions/global-engineering'
         }
       ],
       learnMore: '詳しく見る'
     },
     en: {
-      heading: 'Transform Manufacturing with',
-      headingHighlight: '5 AI-Powered Solutions',
-      description: 'Comprehensive AI technology solutions optimizing every aspect of your manufacturing operations. From digital twins to global engineering, we help Japanese manufacturers reduce costs and improve quality.',
+      heading: 'Solving Manufacturing Challenges',
+      headingHighlight: 'with AI',
+      description: 'Concrete AI solutions that deliver measurable results. Address quality, cost, and labor shortage challenges with proven outcomes.',
       solutions: [
         {
-          id: 'digital-twin',
-          icon: '🔷',
-          title: 'Digital Twin Technology',
-          description: 'Real-time virtual replica of manufacturing operations. Integrate all equipment, processes, and data in a unified digital space for simulation, analysis, and optimization.',
-          link: '/en/solutions/digital-twin'
-        },
-        {
-          id: 'computer-vision',
+          id: 'quality-inspection',
           icon: '👁️',
-          title: 'Computer Vision Quality Control',
-          description: 'AI-powered visual inspection and defect detection. Identify microscopic defects that human eyes might miss, achieving quality improvement and cost reduction simultaneously.',
-          link: '/en/solutions/computer-vision'
+          title: 'AI Quality Inspection System',
+          description: 'Automated visual inspection using computer vision. 95%+ defect detection rate, inspection 27x faster, 30% labor cost reduction in QC department.',
+          link: '/en/solutions/quality-inspection'
         },
         {
           id: 'predictive-maintenance',
           icon: '🔧',
-          title: 'Predictive Maintenance',
-          description: 'Prevent equipment failures before they happen. Use sensor data and AI analysis to schedule maintenance at optimal times, minimizing downtime and maximizing productivity.',
+          title: 'Predictive Maintenance Solution',
+          description: 'Predict equipment failures 48-72 hours in advance. 40% reduction in unplanned downtime, 20-30% lower maintenance costs.',
           link: '/en/solutions/predictive-maintenance'
         },
         {
           id: 'production-optimization',
           icon: '⚙️',
-          title: 'Production Optimization',
-          description: 'Maximize throughput and minimize waste. AI analysis identifies production line bottlenecks and provides actionable recommendations for process improvement.',
+          title: 'Production Optimization AI',
+          description: '20-30% energy cost reduction. Maximize throughput and identify bottlenecks to improve production efficiency.',
           link: '/en/solutions/production-optimization'
         },
         {
           id: 'global-engineering',
           icon: '🌐',
-          title: 'Global Engineering Platform',
-          description: 'Access international engineering talent through our 47-Dimensions platform. Connect Japanese manufacturing with global technical expertise to accelerate innovation.',
+          title: 'Global Engineering',
+          description: '30-50% cost vs Japan domestic hiring, 2-6 week deployment. CAD, simulation, and process engineering specialists.',
           link: '/en/solutions/global-engineering'
         }
       ],

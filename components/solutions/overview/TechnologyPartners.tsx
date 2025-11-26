@@ -10,93 +10,93 @@ interface TechnologyPartnersProps {
 const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
   const content = {
     ja: {
-      heading: 'エンタープライズグレードの技術基盤',
-      subheading: 'Solunaiは業界標準の技術を活用しています',
+      heading: '認定・準拠',
+      subheading: '製造業の品質基準を満たすソリューション',
       partners: [
         {
-          id: 'digital-twin',
-          name: 'デジタルツイン',
+          id: 'meti',
+          name: 'METI Connected Industries 準拠',
           icon: '🏭',
           features: [
-            'フォトリアリスティックなデジタルツイン可視化',
-            'リアルタイム物理シミュレーション',
-            'GPUアクセラレーション計算'
+            'Industry 4.0 aligned',
+            '日本の製造業標準',
+            '政府認定フレームワーク'
           ]
         },
         {
-          id: 'simulation',
-          name: '物理シミュレーション',
+          id: 'jis',
+          name: 'JIS規格対応',
           icon: '⚙️',
           features: [
-            'CFD熱解析、FEA構造解析',
-            '高精度なパフォーマンス予測',
-            'マルチフィジックスシミュレーション'
+            'JIS Z 溶接規格',
+            'JIS A 建設規格',
+            'JIS B/C 製造規格'
           ]
         },
         {
-          id: 'cloud',
-          name: 'クラウドインフラ',
-          icon: '☁️',
+          id: 'iso',
+          name: 'ISO 27001 / SOC 2',
+          icon: '🔒',
           features: [
-            'エンタープライズグレードのクラウドインフラ',
-            '99.9%稼働時間保証',
-            'ISO 27001 / SOC 2準拠'
+            '情報セキュリティ認証済',
+            'エンタープライズグレードのデータ保護',
+            '監査対応ドキュメント完備'
           ]
         },
         {
-          id: 'ai',
-          name: 'AIエンジン',
-          icon: '🤖',
+          id: 'it-support',
+          name: 'IT導入支援事業者',
+          icon: '✓',
           features: [
-            '最先端の自然言語処理',
-            'マルチモーダルAI機能',
-            '安全性と信頼性を重視'
+            '登録支援事業者',
+            '中小企業向けソリューション',
+            '実績のある導入トラック'
           ]
         }
       ]
     },
     en: {
-      heading: 'Enterprise-grade technology foundation',
-      subheading: 'Solunai leverages industry-standard technology',
+      heading: 'Certifications & Compliance',
+      subheading: 'Solutions meeting manufacturing quality standards',
       partners: [
         {
-          id: 'digital-twin',
-          name: 'Digital Twin',
+          id: 'meti',
+          name: 'METI Connected Industries Compliant',
           icon: '🏭',
           features: [
-            'Photorealistic Digital Twin Visualization',
-            'Real-time physics simulation',
-            'GPU-accelerated computing'
+            'Industry 4.0 aligned',
+            'Japanese manufacturing standards',
+            'Government-recognized framework'
           ]
         },
         {
-          id: 'simulation',
-          name: 'Physics Simulation',
+          id: 'jis',
+          name: 'JIS Standards Compliant',
           icon: '⚙️',
           features: [
-            'CFD thermal analysis, FEA structural analysis',
-            'Highly accurate performance prediction',
-            'Multiphysics Simulation'
+            'JIS Z welding standards',
+            'JIS A construction standards',
+            'JIS B/C manufacturing standards'
           ]
         },
         {
-          id: 'cloud',
-          name: 'Cloud Infrastructure',
-          icon: '☁️',
+          id: 'iso',
+          name: 'ISO 27001 / SOC 2',
+          icon: '🔒',
           features: [
-            'Enterprise-grade cloud infrastructure',
-            '99.9% uptime guarantee',
-            'ISO 27001 / SOC 2 compliant'
+            'Information security certified',
+            'Enterprise-grade data protection',
+            'Audit-ready documentation'
           ]
         },
         {
-          id: 'ai',
-          name: 'AI Engine',
-          icon: '🤖',
+          id: 'it-support',
+          name: 'IT Support Provider',
+          icon: '✓',
           features: [
-            'Advanced natural language processing',
-            'Multimodal AI Capabilities',
-            'Safety and reliability focused'
+            'Registered support provider',
+            'SME-focused solutions',
+            'Proven implementation track record'
           ]
         }
       ]

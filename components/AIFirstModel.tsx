@@ -30,63 +30,63 @@ interface AIFirstModelProps {
 const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
   const content = {
     ja: {
-      overtitle: 'AI優先革命',
-      title: '従来型企業との違い',
-      subtitle: '私たちの哲学：「AIが反復作業を担当し、人間は創造性・判断・関係構築に集中」',
+      overtitle: '私たちの強み',
+      title: '60年以上の製造業経験 × AI技術',
+      subtitle: '製造業経験とAI技術の組み合わせで、現場の課題を解決します',
 
       comparison: {
-        sectionTitle: 'ビジネスモデル比較',
+        sectionTitle: 'Solunaiの特徴',
         traditional: {
-          label: '従来型ITサービス企業',
+          label: '一般的なITサービス企業',
           metrics: [
-            { label: 'チーム構成', value: '100人の従業員' },
-            { label: '年間人件費', value: '高コスト構造' },
-            { label: '利益率', value: '20%' },
+            { label: '製造業経験', value: '限定的' },
+            { label: 'グローバル体制', value: '日本のみ' },
+            { label: '実績', value: '理論中心' },
             { label: '提供スピード', value: '4-6ヶ月' },
-            { label: 'スケーラビリティ', value: '人材採用に依存' }
+            { label: 'ターゲット', value: '大手企業向け' }
           ]
         },
         solunai: {
-          label: 'Solunai AI優先モデル',
+          label: 'Solunaiのアプローチ',
           metrics: [
-            { label: 'チーム構成', value: '少数精鋭 + AIエージェント' },
-            { label: '年間運営費', value: '大幅なコスト削減' },
-            { label: '利益率', value: '高効率' },
+            { label: '製造業経験', value: '60年以上の実績' },
+            { label: 'グローバル体制', value: 'WorldEmp連携' },
+            { label: '実績', value: 'FBM Hudson納品済' },
             { label: '提供スピード', value: '2-6週間' },
-            { label: 'スケーラビリティ', value: '即座に拡張可能' }
+            { label: 'ターゲット', value: '中小企業に最適化' }
           ]
         }
       },
 
       benefits: {
-        title: 'この構造により実現：',
+        title: '私たちが提供できること：',
         items: [
           {
-            label: '顧客へ',
-            value: '大幅なコスト削減',
-            detail: '従来型モデルと比較して大幅な削減を実現'
+            label: '製造現場の理解',
+            value: '60年以上の経験',
+            detail: '創業者の製造業経験に基づく現場目線のソリューション'
           },
           {
-            label: '当社',
-            value: '高効率運営',
-            detail: '業界標準を大幅に上回る効率を実現'
+            label: 'グローバル対応',
+            value: 'WorldEmp連携',
+            detail: '30-50%のコスト削減を実現するグローバルエンジニアリング'
           },
           {
-            label: '日本社会',
-            value: '労働力不足解決',
-            detail: '1,100万人の労働力不足問題に貢献'
+            label: '実績に基づく提案',
+            value: 'FBM Hudson納品',
+            detail: 'イタリア企業への国際プロジェクト実績'
           },
           {
-            label: '提供スピード',
-            value: '大幅な高速化',
-            detail: '従来4-6ヶ月を2-6週間で実現'
+            label: '中小企業支援',
+            value: 'SME向け最適化',
+            detail: '労働力不足に悩む中小製造業のパートナー'
           }
         ]
       },
 
       howItWorks: {
-        title: '仕組み：人間とAIの協働',
-        description: 'Solunaiは人間の戦略的思考とAIの処理能力を最適に組み合わせます',
+        title: '人間とAIの協働',
+        description: 'AIは作業者を支援する道具。人間の経験と判断を支える技術です',
 
         human: {
           title: '人間エキスパートチーム',
@@ -296,35 +296,35 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
       },
 
       impact: {
-        title: '社会的インパクト',
-        subtitle: 'Solunaiモデルが日本に与える影響',
+        title: '私たちの取り組み',
+        subtitle: '日本の製造業を支える',
         areas: [
           {
-            title: '中小企業のDX推進',
-            description: '高額な従来型SIerでは手が届かなかった中小企業にも、AIソリューションを提供可能に',
-            metric: '12兆円の損失回避に貢献'
+            title: '中小企業への技術支援',
+            description: '大企業向け技術を中小企業でも導入できる形で提供。デジタル化による競争力向上を支援',
+            metric: '中小製造業のパートナー'
           },
           {
-            title: '労働力不足の解決',
-            description: 'AIエージェントが反復作業を担当し、人間は高付加価値業務に集中。1,100万人の労働力不足問題に対応',
-            metric: '2040年までの危機に対処'
+            title: '労働力不足への対応',
+            description: 'AIは作業者の負担を軽減する道具。人を置き換えるのではなく、人の能力を拡張し、少ない人数でも品質の高い仕事を実現',
+            metric: '作業者を支援するAI'
           },
           {
-            title: '人材の価値向上',
-            description: '人間はAI監督・戦略決定・創造的業務に特化。スキルアップと高収入を実現',
-            metric: '少数精鋭で高い生産性を実現'
+            title: '日本の製造業競争力',
+            description: 'ものづくりの伝統とAI技術を組み合わせ、品質とコストの両立を実現。海外との競争に勝ち抜く力を提供',
+            metric: 'ものづくりの伝統を守る'
           },
           {
-            title: '持続可能な成長',
-            description: '高利益率により研究開発に再投資。継続的なイノベーションとサービス向上',
-            metric: '利益の30%をR&Dに投資'
+            title: 'グローバル視点',
+            description: 'WorldEmpとの連携により、世界水準の技術と人材を日本の製造業に提供。国際競争力の強化を支援',
+            metric: 'グローバル品質の提供'
           }
         ]
       },
 
       cta: {
-        title: 'AI優先モデルを体験してください',
-        description: '無料の製造現場アセスメントで、貴社にどれだけのコスト削減が可能か診断します',
+        title: 'まずは無料相談から',
+        description: '製造現場の課題をお聞かせください。60年の経験を持つチームが、具体的な改善案をご提案します',
         buttons: [
           { text: '無料相談を予約', type: 'primary', href: '#contact' },
           { text: 'ソリューションを見る', type: 'secondary', href: '/solutions' }
@@ -333,63 +333,63 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
     },
 
     en: {
-      overtitle: 'AI-First Revolution',
-      title: 'How We\'re Different',
-      subtitle: 'Our philosophy: AI handles repetitive tasks so humans can focus on creativity, judgment, and relationships.',
+      overtitle: 'Our Strengths',
+      title: '60+ Years Manufacturing Experience × AI Technology',
+      subtitle: 'We combine manufacturing experience with AI technology to solve shop floor challenges',
 
       comparison: {
-        sectionTitle: 'Business Model Comparison',
+        sectionTitle: 'Solunai Advantages',
         traditional: {
-          label: 'Traditional IT Services Company',
+          label: 'Typical IT Services Company',
           metrics: [
-            { label: 'Team Structure', value: '100 employees' },
-            { label: 'Annual Labor Cost', value: 'High cost structure' },
-            { label: 'Profit Margin', value: '20%' },
+            { label: 'Manufacturing Experience', value: 'Limited' },
+            { label: 'Global Presence', value: 'Japan only' },
+            { label: 'Track Record', value: 'Theory-focused' },
             { label: 'Delivery Speed', value: '4-6 months' },
-            { label: 'Scalability', value: 'Dependent on hiring' }
+            { label: 'Target Market', value: 'Large enterprises' }
           ]
         },
         solunai: {
-          label: 'Solunai AI-First Model',
+          label: 'Solunai Approach',
           metrics: [
-            { label: 'Team Structure', value: 'Elite team + AI agents' },
-            { label: 'Annual Operating Cost', value: 'Significant cost reduction' },
-            { label: 'Profit Margin', value: 'High efficiency' },
+            { label: 'Manufacturing Experience', value: '60+ years proven' },
+            { label: 'Global Presence', value: 'WorldEmp partnership' },
+            { label: 'Track Record', value: 'FBM Hudson delivered' },
             { label: 'Delivery Speed', value: '2-6 weeks' },
-            { label: 'Scalability', value: 'Instantly scalable' }
+            { label: 'Target Market', value: 'SME-optimized' }
           ]
         }
       },
 
       benefits: {
-        title: 'This Structure Enables:',
+        title: 'What We Bring:',
         items: [
           {
-            label: 'For Clients',
-            value: 'Significant Cost Reduction',
-            detail: 'Major savings vs traditional model'
+            label: 'Shop Floor Understanding',
+            value: '60+ years experience',
+            detail: 'Solutions based on founder\'s manufacturing expertise'
           },
           {
-            label: 'For Solunai',
-            value: 'High-Efficiency Operations',
-            detail: 'Significantly above industry standard'
+            label: 'Global Capability',
+            value: 'WorldEmp partnership',
+            detail: '30-50% cost reduction through global engineering'
           },
           {
-            label: 'For Japan',
-            value: 'Labor Shortage Solution',
-            detail: 'Contributing to solving 11M worker gap'
+            label: 'Proven Delivery',
+            value: 'FBM Hudson completed',
+            detail: 'International project track record in Italy'
           },
           {
-            label: 'Delivery Speed',
-            value: 'Dramatically Faster',
-            detail: 'Traditional 4-6 months in 2-6 weeks'
+            label: 'SME Focus',
+            value: 'Optimized for SMEs',
+            detail: 'Partner for manufacturers facing labor shortage'
           }
         ]
       },
 
       howItWorks: {
-        title: 'How It Works: Human-AI Collaboration',
-        description: 'Solunai optimally combines human strategic thinking with AI processing power',
+        title: 'Human-AI Collaboration',
+        description: 'AI is a tool to assist workers. Technology that supports human experience and judgment',
 
         human: {
           title: 'Expert Human Team',
@@ -599,35 +599,35 @@ const AIFirstModel: React.FC<AIFirstModelProps> = ({ lang }) => {
       },
 
       impact: {
-        title: 'Social Impact',
-        subtitle: 'How Solunai Model Impacts Japan',
+        title: 'Our Commitment',
+        subtitle: 'Supporting Japanese Manufacturing',
         areas: [
           {
-            title: 'SME DX Acceleration',
-            description: 'Making AI solutions accessible to SMEs who couldn\'t afford traditional expensive SIers',
-            metric: 'Contributing to avoiding ¥12T losses'
+            title: 'Supporting SMEs',
+            description: 'Making enterprise-level technology accessible to SMEs. Supporting competitiveness through digitalization',
+            metric: 'Partner for SME manufacturers'
           },
           {
-            title: 'Labor Shortage Solution',
-            description: 'AI agents handle repetitive work while humans focus on high-value tasks. Addressing 11M worker shortage',
-            metric: 'Tackling 2040 crisis'
+            title: 'Addressing Labor Shortage',
+            description: 'AI reduces worker burden. Not replacing people, but extending human capability - enabling quality work with fewer workers',
+            metric: 'AI that supports workers'
           },
           {
-            title: 'Human Value Enhancement',
-            description: 'Humans specialize in AI supervision, strategy, creative work. Upskilling and higher income',
-            metric: '12 people create value of traditional 100'
+            title: 'Japanese Manufacturing Competitiveness',
+            description: 'Combining monozukuri tradition with AI technology to achieve both quality and cost efficiency. Providing strength to compete globally',
+            metric: 'Preserving monozukuri tradition'
           },
           {
-            title: 'Sustainable Growth',
-            description: 'High margins enable R&D reinvestment. Continuous innovation and service improvement',
-            metric: '30% of profit to R&D'
+            title: 'Global Perspective',
+            description: 'Through WorldEmp partnership, bringing world-class technology and talent to Japanese manufacturing. Supporting international competitiveness',
+            metric: 'Delivering global quality'
           }
         ]
       },
 
       cta: {
-        title: 'Experience the AI-First Model',
-        description: 'Free shop floor assessment to diagnose how much cost reduction is possible for your company',
+        title: 'Start with a Free Consultation',
+        description: 'Share your shop floor challenges with us. Our team with 60 years of experience will propose concrete improvements',
         buttons: [
           { text: 'Schedule Free Consultation', type: 'primary', href: '#contact' },
           { text: 'View Solutions', type: 'secondary', href: '/solutions' }

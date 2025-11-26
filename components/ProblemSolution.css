@@ -74,19 +74,35 @@
 .problem-list li {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: rgba(255, 255, 255, 0.95);
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
-.bullet {
-  color: #FF5722;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.4;
+.point-icon {
+  font-size: 28px;
+  line-height: 1;
   flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.point-content {
+  flex: 1;
+}
+
+.problem-list .point-content strong {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.problem-list .point-detail {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0;
 }
 
 /* Solution List */
@@ -103,15 +119,7 @@
 .solution-point {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
-}
-
-.check-icon {
-  color: #FF5722;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.4;
-  flex-shrink: 0;
+  gap: 16px;
 }
 
 .solution-text {
@@ -120,7 +128,7 @@
 
 .solution-text strong {
   display: block;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 700;
   color: #1a1a2e;
   margin-bottom: 6px;
@@ -132,12 +140,6 @@
   color: #666666;
   margin: 0;
   line-height: 1.6;
-}
-
-.arrow {
-  color: #FF5722;
-  font-weight: 700;
-  margin-right: 4px;
 }
 
 /* Conclusion */
@@ -215,13 +217,18 @@
     font-size: 18px;
   }
 
-  .problem-list li,
+  .problem-list .point-content strong,
   .solution-text strong {
-    font-size: 15px;
+    font-size: 16px;
   }
 
+  .problem-list .point-detail,
   .solution-detail {
     font-size: 14px;
+  }
+
+  .point-icon {
+    font-size: 24px;
   }
 
   .conclusion {
@@ -249,8 +256,7 @@
     font-size: 17px;
   }
 
-  .bullet,
-  .check-icon {
-    font-size: 20px;
+  .point-icon {
+    font-size: 22px;
   }
 }

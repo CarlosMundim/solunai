@@ -1,0 +1,254 @@
+/* ============================================ */
+/* TRUST INDICATORS BAR COMPONENT             */
+/* Japanese B2B Trust Signals (信頼の証)      */
+/* ============================================ */
+
+.trust-indicators-section {
+  position: relative;
+  width: 100%;
+  padding: var(--spacing-l) var(--container-padding-mobile);
+  background: var(--snow);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.trust-indicators-container {
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+}
+
+.trust-indicators-title {
+  font-size: var(--font-body-small);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  color: var(--stone);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+  margin: 0 0 var(--spacing-s) 0;
+}
+
+/* Japanese title styling */
+html[lang="ja"] .trust-indicators-title {
+  font-size: var(--font-body-base-jp);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: none;
+}
+
+.trust-indicators-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.trust-indicator-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-s);
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+  border-radius: 8px;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.trust-indicator-item:hover {
+  background-color: var(--white);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.indicator-icon {
+  font-size: 24px;
+  line-height: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  color: var(--indigo-deep);
+}
+
+.indicator-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.indicator-label {
+  font-size: var(--font-body-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--charcoal);
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.indicator-sublabel {
+  font-size: var(--font-body-tiny);
+  font-weight: var(--font-weight-normal);
+  color: var(--stone);
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Japanese text sizing */
+html[lang="ja"] .indicator-label {
+  font-size: var(--font-body-small-jp);
+  white-space: normal;
+}
+
+html[lang="ja"] .indicator-sublabel {
+  font-size: var(--font-body-tiny-jp);
+  white-space: normal;
+}
+
+.indicator-divider {
+  width: 1px;
+  height: 40px;
+  background-color: var(--border-subtle);
+  flex-shrink: 0;
+}
+
+/* ============================================ */
+/* RESPONSIVE BREAKPOINTS                     */
+/* ============================================ */
+
+/* Tablet - Stack into 2 rows */
+@media (max-width: 1024px) {
+  .trust-indicators-bar {
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+
+  .trust-indicator-item {
+    padding: var(--spacing-xs) var(--spacing-xs);
+    gap: var(--spacing-xxs);
+  }
+
+  .indicator-divider {
+    display: none;
+  }
+
+  .indicator-icon {
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .indicator-label {
+    font-size: 13px;
+  }
+
+  .indicator-sublabel {
+    font-size: 11px;
+  }
+}
+
+/* Mobile - Full stack */
+@media (max-width: 768px) {
+  .trust-indicators-section {
+    padding: var(--spacing-m) var(--container-padding-mobile);
+  }
+
+  .trust-indicators-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--spacing-xxs);
+  }
+
+  .trust-indicator-item {
+    width: 100%;
+    padding: var(--spacing-xs);
+    gap: var(--spacing-xs);
+  }
+
+  .indicator-icon {
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .indicator-content {
+    flex: 1;
+  }
+
+  .indicator-label {
+    font-size: var(--font-body-base);
+    white-space: normal;
+  }
+
+  .indicator-sublabel {
+    font-size: var(--font-body-small);
+    white-space: normal;
+  }
+
+  html[lang="ja"] .indicator-label {
+    font-size: var(--font-body-base-jp);
+  }
+
+  html[lang="ja"] .indicator-sublabel {
+    font-size: var(--font-body-small-jp);
+  }
+}
+
+/* Small Mobile - Compact layout */
+@media (max-width: 480px) {
+  .trust-indicators-section {
+    padding: var(--spacing-s) var(--container-padding-mobile);
+  }
+
+  .trust-indicators-title {
+    font-size: 11px;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  html[lang="ja"] .trust-indicators-title {
+    font-size: 13px;
+  }
+
+  .trust-indicator-item {
+    padding: var(--spacing-xxs);
+  }
+
+  .indicator-icon {
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .indicator-label {
+    font-size: 14px;
+  }
+
+  .indicator-sublabel {
+    font-size: 12px;
+  }
+
+  html[lang="ja"] .indicator-label {
+    font-size: 13px;
+  }
+
+  html[lang="ja"] .indicator-sublabel {
+    font-size: 11px;
+  }
+}

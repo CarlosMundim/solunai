@@ -10,70 +10,108 @@ interface ProblemSolutionProps {
 const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
   const content = {
     ja: {
-      problemTitle: '日本製造業の危機',
-      problemSubtitle: '課題：',
+      problemTitle: '製造業の課題',
+      problemSubtitle: '直面する4つの危機',
       problemPoints: [
-        '高齢化：製造業従事者の28%が60歳以上',
-        '人材不足：AI・自動化エンジニアが採用できない',
-        '若者離れ：工場勤務を敬遠（3K仕事）',
-        'コスト競争：中国の労働コスト1/3',
-        '採用時間：従来4-6ヶ月の採用サイクル'
-      ],
-      problemConclusion: 'このままでは日本の製造業が空洞化',
-      solutionTitle: 'Solunaiの解決策',
-      solutionSubtitle: 'AI + グローバルエンジニア = 完全な変革',
-      solutionPoints: [
         {
-          title: 'AI技術が手作業を置き換え',
-          detail: '品質管理：人間検査より27倍速く、95%精度'
+          icon: '👥',
+          title: '人手不足',
+          detail: '2040年までに1,100万人の労働力不足'
         },
         {
-          title: 'グローバル人材が不足を補完',
-          detail: '2-6週間で配備（従来の52倍速）'
+          icon: '⚠️',
+          title: '品質問題',
+          detail: '人的エラーによる不良品発生と検査遅延'
         },
         {
-          title: 'コスト削減と品質向上を同時実現',
-          detail: '30-50%コスト削減、品質95%改善'
+          icon: '🔧',
+          title: '設備故障',
+          detail: '予期せぬダウンタイムによる生産損失'
         },
         {
-          title: '柔軟なコスト構造',
-          detail: 'プロジェクトベース、固定費不要'
+          icon: '💸',
+          title: 'コスト上昇',
+          detail: '人件費と運営コストの継続的増加'
         }
       ],
-      solutionConclusion: '日本のSME製造業のための完全なソリューション'
+      problemConclusion: '従来の方法では競争力を維持できない',
+      solutionTitle: 'Solunaiの解決策',
+      solutionSubtitle: 'AI + グローバル人材 = 製造業DX',
+      solutionPoints: [
+        {
+          icon: '🤖',
+          title: 'AIによる自動化',
+          detail: '24時間稼働、人手不足を解消'
+        },
+        {
+          icon: '✓',
+          title: '95%+ 欠陥検出',
+          detail: 'コンピュータビジョンで高精度品質管理'
+        },
+        {
+          icon: '📊',
+          title: '予知保全',
+          detail: 'AI故障予測で計画的メンテナンス'
+        },
+        {
+          icon: '📈',
+          title: '30%コスト削減',
+          detail: '実証済み：運営コスト30-50%削減'
+        }
+      ],
+      solutionConclusion: '日本製造業の競争力を取り戻す'
     },
     en: {
-      problemTitle: 'Japan Manufacturing Crisis',
-      problemSubtitle: 'Challenges:',
+      problemTitle: 'Manufacturing Challenges',
+      problemSubtitle: '4 Critical Issues',
       problemPoints: [
-        'Aging workforce: 28% over 60 years old',
-        'Talent shortage: Cannot hire AI/automation engineers',
-        'Youth exodus: Factory jobs perceived as undesirable',
-        'Cost competition: China labor cost 1/3 of Japan',
-        'Hiring time: 4-6 month recruitment cycle'
-      ],
-      problemConclusion: 'Without change, Japan\'s manufacturing will hollow out',
-      solutionTitle: 'Solunai\'s Solution',
-      solutionSubtitle: 'AI + Global Engineers = Complete Transformation',
-      solutionPoints: [
         {
-          title: 'AI technology replaces manual tasks',
-          detail: 'Quality control: 27× faster than humans, 95% accuracy'
+          icon: '👥',
+          title: 'Labor Shortage',
+          detail: '11 million worker shortage by 2040'
         },
         {
-          title: 'Global talent fills shortage',
-          detail: '2-6 weeks deployment (52× faster than traditional)'
+          icon: '⚠️',
+          title: 'Quality Issues',
+          detail: 'Defects from human error and slow inspection'
         },
         {
-          title: 'Simultaneous cost reduction and quality improvement',
-          detail: '30-50% cost reduction, 95% quality improvement'
+          icon: '🔧',
+          title: 'Equipment Downtime',
+          detail: 'Unexpected failures causing production losses'
         },
         {
-          title: 'Flexible cost structure',
-          detail: 'Project-based, no fixed overhead'
+          icon: '💸',
+          title: 'Rising Costs',
+          detail: 'Continuous increase in labor and operations'
         }
       ],
-      solutionConclusion: 'Complete solution for Japanese SME manufacturers'
+      problemConclusion: 'Traditional methods cannot maintain competitiveness',
+      solutionTitle: 'Solunai Solutions',
+      solutionSubtitle: 'AI + Global Talent = Manufacturing DX',
+      solutionPoints: [
+        {
+          icon: '🤖',
+          title: 'AI Automation',
+          detail: '24/7 operations, solving labor shortage'
+        },
+        {
+          icon: '✓',
+          title: '95%+ Defect Detection',
+          detail: 'Computer vision for high-precision quality control'
+        },
+        {
+          icon: '📊',
+          title: 'Predictive Maintenance',
+          detail: 'AI-powered failure prediction and planning'
+        },
+        {
+          icon: '📈',
+          title: '30% Cost Reduction',
+          detail: 'Proven: 30-50% operational cost savings'
+        }
+      ],
+      solutionConclusion: 'Restoring competitiveness to Japanese manufacturing'
     }
   };
 
@@ -95,8 +133,11 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
             <ul className="problem-list" role="list">
               {currentContent.problemPoints.map((point, index) => (
                 <li key={index}>
-                  <span className="bullet" aria-hidden="true">•</span>
-                  <span>{point}</span>
+                  <span className="point-icon" aria-hidden="true">{point.icon}</span>
+                  <div className="point-content">
+                    <strong>{point.title}</strong>
+                    <p className="point-detail">{point.detail}</p>
+                  </div>
                 </li>
               ))}
             </ul>
@@ -119,12 +160,10 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
               {currentContent.solutionPoints.map((point, index) => (
                 <li key={index}>
                   <div className="solution-point">
-                    <span className="check-icon" aria-hidden="true">✓</span>
+                    <span className="point-icon" aria-hidden="true">{point.icon}</span>
                     <div className="solution-text">
                       <strong>{point.title}</strong>
-                      <p className="solution-detail">
-                        <span className="arrow" aria-hidden="true">→</span> {point.detail}
-                      </p>
+                      <p className="solution-detail">{point.detail}</p>
                     </div>
                   </div>
                 </li>
