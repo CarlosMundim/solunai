@@ -43,6 +43,13 @@
   --steel-navy: #1e3a5f;
   --titanium-grey: #475569;
 
+  /* Colors for Dark Backgrounds (High Contrast) */
+  --precision-white: #ffffff;
+  --steel-blue: #94a3b8;           /* Light gray-blue for secondary text on dark */
+  --silver-mist: #cbd5e1;          /* Lighter gray for body text on dark */
+  --border-orange-subtle: rgba(245, 72, 10, 0.2);
+  --border-orange-glow: rgba(245, 72, 10, 0.5);
+
   /* Background Colors */
   --background: #ffffff;
   --foreground: #1a1a1a;
