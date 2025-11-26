@@ -1,8 +1,8 @@
 .global-engineering-process {
   position: relative;
   width: 100%;
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding-top: 120px;  /* Ma: Generous vertical breathing */
+  padding-bottom: 80px;
   background: var(--bg-cream);
 }
 
@@ -147,8 +147,8 @@
 
 @media (max-width: 1024px) {
   .global-engineering-process {
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 80px;  /* Ma: Tablet breathing */
+    padding-bottom: 60px;
   }
 
   .process-header {
@@ -163,8 +163,8 @@
 
 @media (max-width: 768px) {
   .global-engineering-process {
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 64px;  /* Ma: Mobile breathing */
+    padding-bottom: 48px;
   }
 
   .process-header {

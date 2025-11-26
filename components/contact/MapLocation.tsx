@@ -148,9 +148,9 @@ const MapLocation: React.FC<MapLocationProps> = ({ lang }) => {
                   </div>
 
                   {/* Parking */}
-                  <div className="border-l-4 border-purple-500 pl-6">
+                  <div className="border-l-4 border-orange-500 pl-6">
                     <div className="flex items-start gap-3 mb-2">
-                      <svg className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
                       </svg>
                       <div>

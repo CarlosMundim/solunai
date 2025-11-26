@@ -1,6 +1,6 @@
 .tech-partners-section {
-  padding: 80px 24px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 120px 48px;  /* Ma: Generous section breathing */
+  background: #fafafa;  /* Simplified - no gradient */
 }
 
 .partners-container {
@@ -145,7 +145,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .tech-partners-section {
-    padding: 60px 20px;
+    padding: 64px 24px;  /* Ma: Mobile breathing */
   }
 
   .partners-header h2 {

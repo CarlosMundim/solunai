@@ -23,13 +23,13 @@ const CaseStudyCTA: React.FC<CaseStudyCTAProps> = ({ lang }) => {
       ctaLink: '#contact'
     },
     en: {
-      heading: 'Transform Your Manufacturing Business?',
+      heading: 'Get Similar Results for Your Factory?',
       subheading: 'Free consultation includes',
       benefits: [
         '60-minute manufacturing assessment',
         'Custom ROI projection',
         'Technology readiness evaluation',
-        'Preliminary transformation roadmap'
+        'Implementation roadmap'
       ],
       ctaButton: 'Schedule Free Consultation',
       ctaLink: '#contact'

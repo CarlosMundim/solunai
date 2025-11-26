@@ -36,11 +36,11 @@ const TrustIndicators: React.FC<TrustIndicatorsProps> = ({ lang }) => {
           title: 'エンタープライズ技術',
           icon: 'tech',
           items: [
-            'NVIDIA Omniverse、ANSYS、Microsoft Azure',
+            'デジタルツイン、物理シミュレーション、クラウドインフラ',
             'ISO 27001、SOC 2、GDPR認証',
             '24/7プラットフォーム稼働'
           ],
-          color: 'from-purple-500 to-pink-500'
+          color: 'from-orange-500 to-red-600'
         },
         {
           title: 'グローバル + ローカル',
@@ -81,11 +81,11 @@ const TrustIndicators: React.FC<TrustIndicatorsProps> = ({ lang }) => {
           title: 'Enterprise Technology',
           icon: 'tech',
           items: [
-            'NVIDIA Omniverse, ANSYS, Microsoft Azure',
+            'Digital Twin, Physics Simulation, Cloud Infrastructure',
             'ISO 27001, SOC 2, GDPR certified',
             '24/7 platform operations'
           ],
-          color: 'from-purple-500 to-pink-500'
+          color: 'from-orange-500 to-red-600'
         },
         {
           title: 'Global + Local',

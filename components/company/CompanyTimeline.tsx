@@ -21,7 +21,7 @@ const CompanyTimeline: React.FC<CompanyTimelineProps> = ({ lang }) => {
           achievements: [
             'Solunai株式会社設立',
             'WorldEmp B.V.との戦略的パートナーシップ締結',
-            'NVIDIA、ANSYS、Microsoft Azureとの技術提携',
+            'エンタープライズグレード技術基盤の構築',
             '初期製品開発開始'
           ],
           status: 'completed'
@@ -98,7 +98,7 @@ const CompanyTimeline: React.FC<CompanyTimelineProps> = ({ lang }) => {
           achievements: [
             'Solunai Systems K.K. established',
             'Strategic partnership with WorldEmp B.V.',
-            'Technology partnerships: NVIDIA, ANSYS, Microsoft Azure',
+            'Enterprise-grade technology foundation established',
             'Initial product development launched'
           ],
           status: 'completed'

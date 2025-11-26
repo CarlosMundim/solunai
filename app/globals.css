@@ -4,58 +4,63 @@
 
 :root {
   /* ============================================ */
-  /* INDUSTRIAL PRECISION PALETTE - THE FORGE    */
-  /* Born from The Honesty Moment - Jan 13, 2025 */
+  /* WA-INSPIRED CORPORATE PALETTE v1.1          */
+  /* Japanese Corporate Aesthetic - Nov 26, 2025 */
+  /* Ma (間) - Embrace negative space            */
+  /* Kanso (簡素) - Simplicity                   */
+  /* Seijaku (静寂) - Tranquility               */
   /* ============================================ */
 
-  /* Core Industrial Precision Colors */
-  --solunai-blaze: #f5480a;        /* Bold Orange - Our Signature */
-  --forge-black: #0d0d0d;          /* Deep Black - Strength Foundation */
-  --steel-navy: #1a2332;           /* Dark Navy - Corporate Trust */
-  --titanium-grey: #475569;        /* Cool Grey - Professional Balance */
-  --precision-white: #f8fafc;      /* Off-white - Premium Clean */
+  /* Primary Brand - Use Sparingly */
+  --solunai-blaze: #f5480a;        /* Bold Orange - Primary CTAs only */
+  --ember: #c23800;                /* Dark Orange - Hover states */
 
-  /* Accent & Effects */
-  --heat-glow: #ff6b35;            /* Lighter Orange - Hover States */
-  --ember: #c23800;                /* Dark Orange - Depth/Shadow */
-  --steel-blue: #64748b;           /* Neutral Blue - Data/Metrics */
-  --silver-mist: #e2e8f0;          /* Light Grey - Subtle Backgrounds */
+  /* Secondary Corporate Harmony */
+  --indigo-deep: #1e3a5f;          /* Professional headers, trust */
+  --slate-blue: #475569;           /* Secondary text, icons */
+  --warm-stone: #78716c;           /* Subtle accents, borders */
 
-  /* Legacy Compatibility (Mapped to Industrial Precision) */
-  --solunai-orange: #f5480a;       /* Same as solunai-blaze */
-  --solunai-orange-dark: #c23800;  /* Same as ember */
-  --solunai-orange-light: #ff6b35; /* Same as heat-glow */
+  /* Neutral Colors (Ma - Negative Space) */
+  --sumi-black: #1a1a1a;           /* Primary text */
+  --charcoal: #333333;             /* Body text */
+  --stone: #737373;                /* Secondary text */
+  --mist: #a3a3a3;                 /* Captions, placeholders */
+  --cloud: #e5e5e5;                /* Borders, dividers */
+  --snow: #fafafa;                 /* Section backgrounds */
+  --white: #ffffff;                /* Primary background */
+
+  /* Semantic Colors (Subdued) */
+  --success: #059669;              /* Checkmarks (muted green) */
+  --warning: #d97706;              /* Alerts (muted amber) */
+  --error: #dc2626;                /* Errors (muted red) */
+  --info: #1e3a5f;                 /* Information (uses Indigo Deep) */
+
+  /* Legacy Compatibility */
+  --solunai-orange: #f5480a;
+  --solunai-orange-dark: #c23800;
+  --heat-glow: #ff6b35;
+  --forge-black: #1a1a1a;
+  --steel-navy: #1e3a5f;
+  --titanium-grey: #475569;
 
   /* Background Colors */
   --background: #ffffff;
-  --foreground: #171717;
-  --bg-dark-1: #1a2332;            /* Updated to Steel Navy */
-  --bg-dark-2: #0d0d0d;            /* Updated to Forge Black */
-  --bg-dark-3: #16213e;            /* Keep for compatibility */
-
-  /* Clean Backgrounds (Keep useful ones) */
-  --bg-cream: #f0efeb;
-  --bg-subtle-gray: #f7f7f7;
-  --bg-muted-brown: #787168;
-  --bg-pure-black: #000000;
+  --foreground: #1a1a1a;
+  --bg-dark-1: #1e3a5f;
+  --bg-dark-2: #1a1a1a;
   --bg-off-white: #fafafa;
+  --bg-snow: #fafafa;
+  --bg-cloud: #f5f5f5;
 
-  /* Gradients (Minimal - Industrial Precision uses solid colors) */
-  --gradient-dark: linear-gradient(135deg, var(--steel-navy) 0%, var(--forge-black) 100%);
-  --gradient-orange: linear-gradient(135deg, var(--solunai-blaze) 0%, var(--ember) 100%);
-  --gradient-orange-hover: linear-gradient(135deg, var(--heat-glow) 0%, var(--solunai-blaze) 100%);
+  /* Gradients (Minimal - prefer solid colors) */
+  --gradient-dark: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
+  --gradient-light: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
 
-  /* Glass-morphism (Updated for Industrial Precision) */
-  --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --glass-backdrop: blur(10px);
-
-  /* Opacity Borders (Clean & Simple) */
-  --border-subtle: rgba(0, 0, 0, 0.08);
-  --border-medium: rgba(0, 0, 0, 0.12);
-  --border-strong: rgba(0, 0, 0, 0.16);
-  --border-orange-subtle: rgba(245, 72, 10, 0.15);
-  --border-orange-glow: rgba(245, 72, 10, 0.3);
+  /* Borders (Subtle, Japanese aesthetic) */
+  --border-subtle: #e5e5e5;
+  --border-medium: #d4d4d4;
+  --border-strong: #a3a3a3;
+  --border-focus: #f5480a;
 
   /* Typography - Font Families */
   --font-inter: 'Inter', sans-serif;
@@ -181,17 +186,23 @@
   --card-hover-shadow: 0 12px 40px rgba(245, 72, 10, 0.25);
   --card-hover-glow: 0 0 32px rgba(245, 72, 10, 0.3);
 
-  /* Section Spacing - Negative Space Strategy */
-  --section-spacing-mobile: 80px;
-  --section-spacing-tablet: 120px;
-  --section-spacing-desktop: 200px;
-  --section-spacing-xl: 280px;
+  /* Section Spacing - Ma (間) Philosophy */
+  /* "The space between elements is as important as the elements themselves" */
+  --section-spacing-mobile: 64px;
+  --section-spacing-tablet: 80px;
+  --section-spacing-desktop: 120px;
+  --section-spacing-xl: 160px;
 
-  /* Container Padding */
-  --container-padding-mobile: 20px;
-  --container-padding-tablet: 40px;
-  --container-padding-desktop: 60px;
-  --container-padding-xl: 80px;
+  /* Container Padding - Generous breathing room */
+  --container-padding-mobile: 24px;
+  --container-padding-tablet: 32px;
+  --container-padding-desktop: 48px;
+  --container-padding-xl: 64px;
+
+  /* Content Width Constraints - Optimal reading */
+  --max-content-width: 1200px;
+  --max-text-width: 680px;         /* Optimal reading width */
+  --max-narrow-width: 800px;       /* For text-focused sections */
 }
 
 * {

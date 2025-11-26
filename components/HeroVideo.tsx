@@ -15,8 +15,8 @@ const HeroVideo: React.FC<HeroVideoProps> = ({ lang }) => {
       scroll: 'スクロール'
     },
     en: {
-      headline: 'Revolutionizing Japanese Manufacturing with AI',
-      subheadline: 'Completely transform your manufacturing operations in weeks with digital twin technology and global engineering. Maximize productivity with proven AI solutions.',
+      headline: 'AI-Powered Manufacturing Excellence',
+      subheadline: 'Digital twin technology and global engineering talent deployed in weeks. Proven results: 30-50% cost reduction, 95% quality improvement.',
       scroll: 'Scroll'
     }
   };

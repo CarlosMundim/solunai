@@ -171,7 +171,7 @@ const EngineeringServices: React.FC<EngineeringServicesProps> = ({ lang }) => {
             'Process control systems',
             'Factory floor integration'
           ],
-          description: 'Implement robotics and automation systems. Seamless integration with existing equipment.'
+          description: 'Implement robotics and automation systems. Direct integration with existing equipment.'
         },
         {
           title: 'Data Scientists',

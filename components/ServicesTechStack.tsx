@@ -14,25 +14,25 @@ const ServicesTechStack: React.FC<ServicesTechStackProps> = ({ lang }) => {
       subtitle: '業界をリードする技術スタック',
       technologies: [
         {
-          name: 'NVIDIA Omniverse',
+          name: 'デジタルツインエンジン',
           category: '3D可視化',
           description: 'リアルタイム3Dシミュレーションとデジタルツイン可視化',
           features: ['フォトリアリスティックレンダリング', 'リアルタイム協働', 'USD統合']
         },
         {
-          name: 'ANSYS Twin Builder',
-          category: '物理シミュレーション',
+          name: '物理シミュレーション',
+          category: 'CFD/FEA解析',
           description: 'デジタルツインのための高精度物理ベースシミュレーション',
           features: ['FEA/CFD解析', '予測モデリング', 'マルチフィジックス']
         },
         {
-          name: 'Microsoft Azure',
-          category: 'クラウドインフラ',
+          name: 'クラウドインフラ',
+          category: 'エンタープライズグレード',
           description: 'エンタープライズグレードクラウド、99.9% SLA保証',
           features: ['グローバルデータセンター', 'セキュリティ認証', '自動スケーリング']
         },
         {
-          name: 'Claude AI',
+          name: 'AIエンジン',
           category: 'AI & NLP',
           description: 'マルチモーダルAI、自然言語処理、インテリジェントオートメーション',
           features: ['アドバンスドNLP', 'マルチモーダルAI', 'エージェンシックシステム']
@@ -50,25 +50,25 @@ const ServicesTechStack: React.FC<ServicesTechStackProps> = ({ lang }) => {
       subtitle: 'Industry-Leading Technology Stack',
       technologies: [
         {
-          name: 'NVIDIA Omniverse',
+          name: 'Digital Twin Engine',
           category: '3D Visualization',
           description: 'Real-time 3D simulation and digital twin visualization',
           features: ['Photorealistic rendering', 'Real-time collaboration', 'USD integration']
         },
         {
-          name: 'ANSYS Twin Builder',
-          category: 'Physics Simulation',
+          name: 'Physics Simulation',
+          category: 'CFD/FEA Analysis',
           description: 'High-fidelity physics-based simulation for digital twins',
           features: ['FEA/CFD analysis', 'Predictive modeling', 'Multiphysics']
         },
         {
-          name: 'Microsoft Azure',
-          category: 'Cloud Infrastructure',
+          name: 'Cloud Infrastructure',
+          category: 'Enterprise-Grade',
           description: 'Enterprise-grade cloud with 99.9% SLA guarantee',
           features: ['Global data centers', 'Security certifications', 'Auto-scaling']
         },
         {
-          name: 'Claude AI',
+          name: 'AI Engine',
           category: 'AI & NLP',
           description: 'Multimodal AI, natural language processing, intelligent automation',
           features: ['Advanced NLP', 'Multimodal AI', 'Agentic systems']

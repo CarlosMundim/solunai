@@ -11,42 +11,42 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
   const content = {
     ja: {
       title: 'エンタープライズグレードの技術基盤',
-      subtitle: 'Solunaiは世界トップクラスの技術パートナーと提携',
-      partners: [
+      subtitle: '最先端の技術スタックで製造業のデジタル変革を実現',
+      techStack: [
         {
-          name: 'NVIDIA Omniverse',
-          logo: '🎮',
+          name: 'デジタルツイン',
+          icon: '🏭',
           features: [
-            'フォトリアルなデジタルツイン可視化',
+            'フォトリアルな3D可視化',
             'リアルタイム物理シミュレーション',
-            'GPUアクセラレーション計算'
+            '高精度な性能予測'
           ]
         },
         {
-          name: 'ANSYS Twin Builder',
-          logo: '⚙️',
+          name: 'シミュレーション解析',
+          icon: '⚙️',
           features: [
             'CFD熱解析、FEA構造解析',
-            '高精度な性能予測',
-            'マルチフィジックスシミュレーション'
+            'マルチフィジックスシミュレーション',
+            '設計最適化'
           ]
         },
         {
-          name: 'Microsoft Azure',
-          logo: '☁️',
+          name: 'クラウドインフラ',
+          icon: '☁️',
           features: [
-            'エンタープライズグレードのクラウド基盤',
-            '99.9%稼働率保証',
+            'エンタープライズグレードの基盤',
+            '99.9%稼働率',
             'ISO 27001 / SOC 2準拠'
           ]
         },
         {
-          name: 'Claude AI (Anthropic)',
-          logo: '🤖',
+          name: 'AIアナリティクス',
+          icon: '🤖',
           features: [
-            '最先端の自然言語処理',
-            'マルチモーダルAI能力',
-            '安全性と信頼性を重視'
+            '予測保全アルゴリズム',
+            '品質管理自動化',
+            '最適化エンジン'
           ]
         }
       ],
@@ -61,42 +61,42 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
     },
     en: {
       title: 'Enterprise-Grade Technology Foundation',
-      subtitle: 'Solunai partners with world-class technology providers',
-      partners: [
+      subtitle: 'Industrial-grade technology stack for manufacturing operations',
+      techStack: [
         {
-          name: 'NVIDIA Omniverse',
-          logo: '🎮',
+          name: 'Digital Twin',
+          icon: '🏭',
           features: [
-            'Photorealistic digital twin visualization',
+            'Photorealistic 3D visualization',
             'Real-time physics simulation',
-            'GPU-accelerated computing'
+            'High-precision performance prediction'
           ]
         },
         {
-          name: 'ANSYS Twin Builder',
-          logo: '⚙️',
+          name: 'Simulation & Analysis',
+          icon: '⚙️',
           features: [
-            'CFD thermal analysis, FEA structural analysis',
-            'High-precision performance prediction',
-            'Multi-physics simulation'
+            'CFD thermal & FEA structural analysis',
+            'Multi-physics simulation',
+            'Design optimization'
           ]
         },
         {
-          name: 'Microsoft Azure',
-          logo: '☁️',
+          name: 'Cloud Infrastructure',
+          icon: '☁️',
           features: [
-            'Enterprise-grade cloud infrastructure',
-            '99.9% uptime SLA',
+            'Enterprise-grade foundation',
+            '99.9% uptime',
             'ISO 27001 / SOC 2 compliant'
           ]
         },
         {
-          name: 'Claude AI (Anthropic)',
-          logo: '🤖',
+          name: 'AI Analytics',
+          icon: '🤖',
           features: [
-            'State-of-the-art natural language processing',
-            'Multimodal AI capabilities',
-            'Safety and reliability focused'
+            'Predictive maintenance algorithms',
+            'Quality control automation',
+            'Optimization engine'
           ]
         }
       ],
@@ -122,14 +122,14 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
         </div>
 
         <div className="partners-grid">
-          {currentContent.partners.map((partner, index) => (
+          {currentContent.techStack.map((tech, index) => (
             <div key={index} className="partner-card">
               <div className="partner-logo">
-                <span className="logo-icon">{partner.logo}</span>
+                <span className="logo-icon">{tech.icon}</span>
               </div>
-              <h3 className="partner-name">{partner.name}</h3>
+              <h3 className="partner-name">{tech.name}</h3>
               <ul className="partner-features">
-                {partner.features.map((feature, featureIndex) => (
+                {tech.features.map((feature, featureIndex) => (
                   <li key={featureIndex}>{feature}</li>
                 ))}
               </ul>

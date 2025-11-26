@@ -56,7 +56,7 @@ const ValueProposition: React.FC<ValuePropositionProps> = ({ lang }) => {
         {
           icon: 'AI',
           title: 'AI Solutions',
-          subtitle: 'Transform manufacturing with cutting-edge AI technology',
+          subtitle: 'Proven AI systems for real manufacturing challenges',
           features: [
             'Digital Twin Technology',
             'Computer Vision Quality Control',

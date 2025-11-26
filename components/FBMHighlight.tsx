@@ -23,8 +23,8 @@ const FBMHighlight: React.FC<FBMHighlightProps> = ({ lang }) => {
       ],
       solutionTitle: 'Solunaiソリューション',
       solutions: [
-        'AI見積システム（NVIDIA Omniverse + Claude AI）',
-        'デジタルツイン基盤（ANSYS Twin Builder）',
+        'AI見積システム（3D可視化 + 自然言語処理）',
+        'デジタルツイン基盤（物理シミュレーション）',
         'コンピュータビジョン品質管理'
       ],
       resultsTitle: '成果',
@@ -69,8 +69,8 @@ const FBMHighlight: React.FC<FBMHighlightProps> = ({ lang }) => {
       ],
       solutionTitle: 'Solunai Solution',
       solutions: [
-        'AI Quotation System (NVIDIA Omniverse + Claude AI)',
-        'Digital Twin Infrastructure (ANSYS Twin Builder)',
+        'AI Quotation System (3D Visualization + NLP)',
+        'Digital Twin Infrastructure (Physics Simulation)',
         'Computer Vision Quality Control'
       ],
       resultsTitle: 'Results Achieved',

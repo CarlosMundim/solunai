@@ -30,8 +30,8 @@ const CVKeyCapabilities: React.FC<CVKeyCapabilitiesProps> = ({ lang }) => {
         },
         {
           id: 'gpu-acceleration',
-          title: 'NVIDIA GPU / Intel OpenVINO 対応',
-          description: 'NVIDIA GPU（T4、A2000など）やIntel OpenVINOによる高速推論。コストを抑えながら、リアルタイムで複数カメラからの画像を同時処理できます。'
+          title: 'GPU / エッジAI 対応',
+          description: '産業用GPU（T4、A2000など）やエッジAI最適化による高速推論。コストを抑えながら、リアルタイムで複数カメラからの画像を同時処理できます。'
         },
         {
           id: 'defect-detection',
@@ -47,7 +47,7 @@ const CVKeyCapabilities: React.FC<CVKeyCapabilitiesProps> = ({ lang }) => {
     },
     en: {
       heading: 'AI Vision Integration for SME Manufacturers',
-      subheading: 'Leverage existing cameras with cutting-edge AI for automated quality inspection',
+      subheading: 'Leverage existing cameras with proven AI technology for automated quality inspection',
       capabilities: [
         {
           id: 'multi-camera',
@@ -56,7 +56,7 @@ const CVKeyCapabilities: React.FC<CVKeyCapabilitiesProps> = ({ lang }) => {
         },
         {
           id: 'open-source-ai',
-          title: 'Cutting-Edge Open-Source AI',
+          title: 'Production-Ready Open-Source AI',
           description: 'Leverages industry-standard AI frameworks like OpenCV, YOLO, TensorFlow, and PyTorch. Transparent, vendor-independent models allow continuous accuracy improvements without black-box dependencies.'
         },
         {
@@ -66,8 +66,8 @@ const CVKeyCapabilities: React.FC<CVKeyCapabilitiesProps> = ({ lang }) => {
         },
         {
           id: 'gpu-acceleration',
-          title: 'NVIDIA GPU / Intel OpenVINO Support',
-          description: 'High-speed inference using NVIDIA GPUs (T4, A2000, etc.) or Intel OpenVINO. Cost-effective real-time processing of multiple camera feeds simultaneously.'
+          title: 'GPU / Edge AI Support',
+          description: 'High-speed inference using industrial GPUs (T4, A2000, etc.) or edge AI optimization. Cost-effective real-time processing of multiple camera feeds simultaneously.'
         },
         {
           id: 'defect-detection',

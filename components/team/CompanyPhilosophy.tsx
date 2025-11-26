@@ -77,7 +77,7 @@ const CompanyPhilosophy: React.FC<CompanyPhilosophyProps> = ({ lang }) => {
         pillars: [
           {
             icon: '01',
-            title: 'Cutting-Edge AI Technology',
+            title: 'Production-Ready AI Technology',
             description: 'Digital Twin, Computer Vision, Predictive Analytics',
           },
           {

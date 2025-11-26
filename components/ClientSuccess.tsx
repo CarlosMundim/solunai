@@ -19,7 +19,7 @@ const ClientSuccess: React.FC<ClientSuccessProps> = ({ lang }) => {
       },
       solution: {
         label: 'ソリューション',
-        text: 'NVIDIA Omniverseベースのデジタルツイン技術を活用し、見積システムと3D設計プロセスを完全統合しました。'
+        text: 'デジタルツイン技術を活用し、見積システムと3D設計プロセスを完全統合しました。'
       },
       results: {
         label: '成果',
@@ -50,7 +50,7 @@ const ClientSuccess: React.FC<ClientSuccessProps> = ({ lang }) => {
       },
       solution: {
         label: 'Solution',
-        text: 'Fully integrated quotation system with 3D design process using NVIDIA Omniverse-based Digital Twin technology.'
+        text: 'Fully integrated quotation system with 3D design process using Digital Twin technology.'
       },
       results: {
         label: 'Results',

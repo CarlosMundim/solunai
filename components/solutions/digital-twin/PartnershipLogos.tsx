@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import './PartnershipLogos.css';
 
 interface PartnershipLogosProps {
@@ -11,102 +10,90 @@ interface PartnershipLogosProps {
 const PartnershipLogos: React.FC<PartnershipLogosProps> = ({ lang }) => {
   const content = {
     ja: {
-      heading: '業界トップ企業との技術パートナーシップ',
-      subheading: '世界標準の技術を、日本の中小製造業に最適化して提供',
-      partners: [
+      heading: 'エンタープライズグレードの技術基盤',
+      subheading: '国際標準に準拠した信頼性の高いプラットフォーム',
+      capabilities: [
         {
-          name: 'NVIDIA Omniverse',
-          category: '3D可視化・シミュレーション',
+          name: 'デジタルツイン可視化',
+          category: '3Dシミュレーション',
           description: 'リアルタイム3Dレンダリングとフォトリアリスティック工場可視化技術',
-          logo: '/logos/Nvidia_logo.svg.png',
-          logoWidth: 220
+          icon: '🏭'
         },
         {
-          name: 'Siemens',
-          category: 'PLM・デジタルツイン基盤',
-          description: '産業用デジタルツインプラットフォームとの統合連携',
-          logo: '/logos/Siemens_AG_logo.svg.png',
-          logoWidth: 220
+          name: '物理シミュレーション',
+          category: 'CFD/FEA解析',
+          description: '熱流体解析、構造解析などの高度なマルチフィジックスシミュレーション',
+          icon: '⚙️'
         },
         {
-          name: 'Ansys',
-          category: '物理シミュレーション',
-          description: 'CFD、FEA、熱流体解析などの高度なシミュレーション技術',
-          logo: '/logos/Ansys_logo_(2019).svg.png',
-          logoWidth: 220
+          name: 'クラウドインフラ',
+          category: 'エンタープライズグレード',
+          description: '99.9%稼働率、ISO 27001/SOC 2準拠のセキュアな基盤',
+          icon: '☁️'
         },
         {
-          name: 'PTC ThingWorx',
-          category: 'IoTプラットフォーム',
+          name: 'IoTプラットフォーム',
+          category: 'リアルタイムデータ',
           description: '産業用IoTデータ収集・分析基盤との互換性',
-          logo: '/logos/Thingworx.png',
-          logoWidth: 220
+          icon: '📡'
         },
         {
           name: 'ISA-95 準拠',
           category: '国際標準規格',
           description: '製造業向け国際標準データモデルに完全準拠',
-          logo: '/logos/ISA_95.jpg',
-          logoWidth: 220
+          icon: '✓'
         },
         {
           name: 'OPC UA 対応',
           category: '産業通信プロトコル',
           description: 'あらゆる産業機器との接続を保証する標準プロトコル',
-          logo: '/logos/OPC_UA_foundation.png',
-          logoWidth: 220
+          icon: '🔗'
         }
       ],
-      note: '※ Solunaiは上記テクノロジーとの統合実装を提供する独立系インテグレーターです。各社の認定パートナーシッププログラムへの参加を推進中です。'
+      note: '※ Solunaiは業界標準技術を活用した独立系インテグレーターです。'
     },
     en: {
-      heading: 'Technology Partnerships with Industry Leaders',
-      subheading: 'World-class technology optimized for Japanese SME manufacturers',
-      partners: [
+      heading: 'Enterprise-Grade Technology Foundation',
+      subheading: 'Reliable platform compliant with international standards',
+      capabilities: [
         {
-          name: 'NVIDIA Omniverse',
-          category: '3D Visualization & Simulation',
+          name: 'Digital Twin Visualization',
+          category: '3D Simulation',
           description: 'Real-time 3D rendering and photorealistic factory visualization technology',
-          logo: '/logos/Nvidia_logo.svg.png',
-          logoWidth: 220
+          icon: '🏭'
         },
         {
-          name: 'Siemens',
-          category: 'PLM & Digital Twin Platform',
-          description: 'Integration with industrial digital twin platform ecosystem',
-          logo: '/logos/Siemens_AG_logo.svg.png',
-          logoWidth: 220
+          name: 'Physics Simulation',
+          category: 'CFD/FEA Analysis',
+          description: 'Advanced multi-physics simulation including thermal and structural analysis',
+          icon: '⚙️'
         },
         {
-          name: 'Ansys',
-          category: 'Physics Simulation',
-          description: 'Advanced simulation including CFD, FEA, and thermal analysis',
-          logo: '/logos/Ansys_logo_(2019).svg.png',
-          logoWidth: 220
+          name: 'Cloud Infrastructure',
+          category: 'Enterprise-Grade',
+          description: '99.9% uptime, ISO 27001/SOC 2 compliant secure foundation',
+          icon: '☁️'
         },
         {
-          name: 'PTC ThingWorx',
-          category: 'IoT Platform',
+          name: 'IoT Platform',
+          category: 'Real-time Data',
           description: 'Compatibility with industrial IoT data collection and analysis',
-          logo: '/logos/Thingworx.png',
-          logoWidth: 220
+          icon: '📡'
         },
         {
           name: 'ISA-95 Compliant',
           category: 'International Standard',
           description: 'Full compliance with manufacturing industry standard data model',
-          logo: '/logos/ISA_95.jpg',
-          logoWidth: 220
+          icon: '✓'
         },
         {
           name: 'OPC UA Compatible',
           category: 'Industrial Communication',
           description: 'Standard protocol ensuring connectivity with all industrial equipment',
-          logo: '/logos/OPC_UA_foundation.png',
-          logoWidth: 220
+          icon: '🔗'
         }
       ],
-      note: '* Solunai is an independent systems integrator providing integration with the above technologies. We are actively pursuing formal partnership programs with each vendor.'
+      note: '* Solunai is an independent systems integrator utilizing industry-standard technologies.'
     }
   };
 
@@ -119,20 +106,14 @@ const PartnershipLogos: React.FC<PartnershipLogosProps> = ({ lang }) => {
         <p className="partnership-logos-subheading">{t.subheading}</p>
 
         <div className="partnership-logos-grid">
-          {t.partners.map((partner, index) => (
+          {t.capabilities.map((capability, index) => (
             <div key={index} className="partner-card">
               <div className="partner-logo-wrapper">
-                <Image
-                  src={partner.logo}
-                  alt={partner.name}
-                  width={partner.logoWidth || 200}
-                  height={80}
-                  className="partner-logo"
-                  style={{ objectFit: 'contain' }}
-                />
+                <span className="capability-icon">{capability.icon}</span>
               </div>
-              <div className="partner-category">{partner.category}</div>
-              <p className="partner-description">{partner.description}</p>
+              <div className="partner-category">{capability.category}</div>
+              <h3 className="partner-name">{capability.name}</h3>
+              <p className="partner-description">{capability.description}</p>
             </div>
           ))}
         </div>

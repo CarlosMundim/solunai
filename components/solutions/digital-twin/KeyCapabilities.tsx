@@ -21,7 +21,7 @@ const KeyCapabilities: React.FC<KeyCapabilitiesProps> = ({ lang }) => {
         {
           id: 'enterprise-partnerships',
           title: '業界リーダーとの連携',
-          description: 'NVIDIA Omniverse、Siemens、Ansysなど、大手ベンダーとのパートナーシップにより、最先端のデジタルツイン技術を中小企業にも手の届く価格で提供します。'
+          description: '業界標準技術の活用により、最先端のデジタルツイン技術を中小企業にも手の届く価格で提供します。エンタープライズグレードの機能をSME価格で。'
         },
         {
           id: 'accessible-visualization',
@@ -57,7 +57,7 @@ const KeyCapabilities: React.FC<KeyCapabilitiesProps> = ({ lang }) => {
         {
           id: 'enterprise-partnerships',
           title: 'Industry-Leading Partnerships',
-          description: 'Through partnerships with NVIDIA Omniverse, Siemens, and Ansys, we deliver cutting-edge digital twin technology at SME-accessible pricing. Enterprise capabilities without enterprise costs.'
+          description: 'Using industry-standard technology, we deliver enterprise-grade digital twin technology at SME-accessible pricing. Enterprise capabilities without enterprise costs.'
         },
         {
           id: 'accessible-visualization',

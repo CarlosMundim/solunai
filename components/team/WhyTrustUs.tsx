@@ -27,7 +27,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           title: '国際的な信頼性',
           points: [
             'EU パートナーシップ（WorldEmp、FBM）',
-            'エンタープライズグレードの技術（NVIDIA、ANSYS、Azure）',
+            'エンタープライズグレードの技術基盤',
             'ISO 27001、SOC 2、GDPR準拠',
           ],
         },
@@ -91,7 +91,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           title: 'International Credibility',
           points: [
             'EU partnerships (WorldEmp, FBM)',
-            'Enterprise-grade technology (NVIDIA, ANSYS, Azure)',
+            'Enterprise-grade technology foundation',
             'ISO 27001, SOC 2, GDPR compliant',
           ],
         },

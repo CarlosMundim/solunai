@@ -15,22 +15,22 @@ const CVTechnologyStack: React.FC<CVTechnologyStackProps> = ({ lang }) => {
       intro: 'Solunaiは、グローバルリーダー企業との技術提携により、中小製造業でも大手企業と同等の最先端AI・コンピュータビジョン技術を利用可能にします。',
       partners: [
         {
-          name: 'NVIDIA',
-          category: 'GPUコンピューティング',
-          description: 'NVIDIA Jetson/RTX GPUによる高速AI推論。リアルタイム画像処理を実現。',
+          name: 'GPUコンピューティング',
+          category: '高速AI推論',
+          description: '産業用GPUによる高速AI推論。リアルタイム画像処理を実現。',
           capabilities: [
             'AI推論速度: 0.3秒/画像',
-            'Omniverse連携対応',
+            '3D可視化連携対応',
             '産業用エッジGPU対応'
           ]
         },
         {
-          name: 'Microsoft Azure',
-          category: 'クラウドAI・IoT',
-          description: 'Azure AI Vision、Azure IoT HubによるクラウドAI学習とデータ分析基盤。',
+          name: 'クラウドAI基盤',
+          category: 'エンタープライズグレード',
+          description: 'クラウドAI学習とデータ分析基盤。スケーラブルなインフラ。',
           capabilities: [
             'クラウドAIモデル学習',
-            'Azure IoT Edge対応',
+            'IoT Edge対応',
             'セキュアなデータ管理'
           ]
         },
@@ -45,9 +45,9 @@ const CVTechnologyStack: React.FC<CVTechnologyStackProps> = ({ lang }) => {
           ]
         },
         {
-          name: 'Intel OpenVINO',
-          category: 'エッジAI最適化',
-          description: 'Intel CPUでのAI推論高速化ツールキット。低コストな導入を実現。',
+          name: 'エッジAI最適化',
+          category: 'CPU/GPU推論',
+          description: 'CPUでのAI推論高速化ツールキット。低コストな導入を実現。',
           capabilities: [
             'CPU推論の高速化',
             'モデルサイズ圧縮',
@@ -65,8 +65,8 @@ const CVTechnologyStack: React.FC<CVTechnologyStackProps> = ({ lang }) => {
           ]
         },
         {
-          name: 'Cognex / Keyence',
-          category: '産業用カメラ統合',
+          name: '産業用カメラ統合',
+          category: 'マルチベンダー対応',
           description: '産業用カメラ大手メーカーとの統合。既存設備の活用が可能。',
           capabilities: [
             '既存カメラ資産の活用',
@@ -122,25 +122,25 @@ const CVTechnologyStack: React.FC<CVTechnologyStackProps> = ({ lang }) => {
     en: {
       heading: 'Enterprise-Grade Technology Partners',
       subheading: 'Reliable AI inspection platform integrating technology from world-leading companies',
-      intro: 'Through partnerships with global technology leaders, Solunai enables SME manufacturers to access cutting-edge AI and Computer Vision technology equivalent to large enterprises.',
+      intro: 'Through partnerships with global technology leaders, Solunai enables SME manufacturers to access enterprise-grade AI and Computer Vision technology at accessible pricing.',
       partners: [
         {
-          name: 'NVIDIA',
-          category: 'GPU Computing',
-          description: 'High-speed AI inference with NVIDIA Jetson/RTX GPUs. Real-time image processing capability.',
+          name: 'GPU Computing',
+          category: 'High-Speed AI Inference',
+          description: 'High-speed AI inference with industrial GPUs. Real-time image processing capability.',
           capabilities: [
             'AI inference speed: 0.3sec/image',
-            'Omniverse integration ready',
+            '3D visualization integration ready',
             'Industrial edge GPU support'
           ]
         },
         {
-          name: 'Microsoft Azure',
-          category: 'Cloud AI & IoT',
-          description: 'Cloud AI training and data analytics infrastructure with Azure AI Vision and Azure IoT Hub.',
+          name: 'Cloud AI Platform',
+          category: 'Enterprise-Grade',
+          description: 'Cloud AI training and data analytics infrastructure. Scalable infrastructure.',
           capabilities: [
             'Cloud AI model training',
-            'Azure IoT Edge compatible',
+            'IoT Edge compatible',
             'Secure data management'
           ]
         },
@@ -155,9 +155,9 @@ const CVTechnologyStack: React.FC<CVTechnologyStackProps> = ({ lang }) => {
           ]
         },
         {
-          name: 'Intel OpenVINO',
-          category: 'Edge AI Optimization',
-          description: 'AI inference acceleration toolkit for Intel CPUs. Enables low-cost deployment.',
+          name: 'Edge AI Optimization',
+          category: 'CPU/GPU Inference',
+          description: 'AI inference acceleration toolkit for CPUs. Enables low-cost deployment.',
           capabilities: [
             'CPU inference acceleration',
             'Model size compression',
@@ -175,8 +175,8 @@ const CVTechnologyStack: React.FC<CVTechnologyStackProps> = ({ lang }) => {
           ]
         },
         {
-          name: 'Cognex / Keyence',
-          category: 'Industrial Camera Integration',
+          name: 'Industrial Camera Integration',
+          category: 'Multi-Vendor Support',
           description: 'Integration with major industrial camera manufacturers. Leverage existing equipment.',
           capabilities: [
             'Utilize existing camera assets',
@@ -195,7 +195,7 @@ const CVTechnologyStack: React.FC<CVTechnologyStackProps> = ({ lang }) => {
           },
           {
             title: 'ISA-95 Data Model',
-            description: 'International standard data model for manufacturing. Seamless MES/ERP integration'
+            description: 'International standard data model for manufacturing. Direct MES/ERP integration'
           },
           {
             title: 'ONNX Model Compatible',

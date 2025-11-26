@@ -19,8 +19,8 @@ const AboutCTA: React.FC<AboutCTAProps> = ({ lang }) => {
       caseStudiesLink: '/about/case-studies',
     },
     en: {
-      title: 'Ready to Transform Your Manufacturing?',
-      subtitle: 'Get a free consultation on AI-driven manufacturing transformation',
+      title: 'Ready to Reduce Defects and Lower Costs?',
+      subtitle: 'Get a free consultation on AI-driven manufacturing improvements',
       primaryButton: 'Contact Us',
       secondaryButton: 'View Case Studies',
       contactLink: '/en/contact',

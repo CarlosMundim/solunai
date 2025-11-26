@@ -38,7 +38,7 @@ const ServicesServicesCTA: React.FC<ServicesServicesCTAProps> = ({ lang }) => {
       guarantee: '60日間の満足保証 | 返金可能'
     },
     en: {
-      title: 'Transform Your Manufacturing with AI + Engineers',
+      title: 'Reduce Costs 30-40% with AI + Engineers',
       subtitle: 'AI technology you cannot build + Engineers you cannot hire',
       benefits: [
         'World-class engineers deployed in 2-6 weeks',

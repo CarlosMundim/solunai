@@ -50,7 +50,7 @@ const Values: React.FC<ValuesProps> = ({ lang }) => {
         {
           icon: '02',
           title: 'Innovation',
-          description: 'Cutting-edge technology meets practical application',
+          description: 'Advanced AI technology with proven factory floor results',
         },
         {
           icon: '03',

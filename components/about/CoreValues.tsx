@@ -42,7 +42,7 @@ const CoreValues: React.FC<CoreValuesProps> = ({ lang }) => {
         {
           icon: '◆',
           title: 'Innovation',
-          description: 'Combining cutting-edge AI technology with manufacturing best practices to deliver transformative solutions.',
+          description: 'Combining proven AI technology with manufacturing best practices to deliver measurable improvements.',
         },
         {
           icon: '◆',

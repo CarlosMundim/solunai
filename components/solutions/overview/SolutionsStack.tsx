@@ -63,7 +63,7 @@ const SolutionsStack: React.FC<SolutionsStackProps> = ({ lang }) => {
     en: {
       heading: 'Transform Manufacturing with',
       headingHighlight: '5 AI-Powered Solutions',
-      description: 'Comprehensive AI technology solutions optimizing every aspect of your manufacturing operations. From digital twins to global engineering, we empower Japanese manufacturers to lead the future.',
+      description: 'Comprehensive AI technology solutions optimizing every aspect of your manufacturing operations. From digital twins to global engineering, we help Japanese manufacturers reduce costs and improve quality.',
       solutions: [
         {
           id: 'digital-twin',

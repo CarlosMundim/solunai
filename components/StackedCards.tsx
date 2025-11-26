@@ -30,7 +30,7 @@ const StackedCards: React.FC<StackedCardsProps> = ({ lang }) => {
         {
           title: 'Design',
           subtitle: 'デジタルツイン設計',
-          description: 'NVIDIA Omniverseと連携し、生産ラインの完全なデジタルレプリカを構築。シミュレーションで最適化を事前検証します。',
+          description: '生産ラインの完全なデジタルレプリカを構築。シミュレーションで最適化を事前検証します。',
           features: [
             'リアルタイム3Dシミュレーション',
             '物理ベースレンダリング',
@@ -95,7 +95,7 @@ const StackedCards: React.FC<StackedCardsProps> = ({ lang }) => {
         {
           title: 'Design',
           subtitle: 'Digital Twin Design',
-          description: 'Build complete digital replicas of production lines with NVIDIA Omniverse. Pre-validate optimizations through simulation.',
+          description: 'Build complete digital replicas of production lines. Pre-validate optimizations through simulation.',
           features: [
             'Real-time 3D Simulation',
             'Physics-based Rendering',

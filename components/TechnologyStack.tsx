@@ -13,14 +13,14 @@ const TechnologyStack: React.FC<TechnologyStackProps> = ({ lang }) => {
       heading: '技術スタック',
       subheading: 'エンタープライズグレードの信頼性実証済みテクノロジー',
       technologies: [
-        { name: 'NVIDIA Omniverse', category: '3Dビジュアライゼーション' },
-        { name: 'ANSYS Twin Builder', category: '物理シミュレーション' },
-        { name: 'Microsoft Azure', category: 'クラウドインフラ' },
-        { name: 'Claude AI / GPT-4', category: 'AI・NLP' },
+        { name: 'デジタルツイン', category: '3Dビジュアライゼーション' },
+        { name: '物理シミュレーション', category: 'CFD/FEA解析' },
+        { name: 'クラウドインフラ', category: 'エンタープライズグレード' },
+        { name: 'AIエンジン', category: '自然言語処理' },
         { name: 'HTRI', category: '熱計算エンジン' },
         { name: 'Python/TensorFlow', category: '機械学習' },
         { name: 'React + Node.js', category: 'アプリケーション開発' },
-        { name: 'Azure Digital Twins', category: 'IoT統合' }
+        { name: 'IoTプラットフォーム', category: 'リアルタイムデータ統合' }
       ],
       footer: 'エンタープライズグレードのテクノロジースタックによる実証済みの信頼性'
     },
@@ -28,14 +28,14 @@ const TechnologyStack: React.FC<TechnologyStackProps> = ({ lang }) => {
       heading: 'Technology Stack',
       subheading: 'Enterprise-Grade Proven Technology for Reliability',
       technologies: [
-        { name: 'NVIDIA Omniverse', category: '3D Visualization' },
-        { name: 'ANSYS Twin Builder', category: 'Physics Simulation' },
-        { name: 'Microsoft Azure', category: 'Cloud Infrastructure' },
-        { name: 'Claude AI / GPT-4', category: 'AI & NLP' },
+        { name: 'Digital Twin', category: '3D Visualization' },
+        { name: 'Physics Simulation', category: 'CFD/FEA Analysis' },
+        { name: 'Cloud Infrastructure', category: 'Enterprise-Grade' },
+        { name: 'AI Engine', category: 'Natural Language Processing' },
         { name: 'HTRI', category: 'Thermal Calculation Engine' },
         { name: 'Python/TensorFlow', category: 'Machine Learning' },
         { name: 'React + Node.js', category: 'Application Development' },
-        { name: 'Azure Digital Twins', category: 'IoT Integration' }
+        { name: 'IoT Platform', category: 'Real-time Data Integration' }
       ],
       footer: 'Enterprise-grade technology stack for proven reliability'
     }

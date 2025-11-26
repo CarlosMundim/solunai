@@ -84,7 +84,7 @@ const GEWhatIsGE: React.FC<GEWhatIsGEProps> = ({ lang }) => {
         },
         {
           title: 'Cultural Bridge',
-          description: 'Solunai mediates between Japanese companies and offshore engineers, aligning communication, quality standards, and work processes. Overcome language barriers and cultural differences for seamless collaboration.'
+          description: 'Solunai mediates between Japanese companies and offshore engineers, aligning communication, quality standards, and work processes. Overcome language barriers and cultural differences for effective collaboration.'
         },
         {
           title: 'Flexible Contract Models',

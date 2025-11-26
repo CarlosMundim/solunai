@@ -24,8 +24,8 @@ const FinalCTA: React.FC<FinalCTAProps> = ({ lang }) => {
       ]
     },
     en: {
-      title: 'Ready to Transform Your Manufacturing?',
-      subtitle: 'Start with a free consultation. Let\'s solve your manufacturing challenges together.',
+      title: 'Ready to Reduce Costs and Improve Quality?',
+      subtitle: 'Start with a free consultation. We analyze your current operations and show you the path to measurable improvements.',
       cta: 'Schedule Free Consultation',
       phone: 'Or call us directly',
       phoneNumber: '[Phone Number]',

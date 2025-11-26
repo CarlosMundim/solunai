@@ -5,8 +5,8 @@
 .future-cases {
   position: relative;
   width: 100%;
-  padding: 80px 0;
-  background: #FFFFFF;
+  padding: 120px 0;  /* Ma: Generous vertical breathing */
+  background: #ffffff;
 }
 
 .future-cases-container {

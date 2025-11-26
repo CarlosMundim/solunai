@@ -5,7 +5,7 @@
 .results-metrics {
   position: relative;
   width: 100%;
-  padding: 80px 0;
+  padding: 120px 0;  /* Ma: Generous vertical breathing */
   background: #ffffff;
   overflow: hidden;
 }
@@ -187,7 +187,7 @@
 /* Responsive: Tablet */
 @media (max-width: 1024px) {
   .results-metrics {
-    padding: 60px 0;
+    padding: 80px 0;  /* Ma: Tablet breathing */
   }
 
   .results-heading {
@@ -224,7 +224,7 @@
 /* Responsive: Mobile */
 @media (max-width: 767px) {
   .results-metrics {
-    padding: 40px 0;
+    padding: 64px 0;  /* Ma: Mobile breathing */
   }
 
   .results-container {

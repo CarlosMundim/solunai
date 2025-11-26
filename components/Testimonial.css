@@ -5,8 +5,8 @@
 .testimonial {
   position: relative;
   width: 100%;
-  padding: 80px 0;
-  background: #f9fafb;
+  padding: 120px 0;  /* Ma: Generous vertical breathing */
+  background: #fafafa;
   overflow: hidden;
 }
 

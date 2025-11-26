@@ -5,8 +5,8 @@
 .challenge-section {
   position: relative;
   width: 100%;
-  padding: 80px 0;
-  background: #f9fafb;
+  padding: 120px 0;  /* Ma: Generous vertical breathing */
+  background: #fafafa;
 }
 
 .challenge-container {
@@ -139,7 +139,7 @@
 /* Responsive: Tablet */
 @media (max-width: 1024px) {
   .challenge-section {
-    padding: 60px 0;
+    padding: 80px 0;  /* Ma: Tablet breathing */
   }
 
   .challenge-heading {
@@ -171,7 +171,7 @@
 /* Responsive: Mobile */
 @media (max-width: 767px) {
   .challenge-section {
-    padding: 40px 0;
+    padding: 64px 0;  /* Ma: Mobile breathing */
   }
 
   .challenge-container {

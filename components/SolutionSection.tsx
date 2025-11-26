@@ -38,9 +38,9 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ lang }) => {
           phase: 'フェーズ2',
           title: 'デジタルツイン基盤',
           features: [
-            'NVIDIA Omniverse（フォトリアルな3D）',
-            'ANSYS Twin Builder（物理シミュレーション）',
-            'Azure Digital Twins（リアルタイムIoT）',
+            'フォトリアルな3D可視化',
+            '物理ベースシミュレーション（CFD/FEA）',
+            'リアルタイムIoTデータ統合',
             'カスタムMLモデル（84年のFBM設計データで学習）'
           ],
           benefits: [
@@ -139,9 +139,9 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ lang }) => {
           phase: 'Phase 2',
           title: 'Digital Twin Infrastructure',
           features: [
-            'NVIDIA Omniverse (photorealistic 3D visualization)',
-            'ANSYS Twin Builder (physics-based simulation - CFD thermal, FEA structural)',
-            'Azure Digital Twins (real-time IoT sensor integration)',
+            'Photorealistic 3D visualization',
+            'Physics-based simulation (CFD thermal, FEA structural)',
+            'Real-time IoT sensor integration',
             'Custom ML models (performance prediction trained on 84 years of FBM designs)'
           ],
           benefits: [

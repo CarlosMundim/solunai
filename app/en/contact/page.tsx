@@ -52,7 +52,7 @@ export default function ContactPage() {
     },
     {
       question: 'Can you integrate with our existing systems?',
-      answer: 'Absolutely. We integrate seamlessly with all major MES, ERP, and SCADA systems. Our solutions are designed to enhance your current infrastructure, not replace it.'
+      answer: 'Yes. We integrate directly with all major MES, ERP, and SCADA systems. Our solutions are designed to enhance your current infrastructure, not replace it.'
     },
     {
       question: 'Do you work with SMEs or only large enterprises?',
@@ -95,7 +95,7 @@ export default function ContactPage() {
             maxWidth: '800px',
             margin: '0 auto'
           }}>
-            Let's discuss how AI can transform your manufacturing operations
+            Let's discuss how AI can improve your manufacturing operations
           </p>
         </div>
       </section>
@@ -579,7 +579,7 @@ export default function ContactPage() {
             marginBottom: '24px',
             lineHeight: 1.2
           }}>
-            Ready to Transform Your Manufacturing?
+            Ready to Improve Your Manufacturing?
           </h2>
           <p style={{
             fontSize: '20px',
@@ -587,7 +587,7 @@ export default function ContactPage() {
             marginBottom: '40px',
             lineHeight: 1.6
           }}>
-            Get started with a free consultation and discover how AI can revolutionize your operations
+            Get started with a free consultation and see how AI can reduce costs and improve quality
           </p>
           <a
             href="#contact-form"

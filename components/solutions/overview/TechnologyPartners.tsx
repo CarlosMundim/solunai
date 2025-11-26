@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import './TechnologyPartners.css';
 
 interface TechnologyPartnersProps {
@@ -12,22 +11,22 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
   const content = {
     ja: {
       heading: 'エンタープライズグレードの技術基盤',
-      subheading: 'Solunaiは世界クラスのテクノロジーパートナーと協力しています',
+      subheading: 'Solunaiは業界標準の技術を活用しています',
       partners: [
         {
-          id: 'nvidia',
-          logo: '/images/partners/nvidia.png',
-          name: 'NVIDIA Omniverse',
+          id: 'digital-twin',
+          name: 'デジタルツイン',
+          icon: '🏭',
           features: [
             'フォトリアリスティックなデジタルツイン可視化',
             'リアルタイム物理シミュレーション',
-            'GPU加速コンピューティング'
+            'GPUアクセラレーション計算'
           ]
         },
         {
-          id: 'ansys',
-          logo: '/images/partners/ansys.png',
-          name: 'ANSYS Twin Builder',
+          id: 'simulation',
+          name: '物理シミュレーション',
+          icon: '⚙️',
           features: [
             'CFD熱解析、FEA構造解析',
             '高精度なパフォーマンス予測',
@@ -35,9 +34,9 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
           ]
         },
         {
-          id: 'microsoft',
-          logo: '/images/partners/microsoft.png',
-          name: 'Microsoft Azure',
+          id: 'cloud',
+          name: 'クラウドインフラ',
+          icon: '☁️',
           features: [
             'エンタープライズグレードのクラウドインフラ',
             '99.9%稼働時間保証',
@@ -45,9 +44,9 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
           ]
         },
         {
-          id: 'anthropic',
-          logo: '/images/partners/anthropic.png',
-          name: 'Claude AI (Anthropic)',
+          id: 'ai',
+          name: 'AIエンジン',
+          icon: '🤖',
           features: [
             '最先端の自然言語処理',
             'マルチモーダルAI機能',
@@ -58,12 +57,12 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
     },
     en: {
       heading: 'Enterprise-grade technology foundation',
-      subheading: 'Solunai teams up with world-class technology partners',
+      subheading: 'Solunai leverages industry-standard technology',
       partners: [
         {
-          id: 'nvidia',
-          logo: '/images/partners/nvidia.png',
-          name: 'NVIDIA Omniverse',
+          id: 'digital-twin',
+          name: 'Digital Twin',
+          icon: '🏭',
           features: [
             'Photorealistic Digital Twin Visualization',
             'Real-time physics simulation',
@@ -71,9 +70,9 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
           ]
         },
         {
-          id: 'ansys',
-          logo: '/images/partners/ansys.png',
-          name: 'ANSYS Twin Builder',
+          id: 'simulation',
+          name: 'Physics Simulation',
+          icon: '⚙️',
           features: [
             'CFD thermal analysis, FEA structural analysis',
             'Highly accurate performance prediction',
@@ -81,9 +80,9 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
           ]
         },
         {
-          id: 'microsoft',
-          logo: '/images/partners/microsoft.png',
-          name: 'Microsoft Azure',
+          id: 'cloud',
+          name: 'Cloud Infrastructure',
+          icon: '☁️',
           features: [
             'Enterprise-grade cloud infrastructure',
             '99.9% uptime guarantee',
@@ -91,13 +90,13 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
           ]
         },
         {
-          id: 'anthropic',
-          logo: '/images/partners/anthropic.png',
-          name: 'Claude AI (Anthropic)',
+          id: 'ai',
+          name: 'AI Engine',
+          icon: '🤖',
           features: [
-            'Cutting-edge natural language processing',
+            'Advanced natural language processing',
             'Multimodal AI Capabilities',
-            'Safety and reliability are key'
+            'Safety and reliability focused'
           ]
         }
       ]
@@ -116,13 +115,7 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
           {t.partners.map((partner) => (
             <div key={partner.id} className="partner-card">
               <div className="partner-logo">
-                <Image
-                  src={partner.logo}
-                  alt={partner.name}
-                  width={180}
-                  height={60}
-                  style={{ objectFit: 'contain' }}
-                />
+                <span className="partner-icon">{partner.icon}</span>
               </div>
               <h3 className="partner-name">{partner.name}</h3>
               <ul className="partner-features">

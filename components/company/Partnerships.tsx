@@ -35,22 +35,22 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
       },
 
       technology: {
-        title: 'テクノロジーパートナー',
+        title: '技術基盤',
         partners: [
           {
-            name: 'NVIDIA',
-            product: 'Omniverse',
+            name: 'デジタルツイン',
+            product: '3D可視化',
             capabilities: [
               'フォトリアルなデジタルツイン可視化',
               'リアルタイム物理シミュレーション',
               'GPUアクセラレーション計算',
               'マルチユーザーコラボレーション'
             ],
-            icon: '🎮'
+            icon: '🏭'
           },
           {
-            name: 'ANSYS',
-            product: 'Twin Builder',
+            name: '物理シミュレーション',
+            product: 'CFD/FEA解析',
             capabilities: [
               'CFD熱解析・FEA構造解析',
               '高精度な性能予測',
@@ -60,8 +60,8 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
             icon: '⚙️'
           },
           {
-            name: 'Microsoft',
-            product: 'Azure',
+            name: 'クラウドインフラ',
+            product: 'エンタープライズグレード',
             capabilities: [
               'エンタープライズグレードクラウド基盤',
               '99.9%稼働率保証',
@@ -71,8 +71,8 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
             icon: '☁️'
           },
           {
-            name: 'Anthropic',
-            product: 'Claude AI',
+            name: 'AIエンジン',
+            product: '自然言語処理',
             capabilities: [
               '最先端の自然言語処理',
               'マルチモーダルAI能力',
@@ -127,22 +127,22 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
       },
 
       technology: {
-        title: 'Technology Partners',
+        title: 'Technology Foundation',
         partners: [
           {
-            name: 'NVIDIA',
-            product: 'Omniverse',
+            name: 'Digital Twin',
+            product: '3D Visualization',
             capabilities: [
               'Photorealistic digital twin visualization',
               'Real-time physics simulation',
               'GPU-accelerated computing',
               'Multi-user collaboration'
             ],
-            icon: '🎮'
+            icon: '🏭'
           },
           {
-            name: 'ANSYS',
-            product: 'Twin Builder',
+            name: 'Physics Simulation',
+            product: 'CFD/FEA Analysis',
             capabilities: [
               'CFD thermal & FEA structural analysis',
               'High-precision performance prediction',
@@ -152,8 +152,8 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
             icon: '⚙️'
           },
           {
-            name: 'Microsoft',
-            product: 'Azure',
+            name: 'Cloud Infrastructure',
+            product: 'Enterprise-Grade',
             capabilities: [
               'Enterprise-grade cloud infrastructure',
               '99.9% uptime SLA',
@@ -163,8 +163,8 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
             icon: '☁️'
           },
           {
-            name: 'Anthropic',
-            product: 'Claude AI',
+            name: 'AI Engine',
+            product: 'Natural Language Processing',
             capabilities: [
               'State-of-the-art natural language processing',
               'Multimodal AI capabilities',

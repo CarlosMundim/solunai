@@ -29,7 +29,7 @@ const SolutionsFAQ: React.FC<SolutionsFAQProps> = ({ lang }) => {
         },
         {
           question: 'データセキュリティとプライバシーはどのように保護されますか？',
-          answer: 'エンタープライズグレードのセキュリティを提供します。ISO 27001認証、SOC 2準拠、GDPR準拠のクラウド基盤（Microsoft Azure）を使用。データは日本国内データセンターに保存可能で、暗号化、アクセス制御、定期的なセキュリティ監査を実施しています。'
+          answer: 'エンタープライズグレードのセキュリティを提供します。ISO 27001認証、SOC 2準拠、GDPR準拠のクラウド基盤を使用。データは日本国内データセンターに保存可能で、暗号化、アクセス制御、定期的なセキュリティ監査を実施しています。'
         },
         {
           question: '支払い条件はどのようになりますか？',
@@ -51,7 +51,7 @@ const SolutionsFAQ: React.FC<SolutionsFAQProps> = ({ lang }) => {
         },
         {
           question: 'Can you integrate with our existing ERP system?',
-          answer: 'Yes, we integrate with most major ERP systems including SAP, Oracle, Microsoft Dynamics, and Japanese ERPs (Kaikei Bugyou, Yayoi, etc.). We use API integration or direct database connections for seamless integration with your existing systems.'
+          answer: 'Yes, we integrate with most major ERP systems including SAP, Oracle, Microsoft Dynamics, and Japanese ERPs (Kaikei Bugyou, Yayoi, etc.). We use API integration or direct database connections to work with your existing systems.'
         },
         {
           question: 'How is engineering support provided?',
@@ -59,7 +59,7 @@ const SolutionsFAQ: React.FC<SolutionsFAQProps> = ({ lang }) => {
         },
         {
           question: 'How is data security and privacy protected?',
-          answer: 'We provide enterprise-grade security: ISO 27001 certified, SOC 2 compliant, GDPR compliant cloud infrastructure (Microsoft Azure). Data can be stored in Japanese data centers with encryption, access controls, and regular security audits.'
+          answer: 'We provide enterprise-grade security: ISO 27001 certified, SOC 2 compliant, GDPR compliant cloud infrastructure. Data can be stored in Japanese data centers with encryption, access controls, and regular security audits.'
         },
         {
           question: 'What are the payment terms?',

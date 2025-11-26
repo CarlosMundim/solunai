@@ -75,7 +75,7 @@ const AlternativeContacts: React.FC<AlternativeContactsProps> = ({ lang }) => {
       title: text.media.title,
       email: text.media.email,
       description: text.media.description,
-      color: 'from-purple-500 to-purple-700'
+      color: 'from-orange-500 to-orange-700'
     },
     {
       icon: (

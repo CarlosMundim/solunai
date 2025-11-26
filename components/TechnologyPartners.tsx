@@ -10,30 +10,17 @@ interface TechnologyPartnersProps {
 const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
   const content = {
     ja: {
-      title: 'グローバル技術パートナーシップ',
-      subtitle: '世界トップクラスの技術パートナーと連携し、最先端のAIソリューションを提供',
-      partners: [
-        {
-          name: 'NVIDIA',
-          description: 'Omniverseデジタルツイン技術',
-          logo: '/images/partners/nvidia.png'
-        },
-        {
-          name: 'Microsoft Azure',
-          description: 'クラウドインフラとAIサービス',
-          logo: '/images/partners/microsoft.png'
-        },
-        {
-          name: 'ANSYS',
-          description: 'シミュレーション・解析技術',
-          logo: '/images/partners/ansys.png'
-        },
-        {
-          name: 'Anthropic',
-          description: 'Claude AI - 高度な分析と最適化',
-          logo: '/images/partners/anthropic.png'
-        }
-      ],
+      title: 'パートナーシップ & テクノロジー',
+      subtitle: '信頼できるパートナーと最先端技術で、製造業のデジタル変革を実現',
+      techStack: {
+        title: '採用技術',
+        items: [
+          { name: 'デジタルツイン', description: '高精度3Dシミュレーション・可視化' },
+          { name: 'クラウドインフラ', description: 'エンタープライズグレードの可用性とセキュリティ' },
+          { name: 'AIアナリティクス', description: '予測保全と最適化アルゴリズム' },
+          { name: 'IoT統合', description: 'リアルタイムデータ収集と監視' }
+        ]
+      },
       worldemp: {
         title: 'WorldEmp グローバルエンジニアリング',
         description: 'オランダ・インド・日本を拠点に、機械学習・自動化・ビジョン専門家を2-6週間で配備（従来の4-6ヶ月から大幅短縮）',
@@ -41,34 +28,21 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
       }
     },
     en: {
-      title: 'Global Technology Partnerships',
-      subtitle: 'Delivering cutting-edge AI solutions through collaboration with world-class technology partners',
-      partners: [
-        {
-          name: 'NVIDIA',
-          description: 'Omniverse Digital Twin Technology',
-          logo: '/images/partners/nvidia.png'
-        },
-        {
-          name: 'Microsoft Azure',
-          description: 'Cloud Infrastructure & AI Services',
-          logo: '/images/partners/microsoft.png'
-        },
-        {
-          name: 'ANSYS',
-          description: 'Simulation & Analysis Technology',
-          logo: '/images/partners/ansys.png'
-        },
-        {
-          name: 'Anthropic',
-          description: 'Claude AI - Advanced Analytics & Optimization',
-          logo: '/images/partners/anthropic.png'
-        }
-      ],
+      title: 'Partnerships & Technology',
+      subtitle: 'Industrial technology and proven global partnerships',
+      techStack: {
+        title: 'Technology Stack',
+        items: [
+          { name: 'Digital Twin', description: 'High-precision 3D simulation and visualization' },
+          { name: 'Cloud Infrastructure', description: 'Enterprise-grade availability and security' },
+          { name: 'AI Analytics', description: 'Predictive maintenance and optimization algorithms' },
+          { name: 'IoT Integration', description: 'Real-time data collection and monitoring' }
+        ]
+      },
       worldemp: {
         title: 'WorldEmp Global Engineering',
         description: 'Deploy ML, automation, and vision specialists in 2-6 weeks (vs. 4-6 months traditional) from Netherlands, India, and Japan bases',
-        ctaButton: 'Visit Us'
+        ctaButton: 'Learn More'
       }
     }
   };
@@ -76,26 +50,29 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
   const currentContent = content[lang];
 
   return (
-    <section className="technology-partners-section" aria-label={lang === 'ja' ? '技術パートナー' : 'Technology Partners'}>
+    <section className="technology-partners-section" aria-label={lang === 'ja' ? 'パートナーシップ' : 'Partnerships'}>
       <div className="technology-partners-container">
         <h2 className="partners-title">{currentContent.title}</h2>
         <p className="partners-subtitle">{currentContent.subtitle}</p>
 
-        <div className="partners-grid">
-          {currentContent.partners.map((partner, index) => (
-            <div
-              key={index}
-              className="partner-card"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="partner-logo-container">
-                <img src={partner.logo} alt={partner.name} className="partner-logo" />
+        {/* Technology Stack - Text only, no unauthorized logos */}
+        <div className="tech-stack-section">
+          <h3 className="tech-stack-title">{currentContent.techStack.title}</h3>
+          <div className="partners-grid">
+            {currentContent.techStack.items.map((item, index) => (
+              <div
+                key={index}
+                className="partner-card"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <h4 className="tech-item-name">{item.name}</h4>
+                <p className="partner-description">{item.description}</p>
               </div>
-              <p className="partner-description">{partner.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
+        {/* WorldEmp - Authorized partnership */}
         <div className="worldemp-section">
           <div className="worldemp-logo-container">
             <img
