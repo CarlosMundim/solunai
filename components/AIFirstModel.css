@@ -129,11 +129,11 @@ html[lang="ja"] .section-description {
 }
 
 .comparison-card.traditional .metric-label {
-  color: var(--forge-black);
+  color: var(--precision-white);
 }
 
 .comparison-card.traditional .metric-value {
-  color: var(--forge-black);
+  color: var(--precision-white);
   font-weight: 700;
 }
 
@@ -182,11 +182,11 @@ html[lang="ja"] .section-description {
 }
 
 .comparison-card.solunai .metric-label {
-  color: var(--forge-black);
+  color: var(--precision-white);
 }
 
 .comparison-card.solunai .metric-value {
-  color: var(--forge-black);
+  color: var(--precision-white);
   font-weight: 700;
 }
 

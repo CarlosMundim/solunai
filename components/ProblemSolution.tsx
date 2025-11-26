@@ -10,6 +10,7 @@ interface ProblemSolutionProps {
 const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
   const content = {
     ja: {
+      problemBadge: 'CHALLENGES',
       problemTitle: '製造業の課題',
       problemSubtitle: '直面する4つの危機',
       problemPoints: [
@@ -31,6 +32,7 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
         }
       ],
       problemConclusion: '従来の方法では競争力を維持できない',
+      solutionBadge: 'SOLUTIONS',
       solutionTitle: 'Solunaiの解決策',
       solutionSubtitle: 'AI + グローバル人材 = 製造業DX',
       solutionPoints: [
@@ -54,7 +56,8 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
       solutionConclusion: '日本製造業の競争力を取り戻す'
     },
     en: {
-      problemTitle: 'Challenges in the manufacturing industry',
+      problemBadge: 'CHALLENGES',
+      problemTitle: 'Manufacturing Challenges',
       problemSubtitle: 'Four crises we face',
       problemPoints: [
         {
@@ -62,7 +65,7 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
           detail: 'Labor shortage of 11 million people by 2040'
         },
         {
-          title: 'Quality problem',
+          title: 'Quality problems',
           detail: 'Defective products and inspection delays caused by human error'
         },
         {
@@ -75,7 +78,8 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
         }
       ],
       problemConclusion: 'Traditional methods cannot remain competitive',
-      solutionTitle: "Solunai's solution",
+      solutionBadge: 'SOLUTIONS',
+      solutionTitle: "Solunai's Solution",
       solutionSubtitle: 'AI + Global Talent = Manufacturing DX',
       solutionPoints: [
         {
@@ -108,13 +112,14 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
       aria-label={lang === 'ja' ? '課題と解決策' : 'Problem and Solution'}
     >
       <div className="problem-solution-container">
-        {/* Problem Side */}
-        <div className="problem-side">
-          <div className="side-content">
-            <h2 className="side-title">{currentContent.problemTitle}</h2>
-            <h3 className="side-subtitle">{currentContent.problemSubtitle}</h3>
+        {/* Problem Card */}
+        <div className="problem-card">
+          <div className="card-content">
+            <span className="card-badge">{currentContent.problemBadge}</span>
+            <h2 className="card-title">{currentContent.problemTitle}</h2>
+            <h3 className="card-subtitle">{currentContent.problemSubtitle}</h3>
 
-            <ul className="problem-list" role="list">
+            <ul className="points-list" role="list">
               {currentContent.problemPoints.map((point, index) => (
                 <li key={index}>
                   <span className="point-marker" aria-hidden="true"></span>
@@ -127,35 +132,34 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
             </ul>
 
             <div className="conclusion problem-conclusion">
-              <strong>{currentContent.problemConclusion}</strong>
+              {currentContent.problemConclusion}
             </div>
           </div>
         </div>
 
-        {/* Solution Side */}
-        <div className="solution-side">
-          <div className="side-content">
-            <h2 className="side-title">{currentContent.solutionTitle}</h2>
-            <h3 className="side-subtitle solution-subtitle">
+        {/* Solution Card */}
+        <div className="solution-card-ps">
+          <div className="card-content">
+            <span className="card-badge">{currentContent.solutionBadge}</span>
+            <h2 className="card-title">{currentContent.solutionTitle}</h2>
+            <h3 className="card-subtitle">
               {currentContent.solutionSubtitle}
             </h3>
 
-            <ul className="solution-list" role="list">
+            <ul className="points-list" role="list">
               {currentContent.solutionPoints.map((point, index) => (
                 <li key={index}>
-                  <div className="solution-point">
-                    <span className="check-marker" aria-hidden="true"></span>
-                    <div className="solution-text">
-                      <strong>{point.title}</strong>
-                      <p className="solution-detail">{point.detail}</p>
-                    </div>
+                  <span className="check-marker" aria-hidden="true">+</span>
+                  <div className="point-content">
+                    <strong>{point.title}</strong>
+                    <p className="point-detail">{point.detail}</p>
                   </div>
                 </li>
               ))}
             </ul>
 
             <div className="conclusion solution-conclusion">
-              <strong>{currentContent.solutionConclusion}</strong>
+              {currentContent.solutionConclusion}
             </div>
           </div>
         </div>
