@@ -78,11 +78,45 @@
   margin-bottom: 24px;
 }
 
-.point-icon {
-  font-size: 28px;
-  line-height: 1;
+/* Problem side bullet marker */
+.point-marker {
+  width: 8px;
+  height: 8px;
+  background: #FF5722;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+/* Solution side checkmark marker */
+.check-marker {
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
   margin-top: 2px;
+  position: relative;
+}
+
+.check-marker::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  width: 5px;
+  height: 2px;
+  background: #FF5722;
+  transform: rotate(45deg);
+}
+
+.check-marker::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 5px;
+  width: 10px;
+  height: 2px;
+  background: #FF5722;
+  transform: rotate(-45deg);
 }
 
 .point-content {
@@ -227,8 +261,10 @@
     font-size: 14px;
   }
 
-  .point-icon {
-    font-size: 24px;
+  .point-marker {
+    width: 6px;
+    height: 6px;
+    margin-top: 6px;
   }
 
   .conclusion {
@@ -256,7 +292,8 @@
     font-size: 17px;
   }
 
-  .point-icon {
-    font-size: 22px;
+  .point-marker {
+    width: 6px;
+    height: 6px;
   }
 }

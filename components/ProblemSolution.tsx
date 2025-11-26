@@ -14,22 +14,18 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
       problemSubtitle: '直面する4つの危機',
       problemPoints: [
         {
-          icon: '👥',
           title: '人手不足',
           detail: '2040年までに1,100万人の労働力不足'
         },
         {
-          icon: '⚠️',
           title: '品質問題',
           detail: '人的エラーによる不良品発生と検査遅延'
         },
         {
-          icon: '🔧',
           title: '設備故障',
           detail: '予期せぬダウンタイムによる生産損失'
         },
         {
-          icon: '💸',
           title: 'コスト上昇',
           detail: '人件費と運営コストの継続的増加'
         }
@@ -39,22 +35,18 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
       solutionSubtitle: 'AI + グローバル人材 = 製造業DX',
       solutionPoints: [
         {
-          icon: '🤖',
           title: 'AIによる自動化',
           detail: '24時間稼働、人手不足を解消'
         },
         {
-          icon: '✓',
           title: '95%+ 欠陥検出',
           detail: 'コンピュータビジョンで高精度品質管理'
         },
         {
-          icon: '📊',
           title: '予知保全',
           detail: 'AI故障予測で計画的メンテナンス'
         },
         {
-          icon: '📈',
           title: '30%コスト削減',
           detail: '実証済み：運営コスト30-50%削減'
         }
@@ -62,56 +54,48 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
       solutionConclusion: '日本製造業の競争力を取り戻す'
     },
     en: {
-      problemTitle: 'Manufacturing Challenges',
-      problemSubtitle: '4 Critical Issues',
+      problemTitle: 'Challenges in the manufacturing industry',
+      problemSubtitle: 'Four crises we face',
       problemPoints: [
         {
-          icon: '👥',
-          title: 'Labor Shortage',
-          detail: '11 million worker shortage by 2040'
+          title: 'Labor shortage',
+          detail: 'Labor shortage of 11 million people by 2040'
         },
         {
-          icon: '⚠️',
-          title: 'Quality Issues',
-          detail: 'Defects from human error and slow inspection'
+          title: 'Quality problem',
+          detail: 'Defective products and inspection delays caused by human error'
         },
         {
-          icon: '🔧',
-          title: 'Equipment Downtime',
-          detail: 'Unexpected failures causing production losses'
+          title: 'Equipment failure',
+          detail: 'Lost production due to unplanned downtime'
         },
         {
-          icon: '💸',
-          title: 'Rising Costs',
-          detail: 'Continuous increase in labor and operations'
+          title: 'Rising costs',
+          detail: 'Continued increases in labor and operating costs'
         }
       ],
-      problemConclusion: 'Traditional methods cannot maintain competitiveness',
-      solutionTitle: 'Solunai Solutions',
+      problemConclusion: 'Traditional methods cannot remain competitive',
+      solutionTitle: "Solunai's solution",
       solutionSubtitle: 'AI + Global Talent = Manufacturing DX',
       solutionPoints: [
         {
-          icon: '🤖',
-          title: 'AI Automation',
-          detail: '24/7 operations, solving labor shortage'
+          title: 'AI automation',
+          detail: '24 hour operation eliminates labor shortages'
         },
         {
-          icon: '✓',
-          title: '95%+ Defect Detection',
-          detail: 'Computer vision for high-precision quality control'
+          title: '95%+ defect detection',
+          detail: 'High precision quality control with computer vision'
         },
         {
-          icon: '📊',
           title: 'Predictive Maintenance',
-          detail: 'AI-powered failure prediction and planning'
+          detail: 'Planned maintenance with AI failure prediction'
         },
         {
-          icon: '📈',
-          title: '30% Cost Reduction',
-          detail: 'Proven: 30-50% operational cost savings'
+          title: '30% cost reduction',
+          detail: 'Proven: Reduce operational costs by 30-50%'
         }
       ],
-      solutionConclusion: 'Restoring competitiveness to Japanese manufacturing'
+      solutionConclusion: 'Restoring the competitiveness of Japanese manufacturing'
     }
   };
 
@@ -133,7 +117,7 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
             <ul className="problem-list" role="list">
               {currentContent.problemPoints.map((point, index) => (
                 <li key={index}>
-                  <span className="point-icon" aria-hidden="true">{point.icon}</span>
+                  <span className="point-marker" aria-hidden="true"></span>
                   <div className="point-content">
                     <strong>{point.title}</strong>
                     <p className="point-detail">{point.detail}</p>
@@ -160,7 +144,7 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
               {currentContent.solutionPoints.map((point, index) => (
                 <li key={index}>
                   <div className="solution-point">
-                    <span className="point-icon" aria-hidden="true">{point.icon}</span>
+                    <span className="check-marker" aria-hidden="true"></span>
                     <div className="solution-text">
                       <strong>{point.title}</strong>
                       <p className="solution-detail">{point.detail}</p>
