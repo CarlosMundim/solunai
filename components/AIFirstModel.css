@@ -142,16 +142,16 @@ html[lang="ja"] .section-description {
 }
 
 .comparison-card.traditional .metric-row {
-  background: var(--precision-white);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .comparison-card.traditional .metric-row .metric-label {
-  color: var(--steel-blue);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .comparison-card.traditional .metric-row .metric-value {
-  color: var(--forge-black);
+  color: #ffffff;
 }
 
 .comparison-card.solunai {
@@ -191,21 +191,21 @@ html[lang="ja"] .section-description {
 }
 
 .comparison-card.solunai .metric-row {
-  background: var(--precision-white);
-  border: 1px solid var(--border-orange-subtle);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .comparison-card.solunai .metric-row .metric-label {
-  color: var(--steel-blue);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .comparison-card.solunai .metric-row .metric-value {
-  color: var(--forge-black);
+  color: #ffffff;
 }
 
 .comparison-card.solunai .metric-row.highlight {
-  background: var(--precision-white);
-  border: 1px solid var(--border-orange-glow);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .comparison-header {
