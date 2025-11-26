@@ -187,13 +187,13 @@ html[lang="ja"] .point-detail {
 
 .problem-conclusion {
   background: rgba(245, 72, 10, 0.08);
-  border-left: 3px solid var(--solunai-blaze);
+  border: 2px solid var(--solunai-blaze);
   color: var(--sumi-black);
 }
 
 .solution-conclusion {
   background: rgba(5, 150, 105, 0.08);
-  border-left: 3px solid var(--success);
+  border: 2px solid var(--success);
   color: var(--sumi-black);
 }
 
