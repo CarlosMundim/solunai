@@ -2,11 +2,18 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { FileText, MessageSquare, Mail } from 'lucide-react';
 import './CompanyCTA.css';
 
 interface CompanyCTAProps {
   lang: 'ja' | 'en';
 }
+
+const ctaIcons = {
+  download: FileText,
+  consult: MessageSquare,
+  contact: Mail,
+};
 
 const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
   const content = {
@@ -20,7 +27,7 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
           description: '会社概要・サービス資料をダウンロード',
           buttonText: '資料をダウンロード',
           buttonLink: '#download',
-          icon: '📄',
+          iconKey: 'download',
           type: 'secondary'
         },
         {
@@ -28,7 +35,7 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
           description: 'デジタルツイン導入のご相談を承ります',
           buttonText: '相談を申し込む',
           buttonLink: '#contact',
-          icon: '💬',
+          iconKey: 'consult',
           type: 'primary'
         },
         {
@@ -36,7 +43,7 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
           description: '製品・サービスに関するご質問',
           buttonText: 'お問い合わせフォーム',
           buttonLink: '#contact',
-          icon: '✉️',
+          iconKey: 'contact',
           type: 'secondary'
         }
       ],
@@ -74,7 +81,7 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
           description: 'Company profile & service brochures',
           buttonText: 'Download Materials',
           buttonLink: '#download',
-          icon: '📄',
+          iconKey: 'download',
           type: 'secondary'
         },
         {
@@ -82,7 +89,7 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
           description: 'Discuss digital twin implementation',
           buttonText: 'Request Consultation',
           buttonLink: '#contact',
-          icon: '💬',
+          iconKey: 'consult',
           type: 'primary'
         },
         {
@@ -90,7 +97,7 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
           description: 'Questions about our products & services',
           buttonText: 'Contact Form',
           buttonLink: '#contact',
-          icon: '✉️',
+          iconKey: 'contact',
           type: 'secondary'
         }
       ],
@@ -130,16 +137,21 @@ const CompanyCTA: React.FC<CompanyCTAProps> = ({ lang }) => {
         </div>
 
         <div className="cta-actions">
-          {current.actions.map((action, index) => (
-            <div key={index} className={`cta-card ${action.type}`}>
-              <div className="cta-icon">{action.icon}</div>
-              <h3>{action.title}</h3>
-              <p>{action.description}</p>
-              <a href={action.buttonLink} className={`cta-button ${action.type}`}>
-                {action.buttonText}
-              </a>
-            </div>
-          ))}
+          {current.actions.map((action, index) => {
+            const IconComponent = ctaIcons[action.iconKey as keyof typeof ctaIcons];
+            return (
+              <div key={index} className={`cta-card ${action.type}`}>
+                <div className="cta-icon">
+                  <IconComponent size={32} strokeWidth={1.5} />
+                </div>
+                <h3>{action.title}</h3>
+                <p>{action.description}</p>
+                <a href={action.buttonLink} className={`cta-button ${action.type}`}>
+                  {action.buttonText}
+                </a>
+              </div>
+            );
+          })}
         </div>
 
         <div className="trust-section">
