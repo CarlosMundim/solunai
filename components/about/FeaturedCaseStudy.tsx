@@ -2,11 +2,19 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { Clock, ShieldCheck, Calendar, DollarSign } from 'lucide-react';
 import './FeaturedCaseStudy.css';
 
 interface FeaturedCaseStudyProps {
   lang: 'ja' | 'en';
 }
+
+const metricIcons = {
+  downtime: Clock,
+  defect: ShieldCheck,
+  period: Calendar,
+  value: DollarSign,
+};
 
 const FeaturedCaseStudy: React.FC<FeaturedCaseStudyProps> = ({ lang }) => {
   const content = {
@@ -27,10 +35,10 @@ const FeaturedCaseStudy: React.FC<FeaturedCaseStudyProps> = ({ lang }) => {
       results: {
         title: '結果',
         metrics: [
-          { label: 'ダウンタイム削減', value: '55%', icon: '◆' },
-          { label: '不良品削減', value: '40%', icon: '◆' },
-          { label: '契約期間', value: '36ヶ月', icon: '◆' },
-          { label: '契約価値', value: '¥84M', icon: '◆' },
+          { label: 'ダウンタイム削減', value: '55%', iconKey: 'downtime' },
+          { label: '不良品削減', value: '40%', iconKey: 'defect' },
+          { label: '契約期間', value: '36ヶ月', iconKey: 'period' },
+          { label: '契約価値', value: '¥84M', iconKey: 'value' },
         ],
       },
       technologies: {
@@ -55,10 +63,10 @@ const FeaturedCaseStudy: React.FC<FeaturedCaseStudyProps> = ({ lang }) => {
       results: {
         title: 'Results Achieved',
         metrics: [
-          { label: 'Downtime Reduction', value: '55%', icon: '◆' },
-          { label: 'Defect Reduction', value: '40%', icon: '◆' },
-          { label: 'Contract Period', value: '36 months', icon: '◆' },
-          { label: 'Contract Value', value: '¥84M', icon: '◆' },
+          { label: 'Downtime Reduction', value: '55%', iconKey: 'downtime' },
+          { label: 'Defect Reduction', value: '40%', iconKey: 'defect' },
+          { label: 'Contract Period', value: '36 months', iconKey: 'period' },
+          { label: 'Contract Value', value: '¥84M', iconKey: 'value' },
         ],
       },
       technologies: {
@@ -108,13 +116,18 @@ const FeaturedCaseStudy: React.FC<FeaturedCaseStudyProps> = ({ lang }) => {
           <div className="content-section results">
             <h3 className="section-title">{text.results.title}</h3>
             <div className="results-grid">
-              {text.results.metrics.map((metric, index) => (
-                <div key={index} className="result-card">
-                  <div className="result-icon">{metric.icon}</div>
-                  <div className="result-value">{metric.value}</div>
-                  <div className="result-label">{metric.label}</div>
-                </div>
-              ))}
+              {text.results.metrics.map((metric, index) => {
+                const IconComponent = metricIcons[metric.iconKey as keyof typeof metricIcons];
+                return (
+                  <div key={index} className="result-card">
+                    <div className="result-icon">
+                      <IconComponent size={24} strokeWidth={1.5} />
+                    </div>
+                    <div className="result-value">{metric.value}</div>
+                    <div className="result-label">{metric.label}</div>
+                  </div>
+                );
+              })}
             </div>
           </div>
 

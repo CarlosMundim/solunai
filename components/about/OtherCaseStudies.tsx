@@ -1,11 +1,17 @@
 'use client';
 
 import React from 'react';
+import { Factory, Users, Check } from 'lucide-react';
 import './OtherCaseStudies.css';
 
 interface OtherCaseStudiesProps {
   lang: 'ja' | 'en';
 }
+
+const caseIcons = {
+  manufacturing: Factory,
+  talent: Users,
+};
 
 const OtherCaseStudies: React.FC<OtherCaseStudiesProps> = ({ lang }) => {
   const content = {
@@ -23,7 +29,7 @@ const OtherCaseStudies: React.FC<OtherCaseStudiesProps> = ({ lang }) => {
             '契約期間: 36ヶ月',
           ],
           value: '¥58M',
-          icon: '◆',
+          iconKey: 'manufacturing',
         },
         {
           client: 'WorldEmp K.K.',
@@ -36,7 +42,7 @@ const OtherCaseStudies: React.FC<OtherCaseStudiesProps> = ({ lang }) => {
             '契約期間: 36ヶ月',
           ],
           value: '¥65M',
-          icon: '◆',
+          iconKey: 'talent',
         },
       ],
       readMore: '詳細を見る',
@@ -55,7 +61,7 @@ const OtherCaseStudies: React.FC<OtherCaseStudiesProps> = ({ lang }) => {
             'Contract period: 36 months',
           ],
           value: '¥58M',
-          icon: '◆',
+          iconKey: 'manufacturing',
         },
         {
           client: 'WorldEmp K.K.',
@@ -68,7 +74,7 @@ const OtherCaseStudies: React.FC<OtherCaseStudiesProps> = ({ lang }) => {
             'Contract period: 36 months',
           ],
           value: '¥65M',
-          icon: '◆',
+          iconKey: 'talent',
         },
       ],
       readMore: 'Read More',
@@ -83,46 +89,51 @@ const OtherCaseStudies: React.FC<OtherCaseStudiesProps> = ({ lang }) => {
         <h2 className="other-case-studies-title">{text.title}</h2>
 
         <div className="case-studies-grid">
-          {text.caseStudies.map((caseStudy, index) => (
-            <div key={index} className="case-study-card">
-              <div className="case-study-icon">{caseStudy.icon}</div>
+          {text.caseStudies.map((caseStudy, index) => {
+            const IconComponent = caseIcons[caseStudy.iconKey as keyof typeof caseIcons];
+            return (
+              <div key={index} className="case-study-card">
+                <div className="case-study-icon">
+                  <IconComponent size={32} strokeWidth={1.5} />
+                </div>
 
-              <div className="case-study-header-info">
-                <h3 className="case-study-client">{caseStudy.client}</h3>
-                <p className="case-study-industry">{caseStudy.industry}</p>
-                <p className="case-study-value">{caseStudy.value}</p>
+                <div className="case-study-header-info">
+                  <h3 className="case-study-client">{caseStudy.client}</h3>
+                  <p className="case-study-industry">{caseStudy.industry}</p>
+                  <p className="case-study-value">{caseStudy.value}</p>
+                </div>
+
+                <div className="case-study-details">
+                  <div className="detail-section">
+                    <h4 className="detail-title">
+                      {lang === 'ja' ? '課題' : 'Challenge'}
+                    </h4>
+                    <p className="detail-text">{caseStudy.challenge}</p>
+                  </div>
+
+                  <div className="detail-section">
+                    <h4 className="detail-title">
+                      {lang === 'ja' ? 'ソリューション' : 'Solution'}
+                    </h4>
+                    <p className="detail-text">{caseStudy.solution}</p>
+                  </div>
+
+                  <div className="detail-section">
+                    <h4 className="detail-title">
+                      {lang === 'ja' ? '結果' : 'Results'}
+                    </h4>
+                    <ul className="results-list">
+                      {caseStudy.results.map((result, rIndex) => (
+                        <li key={rIndex} className="result-item">
+                          <Check size={16} strokeWidth={2} className="result-bullet" /> {result}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
-
-              <div className="case-study-details">
-                <div className="detail-section">
-                  <h4 className="detail-title">
-                    {lang === 'ja' ? '課題' : 'Challenge'}
-                  </h4>
-                  <p className="detail-text">{caseStudy.challenge}</p>
-                </div>
-
-                <div className="detail-section">
-                  <h4 className="detail-title">
-                    {lang === 'ja' ? 'ソリューション' : 'Solution'}
-                  </h4>
-                  <p className="detail-text">{caseStudy.solution}</p>
-                </div>
-
-                <div className="detail-section">
-                  <h4 className="detail-title">
-                    {lang === 'ja' ? '結果' : 'Results'}
-                  </h4>
-                  <ul className="results-list">
-                    {caseStudy.results.map((result, rIndex) => (
-                      <li key={rIndex} className="result-item">
-                        <span className="result-bullet">✓</span> {result}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
