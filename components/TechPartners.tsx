@@ -1,7 +1,15 @@
 'use client';
 
 import React from 'react';
+import { Factory, Cog, Cloud, Bot, Check } from 'lucide-react';
 import './TechPartners.css';
+
+const techIcons = {
+  digitaltwin: Factory,
+  simulation: Cog,
+  cloud: Cloud,
+  ai: Bot,
+};
 
 interface TechPartnersProps {
   lang: 'ja' | 'en';
@@ -15,7 +23,7 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
       techStack: [
         {
           name: 'デジタルツイン',
-          icon: '🏭',
+          iconKey: 'digitaltwin',
           features: [
             'フォトリアルな3D可視化',
             'リアルタイム物理シミュレーション',
@@ -24,7 +32,7 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
         },
         {
           name: 'シミュレーション解析',
-          icon: '⚙️',
+          iconKey: 'simulation',
           features: [
             'CFD熱解析、FEA構造解析',
             'マルチフィジックスシミュレーション',
@@ -33,7 +41,7 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
         },
         {
           name: 'クラウドインフラ',
-          icon: '☁️',
+          iconKey: 'cloud',
           features: [
             'エンタープライズグレードの基盤',
             '99.9%稼働率',
@@ -42,7 +50,7 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
         },
         {
           name: 'AIアナリティクス',
-          icon: '🤖',
+          iconKey: 'ai',
           features: [
             '予測保全アルゴリズム',
             '品質管理自動化',
@@ -53,9 +61,9 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
       reliability: {
         title: '実証済みの信頼性',
         metrics: [
-          '✓ FBM Hudson: €2.5M-€3.8M プロジェクト',
-          '✓ 24/7稼働',
-          '✓ エンタープライズサポート'
+          'FBM Hudson: €2.5M-€3.8M プロジェクト',
+          '24/7稼働',
+          'エンタープライズサポート'
         ]
       }
     },
@@ -65,7 +73,7 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
       techStack: [
         {
           name: 'Digital Twin',
-          icon: '🏭',
+          iconKey: 'digitaltwin',
           features: [
             'Photorealistic 3D visualization',
             'Real-time physics simulation',
@@ -74,7 +82,7 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
         },
         {
           name: 'Simulation & Analysis',
-          icon: '⚙️',
+          iconKey: 'simulation',
           features: [
             'CFD thermal & FEA structural analysis',
             'Multi-physics simulation',
@@ -83,7 +91,7 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
         },
         {
           name: 'Cloud Infrastructure',
-          icon: '☁️',
+          iconKey: 'cloud',
           features: [
             'Enterprise-grade foundation',
             '99.9% uptime',
@@ -92,7 +100,7 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
         },
         {
           name: 'AI Analytics',
-          icon: '🤖',
+          iconKey: 'ai',
           features: [
             'Predictive maintenance algorithms',
             'Quality control automation',
@@ -103,9 +111,9 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
       reliability: {
         title: 'Proven Reliability',
         metrics: [
-          '✓ FBM Hudson: €2.5M-€3.8M project',
-          '✓ 24/7 operations',
-          '✓ Enterprise support'
+          'FBM Hudson: €2.5M-€3.8M project',
+          '24/7 operations',
+          'Enterprise support'
         ]
       }
     }
@@ -122,10 +130,14 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
         </div>
 
         <div className="partners-grid">
-          {currentContent.techStack.map((tech, index) => (
+          {currentContent.techStack.map((tech, index) => {
+            const IconComponent = techIcons[tech.iconKey as keyof typeof techIcons];
+            return (
             <div key={index} className="partner-card">
               <div className="partner-logo">
-                <span className="logo-icon">{tech.icon}</span>
+                <span className="logo-icon">
+                  <IconComponent size={32} strokeWidth={1.5} />
+                </span>
               </div>
               <h3 className="partner-name">{tech.name}</h3>
               <ul className="partner-features">
@@ -134,7 +146,8 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
                 ))}
               </ul>
             </div>
-          ))}
+          );
+          })}
         </div>
 
         <div className="reliability-badge">
@@ -142,6 +155,7 @@ const TechPartners: React.FC<TechPartnersProps> = ({ lang }) => {
           <div className="reliability-metrics">
             {currentContent.reliability.metrics.map((metric, index) => (
               <div key={index} className="metric-item">
+                <Check size={16} strokeWidth={2} className="metric-check" />
                 {metric}
               </div>
             ))}

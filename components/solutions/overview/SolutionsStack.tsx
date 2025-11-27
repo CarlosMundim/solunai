@@ -24,28 +24,24 @@ const SolutionsStack: React.FC<SolutionsStackProps> = ({ lang }) => {
       solutions: [
         {
           id: 'quality-inspection',
-          icon: '👁️',
           title: 'AI品質検査システム',
           description: 'コンピュータビジョンによる自動検査。95%以上の不良品検出率、検査時間を27倍高速化、品質管理部門の人件費を30%削減。',
           link: '/solutions/quality-inspection'
         },
         {
           id: 'predictive-maintenance',
-          icon: '🔧',
           title: '予知保全ソリューション',
           description: '設備故障を48〜72時間前に予測。計画外停止を40%削減、保守コストを20〜30%削減。',
           link: '/solutions/predictive-maintenance'
         },
         {
           id: 'production-optimization',
-          icon: '⚙️',
           title: '生産最適化AI',
           description: 'エネルギーコストを20〜30%削減。スループット最大化、ボトルネック特定により生産効率を向上。',
           link: '/solutions/production-optimization'
         },
         {
           id: 'global-engineering',
-          icon: '🌐',
           title: 'グローバルエンジニアリング',
           description: '国内採用コストの30〜50%で、2〜6週間で配置可能。CAD、シミュレーション、工程設計の専門エンジニアを提供。',
           link: '/solutions/global-engineering'
@@ -60,28 +56,24 @@ const SolutionsStack: React.FC<SolutionsStackProps> = ({ lang }) => {
       solutions: [
         {
           id: 'quality-inspection',
-          icon: '👁️',
           title: 'AI Quality Inspection System',
           description: 'Automated visual inspection using computer vision. 95%+ defect detection rate, inspection 27x faster, 30% labor cost reduction in QC department.',
           link: '/en/solutions/quality-inspection'
         },
         {
           id: 'predictive-maintenance',
-          icon: '🔧',
           title: 'Predictive Maintenance Solution',
           description: 'Predict equipment failures 48-72 hours in advance. 40% reduction in unplanned downtime, 20-30% lower maintenance costs.',
           link: '/en/solutions/predictive-maintenance'
         },
         {
           id: 'production-optimization',
-          icon: '⚙️',
           title: 'Production Optimization AI',
           description: '20-30% energy cost reduction. Maximize throughput and identify bottlenecks to improve production efficiency.',
           link: '/en/solutions/production-optimization'
         },
         {
           id: 'global-engineering',
-          icon: '🌐',
           title: 'Global Engineering',
           description: '30-50% cost vs Japan domestic hiring, 2-6 week deployment. CAD, simulation, and process engineering specialists.',
           link: '/en/solutions/global-engineering'

@@ -1,7 +1,15 @@
 'use client';
 
 import React from 'react';
+import { Factory, Cog, Lock, Check } from 'lucide-react';
 import './TechnologyPartners.css';
+
+const partnerIcons = {
+  meti: Factory,
+  jis: Cog,
+  iso: Lock,
+  'it-support': Check,
+};
 
 interface TechnologyPartnersProps {
   lang: 'ja' | 'en';
@@ -16,7 +24,6 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
         {
           id: 'meti',
           name: 'METI Connected Industries 準拠',
-          icon: '🏭',
           features: [
             'Industry 4.0 aligned',
             '日本の製造業標準',
@@ -26,7 +33,6 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
         {
           id: 'jis',
           name: 'JIS規格対応',
-          icon: '⚙️',
           features: [
             'JIS Z 溶接規格',
             'JIS A 建設規格',
@@ -36,7 +42,6 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
         {
           id: 'iso',
           name: 'ISO 27001 / SOC 2',
-          icon: '🔒',
           features: [
             '情報セキュリティ認証済',
             'エンタープライズグレードのデータ保護',
@@ -46,7 +51,6 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
         {
           id: 'it-support',
           name: 'IT導入支援事業者',
-          icon: '✓',
           features: [
             '登録支援事業者',
             '中小企業向けソリューション',
@@ -62,7 +66,6 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
         {
           id: 'meti',
           name: 'METI Connected Industries Compliant',
-          icon: '🏭',
           features: [
             'Industry 4.0 aligned',
             'Japanese manufacturing standards',
@@ -72,7 +75,6 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
         {
           id: 'jis',
           name: 'JIS Standards Compliant',
-          icon: '⚙️',
           features: [
             'JIS Z welding standards',
             'JIS A construction standards',
@@ -82,7 +84,6 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
         {
           id: 'iso',
           name: 'ISO 27001 / SOC 2',
-          icon: '🔒',
           features: [
             'Information security certified',
             'Enterprise-grade data protection',
@@ -92,7 +93,6 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
         {
           id: 'it-support',
           name: 'IT Support Provider',
-          icon: '✓',
           features: [
             'Registered support provider',
             'SME-focused solutions',
@@ -112,10 +112,14 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
         <p className="technology-partners-subheading">{t.subheading}</p>
 
         <div className="technology-partners-grid">
-          {t.partners.map((partner) => (
+          {t.partners.map((partner) => {
+            const IconComponent = partnerIcons[partner.id as keyof typeof partnerIcons];
+            return (
             <div key={partner.id} className="partner-card">
               <div className="partner-logo">
-                <span className="partner-icon">{partner.icon}</span>
+                <span className="partner-icon">
+                  <IconComponent size={32} strokeWidth={1.5} />
+                </span>
               </div>
               <h3 className="partner-name">{partner.name}</h3>
               <ul className="partner-features">
@@ -124,7 +128,8 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
                 ))}
               </ul>
             </div>
-          ))}
+          );
+          })}
         </div>
       </div>
     </section>

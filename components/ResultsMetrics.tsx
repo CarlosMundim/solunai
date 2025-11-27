@@ -1,7 +1,17 @@
 'use client';
 
 import React from 'react';
+import { Clock, Rocket, CheckCircle, Recycle, BarChart3, Lightbulb } from 'lucide-react';
 import './ResultsMetrics.css';
+
+const metricIcons = {
+  time: Clock,
+  turnaround: Rocket,
+  defect: CheckCircle,
+  scrap: Recycle,
+  utilization: BarChart3,
+  capacity: Lightbulb,
+};
 
 interface ResultsMetricsProps {
   lang: 'ja' | 'en';
@@ -14,42 +24,42 @@ const ResultsMetrics: React.FC<ResultsMetricsProps> = ({ lang }) => {
       subheading: '測定可能な変革の実績',
       metrics: [
         {
-          icon: '⏱️',
+          iconKey: 'time',
           label: '見積時間',
           before: '10分',
           after: '1分未満',
           improvement: '90%削減'
         },
         {
-          icon: '🚀',
+          iconKey: 'turnaround',
           label: '納期',
           before: '14-21日',
           after: '48-72時間',
           improvement: '85%短縮'
         },
         {
-          icon: '✅',
+          iconKey: 'defect',
           label: '欠陥検出',
           before: '67%',
           after: '95%',
           improvement: '42%改善'
         },
         {
-          icon: '♻️',
+          iconKey: 'scrap',
           label: 'スクラップ率',
           before: '8-12%',
           after: '<2%',
           improvement: '75%削減'
         },
         {
-          icon: '📊',
+          iconKey: 'utilization',
           label: '設備稼働率',
           before: '65%',
           after: '95%',
           improvement: '46%向上'
         },
         {
-          icon: '💡',
+          iconKey: 'capacity',
           label: 'エンジニアリング容量',
           before: '基準値',
           after: '3倍',
@@ -62,42 +72,42 @@ const ResultsMetrics: React.FC<ResultsMetricsProps> = ({ lang }) => {
       subheading: 'Measurable Transformation Outcomes',
       metrics: [
         {
-          icon: '⏱️',
+          iconKey: 'time',
           label: 'Quote Time',
           before: '10 min',
           after: '<1 min',
           improvement: '90% reduction'
         },
         {
-          icon: '🚀',
+          iconKey: 'turnaround',
           label: 'Turnaround',
           before: '14-21 days',
           after: '48-72 hours',
           improvement: '85% faster'
         },
         {
-          icon: '✅',
+          iconKey: 'defect',
           label: 'Defect Detection',
           before: '67%',
           after: '95%',
           improvement: '42% improvement'
         },
         {
-          icon: '♻️',
+          iconKey: 'scrap',
           label: 'Scrap Rate',
           before: '8-12%',
           after: '<2%',
           improvement: '75% reduction'
         },
         {
-          icon: '📊',
+          iconKey: 'utilization',
           label: 'Equipment Utilization',
           before: '65%',
           after: '95%',
           improvement: '46% increase'
         },
         {
-          icon: '💡',
+          iconKey: 'capacity',
           label: 'Engineering Capacity',
           before: 'Baseline',
           after: '3×',
@@ -116,12 +126,16 @@ const ResultsMetrics: React.FC<ResultsMetricsProps> = ({ lang }) => {
         <p className="results-subheading">{currentContent.subheading}</p>
 
         <div className="metrics-grid">
-          {currentContent.metrics.map((metric, index) => (
+          {currentContent.metrics.map((metric, index) => {
+            const IconComponent = metricIcons[metric.iconKey as keyof typeof metricIcons];
+            return (
             <div
               key={index}
               className="metric-card-large"
             >
-              <div className="metric-icon-large">{metric.icon}</div>
+              <div className="metric-icon-large">
+                <IconComponent size={32} strokeWidth={1.5} />
+              </div>
               <div className="metric-label-large">{metric.label}</div>
 
               <div className="metric-comparison">
@@ -138,7 +152,8 @@ const ResultsMetrics: React.FC<ResultsMetricsProps> = ({ lang }) => {
 
               <div className="metric-improvement">{metric.improvement}</div>
             </div>
-          ))}
+          );
+          })}
         </div>
       </div>
     </section>

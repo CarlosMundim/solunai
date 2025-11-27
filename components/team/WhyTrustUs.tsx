@@ -1,7 +1,15 @@
 'use client';
 
 import React from 'react';
+import { Award, Globe, Factory, TrendingUp, Check } from 'lucide-react';
 import './WhyTrustUs.css';
+
+const trustIcons = {
+  track: Award,
+  global: Globe,
+  manufacturing: Factory,
+  scalable: TrendingUp,
+};
 
 interface WhyTrustUsProps {
   lang: 'ja' | 'en';
@@ -14,7 +22,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
       subtitle: '実証された実績と国際的な信頼性',
       sections: [
         {
-          icon: '🏆',
+          iconKey: 'track',
           title: '実証された実績',
           points: [
             'Carlos: 実証済みの成長実績（Continental）',
@@ -23,7 +31,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           ],
         },
         {
-          icon: '🌍',
+          iconKey: 'global',
           title: '国際的な信頼性',
           points: [
             'EU パートナーシップ（WorldEmp、FBM）',
@@ -32,7 +40,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           ],
         },
         {
-          icon: '🏭',
+          iconKey: 'manufacturing',
           title: '製造業の深い知見',
           points: [
             '60年以上の統合経験',
@@ -41,7 +49,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           ],
         },
         {
-          icon: '📈',
+          iconKey: 'scalable',
           title: 'スケーラブルな実行',
           points: [
             'WorldEmpによる柔軟なエンジニアリング能力',
@@ -78,7 +86,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
       subtitle: 'Proven Track Record and International Credibility',
       sections: [
         {
-          icon: '🏆',
+          iconKey: 'track',
           title: 'Proven Track Record',
           points: [
             'Carlos: Proven growth achievement (Continental)',
@@ -87,7 +95,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           ],
         },
         {
-          icon: '🌍',
+          iconKey: 'global',
           title: 'International Credibility',
           points: [
             'EU partnerships (WorldEmp, FBM)',
@@ -96,7 +104,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           ],
         },
         {
-          icon: '🏭',
+          iconKey: 'manufacturing',
           title: 'Deep Manufacturing Expertise',
           points: [
             '60+ years combined experience',
@@ -105,7 +113,7 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
           ],
         },
         {
-          icon: '📈',
+          iconKey: 'scalable',
           title: 'Scalable Execution',
           points: [
             'Flexible engineering capacity via WorldEmp',
@@ -149,20 +157,27 @@ const WhyTrustUs: React.FC<WhyTrustUsProps> = ({ lang }) => {
 
         {/* Trust Sections */}
         <div className="trust-grid">
-          {text.sections.map((section, idx) => (
+          {text.sections.map((section, idx) => {
+            const IconComponent = trustIcons[section.iconKey as keyof typeof trustIcons];
+            return (
             <div key={idx} className="trust-card">
-              <div className="trust-icon">{section.icon}</div>
+              <div className="trust-icon">
+                <IconComponent size={32} strokeWidth={1.5} />
+              </div>
               <h3 className="trust-card-title">{section.title}</h3>
               <ul className="trust-points">
                 {section.points.map((point, pIdx) => (
                   <li key={pIdx} className="trust-point">
-                    <span className="point-bullet">✓</span>
+                    <span className="point-bullet">
+                      <Check size={14} strokeWidth={2.5} />
+                    </span>
                     <span className="point-text">{point}</span>
                   </li>
                 ))}
               </ul>
             </div>
-          ))}
+          );
+          })}
         </div>
 
         {/* Stats Showcase */}

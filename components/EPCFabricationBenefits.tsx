@@ -1,7 +1,15 @@
 'use client';
 
 import React from 'react';
+import { Wrench, Zap, DollarSign, Target } from 'lucide-react';
 import './EPCFabricationBenefits.css';
+
+const benefitIcons = {
+  turnkey: Wrench,
+  fast: Zap,
+  cost: DollarSign,
+  quality: Target,
+};
 
 interface EPCFabricationBenefitsProps {
   lang: 'ja' | 'en';
@@ -14,25 +22,25 @@ const EPCFabricationBenefits: React.FC<EPCFabricationBenefitsProps> = ({ lang })
       subtitle: 'EPCサービスで達成できること',
       benefits: [
         {
-          icon: '🔧',
+          iconKey: 'turnkey',
           title: 'ターンキー配信',
           description: 'コンセプトから完成まで、プロジェクトのあらゆる側面を管理',
           metrics: ['単一責任窓口', '簡素化された管理', 'リスク削減']
         },
         {
-          icon: '⚡',
+          iconKey: 'fast',
           title: '迅速な実装',
           description: '効率的なプロジェクト管理と実証済みの方法論',
           metrics: ['加速されたタイムライン', '予測可能な配信', '最小限のダウンタイム']
         },
         {
-          icon: '💰',
+          iconKey: 'cost',
           title: 'コスト最適化',
           description: '統合されたアプローチによる効率的なリソース活用',
           metrics: ['予算内配信', '価値エンジニアリング', '総所有コスト削減']
         },
         {
-          icon: '🎯',
+          iconKey: 'quality',
           title: '品質保証',
           description: '各段階での厳格な品質管理と検証',
           metrics: ['ISO認証プロセス', '性能保証', '長期信頼性']
@@ -57,25 +65,25 @@ const EPCFabricationBenefits: React.FC<EPCFabricationBenefitsProps> = ({ lang })
       subtitle: 'What You Achieve with EPC Services',
       benefits: [
         {
-          icon: '🔧',
+          iconKey: 'turnkey',
           title: 'Turnkey Delivery',
           description: 'Single point of accountability from concept to completion',
           metrics: ['Single point of contact', 'Simplified management', 'Reduced risk']
         },
         {
-          icon: '⚡',
+          iconKey: 'fast',
           title: 'Fast Implementation',
           description: 'Efficient project management with proven methodologies',
           metrics: ['Accelerated timeline', 'Predictable delivery', 'Minimal downtime']
         },
         {
-          icon: '💰',
+          iconKey: 'cost',
           title: 'Cost Optimization',
           description: 'Efficient resource utilization through integrated approach',
           metrics: ['On-budget delivery', 'Value engineering', 'Reduced total cost of ownership']
         },
         {
-          icon: '🎯',
+          iconKey: 'quality',
           title: 'Quality Assurance',
           description: 'Rigorous quality control and validation at every stage',
           metrics: ['ISO-certified processes', 'Performance guarantees', 'Long-term reliability']
@@ -108,9 +116,13 @@ const EPCFabricationBenefits: React.FC<EPCFabricationBenefitsProps> = ({ lang })
         </div>
 
         <div className="benefits-grid">
-          {currentContent.benefits.map((benefit, index) => (
+          {currentContent.benefits.map((benefit, index) => {
+            const IconComponent = benefitIcons[benefit.iconKey as keyof typeof benefitIcons];
+            return (
             <div key={index} className="benefit-card">
-              <div className="benefit-icon">{benefit.icon}</div>
+              <div className="benefit-icon">
+                <IconComponent size={32} strokeWidth={1.5} />
+              </div>
               <h3 className="benefit-title">{benefit.title}</h3>
               <p className="benefit-description">{benefit.description}</p>
               <ul className="benefit-metrics">
@@ -124,7 +136,8 @@ const EPCFabricationBenefits: React.FC<EPCFabricationBenefitsProps> = ({ lang })
                 ))}
               </ul>
             </div>
-          ))}
+          );
+          })}
         </div>
 
         <div className="case-study-section">
