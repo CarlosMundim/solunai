@@ -1,7 +1,23 @@
 'use client';
 
 import React from 'react';
+import { Building2, Lightbulb, BarChart3, Bot, Globe, Factory, TrendingUp, CheckCircle, DollarSign } from 'lucide-react';
 import './ServicesCompetitiveComparison.css';
+
+const competitorIcons = {
+  largeSI: Building2,
+  startup: Lightbulb,
+  consultant: BarChart3
+};
+
+const advantageIcons = {
+  ai: Bot,
+  global: Globe,
+  manufacturing: Factory,
+  scalable: TrendingUp,
+  complete: CheckCircle,
+  variable: DollarSign
+};
 
 interface ServicesCompetitiveComparisonProps {
   lang: 'ja' | 'en';
@@ -15,7 +31,7 @@ const ServicesCompetitiveComparison: React.FC<ServicesCompetitiveComparisonProps
       competitors: [
         {
           type: '大手SI（NEC、富士通、日立）',
-          icon: '🏢',
+          iconKey: 'largeSI',
           solunai: {
             points: [
               { label: 'コスト', value: '50-70%低い' },
@@ -35,7 +51,7 @@ const ServicesCompetitiveComparison: React.FC<ServicesCompetitiveComparisonProps
         },
         {
           type: 'AIスタートアップ',
-          icon: '💡',
+          iconKey: 'startup',
           solunai: {
             points: [
               { label: 'ソリューション', value: '完全統合' },
@@ -55,7 +71,7 @@ const ServicesCompetitiveComparison: React.FC<ServicesCompetitiveComparisonProps
         },
         {
           type: '従来のコンサルタント',
-          icon: '📊',
+          iconKey: 'consultant',
           solunai: {
             points: [
               { label: 'AI技術', value: '含まれる' },
@@ -77,12 +93,12 @@ const ServicesCompetitiveComparison: React.FC<ServicesCompetitiveComparisonProps
       solunaiUnique: {
         title: 'Solunaiの独自優位性',
         points: [
-          { icon: '🤖', text: 'AI技術（エージェンシック、コンピュータビジョン）' },
-          { icon: '🌍', text: 'グローバルエンジニアリング（WorldEmp 2-6週間）' },
-          { icon: '🏭', text: '製造業専門知識（60年以上の統合経験）' },
-          { icon: '📈', text: 'スケーラブルデリバリー（20-30社同時対応）' },
-          { icon: '✅', text: '完全ソリューション（ソフトウェアだけでない）' },
-          { icon: '💰', text: '変動費（WorldEmpがプロジェクトに応じて拡張）' }
+          { iconKey: 'ai', text: 'AI技術（エージェンシック、コンピュータビジョン）' },
+          { iconKey: 'global', text: 'グローバルエンジニアリング（WorldEmp 2-6週間）' },
+          { iconKey: 'manufacturing', text: '製造業専門知識（60年以上の統合経験）' },
+          { iconKey: 'scalable', text: 'スケーラブルデリバリー（20-30社同時対応）' },
+          { iconKey: 'complete', text: '完全ソリューション（ソフトウェアだけでない）' },
+          { iconKey: 'variable', text: '変動費（WorldEmpがプロジェクトに応じて拡張）' }
         ]
       }
     },
@@ -92,7 +108,7 @@ const ServicesCompetitiveComparison: React.FC<ServicesCompetitiveComparisonProps
       competitors: [
         {
           type: 'Large SIs (NEC, Fujitsu, Hitachi)',
-          icon: '🏢',
+          iconKey: 'largeSI',
           solunai: {
             points: [
               { label: 'Cost', value: '50-70% lower' },
@@ -112,7 +128,7 @@ const ServicesCompetitiveComparison: React.FC<ServicesCompetitiveComparisonProps
         },
         {
           type: 'AI Startups',
-          icon: '💡',
+          iconKey: 'startup',
           solunai: {
             points: [
               { label: 'Solution', value: 'Complete integration' },
@@ -132,7 +148,7 @@ const ServicesCompetitiveComparison: React.FC<ServicesCompetitiveComparisonProps
         },
         {
           type: 'Traditional Consultants',
-          icon: '📊',
+          iconKey: 'consultant',
           solunai: {
             points: [
               { label: 'AI Tech', value: 'Included' },
@@ -154,12 +170,12 @@ const ServicesCompetitiveComparison: React.FC<ServicesCompetitiveComparisonProps
       solunaiUnique: {
         title: 'Solunai Unique Advantages',
         points: [
-          { icon: '🤖', text: 'AI technology (agentic systems, computer vision)' },
-          { icon: '🌍', text: 'Global engineering (WorldEmp 2-6 weeks)' },
-          { icon: '🏭', text: 'Manufacturing expertise (60+ years combined)' },
-          { icon: '📈', text: 'Scalable delivery (20-30 clients simultaneously)' },
-          { icon: '✅', text: 'Complete solution (not just software)' },
-          { icon: '💰', text: 'Variable costs (WorldEmp scales with projects)' }
+          { iconKey: 'ai', text: 'AI technology (agentic systems, computer vision)' },
+          { iconKey: 'global', text: 'Global engineering (WorldEmp 2-6 weeks)' },
+          { iconKey: 'manufacturing', text: 'Manufacturing expertise (60+ years combined)' },
+          { iconKey: 'scalable', text: 'Scalable delivery (20-30 clients simultaneously)' },
+          { iconKey: 'complete', text: 'Complete solution (not just software)' },
+          { iconKey: 'variable', text: 'Variable costs (WorldEmp scales with projects)' }
         ]
       }
     }
@@ -176,10 +192,14 @@ const ServicesCompetitiveComparison: React.FC<ServicesCompetitiveComparisonProps
         </div>
 
         <div className="competitors-grid">
-          {currentContent.competitors.map((comp, index) => (
+          {currentContent.competitors.map((comp, index) => {
+            const CompIcon = competitorIcons[comp.iconKey as keyof typeof competitorIcons];
+            return (
             <div key={index} className="competitor-comparison-card">
               <div className="competitor-header">
-                <span className="competitor-icon">{comp.icon}</span>
+                <span className="competitor-icon">
+                  <CompIcon size={28} strokeWidth={1.5} />
+                </span>
                 <h3 className="competitor-type">{comp.type}</h3>
               </div>
 
@@ -209,18 +229,24 @@ const ServicesCompetitiveComparison: React.FC<ServicesCompetitiveComparisonProps
                 </div>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="unique-advantages">
           <h3 className="advantages-title">{currentContent.solunaiUnique.title}</h3>
           <div className="advantages-grid">
-            {currentContent.solunaiUnique.points.map((point, index) => (
+            {currentContent.solunaiUnique.points.map((point, index) => {
+              const AdvIcon = advantageIcons[point.iconKey as keyof typeof advantageIcons];
+              return (
               <div key={index} className="advantage-item">
-                <span className="advantage-icon">{point.icon}</span>
+                <span className="advantage-icon">
+                  <AdvIcon size={24} strokeWidth={1.5} />
+                </span>
                 <span className="advantage-text">{point.text}</span>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

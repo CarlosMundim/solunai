@@ -1,7 +1,16 @@
 'use client';
 
 import React from 'react';
+import { Search, Rocket, Cog, Users, Shield, Check } from 'lucide-react';
 import './ServicesTransformationProcess.css';
+
+const phaseIcons = {
+  assessment: Search,
+  deployment: Rocket,
+  optimization: Cog,
+  training: Users,
+  support: Shield
+};
 
 interface ServicesTransformationProcessProps {
   lang: 'ja' | 'en';
@@ -17,7 +26,7 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
           phase: 'フェーズ1',
           duration: '1-2ヶ月',
           title: '評価 & 設計',
-          icon: '🔍',
+          iconKey: 'assessment',
           activities: [
             '工場監査',
             '技術準備評価',
@@ -35,7 +44,7 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
           phase: 'フェーズ2',
           duration: '3-6ヶ月',
           title: 'プラットフォーム導入',
-          icon: '🚀',
+          iconKey: 'deployment',
           activities: [
             'AIプラットフォーム設置',
             'IoTセンサー導入（必要に応じて）',
@@ -52,7 +61,7 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
           phase: 'フェーズ3',
           duration: '7-9ヶ月',
           title: 'トレーニング & 最適化',
-          icon: '⚙️',
+          iconKey: 'optimization',
           activities: [
             'クライアントデータでのモデルトレーニング',
             'システムキャリブレーション',
@@ -69,7 +78,7 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
           phase: 'フェーズ4',
           duration: '10-12ヶ月',
           title: '従業員トレーニング',
-          icon: '👥',
+          iconKey: 'training',
           activities: [
             'オペレータートレーニング',
             'チームアップスキリング',
@@ -86,7 +95,7 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
           phase: 'フェーズ5',
           duration: '12ヶ月以降',
           title: '継続的サポート',
-          icon: '🛡️',
+          iconKey: 'support',
           activities: [
             '24/7監視',
             '四半期ごとの再トレーニング',
@@ -109,7 +118,7 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
           phase: 'Phase 1',
           duration: '1-2 months',
           title: 'Assessment & Design',
-          icon: '🔍',
+          iconKey: 'assessment',
           activities: [
             'Factory audit',
             'Technology readiness assessment',
@@ -127,7 +136,7 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
           phase: 'Phase 2',
           duration: '3-6 months',
           title: 'Platform Deployment',
-          icon: '🚀',
+          iconKey: 'deployment',
           activities: [
             'AI platform installation',
             'IoT sensors deployment (if needed)',
@@ -144,7 +153,7 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
           phase: 'Phase 3',
           duration: '7-9 months',
           title: 'Training & Optimization',
-          icon: '⚙️',
+          iconKey: 'optimization',
           activities: [
             'Model training with client data',
             'System calibration',
@@ -161,7 +170,7 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
           phase: 'Phase 4',
           duration: '10-12 months',
           title: 'Employee Training',
-          icon: '👥',
+          iconKey: 'training',
           activities: [
             'Operator training',
             'Team upskilling',
@@ -178,7 +187,7 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
           phase: 'Phase 5',
           duration: '12+ months',
           title: 'Ongoing Support',
-          icon: '🛡️',
+          iconKey: 'support',
           activities: [
             '24/7 monitoring',
             'Quarterly retraining',
@@ -206,10 +215,14 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
         </div>
 
         <div className="timeline">
-          {currentContent.phases.map((phase, index) => (
+          {currentContent.phases.map((phase, index) => {
+            const IconComponent = phaseIcons[phase.iconKey as keyof typeof phaseIcons];
+            return (
             <div key={index} className="phase-card">
               <div className="phase-number">
-                <div className="phase-icon">{phase.icon}</div>
+                <div className="phase-icon">
+                  <IconComponent size={32} strokeWidth={1.5} />
+                </div>
                 <div className="phase-label">{phase.phase}</div>
               </div>
 
@@ -237,7 +250,9 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
                     <ul className="detail-list">
                       {phase.deliverables.map((deliverable, idx) => (
                         <li key={idx} className="detail-item deliverable">
-                          <span className="detail-check">✓</span>
+                          <span className="detail-check">
+                            <Check size={16} strokeWidth={2} />
+                          </span>
                           <span>{deliverable}</span>
                         </li>
                       ))}
@@ -250,7 +265,8 @@ const ServicesTransformationProcess: React.FC<ServicesTransformationProcessProps
                 <div className="phase-connector"></div>
               )}
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
