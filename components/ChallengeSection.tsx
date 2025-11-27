@@ -1,11 +1,19 @@
 'use client';
 
 import React from 'react';
+import { BarChart3, Cog, Search, Calendar } from 'lucide-react';
 import './ChallengeSection.css';
 
 interface ChallengeSectionProps {
   lang: 'ja' | 'en';
 }
+
+const challengeIcons = {
+  quotation: BarChart3,
+  engineering: Cog,
+  quality: Search,
+  scheduling: Calendar,
+};
 
 const ChallengeSection: React.FC<ChallengeSectionProps> = ({ lang }) => {
   const content = {
@@ -15,7 +23,7 @@ const ChallengeSection: React.FC<ChallengeSectionProps> = ({ lang }) => {
       challenges: [
         {
           title: '見積プロセス',
-          icon: '📊',
+          iconKey: 'quotation',
           items: [
             '手動計算：エンジニアが10分以上/見積',
             '高いエラー率：15-20%の価格設定ミス',
@@ -25,7 +33,7 @@ const ChallengeSection: React.FC<ChallengeSectionProps> = ({ lang }) => {
         },
         {
           title: 'エンジニアリング',
-          icon: '⚙️',
+          iconKey: 'engineering',
           items: [
             '長納期：14-21日の設計・見積提出時間',
             'ボトルネック：シニアエンジニアに集中',
@@ -35,7 +43,7 @@ const ChallengeSection: React.FC<ChallengeSectionProps> = ({ lang }) => {
         },
         {
           title: '品質管理',
-          icon: '🔍',
+          iconKey: 'quality',
           items: [
             'サンプリング検査：5-10%のみ検査',
             '欠陥検出率：67%（見逃し33%）',
@@ -45,7 +53,7 @@ const ChallengeSection: React.FC<ChallengeSectionProps> = ({ lang }) => {
         },
         {
           title: '生産スケジューリング',
-          icon: '📅',
+          iconKey: 'scheduling',
           items: [
             '固定スケジュール：非効率',
             '設備稼働率：65%（35%が遊休）',
@@ -60,7 +68,7 @@ const ChallengeSection: React.FC<ChallengeSectionProps> = ({ lang }) => {
       challenges: [
         {
           title: 'Quotation Process',
-          icon: '📊',
+          iconKey: 'quotation',
           items: [
             'Manual calculations: 10+ minutes per quote by engineers',
             'High error rate: 15-20% pricing mistakes',
@@ -70,7 +78,7 @@ const ChallengeSection: React.FC<ChallengeSectionProps> = ({ lang }) => {
         },
         {
           title: 'Engineering',
-          icon: '⚙️',
+          iconKey: 'engineering',
           items: [
             'Long turnaround: 14-21 days for design and quotation',
             'Bottleneck: Concentration on senior engineers',
@@ -80,7 +88,7 @@ const ChallengeSection: React.FC<ChallengeSectionProps> = ({ lang }) => {
         },
         {
           title: 'Quality Control',
-          icon: '🔍',
+          iconKey: 'quality',
           items: [
             'Sampling inspection: Only 5-10% inspected',
             'Defect detection: 67% (33% missed)',
@@ -90,7 +98,7 @@ const ChallengeSection: React.FC<ChallengeSectionProps> = ({ lang }) => {
         },
         {
           title: 'Production Scheduling',
-          icon: '📅',
+          iconKey: 'scheduling',
           items: [
             'Fixed schedules: Inefficient',
             'Equipment utilization: 65% (35% idle)',
@@ -110,17 +118,22 @@ const ChallengeSection: React.FC<ChallengeSectionProps> = ({ lang }) => {
         <p className="challenge-intro">{currentContent.intro}</p>
 
         <div className="challenges-grid">
-          {currentContent.challenges.map((challenge, index) => (
-            <div key={index} className="challenge-card">
-              <div className="challenge-icon">{challenge.icon}</div>
-              <h3 className="challenge-title">{challenge.title}</h3>
-              <ul className="challenge-items">
-                {challenge.items.map((item, itemIndex) => (
-                  <li key={itemIndex}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {currentContent.challenges.map((challenge, index) => {
+            const IconComponent = challengeIcons[challenge.iconKey as keyof typeof challengeIcons];
+            return (
+              <div key={index} className="challenge-card">
+                <div className="challenge-icon">
+                  <IconComponent size={32} strokeWidth={1.5} />
+                </div>
+                <h3 className="challenge-title">{challenge.title}</h3>
+                <ul className="challenge-items">
+                  {challenge.items.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

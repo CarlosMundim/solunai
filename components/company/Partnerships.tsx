@@ -1,11 +1,19 @@
 'use client';
 
 import React from 'react';
+import { Factory, Cog, Cloud, Bot, Check } from 'lucide-react';
 import './Partnerships.css';
 
 interface PartnershipsProps {
   lang: 'ja' | 'en';
 }
+
+const techIcons = {
+  digitaltwin: Factory,
+  physics: Cog,
+  cloud: Cloud,
+  ai: Bot,
+};
 
 const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
   const content = {
@@ -46,7 +54,7 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
               'GPUアクセラレーション計算',
               'マルチユーザーコラボレーション'
             ],
-            icon: '🏭'
+            iconKey: 'digitaltwin'
           },
           {
             name: '物理シミュレーション',
@@ -57,7 +65,7 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
               'マルチフィジックスシミュレーション',
               '産業用途実証済み'
             ],
-            icon: '⚙️'
+            iconKey: 'physics'
           },
           {
             name: 'クラウドインフラ',
@@ -68,7 +76,7 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
               'ISO 27001 / SOC 2準拠',
               'グローバルデータセンター'
             ],
-            icon: '☁️'
+            iconKey: 'cloud'
           },
           {
             name: 'AIエンジン',
@@ -79,7 +87,7 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
               '安全性と信頼性重視',
               '製造業知識統合'
             ],
-            icon: '🤖'
+            iconKey: 'ai'
           }
         ]
       },
@@ -138,7 +146,7 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
               'GPU-accelerated computing',
               'Multi-user collaboration'
             ],
-            icon: '🏭'
+            iconKey: 'digitaltwin'
           },
           {
             name: 'Physics Simulation',
@@ -149,7 +157,7 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
               'Multi-physics simulation',
               'Industrial-proven applications'
             ],
-            icon: '⚙️'
+            iconKey: 'physics'
           },
           {
             name: 'Cloud Infrastructure',
@@ -160,7 +168,7 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
               'ISO 27001 / SOC 2 compliant',
               'Global data centers'
             ],
-            icon: '☁️'
+            iconKey: 'cloud'
           },
           {
             name: 'AI Engine',
@@ -171,7 +179,7 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
               'Safety and reliability focused',
               'Manufacturing knowledge integration'
             ],
-            icon: '🤖'
+            iconKey: 'ai'
           }
         ]
       },
@@ -231,7 +239,7 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
               </div>
 
               <div className="partner-impact">
-                <span className="impact-icon">✓</span>
+                <Check size={16} strokeWidth={2} className="impact-icon" />
                 <span>{partner.impact}</span>
               </div>
             </div>
@@ -242,18 +250,23 @@ const Partnerships: React.FC<PartnershipsProps> = ({ lang }) => {
         <div className="partnership-block">
           <h3 className="block-title">{current.technology.title}</h3>
           <div className="tech-partners-grid">
-            {current.technology.partners.map((partner, index) => (
-              <div key={index} className="tech-partner-card">
-                <div className="tech-partner-icon">{partner.icon}</div>
-                <h4>{partner.name}</h4>
-                <p className="tech-partner-product">{partner.product}</p>
-                <ul className="tech-capabilities">
-                  {partner.capabilities.map((capability, capIndex) => (
-                    <li key={capIndex}>{capability}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+            {current.technology.partners.map((partner, index) => {
+              const IconComponent = techIcons[partner.iconKey as keyof typeof techIcons];
+              return (
+                <div key={index} className="tech-partner-card">
+                  <div className="tech-partner-icon">
+                    <IconComponent size={32} strokeWidth={1.5} />
+                  </div>
+                  <h4>{partner.name}</h4>
+                  <p className="tech-partner-product">{partner.product}</p>
+                  <ul className="tech-capabilities">
+                    {partner.capabilities.map((capability, capIndex) => (
+                      <li key={capIndex}>{capability}</li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </div>
 
