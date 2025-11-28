@@ -631,7 +631,7 @@ const ScenarioAssessment: React.FC<ScenarioAssessmentProps> = ({ lang = 'en' }) 
     }
 
     // If high scores, add advanced recommendations
-    if (trainingRecs.length === 0 || avgScore >= 70) {
+    if (trainingRecs.length === 0 || result.jfc >= 70) {
       trainingRecs.push('• Advanced cultural nuance refinement (keigo mastery, subtle social cues)');
       trainingRecs.push('• Leadership preparation within Japanese team structures');
     }
