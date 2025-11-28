@@ -12,17 +12,17 @@ const TrustIndicatorsBar: React.FC<TrustIndicatorsBarProps> = ({ lang }) => {
     ja: {
       indicators: [
         {
-          label: 'MANUFACTURING EXPERTISE',
+          label: '製造業の専門知識',
           title: '60年以上の製造業経験',
           subtitle: '創業者の製造業における豊富な経験'
         },
         {
-          label: 'GOVERNMENT ALIGNED',
+          label: '政府準拠',
           title: 'METI準拠',
           subtitle: '経済産業省Connected Industries'
         },
         {
-          label: 'SECURITY FRAMEWORK',
+          label: 'セキュリティ基準',
           title: 'ISO 27001対応',
           subtitle: '国際セキュリティ基準に準拠'
         }

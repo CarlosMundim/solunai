@@ -10,7 +10,7 @@ interface ProblemSolutionProps {
 const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
   const content = {
     ja: {
-      problemBadge: 'CHALLENGES',
+      problemBadge: '課題',
       problemTitle: '製造業の課題',
       problemSubtitle: '直面する4つの危機',
       problemPoints: [
@@ -32,7 +32,7 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
         }
       ],
       problemConclusion: '従来の方法では競争力を維持できない',
-      solutionBadge: 'SOLUTIONS',
+      solutionBadge: '解決策',
       solutionTitle: 'Solunaiの解決策',
       solutionSubtitle: 'AI + グローバル人材 = 製造業DX',
       solutionPoints: [
