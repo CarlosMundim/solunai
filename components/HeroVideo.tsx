@@ -10,13 +10,17 @@ interface HeroVideoProps {
 const HeroVideo: React.FC<HeroVideoProps> = ({ lang }) => {
   const content = {
     ja: {
-      headline: '日本の製造業をAIで革新する',
-      subheadline: 'デジタルツイン技術とグローバルエンジニアリングで、製造業の完全な変革を数週間で実現。実証済みのAIソリューションで生産性を最大化します。',
+      headline: '日本企業のための主権型エージェンティックAI',
+      subheadline: '日本のビジネス文化を理解し、お客様の管理下で動作し、データはすべて国内に保存するAI。',
+      primaryCta: '無料相談を予約する',
+      secondaryCta: 'ソリューションを見る',
       scroll: 'スクロール'
     },
     en: {
-      headline: 'AI-Powered Manufacturing Excellence',
-      subheadline: 'Digital twin technology and global engineering talent deployed in weeks. Proven results: 30-50% cost reduction, 95% quality improvement.',
+      headline: 'Sovereign Agentic AI for Japanese Companies',
+      subheadline: 'AI that understands Japanese business culture, stays under your control, and keeps your data inside Japan.',
+      primaryCta: 'Schedule Free Consultation',
+      secondaryCta: 'Explore Solutions',
       scroll: 'Scroll'
     }
   };
@@ -47,6 +51,10 @@ const HeroVideo: React.FC<HeroVideoProps> = ({ lang }) => {
             {currentContent.headline}
           </h1>
           <p className="hero-subheadline">{currentContent.subheadline}</p>
+          <div className="hero-cta-buttons">
+            <a href="/contact" className="hero-cta-primary">{currentContent.primaryCta}</a>
+            <a href="/solutions" className="hero-cta-secondary">{currentContent.secondaryCta}</a>
+          </div>
         </div>
       </div>
 

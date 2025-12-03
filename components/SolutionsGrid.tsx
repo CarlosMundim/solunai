@@ -25,64 +25,76 @@ const SolutionsGrid: React.FC<SolutionsGridProps> = ({ lang }) => {
   const content = {
     ja: {
       sectionBadge: 'ソリューション',
-      sectionTitle: '製造業の課題を解決する\n4つのAIソリューション',
-      sectionDescription: 'AI品質検査から予知保全まで、日本の製造業に特化した包括的なAI技術スイート'
+      sectionTitle: '産業領域に特化した\n5つのAIソリューション',
+      sectionDescription: '医療教育から企業研修まで、日本の組織文化を理解した対話型AIで課題を解決'
     },
     en: {
       sectionBadge: 'Solutions',
-      sectionTitle: '4 AI Solutions\nSolving Manufacturing Challenges',
-      sectionDescription: 'From AI quality inspection to predictive maintenance, a comprehensive AI technology suite specialized for Japanese manufacturing'
+      sectionTitle: '5 AI Solutions\nfor Key Industries',
+      sectionDescription: 'From medical education to corporate training, dialogue-based AI that understands Japanese organisational culture'
     }
   };
 
   const solutions: Solution[] = [
     {
       number: '01',
-      titleJa: 'AI品質検査システム',
-      titleEn: 'AI Quality Inspection',
-      metric1Ja: '95%+ 欠陥検出率',
-      metric1En: '95%+ defect detection',
-      metric2Ja: '検査時間27倍高速化',
-      metric2En: '27x faster inspection',
-      ctaJa: '詳細を見る',
+      titleJa: '医療・医学教育',
+      titleEn: 'Healthcare & Medical Education',
+      metric1Ja: 'OSCE準備・医療面接の練習',
+      metric1En: 'OSCE prep & patient interview practice',
+      metric2Ja: '臨床コミュニケーション力の育成',
+      metric2En: 'Clinical communication training',
+      ctaJa: '詳しく見る',
       ctaEn: 'Learn More',
-      link: '/solutions/computer-vision'
+      link: '/solutions/healthcare'
     },
     {
       number: '02',
-      titleJa: '予知保全ソリューション',
-      titleEn: 'Predictive Maintenance',
-      metric1Ja: '48-72時間前の故障予測',
-      metric1En: '48-72hr failure prediction',
-      metric2Ja: 'ダウンタイム40%削減',
-      metric2En: '40% downtime reduction',
-      ctaJa: '詳細を見る',
+      titleJa: '看護・介護教育',
+      titleEn: 'Nursing & Caregiver Training',
+      metric1Ja: '多様な患者シナリオの再現',
+      metric1En: 'Diverse patient scenario simulation',
+      metric2Ja: '看護現場での対話力向上',
+      metric2En: 'Communication skills for care',
+      ctaJa: '詳しく見る',
       ctaEn: 'Learn More',
-      link: '/solutions/predictive-maintenance'
+      link: '/solutions/nursing'
     },
     {
       number: '03',
-      titleJa: '生産最適化AI',
-      titleEn: 'Production Optimization',
-      metric1Ja: 'エネルギーコスト20-30%削減',
-      metric1En: '20-30% energy cost reduction',
-      metric2Ja: 'スループット最大化',
-      metric2En: 'Throughput maximization',
-      ctaJa: '詳細を見る',
+      titleJa: '企業研修',
+      titleEn: 'Corporate Communication Training',
+      metric1Ja: '業務固有のロールプレイ',
+      metric1En: 'Customised workplace roleplay',
+      metric2Ja: '行動変容につながる研修',
+      metric2En: 'Training that drives behavioural change',
+      ctaJa: '詳しく見る',
       ctaEn: 'Learn More',
-      link: '/solutions/production-optimization'
+      link: '/solutions/corporate-training'
     },
     {
       number: '04',
-      titleJa: 'グローバルエンジニアリング',
-      titleEn: 'Global Engineering',
-      metric1Ja: '国内採用の30-50%のコスト',
-      metric1En: '30-50% of Japan hiring cost',
-      metric2Ja: '2-6週間で配置',
-      metric2En: '2-6 week deployment',
-      ctaJa: '詳細を見る',
+      titleJa: '業務自動化',
+      titleEn: 'Enterprise Workflow Automation',
+      metric1Ja: '業務フローを理解するAI',
+      metric1En: 'AI that understands your workflows',
+      metric2Ja: '国内データ管理・ガバナンス対応',
+      metric2En: 'Domestic data control & governance',
+      ctaJa: '詳しく見る',
       ctaEn: 'Learn More',
-      link: '/services/global-engineering'
+      link: '/solutions/enterprise-automation'
+    },
+    {
+      number: '05',
+      titleJa: '多文化対応',
+      titleEn: 'Cross-Cultural Workforce',
+      metric1Ja: '日本文化を理解した対話AI',
+      metric1En: 'AI grounded in Japanese culture',
+      metric2Ja: '相互理解を促すロールプレイ',
+      metric2En: 'Roleplay for mutual understanding',
+      ctaJa: '詳しく見る',
+      ctaEn: 'Learn More',
+      link: '/solutions/cross-cultural'
     }
   ];
 

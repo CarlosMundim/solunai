@@ -50,20 +50,26 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
           label: 'ソリューション',
           dropdown: [
             { href: '/solutions', label: 'ソリューション概要' },
-            { href: '/solutions/digital-twin', label: 'デジタルツイン' },
-            { href: '/solutions/computer-vision', label: 'コンピュータビジョン' },
-            { href: '/solutions/predictive-maintenance', label: '予知保全' },
-            { href: '/solutions/production-optimization', label: '生産最適化' }
+            { href: '/solutions/healthcare', label: '医療・医学教育' },
+            { href: '/solutions/nursing', label: '看護・介護教育' },
+            { href: '/solutions/corporate-training', label: '企業研修' },
+            { href: '/solutions/enterprise-automation', label: '業務自動化' },
+            { href: '/solutions/cross-cultural', label: '多文化対応' }
           ]
         },
         {
           label: 'サービス',
           dropdown: [
-            { href: '/services/ai-implementation', label: 'AI実装' },
-            { href: '/services/global-engineering', label: 'グローバルエンジニアリング' }
+            { href: '/services', label: 'サービス概要' },
+            { href: '/services/advisory', label: 'AI統合アドバイザリー' },
+            { href: '/services/automation', label: 'ワークフロー自動化' },
+            { href: '/services/simulation', label: 'シミュレーション開発' },
+            { href: '/services/sovereignty', label: 'データ主権コンサルティング' },
+            { href: '/services/partners', label: 'パートナーソリューション' }
           ]
         },
-        { href: '/about', label: '私たちについて', isRoute: true },
+        { href: '/product', label: 'プロダクト', isRoute: true },
+        { href: '/about', label: '企業情報', isRoute: true },
         { href: '/contact', label: 'お問い合わせ', isRoute: true }
       ],
       languageToggle: { href: '/en', label: 'English' }
@@ -76,19 +82,25 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
           label: 'Solutions',
           dropdown: [
             { href: '/en/solutions', label: 'Solutions Overview' },
-            { href: '/en/solutions/digital-twin', label: 'Digital Twin' },
-            { href: '/en/solutions/computer-vision', label: 'Computer Vision' },
-            { href: '/en/solutions/predictive-maintenance', label: 'Predictive Maintenance' },
-            { href: '/en/solutions/production-optimization', label: 'Production Optimization' }
+            { href: '/en/solutions/healthcare', label: 'Healthcare & Medical Education' },
+            { href: '/en/solutions/nursing', label: 'Nursing & Caregiver Training' },
+            { href: '/en/solutions/corporate-training', label: 'Corporate Communication' },
+            { href: '/en/solutions/enterprise-automation', label: 'Enterprise Automation' },
+            { href: '/en/solutions/cross-cultural', label: 'Cross-Cultural Workforce' }
           ]
         },
         {
           label: 'Services',
           dropdown: [
-            { href: '/en/services/ai-implementation', label: 'AI Implementation' },
-            { href: '/en/services/global-engineering', label: 'Global Engineering' }
+            { href: '/en/services', label: 'Services Overview' },
+            { href: '/en/services/advisory', label: 'AI Integration Advisory' },
+            { href: '/en/services/automation', label: 'Workflow Automation' },
+            { href: '/en/services/simulation', label: 'Simulation Development' },
+            { href: '/en/services/sovereignty', label: 'Data Sovereignty Consulting' },
+            { href: '/en/services/partners', label: 'Partner Solutions' }
           ]
         },
+        { href: '/en/product', label: 'Products', isRoute: true },
         { href: '/en/about', label: 'About Us', isRoute: true },
         { href: '/en/contact', label: 'Contact', isRoute: true }
       ],

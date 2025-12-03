@@ -73,6 +73,60 @@
   animation-fill-mode: forwards;
 }
 
+/* CTA Buttons */
+.hero-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 40px;
+  animation: fadeInUp 0.8s ease 0.4s forwards;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.hero-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  background: #f5480a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 2px solid #f5480a;
+}
+
+.hero-cta-primary:hover {
+  background: #d93d08;
+  border-color: #d93d08;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245, 72, 10, 0.3);
+}
+
+.hero-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.hero-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -158,6 +212,19 @@
   .hero-subheadline {
     font-size: 16px;
     padding: 0 16px;
+  }
+
+  .hero-cta-buttons {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 20px;
+  }
+
+  .hero-cta-primary,
+  .hero-cta-secondary {
+    width: 100%;
+    padding: 14px 24px;
+    font-size: 15px;
   }
 
   .scroll-indicator {

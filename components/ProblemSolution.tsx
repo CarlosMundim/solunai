@@ -11,95 +11,95 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
   const content = {
     ja: {
       problemBadge: '課題',
-      problemTitle: '製造業の課題',
-      problemSubtitle: '直面する4つの危機',
+      problemTitle: '日本企業が直面する現実的な課題',
+      problemSubtitle: 'AI導入の複雑さ',
       problemPoints: [
         {
-          title: '人手不足',
-          detail: '2040年までに1,100万人の労働力不足'
+          title: '判断の複雑さ',
+          detail: 'AI導入の「何を、どこまで、どのように」が不明確'
         },
         {
-          title: '品質問題',
-          detail: '人的エラーによる不良品発生と検査遅延'
+          title: '部門間の壁',
+          detail: '業務内容や専門知識が部門ごとに異なる'
         },
         {
-          title: '設備故障',
-          detail: '予期せぬダウンタイムによる生産損失'
+          title: 'ガバナンスの懸念',
+          detail: '海外製AIへのデータ主権・セキュリティ不安'
         },
         {
-          title: 'コスト上昇',
-          detail: '人件費と運営コストの継続的増加'
+          title: '文化との不一致',
+          detail: '日本の組織文化に馴染まないAIツール'
         }
       ],
-      problemConclusion: '従来の方法では競争力を維持できない',
-      solutionBadge: '解決策',
-      solutionTitle: 'Solunaiの解決策',
-      solutionSubtitle: 'AI + グローバル人材 = 製造業DX',
+      problemConclusion: '現場・管理部門・経営層すべてが納得できる設計が必要',
+      solutionBadge: '提供価値',
+      solutionTitle: 'ソルナイの提供価値',
+      solutionSubtitle: '主権型エージェンティックAI',
       solutionPoints: [
         {
-          title: 'AIによる自動化',
-          detail: '24時間稼働、人手不足を解消'
+          title: '文脈理解',
+          detail: '企業固有の業務慣習・専門用語・文化を理解'
         },
         {
-          title: '95%+ 欠陥検出',
-          detail: 'コンピュータビジョンで高精度品質管理'
+          title: '安全設計',
+          detail: '国内データ管理を前提とした主権型アーキテクチャ'
         },
         {
-          title: '予知保全',
-          detail: 'AI故障予測で計画的メンテナンス'
+          title: '実証済み知見',
+          detail: '大学・教育機関・産業現場での実績'
         },
         {
-          title: '30%コスト削減',
-          detail: '実証済み：運営コスト30-50%削減'
+          title: '一貫支援',
+          detail: 'PoCから全社展開まで伴走'
         }
       ],
-      solutionConclusion: '日本製造業の競争力を取り戻す'
+      solutionConclusion: 'AIを長期的な価値創出の源泉に'
     },
     en: {
       problemBadge: 'CHALLENGES',
-      problemTitle: 'Manufacturing Challenges',
-      problemSubtitle: 'Four crises we face',
+      problemTitle: 'Real Challenges Japanese Organisations Face',
+      problemSubtitle: 'The Complexity of AI Adoption',
       problemPoints: [
         {
-          title: 'Labor shortage',
-          detail: 'Labor shortage of 11 million people by 2040'
+          title: 'Complex decisions',
+          detail: 'Unclear scope: what, how far, and how to use AI'
         },
         {
-          title: 'Quality problems',
-          detail: 'Defective products and inspection delays caused by human error'
+          title: 'Departmental silos',
+          detail: 'Different workflows and expertise across divisions'
         },
         {
-          title: 'Equipment failure',
-          detail: 'Lost production due to unplanned downtime'
+          title: 'Governance concerns',
+          detail: 'Data sovereignty and security worries with foreign AI'
         },
         {
-          title: 'Rising costs',
-          detail: 'Continued increases in labor and operating costs'
+          title: 'Cultural mismatch',
+          detail: 'Generic AI tools that do not fit Japanese organisations'
         }
       ],
-      problemConclusion: 'Traditional methods cannot remain competitive',
-      solutionBadge: 'SOLUTIONS',
-      solutionTitle: "Solunai's Solution",
-      solutionSubtitle: 'AI + Global Talent = Manufacturing DX',
+      problemConclusion: 'Solutions must satisfy frontline staff, management, and executives',
+      solutionBadge: 'OUR APPROACH',
+      solutionTitle: "Solunai's Value Proposition",
+      solutionSubtitle: 'Sovereign Agentic AI',
       solutionPoints: [
         {
-          title: 'AI automation',
-          detail: '24 hour operation eliminates labor shortages'
+          title: 'Contextual understanding',
+          detail: 'Learns your workflows, terminology, and culture'
         },
         {
-          title: '95%+ defect detection',
-          detail: 'High precision quality control with computer vision'
+          title: 'Sovereign architecture',
+          detail: 'Built for domestic data control from the ground up'
         },
         {
-          title: 'Predictive Maintenance',
-          detail: 'Planned maintenance with AI failure prediction'
+          title: 'Proven expertise',
+          detail: 'Experience across universities, institutions, and industry'
         },
         {
-          title: '30% cost reduction',
-          detail: 'Proven: Reduce operational costs by 30-50%'
+          title: 'End-to-end support',
+          detail: 'From PoC to full-scale deployment'
         }
       ],
-      solutionConclusion: 'Restoring the competitiveness of Japanese manufacturing'
+      solutionConclusion: 'AI as a sustained source of value for your organisation'
     }
   };
 

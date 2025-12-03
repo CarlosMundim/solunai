@@ -12,40 +12,52 @@ const TrustIndicatorsBar: React.FC<TrustIndicatorsBarProps> = ({ lang }) => {
     ja: {
       indicators: [
         {
-          label: '製造業の専門知識',
-          title: '60年以上の製造業経験',
-          subtitle: '創業者の製造業における豊富な経験'
+          label: '日本拠点',
+          title: '日本拠点のAI開発',
+          subtitle: '日本企業の文化と業務を熟知'
         },
         {
-          label: '政府準拠',
-          title: 'METI準拠',
-          subtitle: '経済産業省Connected Industries'
+          label: 'データ主権',
+          title: '主権型データ管理',
+          subtitle: 'データはすべて国内に保存'
         },
         {
-          label: 'セキュリティ基準',
-          title: 'ISO 27001対応',
-          subtitle: '国際セキュリティ基準に準拠'
+          label: 'エージェントAI',
+          title: '企業向けエージェントAI',
+          subtitle: '状況を理解し行動するAI'
+        },
+        {
+          label: '導入実績',
+          title: '大規模組織での導入知見',
+          subtitle: '研究から企業運用まで幅広い実績'
         }
-      ]
+      ],
+      expandedText: 'ソルナイは、日本企業の組織文化、業務フロー、ガバナンス基準に適合するAIシステムの開発を専門としています。当社のエージェンティックAIは、国内でのデータ管理を前提とした主権型アーキテクチャで構築されており、企業が安心して導入できる堅牢な基盤を備えています。'
     },
     en: {
       indicators: [
         {
-          label: 'MANUFACTURING EXPERTISE',
-          title: 'Over 60 years of experience',
-          subtitle: "Based on the founder's manufacturing experience"
+          label: 'JAPAN-BASED',
+          title: 'Japan-Based AI Development',
+          subtitle: 'Deep understanding of Japanese business'
         },
         {
-          label: 'GOVERNMENT ALIGNED',
-          title: 'METI Compliant',
-          subtitle: 'Connected Industries framework'
+          label: 'DATA SOVEREIGNTY',
+          title: 'Sovereign Data Control',
+          subtitle: 'All data stays inside Japan'
         },
         {
-          label: 'SECURITY FRAMEWORK',
-          title: 'ISO 27001 Ready',
-          subtitle: 'International security standards'
+          label: 'AGENTIC AI',
+          title: 'Enterprise Agentic AI',
+          subtitle: 'AI that understands context and acts'
+        },
+        {
+          label: 'EXPERTISE',
+          title: 'Expertise from Large-Scale Deployments',
+          subtitle: 'From research to enterprise operations'
         }
-      ]
+      ],
+      expandedText: 'Solunai specialises in developing AI systems that align with Japanese organisational culture, operational workflows, and governance requirements. Our agentic AI is built on a sovereign architecture designed for full domestic data control, allowing organisations to deploy AI with confidence.'
     }
   };
 
