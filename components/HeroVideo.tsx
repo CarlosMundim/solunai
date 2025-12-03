@@ -10,16 +10,16 @@ interface HeroVideoProps {
 const HeroVideo: React.FC<HeroVideoProps> = ({ lang }) => {
   const content = {
     ja: {
-      headline: '応用AI・カルチュラルインテリジェンス・エージェント基盤',
-      subheadline: 'ソルナイ株式会社は、精度・安全性・長期運用性を重視した応用AI、エージェント基盤、カルチュラル・インテリジェンス技術を提供します。',
-      primaryCta: 'お問い合わせ',
+      headline: '日本企業のための主権型エージェンティックAI',
+      subheadline: '日本のビジネス文化を理解し、お客様の管理下で動作し、データはすべて国内に保存するAI。',
+      primaryCta: '無料相談を予約する',
       secondaryCta: 'ソリューションを見る',
       scroll: '詳しく見る'
     },
     en: {
-      headline: 'Applied AI, Cultural Intelligence & Agentic Infrastructure',
-      subheadline: 'Solunai Systems develops applied AI, agentic infrastructure and cultural-intelligence platforms designed for precision, safety and long-term operational stability.',
-      primaryCta: 'Contact Us',
+      headline: 'Sovereign Agentic AI for Japanese Companies',
+      subheadline: 'AI that understands Japanese business culture, stays under your control, and keeps your data inside Japan.',
+      primaryCta: 'Schedule Free Consultation',
       secondaryCta: 'Explore Solutions',
       scroll: 'Discover'
     }
