@@ -23,7 +23,7 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
       },
       worldemp: {
         title: 'WorldEmp グローバルエンジニアリング',
-        description: 'オランダ・インド・日本を拠点に、機械学習・自動化・ビジョン専門家を2-6週間で配備（従来の4-6ヶ月から大幅短縮）',
+        description: 'オランダ・インド・日本を拠点に、機械学習・自動化・ビジョン専門家によるグローバル対応',
         ctaButton: '詳細を見る'
       }
     },
@@ -41,7 +41,7 @@ const TechnologyPartners: React.FC<TechnologyPartnersProps> = ({ lang }) => {
       },
       worldemp: {
         title: 'WorldEmp Global Engineering',
-        description: 'Deploy ML, automation, and vision specialists in 2-6 weeks (vs. 4-6 months traditional) from Netherlands, India, and Japan bases',
+        description: 'ML, automation, and vision specialists from Netherlands, India, and Japan bases',
         ctaButton: 'Learn More'
       }
     }

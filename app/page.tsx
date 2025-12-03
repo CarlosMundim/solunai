@@ -5,22 +5,19 @@ import HeroVideo from '@/components/HeroVideo';
 import TrustIndicatorsBar from '@/components/TrustIndicatorsBar';
 import ProblemSolution from '@/components/ProblemSolution';
 import SolutionsGrid from '@/components/SolutionsGrid';
-import AIFirstModel from '@/components/AIFirstModel';
-import ClientSuccess from '@/components/ClientSuccess';
 import TechnologyPartners from '@/components/TechnologyPartners';
 import ContactCTA from '@/components/ContactCTA';
 import Footer from '@/components/Footer';
 
-// 9-Section Homepage Structure (Japanese B2B Norms + International Best Practices)
+// 8-Section Homepage Structure (Japanese B2B Enterprise Standard)
 // 1. Header (navigation)
 // 2. Hero (value proposition)
-// 3. Trust Indicators Bar (信頼の証 - years, experience, certifications)
+// 3. Trust Indicators Bar (信頼の証)
 // 4. Problem + Solution (consolidated)
-// 5. Solutions Grid (4 products)
-// 6. Why Solunai / Differentiators (AIFirstModel)
-// 7. Case Studies / Client Success (導入事例)
-// 8. Certifications (認定・準拠)
-// 9. Contact CTA (資料請求 + お問い合わせ)
+// 5. Solutions Grid (5 solutions)
+// 6. Technology & Partnerships
+// 7. Contact CTA (資料請求 + お問い合わせ)
+// 8. Footer
 
 export default function Home() {
   return (
@@ -30,8 +27,6 @@ export default function Home() {
       <TrustIndicatorsBar lang="ja" />
       <ProblemSolution lang="ja" />
       <SolutionsGrid lang="ja" />
-      <AIFirstModel lang="ja" />
-      <ClientSuccess lang="ja" />
       <TechnologyPartners lang="ja" />
       <ContactCTA lang="ja" />
       <Footer lang="ja" />
