@@ -203,14 +203,14 @@ html[lang="ja"] .point-detail {
 }
 
 .problem-conclusion {
-  background: rgba(245, 72, 10, 0.08);
-  border: 2px solid var(--solunai-blaze);
+  background: var(--bg-snow);
+  border: 1px solid var(--border-subtle);
   color: var(--sumi-black);
 }
 
 .solution-conclusion {
-  background: rgba(5, 150, 105, 0.08);
-  border: 2px solid var(--success);
+  background: var(--bg-snow);
+  border: 1px solid var(--border-subtle);
   color: var(--sumi-black);
 }
 
