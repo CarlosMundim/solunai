@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navigation = {
+  const navigation: { [key: string]: { links: NavLink[]; languageToggle: { href: string; label: string } } } = {
     ja: {
       links: [
         { href: '/', label: 'ホーム', isRoute: true },
