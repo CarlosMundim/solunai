@@ -62,6 +62,12 @@
   /* Gradients (Minimal - prefer solid colors) */
   --gradient-dark: linear-gradient(180deg, #1a1a1a 0%, #0d0d0d 100%);
   --gradient-light: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+  --gradient-orange: linear-gradient(135deg, #f5480a 0%, #c23800 100%);
+  --gradient-orange-hover: linear-gradient(135deg, #ff6b35 0%, #e64a19 100%);
+
+  /* Shadows for CTA buttons */
+  --shadow-orange: 0 4px 14px 0 rgba(245, 72, 10, 0.39);
+  --shadow-forge: 0 6px 20px 0 rgba(245, 72, 10, 0.5);
 
   /* Borders (Subtle, Japanese aesthetic) */
   --border-subtle: #e5e5e5;

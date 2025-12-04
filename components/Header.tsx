@@ -47,6 +47,15 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
         { href: '/', label: 'ホーム', isRoute: true },
         { href: '/about', label: 'Solunaiについて', isRoute: true },
         { href: '/services', label: 'サービス', isRoute: true },
+        {
+          label: 'KODA製品',
+          dropdown: [
+            { href: '/products', label: 'KODA製品一覧' },
+            { href: '/products/medcomm', label: 'KODA MedComm' },
+            { href: '/products/docintel', label: 'KODA DocIntel' },
+            { href: '/products/assist', label: 'KODA Assist' }
+          ]
+        },
         { href: '/cases', label: '事例・インタビュー', isRoute: true },
         { href: '/faq', label: 'よくあるご質問', isRoute: true },
         { href: '/resources', label: 'セミナー・資料', isRoute: true },
@@ -60,6 +69,15 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
         { href: '/en', label: 'Home', isRoute: true },
         { href: '/en/about', label: 'About Solunai', isRoute: true },
         { href: '/en/services', label: 'Services', isRoute: true },
+        {
+          label: 'KODA Products',
+          dropdown: [
+            { href: '/products', label: 'All Products' },
+            { href: '/products/medcomm', label: 'KODA MedComm' },
+            { href: '/products/docintel', label: 'KODA DocIntel' },
+            { href: '/products/assist', label: 'KODA Assist' }
+          ]
+        },
         { href: '/en/cases', label: 'Case Studies', isRoute: true },
         { href: '/en/faq', label: 'FAQ', isRoute: true },
         { href: '/en/resources', label: 'Resources', isRoute: true },
