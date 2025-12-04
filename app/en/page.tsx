@@ -5,6 +5,7 @@ import HeroVideo from '@/components/HeroVideo';
 import TrustIndicatorsBar from '@/components/TrustIndicatorsBar';
 import ProblemSolution from '@/components/ProblemSolution';
 import SolutionsGrid from '@/components/SolutionsGrid';
+import KodaPlatform from '@/components/KodaPlatform';
 import TechnologyPartners from '@/components/TechnologyPartners';
 import ContactCTA from '@/components/ContactCTA';
 import Footer from '@/components/Footer';
@@ -27,6 +28,7 @@ export default function EnglishHome() {
       <TrustIndicatorsBar lang="en" />
       <ProblemSolution lang="en" />
       <SolutionsGrid lang="en" />
+      <KodaPlatform lang="en" />
       <TechnologyPartners lang="en" />
       <ContactCTA lang="en" />
       <Footer lang="en" />

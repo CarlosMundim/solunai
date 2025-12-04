@@ -167,15 +167,14 @@ html[lang="ja"] .contact-cta-secondary-btn {
   outline-offset: 2px;
 }
 
-.btn-emoji {
+.btn-icon {
   flex-shrink: 0;
-  font-size: 18px;
   transition: transform var(--transition-base);
 }
 
-.contact-cta-primary-btn:hover .btn-emoji,
-.contact-cta-secondary-btn:hover .btn-emoji {
-  transform: scale(1.1);
+.contact-cta-primary-btn:hover .btn-icon,
+.contact-cta-secondary-btn:hover .btn-icon {
+  transform: translateX(2px);
 }
 
 /* Benefits Grid */
