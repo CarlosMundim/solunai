@@ -4,6 +4,7 @@ import React from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import '@/components/KodaProduct.css';
 
 export default function MedCommPage() {
   const features = [
@@ -58,82 +59,56 @@ export default function MedCommPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-white">
+    <main>
       <Header lang="ja" />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-blue-900 to-blue-800">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <div className="inline-block px-4 py-2 bg-blue-600/30 rounded-full text-blue-300 text-sm font-medium mb-6">
-            KODA FLAGSHIP PRODUCT
-          </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            KODA MedComm
-          </h1>
-          <p className="text-xl text-blue-200 leading-relaxed mb-4">
-            AI-Powered Medical Communication Training
-          </p>
-          <p className="text-lg text-blue-100 leading-relaxed mb-8">
+      <section className="koda-hero">
+        <div className="koda-hero-container">
+          <span className="koda-badge">KODA FLAGSHIP PRODUCT</span>
+          <h1>KODA MedComm</h1>
+          <p className="koda-hero-subtitle">AI-Powered Medical Communication Training</p>
+          <p className="koda-hero-description">
             AI仮想患者との対話練習で、医療コミュニケーションスキルを効率的に向上。
             従来の10分の1のコストで、いつでも・どこでも・何度でも練習可能。
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/contact"
-              className="inline-block px-8 py-4 bg-white text-blue-900 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
-            >
-              資料請求
-            </Link>
-            <Link
-              href="/demo"
-              className="inline-block px-8 py-4 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-600 transition-colors"
-            >
-              デモを見る
-            </Link>
+          <div className="koda-hero-buttons">
+            <Link href="/contact" className="koda-btn-primary">資料請求</Link>
+            <Link href="/contact" className="koda-btn-secondary">デモを見る</Link>
           </div>
         </div>
       </section>
 
       {/* Problem Statement */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
-            医療教育の課題
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500">
-              <h3 className="font-bold text-slate-900 mb-2">高コスト</h3>
-              <p className="text-slate-600 text-sm">
-                標準模擬患者(SP)の1セッションあたり¥50,000以上。予算制約で十分な練習機会を提供できない。
-              </p>
+      <section className="koda-problems">
+        <div className="koda-problems-container">
+          <h2 className="koda-section-title">医療教育の課題</h2>
+          <div className="koda-problems-grid">
+            <div className="koda-problem-card">
+              <h3>高コスト</h3>
+              <p>標準模擬患者(SP)の1セッションあたり¥50,000以上。予算制約で十分な練習機会を提供できない。</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-orange-500">
-              <h3 className="font-bold text-slate-900 mb-2">一貫性の欠如</h3>
-              <p className="text-slate-600 text-sm">
-                人間のSPは疲労や気分でパフォーマンスにばらつき。評価基準も主観的になりがち。
-              </p>
+            <div className="koda-problem-card">
+              <h3>一貫性の欠如</h3>
+              <p>人間のSPは疲労や気分でパフォーマンスにばらつき。評価基準も主観的になりがち。</p>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm border-l-4 border-yellow-500">
-              <h3 className="font-bold text-slate-900 mb-2">スケーラビリティ</h3>
-              <p className="text-slate-600 text-sm">
-                SP人材は希少。増加する学生数に対応できず、練習機会が不足。
-              </p>
+            <div className="koda-problem-card">
+              <h3>スケーラビリティ</h3>
+              <p>SP人材は希少。増加する学生数に対応できず、練習機会が不足。</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Benefits */}
-      <section className="py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
-            KODA MedCommの優位性
-          </h2>
-          <div className="grid md:grid-cols-4 gap-6">
+      <section className="koda-benefits">
+        <div className="koda-benefits-container">
+          <h2 className="koda-section-title">KODA MedCommの優位性</h2>
+          <div className="koda-benefits-grid">
             {benefits.map((benefit, idx) => (
-              <div key={idx} className="text-center p-6 bg-blue-50 rounded-xl">
-                <div className="text-4xl font-bold text-blue-600 mb-2">{benefit.metric}</div>
-                <p className="text-slate-600">{benefit.label}</p>
+              <div key={idx} className="koda-benefit-card">
+                <div className="koda-benefit-metric">{benefit.metric}</div>
+                <p className="koda-benefit-label">{benefit.label}</p>
               </div>
             ))}
           </div>
@@ -141,17 +116,15 @@ export default function MedCommPage() {
       </section>
 
       {/* Features */}
-      <section className="py-16 bg-slate-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
-            機能
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="koda-features">
+        <div className="koda-features-container">
+          <h2 className="koda-section-title">機能</h2>
+          <div className="koda-features-grid">
             {features.map((feature, idx) => (
-              <div key={idx} className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="text-3xl mb-4">{feature.icon}</div>
-                <h3 className="font-bold text-slate-900 mb-2">{feature.title}</h3>
-                <p className="text-slate-600 text-sm">{feature.description}</p>
+              <div key={idx} className="koda-feature-card">
+                <div className="koda-feature-icon">{feature.icon}</div>
+                <h3>{feature.title}</h3>
+                <p>{feature.description}</p>
               </div>
             ))}
           </div>
@@ -159,136 +132,78 @@ export default function MedCommPage() {
       </section>
 
       {/* Scenarios */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-slate-900 text-center mb-8">
-            対応シナリオ（例）
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <section className="koda-scenarios">
+        <div className="koda-scenarios-container">
+          <h2 className="koda-section-title">対応シナリオ（例）</h2>
+          <div className="koda-scenarios-grid">
             {scenarios.map((scenario, idx) => (
-              <div
-                key={idx}
-                className="p-4 bg-blue-50 rounded-lg text-center text-slate-700 text-sm font-medium"
-              >
-                {scenario}
-              </div>
+              <div key={idx} className="koda-scenario-tag">{scenario}</div>
             ))}
           </div>
-          <p className="text-center text-slate-500 mt-6">
-            ※ カスタムシナリオの追加も可能です
-          </p>
+          <p className="koda-scenarios-note">※ カスタムシナリオの追加も可能です</p>
         </div>
       </section>
 
       {/* Academic Partnership */}
-      <section className="py-16 bg-blue-900 text-white">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-center mb-8">
-            学術パートナーシップ
-          </h2>
-          <div className="bg-blue-800/50 p-8 rounded-xl">
-            <blockquote className="text-lg text-blue-100 italic mb-4">
+      <section className="koda-partnership">
+        <div className="koda-partnership-container">
+          <h2>学術パートナーシップ</h2>
+          <div className="koda-quote-box">
+            <p className="koda-quote-text">
               "KODA MedCommは、医療コミュニケーション教育に革新をもたらす可能性を秘めています。
               AIと人間の強みを組み合わせたこのアプローチは、次世代の医療者育成に大きく貢献するでしょう。"
-            </blockquote>
-            <p className="text-blue-200">
+            </p>
+            <p className="koda-quote-author">
               — Professor Jeanette Littlemore, University of Birmingham
-              <br />
-              <span className="text-sm">医療コミュニケーション・メタファー研究の世界的権威</span>
+            </p>
+            <p className="koda-quote-author-title">
+              医療コミュニケーション・メタファー研究の世界的権威
             </p>
           </div>
         </div>
       </section>
 
       {/* Pricing */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-slate-900 text-center mb-12">
-            料金
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-8 rounded-xl border-2 border-slate-200">
-              <h3 className="text-xl font-bold text-slate-900 mb-2">スタンダード</h3>
-              <p className="text-3xl font-bold text-blue-600 mb-4">
-                ¥300,000<span className="text-lg text-slate-500">/年</span>
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span> 50ユーザーまで
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span> 基本シナリオセット
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span> 学習分析ダッシュボード
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span> メールサポート
-                </li>
+      <section className="koda-pricing">
+        <div className="koda-pricing-container">
+          <h2 className="koda-section-title">料金</h2>
+          <div className="koda-pricing-grid">
+            <div className="koda-price-card">
+              <h3>スタンダード</h3>
+              <p className="koda-price-amount">¥300,000<span>/年</span></p>
+              <ul className="koda-price-features">
+                <li>50ユーザーまで</li>
+                <li>基本シナリオセット</li>
+                <li>学習分析ダッシュボード</li>
+                <li>メールサポート</li>
               </ul>
-              <Link
-                href="/contact"
-                className="block text-center py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
-              >
-                お問い合わせ
-              </Link>
+              <Link href="/contact" className="koda-price-btn koda-price-btn-outline">お問い合わせ</Link>
             </div>
-            <div className="p-8 rounded-xl border-2 border-blue-500 bg-blue-50/50">
-              <div className="text-sm font-bold text-blue-600 mb-2">RECOMMENDED</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">エンタープライズ</h3>
-              <p className="text-3xl font-bold text-blue-600 mb-4">
-                ¥500,000<span className="text-lg text-slate-500">/年〜</span>
-              </p>
-              <ul className="space-y-3 text-slate-600 mb-6">
-                <li className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span> 無制限ユーザー
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span> カスタムシナリオ作成
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span> エキスパート・デジタルツイン
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span> API連携
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-green-500">✓</span> 優先サポート
-                </li>
+            <div className="koda-price-card recommended">
+              <span className="koda-price-badge">RECOMMENDED</span>
+              <h3>エンタープライズ</h3>
+              <p className="koda-price-amount">¥500,000<span>/年〜</span></p>
+              <ul className="koda-price-features">
+                <li>無制限ユーザー</li>
+                <li>カスタムシナリオ作成</li>
+                <li>エキスパート・デジタルツイン</li>
+                <li>API連携</li>
+                <li>優先サポート</li>
               </ul>
-              <Link
-                href="/contact"
-                className="block text-center py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-              >
-                お問い合わせ
-              </Link>
+              <Link href="/contact" className="koda-price-btn koda-price-btn-solid">お問い合わせ</Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-900">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold text-white mb-4">
-            医療コミュニケーション教育を変革しませんか？
-          </h2>
-          <p className="text-slate-300 mb-8">
-            デモンストレーションや詳細資料をご希望の方は、お気軽にお問い合わせください。
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/contact"
-              className="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-            >
-              お問い合わせ
-            </Link>
-            <Link
-              href="/products"
-              className="inline-block px-8 py-4 bg-white/10 text-white font-semibold rounded-lg hover:bg-white/20 transition-colors"
-            >
-              他の製品を見る
-            </Link>
+      <section className="koda-cta">
+        <div className="koda-cta-container">
+          <h2>医療コミュニケーション教育を変革しませんか？</h2>
+          <p>デモンストレーションや詳細資料をご希望の方は、お気軽にお問い合わせください。</p>
+          <div className="koda-cta-buttons">
+            <Link href="/contact" className="koda-cta-btn-primary">お問い合わせ</Link>
+            <Link href="/products" className="koda-cta-btn-secondary">他の製品を見る</Link>
           </div>
         </div>
       </section>

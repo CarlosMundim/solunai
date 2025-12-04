@@ -1,0 +1,645 @@
+/* ============================================ */
+/* KODA PRODUCT PAGES - Premium Styling        */
+/* Matches Solunai design system               */
+/* ============================================ */
+
+/* Hero Section - Dark Blue Gradient */
+.koda-hero {
+  padding-top: 140px;
+  padding-bottom: 80px;
+  background: linear-gradient(180deg, #1e3a5f 0%, #152d4a 100%);
+  text-align: center;
+}
+
+.koda-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding-desktop);
+}
+
+.koda-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  color: #94b8d8;
+  font-size: 12px;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.koda-hero h1 {
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+html[lang="ja"] .koda-hero h1 {
+  font-size: 42px;
+}
+
+.koda-hero-subtitle {
+  font-size: 20px;
+  color: #94b8d8;
+  margin-bottom: 8px;
+}
+
+.koda-hero-description {
+  font-size: 18px;
+  color: #c8d9e8;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+html[lang="ja"] .koda-hero-description {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.koda-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.koda-btn-primary {
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--white);
+  color: #1e3a5f;
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.koda-btn-primary:hover {
+  background: #f0f4f8;
+  transform: translateY(-2px);
+}
+
+.koda-btn-secondary {
+  display: inline-block;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.koda-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Problem Section */
+.koda-problems {
+  padding: 80px var(--container-padding-desktop);
+  background: var(--bg-snow);
+}
+
+.koda-problems-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.koda-section-title {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  color: var(--sumi-black);
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+html[lang="ja"] .koda-section-title {
+  font-size: 26px;
+}
+
+.koda-problems-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.koda-problem-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid;
+}
+
+.koda-problem-card:nth-child(1) { border-color: #dc2626; }
+.koda-problem-card:nth-child(2) { border-color: #ea580c; }
+.koda-problem-card:nth-child(3) { border-color: #ca8a04; }
+
+.koda-problem-card h3 {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  color: var(--sumi-black);
+  margin-bottom: 12px;
+}
+
+.koda-problem-card p {
+  font-size: 14px;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+html[lang="ja"] .koda-problem-card p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Benefits/Metrics Section */
+.koda-benefits {
+  padding: 80px var(--container-padding-desktop);
+  background: var(--white);
+}
+
+.koda-benefits-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.koda-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.koda-benefit-card {
+  text-align: center;
+  padding: 40px 24px;
+  background: #e8f4fc;
+  border-radius: 16px;
+}
+
+.koda-benefit-metric {
+  font-size: 42px;
+  font-weight: var(--font-weight-bold);
+  color: #1e3a5f;
+  margin-bottom: 8px;
+}
+
+.koda-benefit-label {
+  font-size: 14px;
+  color: var(--charcoal);
+}
+
+html[lang="ja"] .koda-benefit-label {
+  font-size: 13px;
+}
+
+/* Features Section */
+.koda-features {
+  padding: 80px var(--container-padding-desktop);
+  background: var(--bg-snow);
+}
+
+.koda-features-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.koda-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.koda-feature-card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all var(--transition-base);
+}
+
+.koda-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.koda-feature-icon {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.koda-feature-card h3 {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  color: var(--sumi-black);
+  margin-bottom: 12px;
+}
+
+.koda-feature-card p {
+  font-size: 14px;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+
+html[lang="ja"] .koda-feature-card p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Scenarios/Tags Section */
+.koda-scenarios {
+  padding: 80px var(--container-padding-desktop);
+  background: var(--white);
+}
+
+.koda-scenarios-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.koda-scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.koda-scenario-tag {
+  padding: 16px;
+  background: #e8f4fc;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: var(--charcoal);
+}
+
+html[lang="ja"] .koda-scenario-tag {
+  font-size: 13px;
+}
+
+.koda-scenarios-note {
+  text-align: center;
+  color: var(--stone);
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+/* Quote/Partnership Section */
+.koda-partnership {
+  padding: 80px var(--container-padding-desktop);
+  background: #1e3a5f;
+  color: var(--white);
+}
+
+.koda-partnership-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.koda-partnership h2 {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 32px;
+}
+
+.koda-quote-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.koda-quote-text {
+  font-size: 18px;
+  font-style: italic;
+  color: #c8d9e8;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+html[lang="ja"] .koda-quote-text {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.koda-quote-author {
+  color: #94b8d8;
+  font-size: 15px;
+}
+
+.koda-quote-author-title {
+  font-size: 13px;
+  color: #7a9cb8;
+}
+
+/* Pricing Section */
+.koda-pricing {
+  padding: 80px var(--container-padding-desktop);
+  background: var(--white);
+}
+
+.koda-pricing-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.koda-pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.koda-price-card {
+  padding: 40px;
+  border-radius: 16px;
+  border: 2px solid var(--border-subtle);
+}
+
+.koda-price-card.recommended {
+  border-color: #1e3a5f;
+  background: #f0f6fc;
+}
+
+.koda-price-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+  color: #1e3a5f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.koda-price-card h3 {
+  font-size: 22px;
+  font-weight: var(--font-weight-bold);
+  color: var(--sumi-black);
+  margin-bottom: 8px;
+}
+
+.koda-price-amount {
+  font-size: 32px;
+  font-weight: var(--font-weight-bold);
+  color: #1e3a5f;
+  margin-bottom: 24px;
+}
+
+.koda-price-amount span {
+  font-size: 16px;
+  color: var(--stone);
+  font-weight: var(--font-weight-normal);
+}
+
+.koda-price-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.koda-price-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--charcoal);
+  padding: 8px 0;
+}
+
+.koda-price-features li::before {
+  content: '✓';
+  color: #059669;
+  font-weight: bold;
+}
+
+.koda-price-btn {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.koda-price-btn-outline {
+  border: 2px solid #1e3a5f;
+  color: #1e3a5f;
+  background: transparent;
+}
+
+.koda-price-btn-outline:hover {
+  background: #1e3a5f;
+  color: var(--white);
+}
+
+.koda-price-btn-solid {
+  background: #1e3a5f;
+  color: var(--white);
+  border: none;
+}
+
+.koda-price-btn-solid:hover {
+  background: #152d4a;
+}
+
+/* CTA Section */
+.koda-cta {
+  padding: 80px var(--container-padding-desktop);
+  background: var(--sumi-black);
+  text-align: center;
+}
+
+.koda-cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.koda-cta h2 {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+html[lang="ja"] .koda-cta h2 {
+  font-size: 26px;
+}
+
+.koda-cta p {
+  font-size: 16px;
+  color: #a3a3a3;
+  margin-bottom: 32px;
+}
+
+.koda-cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.koda-cta-btn-primary {
+  display: inline-block;
+  padding: 16px 32px;
+  background: #1e3a5f;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.koda-cta-btn-primary:hover {
+  background: #2a4d75;
+}
+
+.koda-cta-btn-secondary {
+  display: inline-block;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.koda-cta-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ============================================ */
+/* RESPONSIVE DESIGN                           */
+/* ============================================ */
+
+@media (max-width: 1024px) {
+  .koda-hero {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .koda-hero h1 {
+    font-size: 40px;
+  }
+
+  html[lang="ja"] .koda-hero h1 {
+    font-size: 36px;
+  }
+
+  .koda-problems-grid,
+  .koda-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .koda-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .koda-scenarios-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .koda-hero {
+    padding-top: 100px;
+    padding-bottom: 48px;
+  }
+
+  .koda-hero-container {
+    padding: 0 var(--container-padding-mobile);
+  }
+
+  .koda-hero h1 {
+    font-size: 32px;
+  }
+
+  html[lang="ja"] .koda-hero h1 {
+    font-size: 28px;
+  }
+
+  .koda-hero-subtitle {
+    font-size: 17px;
+  }
+
+  .koda-hero-description {
+    font-size: 15px;
+  }
+
+  .koda-problems,
+  .koda-benefits,
+  .koda-features,
+  .koda-scenarios,
+  .koda-partnership,
+  .koda-pricing,
+  .koda-cta {
+    padding: 60px var(--container-padding-mobile);
+  }
+
+  .koda-section-title {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .koda-problems-grid,
+  .koda-features-grid,
+  .koda-benefits-grid,
+  .koda-pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .koda-scenarios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .koda-benefit-metric {
+    font-size: 36px;
+  }
+
+  .koda-quote-box {
+    padding: 24px;
+  }
+
+  .koda-quote-text {
+    font-size: 16px;
+  }
+
+  .koda-cta h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .koda-hero h1 {
+    font-size: 28px;
+  }
+
+  html[lang="ja"] .koda-hero h1 {
+    font-size: 24px;
+  }
+
+  .koda-scenarios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .koda-hero-buttons,
+  .koda-cta-buttons {
+    flex-direction: column;
+  }
+
+  .koda-btn-primary,
+  .koda-btn-secondary,
+  .koda-cta-btn-primary,
+  .koda-cta-btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+}
