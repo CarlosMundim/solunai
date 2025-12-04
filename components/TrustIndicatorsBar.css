@@ -1,9 +1,9 @@
-/* Trust Indicators Bar - Matching "What we can offer" section style */
+/* Trust Indicators Bar - Floating Card Design */
 .trust-indicators-section {
   position: relative;
   width: 100%;
   padding: var(--section-spacing-desktop) var(--container-padding-desktop);
-  background: var(--white);
+  background: var(--bg-snow);
 }
 
 .trust-indicators-container {
@@ -17,19 +17,20 @@
   gap: 32px;
 }
 
-/* Card style matching "What we can offer" */
+/* Floating Card Style - White cards on gray background */
 .trust-indicator-card {
-  background: var(--bg-cream);
-  border: 1px solid var(--border-subtle);
+  background: var(--white);
+  border: none;
   border-radius: 16px;
   padding: 40px 32px;
   text-align: center;
   transition: all var(--transition-base);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .trust-indicator-card:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
 }
 
 /* Small uppercase label on top */
