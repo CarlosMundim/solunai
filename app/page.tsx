@@ -6,6 +6,7 @@ import TrustIndicatorsBar from '@/components/TrustIndicatorsBar';
 import ProblemSolution from '@/components/ProblemSolution';
 import SolutionsGrid from '@/components/SolutionsGrid';
 import KodaSceSectionJa from '@/components/KodaSceSectionJa';
+import KodaInPracticeSectionJa from '@/components/KodaInPracticeSectionJa';
 import BenefitsList from '@/components/BenefitsList';
 import ContactCTA from '@/components/ContactCTA';
 import Footer from '@/components/Footer';
@@ -30,6 +31,7 @@ export default function Home() {
       <ProblemSolution lang="ja" />
       <SolutionsGrid lang="ja" />
       <KodaSceSectionJa />
+      <KodaInPracticeSectionJa />
       <BenefitsList lang="ja" />
       <ContactCTA lang="ja" />
       <Footer lang="ja" />
