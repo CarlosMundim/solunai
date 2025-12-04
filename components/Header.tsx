@@ -56,10 +56,6 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
             { href: '/products/assist', label: 'KODA Assist' }
           ]
         },
-        { href: '/cases', label: '事例・インタビュー', isRoute: true },
-        { href: '/faq', label: 'よくあるご質問', isRoute: true },
-        { href: '/resources', label: 'セミナー・資料', isRoute: true },
-        { href: '/company', label: '会社情報', isRoute: true },
         { href: '/contact', label: 'お問い合わせ', isRoute: true }
       ],
       languageToggle: { href: '/en', label: 'English' }
@@ -67,7 +63,7 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
     en: {
       links: [
         { href: '/en', label: 'Home', isRoute: true },
-        { href: '/en/about', label: 'About Solunai', isRoute: true },
+        { href: '/en/about', label: 'About', isRoute: true },
         { href: '/en/services', label: 'Services', isRoute: true },
         {
           label: 'KODA Products',
@@ -78,10 +74,6 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
             { href: '/products/assist', label: 'KODA Assist' }
           ]
         },
-        { href: '/en/cases', label: 'Case Studies', isRoute: true },
-        { href: '/en/faq', label: 'FAQ', isRoute: true },
-        { href: '/en/resources', label: 'Resources', isRoute: true },
-        { href: '/en/company', label: 'Company', isRoute: true },
         { href: '/en/contact', label: 'Contact', isRoute: true }
       ],
       languageToggle: { href: '/', label: '日本語' }
