@@ -46,30 +46,12 @@
   overflow: hidden;
 }
 
-.problem-card::before,
-.solution-card-ps::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--solunai-blaze) 0%, var(--ember) 100%);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition-base);
-}
+/* Removed orange gradient bar on hover */
 
 .problem-card:hover,
 .solution-card-ps:hover {
-  border-color: var(--solunai-blaze);
-  box-shadow: var(--shadow-orange);
-  transform: translateY(-4px);
-}
-
-.problem-card:hover::before,
-.solution-card-ps:hover::before {
-  transform: scaleX(1);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 /* Card Content */

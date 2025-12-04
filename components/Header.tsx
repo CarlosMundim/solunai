@@ -53,7 +53,10 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
             { href: '/products', label: 'KODA製品一覧' },
             { href: '/products/medcomm', label: 'KODA MedComm' },
             { href: '/products/docintel', label: 'KODA DocIntel' },
-            { href: '/products/assist', label: 'KODA Assist' }
+            { href: '/products/assist', label: 'KODA Assist' },
+            { href: '/products/cultural', label: 'KODA Cultural' },
+            { href: '/products/training', label: 'KODA Training' },
+            { href: '/products/instructry', label: 'KODA Instructry' }
           ]
         },
         { href: '/contact', label: 'お問い合わせ', isRoute: true }
@@ -71,7 +74,10 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
             { href: '/products', label: 'All Products' },
             { href: '/products/medcomm', label: 'KODA MedComm' },
             { href: '/products/docintel', label: 'KODA DocIntel' },
-            { href: '/products/assist', label: 'KODA Assist' }
+            { href: '/products/assist', label: 'KODA Assist' },
+            { href: '/products/cultural', label: 'KODA Cultural' },
+            { href: '/products/training', label: 'KODA Training' },
+            { href: '/products/instructry', label: 'KODA Instructry' }
           ]
         },
         { href: '/en/contact', label: 'Contact', isRoute: true }
