@@ -13,8 +13,8 @@
 
 .trust-indicators-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
 }
 
 /* Card style matching "What we can offer" */
