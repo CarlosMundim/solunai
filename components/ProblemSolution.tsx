@@ -10,96 +10,96 @@ interface ProblemSolutionProps {
 const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
   const content = {
     ja: {
-      problemBadge: '課題',
-      problemTitle: '日本企業が直面する現実的な課題',
-      problemSubtitle: 'AI導入の複雑さ',
+      problemBadge: '困りごと',
+      problemTitle: '中小企業の「よくある困りごと」',
+      problemSubtitle: '現場で起きている、本当の悩み',
       problemPoints: [
         {
-          title: '判断の複雑さ',
-          detail: 'AI導入の「何を、どこまで、どのように」が不明確'
+          title: '突然の退職',
+          detail: '「えっ、来月辞めるの？」――引き継ぎの時間もない'
         },
         {
-          title: '部門間の壁',
-          detail: '業務内容や専門知識が部門ごとに異なる'
+          title: 'ベテラン頼み',
+          detail: '「あの人がいないと回らない」部署はありませんか'
         },
         {
-          title: 'ガバナンスの懸念',
-          detail: '海外製AIへのデータ主権・セキュリティ不安'
+          title: '若手が定着しない',
+          detail: '教える余裕がなく、気づけば辞めている'
         },
         {
-          title: '文化との不一致',
-          detail: '日本の組織文化に馴染まないAIツール'
+          title: '日報が形骸化',
+          detail: '書いてはいるけど、誰も読んでいない'
         }
       ],
-      problemConclusion: '現場・管理部門・経営層すべてが納得できる設計が必要',
-      solutionBadge: '提供価値',
-      solutionTitle: 'ソルナイの提供価値',
-      solutionSubtitle: '主権型エージェンティックAI',
+      problemConclusion: 'どれも「人」にまつわる悩み。でも、解決の糸口は「仕組み」にあります。',
+      solutionBadge: 'Solunaiの考え方',
+      solutionTitle: '人を辞めさせない仕組みをつくる',
+      solutionSubtitle: 'AIで「見える化」、人は「判断」に集中',
       solutionPoints: [
         {
-          title: '文脈理解',
-          detail: '企業固有の業務慣習・専門用語・文化を理解'
+          title: '声を拾う',
+          detail: '日報・会話・報告から、社員のホンネを見える化'
         },
         {
-          title: '安全設計',
-          detail: '国内データ管理を前提とした主権型アーキテクチャ'
+          title: '知恵を残す',
+          detail: 'ベテランのノウハウを、次の世代につなぐ'
         },
         {
-          title: '実証済み知見',
-          detail: '大学・教育機関・産業現場での実績'
+          title: 'ムダを減らす',
+          detail: '繰り返し作業や確認作業を、AIがサポート'
         },
         {
-          title: '一貫支援',
-          detail: 'PoCから全社展開まで伴走'
+          title: '少しずつ始める',
+          detail: '大きな投資なし。今あるPCから、小さく導入'
         }
       ],
-      solutionConclusion: 'AIを長期的な価値創出の源泉に'
+      solutionConclusion: '「AIを使う」のではなく、「人が働きやすくなる」ことがゴールです。'
     },
     en: {
-      problemBadge: 'CHALLENGES',
-      problemTitle: 'Real Challenges Japanese Organisations Face',
-      problemSubtitle: 'The Complexity of AI Adoption',
+      problemBadge: 'COMMON CHALLENGES',
+      problemTitle: 'Issues SMEs Face Every Day',
+      problemSubtitle: 'Real struggles happening on the ground',
       problemPoints: [
         {
-          title: 'Complex decisions',
-          detail: 'Unclear scope: what, how far, and how to use AI'
+          title: 'Sudden resignations',
+          detail: '"Wait, you\'re leaving next month?" — No time for handover'
         },
         {
-          title: 'Departmental silos',
-          detail: 'Different workflows and expertise across divisions'
+          title: 'Over-reliance on veterans',
+          detail: 'Do you have departments that can\'t function without "that one person"?'
         },
         {
-          title: 'Governance concerns',
-          detail: 'Data sovereignty and security worries with foreign AI'
+          title: 'Young staff don\'t stay',
+          detail: 'No time to train them, and before you know it, they\'re gone'
         },
         {
-          title: 'Cultural mismatch',
-          detail: 'Generic AI tools that do not fit Japanese organisations'
+          title: 'Daily reports become hollow',
+          detail: 'Everyone writes them, but nobody reads them'
         }
       ],
-      problemConclusion: 'Solutions must satisfy frontline staff, management, and executives',
-      solutionBadge: 'OUR APPROACH',
-      solutionTitle: "Solunai's Value Proposition",
-      solutionSubtitle: 'Sovereign Agentic AI',
+      problemConclusion: 'These are all "people" problems. But the solution lies in building better systems.',
+      solutionBadge: 'Our Approach',
+      solutionTitle: 'Building systems that keep people',
+      solutionSubtitle: 'AI makes things visible, people focus on decisions',
       solutionPoints: [
         {
-          title: 'Contextual understanding',
-          detail: 'Learns your workflows, terminology, and culture'
+          title: 'Capture voices',
+          detail: 'Surface real feelings from reports, conversations, and feedback'
         },
         {
-          title: 'Sovereign architecture',
-          detail: 'Built for domestic data control from the ground up'
+          title: 'Preserve wisdom',
+          detail: 'Pass veteran know-how to the next generation'
         },
         {
-          title: 'Proven expertise',
-          detail: 'Experience across universities, institutions, and industry'
+          title: 'Reduce waste',
+          detail: 'AI supports repetitive tasks and double-checking'
         },
         {
-          title: 'End-to-end support',
-          detail: 'From PoC to full-scale deployment'
+          title: 'Start small',
+          detail: 'No big investment. Begin with existing PCs, step by step'
         }
       ],
-      solutionConclusion: 'AI as a sustained source of value for your organisation'
+      solutionConclusion: 'The goal isn\'t "using AI" — it\'s making work better for people.'
     }
   };
 
@@ -111,6 +111,15 @@ const ProblemSolution: React.FC<ProblemSolutionProps> = ({ lang }) => {
       className="problem-solution-section"
       aria-label={lang === 'ja' ? '課題と解決策' : 'Problem and Solution'}
     >
+      {/* Section Image - SME Office Scene */}
+      <div className="problem-solution-image-wrapper">
+        <img
+          src="/images/solunai-problem-office.jpg"
+          alt={lang === 'ja' ? '中小企業のオフィス風景' : 'SME office scene'}
+          className="problem-solution-image"
+        />
+      </div>
+
       <div className="problem-solution-container">
         {/* Problem Card */}
         <div className="problem-card">

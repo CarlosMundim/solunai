@@ -45,31 +45,12 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
     ja: {
       links: [
         { href: '/', label: 'ホーム', isRoute: true },
-        { href: '/technology', label: 'テクノロジー', isRoute: true },
-        {
-          label: 'ソリューション',
-          dropdown: [
-            { href: '/solutions', label: 'ソリューション概要' },
-            { href: '/solutions/healthcare', label: '医療・医学教育' },
-            { href: '/solutions/nursing', label: '看護・介護教育' },
-            { href: '/solutions/corporate-training', label: '企業研修' },
-            { href: '/solutions/enterprise-automation', label: '業務自動化' },
-            { href: '/solutions/cross-cultural', label: '多文化対応' }
-          ]
-        },
-        {
-          label: 'サービス',
-          dropdown: [
-            { href: '/services', label: 'サービス概要' },
-            { href: '/services/advisory', label: 'AI統合アドバイザリー' },
-            { href: '/services/automation', label: 'ワークフロー自動化' },
-            { href: '/services/simulation', label: 'シミュレーション開発' },
-            { href: '/services/sovereignty', label: 'データ主権コンサルティング' },
-            { href: '/services/partners', label: 'パートナーソリューション' }
-          ]
-        },
-        { href: '/product', label: 'プロダクト', isRoute: true },
-        { href: '/about', label: '企業情報', isRoute: true },
+        { href: '/about', label: 'Solunaiについて', isRoute: true },
+        { href: '/services', label: 'サービス', isRoute: true },
+        { href: '/cases', label: '事例・インタビュー', isRoute: true },
+        { href: '/faq', label: 'よくあるご質問', isRoute: true },
+        { href: '/resources', label: 'セミナー・資料', isRoute: true },
+        { href: '/company', label: '会社情報', isRoute: true },
         { href: '/contact', label: 'お問い合わせ', isRoute: true }
       ],
       languageToggle: { href: '/en', label: 'English' }
@@ -77,31 +58,12 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
     en: {
       links: [
         { href: '/en', label: 'Home', isRoute: true },
-        { href: '/en/technology', label: 'Technology', isRoute: true },
-        {
-          label: 'Solutions',
-          dropdown: [
-            { href: '/en/solutions', label: 'Solutions Overview' },
-            { href: '/en/solutions/healthcare', label: 'Healthcare & Medical Education' },
-            { href: '/en/solutions/nursing', label: 'Nursing & Caregiver Training' },
-            { href: '/en/solutions/corporate-training', label: 'Corporate Communication' },
-            { href: '/en/solutions/enterprise-automation', label: 'Enterprise Automation' },
-            { href: '/en/solutions/cross-cultural', label: 'Cross-Cultural Workforce' }
-          ]
-        },
-        {
-          label: 'Services',
-          dropdown: [
-            { href: '/en/services', label: 'Services Overview' },
-            { href: '/en/services/advisory', label: 'AI Integration Advisory' },
-            { href: '/en/services/automation', label: 'Workflow Automation' },
-            { href: '/en/services/simulation', label: 'Simulation Development' },
-            { href: '/en/services/sovereignty', label: 'Data Sovereignty Consulting' },
-            { href: '/en/services/partners', label: 'Partner Solutions' }
-          ]
-        },
-        { href: '/en/product', label: 'Products', isRoute: true },
-        { href: '/en/about', label: 'About Us', isRoute: true },
+        { href: '/en/about', label: 'About Solunai', isRoute: true },
+        { href: '/en/services', label: 'Services', isRoute: true },
+        { href: '/en/cases', label: 'Case Studies', isRoute: true },
+        { href: '/en/faq', label: 'FAQ', isRoute: true },
+        { href: '/en/resources', label: 'Resources', isRoute: true },
+        { href: '/en/company', label: 'Company', isRoute: true },
         { href: '/en/contact', label: 'Contact', isRoute: true }
       ],
       languageToggle: { href: '/', label: '日本語' }

@@ -10,31 +10,30 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ lang }) => {
   const content = {
     ja: {
-      impactHeadline: 'AI革命\n日本の製造業における',
+      impactHeadline: '人を見る、\n仕事が変わる。',
       solutions: {
-        title: 'ソリューション',
+        title: 'サービス',
         links: [
-          { label: '概要', href: '/solutions/overview' },
-          { label: 'デジタルツイン', href: '/solutions/digital-twin' },
-          { label: 'コンピュータビジョン', href: '/solutions/computer-vision' },
-          { label: '予知保全', href: '/solutions/predictive-maintenance' },
-          { label: '生産最適化', href: '/solutions/production-optimization' }
+          { label: 'サービス一覧', href: '/services' },
+          { label: '業務アシストAI', href: '/services#workflow' },
+          { label: '人材・教育サポート', href: '/services#training' },
+          { label: '経営レポートAI', href: '/services#reports' }
         ]
       },
       company: {
-        title: '企業情報',
+        title: '会社情報',
         links: [
-          { label: '会社概要', href: '/about' },
-          { label: 'チーム', href: '/about#team' },
-          { label: 'パートナー', href: '/about#partners' }
+          { label: 'Solunaiについて', href: '/about' },
+          { label: '事例・インタビュー', href: '/cases' },
+          { label: 'よくあるご質問', href: '/faq' }
         ]
       },
       support: {
         title: 'サポート',
         links: [
           { label: 'お問い合わせ', href: '/contact' },
-          { label: 'プライバシーポリシー', href: '/privacy' },
-          { label: '利用規約', href: '/terms' }
+          { label: 'セミナー・資料', href: '/resources' },
+          { label: 'プライバシーポリシー', href: '/privacy' }
         ]
       },
       contact: {
@@ -54,34 +53,33 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
           postalCode: '〒104-0061'
         }
       },
-      copyright: '© 2025 Solunai Systems K.K.'
+      copyright: '© 2025 Solunai Systems 合同会社'
     },
     en: {
-      impactHeadline: 'AI revolution\nin\nJapanese manufacturing',
+      impactHeadline: 'See the people,\nchange the work.',
       solutions: {
-        title: 'Solutions',
+        title: 'Services',
         links: [
-          { label: 'Overview', href: '/en/solutions/overview' },
-          { label: 'Digital Twin', href: '/en/solutions/digital-twin' },
-          { label: 'Computer Vision', href: '/en/solutions/computer-vision' },
-          { label: 'Predictive Maintenance', href: '/en/solutions/predictive-maintenance' },
-          { label: 'Production Optimization', href: '/en/solutions/production-optimization' }
+          { label: 'All Services', href: '/en/services' },
+          { label: 'Workflow Assist AI', href: '/en/services#workflow' },
+          { label: 'HR & Training Support', href: '/en/services#training' },
+          { label: 'Management Report AI', href: '/en/services#reports' }
         ]
       },
       company: {
         title: 'Company',
         links: [
-          { label: 'About Us', href: '/en/about' },
-          { label: 'Team', href: '/en/about#team' },
-          { label: 'Partners', href: '/en/about#partners' }
+          { label: 'About Solunai', href: '/en/about' },
+          { label: 'Case Studies', href: '/en/cases' },
+          { label: 'FAQ', href: '/en/faq' }
         ]
       },
       support: {
         title: 'Support',
         links: [
-          { label: 'Contact Us', href: '/en/contact' },
-          { label: 'Privacy Policy', href: '/en/privacy' },
-          { label: 'Terms of Service', href: '/en/terms' }
+          { label: 'Contact', href: '/en/contact' },
+          { label: 'Resources', href: '/en/resources' },
+          { label: 'Privacy Policy', href: '/en/privacy' }
         ]
       },
       contact: {
@@ -90,9 +88,9 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
         headquarters: {
           label: 'Headquarters',
           name: 'WISE NEXT Shin-Yokohama 4F',
-          address: '2-5-14 Kohoku-ku, Yokohama',
+          address: '2-5-14 Shin-Yokohama, Kohoku-ku, Yokohama',
           postalCode: 'Kanagawa 222-0033',
-          phone: '045-285-9480'
+          phone: '+81-45-285-9480'
         },
         tokyoBranch: {
           label: 'Tokyo Branch',
@@ -101,7 +99,7 @@ const Footer: React.FC<FooterProps> = ({ lang }) => {
           postalCode: 'Tokyo 104-0061'
         }
       },
-      copyright: '© 2025 Solunai Systems K.K.'
+      copyright: '© 2025 Solunai Systems G.K.'
     }
   };
 

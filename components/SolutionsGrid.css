@@ -109,17 +109,16 @@ html[lang="ja"] .solutions-grid-description {
   height: 100%;
 }
 
-/* Solution Number */
+/* Solution Number / Badge Label */
 .solution-number {
   display: inline-block;
   align-self: flex-start;
-  font-size: 20px;
+  font-size: 11px;
   font-weight: var(--font-weight-bold);
-  color: var(--solunai-blaze);
-  background: rgba(245, 72, 10, 0.1);
-  padding: 8px 16px;
-  border-radius: 8px;
-  letter-spacing: 1px;
+  color: var(--titanium-grey);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
 }
 
 /* Solution Title */

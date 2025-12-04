@@ -10,17 +10,17 @@ interface HeroVideoProps {
 const HeroVideo: React.FC<HeroVideoProps> = ({ lang }) => {
   const content = {
     ja: {
-      headline: '日本企業のための主権型エージェンティックAI',
-      subheadline: '日本のビジネス文化を理解し、お客様の管理下で動作し、データはすべて国内に保存するAI。',
-      primaryCta: '無料相談を予約する',
-      secondaryCta: 'ソリューションを見る',
+      headline: 'AIだけど、ちゃんと「人」を見る。',
+      subheadline: '急な退職、ベテラン不足、引き継ぎが進まない――中小企業の「人」と「仕事」の悩みは、どこも同じです。Solunaiは、現場の声とデータを静かに見える化し、ムリ・ムダ・モレを減らしながら、社員が安心して働ける職場づくりをお手伝いします。',
+      primaryCta: '資料請求（無料）',
+      secondaryCta: 'オンライン相談を予約',
       scroll: '詳しく見る'
     },
     en: {
-      headline: 'Sovereign Agentic AI for Japanese Companies',
-      subheadline: 'AI that understands Japanese business culture, stays under your control, and keeps your data inside Japan.',
-      primaryCta: 'Schedule Free Consultation',
-      secondaryCta: 'Explore Solutions',
+      headline: 'AI that pays attention to people.',
+      subheadline: 'Sudden resignations, lack of experienced staff, poor handovers – these issues are common in many small and mid-sized companies. Solunai quietly makes your on-site reality visible, reduces unnecessary strain, and helps you build a workplace where employees can work with peace of mind.',
+      primaryCta: 'Request Information (Free)',
+      secondaryCta: 'Book Online Consultation',
       scroll: 'Discover'
     }
   };
@@ -34,7 +34,7 @@ const HeroVideo: React.FC<HeroVideoProps> = ({ lang }) => {
         <div
           className="hero-background-image"
           style={{
-            backgroundImage: 'url(/images/Hero-manufacturing.jpg)',
+            backgroundImage: 'url(/images/solunai-hero-desktop.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             width: '100%',

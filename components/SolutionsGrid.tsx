@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 import './SolutionsGrid.css';
 
 interface SolutionsGridProps {
@@ -24,77 +23,65 @@ interface Solution {
 const SolutionsGrid: React.FC<SolutionsGridProps> = ({ lang }) => {
   const content = {
     ja: {
-      sectionBadge: 'ソリューション',
-      sectionTitle: '産業領域に特化した\n5つのAIソリューション',
-      sectionDescription: '医療教育から企業研修まで、日本の組織文化を理解した対話型AIで課題を解決'
+      sectionBadge: 'サービス紹介',
+      sectionTitle: 'Solunaiができること',
+      sectionDescription: '現場に寄り添い、少しずつ導入できるAIサポート'
     },
     en: {
-      sectionBadge: 'Solutions',
-      sectionTitle: '5 AI Solutions\nfor Key Industries',
-      sectionDescription: 'From medical education to corporate training, dialogue-based AI that understands Japanese organisational culture'
+      sectionBadge: 'Our Services',
+      sectionTitle: 'What Solunai Can Do',
+      sectionDescription: 'AI support that stays close to your workplace and grows step by step'
     }
   };
 
   const solutions: Solution[] = [
     {
-      number: '01',
-      titleJa: '医療・医学教育',
-      titleEn: 'Healthcare & Medical Education',
-      metric1Ja: 'OSCE準備・医療面接の練習',
-      metric1En: 'OSCE prep & patient interview practice',
-      metric2Ja: '臨床コミュニケーション力の育成',
-      metric2En: 'Clinical communication training',
+      number: 'ムリ・ムダ削減',
+      titleJa: 'ムリ・ムダ削減をサポート',
+      titleEn: 'Reducing Unreasonableness and Waste',
+      metric1Ja: '小さな改善をコツコツ積み上げる仕組みづくり',
+      metric1En: 'Creating systems for steady, incremental improvements',
+      metric2Ja: '',
+      metric2En: '',
       ctaJa: '詳しく見る',
       ctaEn: 'Learn More',
-      link: '/solutions/healthcare'
+      link: '/services'
     },
     {
-      number: '02',
-      titleJa: '看護・介護教育',
-      titleEn: 'Nursing & Caregiver Training',
-      metric1Ja: '多様な患者シナリオの再現',
-      metric1En: 'Diverse patient scenario simulation',
-      metric2Ja: '看護現場での対話力向上',
-      metric2En: 'Communication skills for care',
+      number: '知恵の見える化',
+      titleJa: 'ベテランの知恵を「見える化」',
+      titleEn: 'Visualizing Veteran Wisdom',
+      metric1Ja: '属人化したノウハウを、次の世代へつなぐ',
+      metric1En: 'Passing on personal know-how to the next generation',
+      metric2Ja: '',
+      metric2En: '',
       ctaJa: '詳しく見る',
       ctaEn: 'Learn More',
-      link: '/solutions/nursing'
+      link: '/services'
     },
     {
-      number: '03',
-      titleJa: '企業研修',
-      titleEn: 'Corporate Communication Training',
-      metric1Ja: '業務固有のロールプレイ',
-      metric1En: 'Customised workplace roleplay',
-      metric2Ja: '行動変容につながる研修',
-      metric2En: 'Training that drives behavioural change',
+      number: '現場の声',
+      titleJa: '現場の声をそのまま経営に',
+      titleEn: 'Voices from the Field to Management',
+      metric1Ja: '日報・会議・ヒアリングを、分かりやすく整理',
+      metric1En: 'Organize daily reports, meetings, and hearings clearly',
+      metric2Ja: '',
+      metric2En: '',
       ctaJa: '詳しく見る',
       ctaEn: 'Learn More',
-      link: '/solutions/corporate-training'
+      link: '/services'
     },
     {
-      number: '04',
-      titleJa: '業務自動化',
-      titleEn: 'Enterprise Workflow Automation',
-      metric1Ja: '業務フローを理解するAI',
-      metric1En: 'AI that understands your workflows',
-      metric2Ja: '国内データ管理・ガバナンス対応',
-      metric2En: 'Domestic data control & governance',
+      number: '簡単導入',
+      titleJa: '難しいITは不要',
+      titleEn: 'No Complicated IT Required',
+      metric1Ja: '既存のPC・環境から少しずつ導入可能',
+      metric1En: 'Can be introduced gradually from existing PCs',
+      metric2Ja: '',
+      metric2En: '',
       ctaJa: '詳しく見る',
       ctaEn: 'Learn More',
-      link: '/solutions/enterprise-automation'
-    },
-    {
-      number: '05',
-      titleJa: '多文化対応',
-      titleEn: 'Cross-Cultural Workforce',
-      metric1Ja: '日本文化を理解した対話AI',
-      metric1En: 'AI grounded in Japanese culture',
-      metric2Ja: '相互理解を促すロールプレイ',
-      metric2En: 'Roleplay for mutual understanding',
-      ctaJa: '詳しく見る',
-      ctaEn: 'Learn More',
-      link: '/solutions/cross-cultural'
+      link: '/services'
     }
   ];
 
@@ -127,22 +114,18 @@ const SolutionsGrid: React.FC<SolutionsGridProps> = ({ lang }) => {
               </h3>
               <div className="solution-metrics">
                 <div className="solution-metric">
-                  <span className="metric-icon">✓</span>
                   <span className="metric-text">
                     {lang === 'ja' ? solution.metric1Ja : solution.metric1En}
                   </span>
                 </div>
-                <div className="solution-metric">
-                  <span className="metric-icon">✓</span>
-                  <span className="metric-text">
-                    {lang === 'ja' ? solution.metric2Ja : solution.metric2En}
-                  </span>
-                </div>
+                {(lang === 'ja' ? solution.metric2Ja : solution.metric2En) && (
+                  <div className="solution-metric">
+                    <span className="metric-text">
+                      {lang === 'ja' ? solution.metric2Ja : solution.metric2En}
+                    </span>
+                  </div>
+                )}
               </div>
-              <Link href={solution.link} className="solution-cta">
-                {lang === 'ja' ? solution.ctaJa : solution.ctaEn}
-                <span className="cta-arrow">→</span>
-              </Link>
             </div>
           </div>
         ))}

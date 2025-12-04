@@ -9,6 +9,23 @@
   padding: var(--section-spacing-desktop) var(--container-padding-desktop);
 }
 
+/* Section Image - SME Office Scene */
+.problem-solution-image-wrapper {
+  max-width: 1200px;
+  margin: 0 auto 48px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.problem-solution-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 400px;
+}
+
 .problem-solution-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -211,6 +228,15 @@ html[lang="ja"] .conclusion {
     padding: var(--section-spacing-tablet) var(--container-padding-tablet);
   }
 
+  .problem-solution-image-wrapper {
+    margin-bottom: 40px;
+    border-radius: 12px;
+  }
+
+  .problem-solution-image {
+    max-height: 350px;
+  }
+
   .problem-solution-container {
     gap: 24px;
   }
@@ -233,6 +259,15 @@ html[lang="ja"] .conclusion {
 @media (max-width: 768px) {
   .problem-solution-section {
     padding: var(--section-spacing-mobile) var(--container-padding-mobile);
+  }
+
+  .problem-solution-image-wrapper {
+    margin-bottom: 32px;
+    border-radius: 12px;
+  }
+
+  .problem-solution-image {
+    max-height: 280px;
   }
 
   .problem-solution-container {
@@ -309,6 +344,15 @@ html[lang="ja"] .conclusion {
 @media (max-width: 480px) {
   .problem-solution-section {
     padding: 48px 20px;
+  }
+
+  .problem-solution-image-wrapper {
+    margin-bottom: 28px;
+    border-radius: 10px;
+  }
+
+  .problem-solution-image {
+    max-height: 220px;
   }
 
   .problem-card,

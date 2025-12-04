@@ -10,41 +10,41 @@ interface ContactCTAProps {
 const ContactCTA: React.FC<ContactCTAProps> = ({ lang }) => {
   const content = {
     ja: {
-      headline: '製造業の課題、一緒に解決しませんか？',
-      subheadline: "Let's solve your manufacturing challenges together",
-      description: '無料相談・資料請求は完全無料。お気軽にお問い合わせください。',
-      primaryCTA: '資料をダウンロード',
-      secondaryCTA: '無料診断を予約',
+      headline: 'まずは、話を聞いてみませんか？',
+      subheadline: '無料相談・資料請求、お気軽にどうぞ',
+      description: '「うちでも使えるの？」「まず何から始めればいい？」そんな疑問からで大丈夫です。',
+      primaryCTA: '資料請求（無料）',
+      secondaryCTA: 'オンライン相談を予約',
       contactInfo: {
         phone: 'お電話でのお問い合わせ',
-        phoneNumber: '03-XXXX-XXXX',
-        email: 'info@solunai.com',
+        phoneNumber: '045-285-9480',
+        email: 'info@solunai.co.jp',
         hours: '受付時間：平日 9:00-18:00'
       },
       benefits: [
-        '導入事例・ROI分析',
-        '技術資料・ホワイトペーパー',
-        '専門家による課題診断',
-        '即日対応・オンライン可'
+        '無料相談・資料請求',
+        '導入事例のご紹介',
+        'オンライン対応可',
+        '小さく始められる提案'
       ]
     },
     en: {
-      headline: "Let's solve your manufacturing challenges together",
-      subheadline: '製造業の課題、一緒に解決しませんか？',
-      description: 'Free consultation and materials available. No obligation, no pressure.',
-      primaryCTA: 'Download Materials',
-      secondaryCTA: 'Schedule Free Assessment',
+      headline: 'Why not start with a conversation?',
+      subheadline: 'Free consultation and materials available',
+      description: '"Can we even use this?" "Where do we start?" Questions like these are perfectly fine.',
+      primaryCTA: 'Request Information (Free)',
+      secondaryCTA: 'Book Online Consultation',
       contactInfo: {
         phone: 'Phone Inquiries',
-        phoneNumber: '+81-3-XXXX-XXXX',
-        email: 'info@solunai.com',
+        phoneNumber: '+81-45-285-9480',
+        email: 'info@solunai.co.jp',
         hours: 'Business Hours: Weekdays 9:00-18:00 JST'
       },
       benefits: [
-        'Case Studies & ROI Analysis',
-        'Technical Documentation',
-        'Expert Consultation',
-        'Same-day Response Available'
+        'Free consultation & materials',
+        'Case study introductions',
+        'Online meetings available',
+        'Proposals you can start small'
       ]
     }
   };
@@ -54,6 +54,15 @@ const ContactCTA: React.FC<ContactCTAProps> = ({ lang }) => {
   return (
     <section className="contact-cta-section" aria-label={lang === 'ja' ? 'お問い合わせ' : 'Contact'}>
       <div className="contact-cta-container">
+        {/* Consultation Image */}
+        <div className="contact-cta-image-wrapper">
+          <img
+            src="/images/solunai-consultation.jpg"
+            alt={lang === 'ja' ? 'フレンドリーなコンサルタント' : 'Friendly consultant'}
+            className="contact-cta-image"
+          />
+        </div>
+
         {/* Main Content */}
         <div className="contact-cta-content">
           <div className="contact-cta-header">

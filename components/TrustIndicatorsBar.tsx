@@ -12,52 +12,52 @@ const TrustIndicatorsBar: React.FC<TrustIndicatorsBarProps> = ({ lang }) => {
     ja: {
       indicators: [
         {
-          label: '日本拠点',
-          title: '日本拠点のAI開発',
-          subtitle: '日本企業の文化と業務を熟知'
+          label: 'ムリ・ムダ削減',
+          title: 'ムリ・ムダ削減をサポート',
+          subtitle: '小さな改善をコツコツ積み上げる仕組みづくり'
         },
         {
-          label: 'データ主権',
-          title: '主権型データ管理',
-          subtitle: 'データはすべて国内に保存'
+          label: '知恵の見える化',
+          title: 'ベテランの知恵を「見える化」',
+          subtitle: '属人化したノウハウを、次の世代へつなぐ'
         },
         {
-          label: 'エージェントAI',
-          title: '企業向けエージェントAI',
-          subtitle: '状況を理解し行動するAI'
+          label: '現場の声',
+          title: '現場の声をそのまま経営に',
+          subtitle: '日報・会議・ヒアリングを、分かりやすく整理'
         },
         {
-          label: '導入実績',
-          title: '大規模組織での導入知見',
-          subtitle: '研究から企業運用まで幅広い実績'
+          label: '簡単導入',
+          title: '難しいITは不要',
+          subtitle: '既存のPC・環境から少しずつ導入可能'
         }
       ],
-      expandedText: 'ソルナイは、日本企業の組織文化、業務フロー、ガバナンス基準に適合するAIシステムの開発を専門としています。当社のエージェンティックAIは、国内でのデータ管理を前提とした主権型アーキテクチャで構築されており、企業が安心して導入できる堅牢な基盤を備えています。'
+      expandedText: ''
     },
     en: {
       indicators: [
         {
-          label: 'JAPAN-BASED',
-          title: 'Japan-Based AI Development',
-          subtitle: 'Deep understanding of Japanese business'
+          label: 'REDUCE WASTE',
+          title: 'Support to reduce overwork and waste',
+          subtitle: 'Build a structure for steady, small improvements'
         },
         {
-          label: 'DATA SOVEREIGNTY',
-          title: 'Sovereign Data Control',
-          subtitle: 'All data stays inside Japan'
+          label: 'KNOWLEDGE',
+          title: 'Make veteran know-how visible',
+          subtitle: 'Pass individual skills on to the next generation'
         },
         {
-          label: 'AGENTIC AI',
-          title: 'Enterprise Agentic AI',
-          subtitle: 'AI that understands context and acts'
+          label: 'REAL VOICE',
+          title: 'Bring real voice of workplace to management',
+          subtitle: 'Turn reports and meetings into clear insight'
         },
         {
-          label: 'EXPERTISE',
-          title: 'Expertise from Large-Scale Deployments',
-          subtitle: 'From research to enterprise operations'
+          label: 'EASY START',
+          title: 'No complex IT required',
+          subtitle: 'Start step by step with existing PCs and environment'
         }
       ],
-      expandedText: 'Solunai specialises in developing AI systems that align with Japanese organisational culture, operational workflows, and governance requirements. Our agentic AI is built on a sovereign architecture designed for full domestic data control, allowing organisations to deploy AI with confidence.'
+      expandedText: ''
     }
   };
 
