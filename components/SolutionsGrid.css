@@ -20,6 +20,17 @@
   gap: 32px;
 }
 
+/* KODA Branding */
+.solutions-grid-branding {
+  margin-bottom: 16px;
+}
+
+.solutions-grid-emoticon {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
 .solutions-grid-badge {
   display: inline-block;
   padding: 10px 24px;
@@ -222,6 +233,10 @@ html[lang="ja"] .solution-cta {
     gap: 24px;
   }
 
+  .solutions-grid-emoticon {
+    width: 100px;
+  }
+
   .solutions-grid-title {
     font-size: var(--font-heading-l);
   }
@@ -264,6 +279,14 @@ html[lang="ja"] .solution-cta {
   .solutions-grid-header {
     margin-bottom: 48px;
     gap: 20px;
+  }
+
+  .solutions-grid-branding {
+    margin-bottom: 12px;
+  }
+
+  .solutions-grid-emoticon {
+    width: 80px;
   }
 
   .solutions-grid-badge {

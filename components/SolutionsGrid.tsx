@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import './SolutionsGrid.css';
 
 interface SolutionsGridProps {
@@ -89,8 +90,17 @@ const SolutionsGrid: React.FC<SolutionsGridProps> = ({ lang }) => {
 
   return (
     <section className="solutions-grid-section" aria-label={currentContent.sectionBadge}>
-      {/* Header Section */}
+      {/* Header Section with KODA Branding */}
       <div className="solutions-grid-header">
+        <div className="solutions-grid-branding">
+          <Image
+            src="/images/logos/emoticon.png"
+            alt="SOLUNAi"
+            width={120}
+            height={120}
+            className="solutions-grid-emoticon"
+          />
+        </div>
         <span className="solutions-grid-badge">{currentContent.sectionBadge}</span>
         <h2 className="solutions-grid-title">
           {currentContent.sectionTitle.split('\n').map((line, index) => (
