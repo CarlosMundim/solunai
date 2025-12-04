@@ -90,27 +90,11 @@ html[lang="ja"] .solutions-grid-description {
   overflow: hidden;
 }
 
-.solution-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--solunai-blaze) 0%, var(--ember) 100%);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition-base);
-}
+/* Removed orange hover effect */
 
 .solution-card:hover {
-  border-color: var(--solunai-blaze);
-  box-shadow: var(--shadow-orange);
-  transform: translateY(-4px);
-}
-
-.solution-card:hover::before {
-  transform: scaleX(1);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .solution-card-content {

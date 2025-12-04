@@ -152,8 +152,9 @@ html[lang="ja"] .contact-cta-secondary-btn {
 .contact-cta-secondary-btn:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-  border-color: var(--solunai-blaze);
-  background: rgba(255, 255, 255, 0.95);
+  border-color: var(--steel-navy);
+  background: var(--steel-navy);
+  color: var(--precision-white);
 }
 
 .contact-cta-secondary-btn:active {
