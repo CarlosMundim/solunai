@@ -9,7 +9,8 @@ interface SolutionsGridProps {
 }
 
 interface Solution {
-  number: string;
+  numberJa: string;
+  numberEn: string;
   titleJa: string;
   titleEn: string;
   metric1Ja: string;
@@ -37,7 +38,8 @@ const SolutionsGrid: React.FC<SolutionsGridProps> = ({ lang }) => {
 
   const solutions: Solution[] = [
     {
-      number: 'ムリ・ムダ削減',
+      numberJa: 'ムリ・ムダ削減',
+      numberEn: 'Reduce Waste',
       titleJa: 'ムリ・ムダ削減をサポート',
       titleEn: 'Reducing Unreasonableness and Waste',
       metric1Ja: '小さな改善をコツコツ積み上げる仕組みづくり',
@@ -49,7 +51,8 @@ const SolutionsGrid: React.FC<SolutionsGridProps> = ({ lang }) => {
       link: '/services'
     },
     {
-      number: '知恵の見える化',
+      numberJa: '知恵の見える化',
+      numberEn: 'Visualize Expertise',
       titleJa: 'ベテランの知恵を「見える化」',
       titleEn: 'Visualizing Veteran Wisdom',
       metric1Ja: '属人化したノウハウを、次の世代へつなぐ',
@@ -61,7 +64,8 @@ const SolutionsGrid: React.FC<SolutionsGridProps> = ({ lang }) => {
       link: '/services'
     },
     {
-      number: '現場の声',
+      numberJa: '現場の声',
+      numberEn: 'Field Insights',
       titleJa: '現場の声をそのまま経営に',
       titleEn: 'Voices from the Field to Management',
       metric1Ja: '日報・会議・ヒアリングを、分かりやすく整理',
@@ -73,7 +77,8 @@ const SolutionsGrid: React.FC<SolutionsGridProps> = ({ lang }) => {
       link: '/services'
     },
     {
-      number: '簡単導入',
+      numberJa: '簡単導入',
+      numberEn: 'Easy Setup',
       titleJa: '難しいITは不要',
       titleEn: 'No Complicated IT Required',
       metric1Ja: '既存のPC・環境から少しずつ導入可能',
@@ -118,7 +123,7 @@ const SolutionsGrid: React.FC<SolutionsGridProps> = ({ lang }) => {
         {solutions.map((solution, index) => (
           <div key={index} className="solution-card">
             <div className="solution-card-content">
-              <div className="solution-number">{solution.number}</div>
+              <div className="solution-number">{lang === 'ja' ? solution.numberJa : solution.numberEn}</div>
               <h3 className="solution-title">
                 {lang === 'ja' ? solution.titleJa : solution.titleEn}
               </h3>

@@ -119,17 +119,19 @@ html[lang="ja"] .contact-cta-secondary-btn {
   font-size: var(--font-button-lg-jp);
 }
 
-/* Primary Button - Download/Materials (Japanese B2B #1 Priority) */
+/* Primary Button - Matching Hero CTA Style */
 .contact-cta-primary-btn {
-  background: var(--gradient-orange);
-  color: var(--precision-white);
-  box-shadow: var(--shadow-orange);
+  background: #f5480a;
+  color: #ffffff;
+  border: 2px solid #f5480a;
+  box-shadow: none;
 }
 
 .contact-cta-primary-btn:hover {
+  background: #d93d08;
+  border-color: #d93d08;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-forge);
-  background: linear-gradient(135deg, var(--heat-glow) 0%, var(--molten-core) 100%);
+  box-shadow: 0 8px 24px rgba(245, 72, 10, 0.3);
 }
 
 .contact-cta-primary-btn:active {
@@ -137,24 +139,23 @@ html[lang="ja"] .contact-cta-secondary-btn {
 }
 
 .contact-cta-primary-btn:focus-visible {
-  outline: 2px solid var(--solunai-blaze);
+  outline: 2px solid #f5480a;
   outline-offset: 2px;
 }
 
-/* Secondary Button - Schedule Assessment */
+/* Secondary Button - Matching Hero CTA Style (adapted for light background) */
 .contact-cta-secondary-btn {
-  background: var(--precision-white);
-  color: var(--forge-black);
-  border-color: var(--steel-navy);
-  box-shadow: var(--shadow-sm);
+  background: transparent;
+  color: #1a1a2e;
+  border: 2px solid rgba(26, 26, 46, 0.6);
+  box-shadow: none;
 }
 
 .contact-cta-secondary-btn:hover {
+  background: rgba(26, 26, 46, 0.1);
+  border-color: #1a1a2e;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--steel-navy);
-  background: var(--steel-navy);
-  color: var(--precision-white);
+  color: #1a1a2e;
 }
 
 .contact-cta-secondary-btn:active {
@@ -162,18 +163,19 @@ html[lang="ja"] .contact-cta-secondary-btn {
 }
 
 .contact-cta-secondary-btn:focus-visible {
-  outline: 2px solid var(--steel-navy);
+  outline: 2px solid #1a1a2e;
   outline-offset: 2px;
 }
 
-.btn-icon {
+.btn-emoji {
   flex-shrink: 0;
+  font-size: 18px;
   transition: transform var(--transition-base);
 }
 
-.contact-cta-primary-btn:hover .btn-icon,
-.contact-cta-secondary-btn:hover .btn-icon {
-  transform: translateY(-2px);
+.contact-cta-primary-btn:hover .btn-emoji,
+.contact-cta-secondary-btn:hover .btn-emoji {
+  transform: scale(1.1);
 }
 
 /* Benefits Grid */
