@@ -147,13 +147,24 @@ export default function AboutPageEN() {
           </h2>
           <div className="mt-8 space-y-6">
             <div className="rounded-xl border border-neutral-200 bg-white p-6 md:p-8">
-              <h3 className="mb-2 text-lg font-semibold text-neutral-900">
-                WorldEmp (Netherlands)
-              </h3>
-              <p className="text-base leading-relaxed text-neutral-700" style={{ lineHeight: '1.7' }}>
-                A long-standing engineering partner with more than 20 years of experience in
-                manufacturing and industrial talent.
-              </p>
+              <div className="flex items-start gap-6">
+                <div className="flex-shrink-0">
+                  <img
+                    src="/images/logos/WorldEmpLogo.png"
+                    alt="WorldEmp Logo"
+                    className="h-16 w-auto object-contain"
+                  />
+                </div>
+                <div>
+                  <h3 className="mb-2 text-lg font-semibold text-neutral-900">
+                    WorldEmp (Netherlands)
+                  </h3>
+                  <p className="text-base leading-relaxed text-neutral-700" style={{ lineHeight: '1.7' }}>
+                    A long-standing engineering partner with more than 20 years of experience in
+                    manufacturing and industrial talent.
+                  </p>
+                </div>
+              </div>
             </div>
             <div className="rounded-xl border border-neutral-200 bg-white p-6 md:p-8">
               <h3 className="mb-2 text-lg font-semibold text-neutral-900">
