@@ -24,7 +24,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({ lang }) => {
   const text = content[lang];
 
   return (
-    <section className="relative min-h-[60vh] w-full overflow-hidden">
+    <section className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -39,7 +39,7 @@ const AboutHero: React.FC<AboutHeroProps> = ({ lang }) => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto flex min-h-[60vh] max-w-7xl items-center px-6 py-20 md:px-8 lg:px-12">
+      <div className="relative z-10 mx-auto flex h-screen max-w-7xl items-center px-6 pt-24 md:px-8 lg:px-12">
         <div className="max-w-xl">
           <h1 className="text-3xl font-bold text-neutral-900 md:text-4xl lg:text-5xl" style={{ lineHeight: '1.3' }}>
             {text.title}
