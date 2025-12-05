@@ -204,7 +204,7 @@ export default function AboutPageJA() {
             <div className="mt-8 flex items-center gap-4 border-t border-neutral-200 pt-6">
               <div>
                 <p className="text-lg font-semibold text-neutral-900">カルロス・ムンジン</p>
-                <p className="text-sm text-neutral-600">Founder & Chief</p>
+                <p className="text-sm text-neutral-600">Founder & Chief Architect</p>
               </div>
             </div>
           </div>
@@ -248,7 +248,7 @@ export default function AboutPageJA() {
                   </th>
                   <td className="px-6 py-4 text-sm text-neutral-800 md:text-base">
                     <div>
-                      <p className="font-medium">カルロス・ムンジン（Founder & Chief）</p>
+                      <p className="font-medium">カルロス・ムンジン（Founder & Chief Architect）</p>
                       <p className="mt-1 text-neutral-600">古谷 智雄（CEO）</p>
                     </div>
                   </td>
