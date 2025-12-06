@@ -50,7 +50,14 @@ export default function TrainingPage() {
       <Header lang="ja" />
 
       {/* Hero Section */}
-      <section className="koda-hero">
+      <section
+        className="koda-hero"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(30, 58, 95, 0.85), rgba(21, 45, 74, 0.9)), url(/images/products/hero-training.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className="koda-hero-container">
           <span className="koda-badge">KODA TRAINING</span>
           <h1>「研修を受けて終わり」から、<br />「現場で活きる学び」へ。</h1>

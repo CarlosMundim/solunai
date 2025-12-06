@@ -61,7 +61,14 @@ export default function AssistPage() {
       <Header lang="ja" />
 
       {/* Hero Section */}
-      <section className="koda-hero">
+      <section
+        className="koda-hero"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(30, 58, 95, 0.85), rgba(21, 45, 74, 0.9)), url(/images/products/hero-assist.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className="koda-hero-container">
           <span className="koda-badge">KODA ASSIST</span>
           <h1>「誰かに手伝ってほしい」<br />そんな業務を、AIがサポートします。</h1>

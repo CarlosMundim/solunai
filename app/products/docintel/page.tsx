@@ -46,7 +46,14 @@ export default function DocIntelPage() {
       <Header lang="ja" />
 
       {/* Hero Section */}
-      <section className="koda-hero">
+      <section
+        className="koda-hero"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(30, 58, 95, 0.85), rgba(21, 45, 74, 0.9)), url(/images/products/hero-docintel.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className="koda-hero-container">
           <span className="koda-badge">KODA DOCINTEL</span>
           <h1>文書処理の負担を、<br />軽くしたい。</h1>

@@ -46,7 +46,14 @@ export default function InstructryPage() {
       <Header lang="ja" />
 
       {/* Hero Section */}
-      <section className="koda-hero">
+      <section
+        className="koda-hero"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(30, 58, 95, 0.85), rgba(21, 45, 74, 0.9)), url(/images/products/hero-instructry.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className="koda-hero-container">
           <span className="koda-badge">KODA INSTRUCTRY</span>
           <h1>「退職前に技術を残したい」<br />その願いに応えます。</h1>

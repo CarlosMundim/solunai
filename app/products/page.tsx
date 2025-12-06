@@ -100,7 +100,14 @@ export default function KodaProductsPage() {
       <Header lang="ja" />
 
       {/* Hero Section */}
-      <section className="koda-hero">
+      <section
+        className="koda-hero"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(30, 58, 95, 0.85), rgba(21, 45, 74, 0.9)), url(/images/products/hero-koda-products.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className="koda-hero-container">
           <span className="koda-badge">KODA製品ライン</span>
           <h1>「こんなことができたら」を、<br />AIの力で実現します。</h1>

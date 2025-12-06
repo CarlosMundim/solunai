@@ -50,7 +50,14 @@ export default function MedCommPage() {
       <Header lang="ja" />
 
       {/* Hero Section */}
-      <section className="koda-hero koda-theme-medical">
+      <section
+        className="koda-hero koda-theme-medical"
+        style={{
+          backgroundImage: 'linear-gradient(rgba(0, 119, 182, 0.85), rgba(0, 90, 140, 0.9)), url(/images/products/hero-medcomm.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
         <div className="koda-hero-container">
           <span className="koda-badge">KODA MEDCOMM</span>
           <h1>医療コミュニケーションを、<br />もっと安心して学べる場所へ。</h1>
