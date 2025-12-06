@@ -3,6 +3,92 @@
 /* Matches Solunai design system               */
 /* ============================================ */
 
+/* ============================================ */
+/* KODA NURSING/MEDCOMM - Hospital Blue Theme  */
+/* Color: #0077b6 (Hospital Blue)              */
+/* ============================================ */
+
+/* Hero Section - Hospital Blue Gradient for Medical */
+.koda-hero.koda-theme-medical {
+  background: linear-gradient(180deg, #0077b6 0%, #005a8c 100%);
+}
+
+.koda-theme-medical .koda-badge {
+  background: rgba(255, 255, 255, 0.15);
+  color: #a8d5e8;
+}
+
+.koda-theme-medical .koda-hero-subtitle {
+  color: #a8d5e8;
+}
+
+.koda-theme-medical .koda-btn-primary {
+  color: #0077b6;
+}
+
+.koda-theme-medical .koda-btn-primary:hover {
+  background: #e6f4f9;
+}
+
+.koda-theme-medical .koda-benefit-card {
+  background: #e6f4f9;
+}
+
+.koda-theme-medical .koda-benefit-metric {
+  color: #0077b6;
+}
+
+.koda-theme-medical .koda-scenario-tag {
+  background: #e6f4f9;
+}
+
+.koda-theme-medical .koda-partnership {
+  background: #0077b6;
+}
+
+.koda-theme-medical .koda-price-card.recommended {
+  border-color: #0077b6;
+  background: #e6f4f9;
+}
+
+.koda-theme-medical .koda-price-badge {
+  color: #0077b6;
+}
+
+.koda-theme-medical .koda-price-amount {
+  color: #0077b6;
+}
+
+.koda-theme-medical .koda-price-btn-outline {
+  border-color: #0077b6;
+  color: #0077b6;
+}
+
+.koda-theme-medical .koda-price-btn-outline:hover {
+  background: #0077b6;
+  color: var(--white);
+}
+
+.koda-theme-medical .koda-price-btn-solid {
+  background: #0077b6;
+}
+
+.koda-theme-medical .koda-price-btn-solid:hover {
+  background: #005a8c;
+}
+
+.koda-theme-medical .koda-cta-btn-primary {
+  background: #0077b6;
+}
+
+.koda-theme-medical .koda-cta-btn-primary:hover {
+  background: #0088cc;
+}
+
+/* ============================================ */
+/* DEFAULT NAVY THEME                          */
+/* ============================================ */
+
 /* Hero Section - Dark Blue Gradient */
 .koda-hero {
   padding-top: 140px;

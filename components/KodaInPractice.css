@@ -1,0 +1,482 @@
+/* ============================================ */
+/* KODA IN PRACTICE - Matching ProblemSolution */
+/* Professional B2B Card Layout                */
+/* ============================================ */
+
+.koda-practice-section {
+  width: 100%;
+  background: linear-gradient(to bottom, var(--white), var(--bg-snow));
+  padding: var(--section-spacing-desktop) var(--container-padding-desktop);
+}
+
+.koda-practice-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+.koda-practice-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.koda-practice-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-snow);
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  color: var(--titanium-grey);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+}
+
+.koda-practice-badge::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--titanium-grey);
+  border-radius: 50%;
+}
+
+.koda-practice-title {
+  font-size: var(--font-card-title-medium);
+  font-weight: var(--font-weight-bold);
+  color: var(--sumi-black);
+  margin: 0 auto;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.koda-practice-subtitle {
+  font-size: var(--font-body-lead);
+  color: var(--charcoal);
+  margin: 24px auto 0;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Divider */
+.koda-practice-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-subtle));
+}
+
+.divider-line:last-child {
+  background: linear-gradient(to left, transparent, var(--border-subtle));
+}
+
+.divider-text {
+  font-size: var(--font-body-small);
+  font-weight: var(--font-weight-semibold);
+  color: var(--titanium-grey);
+}
+
+/* Card Grid */
+.koda-practice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+/* Card Styles - Matching ProblemSolution */
+.koda-practice-card {
+  background: var(--white);
+  border: 2px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 40px;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.koda-practice-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.koda-practice-card .card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Step Number */
+.koda-practice-card .card-step {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+  color: var(--border-subtle);
+  opacity: 0.5;
+  line-height: 1;
+}
+
+/* Card Badge/Label */
+.koda-practice-card .card-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: var(--font-weight-bold);
+  color: var(--solunai-sky);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+/* Card Title - Same as ProblemSolution */
+.koda-practice-card .card-title {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  color: var(--sumi-black);
+  margin: 0 0 20px 0;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+/* Point with check marker */
+.koda-practice-card .card-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.koda-practice-card .check-marker {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--success);
+  margin-top: 2px;
+}
+
+.koda-practice-card .check-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.koda-practice-card .point-detail {
+  font-size: var(--font-body-base);
+  color: var(--charcoal);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Expanded Card Styles */
+.koda-practice-card-expanded {
+  min-height: auto;
+}
+
+.koda-practice-card .card-body {
+  margin-bottom: 20px;
+}
+
+.koda-practice-card .card-body-text {
+  font-size: var(--font-body-base);
+  color: var(--charcoal);
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+}
+
+.koda-practice-card .card-body-text:last-child {
+  margin-bottom: 0;
+}
+
+.koda-practice-card .card-result {
+  font-size: var(--font-body-small);
+  font-weight: var(--font-weight-semibold);
+  color: var(--solunai-sky);
+  margin: auto 0 0 0;
+  padding: 12px 16px;
+  background: var(--sky-light, #f0f9ff);
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+/* Flow Visual */
+.koda-practice-flow {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.flow-step {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: var(--font-weight-bold);
+}
+
+.flow-step-1 {
+  background: var(--success-light);
+  color: var(--success);
+}
+
+.flow-step-2 {
+  background: var(--sky-light);
+  color: var(--solunai-sky);
+}
+
+.flow-step-3 {
+  background: var(--violet-light);
+  color: var(--violet);
+}
+
+.flow-step-arrow {
+  background: var(--bg-snow);
+  color: var(--titanium-grey);
+}
+
+.flow-line {
+  width: 64px;
+  height: 2px;
+}
+
+.flow-line-1 {
+  background: linear-gradient(to right, var(--success-light), var(--sky-light));
+}
+
+.flow-line-2 {
+  background: linear-gradient(to right, var(--sky-light), var(--violet-light));
+}
+
+.flow-line-3 {
+  background: linear-gradient(to right, var(--violet-light), var(--border-subtle));
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media (min-width: 769px) {
+  .koda-practice-flow {
+    display: flex;
+  }
+}
+
+/* CTA Section - Matching ProblemSolution conclusion style */
+.koda-practice-cta {
+  background: var(--white);
+  border: 2px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 32px 40px;
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 769px) {
+  .cta-content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.cta-text {
+  max-width: 560px;
+}
+
+.cta-title {
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  color: var(--sumi-black);
+  margin: 0 0 8px 0;
+  line-height: 1.6;
+}
+
+.cta-description {
+  font-size: var(--font-body-base);
+  color: var(--charcoal);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--sumi-black);
+  color: var(--white);
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-size: var(--font-body-small);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.cta-primary:hover {
+  background: var(--charcoal);
+  box-shadow: var(--shadow-md);
+}
+
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--white);
+  color: var(--charcoal);
+  padding: 12px 24px;
+  border-radius: 9999px;
+  border: 1px solid var(--border-subtle);
+  font-size: var(--font-body-small);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.cta-secondary:hover {
+  border-color: var(--titanium-grey);
+  background: var(--bg-snow);
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ============================================ */
+/* RESPONSIVE DESIGN                          */
+/* ============================================ */
+
+@media (max-width: 1024px) {
+  .koda-practice-section {
+    padding: var(--section-spacing-tablet) var(--container-padding-tablet);
+  }
+
+  .koda-practice-title {
+    font-size: 28px;
+  }
+
+  .koda-practice-grid {
+    gap: 24px;
+  }
+
+  .koda-practice-card {
+    padding: 32px;
+  }
+
+  .koda-practice-card .card-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .koda-practice-section {
+    padding: var(--section-spacing-mobile) var(--container-padding-mobile);
+  }
+
+  .koda-practice-header {
+    margin-bottom: 40px;
+  }
+
+  .koda-practice-title {
+    font-size: 24px;
+  }
+
+  .koda-practice-subtitle {
+    font-size: 16px;
+  }
+
+  .koda-practice-divider {
+    margin-bottom: 32px;
+  }
+
+  .koda-practice-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .koda-practice-card {
+    padding: 28px;
+  }
+
+  .koda-practice-card .card-step {
+    font-size: 36px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .koda-practice-card .card-title {
+    font-size: 20px;
+  }
+
+  .koda-practice-card .point-detail {
+    font-size: 15px;
+  }
+
+  .koda-practice-cta {
+    padding: 24px;
+  }
+
+  .cta-title {
+    font-size: 18px;
+  }
+
+  .cta-description {
+    font-size: 15px;
+  }
+
+  .cta-buttons {
+    width: 100%;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .koda-practice-section {
+    padding: 48px 20px;
+  }
+
+  .koda-practice-card {
+    padding: 24px;
+  }
+
+  .koda-practice-card .card-title {
+    font-size: 18px;
+  }
+
+  .cta-title {
+    font-size: 17px;
+  }
+}

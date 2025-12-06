@@ -1,161 +1,176 @@
 // components/KodaSceSection.tsx
 
 export default function KodaSceSection() {
+  const coreCapabilities = [
+    {
+      icon: "semantic",
+      title: "Semantic Processing",
+      description: "Understands meaning, intent, and context in Japanese business communication without complex prompts."
+    },
+    {
+      icon: "cultural",
+      title: "Cultural Intelligence",
+      description: "Responds with Japanese business etiquette, keigo awareness, and organisational sensitivity."
+    },
+    {
+      icon: "security",
+      title: "Enterprise Security",
+      description: "Japan-based infrastructure with encryption and governance compatible with enterprise IT policies."
+    }
+  ];
+
   const products = [
     {
       key: "medcomm",
       name: "KODA MedComm",
-      description:
-        "Tools to support medical communication training, including interview practice, explanation support, and structured feedback for healthcare learners."
+      tagline: "Medical Communication",
+      description: "Interview practice, explanation support, and structured feedback for healthcare learners."
     },
     {
       key: "docintel",
       name: "KODA DocIntel",
-      description:
-        "Document understanding for contracts, manuals, reports, and internal procedures—designed for organisations with high documentation workloads."
+      tagline: "Document Intelligence",
+      description: "Understanding contracts, manuals, and reports for high documentation workloads."
     },
     {
       key: "assist",
       name: "KODA Assist",
-      description:
-        "Customisable assistants built for specific departments or teams, enabling safe internal use of AI without exposing corporate data externally."
+      tagline: "Custom Assistants",
+      description: "Department-specific AI assistants without exposing corporate data externally."
     },
     {
       key: "cultural",
       name: "KODA Cultural",
-      description:
-        "Cross-cultural alignment tools that help organisations support foreign and Japanese staff through clearer expectations and workplace fit analysis."
+      tagline: "Cross-Cultural Alignment",
+      description: "Tools for supporting foreign and Japanese staff through workplace fit analysis."
     },
     {
       key: "training",
       name: "KODA Training",
-      description:
-        "Learning-support modules for corporate training programmes, including knowledge checks, summaries, and simple scenario-based exercises."
+      tagline: "Learning Support",
+      description: "Knowledge checks, summaries, and scenario-based exercises for training programmes."
     },
     {
       key: "industry",
       name: "KODA Industry",
-      description:
-        "AI support for industrial operations, enabling structured knowledge capture, procedural assistance, and consistency in daily tasks."
+      tagline: "Industrial Operations",
+      description: "Structured knowledge capture and procedural assistance for daily operations."
     }
   ];
 
   return (
-    <section className="w-full bg-slate-50 py-12 md:py-16">
-      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 md:flex-row md:px-6">
-        {/* Left column – engine explanation */}
-        <div className="w-full md:w-5/12">
-          <p className="text-xs font-semibold tracking-[0.18em] text-sky-700 md:text-sm">
-            KODA SCE ENGINE
-          </p>
-          <h2 className="mt-2 text-xl font-semibold leading-relaxed text-slate-900 md:text-2xl">
+    <section className="w-full bg-gradient-to-b from-slate-50 to-white py-16 md:py-24">
+      <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+
+        {/* Section Header */}
+        <div className="mb-16 text-center md:mb-20">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-sky-50 px-4 py-1.5">
+            <div className="h-2 w-2 rounded-full bg-sky-600"></div>
+            <span className="text-xs font-semibold tracking-wide text-sky-700">
+              KODA SCE ENGINE
+            </span>
+          </div>
+          <h2 className="mx-auto max-w-3xl text-2xl font-bold text-neutral-900 md:text-3xl lg:text-4xl" style={{ lineHeight: '1.4' }}>
             Semantic Computing for Japanese Workplaces
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-slate-700 md:text-base">
-            The KODA SCE Engine is Solunai&apos;s core platform technology. It provides calm,
-            predictable AI support designed specifically for Japanese communication styles,
-            workplace expectations, and enterprise requirements.
+          <p className="mx-auto mt-6 max-w-2xl text-base text-neutral-600 md:text-lg" style={{ lineHeight: '1.7' }}>
+            The KODA SCE Engine is Solunai&apos;s core platform—calm, predictable AI designed
+            specifically for Japanese communication styles and enterprise requirements.
           </p>
-          <p className="mt-2 text-sm leading-relaxed text-slate-700 md:text-base">
-            Rather than aiming for complexity, KODA focuses on three principles:
-          </p>
-
-          <ul className="mt-3 space-y-2 text-sm leading-relaxed text-slate-800 md:text-base">
-            <li>
-              <span className="font-semibold">Contextual clarity</span>{" "}
-              – understands workplace instructions, procedural language, and common business
-              expressions.
-            </li>
-            <li>
-              <span className="font-semibold">Cultural alignment</span>{" "}
-              – responds in a manner consistent with Japanese professional etiquette and
-              communication norms.
-            </li>
-            <li>
-              <span className="font-semibold">Operational stability</span>{" "}
-              – designed for controlled enterprise environments where accuracy, traceability,
-              and data handling are essential.
-            </li>
-          </ul>
-
-          <p className="mt-4 text-sm leading-relaxed text-slate-700 md:text-base">
-            All KODA products are built on this engine, ensuring consistent behaviour and
-            governance across use cases.
-          </p>
-
-          <div className="mt-6 grid gap-3 text-sm text-slate-800">
-            <div>
-              <h3 className="text-sm font-semibold text-slate-900 md:text-base">
-                Semantic processing
-              </h3>
-              <p className="mt-1 text-xs leading-relaxed text-slate-700 md:text-sm">
-                Identifies meaning, intent, and context across routine business scenarios
-                without relying on complicated prompts.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold text-slate-900 md:text-base">
-                Cultural intelligence
-              </h3>
-              <p className="mt-1 text-xs leading-relaxed text-slate-700 md:text-sm">
-                Provides responses aligned with Japanese business culture, including respect
-                language, interpersonal formality, and organisational expectations.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold text-slate-900 md:text-base">
-                Multi-format input
-              </h3>
-              <p className="mt-1 text-xs leading-relaxed text-slate-700 md:text-sm">
-                Supports text, structured documents, and customer-provided datasets within
-                approved enterprise workflows.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-sm font-semibold text-slate-900 md:text-base">
-                Enterprise security
-              </h3>
-              <p className="mt-1 text-xs leading-relaxed text-slate-700 md:text-sm">
-                Operates within Japan-based infrastructure and follows strict encryption and
-                governance standards compatible with enterprise IT policies.
-              </p>
-            </div>
-          </div>
         </div>
 
-        {/* Right column – product line */}
-        <div className="w-full md:w-7/12">
-          <div className="mb-4 flex items-baseline justify-between gap-3">
-            <h3 className="text-base font-semibold text-slate-900 md:text-lg">
+        {/* Core Capabilities - 3 Column Feature Grid */}
+        <div className="mb-20 grid gap-8 md:grid-cols-3 md:gap-10">
+          {coreCapabilities.map((cap, idx) => (
+            <div
+              key={idx}
+              className="group relative rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm transition-all duration-300 hover:border-sky-200 hover:shadow-md md:p-10"
+            >
+              <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-sky-50 text-sky-600">
+                {cap.icon === "semantic" && (
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                )}
+                {cap.icon === "cultural" && (
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+                )}
+                {cap.icon === "security" && (
+                  <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                )}
+              </div>
+              <h3 className="mb-5 text-xl font-semibold text-neutral-900" style={{ lineHeight: '1.6' }}>
+                {cap.title}
+              </h3>
+              <p className="text-base text-neutral-600" style={{ lineHeight: '1.5' }}>
+                {cap.description}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* Product Line Header */}
+        <div className="mb-8 flex flex-col items-start justify-between gap-4 border-t border-neutral-200 pt-12 md:flex-row md:items-center">
+          <div>
+            <h3 className="text-xl font-semibold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.4' }}>
               KODA Product Line
             </h3>
-            <p className="text-xs text-slate-600 md:text-sm">
-              Built on the KODA SCE Engine for consistent behaviour and governance.
+            <p className="mt-1 text-sm text-neutral-600 md:text-base">
+              Six specialised products built on the same trusted engine.
             </p>
           </div>
+          <a
+            href="/en/koda-products"
+            className="inline-flex items-center gap-2 rounded-full border border-sky-600 bg-sky-600 px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-sky-700"
+          >
+            View All Products
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
 
-          <div className="grid gap-4 md:grid-cols-2">
-            {products.map((p) => (
-              <div
-                key={p.key}
-                className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-5"
-              >
-                <h4 className="text-sm font-semibold text-slate-900 md:text-base">
-                  {p.name}
-                </h4>
-                <p className="mt-2 text-xs leading-relaxed text-slate-700 md:text-sm">
-                  {p.description}
-                </p>
+        {/* Product Cards - 3x2 Grid */}
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {products.map((product) => (
+            <div
+              key={product.key}
+              className="group relative flex flex-col rounded-xl border border-neutral-200 bg-white p-5 transition-all duration-300 hover:border-sky-200 hover:shadow-lg md:p-6"
+            >
+              <div className="mb-3 flex items-start justify-between">
+                <div>
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-sky-600">
+                    {product.tagline}
+                  </p>
+                  <h4 className="mt-1 text-base font-semibold text-neutral-900 md:text-lg" style={{ lineHeight: '1.6' }}>
+                    {product.name}
+                  </h4>
+                </div>
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-neutral-100 text-neutral-400 transition-colors group-hover:bg-sky-50 group-hover:text-sky-600">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </div>
-            ))}
-          </div>
+              <p className="text-sm text-neutral-600" style={{ lineHeight: '1.5' }}>
+                {product.description}
+              </p>
+            </div>
+          ))}
+        </div>
 
-          <p className="mt-6 text-xs leading-relaxed text-slate-600 md:text-sm">
-            Each KODA solution is introduced and governed through standard enterprise
-            processes, allowing organisations to adopt AI support gradually, with clear
-            boundaries and oversight.
+        {/* Bottom Note */}
+        <div className="mt-10 rounded-xl bg-neutral-50 p-6 text-center md:p-8">
+          <p className="text-sm text-neutral-700 md:text-base" style={{ lineHeight: '1.5' }}>
+            All KODA products share the same governance standards, ensuring consistent behaviour,
+            traceability, and enterprise-grade data handling across your organisation.
           </p>
         </div>
+
       </div>
     </section>
   );

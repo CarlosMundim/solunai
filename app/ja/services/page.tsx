@@ -6,108 +6,107 @@ import Footer from '@/components/Footer';
 
 const engineerRoles = [
   {
-    title: 'Machine Learning Engineers',
-    description: 'Design and build predictive models for quality, maintenance and production planning using your factory data.',
+    title: '機械学習エンジニア',
+    description: '品質予測、設備保全、生産計画のための予測モデルを、お客様の工場データを活用して設計・構築します。',
   },
   {
-    title: 'Computer Vision Specialists',
-    description: 'Develop image-based inspection and recognition systems that support or automate visual quality control.',
+    title: 'コンピュータビジョン専門家',
+    description: '外観検査や画像認識システムを開発し、目視検査の支援または自動化を実現します。',
   },
   {
-    title: 'Automation Engineers',
-    description: 'Connect AI logic with real equipment - PLC, robots, sensors - so that improvements become visible on the shop floor.',
+    title: 'オートメーションエンジニア',
+    description: 'AIロジックと実際の設備（PLC、ロボット、センサー）を接続し、改善効果を現場で実感できる形にします。',
   },
   {
-    title: 'Data Scientists',
-    description: 'Consolidate data from machines, systems and sensors, and turn it into dashboards, KPI monitoring, and improvement scenarios.',
+    title: 'データサイエンティスト',
+    description: '設備、システム、センサーからのデータを統合し、ダッシュボード、KPIモニタリング、改善シナリオへと展開します。',
   },
   {
-    title: 'Manufacturing Process Engineers',
-    description: 'Stand together with your supervisors and operators on the factory floor, adjusting processes, training staff, and embedding new workflows.',
+    title: '製造プロセスエンジニア',
+    description: '現場の監督者やオペレーターと共に工場フロアに立ち、プロセス調整、スタッフ教育、新しいワークフローの定着を支援します。',
   },
 ];
 
 const implementationPhases = [
   {
     phase: '1',
-    title: 'Assessment & Design',
-    duration: '1-2 months',
-    description: 'Factory visit, system and data survey, discussion with management and shop floor teams.',
-    deliverable: 'Clear roadmap and ROI estimation',
+    title: 'アセスメント・設計',
+    duration: '1〜2ヶ月',
+    description: '工場訪問、システム・データ調査、経営層および現場チームとの協議を行います。',
+    deliverable: '明確なロードマップとROI試算',
   },
   {
     phase: '2',
-    title: 'Platform & Data Set-up',
-    duration: '3-6 months',
-    description: 'Installation of AI platform, data connections (IoT, ERP, existing systems), and initial model creation. WorldEmp engineers can support on-site or remote.',
-    deliverable: 'Working pilot connected to real data',
+    title: 'プラットフォーム・データ構築',
+    duration: '3〜6ヶ月',
+    description: 'AIプラットフォームの導入、データ接続（IoT、ERP、既存システム）、初期モデル作成。WorldEmpエンジニアがオンサイトまたはリモートでサポート可能です。',
+    deliverable: '実データに接続された動作パイロット',
   },
   {
     phase: '3',
-    title: 'Optimisation & Expansion',
-    duration: '7-9 months',
-    description: 'Model tuning, performance improvement, and expansion to more lines, products or processes.',
-    deliverable: 'Stable operation with agreed accuracy and cycle-time improvements',
+    title: '最適化・展開拡大',
+    duration: '7〜9ヶ月',
+    description: 'モデルチューニング、パフォーマンス改善、より多くのライン・製品・プロセスへの展開を進めます。',
+    deliverable: '合意された精度とサイクルタイム改善を達成した安定運用',
   },
   {
     phase: '4',
-    title: 'Training & Handover',
-    duration: '10-12 months',
-    description: 'Operator and supervisor training, documentation, SOPs, and joint review of next steps.',
-    deliverable: 'Internal capability to operate the system, with optional ongoing support',
+    title: '教育・引き継ぎ',
+    duration: '10〜12ヶ月',
+    description: 'オペレーター・監督者への教育、ドキュメント作成、SOP整備、次のステップの共同レビューを行います。',
+    deliverable: 'システム運用のための内部能力構築（継続サポートはオプション）',
   },
 ];
 
 const faqItems = [
   {
-    question: 'How long does a typical implementation take?',
-    answer: 'Most implementations follow a 12-month cycle from initial assessment to stable operation. The exact timeline depends on the complexity of your processes and the scope of the project.',
+    question: '導入にはどのくらいの期間がかかりますか？',
+    answer: 'ほとんどの導入は、初期アセスメントから安定運用まで12ヶ月のサイクルで進みます。正確なスケジュールは、お客様のプロセスの複雑さとプロジェクトの範囲によって異なります。',
   },
   {
-    question: 'Can engineers work on-site in Japan?',
-    answer: 'Yes. Through WorldEmp, we can arrange on-site support for critical phases. Many tasks can also be handled remotely with regular communication.',
+    question: 'エンジニアは日本国内で現場作業ができますか？',
+    answer: 'はい。WorldEmpを通じて、重要なフェーズにおけるオンサイトサポートを手配できます。多くのタスクは定期的なコミュニケーションを取りながらリモートでも対応可能です。',
   },
   {
-    question: 'What if we already have some AI or data systems?',
-    answer: 'We design our approach around your existing infrastructure. The goal is to complement what you have, not replace it unnecessarily.',
+    question: '既にAIやデータシステムを持っている場合は？',
+    answer: 'お客様の既存インフラに合わせてアプローチを設計します。目標は、お持ちのシステムを不必要に置き換えるのではなく、補完することです。',
   },
   {
-    question: 'Is there a minimum project size?',
-    answer: 'We typically work with projects where the expected value justifies the investment. A short initial consultation can help determine whether our approach is a good fit.',
+    question: '最小プロジェクト規模はありますか？',
+    answer: '投資に見合った価値が期待できるプロジェクトを対象としています。短い初回相談で、私たちのアプローチがお客様に適しているかどうかを判断できます。',
   },
 ];
 
-export default function ServicesPageEN() {
+export default function ServicesPageJA() {
   return (
     <main className="min-h-screen bg-neutral-50">
-      <Header lang="en" />
+      <Header lang="ja" />
 
       {/* Hero Section */}
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">
-            AI + Global Engineers
+            AI + グローバルエンジニア
           </p>
-          <h1 className="mt-4 text-2xl font-bold text-neutral-900 md:text-3xl lg:text-4xl" style={{ lineHeight: '1.3' }}>
-            AI + Global Engineers for Manufacturing Improvement
+          <h1 className="mt-4 text-2xl font-bold text-neutral-900 md:text-3xl lg:text-4xl" style={{ lineHeight: '1.5' }}>
+            製造業改善のためのAI＋グローバルエンジニア
           </h1>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-neutral-700 md:text-lg" style={{ lineHeight: '2' }}>
-            Solunai combines an AI platform for factories with experienced engineers from WorldEmp.
-            Together, we support Japanese manufacturers to improve quality, productivity, and knowledge
-            transfer - step by step, with clear results.
+            Solunaiは、工場向けAIプラットフォームとWorldEmpの経験豊富なエンジニアを組み合わせています。
+            品質、生産性、技術伝承の改善を、明確な成果とともに、段階的にサポートします。
           </p>
           <ul className="mt-6 space-y-2 text-sm text-neutral-600 md:text-base">
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sky-600" />
-              End-to-end support from assessment to on-site implementation
+              アセスメントから現場導入までのエンドツーエンドサポート
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sky-600" />
-              AI + engineering team, not software only
+              ソフトウェアだけでなく、AI＋エンジニアリングチーム
             </li>
             <li className="flex items-start gap-2">
               <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sky-600" />
-              Designed for SMEs who cannot hire AI/ML specialists in-house
+              AI/ML専門人材を自社採用できない中小企業向けに設計
             </li>
           </ul>
         </div>
@@ -117,10 +116,10 @@ export default function ServicesPageEN() {
       <section className="border-y border-neutral-200 bg-neutral-100">
         <div className="mx-auto grid max-w-5xl grid-cols-2 gap-4 px-6 py-8 md:grid-cols-4">
           {[
-            { label: 'Estimated cost reduction', value: '30-60%' },
-            { label: 'Engineer deployment', value: '2-6 weeks' },
-            { label: 'Implementation period', value: 'Around 12 months' },
-            { label: 'Project value delivered', value: '\u20AC2.5M+' },
+            { label: '想定コスト削減', value: '30〜60%' },
+            { label: 'エンジニア配置', value: '2〜6週間' },
+            { label: '導入期間', value: '約12ヶ月' },
+            { label: '提供プロジェクト価値', value: '€250万以上' },
           ].map((item) => (
             <div key={item.label} className="rounded-xl bg-white px-4 py-4 shadow-sm">
               <p className="text-xs text-neutral-500">{item.label}</p>
@@ -136,34 +135,34 @@ export default function ServicesPageEN() {
           <div className="mb-6 flex items-center gap-3">
             <div className="h-1 w-12 rounded-full bg-sky-600" />
             <span className="text-sm font-semibold uppercase tracking-wider text-sky-700">
-              The Challenge
+              課題
             </span>
           </div>
-          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.4' }}>
-            Why &quot;AI + Engineers&quot; is necessary now
+          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.5' }}>
+            なぜ今「AI＋エンジニア」が必要なのか
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-neutral-700" style={{ lineHeight: '2' }}>
             <p>
-              Many Japanese manufacturers understand that AI and data can improve operations,
-              but they face three practical problems:
+              多くの日本の製造業者は、AIやデータが業務改善に役立つことを理解していますが、
+              3つの実務的な問題に直面しています：
             </p>
             <ul className="ml-4 space-y-2">
               <li className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-neutral-400" />
-                AI/ML specialists are very difficult to hire, especially outside Tokyo.
+                AI/ML専門人材の採用が非常に困難、特に東京以外では深刻
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-neutral-400" />
-                The existing workforce is ageing, and it is hard to secure younger engineers for factory roles.
+                既存の労働力は高齢化しており、工場職への若手エンジニア確保が困難
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-neutral-400" />
-                Even if tools are purchased, there is often no one who can connect them properly to the shop floor.
+                ツールを購入しても、現場と適切に接続できる人材がいないことが多い
               </li>
             </ul>
             <p>
-              As a result, AI projects stay at the &quot;pilot&quot; stage and never reach daily use on the
-              factory floor. Solunai was created to fill this gap.
+              結果として、AIプロジェクトは「パイロット」段階にとどまり、
+              工場現場での日常運用には至りません。Solunaiは、このギャップを埋めるために設立されました。
             </p>
           </div>
         </div>
@@ -175,30 +174,30 @@ export default function ServicesPageEN() {
           <div className="mb-6 flex items-center gap-3">
             <div className="h-1 w-12 rounded-full bg-sky-600" />
             <span className="text-sm font-semibold uppercase tracking-wider text-sky-700">
-              Our Approach
+              アプローチ
             </span>
           </div>
-          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.4' }}>
-            Solunai&apos;s approach: AI platform + engineering team
+          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.5' }}>
+            Solunaiのアプローチ：AIプラットフォーム＋エンジニアリングチーム
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-neutral-700" style={{ lineHeight: '2' }}>
-            <p>Solunai provides both:</p>
+            <p>Solunaiは以下の両方を提供します：</p>
             <ul className="ml-4 space-y-2">
               <li className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sky-600" />
-                A practical AI platform for manufacturing (digital twin, computer vision, data analytics)
+                製造業向け実用AIプラットフォーム（デジタルツイン、コンピュータビジョン、データ分析）
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sky-600" />
-                Access to specialised engineers through our partner WorldEmp, who can work on-site or remotely with your team
+                パートナーWorldEmpを通じた専門エンジニアへのアクセス（オンサイトまたはリモートで貴社チームと協働）
               </li>
             </ul>
             <p>
-              Instead of asking our customers to build internal AI departments, we bring a ready team
-              that can design, implement, and stabilise AI solutions together with your engineers.
+              お客様に社内AI部門の構築を求める代わりに、設計、導入、安定化まで
+              お客様のエンジニアと共に遂行できる即戦力チームをご提供します。
             </p>
             <p className="text-neutral-600 italic">
-              Our aim is not a short-term &quot;project&quot;, but a long-term improvement in how your factory works.
+              私たちの目標は短期的な「プロジェクト」ではなく、工場の働き方を長期的に改善することです。
             </p>
           </div>
         </div>
@@ -210,15 +209,15 @@ export default function ServicesPageEN() {
           <div className="mb-6 flex items-center gap-3">
             <div className="h-1 w-12 rounded-full bg-sky-600" />
             <span className="text-sm font-semibold uppercase tracking-wider text-sky-700">
-              Engineering Roles
+              エンジニアリング職種
             </span>
           </div>
-          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.4' }}>
-            Engineering roles you can access through Solunai
+          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.5' }}>
+            Solunaiを通じてアクセスできるエンジニアリング職種
           </h2>
-          <p className="mt-4 max-w-3xl text-base text-neutral-700" style={{ lineHeight: '1.7' }}>
-            Through WorldEmp we can provide engineers in five main categories. All have experience
-            in manufacturing and work closely with Solunai&apos;s AI platform.
+          <p className="mt-4 max-w-3xl text-base text-neutral-700" style={{ lineHeight: '1.8' }}>
+            WorldEmpを通じて、5つの主要カテゴリーのエンジニアを提供できます。
+            全員が製造業での経験を持ち、SolunaiのAIプラットフォームと緊密に連携して業務を行います。
           </p>
           <div className="mt-8 grid gap-5 md:grid-cols-2">
             {engineerRoles.map((role) => (
@@ -227,7 +226,7 @@ export default function ServicesPageEN() {
                 className="rounded-2xl border border-neutral-200 bg-neutral-50 p-6 transition-all hover:border-sky-200 hover:shadow-md"
               >
                 <h3 className="text-base font-semibold text-neutral-900" style={{ lineHeight: '1.5' }}>{role.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-600" style={{ lineHeight: '1.7' }}>
+                <p className="mt-2 text-sm leading-relaxed text-neutral-600" style={{ lineHeight: '1.8' }}>
                   {role.description}
                 </p>
               </div>
@@ -242,14 +241,14 @@ export default function ServicesPageEN() {
           <div className="mb-6 flex items-center gap-3">
             <div className="h-1 w-12 rounded-full bg-sky-600" />
             <span className="text-sm font-semibold uppercase tracking-wider text-sky-700">
-              Implementation
+              導入プロセス
             </span>
           </div>
-          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.4' }}>
-            Implementation in four phases (around 12 months)
+          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.5' }}>
+            4つのフェーズでの導入（約12ヶ月）
           </h2>
-          <p className="mt-4 max-w-3xl text-base text-neutral-700" style={{ lineHeight: '1.7' }}>
-            We follow a structured process so that your team always knows what will happen next.
+          <p className="mt-4 max-w-3xl text-base text-neutral-700" style={{ lineHeight: '1.8' }}>
+            構造化されたプロセスに従い、貴社チームが常に次のステップを把握できるようにします。
           </p>
           <div className="mt-8 space-y-6">
             {implementationPhases.map((phase) => (
@@ -268,11 +267,11 @@ export default function ServicesPageEN() {
                         {phase.duration}
                       </span>
                     </div>
-                    <p className="mt-2 text-sm leading-relaxed text-neutral-600" style={{ lineHeight: '1.7' }}>
+                    <p className="mt-2 text-sm leading-relaxed text-neutral-600" style={{ lineHeight: '1.8' }}>
                       {phase.description}
                     </p>
                     <p className="mt-3 text-sm text-sky-700">
-                      <span className="font-medium">Deliverable:</span> {phase.deliverable}
+                      <span className="font-medium">成果物：</span> {phase.deliverable}
                     </p>
                   </div>
                 </div>
@@ -288,35 +287,36 @@ export default function ServicesPageEN() {
           <div className="mb-6 flex items-center gap-3">
             <div className="h-1 w-12 rounded-full bg-sky-600" />
             <span className="text-sm font-semibold uppercase tracking-wider text-sky-700">
-              Cost & Risk
+              コストとリスク
             </span>
           </div>
-          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.4' }}>
-            Cost and risk compared to traditional hiring
+          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.5' }}>
+            従来の採用と比較したコストとリスク
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-neutral-700" style={{ lineHeight: '2' }}>
             <p>
-              Building an internal AI/ML team typically requires 4-6 months of recruitment and
-              around 60 million yen or more per year for five engineers (salary only), plus training and management overhead.
+              社内AI/MLチームの構築には、通常4〜6ヶ月の採用期間と、
+              5名のエンジニアで年間約6,000万円以上（給与のみ）、
+              さらに教育と管理のオーバーヘッドが必要です。
             </p>
-            <p>With Solunai + WorldEmp:</p>
+            <p>Solunai + WorldEmpでは：</p>
             <ul className="ml-4 space-y-2">
               <li className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sky-600" />
-                You avoid recruitment risk and delay
+                採用リスクと遅延を回避
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sky-600" />
-                You can scale engineer involvement up or down depending on the project phase
+                プロジェクトフェーズに応じてエンジニア関与度を増減可能
               </li>
               <li className="flex items-start gap-3">
                 <span className="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-sky-600" />
-                You pay for a complete solution (platform + engineers), not only headcount
+                人数だけでなく、完全なソリューション（プラットフォーム＋エンジニア）に対して支払い
               </li>
             </ul>
             <p>
-              In many cases this results in 30-60% lower total cost compared with building the
-              same capability internally.
+              多くの場合、同等の能力を社内構築する場合と比較して、
+              総コストが30〜60%低くなります。
             </p>
           </div>
         </div>
@@ -328,11 +328,11 @@ export default function ServicesPageEN() {
           <div className="mb-6 flex items-center gap-3">
             <div className="h-1 w-12 rounded-full bg-sky-600" />
             <span className="text-sm font-semibold uppercase tracking-wider text-sky-700">
-              Partnership
+              パートナーシップ
             </span>
           </div>
-          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.4' }}>
-            WorldEmp: our engineering partner in Europe
+          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.5' }}>
+            WorldEmp：欧州のエンジニアリングパートナー
           </h2>
           <div className="mt-6 flex flex-col gap-6 md:flex-row md:items-start">
             <div className="flex-shrink-0">
@@ -344,17 +344,17 @@ export default function ServicesPageEN() {
             </div>
             <div className="space-y-4 text-base leading-relaxed text-neutral-700" style={{ lineHeight: '2' }}>
               <p>
-                WorldEmp B.V. is a Netherlands-based company with more than 20 years of experience
-                providing engineers to manufacturing companies in Europe and other regions. They
-                specialise in highly-educated engineering professionals and remote/hybrid work models.
+                WorldEmp B.V.は、オランダに拠点を置き、欧州およびその他の地域の製造企業に
+                20年以上にわたりエンジニアを提供してきた企業です。
+                高度な教育を受けたエンジニア専門人材と、リモート/ハイブリッドワークモデルを専門としています。
               </p>
               <p>
-                Through our partnership, Solunai can introduce WorldEmp engineers to Japanese customers
-                in a way that is aligned with Japanese expectations for communication, continuity, and quality.
+                このパートナーシップを通じて、Solunaiは日本のお客様の期待に沿った形で
+                —コミュニケーション、継続性、品質において—WorldEmpエンジニアをご紹介できます。
               </p>
               <p className="text-neutral-600 italic">
-                All engineers work under clear agreements and are supported by both WorldEmp and
-                Solunai throughout the project.
+                すべてのエンジニアは明確な契約のもとで業務を行い、
+                プロジェクト全体を通じてWorldEmpとSolunai両社からサポートを受けます。
               </p>
             </div>
           </div>
@@ -367,11 +367,11 @@ export default function ServicesPageEN() {
           <div className="mb-6 flex items-center gap-3">
             <div className="h-1 w-12 rounded-full bg-sky-600" />
             <span className="text-sm font-semibold uppercase tracking-wider text-sky-700">
-              Case Study
+              事例紹介
             </span>
           </div>
-          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.4' }}>
-            Example: digital transformation project with FBM Hudson
+          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.5' }}>
+            事例：FBM Hudsonとのデジタル変革プロジェクト
           </h2>
           <div className="mt-6 rounded-2xl border border-neutral-200 bg-neutral-50 p-6 md:p-8">
             <div className="flex flex-col gap-6 md:flex-row md:items-start">
@@ -384,16 +384,15 @@ export default function ServicesPageEN() {
               </div>
               <div>
                 <p className="text-base leading-relaxed text-neutral-700" style={{ lineHeight: '2' }}>
-                  One recent project with Italian manufacturer FBM Hudson covers a full digital twin
-                  implementation, AI-driven quality control, and optimisation of engineering workflows.
-                  Phase 1 is complete, with significant time reduction and improved accuracy already
-                  achieved, and Phase 2 is now in progress.
+                  イタリアのメーカーFBM Hudsonとの最近のプロジェクトでは、
+                  フルデジタルツイン導入、AIによる品質管理、エンジニアリングワークフローの最適化をカバーしています。
+                  フェーズ1が完了し、大幅な時間短縮と精度向上を既に達成。現在フェーズ2が進行中です。
                 </p>
                 <a
-                  href="/en/case-studies"
+                  href="/ja/case-studies"
                   className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-sky-700 hover:text-sky-800"
                 >
-                  View full case study
+                  事例詳細を見る
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
@@ -410,11 +409,11 @@ export default function ServicesPageEN() {
           <div className="mb-6 flex items-center gap-3">
             <div className="h-1 w-12 rounded-full bg-sky-600" />
             <span className="text-sm font-semibold uppercase tracking-wider text-sky-700">
-              FAQ
+              よくあるご質問
             </span>
           </div>
-          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.4' }}>
-            Frequently asked questions
+          <h2 className="text-xl font-bold text-neutral-900 md:text-2xl" style={{ lineHeight: '1.5' }}>
+            よくあるご質問
           </h2>
           <div className="mt-8 space-y-4">
             {faqItems.map((item) => (
@@ -423,7 +422,7 @@ export default function ServicesPageEN() {
                 className="rounded-2xl border border-neutral-200 bg-white p-6"
               >
                 <h3 className="text-base font-semibold text-neutral-900" style={{ lineHeight: '1.5' }}>{item.question}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-neutral-600" style={{ lineHeight: '1.7' }}>
+                <p className="mt-2 text-sm leading-relaxed text-neutral-600" style={{ lineHeight: '1.8' }}>
                   {item.answer}
                 </p>
               </div>
@@ -435,34 +434,34 @@ export default function ServicesPageEN() {
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-sky-700 to-sky-900 py-16 md:py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <h2 className="text-2xl font-bold text-white md:text-3xl" style={{ lineHeight: '1.4' }}>
-            Start with a consultation
+          <h2 className="text-2xl font-bold text-white md:text-3xl" style={{ lineHeight: '1.5' }}>
+            まずはご相談から
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-sky-100 md:text-lg" style={{ lineHeight: '1.7' }}>
-            If you would like to understand what is realistic for your factory, we can start with
-            a short remote consultation and, if helpful, an on-site visit.
+          <p className="mt-4 text-base leading-relaxed text-sky-100 md:text-lg" style={{ lineHeight: '1.8' }}>
+            貴社工場で何が実現可能かをご理解いただくために、
+            まず短時間のリモート相談から始め、必要に応じて現場訪問も承ります。
           </p>
           <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
             <a
-              href="/en/contact"
+              href="/ja/contact"
               className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 text-base font-semibold text-sky-700 transition-all hover:bg-sky-50 hover:shadow-lg"
             >
-              Schedule a consultation
+              ご相談の予約
               <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
             </a>
             <a
-              href="/en/contact"
+              href="/ja/contact"
               className="inline-flex items-center gap-2 rounded-lg border-2 border-white/30 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-white/10"
             >
-              Contact us
+              お問い合わせ
             </a>
           </div>
         </div>
       </section>
 
-      <Footer lang="en" />
+      <Footer lang="ja" />
     </main>
   );
 }

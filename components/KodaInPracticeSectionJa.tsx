@@ -1,10 +1,11 @@
 // components/KodaInPracticeSectionJa.tsx
+import './KodaInPractice.css';
 
 export default function KodaInPracticeSectionJa() {
   const scenarios = [
     {
       key: "reports",
-      label: "日報・報告書",
+      badge: "日報・報告書",
       title: "日報を「読むだけで終わらない」情報に変える",
       body: [
         "多くの現場で日報は作成されていますが、忙しくてすべてに目を通せないことも少なくありません。",
@@ -14,7 +15,7 @@ export default function KodaInPracticeSectionJa() {
     },
     {
       key: "handover",
-      label: "引き継ぎ・属人化",
+      badge: "引き継ぎ・属人化",
       title: "人が動く前に、業務の「知恵」を残す",
       body: [
         "ベテラン社員が異動・退職する際、その人にしか分からない業務のコツや注意点が残らないままになることがあります。",
@@ -24,7 +25,7 @@ export default function KodaInPracticeSectionJa() {
     },
     {
       key: "training",
-      label: "教育・OJT",
+      badge: "教育・OJT",
       title: "新人が質問しやすい「もう一つの窓口」をつくる",
       body: [
         "新入社員は、同じ質問を何度もすることに気が引けてしまい、分からないまま進んでしまうことがあります。",
@@ -35,74 +36,102 @@ export default function KodaInPracticeSectionJa() {
   ];
 
   return (
-    <section className="w-full bg-white py-12 md:py-16">
-      <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <div className="mb-8 max-w-3xl">
-          <p className="text-xs font-semibold tracking-[0.18em] text-sky-700 md:text-sm">
-            KODA の使い方イメージ
-          </p>
-          <h2 className="mt-2 text-xl font-semibold leading-relaxed text-neutral-900 md:text-2xl">
+    <section className="koda-practice-section">
+      <div className="koda-practice-container">
+
+        {/* Section Header */}
+        <div className="koda-practice-header">
+          <span className="koda-practice-badge">KODA の使い方イメージ</span>
+          <h2 className="koda-practice-title">
             KODAが実際に「どこで」役に立つのか
           </h2>
-          <p className="mt-3 text-sm leading-relaxed text-neutral-700 md:text-base">
+          <p className="koda-practice-subtitle">
             KODAは、大がかりなシステム導入として一度に全社展開するのではなく、
             まずは一つの業務領域から小さく始めることを基本としています。
             少しずつ慣れていただきながら、必要に応じて利用範囲を広げていく考え方です。
           </p>
-          <p className="mt-2 text-sm leading-relaxed text-neutral-700 md:text-base">
-            以下は、中小企業・現場部門で導入が始まりやすい、代表的な3つの例です。
-          </p>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
-          {scenarios.map((s) => (
-            <div
-              key={s.key}
-              className="flex h-full flex-col rounded-2xl border border-neutral-200 bg-neutral-50 p-4 shadow-sm md:p-5"
-            >
-              <p className="text-[11px] font-semibold tracking-[0.16em] text-sky-700 md:text-xs">
-                {s.label}
-              </p>
-              <h3 className="mt-2 text-sm font-semibold leading-relaxed text-neutral-900 md:text-base">
-                {s.title}
-              </h3>
-              <div className="mt-2 space-y-1.5 text-xs leading-relaxed text-neutral-700 md:text-sm">
-                {s.body.map((line, idx) => (
-                  <p key={idx}>{line}</p>
-                ))}
+        {/* Three Starting Points Label */}
+        <div className="koda-practice-divider">
+          <div className="divider-line"></div>
+          <span className="divider-text">代表的な3つの導入例</span>
+          <div className="divider-line"></div>
+        </div>
+
+        {/* Scenario Cards - Expanded Version */}
+        <div className="koda-practice-grid">
+          {scenarios.map((s, index) => (
+            <div key={s.key} className="koda-practice-card koda-practice-card-expanded">
+              <div className="card-content">
+                {/* Step number */}
+                <div className="card-step">{String(index + 1).padStart(2, '0')}</div>
+
+                {/* Badge */}
+                <span className="card-badge">{s.badge}</span>
+
+                {/* Title */}
+                <h3 className="card-title">{s.title}</h3>
+
+                {/* Body paragraphs */}
+                <div className="card-body">
+                  {s.body.map((paragraph, idx) => (
+                    <p key={idx} className="card-body-text">{paragraph}</p>
+                  ))}
+                </div>
+
+                {/* Result highlight */}
+                <p className="card-result">{s.result}</p>
               </div>
-              <p className="mt-3 rounded-full bg-white px-3 py-1 text-[11px] font-medium text-neutral-800 md:text-xs">
-                ポイント：{s.result}
-              </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-8 flex flex-col gap-3 border-t border-neutral-200 pt-6 md:flex-row md:items-center md:justify-between">
-          <div>
-            <p className="text-sm font-medium text-neutral-900 md:text-base">
-              まずは一つの業務から、無理なく始めることができます。
-            </p>
-            <p className="mt-1 text-xs leading-relaxed text-neutral-700 md:text-sm">
-              多くのお客様は、日報・引き継ぎ・教育支援のいずれかから導入を開始し、
-              現場での手応えを確認しながら、徐々に対象業務を広げていらっしゃいます。
-            </p>
+        {/* Connection Line Visual */}
+        <div className="koda-practice-flow">
+          <div className="flow-step flow-step-1">
+            <span>1</span>
           </div>
-          <div className="flex flex-wrap gap-3">
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center rounded-full border border-sky-700 bg-sky-700 px-4 py-2 text-xs font-semibold text-white transition hover:bg-sky-800 md:px-5 md:py-2.5 md:text-sm"
-            >
-              導入のご相談をする
-            </a>
-            <a
-              href="/koda"
-              className="inline-flex items-center justify-center rounded-full border border-neutral-300 px-4 py-2 text-xs font-semibold text-neutral-800 hover:border-neutral-400 hover:bg-neutral-50 md:px-5 md:py-2.5 md:text-sm"
-            >
-              KODA製品を詳しく見る
-            </a>
+          <div className="flow-line flow-line-1"></div>
+          <div className="flow-step flow-step-2">
+            <span>2</span>
+          </div>
+          <div className="flow-line flow-line-2"></div>
+          <div className="flow-step flow-step-3">
+            <span>3</span>
+          </div>
+          <div className="flow-line flow-line-3"></div>
+          <div className="flow-step flow-step-arrow">
+            <svg className="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </div>
         </div>
+
+        {/* Bottom CTA Section */}
+        <div className="koda-practice-cta">
+          <div className="cta-content">
+            <div className="cta-text">
+              <h3 className="cta-title">まずは一つの業務から、無理なく始めることができます。</h3>
+              <p className="cta-description">
+                多くのお客様は、日報・引き継ぎ・教育支援のいずれかから導入を開始し、
+                現場での手応えを確認しながら、徐々に対象業務を広げていらっしゃいます。
+              </p>
+            </div>
+            <div className="cta-buttons">
+              <a href="#contact" className="cta-primary">
+                導入のご相談をする
+                <svg className="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+              <a href="/koda" className="cta-secondary">
+                KODA製品を詳しく見る
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );

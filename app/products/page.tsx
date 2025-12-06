@@ -12,129 +12,88 @@ export default function KodaProductsPage() {
     {
       id: 'medcomm',
       name: 'KODA MedComm',
-      tagline: 'AI-Powered Medical Communication Training',
-      description: 'Train medical students and healthcare professionals in patient communication with AI virtual patients. 24/7 availability, consistent quality, detailed analytics.',
+      tagline: '医療コミュニケーション教育支援',
+      description: '患者さんとの対話を、何度でも安心して練習できる環境を提供します。医学教育の現場で「練習機会が少ない」という声に応えます。',
       features: [
-        'Virtual patients for communication practice',
-        'Expert digital twins for guidance',
-        'Automated assessment engine',
-        'Culturally-appropriate Japanese scenarios'
+        'AI仮想患者との対話練習',
+        'ベテラン医師の知恵を継承',
+        '振り返りのサポート',
+        '日本の医療現場に最適化'
       ],
-      price: 'From ¥300,000/year',
-      icon: '🏥',
       highlight: true,
       href: '/products/medcomm'
     },
     {
       id: 'docintel',
       name: 'KODA DocIntel',
-      tagline: 'Intelligent Document Processing',
-      description: 'AI system that reads, understands, and acts on Japanese business documents. OCR with deep comprehension, data extraction, and workflow automation.',
+      tagline: '文書処理・情報抽出',
+      description: '日本語ビジネス文書を読み、理解し、必要な情報を抽出します。手作業で行っていた文書処理の負担を軽減します。',
       features: [
-        'Japanese document OCR + understanding',
-        'Structured data extraction',
-        'Workflow automation',
-        'Classification and routing'
+        '日本語文書の理解と処理',
+        '必要情報の自動抽出',
+        'ワークフロー連携',
+        '分類・振り分け支援'
       ],
-      price: 'From ¥50,000/month',
-      icon: '📄',
       highlight: false,
       href: '/products/docintel'
     },
     {
       id: 'assist',
       name: 'KODA Assist',
-      tagline: 'Custom AI Workers',
-      description: 'Purpose-built AI assistants for specific business functions. Secretary bots, analyst bots, customer service bots - all optimized for Japanese business context.',
+      tagline: '業務支援AIアシスタント',
+      description: '日常業務をサポートするAIアシスタント。議事録作成、スケジュール調整、問い合わせ対応など、担当者の負担を減らします。',
       features: [
-        'Secretary: Transcription, scheduling, notes',
-        'Analyst: Document analysis, reporting',
-        'Customer Service: Japanese-aware support',
-        'Custom: Built for your needs'
+        '会議の書き起こし・要約',
+        'スケジュール調整支援',
+        '問い合わせ対応サポート',
+        '業務に合わせたカスタマイズ'
       ],
-      price: 'From ¥100,000/month',
-      icon: '🤖',
       highlight: false,
       href: '/products/assist'
     },
     {
       id: 'cultural',
       name: 'KODA Cultural',
-      tagline: 'Cross-Cultural Intelligence Platform',
-      description: 'AI-powered cultural intelligence for global business. Navigate Japanese business etiquette, communication styles, and cultural nuances with confidence.',
+      tagline: '異文化理解・適応支援',
+      description: '日本で働く外国人材と、受け入れる日本企業の両方をサポート。文化の違いから生まれる「すれ違い」を減らします。',
       features: [
-        'Japanese business etiquette training',
-        'Cross-cultural communication coaching',
-        'Real-time cultural context insights',
-        'Global team collaboration tools'
+        '日本のビジネス文化の理解',
+        'コミュニケーションの橋渡し',
+        '職場適応のサポート',
+        '相互理解の促進'
       ],
-      price: 'From ¥80,000/month',
-      icon: '🌏',
       highlight: false,
       href: '/products/cultural'
     },
     {
       id: 'training',
       name: 'KODA Training',
-      tagline: 'AI-Enhanced Corporate Learning',
-      description: 'Transform corporate training with AI-powered adaptive learning. Personalized skill development, competency tracking, and performance analytics.',
+      tagline: '企業研修・人材育成',
+      description: '一人ひとりに合わせた学習体験を提供します。「研修を受けても現場で活かせない」という課題に応えます。',
       features: [
-        'Adaptive learning paths',
-        'AI tutors and mentors',
-        'Skill gap analysis',
-        'Compliance training automation'
+        '個人に最適化された学習',
+        'AIチューターによるサポート',
+        'スキルの可視化',
+        '実践的なシナリオ演習'
       ],
-      price: 'From ¥150,000/month',
-      icon: '🎓',
       highlight: false,
       href: '/products/training'
     },
     {
       id: 'instructry',
       name: 'KODA Instructry',
-      tagline: 'Industrial Knowledge Management',
-      description: 'Capture and transfer expert knowledge in manufacturing and industrial settings. Preserve decades of expertise before retirement.',
+      tagline: '製造業・技術継承支援',
+      description: 'ベテラン技術者の知識・経験を次世代に伝えます。「退職前に技術を残したい」という現場の願いに応えます。',
       features: [
-        'Expert knowledge capture',
-        'Visual work instruction generation',
-        'Troubleshooting AI assistants',
-        'Skills transfer acceleration'
+        '技術知識の記録・整理',
+        '作業手順書の自動生成',
+        'トラブル対応の知恵袋',
+        '若手への技術伝承'
       ],
-      price: 'From ¥200,000/month',
-      icon: '🏭',
       highlight: false,
       href: '/products/instructry'
     }
   ];
-
-  // KODA SCE Engine - Core AI Platform
-  const sceEngine = {
-    name: 'KODA SCE Engine',
-    tagline: 'Semantic Computing Engine',
-    description: 'The brain behind all KODA products. Our proprietary Semantic Computing Engine powers deep language understanding, cultural context awareness, and intelligent automation across the entire KODA ecosystem.',
-    capabilities: [
-      {
-        title: 'Semantic Understanding',
-        description: 'Deep comprehension of meaning, context, and nuance in Japanese and English',
-        icon: '🧠'
-      },
-      {
-        title: 'Cultural Intelligence',
-        description: 'Built-in awareness of Japanese business culture, etiquette, and communication norms',
-        icon: '🎌'
-      },
-      {
-        title: 'Multi-Modal Processing',
-        description: 'Text, voice, image, and document processing in unified framework',
-        icon: '🔄'
-      },
-      {
-        title: 'Enterprise Security',
-        description: 'Japan data residency, end-to-end encryption, ISMS compliance ready',
-        icon: '🔐'
-      }
-    ]
-  };
 
   return (
     <main>
@@ -143,12 +102,12 @@ export default function KodaProductsPage() {
       {/* Hero Section */}
       <section className="koda-hero">
         <div className="koda-hero-container">
-          <span className="koda-badge">KODA PRODUCT LINE</span>
-          <h1>KODA製品ライン</h1>
-          <p className="koda-hero-subtitle">AI Solutions for Japanese Enterprise</p>
+          <span className="koda-badge">KODA製品ライン</span>
+          <h1>「こんなことができたら」を、<br />AIの力で実現します。</h1>
           <p className="koda-hero-description">
-            日本市場向けに最適化されたAIソリューション。
-            医療教育から文書処理、企業研修まで、企業のDXを加速します。
+            日本の企業が抱える課題に、正面から向き合いました。<br />
+            医療教育から文書処理、技術継承まで。<br />
+            現場の声から生まれたAIソリューションです。
           </p>
         </div>
       </section>
@@ -156,22 +115,55 @@ export default function KodaProductsPage() {
       {/* SCE Engine - The Brain */}
       <section className="koda-partnership">
         <div className="koda-partnership-container">
-          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginBottom: '16px'}}>
-            <span style={{fontSize: '48px'}}>🧠</span>
-            <h2 style={{margin: 0}}>{sceEngine.name}</h2>
-          </div>
-          <p className="koda-hero-subtitle" style={{marginBottom: '16px'}}>{sceEngine.tagline}</p>
-          <p style={{color: '#c8d9e8', maxWidth: '800px', margin: '0 auto 40px', lineHeight: '1.7'}}>
-            {sceEngine.description}
+          <h2>KODA SCE Engine</h2>
+          <p className="koda-hero-subtitle" style={{marginBottom: '16px'}}>すべてのKODA製品を支える技術基盤</p>
+          <p style={{color: '#c8d9e8', maxWidth: '800px', margin: '0 auto 40px', lineHeight: '1.9'}}>
+            日本語の「意味」と「文脈」を深く理解するエンジンです。<br />
+            単なる翻訳や置き換えではなく、言葉の背景にある文化や慣習まで踏まえて処理します。
           </p>
           <div style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '24px', maxWidth: '1000px', margin: '0 auto'}}>
-            {sceEngine.capabilities.map((cap, idx) => (
-              <div key={idx} style={{background: 'rgba(255,255,255,0.1)', padding: '24px', borderRadius: '12px', textAlign: 'center'}}>
-                <div style={{fontSize: '32px', marginBottom: '12px'}}>{cap.icon}</div>
-                <h4 style={{color: '#fff', marginBottom: '8px', fontSize: '16px'}}>{cap.title}</h4>
-                <p style={{color: '#94b8d8', fontSize: '13px', lineHeight: '1.5'}}>{cap.description}</p>
+            <div style={{background: 'rgba(255,255,255,0.1)', padding: '24px', borderRadius: '12px', textAlign: 'center'}}>
+              <div style={{marginBottom: '12px'}}>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16" cy="16" r="12" stroke="#fff" strokeWidth="2" fill="none"/>
+                  <path d="M16 8v8l6 3" stroke="#fff" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
               </div>
-            ))}
+              <h4 style={{color: '#fff', marginBottom: '8px', fontSize: '16px'}}>意味理解</h4>
+              <p style={{color: '#94b8d8', fontSize: '13px', lineHeight: '1.6'}}>文脈やニュアンスを含めた<br />深い理解</p>
+            </div>
+            <div style={{background: 'rgba(255,255,255,0.1)', padding: '24px', borderRadius: '12px', textAlign: 'center'}}>
+              <div style={{marginBottom: '12px'}}>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 24l8-8 8 8M8 16l8-8 8 8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <h4 style={{color: '#fff', marginBottom: '8px', fontSize: '16px'}}>文化対応</h4>
+              <p style={{color: '#94b8d8', fontSize: '13px', lineHeight: '1.6'}}>日本のビジネス文化に<br />根差した設計</p>
+            </div>
+            <div style={{background: 'rgba(255,255,255,0.1)', padding: '24px', borderRadius: '12px', textAlign: 'center'}}>
+              <div style={{marginBottom: '12px'}}>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="6" width="8" height="8" rx="2" stroke="#fff" strokeWidth="2" fill="none"/>
+                  <rect x="18" y="6" width="8" height="8" rx="2" stroke="#fff" strokeWidth="2" fill="none"/>
+                  <rect x="6" y="18" width="8" height="8" rx="2" stroke="#fff" strokeWidth="2" fill="none"/>
+                  <rect x="18" y="18" width="8" height="8" rx="2" stroke="#fff" strokeWidth="2" fill="none"/>
+                </svg>
+              </div>
+              <h4 style={{color: '#fff', marginBottom: '8px', fontSize: '16px'}}>マルチモーダル</h4>
+              <p style={{color: '#94b8d8', fontSize: '13px', lineHeight: '1.6'}}>文字・音声・画像を<br />統合処理</p>
+            </div>
+            <div style={{background: 'rgba(255,255,255,0.1)', padding: '24px', borderRadius: '12px', textAlign: 'center'}}>
+              <div style={{marginBottom: '12px'}}>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="8" y="12" width="16" height="12" rx="2" stroke="#fff" strokeWidth="2" fill="none"/>
+                  <path d="M12 12V10a4 4 0 018 0v2" stroke="#fff" strokeWidth="2"/>
+                  <circle cx="16" cy="18" r="2" fill="#fff"/>
+                </svg>
+              </div>
+              <h4 style={{color: '#fff', marginBottom: '8px', fontSize: '16px'}}>セキュリティ</h4>
+              <p style={{color: '#94b8d8', fontSize: '13px', lineHeight: '1.6'}}>国内データセンター<br />での安全な運用</p>
+            </div>
           </div>
         </div>
       </section>
@@ -179,23 +171,42 @@ export default function KodaProductsPage() {
       {/* Why KODA */}
       <section className="koda-benefits">
         <div className="koda-benefits-container">
-          <h2 className="koda-section-title">なぜKODAか</h2>
+          <h2 className="koda-section-title">Solunaiが選ばれる理由</h2>
           <div className="koda-benefits-grid">
             <div className="koda-benefit-card">
-              <div className="koda-benefit-metric" style={{fontSize: '32px'}}>🇯🇵</div>
-              <p className="koda-benefit-label">日本ファースト<br/><span style={{fontSize: '12px', color: '#737373'}}>日本語・文化・慣習のために設計</span></p>
+              <div className="koda-benefit-metric">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="18" stroke="#1e3a5f" strokeWidth="2" fill="none"/>
+                  <path d="M24 12v24M12 24h24" stroke="#1e3a5f" strokeWidth="2"/>
+                </svg>
+              </div>
+              <p className="koda-benefit-label">日本のために設計<br/><span style={{fontSize: '12px', color: '#737373'}}>言葉・文化・慣習を深く理解</span></p>
             </div>
             <div className="koda-benefit-card">
-              <div className="koda-benefit-metric" style={{fontSize: '32px'}}>🎓</div>
-              <p className="koda-benefit-label">学術的信頼性<br/><span style={{fontSize: '12px', color: '#737373'}}>世界的専門家との連携</span></p>
+              <div className="koda-benefit-metric">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 8l4 8 8 1-6 5 2 8-8-4-8 4 2-8-6-5 8-1z" stroke="#1e3a5f" strokeWidth="2" fill="none"/>
+                </svg>
+              </div>
+              <p className="koda-benefit-label">学術的な裏付け<br/><span style={{fontSize: '12px', color: '#737373'}}>専門家との共同研究</span></p>
             </div>
             <div className="koda-benefit-card">
-              <div className="koda-benefit-metric" style={{fontSize: '32px'}}>💰</div>
-              <p className="koda-benefit-label">SME価格<br/><span style={{fontSize: '12px', color: '#737373'}}>中小企業でも導入可能</span></p>
+              <div className="koda-benefit-metric">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 36V20l12-8 12 8v16" stroke="#1e3a5f" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M20 36v-8h8v8" stroke="#1e3a5f" strokeWidth="2" fill="none"/>
+                </svg>
+              </div>
+              <p className="koda-benefit-label">中小企業にも<br/><span style={{fontSize: '12px', color: '#737373'}}>規模に合わせた導入が可能</span></p>
             </div>
             <div className="koda-benefit-card">
-              <div className="koda-benefit-metric" style={{fontSize: '32px'}}>🔧</div>
-              <p className="koda-benefit-label">カスタマイズ可能<br/><span style={{fontSize: '12px', color: '#737373'}}>ニーズに合わせた柔軟対応</span></p>
+              <div className="koda-benefit-metric">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="16" stroke="#1e3a5f" strokeWidth="2" fill="none"/>
+                  <path d="M18 24l4 4 8-8" stroke="#1e3a5f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <p className="koda-benefit-label">柔軟な対応<br/><span style={{fontSize: '12px', color: '#737373'}}>ニーズに合わせたカスタマイズ</span></p>
             </div>
           </div>
         </div>
@@ -204,15 +215,15 @@ export default function KodaProductsPage() {
       {/* Applications Grid */}
       <section className="koda-features">
         <div className="koda-features-container" style={{maxWidth: '1200px'}}>
-          <h2 className="koda-section-title">KODA Applications</h2>
+          <h2 className="koda-section-title">製品ラインナップ</h2>
           <div className="koda-features-grid" style={{gridTemplateColumns: 'repeat(3, 1fr)'}}>
             {applications.map((product) => (
               <div
                 key={product.id}
                 className="koda-feature-card"
                 style={{
-                  border: product.highlight ? '2px solid #1e3a5f' : '1px solid #e5e5e5',
-                  background: product.highlight ? '#f0f6fc' : '#fff',
+                  border: product.highlight ? '2px solid #0077b6' : '1px solid #e5e5e5',
+                  background: product.highlight ? '#f0f8ff' : '#fff',
                   position: 'relative'
                 }}
               >
@@ -222,30 +233,28 @@ export default function KodaProductsPage() {
                     top: '-12px',
                     left: '50%',
                     transform: 'translateX(-50%)',
-                    background: '#1e3a5f',
+                    background: '#0077b6',
                     color: '#fff',
                     padding: '4px 12px',
                     borderRadius: '12px',
                     fontSize: '11px',
                     fontWeight: 'bold'
-                  }}>FLAGSHIP</span>
+                  }}>注目製品</span>
                 )}
-                <div className="koda-feature-icon">{product.icon}</div>
-                <h3>{product.name}</h3>
-                <p style={{color: '#1e3a5f', fontWeight: '500', marginBottom: '12px', fontSize: '14px'}}>{product.tagline}</p>
-                <p style={{fontSize: '13px', marginBottom: '16px'}}>{product.description}</p>
+                <h3 style={{marginBottom: '8px'}}>{product.name}</h3>
+                <p style={{color: '#0077b6', fontWeight: '500', marginBottom: '12px', fontSize: '14px'}}>{product.tagline}</p>
+                <p style={{fontSize: '13px', marginBottom: '16px', lineHeight: '1.7', color: '#525252'}}>{product.description}</p>
                 <div style={{marginBottom: '16px'}}>
-                  {product.features.slice(0, 3).map((feature, idx) => (
-                    <div key={idx} style={{display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', color: '#525252', marginBottom: '4px'}}>
-                      <span style={{width: '4px', height: '4px', background: '#1e3a5f', borderRadius: '50%'}}></span>
+                  {product.features.map((feature, idx) => (
+                    <div key={idx} style={{display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', color: '#525252', marginBottom: '6px'}}>
+                      <span style={{width: '4px', height: '4px', background: '#0077b6', borderRadius: '50%', flexShrink: 0}}></span>
                       {feature}
                     </div>
                   ))}
                 </div>
                 <div style={{borderTop: '1px solid #e5e5e5', paddingTop: '16px', marginTop: 'auto'}}>
-                  <p style={{fontWeight: 'bold', color: '#1e3a5f', marginBottom: '12px'}}>{product.price}</p>
                   <Link href={product.href} className="koda-price-btn koda-price-btn-solid" style={{display: 'block', textAlign: 'center'}}>
-                    詳細を見る
+                    詳しく見る
                   </Link>
                 </div>
               </div>
@@ -257,55 +266,31 @@ export default function KodaProductsPage() {
       {/* Target Customers */}
       <section className="koda-problems">
         <div className="koda-problems-container" style={{maxWidth: '1200px'}}>
-          <h2 className="koda-section-title">対象顧客</h2>
+          <h2 className="koda-section-title">こんな方にご利用いただいています</h2>
           <div className="koda-problems-grid">
-            <div className="koda-problem-card" style={{borderColor: '#1e3a5f'}}>
-              <h3 style={{color: '#1e3a5f'}}>医療教育機関</h3>
-              <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
-                  <span style={{color: '#1e3a5f'}}>•</span> 医学部（全国82校）
-                </li>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
-                  <span style={{color: '#1e3a5f'}}>•</span> 教育病院
-                </li>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
-                  <span style={{color: '#1e3a5f'}}>•</span> 看護学校
-                </li>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-                  <span style={{color: '#1e3a5f'}}>•</span> 医療団体
-                </li>
-              </ul>
+            <div className="koda-problem-card" style={{borderColor: '#0077b6'}}>
+              <h3 style={{color: '#0077b6'}}>医療教育機関</h3>
+              <p style={{fontSize: '14px', color: '#525252', lineHeight: '1.7'}}>
+                医学部、看護学部、教育病院など、<br />
+                医療コミュニケーション教育に<br />
+                取り組まれている皆さま
+              </p>
             </div>
             <div className="koda-problem-card" style={{borderColor: '#059669'}}>
               <h3 style={{color: '#059669'}}>医療機関</h3>
-              <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
-                  <span style={{color: '#059669'}}>•</span> 病院
-                </li>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
-                  <span style={{color: '#059669'}}>•</span> クリニック
-                </li>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-                  <span style={{color: '#059669'}}>•</span> 介護施設
-                </li>
-              </ul>
+              <p style={{fontSize: '14px', color: '#525252', lineHeight: '1.7'}}>
+                病院、クリニック、介護施設など、<br />
+                スタッフ研修や業務効率化を<br />
+                検討されている皆さま
+              </p>
             </div>
             <div className="koda-problem-card" style={{borderColor: '#7c3aed'}}>
-              <h3 style={{color: '#7c3aed'}}>中小企業</h3>
-              <ul style={{listStyle: 'none', padding: 0, margin: 0}}>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
-                  <span style={{color: '#7c3aed'}}>•</span> コンサルティング会社
-                </li>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
-                  <span style={{color: '#7c3aed'}}>•</span> 法律事務所
-                </li>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
-                  <span style={{color: '#7c3aed'}}>•</span> 会計事務所
-                </li>
-                <li style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-                  <span style={{color: '#7c3aed'}}>•</span> 製造業
-                </li>
-              </ul>
+              <h3 style={{color: '#7c3aed'}}>企業・事業所</h3>
+              <p style={{fontSize: '14px', color: '#525252', lineHeight: '1.7'}}>
+                文書処理、人材育成、技術継承など、<br />
+                業務課題の解決に<br />
+                AIの活用をお考えの皆さま
+              </p>
             </div>
           </div>
         </div>
@@ -314,11 +299,11 @@ export default function KodaProductsPage() {
       {/* CTA */}
       <section className="koda-cta">
         <div className="koda-cta-container">
-          <h2>KODAで業務を変革しませんか？</h2>
-          <p>無料相談・デモのお申し込みはこちらから</p>
+          <h2>まずは、お話を聞かせてください</h2>
+          <p>貴社の課題やニーズをお聞かせいただければ、<br />最適な製品・プランをご提案いたします。</p>
           <div className="koda-cta-buttons">
             <Link href="/contact" className="koda-cta-btn-primary">お問い合わせ</Link>
-            <Link href="/contact" className="koda-cta-btn-secondary">デモを試す</Link>
+            <Link href="/about" className="koda-cta-btn-secondary">Solunaiについて</Link>
           </div>
         </div>
       </section>
