@@ -49,7 +49,7 @@ export default function InstructryPage() {
       <section
         className="koda-hero"
         style={{
-          backgroundImage: 'linear-gradient(rgba(30, 58, 95, 0.85), rgba(21, 45, 74, 0.9)), url(/images/products/hero-instructry.jpg)',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.45)), url(/images/products/hero-instructry.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}

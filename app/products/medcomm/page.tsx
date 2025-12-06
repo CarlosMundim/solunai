@@ -53,7 +53,7 @@ export default function MedCommPage() {
       <section
         className="koda-hero koda-theme-medical"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0, 119, 182, 0.85), rgba(0, 90, 140, 0.9)), url(/images/products/hero-medcomm.jpg)',
+          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.45)), url(/images/products/hero-medcomm.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
