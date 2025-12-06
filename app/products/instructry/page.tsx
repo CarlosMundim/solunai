@@ -9,42 +9,36 @@ import '@/components/KodaProduct.css';
 export default function InstructryPage() {
   const features = [
     {
-      icon: '🎥',
-      title: '熟練者の技をキャプチャ',
-      description: '動画・音声・画像から熟練者の作業手順とノウハウをAIが自動抽出。暗黙知を形式知に変換。'
+      title: 'ベテランの技を記録',
+      description: '言葉にしにくい「コツ」や「勘所」を、動画や音声から整理・記録します。退職前に、大切な知識を残せます。'
     },
     {
-      icon: '📋',
-      title: '作業手順書自動生成',
-      description: 'キャプチャした知識から、写真付きの分かりやすい作業手順書を自動生成。多言語対応も可能。'
+      title: '分かりやすい手順書に',
+      description: '記録した知識から、写真付きの作業手順書を作成。新人でも分かりやすい形で、技術を伝えられます。'
     },
     {
-      icon: '🔧',
-      title: 'トラブルシューティングAI',
-      description: '過去の故障事例と解決方法を学習したAIが、問題解決をステップバイステップでガイド。'
+      title: 'トラブル対応の知恵袋',
+      description: '「この症状のとき、どうする？」過去の対応事例から、解決のヒントを素早く見つけられます。'
     },
     {
-      icon: '👨‍🏫',
-      title: 'スキルトランスファー',
-      description: 'ベテランの退職前に知識を体系的に収集・保存。新人への技能伝承を加速。'
+      title: '若手への技術伝承',
+      description: 'ベテランが現場にいなくても、蓄積された知識にアクセスできる。技術の継承を、確実に進められます。'
     },
     {
-      icon: '🔍',
-      title: 'ナレッジ検索',
-      description: '「あの部品が外れないときどうする？」といった自然言語での検索に対応。必要な情報を即座に提供。'
+      title: '必要なときに必要な情報を',
+      description: '「あの部品が外れないとき」のような自然な言葉で検索。現場で困ったとき、すぐに答えが見つかります。'
     },
     {
-      icon: '📱',
-      title: '現場対応',
-      description: 'タブレット・スマホで現場から直接アクセス。ARによる作業支援機能も搭載。'
+      title: '現場で使いやすく',
+      description: 'タブレットやスマホで、現場から直接アクセス。手が汚れていても、音声で操作できます。'
     }
   ];
 
   const industries = [
-    { title: '製造業', description: '設備保全・組立作業' },
+    { title: '製造業', description: '設備保全・組立・加工技術' },
     { title: '建設業', description: '施工技術・安全管理' },
     { title: 'インフラ', description: '点検・メンテナンス' },
-    { title: '医療機器', description: '機器操作・保守' }
+    { title: '医療・福祉', description: '機器操作・介護技術' }
   ];
 
   return (
@@ -54,32 +48,37 @@ export default function InstructryPage() {
       {/* Hero Section */}
       <section className="koda-hero">
         <div className="koda-hero-container">
-          <span className="koda-badge">KODA PRODUCT</span>
-          <h1>KODA Instructry</h1>
-          <p className="koda-hero-subtitle">Industrial Knowledge Management</p>
+          <span className="koda-badge">KODA INSTRUCTRY</span>
+          <h1>「退職前に技術を残したい」<br />その願いに応えます。</h1>
+          <p className="koda-hero-subtitle">製造業・技術継承支援</p>
           <p className="koda-hero-description">
-            製造現場の熟練技術をAIで保存・継承。
-            2025年問題で失われる貴重なノウハウを、次世代に確実につなぎます。
+            長年培ってきた技術やノウハウ。<br />
+            ベテランの退職とともに失われてしまう前に、<br />
+            KODA Instructryが、次世代への継承をお手伝いします。
           </p>
           <div className="koda-hero-buttons">
-            <Link href="/contact" className="koda-btn-primary">資料請求</Link>
-            <Link href="/contact" className="koda-btn-secondary">デモを見る</Link>
+            <Link href="/contact" className="koda-btn-primary">詳しい資料を見る</Link>
+            <Link href="/contact" className="koda-btn-secondary">デモをリクエスト</Link>
           </div>
         </div>
       </section>
 
-      {/* Problem/Solution */}
+      {/* Problem Statement */}
       <section className="koda-problems">
         <div className="koda-problems-container">
-          <h2 className="koda-section-title">2025年問題に備える</h2>
-          <div className="koda-problems-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)'}}>
-            <div className="koda-problem-card" style={{borderColor: '#dc2626'}}>
-              <h3 style={{color: '#dc2626'}}>深刻な技術継承危機</h3>
-              <p>団塊世代の大量退職。40年の経験とノウハウが失われる。マニュアル化されていない暗黙知。若手への伝承が間に合わない。</p>
+          <h2 className="koda-section-title">こんなお悩みはありませんか</h2>
+          <div className="koda-problems-grid">
+            <div className="koda-problem-card">
+              <h3>「あの人しか知らない」</h3>
+              <p>ベテランの頭の中にある知識。マニュアルには書かれていない。その人がいなくなったら、どうしよう。</p>
             </div>
-            <div className="koda-problem-card" style={{borderColor: '#059669'}}>
-              <h3 style={{color: '#059669'}}>KODA Instructryで解決</h3>
-              <p>熟練者の技をAIが記録・体系化。いつでも誰でもアクセス可能なナレッジベースを構築。技術継承のスピードを10倍に。</p>
+            <div className="koda-problem-card">
+              <h3>「教える時間がない」</h3>
+              <p>日々の業務で手一杯。若手に丁寧に教える余裕がない。でも、このままでは技術が途絶えてしまう。</p>
+            </div>
+            <div className="koda-problem-card">
+              <h3>「言葉にしにくい」</h3>
+              <p>「体で覚えた」技術をどう伝えればいい？長年の経験から身についた「勘」は、説明が難しい。</p>
             </div>
           </div>
         </div>
@@ -88,11 +87,10 @@ export default function InstructryPage() {
       {/* Features */}
       <section className="koda-features">
         <div className="koda-features-container">
-          <h2 className="koda-section-title">機能</h2>
+          <h2 className="koda-section-title">KODA Instructryができること</h2>
           <div className="koda-features-grid">
             {features.map((feature, idx) => (
               <div key={idx} className="koda-feature-card">
-                <div className="koda-feature-icon">{feature.icon}</div>
                 <h3>{feature.title}</h3>
                 <p>{feature.description}</p>
               </div>
@@ -104,47 +102,36 @@ export default function InstructryPage() {
       {/* Industries */}
       <section className="koda-benefits">
         <div className="koda-benefits-container">
-          <h2 className="koda-section-title">対象業界</h2>
+          <h2 className="koda-section-title">こんな業界でご活用いただいています</h2>
           <div className="koda-benefits-grid">
             {industries.map((industry, idx) => (
               <div key={idx} className="koda-benefit-card">
-                <div className="koda-benefit-metric" style={{fontSize: '24px'}}>{industry.title}</div>
-                <p className="koda-benefit-label">{industry.description}</p>
+                <p className="koda-benefit-label" style={{fontWeight: '600', marginBottom: '8px', color: '#1e3a5f'}}>{industry.title}</p>
+                <p style={{fontSize: '13px', color: '#525252'}}>{industry.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Contact Section - No prices */}
       <section className="koda-pricing">
         <div className="koda-pricing-container">
-          <h2 className="koda-section-title">料金</h2>
-          <div className="koda-pricing-grid">
-            <div className="koda-price-card">
-              <h3>スタンダード</h3>
-              <p className="koda-price-amount">¥200,000<span>/月</span></p>
-              <ul className="koda-price-features">
-                <li>ナレッジ登録100件</li>
-                <li>作業手順書生成</li>
-                <li>検索機能</li>
-                <li>メールサポート</li>
-              </ul>
-              <Link href="/contact" className="koda-price-btn koda-price-btn-outline">お問い合わせ</Link>
-            </div>
-            <div className="koda-price-card recommended">
-              <span className="koda-price-badge">RECOMMENDED</span>
-              <h3>エンタープライズ</h3>
-              <p className="koda-price-amount">¥500,000<span>/月〜</span></p>
-              <ul className="koda-price-features">
-                <li>無制限ナレッジ登録</li>
-                <li>トラブルシューティングAI</li>
-                <li>AR現場支援</li>
-                <li>多言語対応</li>
-                <li>専任サポート</li>
-              </ul>
-              <Link href="/contact" className="koda-price-btn koda-price-btn-solid">お問い合わせ</Link>
-            </div>
+          <h2 className="koda-section-title">導入をご検討の方へ</h2>
+          <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+            <p style={{ fontSize: '16px', lineHeight: '1.9', color: '#525252', marginBottom: '32px' }}>
+              KODA Instructryは、記録する技術の範囲や規模に合わせて、<br />
+              柔軟にプランをご提案いたします。<br /><br />
+              技術継承に関するお悩みをお聞かせください。<br />
+              まずは一部の工程から試すこともできます。
+            </p>
+            <Link
+              href="/contact"
+              className="koda-btn-primary"
+              style={{ display: 'inline-block', background: '#1e3a5f', color: 'white', padding: '18px 48px', borderRadius: '8px', textDecoration: 'none', fontSize: '16px', fontWeight: '600' }}
+            >
+              お問い合わせ・資料請求
+            </Link>
           </div>
         </div>
       </section>
@@ -152,8 +139,8 @@ export default function InstructryPage() {
       {/* CTA */}
       <section className="koda-cta">
         <div className="koda-cta-container">
-          <h2>貴重な技術を失う前に</h2>
-          <p>熟練者が退職される前に、知識の保存を始めましょう。</p>
+          <h2>まずは、お話を聞かせてください</h2>
+          <p>デモンストレーションや詳しい資料のご要望など、お気軽にご連絡ください。</p>
           <div className="koda-cta-buttons">
             <Link href="/contact" className="koda-cta-btn-primary">お問い合わせ</Link>
             <Link href="/products" className="koda-cta-btn-secondary">他の製品を見る</Link>

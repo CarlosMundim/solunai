@@ -9,42 +9,36 @@ import '@/components/KodaProduct.css';
 export default function CulturalPage() {
   const features = [
     {
-      icon: '🌏',
-      title: '異文化コミュニケーション',
-      description: '日本のビジネス文化、マナー、コミュニケーションスタイルをAIが解説。リアルタイムで文化的コンテキストを提供。'
+      title: '日本の職場文化を学ぶ',
+      description: '敬語の使い方、報連相、会議の進め方など、日本の職場で大切にされていることを、分かりやすく学べます。'
     },
     {
-      icon: '🤝',
-      title: 'ビジネスエチケット',
-      description: '名刺交換、敬語、会議作法など、日本のビジネスシーンで必要なエチケットをインタラクティブに学習。'
+      title: '場面に応じた対応を練習',
+      description: '「こんなとき、どう言えばいい？」実際の職場で起こりそうな場面を想定して、対応を練習できます。'
     },
     {
-      icon: '💬',
-      title: 'コミュニケーションコーチ',
-      description: 'メール、プレゼン、交渉などの場面で適切な表現をAIがアドバイス。ニュアンスの違いも丁寧に解説。'
+      title: '日本人スタッフの理解も深める',
+      description: '外国人材を受け入れる日本人スタッフ向けのコンテンツも。お互いの理解を深め、働きやすい職場づくりに。'
     },
     {
-      icon: '📊',
-      title: '文化適応度診断',
-      description: '自分の文化的傾向を診断し、日本ビジネス環境への適応度を測定。改善ポイントを具体的に提示。'
+      title: '自分のペースで学習',
+      description: '忙しい業務の合間でも、少しずつ学び続けられます。分からないことはAIに何度でも質問できます。'
     },
     {
-      icon: '🎯',
-      title: 'シナリオ練習',
-      description: '商談、接待、クレーム対応など、実際のビジネスシナリオでロールプレイ練習が可能。'
+      title: '成長の可視化',
+      description: '学習の進捗や理解度が目に見えてわかる。「できるようになった」という実感が、次の学習につながります。'
     },
     {
-      icon: '📈',
-      title: '進捗トラッキング',
-      description: '学習進捗と文化的コンピテンシーの成長を可視化。チーム全体の状況も把握可能。'
+      title: '職場に合わせたカスタマイズ',
+      description: '業界や職種によって、大切にすべきことは異なります。貴社の職場環境に合わせた内容をご提供します。'
     }
   ];
 
   const useCases = [
-    { title: '外資系企業', description: '日本市場参入時の文化トレーニング' },
-    { title: 'グローバル人材', description: '海外駐在員の日本赴任準備' },
-    { title: '多国籍チーム', description: '日本人との協働を円滑化' },
-    { title: '採用・HR', description: '外国人社員のオンボーディング' }
+    { title: '外国人材の受け入れ企業', description: '新しく入社される方の職場適応をサポート' },
+    { title: '技能実習生受け入れ機関', description: '日本での生活・仕事への理解を深める' },
+    { title: '多国籍チームを持つ企業', description: '文化の違いを乗り越え、協力して働く' },
+    { title: 'グローバル展開企業', description: '海外拠点との円滑なコミュニケーション' }
   ];
 
   return (
@@ -54,32 +48,37 @@ export default function CulturalPage() {
       {/* Hero Section */}
       <section className="koda-hero">
         <div className="koda-hero-container">
-          <span className="koda-badge">KODA PRODUCT</span>
-          <h1>KODA Cultural</h1>
-          <p className="koda-hero-subtitle">Cross-Cultural Intelligence Platform</p>
+          <span className="koda-badge">KODA CULTURAL</span>
+          <h1>「一緒に働く」を、<br />もっとスムーズに。</h1>
+          <p className="koda-hero-subtitle">異文化理解・職場適応支援</p>
           <p className="koda-hero-description">
-            日本のビジネス文化をAIで学ぶ。異文化コミュニケーションの壁を越え、
-            グローバルビジネスの成功を加速します。
+            文化の違いから生まれる「すれ違い」を減らしたい。<br />
+            KODA Culturalは、日本で働く外国人材と、<br />
+            受け入れる日本企業の両方をサポートします。
           </p>
           <div className="koda-hero-buttons">
-            <Link href="/contact" className="koda-btn-primary">資料請求</Link>
-            <Link href="/contact" className="koda-btn-secondary">デモを見る</Link>
+            <Link href="/contact" className="koda-btn-primary">詳しい資料を見る</Link>
+            <Link href="/contact" className="koda-btn-secondary">デモをリクエスト</Link>
           </div>
         </div>
       </section>
 
-      {/* Problem/Solution */}
+      {/* Problem Statement */}
       <section className="koda-problems">
         <div className="koda-problems-container">
-          <h2 className="koda-section-title">文化の壁を越える</h2>
-          <div className="koda-problems-grid" style={{gridTemplateColumns: 'repeat(2, 1fr)'}}>
-            <div className="koda-problem-card" style={{borderColor: '#dc2626'}}>
-              <h3 style={{color: '#dc2626'}}>よくある課題</h3>
-              <p>日本のビジネス慣習が分からない。敬語の使い方が難しい。暗黙のルールが読めない。会議で意見を言うタイミングが掴めない。</p>
+          <h2 className="koda-section-title">こんなお悩みはありませんか</h2>
+          <div className="koda-problems-grid">
+            <div className="koda-problem-card">
+              <h3>「何が分からないか分からない」</h3>
+              <p>日本の職場には、言葉にされない「当たり前」がたくさん。どこから学べばいいか分からない。</p>
             </div>
-            <div className="koda-problem-card" style={{borderColor: '#059669'}}>
-              <h3 style={{color: '#059669'}}>KODA Culturalで解決</h3>
-              <p>AIが文化的コンテキストを即座に解説。適切な表現とタイミングをアドバイス。ロールプレイで実践力を養成。</p>
+            <div className="koda-problem-card">
+              <h3>「同じことを何度も説明」</h3>
+              <p>外国人スタッフへの説明に時間がかかる。忙しい中で、丁寧に教える余裕がない。</p>
+            </div>
+            <div className="koda-problem-card">
+              <h3>「せっかく採用しても...」</h3>
+              <p>文化の違いから誤解が生まれ、離職につながってしまう。もったいないと感じている。</p>
             </div>
           </div>
         </div>
@@ -88,11 +87,10 @@ export default function CulturalPage() {
       {/* Features */}
       <section className="koda-features">
         <div className="koda-features-container">
-          <h2 className="koda-section-title">機能</h2>
+          <h2 className="koda-section-title">KODA Culturalができること</h2>
           <div className="koda-features-grid">
             {features.map((feature, idx) => (
               <div key={idx} className="koda-feature-card">
-                <div className="koda-feature-icon">{feature.icon}</div>
                 <h3>{feature.title}</h3>
                 <p>{feature.description}</p>
               </div>
@@ -104,46 +102,36 @@ export default function CulturalPage() {
       {/* Use Cases */}
       <section className="koda-benefits">
         <div className="koda-benefits-container">
-          <h2 className="koda-section-title">活用シーン</h2>
+          <h2 className="koda-section-title">こんな場面でご活用いただいています</h2>
           <div className="koda-benefits-grid">
             {useCases.map((useCase, idx) => (
               <div key={idx} className="koda-benefit-card">
-                <div className="koda-benefit-metric" style={{fontSize: '24px'}}>{useCase.title}</div>
-                <p className="koda-benefit-label">{useCase.description}</p>
+                <p className="koda-benefit-label" style={{fontWeight: '600', marginBottom: '8px', color: '#1e3a5f'}}>{useCase.title}</p>
+                <p style={{fontSize: '13px', color: '#525252'}}>{useCase.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Contact Section - No prices */}
       <section className="koda-pricing">
         <div className="koda-pricing-container">
-          <h2 className="koda-section-title">料金</h2>
-          <div className="koda-pricing-grid">
-            <div className="koda-price-card">
-              <h3>チーム</h3>
-              <p className="koda-price-amount">¥80,000<span>/月</span></p>
-              <ul className="koda-price-features">
-                <li>20ユーザーまで</li>
-                <li>基本学習モジュール</li>
-                <li>文化診断ツール</li>
-                <li>メールサポート</li>
-              </ul>
-              <Link href="/contact" className="koda-price-btn koda-price-btn-outline">お問い合わせ</Link>
-            </div>
-            <div className="koda-price-card recommended">
-              <span className="koda-price-badge">RECOMMENDED</span>
-              <h3>エンタープライズ</h3>
-              <p className="koda-price-amount">¥200,000<span>/月〜</span></p>
-              <ul className="koda-price-features">
-                <li>無制限ユーザー</li>
-                <li>カスタムシナリオ</li>
-                <li>進捗レポート</li>
-                <li>専任サポート</li>
-              </ul>
-              <Link href="/contact" className="koda-price-btn koda-price-btn-solid">お問い合わせ</Link>
-            </div>
+          <h2 className="koda-section-title">導入をご検討の方へ</h2>
+          <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+            <p style={{ fontSize: '16px', lineHeight: '1.9', color: '#525252', marginBottom: '32px' }}>
+              KODA Culturalは、ご利用人数や必要なコンテンツに合わせて、<br />
+              柔軟にプランをご提案いたします。<br /><br />
+              外国人材の受け入れに関するお悩みをお聞かせください。<br />
+              デモンストレーションも可能です。
+            </p>
+            <Link
+              href="/contact"
+              className="koda-btn-primary"
+              style={{ display: 'inline-block', background: '#1e3a5f', color: 'white', padding: '18px 48px', borderRadius: '8px', textDecoration: 'none', fontSize: '16px', fontWeight: '600' }}
+            >
+              お問い合わせ・資料請求
+            </Link>
           </div>
         </div>
       </section>
@@ -151,8 +139,8 @@ export default function CulturalPage() {
       {/* CTA */}
       <section className="koda-cta">
         <div className="koda-cta-container">
-          <h2>グローバルチームの文化的能力を高めませんか？</h2>
-          <p>デモンストレーションや詳細資料をご希望の方は、お気軽にお問い合わせください。</p>
+          <h2>まずは、お話を聞かせてください</h2>
+          <p>デモンストレーションや詳しい資料のご要望など、お気軽にご連絡ください。</p>
           <div className="koda-cta-buttons">
             <Link href="/contact" className="koda-cta-btn-primary">お問い合わせ</Link>
             <Link href="/products" className="koda-cta-btn-secondary">他の製品を見る</Link>

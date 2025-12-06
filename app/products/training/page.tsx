@@ -9,34 +9,28 @@ import '@/components/KodaProduct.css';
 export default function TrainingPage() {
   const features = [
     {
-      icon: '🎯',
-      title: 'アダプティブ・ラーニング',
-      description: '学習者一人ひとりの理解度・進捗に合わせて、AIが最適な学習コンテンツと難易度を自動調整。'
+      title: '一人ひとりに合わせた学習',
+      description: '同じ研修でも、理解度や進み具合は人それぞれ。AIが一人ひとりのペースに合わせて、最適な学習内容を提供します。'
     },
     {
-      icon: '🤖',
-      title: 'AIチューター',
-      description: '24時間対応のAIチューターが質問に回答し、理解を深めるためのヒントを提供。'
+      title: 'いつでも質問できるAIチューター',
+      description: '「ここが分からない」と思ったとき、すぐに質問できる相手がいます。時間や場所を選ばず、理解を深められます。'
     },
     {
-      icon: '📊',
-      title: 'スキルギャップ分析',
-      description: '現在のスキルレベルと目標のギャップを可視化。効率的な学習計画を自動生成。'
+      title: '現状とゴールの「見える化」',
+      description: '今のスキルレベルと目標のギャップが一目で分かる。何を学べばいいか迷わず、効率的に成長できます。'
     },
     {
-      icon: '✅',
-      title: 'コンプライアンス研修',
-      description: '法改正に対応した最新のコンプライアンス研修を自動更新。受講状況も一元管理。'
+      title: 'コンプライアンス研修の効率化',
+      description: '法改正に対応した最新の内容を、自動的に更新。受講状況の管理も、手間なく行えます。'
     },
     {
-      icon: '🏆',
-      title: 'ゲーミフィケーション',
-      description: 'バッジ、ランキング、チャレンジなどで学習意欲を維持。継続率を大幅向上。'
+      title: '学び続けられる仕組み',
+      description: '忙しい業務の中でも、学習を続けられる工夫があります。達成感を感じながら、モチベーションを保てます。'
     },
     {
-      icon: '📈',
-      title: '効果測定',
-      description: '研修効果をデータで可視化。ROI分析、スキル向上度、行動変容の追跡が可能。'
+      title: '効果が見える研修に',
+      description: '研修の効果をデータで把握。「研修をやって終わり」ではなく、成果につながる人材育成を支援します。'
     }
   ];
 
@@ -44,11 +38,11 @@ export default function TrainingPage() {
     'ビジネススキル',
     'リーダーシップ',
     'コンプライアンス',
-    'IT・デジタル',
-    '語学研修',
+    'IT・デジタルスキル',
+    'コミュニケーション',
     'マネジメント',
-    '営業スキル',
-    'カスタム研修'
+    '営業・接客',
+    '業務に合わせたカスタム研修'
   ];
 
   return (
@@ -58,36 +52,37 @@ export default function TrainingPage() {
       {/* Hero Section */}
       <section className="koda-hero">
         <div className="koda-hero-container">
-          <span className="koda-badge">KODA PRODUCT</span>
-          <h1>KODA Training</h1>
-          <p className="koda-hero-subtitle">AI-Enhanced Corporate Learning</p>
+          <span className="koda-badge">KODA TRAINING</span>
+          <h1>「研修を受けて終わり」から、<br />「現場で活きる学び」へ。</h1>
+          <p className="koda-hero-subtitle">企業研修・人材育成支援</p>
           <p className="koda-hero-description">
-            AIが一人ひとりに最適化された学習体験を提供。
-            企業研修の効果を最大化し、人材育成を加速します。
+            せっかくの研修が、現場で活かされていますか。<br />
+            KODA Trainingは、一人ひとりに合わせた学習体験で、<br />
+            確実に身につく人材育成を支援します。
           </p>
           <div className="koda-hero-buttons">
-            <Link href="/contact" className="koda-btn-primary">資料請求</Link>
-            <Link href="/contact" className="koda-btn-secondary">デモを見る</Link>
+            <Link href="/contact" className="koda-btn-primary">詳しい資料を見る</Link>
+            <Link href="/contact" className="koda-btn-secondary">デモをリクエスト</Link>
           </div>
         </div>
       </section>
 
-      {/* Problem/Solution */}
+      {/* Problem Statement */}
       <section className="koda-problems">
         <div className="koda-problems-container">
-          <h2 className="koda-section-title">企業研修の課題を解決</h2>
+          <h2 className="koda-section-title">こんなお悩みはありませんか</h2>
           <div className="koda-problems-grid">
-            <div className="koda-problem-card" style={{borderColor: '#dc2626'}}>
-              <h3 style={{color: '#dc2626'}}>画一的な研修</h3>
-              <p>同じ内容を全員に提供。理解度に差があっても進度は同じ。効果測定が困難。</p>
+            <div className="koda-problem-card">
+              <h3>「全員同じ内容でいいのか」</h3>
+              <p>経験や理解度が違うのに、同じ研修を受けさせている。効率的ではないと感じている。</p>
             </div>
-            <div className="koda-problem-card" style={{borderColor: '#ea580c'}}>
-              <h3 style={{color: '#ea580c'}}>低い継続率</h3>
-              <p>eラーニングの完了率は平均30%以下。忙しい業務の合間に学習時間を確保できない。</p>
+            <div className="koda-problem-card">
+              <h3>「忙しくて学習が進まない」</h3>
+              <p>eラーニングを導入しても、なかなか完了しない。業務優先で、学習が後回しに。</p>
             </div>
-            <div className="koda-problem-card" style={{borderColor: '#059669'}}>
-              <h3 style={{color: '#059669'}}>KODA Training</h3>
-              <p>AIが個人に最適化。短時間で効果的に学習。ゲーミフィケーションで継続率80%以上。</p>
+            <div className="koda-problem-card">
+              <h3>「効果が見えにくい」</h3>
+              <p>研修にコストをかけているが、本当に効果があるのか分からない。成果を可視化したい。</p>
             </div>
           </div>
         </div>
@@ -96,11 +91,10 @@ export default function TrainingPage() {
       {/* Features */}
       <section className="koda-features">
         <div className="koda-features-container">
-          <h2 className="koda-section-title">機能</h2>
+          <h2 className="koda-section-title">KODA Trainingができること</h2>
           <div className="koda-features-grid">
             {features.map((feature, idx) => (
               <div key={idx} className="koda-feature-card">
-                <div className="koda-feature-icon">{feature.icon}</div>
                 <h3>{feature.title}</h3>
                 <p>{feature.description}</p>
               </div>
@@ -112,45 +106,34 @@ export default function TrainingPage() {
       {/* Learning Modules */}
       <section className="koda-scenarios">
         <div className="koda-scenarios-container">
-          <h2 className="koda-section-title">学習モジュール</h2>
+          <h2 className="koda-section-title">学習コンテンツ（例）</h2>
           <div className="koda-scenarios-grid">
             {modules.map((module, idx) => (
               <div key={idx} className="koda-scenario-tag">{module}</div>
             ))}
           </div>
-          <p className="koda-scenarios-note">※ 企業独自のカスタム研修も作成可能です</p>
+          <p className="koda-scenarios-note">※ 貴社の業務に合わせたオリジナル研修も作成可能です</p>
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Contact Section - No prices */}
       <section className="koda-pricing">
         <div className="koda-pricing-container">
-          <h2 className="koda-section-title">料金</h2>
-          <div className="koda-pricing-grid">
-            <div className="koda-price-card">
-              <h3>スタンダード</h3>
-              <p className="koda-price-amount">¥150,000<span>/月</span></p>
-              <ul className="koda-price-features">
-                <li>100ユーザーまで</li>
-                <li>標準研修モジュール</li>
-                <li>進捗レポート</li>
-                <li>メールサポート</li>
-              </ul>
-              <Link href="/contact" className="koda-price-btn koda-price-btn-outline">お問い合わせ</Link>
-            </div>
-            <div className="koda-price-card recommended">
-              <span className="koda-price-badge">RECOMMENDED</span>
-              <h3>エンタープライズ</h3>
-              <p className="koda-price-amount">¥400,000<span>/月〜</span></p>
-              <ul className="koda-price-features">
-                <li>無制限ユーザー</li>
-                <li>カスタム研修作成</li>
-                <li>LMS連携</li>
-                <li>効果分析レポート</li>
-                <li>専任サポート</li>
-              </ul>
-              <Link href="/contact" className="koda-price-btn koda-price-btn-solid">お問い合わせ</Link>
-            </div>
+          <h2 className="koda-section-title">導入をご検討の方へ</h2>
+          <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+            <p style={{ fontSize: '16px', lineHeight: '1.9', color: '#525252', marginBottom: '32px' }}>
+              KODA Trainingは、利用人数や必要なコンテンツに合わせて、<br />
+              柔軟にプランをご提案いたします。<br /><br />
+              現在の研修の課題や、目指したい人材像をお聞かせください。<br />
+              デモンストレーションも可能です。
+            </p>
+            <Link
+              href="/contact"
+              className="koda-btn-primary"
+              style={{ display: 'inline-block', background: '#1e3a5f', color: 'white', padding: '18px 48px', borderRadius: '8px', textDecoration: 'none', fontSize: '16px', fontWeight: '600' }}
+            >
+              お問い合わせ・資料請求
+            </Link>
           </div>
         </div>
       </section>
@@ -158,8 +141,8 @@ export default function TrainingPage() {
       {/* CTA */}
       <section className="koda-cta">
         <div className="koda-cta-container">
-          <h2>企業研修をAIでアップグレードしませんか？</h2>
-          <p>デモンストレーションや詳細資料をご希望の方は、お気軽にお問い合わせください。</p>
+          <h2>まずは、お話を聞かせてください</h2>
+          <p>デモンストレーションや詳しい資料のご要望など、お気軽にご連絡ください。</p>
           <div className="koda-cta-buttons">
             <Link href="/contact" className="koda-cta-btn-primary">お問い合わせ</Link>
             <Link href="/products" className="koda-cta-btn-secondary">他の製品を見る</Link>
