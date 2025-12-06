@@ -9,108 +9,126 @@ import '@/components/KodaProduct.css';
 export default function MedCommPage() {
   const features = [
     {
-      icon: '🎭',
       title: 'バーチャル患者',
-      description: 'AIが多様な患者プロフィールを再現。年齢、性格、症状、文化的背景を設定し、リアルな対話練習が可能。'
+      description: 'さまざまな背景を持つ患者さんとの対話を、何度でも練習できます。失敗しても大丈夫。安心して学べる環境です。'
     },
     {
-      icon: '👨‍🏫',
-      title: 'エキスパート・デジタルツイン',
-      description: 'ベテラン医師の指導スタイルをAIで再現。学習者にリアルタイムでフィードバックとガイダンスを提供。'
+      title: 'ベテラン医師の知恵を継承',
+      description: '経験豊富な指導医の教え方をAIが学習。「あの先生に教わりたかった」を、いつでも実現します。'
     },
     {
-      icon: '📊',
-      title: '自動評価エンジン',
-      description: 'コミュニケーションスキルを多角的に評価。共感力、説明の明瞭さ、質問技法、非言語コミュニケーションを分析。'
+      title: '振り返りのサポート',
+      description: '練習後に、どこが良かったか、どこを伸ばせるかを一緒に確認。自分では気づきにくい点も見つかります。'
     },
     {
-      icon: '🇯🇵',
-      title: '日本の医療文化対応',
-      description: '敬語、間合い、家族との関係性など、日本の医療現場特有のコミュニケーション要素を組み込んだシナリオ。'
+      title: '日本の医療現場に合わせて',
+      description: '敬語の使い方、ご家族への説明、高齢患者さんとの接し方など、日本ならではの場面を想定しています。'
     },
     {
-      icon: '⏰',
-      title: '24時間365日利用可能',
-      description: '学習者は都合の良い時間にいつでも練習可能。繁忙期も待ち時間なしで学習を継続。'
+      title: 'いつでも、どこでも',
+      description: '夜勤明けでも、休日でも、自分のペースで練習できます。「忙しくて練習時間が取れない」という悩みに応えます。'
     },
     {
-      icon: '📈',
-      title: '学習分析ダッシュボード',
-      description: '個人・グループの進捗を可視化。弱点の特定と改善推奨を自動生成。'
+      title: '成長の見える化',
+      description: '練習を重ねるごとに、自分の成長が目に見えてわかる。モチベーションを保ちながら学び続けられます。'
     }
   ];
 
   const scenarios = [
     '初診時の問診',
     '悪い知らせの伝え方',
-    '治療方針の説明',
-    '家族への病状説明',
-    '高齢患者との対話',
+    '治療方針の相談',
+    'ご家族への説明',
+    '高齢患者さんとの対話',
     'インフォームドコンセント',
-    'クレーム対応',
-    '多文化背景患者との対話'
-  ];
-
-  const benefits = [
-    { metric: '1/10', label: '従来の標準模擬患者費用との比較' },
-    { metric: '24/7', label: '利用可能時間' },
-    { metric: '100+', label: '対応シナリオ数' },
-    { metric: '即時', label: 'フィードバック提供' }
+    'ご意見・ご要望への対応',
+    '文化的背景の異なる患者さん'
   ];
 
   return (
-    <main>
+    <main className="koda-theme-medical">
       <Header lang="ja" />
 
       {/* Hero Section */}
-      <section className="koda-hero">
+      <section className="koda-hero koda-theme-medical">
         <div className="koda-hero-container">
-          <span className="koda-badge">KODA FLAGSHIP PRODUCT</span>
-          <h1>KODA MedComm</h1>
-          <p className="koda-hero-subtitle">AI-Powered Medical Communication Training</p>
+          <span className="koda-badge">KODA MEDCOMM</span>
+          <h1>医療コミュニケーションを、<br />もっと安心して学べる場所へ。</h1>
+          <p className="koda-hero-subtitle">AI仮想患者との対話練習システム</p>
           <p className="koda-hero-description">
-            AI仮想患者との対話練習で、医療コミュニケーションスキルを効率的に向上。
-            従来の10分の1のコストで、いつでも・どこでも・何度でも練習可能。
+            患者さんとの対話は、教科書だけでは身につきません。<br />
+            でも、実際の患者さんで練習するのは難しい。<br />
+            KODA MedCommは、何度でも安心して練習できる環境を提供します。
           </p>
           <div className="koda-hero-buttons">
-            <Link href="/contact" className="koda-btn-primary">資料請求</Link>
-            <Link href="/contact" className="koda-btn-secondary">デモを見る</Link>
+            <Link href="/contact" className="koda-btn-primary">詳しい資料を見る</Link>
+            <Link href="/contact" className="koda-btn-secondary">デモをリクエスト</Link>
           </div>
         </div>
       </section>
 
-      {/* Problem Statement */}
+      {/* Problem Statement - Human-centered */}
       <section className="koda-problems">
         <div className="koda-problems-container">
-          <h2 className="koda-section-title">医療教育の課題</h2>
+          <h2 className="koda-section-title">医療教育の現場で聞こえる声</h2>
           <div className="koda-problems-grid">
             <div className="koda-problem-card">
-              <h3>高コスト</h3>
-              <p>標準模擬患者(SP)の1セッションあたり¥50,000以上。予算制約で十分な練習機会を提供できない。</p>
+              <h3>「練習の機会が少ない」</h3>
+              <p>模擬患者さんとの練習は限られた回数だけ。もっと練習したいけれど、機会がない。</p>
             </div>
             <div className="koda-problem-card">
-              <h3>一貫性の欠如</h3>
-              <p>人間のSPは疲労や気分でパフォーマンスにばらつき。評価基準も主観的になりがち。</p>
+              <h3>「失敗が怖い」</h3>
+              <p>実際の患者さんの前では緊張してしまう。安心して失敗できる場所で練習したい。</p>
             </div>
             <div className="koda-problem-card">
-              <h3>スケーラビリティ</h3>
-              <p>SP人材は希少。増加する学生数に対応できず、練習機会が不足。</p>
+              <h3>「フィードバックがほしい」</h3>
+              <p>自分のコミュニケーションの何が良くて、何を改善すべきか、客観的に知りたい。</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits */}
+      {/* Solution Approach - Japanese style */}
       <section className="koda-benefits">
         <div className="koda-benefits-container">
-          <h2 className="koda-section-title">KODA MedCommの優位性</h2>
+          <h2 className="koda-section-title">KODA MedCommができること</h2>
           <div className="koda-benefits-grid">
-            {benefits.map((benefit, idx) => (
-              <div key={idx} className="koda-benefit-card">
-                <div className="koda-benefit-metric">{benefit.metric}</div>
-                <p className="koda-benefit-label">{benefit.label}</p>
+            <div className="koda-benefit-card">
+              <div className="koda-benefit-metric">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="#0077b6" strokeWidth="2" fill="none"/>
+                  <path d="M24 14v10l7 7" stroke="#0077b6" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
               </div>
-            ))}
+              <p className="koda-benefit-label">いつでも練習可能</p>
+            </div>
+            <div className="koda-benefit-card">
+              <div className="koda-benefit-metric">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 8c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16z" stroke="#0077b6" strokeWidth="2" fill="none"/>
+                  <path d="M18 24l4 4 8-8" stroke="#0077b6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <p className="koda-benefit-label">安心して失敗できる</p>
+            </div>
+            <div className="koda-benefit-card">
+              <div className="koda-benefit-metric">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 36V20l12-8 12 8v16" stroke="#0077b6" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M20 36v-8h8v8" stroke="#0077b6" strokeWidth="2" fill="none"/>
+                </svg>
+              </div>
+              <p className="koda-benefit-label">日本の医療文化に対応</p>
+            </div>
+            <div className="koda-benefit-card">
+              <div className="koda-benefit-metric">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 12v24M12 24h24" stroke="#0077b6" strokeWidth="2" strokeLinecap="round"/>
+                  <circle cx="24" cy="24" r="16" stroke="#0077b6" strokeWidth="2" fill="none"/>
+                </svg>
+              </div>
+              <p className="koda-benefit-label">すぐにフィードバック</p>
+            </div>
           </div>
         </div>
       </section>
@@ -118,11 +136,10 @@ export default function MedCommPage() {
       {/* Features */}
       <section className="koda-features">
         <div className="koda-features-container">
-          <h2 className="koda-section-title">機能</h2>
+          <h2 className="koda-section-title">特徴</h2>
           <div className="koda-features-grid">
             {features.map((feature, idx) => (
               <div key={idx} className="koda-feature-card">
-                <div className="koda-feature-icon">{feature.icon}</div>
                 <h3>{feature.title}</h3>
                 <p>{feature.description}</p>
               </div>
@@ -134,13 +151,13 @@ export default function MedCommPage() {
       {/* Scenarios */}
       <section className="koda-scenarios">
         <div className="koda-scenarios-container">
-          <h2 className="koda-section-title">対応シナリオ（例）</h2>
+          <h2 className="koda-section-title">練習できるシナリオ（例）</h2>
           <div className="koda-scenarios-grid">
             {scenarios.map((scenario, idx) => (
               <div key={idx} className="koda-scenario-tag">{scenario}</div>
             ))}
           </div>
-          <p className="koda-scenarios-note">※ カスタムシナリオの追加も可能です</p>
+          <p className="koda-scenarios-note">※ 貴学・貴院のニーズに合わせたカスタムシナリオも作成可能です</p>
         </div>
       </section>
 
@@ -150,48 +167,38 @@ export default function MedCommPage() {
           <h2>学術パートナーシップ</h2>
           <div className="koda-quote-box">
             <p className="koda-quote-text">
-              "KODA MedCommは、医療コミュニケーション教育に革新をもたらす可能性を秘めています。
-              AIと人間の強みを組み合わせたこのアプローチは、次世代の医療者育成に大きく貢献するでしょう。"
+              「KODA MedCommは、医療コミュニケーション教育に新しい可能性を開きます。
+              AIと人間、それぞれの強みを活かしたこのアプローチは、
+              次世代の医療者育成に貢献できると期待しています。」
             </p>
             <p className="koda-quote-author">
-              — Professor Jeanette Littlemore, University of Birmingham
+              Professor Jeanette Littlemore
             </p>
             <p className="koda-quote-author-title">
-              医療コミュニケーション・メタファー研究の世界的権威
+              University of Birmingham｜医療コミュニケーション・メタファー研究
             </p>
           </div>
         </div>
       </section>
 
-      {/* Pricing */}
+      {/* Contact Section - No prices */}
       <section className="koda-pricing">
         <div className="koda-pricing-container">
-          <h2 className="koda-section-title">料金</h2>
-          <div className="koda-pricing-grid">
-            <div className="koda-price-card">
-              <h3>スタンダード</h3>
-              <p className="koda-price-amount">¥300,000<span>/年</span></p>
-              <ul className="koda-price-features">
-                <li>50ユーザーまで</li>
-                <li>基本シナリオセット</li>
-                <li>学習分析ダッシュボード</li>
-                <li>メールサポート</li>
-              </ul>
-              <Link href="/contact" className="koda-price-btn koda-price-btn-outline">お問い合わせ</Link>
-            </div>
-            <div className="koda-price-card recommended">
-              <span className="koda-price-badge">RECOMMENDED</span>
-              <h3>エンタープライズ</h3>
-              <p className="koda-price-amount">¥500,000<span>/年〜</span></p>
-              <ul className="koda-price-features">
-                <li>無制限ユーザー</li>
-                <li>カスタムシナリオ作成</li>
-                <li>エキスパート・デジタルツイン</li>
-                <li>API連携</li>
-                <li>優先サポート</li>
-              </ul>
-              <Link href="/contact" className="koda-price-btn koda-price-btn-solid">お問い合わせ</Link>
-            </div>
+          <h2 className="koda-section-title">導入をご検討の方へ</h2>
+          <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+            <p style={{ fontSize: '16px', lineHeight: '1.9', color: '#525252', marginBottom: '32px' }}>
+              KODA MedCommは、医学部・看護学部・病院研修など、<br />
+              さまざまな教育現場でご活用いただけます。<br /><br />
+              貴学・貴院の状況やニーズをお聞かせください。<br />
+              最適なプランをご提案いたします。
+            </p>
+            <Link
+              href="/contact"
+              className="koda-btn-primary"
+              style={{ display: 'inline-block', background: '#0077b6', color: 'white', padding: '18px 48px', borderRadius: '8px', textDecoration: 'none', fontSize: '16px', fontWeight: '600' }}
+            >
+              お問い合わせ・資料請求
+            </Link>
           </div>
         </div>
       </section>
@@ -199,8 +206,8 @@ export default function MedCommPage() {
       {/* CTA */}
       <section className="koda-cta">
         <div className="koda-cta-container">
-          <h2>医療コミュニケーション教育を変革しませんか？</h2>
-          <p>デモンストレーションや詳細資料をご希望の方は、お気軽にお問い合わせください。</p>
+          <h2>まずは、お話を聞かせてください</h2>
+          <p>デモンストレーションや詳しい資料のご要望など、お気軽にご連絡ください。</p>
           <div className="koda-cta-buttons">
             <Link href="/contact" className="koda-cta-btn-primary">お問い合わせ</Link>
             <Link href="/products" className="koda-cta-btn-secondary">他の製品を見る</Link>
